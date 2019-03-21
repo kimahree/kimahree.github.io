@@ -5,13 +5,13 @@
 <style>
 body {
 	font-family: calibri;
-	font-size: 200%;
+	font-size: 150%;
 }
 </style>
 </head>
 <body>
 
-<h3>Gesundbrunnen Raid Test</h3>
+<h3>Gesundbrunnen Raid Beta</h3>
 
 Raid:
 <select id="raid" style="font-size:100%;font-family:calibri">
@@ -29,9 +29,47 @@ Raid:
 <br>
 Arena:
 <select id="gym" style="font-size:100%;font-family:calibri">
+  <option>1892 Historisches Gebäude</option>
+  <option>AEG Beamtentor</option>
+  <option style="font-weight:bold">Amtsgericht Wedding</option>
+  <option>Bahnhof Humboldthain</option>
+  <option>Bahnsteig S-Bahnhof Gesundbrunnen</option>
+  <option>Balance On The Globe</option>
+  <option>Berliner Mauer S Wollankstraße</option>
+  <option>Birkenmural</option>
+  <option>Bornholmer Straße Border Crossing</option>
+  <option>Bösebrücke Bornholmer Straße</option>
+  <option>Brunnen DRK</option>
+  <option>Brunnenstraße</option>
+  <option>Bunker Humboldthain</option>
+  <option>Drei-Säulen-Brunnen</option>
   <option>Eingangstor St. Elisabeth</option>
   <option style="font-weight:bold">Ente</option>
+  <option>Ernst Reuter Büste</option>
+  <option>Ev. Stephanus Kirche</option>
+  <option>Gedenkstein Opfer der Berliner Mauer</option>
+  <option>Gewachsen auf Beton Mural</option>
   <option>Haus Graffiti</option>
+  <option>Hausmalerei</option>
+  <option>Hauswächter</option>
+  <option style="font-weight:bold">Hippo Fountain</option>
+  <option>Humboldtpark</option>
+  <option>Jungfräulich Maria St.</option>
+  <option>Jux und Tollerei</option>
+  <option style="font-weight:bold">Kamel</option>
+  <option>Kulturverein Christiana</option>
+  <option>Mother Statue</option>
+  <option>Portal zur Kaiser Wilhelm und Augusta Stiftung</option>
+  <option>Rosengarten am Humboldthain</option>
+  <option>S-Bahnhof Bornholmer Straße</option>
+  <option>Shadow People</option>
+  <option>Springbrunnen am Rathaus</option>
+  <option style="font-weight:bold">St. Sebastian-Kirche</option>
+  <option>Stolpersteine Georg und Rudolf Juliusburger</option>
+  <option>Swinemünder Brücke</option>
+  <option>The Real Old Mechanical Door</option>
+  <option>U-Bahnhof Osloer Straße</option>
+  <option>Vergessene Brücke</option>
   <option style="font-weight:bold">Zwillingsstatue</option>
 </select>
 <br>
@@ -59,10 +97,48 @@ Teilnehmer: <br>
 var ex = ["Amtsgericht Wedding", "Ente", "Hippo Fountain", "Kamel", "St. Sebastian-Kirche", "Zwillingsstatue"];
 
 var maps = [
+"https://goo.gl/maps/LJthotdr7b72", // 1892 Historisches Gebäude
+"https://goo.gl/maps/pCd3BJgke8B2", // AEG Beamtentor
+"https://goo.gl/maps/q79rW3P5iz82", // Amtsgericht Wedding (EX)
+"https://goo.gl/maps/NoMxjQmX8Yz",  // Bahnhof Humboldthain
+"https://goo.gl/maps/P6fLg6nSaKM2", // Bahnsteig S-Bahnhof Gesundbrunnen
+"https://goo.gl/maps/bM2QWrCkDhq",  // Balance on the Globe
+"https://goo.gl/maps/7ggyACh3c7y",  // Berliner Mauer S Wollankstraße
+"https://goo.gl/maps/LUjPLZgELHR2", // Birkenmural
+"https://goo.gl/maps/borFEx1Zp3D2", // Bornholmer Straße Border Crossing
+"https://goo.gl/maps/Fkb2uqJf8kJ2", // Bösebrücke Bornholmer Straße
+"https://goo.gl/maps/WqegcLtthPx",  // Brunnen DRK
+"https://goo.gl/maps/QEN9FksYAUR2", // Brunnenstraße
+"https://goo.gl/maps/Q5xj3TTdQfR2", // Bunker Humboldthain
+"https://goo.gl/maps/BD6HAd3WwAC2", // Drei-Säulen-Brunnen
 "https://goo.gl/maps/6WQqtbYTLFD2", // Eingangstor St. Elisabeth
-"https://goo.gl/maps/9BhrrYtz8432", // Ente
+"https://goo.gl/maps/9BhrrYtz8432", // Ente (EX)
+"https://goo.gl/maps/c3bK2hVWqy32", // Ernst Reuter Büste
+"https://goo.gl/maps/Yxwu2ubRmm52", // Ev. Stephanus Kirche
+"https://goo.gl/maps/vKCJtW7CXjm",  // Gedenkstein Opfer der Berliner Mauer
+"https://goo.gl/maps/8MVUihQXCQ82", // Gewachsen auf Beton Mural
 "https://goo.gl/maps/NJWvyGY1xN22", // Haus Graffiti
-"https://goo.gl/maps/q1rctADEE8q"   //Zwillingsstatue
+"https://goo.gl/maps/wJXuVvpzvTv",  // Hausmalerei
+"https://goo.gl/maps/Yv9g8aRw9S72", // Hauswächter
+"https://goo.gl/maps/zRQmhYSnYTG2", // Hippo Fountain (EX)
+"https://goo.gl/maps/L6gci4KrmRM2", // Humboldtpark
+"https://goo.gl/maps/4qMqQB4rPXG2", // Jungfräulich Maria St.
+"https://goo.gl/maps/vLZcbgbGXrD2", // Jux und Tollerei
+"https://goo.gl/maps/xCWVtJhqw1r",  // Kamel (EX)
+"https://goo.gl/maps/Mks22S8syUn",  // Kulturverein Christiana
+"https://goo.gl/maps/obrXpaCe8Kp",  // Mother Statue
+"https://goo.gl/maps/Z132sxwCnHE2", // Portal zur Kaiser Wilhelm und Augusta Stiftung
+"https://goo.gl/maps/uuFsiJBmDp72", // Rosengarten am Humboldthain
+"https://goo.gl/maps/fTpjjxxPXbK2", // S-Bahnhof Bornholmer Straße
+"https://goo.gl/maps/PzqU2mtenL42", // Shadow People
+"https://goo.gl/maps/j5WL5s81k2K2", // Springbrunnen am Rathaus
+"https://goo.gl/maps/za2Fq6XPC5t",  // St. Sebastian-Kirche (EX)
+"https://goo.gl/maps/kPsKT4sGpPK2", // Stolpersteine Georg und Rudolf Juliusburger
+"https://goo.gl/maps/hH2WCCHeLwK2", // Swinemünder Brücke
+"https://goo.gl/maps/WvKP2eCWdu12", // The Real Old Mechanical Door
+"https://goo.gl/maps/67rcURgu1Y82", // U-Bahnhof Osloer Straße
+"https://goo.gl/maps/NTR2AcNt6pp",  // Vergessene Brücke
+"https://goo.gl/maps/q1rctADEE8q"   // Zwillingsstatue (EX)
 ]
 
 function generateRaid() {
@@ -108,7 +184,7 @@ function generateRaid() {
   ta.setAttributeNode(att1);
   
   att2 = document.createAttribute("cols");
-  att2.value = "50";
+  att2.value = "75";
   ta.setAttributeNode(att2);
   
   att3 = document.createAttribute("readonly");
