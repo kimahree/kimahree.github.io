@@ -1,7 +1,120 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
+<title>Gesundbrunnen RAID</title>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<h3>Gesundbrunnen Raid Test</h3>
+
+Raid:
+<select id="raid">
+  <option disabled style="font-style:italic">5er</option>
+  <option>Dialga</option>
+  <option disabled></option>
+  <option style="font-style:italic">4er</option>
+  <option>Absol</option>
+  <option>Alola-Knogga</option>
+  <option>Despotar</option>
+  <option>Sarzenia</option>
+  <option>Tengulist</option>
+</select>
+
+<br>
+Arena:
+<select id="gym">
+  <option>Eingangstor St. Elisabeth</option>
+  <option style="font-weight:bold">Ente</option>
+  <option>Haus Graffiti</option>
+  <option style="font-weight:bold">Zwillingsstatue</option>
+</select>
+<br>
+
+Schlüpfzeit:
+<input type="time" id="time"></input>
+<br>
+
+Startzeit:
+<input type="time" id="start"></input>
+
+<br>
+Teilnehmer: <br>
+<textarea id="player" rows="3"></textarea>
+
+<p>Drücke auf "Start!" und kopiere den generierten Text in die WhatsApp Gruppe.</p>
+
+<button onclick="generateRaid()">Start!</button>
+
+<p id="ex"></p>
+<p id="demo"></p>
+
+<script>
+
+var ex = ["Amtsgericht Wedding", "Ente", "Hippo Fountain", "Kamel", "St. Sebastian-Kirche", "Zwillingsstatue"];
+
+var maps = [
+"https://goo.gl/maps/6WQqtbYTLFD2", // Eingangstor St. Elisabeth
+"https://goo.gl/maps/9BhrrYtz8432", // Ente
+"https://goo.gl/maps/NJWvyGY1xN22", // Haus Graffiti
+"https://goo.gl/maps/q1rctADEE8q"   //Zwillingsstatue
+]
+
+function generateRaid() {
+  document.getElementById("ex").innerHTML = "";
+  document.getElementById("demo").innerHTML = "";
+
+  var text = ""
+  var gym = document.getElementById("gym").value;
+  var raid = document.getElementById("raid").value;
+  var time = document.getElementById("time").value;
+  var start = document.getElementById("start").value;
+  var diff = (document.getElementById("start").valueAsNumber - document.getElementById("time").valueAsNumber) / 60000;
+  var player = document.getElementById("player").value;
+  player = player.replace("\n","<br>")
+  
+  if (ex.find(checkEx)) {
+    text = text + "🎗 *EX-Raid Arena* 🎗 <br>";
+  }
+  
+  text = text + "*" + raid + " " + gym + "* ";
+  
+  if (time) {
+	text = text + "(🐣" + time + ")";
+  }
+  
+  text = text + "<br>" + maps[document.getElementById("gym").selectedIndex]
+  
+  text = text + "<br><br>*Start:* ";
+   
+  if ((diff <= 45 && diff >= 0) || (time == "" && start != "")) {
+	text = text + start;
+  } else {
+    text = text + "?";
+  }
+  text = text + "<br>" + player
+  // document.getElementById("ex").innerHTML = text;
+  
+  var text2 = text.replace(/<br>/g,"\n");
+  var ta = document.createElement("TEXTAREA");
+  
+  var att1 = document.createAttribute("rows");
+  att1.value = "10";
+  ta.setAttributeNode(att1);
+  
+  att2 = document.createAttribute("cols");
+  att2.value = "50";
+  ta.setAttributeNode(att2);
+  
+  att3 = document.createAttribute("readonly");
+  ta.setAttributeNode(att3);
+  
+  ta.appendChild(document.createTextNode(text2));
+  
+  document.getElementById("demo").appendChild(ta);
+}
+
+function checkEx(ext) {
+  return ext == document.getElementById("gym").value
+}
+</script>
+
 </body>
 </html>
