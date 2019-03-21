@@ -7,6 +7,9 @@ body {
 	font-family: calibri;
 	font-size: 150%;
 }
+div.dis {
+	font-size: 50%;
+}
 </style>
 </head>
 <body>
@@ -85,15 +88,19 @@ Startzeit:
 Teilnehmer: <br>
 <textarea id="player" rows="3" cols="30" style="font-size:100%;font-family:calibri"></textarea>
 
-<p>Drücke auf "Start!", überprüfe ob deine Angaben stimmen und drücke dann auf "In WhatsApp Posten".</p>
+<br><br>Drücke auf "Start!", überprüfe ob deine Angaben stimmen und drücke dann auf "In WhatsApp Posten".<br><br>
 
 <button onclick="generateRaid()" style="font-size:100%;font-family:calibri">Start!</button>
 
-<p id="ex"></p>
-<p id="demo"></p>
-<p id="but"></p>
+<br><br>
+<div id="ex"></div>
+<br>
+<!--div id="demo"></div>
+<br-->
+<div id="but"></div>
+<br>
 
-<p style="font-size:50%">Made by kimahree. This website is not affiliated with Niantic or Nintendo.<br>Pokémon And All Respective Names are Trademark & © of Nintendo 1996-2019.</p>
+<div class="dis">Made by kimahree. This website is not affiliated with Niantic or Nintendo.<br>Pokémon And All Respective Names are Trademark & © of Nintendo 1996-2019.</div>
 
 <script>
 
@@ -146,7 +153,8 @@ var maps = [
 
 function generateRaid() {
   document.getElementById("ex").innerHTML = "";
-  document.getElementById("demo").innerHTML = "";
+  //document.getElementById("demo").innerHTML = "";
+  document.getElementById("but").innerHTML = "";
 
   var text = ""
   var gym = document.getElementById("gym").value;
