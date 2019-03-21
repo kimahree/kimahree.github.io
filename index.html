@@ -163,7 +163,7 @@ function generateRaid() {
   var start = document.getElementById("start").value;
   var diff = (document.getElementById("start").valueAsNumber - document.getElementById("time").valueAsNumber) / 60000;
   var player = document.getElementById("player").value;
-  player = player.replace("\n","<br>")
+  player = player.replace(/\n/g,"<br>")
   
   if (ex.find(checkEx)) {
     text = text + "🎗 <b>EX-Raid Arena</b> 🎗 <br>";
