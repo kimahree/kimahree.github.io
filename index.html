@@ -1,12 +1,20 @@
 ﻿<!DOCTYPE html>
 <html>
 <title>Gesundbrunnen RAID</title>
+<head>
+<style>
+body {
+	font-family: calibri;
+	font-size: 200%;
+}
+</style>
+</head>
 <body>
 
 <h3>Gesundbrunnen Raid Test</h3>
 
 Raid:
-<select id="raid">
+<select id="raid" style="font-size:100%;font-family:calibri">
   <option disabled style="font-style:italic">5er</option>
   <option>Dialga</option>
   <option disabled></option>
@@ -20,7 +28,7 @@ Raid:
 
 <br>
 Arena:
-<select id="gym">
+<select id="gym" style="font-size:100%;font-family:calibri">
   <option>Eingangstor St. Elisabeth</option>
   <option style="font-weight:bold">Ente</option>
   <option>Haus Graffiti</option>
@@ -29,19 +37,19 @@ Arena:
 <br>
 
 Schlüpfzeit:
-<input type="time" id="time"></input>
+<input type="time" id="time" style="font-size:100%;font-family:calibri"></input>
 <br>
 
 Startzeit:
-<input type="time" id="start"></input>
+<input type="time" id="start" style="font-size:100%;font-family:calibri"></input>
 
 <br>
 Teilnehmer: <br>
-<textarea id="player" rows="3"></textarea>
+<textarea id="player" rows="3" style="font-size:100%;font-family:calibri"></textarea>
 
 <p>Drücke auf "Start!" und kopiere den generierten Text in die WhatsApp Gruppe.</p>
 
-<button onclick="generateRaid()">Start!</button>
+<button onclick="generateRaid()" style="font-size:100%;font-family:calibri">Start!</button>
 
 <p id="ex"></p>
 <p id="demo"></p>
@@ -105,6 +113,10 @@ function generateRaid() {
   
   att3 = document.createAttribute("readonly");
   ta.setAttributeNode(att3);
+  
+  att4 = document.createAttribute("style");
+  att4.value = "font-size:100%;font-family:calibri"
+  ta.setAttributeNode(att4)
   
   ta.appendChild(document.createTextNode(text2));
   
