@@ -36,7 +36,7 @@ Arena:
   <option value="1892 Historisches Gebäude">
   <option value="AEG Beamtentor">
   <option label="EX-Raid Arena" value="Amtsgericht Wedding">
-  <option value="Bahnhof Humboldthain">
+  <option label="S-Bahnhof Humboldthain" value="Bahnhof Humboldthain">
   <option value="Bahnsteig S-Bahnhof Gesundbrunnen">
   <option value="Balance On The Globe">
   <option value="Berliner Mauer S Wollankstraße">
@@ -44,10 +44,10 @@ Arena:
   <option value="Bornholmer Straße Border Crossing">
   <option value="Bösebrücke Bornholmer Straße">
   <option value="Brunnen DRK">
-  <option value="Brunnenstraße">
+  <option label="U Voltastr." value="Brunnenstraße">
   <option value="Bunker Humboldthain">
   <option value="Drei-Säulen-Brunnen">
-  <option value="Eingangstor St. Elisabeth">
+  <option label="Friedhof / Kirchhof"value="Eingangstor St. Elisabeth">
   <option label="EX-Raid Arena" value="Ente">
   <option value="Ernst Reuter Büste">
   <option value="Ev. Stephanus Kirche">
@@ -58,7 +58,7 @@ Arena:
   <option value="Hauswächter">
   <option label="EX-Raid Arena" value="Hippo Fountain">
   <option value="Humboldtpark">
-  <option value="Jungfräulich Maria St.">
+  <option label="Bellermannstr." value="Jungfräulich Maria St.">
   <option value="Jux und Tollerei">
   <option label="EX-Raid Arena" value="Kamel">
   <option value="Kulturverein Christiana">
@@ -80,13 +80,13 @@ Arena:
 <br><br>
 
 Schlüpfzeit:
-<input type="time" id="time" style="font-size:100%;font-family:calibri"></input>
-<br><br>
+<input type="time" id="time" style="font-size:100%;font-family:calibri" oninput="checkHatchTime()"></input><div id="timeh" style="color:red;font-size:medium;font-family:calibri"></div>
+<br>
 
 Startzeit:
-<input type="time" id="start" style="font-size:100%;font-family:calibri"></input>
+<input type="time" id="start" style="font-size:100%;font-family:calibri" oninput="checkStartTime()"></input><div id="starth" style="color:red;font-size:medium;font-family:calibri"></div>
 
-<br><br>
+<br>
 Teilnehmer: <br>
 <textarea id="player" rows="3" cols="30" style="font-size:100%;font-family:calibri"></textarea>
 
@@ -95,7 +95,7 @@ Teilnehmer: <br>
 <button onclick="generateRaid()" style="font-size:100%;font-family:calibri">Start!</button>
 
 <br><br>
-<div id="ex"></div>
+<div id="ex" style="font-size:medium;"></div>
 <br>
 <!--div id="demo"></div>
 <br-->
@@ -236,6 +236,52 @@ function generateRaid() {
   document.getElementById("but").appendChild(bu);
 }
 
+function checkHatchTime() {
+  var hat = new Date();
+  var hat2 = new Date(hat.toDateString());
+  var hatch = document.getElementById("time").valueAsNumber;
+  hat2 = hat - hat2;
+  hat2 = hatch - hat2;
+  if (hatch < 21600000) {
+    document.getElementById("timeh").innerHTML = "Raids schlüpfen nicht vor 6 Uhr.";
+  } else if (hatch > 75600000) {
+    document.getElementById("timeh").innerHTML = "Raids schlüpfen nicht nach 21 Uhr.";
+  } else if (hat2 < -2700000) {
+    document.getElementById("timeh").innerHTML = "Dieser Raid ist bereits abgelaufen.";
+  } else {
+    document.getElementById("timeh").innerHTML = "";
+  }
+}
+
+function checkStartTime() {
+  var now = new Date();
+  var now2 = new Date(now.toDateString());
+  var sta = document.getElementById("start").valueAsNumber;
+  var hat = document.getElementById("time").valueAsNumber;
+  now2 = now - now2;
+  now2 = sta - now2;
+  hat = sta - hat;
+  
+  var ste = document.createAttribute("style");
+  ste.value = "color:red;font-size:medium;font-family:calibri";
+ 
+  
+  if (now2 < 0) {
+	document.getElementById("starth").innerHTML = "Die Startzeit kann nicht in der Vergangenheit liegen.";
+  } else if (hat > 2700000) {
+    document.getElementById("starth").innerHTML = "Die Startzeit muss innerhalb von 45 Minuten nach der Schlüpfzeit sein."
+  } else if (hat > 2400000) {
+	ste.value = "color:black;font-size:medium;font-family:calibri";
+    document.getElementById("starth").innerHTML = "Der Raidboss hat weniger als 5 Minuten Restzeit bei dieser Startzeit.";
+  } else if (hat < 0) {
+	document.getElementById("starth").innerHTML = "Die Startzeit kann nicht vor der Schlüpfzeit sein.";
+  } else {
+    document.getElementById("starth").innerHTML = "";
+  }
+  
+  document.getElementById("starth").setAttributeNode(ste);
+}
+  
 function checkEx(ext) {
   return ext == document.getElementById("gym").value;
 }
