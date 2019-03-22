@@ -13,13 +13,12 @@ div.dis {
 </style>
 </head>
 <body>
-
 <div id="title" style="font-size:150%;font-weight:bold;margin-top:15px;">Gesundbrunnen Raid Beta</div><br>
 
 Language:
 <select id="lang" style="font-size:100%;font-family:calibri" onchange="changeLang()">
-  <option value="">Deutsch</option>
-  <option value="https://kimahree.github.io/en/">English</option>
+  <option value="">English</option>
+  <option value="https://kimahree.github.io/">Deutsch</option>
 </select> <br> <br>
 
 Raid:
@@ -29,19 +28,19 @@ Raid:
   <option disabled></option>
   <option style="font-style:italic">4er</option>
   <option>Absol</option>
-  <option>Alola-Knogga</option>
-  <option>Despotar</option>
-  <option>Sarzenia</option>
-  <option>Tengulist</option>
+  <option label="Alolan Marowak">Alola-Knogga</option>
+  <option label="Shiftry">Tengulist</option>
+  <option label="Tyranitar">Despotar</option>
+  <option label="Victreebel">Sarzenia</option>
 </select>
 
 <br><br>
-Arena:
+Gym:
 <input id="gym" list="gyms" style="font-size:100%;font-family:calibri" size="30">
 <datalist id="gyms" >
   <option value="1892 Historisches Gebäude">
   <option value="AEG Beamtentor">
-  <option label="EX-Raid Arena" value="Amtsgericht Wedding">
+  <option label="EX-Raid Gym" value="Amtsgericht Wedding">
   <option label="S-Bahnhof Humboldthain" value="Bahnhof Humboldthain">
   <option value="Bahnsteig S-Bahnhof Gesundbrunnen">
   <option value="Balance On The Globe">
@@ -53,8 +52,8 @@ Arena:
   <option label="U Voltastr." value="Brunnenstraße">
   <option value="Bunker Humboldthain">
   <option value="Drei-Säulen-Brunnen">
-  <option label="Friedhof / Kirchhof"value="Eingangstor St. Elisabeth">
-  <option label="EX-Raid Arena" value="Ente">
+  <option label="cemetery / graveyard"value="Eingangstor St. Elisabeth">
+  <option label="EX-Raid Gym" value="Ente">
   <option value="Ernst Reuter Büste">
   <option value="Ev. Stephanus Kirche">
   <option value="Gedenkstein Opfer der Berliner Mauer">
@@ -62,11 +61,11 @@ Arena:
   <option value="Haus Graffiti">
   <option value="Hausmalerei">
   <option value="Hauswächter">
-  <option label="EX-Raid Arena" value="Hippo Fountain">
+  <option label="EX-Raid Gym" value="Hippo Fountain">
   <option value="Humboldtpark">
   <option label="Bellermannstr." value="Jungfräulich Maria St.">
   <option value="Jux und Tollerei">
-  <option label="EX-Raid Arena" value="Kamel">
+  <option label="EX-Raid Gym" value="Kamel">
   <option value="Kulturverein Christiana">
   <option value="Mother Statue">
   <option value="Portal zur Kaiser Wilhelm und Augusta Stiftung">
@@ -74,29 +73,29 @@ Arena:
   <option value="S-Bahnhof Bornholmer Straße">
   <option value="Shadow People">
   <option value="Springbrunnen am Rathaus">
-  <option label="EX-Raid Arena" value="St. Sebastian-Kirche">
-  <option label="Jüdisches Krankenhaus" value="Stolpersteine Georg und Rudolf Juliusburger">
+  <option label="EX-Raid Gym" value="St. Sebastian-Kirche">
+  <option label="Jewish hospital" value="Stolpersteine Georg und Rudolf Juliusburger">
   <option value="Swinemünder Brücke">
   <option value="The Real Old Mechanical Door">
   <option value="U-Bahnhof Osloer Straße">
   <option value="Vergessene Brücke">
   <option label="Hotel" value="Wyndham Garden Entrance Relief">
-  <option label="EX-Raid Arena" value="Zwillingsstatue">
+  <option label="EX-Raid Gym" value="Zwillingsstatue">
 </datalist>
 <br><br>
 
-Schlüpfzeit:
+Hatch time:
 <input type="time" id="time" style="font-size:100%;font-family:calibri" oninput="checkHatchTime()"></input><div id="timeh" style="color:red;font-size:medium;font-family:calibri"></div>
 <br>
 
-Startzeit:
+Start time:
 <input type="time" id="start" style="font-size:100%;font-family:calibri" oninput="checkStartTime()"></input><div id="starth" style="color:red;font-size:medium;font-family:calibri"></div>
 
 <br>
 Teilnehmer: <br>
 <textarea id="player" rows="3" cols="30" style="font-size:100%;font-family:calibri"></textarea>
 
-<br><br>Drücke auf "Start!", überprüfe ob deine Angaben stimmen und drücke dann auf "In WhatsApp Posten".<br><br>
+<br><br>Press "Start!", check your data and then press "Post in WhatsApp".<br><br>
 
 <button onclick="generateRaid()" style="font-size:100%;font-family:calibri">Start!</button>
 
@@ -236,7 +235,7 @@ function generateRaid() {
   btt2.value = "font-size:100%;font-family:calibri";
   bu.setAttributeNode(btt2);
   
-  var bt = document.createTextNode("In WhatsApp Posten");
+  var bt = document.createTextNode("Post in WhatsApp");
   bu.appendChild(bt);
   
   document.getElementById("but").appendChild(bu);
@@ -249,11 +248,11 @@ function checkHatchTime() {
   hat2 = hat - hat2;
   hat2 = hatch - hat2;
   if (hatch < 21600000) {
-    document.getElementById("timeh").innerHTML = "Raids schlüpfen nicht vor 6 Uhr.";
+    document.getElementById("timeh").innerHTML = "Raids don't hatch before 6:00.";
   } else if (hatch > 75600000) {
-    document.getElementById("timeh").innerHTML = "Raids schlüpfen nicht nach 21 Uhr.";
+    document.getElementById("timeh").innerHTML = "Raids don't hatch after 21:00.";
   } else if (hat2 < -2700000) {
-    document.getElementById("timeh").innerHTML = "Dieser Raid ist bereits abgelaufen.";
+    document.getElementById("timeh").innerHTML = "This raid has already expired.";
   } else {
     document.getElementById("timeh").innerHTML = "";
   }
@@ -273,14 +272,14 @@ function checkStartTime() {
  
   
   if (now2 < 0) {
-	document.getElementById("starth").innerHTML = "Die Startzeit kann nicht in der Vergangenheit liegen.";
+	document.getElementById("starth").innerHTML = "The start time cannot be in the past.";
   } else if (hat > 2700000) {
-    document.getElementById("starth").innerHTML = "Die Startzeit muss innerhalb von 45 Minuten nach der Schlüpfzeit sein."
+    document.getElementById("starth").innerHTML = "The start time has to be within 45 minutes after the hatch time."
   } else if (hat > 2400000) {
 	ste.value = "color:black;font-size:medium;font-family:calibri";
-    document.getElementById("starth").innerHTML = "Der Raidboss hat weniger als 5 Minuten Restzeit bei dieser Startzeit.";
+    document.getElementById("starth").innerHTML = "There will be less than 5 minutes remaining at this start time.";
   } else if (hat < 0) {
-	document.getElementById("starth").innerHTML = "Die Startzeit kann nicht vor der Schlüpfzeit sein.";
+	document.getElementById("starth").innerHTML = "You cannot start a raid before it hatches.";
   } else {
     document.getElementById("starth").innerHTML = "";
   }
@@ -290,6 +289,10 @@ function checkStartTime() {
   
 function checkEx(ext) {
   return ext == document.getElementById("gym").value;
+}
+
+function changeLang() {
+  window.location = document.getElementById("lang").value;
 }
 </script>
 
