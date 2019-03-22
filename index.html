@@ -97,7 +97,7 @@ Startzeit:
 Teilnehmer: <br>
 <textarea id="player" rows="3" cols="30" style="font-size:100%;font-family:calibri"></textarea>
 
-<br><br>Drücke auf "Start!", überprüfe ob deine Angaben stimmen und drücke dann auf "In WhatsApp Posten".<br><br>
+<br><br>Drücke auf "Start!", überprüfe deine Angaben und drücke dann auf "In WhatsApp posten".<br><br>
 
 <button onclick="generateRaid()" style="font-size:100%;font-family:calibri">Start!</button>
 
@@ -237,7 +237,7 @@ function generateRaid() {
   btt2.value = "font-size:100%;font-family:calibri";
   bu.setAttributeNode(btt2);
   
-  var bt = document.createTextNode("In WhatsApp Posten");
+  var bt = document.createTextNode("In WhatsApp posten");
   bu.appendChild(bt);
   
   document.getElementById("but").appendChild(bu);
