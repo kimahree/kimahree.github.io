@@ -10,6 +10,7 @@ body {
 div.dis {
 	font-size: 75%;
 }
+
 </style>
 </head>
 <body>
@@ -249,11 +250,11 @@ function checkHatchTime() {
   hat2 = hat - hat2;
   hat2 = hatch - hat2;
   if (hatch < 21600000) {
-    document.getElementById("timeh").innerHTML = "Raids schlüpfen nicht vor 6 Uhr.";
+    document.getElementById("timeh").innerHTML = '<span style="font-size:12px">Raids schlüpfen nicht vor 6 Uhr.</span>';
   } else if (hatch > 75600000) {
-    document.getElementById("timeh").innerHTML = "Raids schlüpfen nicht nach 21 Uhr.";
+    document.getElementById("timeh").innerHTML = '<span style="font-size:12px">Raids schlüpfen nicht nach 21 Uhr.</span>';
   } else if (hat2 < -2700000) {
-    document.getElementById("timeh").innerHTML = "Dieser Raid ist bereits abgelaufen.";
+    document.getElementById("timeh").innerHTML = '<span style="font-size:12px">Dieser Raid ist bereits abgelaufen.</span>';
   } else {
     document.getElementById("timeh").innerHTML = "";
   }
@@ -268,24 +269,24 @@ function checkStartTime() {
   now2 = sta - now2;
   hat = sta - hat;
   
-  var ste = document.createAttribute("style");
-  ste.value = "color:red;font-size:medium;font-family:calibri";
+  // var ste = document.createAttribute("style");
+  // ste.value = "color:red;font-size:medium;font-family:calibri";
  
   
   if (now2 < 0) {
-	document.getElementById("starth").innerHTML = "Die Startzeit kann nicht in der Vergangenheit liegen.";
+	document.getElementById("starth").innerHTML = '<span style="font-size:12px">Die Startzeit kann nicht in der Vergangenheit liegen.</span>';
   } else if (hat > 2700000) {
-    document.getElementById("starth").innerHTML = "Die Startzeit muss innerhalb von 45 Minuten nach der Schlüpfzeit sein."
+    document.getElementById("starth").innerHTML = '<span style="font-size:12px">Die Startzeit muss innerhalb von 45 Minuten nach der Schlüpfzeit sein.</span>';
   } else if (hat > 2400000) {
-	ste.value = "color:black;font-size:medium;font-family:calibri";
-    document.getElementById("starth").innerHTML = "Der Raidboss hat weniger als 5 Minuten Restzeit bei dieser Startzeit.";
+	// ste.value = "color:black;font-size:medium;font-family:calibri";
+    document.getElementById("starth").innerHTML = '<span style="font-size:12px;color:black">Der Raidboss hat weniger als 5 Minuten Restzeit bei dieser Startzeit.</span>';
   } else if (hat < 0) {
-	document.getElementById("starth").innerHTML = "Die Startzeit kann nicht vor der Schlüpfzeit sein.";
+	document.getElementById("starth").innerHTML = '<span style="font-size:12px">Die Startzeit kann nicht vor der Schlüpfzeit sein.</span>';
   } else {
     document.getElementById("starth").innerHTML = "";
   }
   
-  document.getElementById("starth").setAttributeNode(ste);
+  // document.getElementById("starth").setAttributeNode(ste);
 }
   
 function checkEx(ext) {

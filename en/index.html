@@ -248,11 +248,11 @@ function checkHatchTime() {
   hat2 = hat - hat2;
   hat2 = hatch - hat2;
   if (hatch < 21600000) {
-    document.getElementById("timeh").innerHTML = "Raids don't hatch before 6:00.";
+    document.getElementById("timeh").innerHTML = '<span style="font-size:12px">Raids do not hatch before 6:00.</span>';
   } else if (hatch > 75600000) {
-    document.getElementById("timeh").innerHTML = "Raids don't hatch after 21:00.";
+    document.getElementById("timeh").innerHTML = '<span style="font-size:12px">Raids do not hatch after 21:00.</span>';
   } else if (hat2 < -2700000) {
-    document.getElementById("timeh").innerHTML = "This raid has already expired.";
+    document.getElementById("timeh").innerHTML = '<span style="font-size:12px">This raid has already expired.</span>';
   } else {
     document.getElementById("timeh").innerHTML = "";
   }
@@ -272,14 +272,14 @@ function checkStartTime() {
  
   
   if (now2 < 0) {
-	document.getElementById("starth").innerHTML = "The start time cannot be in the past.";
+	document.getElementById("starth").innerHTML = '<span style="font-size:12px">The start time cannot be in the past.</span>';
   } else if (hat > 2700000) {
-    document.getElementById("starth").innerHTML = "The start time has to be within 45 minutes after the hatch time."
+    document.getElementById("starth").innerHTML = '<span style="font-size:12px">The start time has to be within 45 minutes after the hatch time.</span>';
   } else if (hat > 2400000) {
 	ste.value = "color:black;font-size:medium;font-family:calibri";
-    document.getElementById("starth").innerHTML = "There will be less than 5 minutes remaining at this start time.";
+    document.getElementById("starth").innerHTML = '<span style="font-size:12px;color:black">There will be less than 5 minutes remaining at this start time.</span>';
   } else if (hat < 0) {
-	document.getElementById("starth").innerHTML = "You cannot start a raid before it hatches.";
+	document.getElementById("starth").innerHTML = '<span style="font-size:12px">You cannot start a raid before it hatches.</span>';
   } else {
     document.getElementById("starth").innerHTML = "";
   }
