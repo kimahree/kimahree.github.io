@@ -85,13 +85,13 @@ Gym:
 <br><br>
 
 Hatch time:
-<input type="time" id="time" style="font-size:100%;font-family:calibri" oninput="checkHatchTime()"></input><div id="timeh" style="color:red;font-size:medium;font-family:calibri"></div>
-<br>
+<input type="time" id="time" style="font-size:100%;font-family:calibri;margin-right:10px" oninput="checkHatchTime()"></input><span id="timeh" style="color:red;font-family:calibri"></span>
+<br><br>
 
 Start time:
-<input type="time" id="start" style="font-size:100%;font-family:calibri" oninput="checkStartTime()"></input><div id="starth" style="color:red;font-size:medium;font-family:calibri"></div>
+<input type="time" id="start" style="font-size:100%;font-family:calibri;margin-right:10px" oninput="checkStartTime()"></input><span id="starth" style="color:red;font-family:calibri"></span>
 
-<br>
+<br><br>
 Teilnehmer: <br>
 <textarea id="player" rows="3" cols="30" style="font-size:100%;font-family:calibri"></textarea>
 
@@ -248,11 +248,11 @@ function checkHatchTime() {
   hat2 = hat - hat2;
   hat2 = hatch - hat2;
   if (hatch < 21600000) {
-    document.getElementById("timeh").innerHTML = '<span style="font-size:12px">Raids do not hatch before 6:00.</span>';
+    document.getElementById("timeh").innerHTML = '<span style="font-size:20px">Raids do not hatch before 6:00.</span>';
   } else if (hatch > 75600000) {
-    document.getElementById("timeh").innerHTML = '<span style="font-size:12px">Raids do not hatch after 21:00.</span>';
+    document.getElementById("timeh").innerHTML = '<span style="font-size:20px">Raids do not hatch after 21:00.</span>';
   } else if (hat2 < -2700000) {
-    document.getElementById("timeh").innerHTML = '<span style="font-size:12px">This raid has already expired.</span>';
+    document.getElementById("timeh").innerHTML = '<span style="font-size:20px">This raid has already expired.</span>';
   } else {
     document.getElementById("timeh").innerHTML = "";
   }
@@ -272,14 +272,14 @@ function checkStartTime() {
  
   
   if (now2 < 0) {
-	document.getElementById("starth").innerHTML = '<span style="font-size:12px">The start time cannot be in the past.</span>';
+	document.getElementById("starth").innerHTML = '<span style="font-size:20px">The start time cannot be in the past.</span>';
   } else if (hat > 2700000) {
-    document.getElementById("starth").innerHTML = '<span style="font-size:12px">The start time has to be within 45 minutes after the hatch time.</span>';
+    document.getElementById("starth").innerHTML = '<span style="font-size:20px">The start time has to be within 45 minutes after the hatch time.</span>';
   } else if (hat > 2400000) {
 	ste.value = "color:black;font-size:medium;font-family:calibri";
-    document.getElementById("starth").innerHTML = '<span style="font-size:12px;color:black">There will be less than 5 minutes remaining at this start time.</span>';
+    document.getElementById("starth").innerHTML = '<span style="font-size:20px;color:black">There will be less than 5 minutes remaining at this start time.</span>';
   } else if (hat < 0) {
-	document.getElementById("starth").innerHTML = '<span style="font-size:12px">You cannot start a raid before it hatches.</span>';
+	document.getElementById("starth").innerHTML = '<span style="font-size:20px">You cannot start a raid before it hatches.</span>';
   } else {
     document.getElementById("starth").innerHTML = "";
   }
