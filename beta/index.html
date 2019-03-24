@@ -7,41 +7,69 @@ body {
 	font-family: calibri;
 	font-size: x-large;
 }
-div.dis {
-	font-size: 75%;
+input.normal {
+	font-size: 100%;
+	font-family: calibri;
+	margin-right: 10px;
+}
+select.normal {
+	font-size: 100%;
+	font-family: calibri;
+}
+span.title {
+	font-size: 150%;
+	font-weight: bold;
+	margin-top: 15px;
+}
+span.warnbl {
+	color: black;
+}
+span.warning {
+	color: red;
+}
+span.dis {
+	font-size: medium;
+	margin-top: 15px;
+}
+button.normal {
+	font-size: 100%;
+	font-family: calibri;
 }
 </style>
 </head>
 <body>
 
-<div id="title" style="font-size:150%;font-weight:bold;margin-top:15px;">Gesundbrunnen Raid Beta</div><br>
+<span class="title" id="title">Gesundbrunnen Raid Beta</span><br><br>
 
-Achtung, dies ist die Beta Seite. Funktionen sind eventuell beeinträchtigt und fehlerhaft. <br>
-Attention, you're currently on the beta page. Functionality might be compromised and bugged. <br>
-<br>
-<a href="https://kimahree.github.io/">Zur Hauptseite / To the main site</a><br><br>
+<span class="normal" id="txt_beta">Achtung, dies ist die Beta Seite. Funktionen sind eventuell beeinträchtigt und fehlerhaft.</span><br>
 
-Language:
-<select id="lang" style="font-size:100%;font-family:calibri" onchange="changeLang()">
-  <option value="">Deutsch</option>
-  <option value="https://kimahree.github.io/en/">English</option>
+<span class="normal"><a id="txt_mainlink" href="https://kimahree.github.io/">Zur Hauptseite</a></span><br><br>
+
+<span id="txt_lang">Sprache:</span>
+<select class="normal" id="lang" onchange="changeLang()">
+  <option value="de">Deutsch</option>
+  <option value="en">English</option>
 </select> <br> <br>
 
 Raid:
-<select id="raid" style="font-size:100%;font-family:calibri">
+<select class="normal" id="raid">
   <option disabled style="font-style:italic">5er</option>
-  <option>Dialga</option>
+  <option id="t5_1">Dialga</option>
+  <option hidden id="t5_2"></option>
+  <option hidden id="t5_3"></option>
+  <option hidden id="t5_4"></option>
+  <option hidden id="t5_5"></option>
   <option disabled></option>
   <option style="font-style:italic">4er</option>
-  <option>Absol</option>
-  <option>Alola-Knogga</option>
-  <option>Despotar</option>
-  <option>Sarzenia</option>
-  <option>Tengulist</option>
+  <option id="t4_1">Absol</option>
+  <option id="t4_2">Alola-Knogga</option>
+  <option id="t4_3">Despotar</option>
+  <option id="t4_4">Sarzenia</option>
+  <option id="t4_5">Tengulist</option>
 </select>
 
 <br><br>
-Arena:
+<span id="txt_gym">Arena:</span>
 <input id="gym" list="gyms" style="font-size:100%;font-family:calibri" size="30">
 <datalist id="gyms" >
   <option value="1892 Historisches Gebäude">
@@ -90,32 +118,82 @@ Arena:
 </datalist>
 <br><br>
 
-Schlüpfzeit:
-<input type="time" id="time" style="font-size:100%;font-family:calibri" oninput="checkHatchTime()"></input><div id="timeh" style="color:red;font-size:medium;font-family:calibri"></div>
-<br>
+<span id="txt_hatch">Schlüpfzeit:</span>
+<input type="time" class="normal" id="time" oninput="checkHatchTime()"></input><span class="warning" id="timeh"></span>
+<br><br>
 
-Startzeit:
-<input type="time" id="start" style="font-size:100%;font-family:calibri" oninput="checkStartTime()"></input><div id="starth" style="color:red;font-size:medium;font-family:calibri"></div>
+<span id="txt_start">Startzeit:</span>
+<input type="time" class="normal" id="start" oninput="checkStartTime()"></input><span class="warning" id="starth"></span>
+<br><br>
 
-<br>
-Teilnehmer: <br>
+<span id="txt_player">Teilnehmer:</span><br>
 <textarea id="player" rows="3" cols="30" style="font-size:100%;font-family:calibri"></textarea>
+<br><br>
 
-<br><br>Drücke auf "Start!", überprüfe ob deine Angaben stimmen und drücke dann auf "In WhatsApp Posten".<br><br>
+<span id="txt_instr">Drücke auf "Start!", überprüfe deine Angaben und drücke dann auf "In WhatsApp posten".</span><br><br>
 
-<button onclick="generateRaid()" style="font-size:100%;font-family:calibri">Start!</button>
+<span id="starter"><button class="normal" onclick='generateRaid("")'>Start!</button></span>
+<span hidden=true id="addRaid"><button class="normal" onclick="addRaid()">Multiraid!</button></span>
+<span id="raidwarn" class="warning"></span>
 
 <br><br>
-<div id="ex" style="font-size:medium;"></div>
-<br>
-<!--div id="demo"></div>
-<br-->
-<div id="but"></div>
-<br>
+<span id="ex"></span>
+<br><br>
+<span id="but"></span>
+<br><br>
 
-<div class="dis" style="font-size:medium;">Made by kimahree. This website is not affiliated with Niantic or Nintendo.<br>Pokémon And All Respective Names are Trademark & © of Nintendo 1996-2019.</div>
+<span class="dis">Made by kimahree. This website is not affiliated with Niantic or Nintendo.<br>Pokémon And All Respective Names are Trademark & © of Nintendo 1996-2019.</span>
 
 <script>
+var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_instr"];
+
+var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beeinträchtigt und fehlerhaft.",
+"Zur Hauptseite",
+"Sprache:",
+"Arena:",
+"Schlüpfzeit:",
+"Startzeit:",
+"Teilnehmer:",
+'Drücke auf "Start!", überprüfe deine Angaben und drücke dann auf "In WhatsApp posten".'
+];
+
+var txt_en = ["Attention, you're currently on the beta page. Functionality might be compromised and bugged.",
+"To the main site",
+"Language:",
+"Gym:",
+"Hatch time:",
+"Start time:",
+"Participants:",
+'Press "Start!", check your data and then press "Post in WhatsApp".'
+];
+
+var hatchwarn = 0;
+var startwarn = 0;
+
+var warn_de =["",
+"Raids schlüpfen nicht vor 6 Uhr.",
+"Raids schlüpfen nicht nach 21 Uhr.",
+"Dieser Raid ist bereits abgelaufen.",
+"Die Startzeit kann nicht in der Vergangenheit liegen.",
+"Die Startzeit muss innerhalb von 45 Minuten nach der Schlüpfzeit sein.",
+"Der Raidboss hat weniger als 5 Minuten Restzeit bei dieser Startzeit.",
+"Die Startzeit kann nicht vor der Schlüpfzeit sein.",
+"Du hast die maximale Anzahl an Raids für einen Multiraid erreicht."
+];
+
+var warn_en =["",
+"Raids do not hatch before 6:00.",
+"Raids do not hatch after 21:00.",
+"This raid has already expired.",
+"The start time cannot be in the past.",
+"The start time has to be within 45 minutes after the hatch time.",
+"There will be less than 5 minutes remaining at this start time.",
+"You cannot start a raid before it hatches.",
+"You have reached the maximum amount of raids for a multiraid."
+];
+
+var raid_de = ["5er","Dialga","","","","","","4er","Absol","Alola-Knogga","Despotar","Sarzenia","Tengulist"];
+var raid_en = ["Tier 5","Dialga","","","","","","Tier 4","Absol","Alolan Marowak","Tyranitar","Victreebel","Shiftry"];
 
 var ex = ["Amtsgericht Wedding", "Ente", "Hippo Fountain", "Kamel", "St. Sebastian-Kirche", "Zwillingsstatue"];
 
@@ -163,14 +241,15 @@ var maps = [
 "https://goo.gl/maps/NTR2AcNt6pp",  // Vergessene Brücke
 "https://goo.gl/maps/o2XreJkiJTx",  // Wyndham Garden Entrance Relief
 "https://goo.gl/maps/q1rctADEE8q"   // Zwillingsstatue (EX)
-]
+];
 
-function generateRaid() {
+var multi = 0;
+
+function generateRaid(raidtext) {
   document.getElementById("ex").innerHTML = "";
-  //document.getElementById("demo").innerHTML = "";
   document.getElementById("but").innerHTML = "";
 
-  var text = ""
+  var text = raidtext;
   var gym = document.getElementById("gym").value;
   var raid = document.getElementById("raid").value;
   var time = document.getElementById("time").value;
@@ -178,6 +257,24 @@ function generateRaid() {
   var diff = (document.getElementById("start").valueAsNumber - document.getElementById("time").valueAsNumber) / 60000;
   var player = document.getElementById("player").value;
   player = player.replace(/\n/g,"<br>")
+  
+  if (multi == 2) {
+	text = "🚨 <b>DOPPELRAID</b> 🚨<br>" + text;
+  }
+  
+  if (multi == 3) {
+	text = text.replace("DOPPELRAID","TRIPLERAID");
+  }
+  
+  if (multi == 4) {
+	text = text.replace("TRIPLERAID","QUADRUPLERAID");
+  }
+  
+  if (multi > 4) {
+	text = text.replace("🚨 <b>QUADRUPLERAID</b> 🚨","🚂 <b>RAID-TRAIN</b> 🚂");
+  }
+  
+  
   
   if (ex.find(checkEx)) {
     text = text + "🎗 <b>EX-Raid Arena</b> 🎗 <br>";
@@ -209,27 +306,6 @@ function generateRaid() {
   text2 = text2.replace(/<b>/g,"*");
   text2 = text2.replace(/<\/b>/g,"*");
   
-  /*var ta = document.createElement("TEXTAREA");
-  
-  var att1 = document.createAttribute("rows");
-  att1.value = "10";
-  ta.setAttributeNode(att1);
-  
-  var att2 = document.createAttribute("cols");
-  att2.value = "75";
-  ta.setAttributeNode(att2);
-  
-  var att3 = document.createAttribute("readonly");
-  ta.setAttributeNode(att3);
-  
-  var att4 = document.createAttribute("style");
-  att4.value = "font-size:100%;font-family:calibri";
-  ta.setAttributeNode(att4);
-  
-  ta.appendChild(document.createTextNode(text2));
-  
-  document.getElementById("demo").appendChild(ta);
-  */
   var n = encodeURIComponent(text2);
   var bu = document.createElement("BUTTON");
   
@@ -245,6 +321,32 @@ function generateRaid() {
   bu.appendChild(bt);
   
   document.getElementById("but").appendChild(bu);
+  
+  if (raidtext == "") { 
+	multi = 1;
+	var hid = document.getElementById("addRaid").getAttributeNode("hidden");
+	if (hid) {
+		document.getElementById("addRaid").removeAttributeNode(hid);
+		document.getElementById("raidwarn").innerHTML = "";
+	}
+  }
+}
+
+function addRaid() {
+  multi++;
+  var old = document.getElementById("ex").innerHTML + "<br><br>";
+  generateRaid(old);
+  if (multi >= 10) {
+	var dsbl = document.createAttribute("hidden");
+	dsbl.value = true;
+	document.getElementById("addRaid").setAttributeNode(dsbl);
+	if (getLang() == "de") {
+		document.getElementById("raidwarn").innerHTML = warn_de[8];
+	}
+	if (getLang() == "en") {
+		document.getElementById("raidwarn").innerHTML = warn_en[8];
+	}
+  }
 }
 
 function checkHatchTime() {
@@ -254,14 +356,22 @@ function checkHatchTime() {
   hat2 = hat - hat2;
   hat2 = hatch - hat2;
   if (hatch < 21600000) {
-    document.getElementById("timeh").innerHTML = "Raids schlüpfen nicht vor 6 Uhr.";
+	hatchwarn = 1;
   } else if (hatch > 75600000) {
-    document.getElementById("timeh").innerHTML = "Raids schlüpfen nicht nach 21 Uhr.";
+    hatchwarn = 2;
   } else if (hat2 < -2700000) {
-    document.getElementById("timeh").innerHTML = "Dieser Raid ist bereits abgelaufen.";
+    hatchwarn = 3;
   } else {
-    document.getElementById("timeh").innerHTML = "";
+    hatchwarn = 0;
   }
+  
+  if (getLang() == "de") {
+	document.getElementById("timeh").innerHTML = '<span style="font-size:20px">'+warn_de[hatchwarn]+'</span>';
+  }
+  if (getLang() == "en") {
+	document.getElementById("timeh").innerHTML = '<span style="font-size:20px">'+warn_en[hatchwarn]+'</span>';
+  }
+  
 }
 
 function checkStartTime() {
@@ -273,23 +383,29 @@ function checkStartTime() {
   now2 = sta - now2;
   hat = sta - hat;
   
-  var ste = document.createAttribute("style");
-  ste.value = "color:red;font-size:medium;font-family:calibri";
+  var ste = document.createAttribute("class");
+  ste.value = "warning";
  
   
   if (now2 < 0) {
-	document.getElementById("starth").innerHTML = "Die Startzeit kann nicht in der Vergangenheit liegen.";
+	startwarn = 4;
   } else if (hat > 2700000) {
-    document.getElementById("starth").innerHTML = "Die Startzeit muss innerhalb von 45 Minuten nach der Schlüpfzeit sein."
+    startwarn = 5;
   } else if (hat > 2400000) {
-	ste.value = "color:black;font-size:medium;font-family:calibri";
-    document.getElementById("starth").innerHTML = "Der Raidboss hat weniger als 5 Minuten Restzeit bei dieser Startzeit.";
+	ste.value = "warnbl";
+    startwarn = 6;
   } else if (hat < 0) {
-	document.getElementById("starth").innerHTML = "Die Startzeit kann nicht vor der Schlüpfzeit sein.";
+	startwarn = 7;
   } else {
-    document.getElementById("starth").innerHTML = "";
+    startwarn = 0;
   }
   
+  if (getLang() == "de") {
+	document.getElementById("starth").innerHTML = '<span style="font-size:20px">'+warn_de[startwarn]+'</span>';
+  }
+  if (getLang() == "en") {
+	document.getElementById("starth").innerHTML = '<span style="font-size:20px">'+warn_en[startwarn]+'</span>';
+  }
   document.getElementById("starth").setAttributeNode(ste);
 }
   
@@ -298,7 +414,38 @@ function checkEx(ext) {
 }
 
 function changeLang() {
-  window.location = document.getElementById("lang").value;
+  var i
+  if (getLang() == "de") {
+	for (i = 0; i < txtid.length; i++) {
+		document.getElementById(txtid[i]).innerHTML = txt_de[i];
+	}
+	for (i = 0; i < raid_de.length; i++) {
+		if (raid_en[i] != raid_de[i]) {
+			var lab = document.getElementById("raid").options[i].getAttributeNode("label");
+			document.getElementById("raid").options[i].removeAttributeNode(lab);
+		}
+	}
+	document.getElementById("timeh").innerHTML = '<span style="font-size:20px">'+warn_de[hatchwarn]+'</span>';
+	document.getElementById("starth").innerHTML = '<span style="font-size:20px">'+warn_de[startwarn]+'</span>';
+  }
+  if (getLang() == "en") {
+	for (i = 0; i < txtid.length; i++) {
+		document.getElementById(txtid[i]).innerHTML = txt_en[i];
+	}	
+	for (i = 0; i < raid_en.length; i++) {
+		if (raid_en[i] != raid_de[i]) {
+			var lab = document.createAttribute("label");
+			lab.value = raid_en[i];
+			document.getElementById("raid").options[i].setAttributeNode(lab);
+		}
+	}
+	document.getElementById("timeh").innerHTML = '<span style="font-size:20px">'+warn_en[hatchwarn]+'</span>';
+	document.getElementById("starth").innerHTML = '<span style="font-size:20px">'+warn_en[startwarn]+'</span>';
+  }
+}
+
+function getLang() {
+	return document.getElementById("lang").value;
 }
 
 </script>
