@@ -145,7 +145,7 @@ Raid:
 <span class="dis">Made by kimahree. This website is not affiliated with Niantic or Nintendo.<br>Pokémon And All Respective Names are Trademark & © of Nintendo 1996-2019.</span>
 
 <script>
-var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_instr"];
+var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_instr","txt_button"];
 
 var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beeinträchtigt und fehlerhaft.",
 "Zur Hauptseite",
@@ -154,7 +154,8 @@ var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beein
 "Schlüpfzeit:",
 "Startzeit:",
 "Teilnehmer:",
-'Drücke auf "Start!", überprüfe deine Angaben und drücke dann auf "In WhatsApp posten".'
+'Drücke auf "Start!", überprüfe deine Angaben und drücke dann auf "In WhatsApp posten".',
+"In WhatsApp posten"
 ];
 
 var txt_en = ["Attention, you're currently on the beta page. Functionality might be compromised and bugged.",
@@ -164,11 +165,13 @@ var txt_en = ["Attention, you're currently on the beta page. Functionality might
 "Hatch time:",
 "Start time:",
 "Participants:",
-'Press "Start!", check your data and then press "Post in WhatsApp".'
+'Press "Start!", check your data and then press "Post in WhatsApp".',
+"Post in WhatsApp"
 ];
 
 var hatchwarn = 0;
 var startwarn = 0;
+var raidwarn = 0;
 
 var warn_de =["",
 "Raids schlüpfen nicht vor 6 Uhr.",
@@ -178,7 +181,8 @@ var warn_de =["",
 "Die Startzeit muss innerhalb von 45 Minuten nach der Schlüpfzeit sein.",
 "Der Raidboss hat weniger als 5 Minuten Restzeit bei dieser Startzeit.",
 "Die Startzeit kann nicht vor der Schlüpfzeit sein.",
-"Du hast die maximale Anzahl an Raids für einen Multiraid erreicht."
+"Du hast die maximale Anzahl an Raids für einen Multiraid erreicht.",
+"Bitte wähle eine Arena aus."
 ];
 
 var warn_en =["",
@@ -189,7 +193,8 @@ var warn_en =["",
 "The start time has to be within 45 minutes after the hatch time.",
 "There will be less than 5 minutes remaining at this start time.",
 "You cannot start a raid before it hatches.",
-"You have reached the maximum amount of raids for a multiraid."
+"You have reached the maximum amount of raids for a multiraid.",
+"Please choose a gym."
 ];
 
 var raid_de = ["5er","Dialga","","","","","","4er","Absol","Alola-Knogga","Despotar","Sarzenia","Tengulist"];
@@ -251,6 +256,18 @@ function generateRaid(raidtext) {
 
   var text = raidtext;
   var gym = document.getElementById("gym").value;
+  
+  if (!gym) {
+    raidwarn = 9;
+	if (getLang() == "de") {
+		document.getElementById("raidwarn").innerHTML = warn_de[9];
+	}
+	if (getLang() == "en") {
+		document.getElementById("raidwarn").innerHTML = warn_en[9];
+	}
+	return;
+  }
+  
   var raid = document.getElementById("raid").value;
   var time = document.getElementById("time").value;
   var start = document.getElementById("start").value;
@@ -267,11 +284,11 @@ function generateRaid(raidtext) {
   }
   
   if (multi == 4) {
-	text = text.replace("TRIPLERAID","QUADRUPLERAID");
+	text = text.replace("🚨 <b>TRIPLERAID</b> 🚨","🚂 <b>RAID-TRAIN</b> 🚂");
   }
   
-  if (multi > 4) {
-	text = text.replace("🚨 <b>QUADRUPLERAID</b> 🚨","🚂 <b>RAID-TRAIN</b> 🚂");
+  if (multi == 7) {
+	text = text.replace("RAID-TRAIN","CRAZY RAID-TRAIN");
   }
   
   
@@ -313,11 +330,20 @@ function generateRaid(raidtext) {
   btt1.value = "location.href='https://api.whatsapp.com/send?text=" + n + "';";
   bu.setAttributeNode(btt1);
   
-  var btt2 = document.createAttribute("style");
-  btt2.value = "font-size:100%;font-family:calibri";
+  var btt2 = document.createAttribute("class");
+  btt2.value = "normal";
   bu.setAttributeNode(btt2);
   
-  var bt = document.createTextNode("In WhatsApp Posten");
+  var btt3 = document.createAttribute("id");
+  btt3.value = "txt_button";
+  bu.setAttributeNode(btt3);
+  
+  if (getLang() == "de") {
+	var bt = document.createTextNode(txt_de[8]);
+  }
+  if (getLang() == "en") {
+	var bt = document.createTextNode(txt_en[8]);
+  }
   bu.appendChild(bt);
   
   document.getElementById("but").appendChild(bu);
@@ -327,8 +353,12 @@ function generateRaid(raidtext) {
 	var hid = document.getElementById("addRaid").getAttributeNode("hidden");
 	if (hid) {
 		document.getElementById("addRaid").removeAttributeNode(hid);
-		document.getElementById("raidwarn").innerHTML = "";
 	}
+  }
+  
+  if (raidwarn != 0) {
+	raidwarn = 0;
+	document.getElementById("raidwarn").innerHTML = "";
   }
 }
 
@@ -337,6 +367,7 @@ function addRaid() {
   var old = document.getElementById("ex").innerHTML + "<br><br>";
   generateRaid(old);
   if (multi >= 10) {
+	raidwarn = 8;
 	var dsbl = document.createAttribute("hidden");
 	dsbl.value = true;
 	document.getElementById("addRaid").setAttributeNode(dsbl);
@@ -417,7 +448,9 @@ function changeLang() {
   var i
   if (getLang() == "de") {
 	for (i = 0; i < txtid.length; i++) {
-		document.getElementById(txtid[i]).innerHTML = txt_de[i];
+		try {
+			document.getElementById(txtid[i]).innerHTML = txt_de[i];
+		} catch {}
 	}
 	for (i = 0; i < raid_de.length; i++) {
 		if (raid_en[i] != raid_de[i]) {
@@ -427,10 +460,13 @@ function changeLang() {
 	}
 	document.getElementById("timeh").innerHTML = '<span style="font-size:20px">'+warn_de[hatchwarn]+'</span>';
 	document.getElementById("starth").innerHTML = '<span style="font-size:20px">'+warn_de[startwarn]+'</span>';
+	document.getElementById("raidwarn").innerHTML = warn_de[raidwarn];
   }
   if (getLang() == "en") {
 	for (i = 0; i < txtid.length; i++) {
-		document.getElementById(txtid[i]).innerHTML = txt_en[i];
+		try {
+			document.getElementById(txtid[i]).innerHTML = txt_en[i];
+		} catch {}
 	}	
 	for (i = 0; i < raid_en.length; i++) {
 		if (raid_en[i] != raid_de[i]) {
@@ -441,6 +477,7 @@ function changeLang() {
 	}
 	document.getElementById("timeh").innerHTML = '<span style="font-size:20px">'+warn_en[hatchwarn]+'</span>';
 	document.getElementById("starth").innerHTML = '<span style="font-size:20px">'+warn_en[startwarn]+'</span>';
+	document.getElementById("raidwarn").innerHTML = warn_en[raidwarn];
   }
 }
 
