@@ -35,6 +35,11 @@ button.normal {
 	font-size: 100%;
 	font-family: calibri;
 }
+button.bold {
+	font-size: 100%;
+	font-family: calibri;
+	font-weight: bold;
+}
 </style>
 </head>
 <body>
@@ -130,7 +135,8 @@ Raid:
 <textarea id="player" rows="3" cols="30" style="font-size:100%;font-family:calibri"></textarea>
 <br><br>
 
-<span id="txt_instr">Drücke auf "Start!", überprüfe deine Angaben und drücke dann auf "In WhatsApp posten".</span><br><br>
+<span id="txt_instr">Drücke auf "Start!", überprüfe deine Angaben und drücke dann auf "In WhatsApp posten".<br></span>
+<span hidden id="txt_multi">Um einen Multiraid zu posten, ändere jetzt die Angaben oben für den nächsten Raid und drücke dann auf "Multiraid!". Wiederhole dies, bis alle Raids eingetragen sind.<br></span><br>
 
 <span id="starter"><button class="normal" onclick='generateRaid("")'>Start!</button></span>
 <span hidden=true id="addRaid"><button class="normal" onclick="addRaid()">Multiraid!</button></span>
@@ -145,7 +151,7 @@ Raid:
 <span class="dis">Made by kimahree. This website is not affiliated with Niantic or Nintendo.<br>Pokémon And All Respective Names are Trademark & © of Nintendo 1996-2019.</span>
 
 <script>
-var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_instr","txt_button"];
+var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_instr","txt_button","txt_multi"];
 
 var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beeinträchtigt und fehlerhaft.",
 "Zur Hauptseite",
@@ -154,8 +160,9 @@ var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beein
 "Schlüpfzeit:",
 "Startzeit:",
 "Teilnehmer:",
-'Drücke auf "Start!", überprüfe deine Angaben und drücke dann auf "In WhatsApp posten".',
-"In WhatsApp posten"
+'Drücke auf "Start!", überprüfe deine Angaben und drücke dann auf "In WhatsApp posten".<br>',
+"In WhatsApp posten",
+'Um einen Multiraid zu posten, ändere jetzt die Angaben oben für den nächsten Raid und drücke dann auf "Multiraid!". Wiederhole dies, bis alle Raids eingetragen sind.<br>'
 ];
 
 var txt_en = ["Attention, you're currently on the beta page. Functionality might be compromised and bugged.",
@@ -165,8 +172,9 @@ var txt_en = ["Attention, you're currently on the beta page. Functionality might
 "Hatch time:",
 "Start time:",
 "Participants:",
-'Press "Start!", check your data and then press "Post in WhatsApp".',
-"Post in WhatsApp"
+'Press "Start!", check your data and then press "Post in WhatsApp".<br>',
+"Post in WhatsApp",
+'To post a Multiraid, change the data above for the next raid and then press "Multiraid!". Repeat until all raids have been added.<br>'
 ];
 
 var hatchwarn = 0;
@@ -331,7 +339,7 @@ function generateRaid(raidtext) {
   bu.setAttributeNode(btt1);
   
   var btt2 = document.createAttribute("class");
-  btt2.value = "normal";
+  btt2.value = "bold";
   bu.setAttributeNode(btt2);
   
   var btt3 = document.createAttribute("id");
@@ -353,6 +361,14 @@ function generateRaid(raidtext) {
 	var hid = document.getElementById("addRaid").getAttributeNode("hidden");
 	if (hid) {
 		document.getElementById("addRaid").removeAttributeNode(hid);
+	}
+	var hid1 = document.getElementById("txt_multi").getAttributeNode("hidden");
+	if (hid1) {
+		document.getElementById("txt_multi").removeAttributeNode(hid1);
+	}
+	if (!document.getElementById("txt_instr").getAttributeNode("hidden")) {
+		var hid2 = document.createAttribute("hidden");
+		document.getElementById("txt_instr").setAttributeNode(hid2);
 	}
   }
   
