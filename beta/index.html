@@ -333,9 +333,16 @@ function generateRaid(raidtext) {
   
   var gyms = document.getElementById("gyms");
   var i;
-  for (i=0; gyms.options[i].value != gym; i++) {}
+  for (i=0; gyms.options[i].value != gym; i++) {
+	if (i == (gyms.options.length - 1)) {
+		i++;
+		break;
+	}
+  }
   
-  text = text + "<br>" + maps[i];
+  if (i < gyms.options.length) {
+	text = text + "<br>" + maps[i];
+  }
   
   text = text + "<br><br><b>Start:</b> ";
    
