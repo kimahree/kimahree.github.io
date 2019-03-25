@@ -190,7 +190,8 @@ var warn_de =["",
 "Der Raidboss hat weniger als 5 Minuten Restzeit bei dieser Startzeit.",
 "Die Startzeit kann nicht vor der Schlüpfzeit sein.",
 "Du hast die maximale Anzahl an Raids für einen Multiraid erreicht.",
-"Bitte wähle eine Arena aus."
+"Bitte wähle eine Arena aus.",
+"Die Schlüpfzeit kann nicht mehr als eine Stunde in der Zukunft liegen."
 ];
 
 var warn_en =["",
@@ -202,7 +203,8 @@ var warn_en =["",
 "There will be less than 5 minutes remaining at this start time.",
 "You cannot start a raid before it hatches.",
 "You have reached the maximum amount of raids for a multiraid.",
-"Please choose a gym."
+"Please choose a gym.",
+"The hatch time must be within 1 hour from now."
 ];
 
 var raid_de = ["5er","Dialga","","","","","","4er","Absol","Alola-Knogga","Despotar","Sarzenia","Tengulist"];
@@ -425,6 +427,8 @@ function checkHatchTime() {
     hatchwarn = 2;
   } else if (hat2 < -2700000) {
     hatchwarn = 3;
+  } else if (hat2 > 3600000) {
+	hatchwarn = 10
   } else {
     hatchwarn = 0;
   }
