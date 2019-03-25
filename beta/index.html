@@ -273,6 +273,10 @@ function generateRaid(raidtext) {
 	if (getLang() == "en") {
 		document.getElementById("raidwarn").innerHTML = warn_en[9];
 	}
+	if (raidtext == "" && !document.getElementById("addRaid").getAttributeNode("hidden")) {
+	    var hid3 = document.createAttribute("hidden");
+		document.getElementById("addRaid").setAttributeNode(hid3);
+	}
 	return;
   }
   
@@ -282,6 +286,22 @@ function generateRaid(raidtext) {
   var diff = (document.getElementById("start").valueAsNumber - document.getElementById("time").valueAsNumber) / 60000;
   var player = document.getElementById("player").value;
   player = player.replace(/\n/g,"<br>")
+  
+  if (raidtext == "") { 
+	multi = 1;
+	var hid = document.getElementById("addRaid").getAttributeNode("hidden");
+	if (hid) {
+		document.getElementById("addRaid").removeAttributeNode(hid);
+	}
+	var hid1 = document.getElementById("txt_multi").getAttributeNode("hidden");
+	if (hid1) {
+		document.getElementById("txt_multi").removeAttributeNode(hid1);
+	}
+	if (!document.getElementById("txt_instr").getAttributeNode("hidden")) {
+		var hid2 = document.createAttribute("hidden");
+		document.getElementById("txt_instr").setAttributeNode(hid2);
+	}
+  }
   
   if (multi == 2) {
 	text = "🚨 <b>DOPPELRAID</b> 🚨<br>" + text;
@@ -355,22 +375,7 @@ function generateRaid(raidtext) {
   bu.appendChild(bt);
   
   document.getElementById("but").appendChild(bu);
-  
-  if (raidtext == "") { 
-	multi = 1;
-	var hid = document.getElementById("addRaid").getAttributeNode("hidden");
-	if (hid) {
-		document.getElementById("addRaid").removeAttributeNode(hid);
-	}
-	var hid1 = document.getElementById("txt_multi").getAttributeNode("hidden");
-	if (hid1) {
-		document.getElementById("txt_multi").removeAttributeNode(hid1);
-	}
-	if (!document.getElementById("txt_instr").getAttributeNode("hidden")) {
-		var hid2 = document.createAttribute("hidden");
-		document.getElementById("txt_instr").setAttributeNode(hid2);
-	}
-  }
+ 
   
   if (raidwarn != 0) {
 	raidwarn = 0;
@@ -380,8 +385,13 @@ function generateRaid(raidtext) {
 
 function addRaid() {
   multi++;
-  var old = document.getElementById("ex").innerHTML + "<br><br>";
+  var ol = document.getElementById("ex").innerHTML;
+  var old = ol + "<br><br>";
   generateRaid(old);
+  if (raidwarn != 0) {
+	multi--;
+	document.getElementById("ex").innerHTML = ol;
+  }
   if (multi >= 10) {
 	raidwarn = 8;
 	var dsbl = document.createAttribute("hidden");
