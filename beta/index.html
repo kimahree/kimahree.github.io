@@ -8,7 +8,7 @@ body {
 	font-size: x-large;
 }
 .normal {
-	font-size: 100%;
+	font-size: x-large;
 	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 	margin-right: 8px;
 }
@@ -58,8 +58,8 @@ Raid:
   <option id="t4_1">Absol</option>
   <option id="t4_2">Alola-Knogga</option>
   <option id="t4_3">Despotar</option>
-  <option id="t4_4">Sarzenia</option>
-  <option id="t4_5">Tengulist</option>
+  <option id="t4_4">Quappo</option>
+  <option id="t4_5">Rizeros</option>
 </select>
 
 <br><br>
@@ -338,7 +338,7 @@ function generateRaid(raidtext) {
   
   text = text + "<br><br><b>Start:</b> ";
    
-  if ((diff <= 45 && diff >= 0) || (time == "" && start != "")) {
+  if ((diff <= 45 && diff >= 0) || (time == "" && start != "") || document.getElementById("start").type == "text") {
 	text = text + start;
   } else {
     text = text + "?";
