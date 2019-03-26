@@ -4,17 +4,13 @@
 <head>
 <style>
 body {
-	font-family: calibri;
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 	font-size: x-large;
 }
-input.normal {
+.normal {
 	font-size: 100%;
-	font-family: calibri;
-	margin-right: 10px;
-}
-select.normal {
-	font-size: 100%;
-	font-family: calibri;
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	margin-right: 8px;
 }
 span.title {
 	font-size: 150%;
@@ -29,15 +25,8 @@ span.warning {
 }
 span.dis {
 	font-size: medium;
-	margin-top: 15px;
-}
-button.normal {
-	font-size: 100%;
-	font-family: calibri;
 }
 button.bold {
-	font-size: 100%;
-	font-family: calibri;
 	font-weight: bold;
 }
 </style>
@@ -75,7 +64,7 @@ Raid:
 
 <br><br>
 <span id="txt_gym">Arena:</span>
-<input id="gym" list="gyms" style="font-size:100%;font-family:calibri" size="30">
+<input id="gym" list="gyms" class="normal" size="30">
 <datalist id="gyms" >
   <option label="Historisches Haus" value="1892 Historisches Gebäude">
   <option value="AEG Beamtentor">
@@ -132,7 +121,7 @@ Raid:
 <br><br>
 
 <span id="txt_player">Teilnehmer:</span><br>
-<textarea id="player" rows="3" cols="30" style="font-size:100%;font-family:calibri"></textarea>
+<textarea id="player" rows="3" cols="30" class="normal"></textarea>
 <br><br>
 
 <span id="txt_instr">Drücke auf "Start!", überprüfe deine Angaben und drücke dann auf "In WhatsApp posten".<br></span>
@@ -150,6 +139,7 @@ Raid:
 
 <span class="dis">Made by kimahree. This website is not affiliated with Niantic or Nintendo.<br>Pokémon And All Respective Names are Trademark & © of Nintendo 1996-2019.</span>
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mfranzke/datalist-polyfill/datalist-polyfill.min.js"></script>
 <script>
 var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_instr","txt_button","txt_multi"];
 
@@ -207,8 +197,8 @@ var warn_en =["",
 "The hatch time must be within 1 hour from now."
 ];
 
-var raid_de = ["5er","Dialga","","","","","","4er","Absol","Alola-Knogga","Despotar","Sarzenia","Tengulist"];
-var raid_en = ["Tier 5","Dialga","","","","","","Tier 4","Absol","Alolan Marowak","Tyranitar","Victreebel","Shiftry"];
+var raid_de = ["5er","Dialga","","","","","","4er","Absol","Alola-Knogga","Despotar","Quappo","Rizeros"];
+var raid_en = ["Tier 5","Dialga","","","","","","Tier 4","Absol","Alolan Marowak","Tyranitar","Poliwrath","Rhydon"];
 
 var ex = ["Amtsgericht Wedding", "Ente", "Hippo Fountain", "Kamel", "St. Sebastian-Kirche", "Zwillingsstatue"];
 
@@ -368,7 +358,7 @@ function generateRaid(raidtext) {
   bu.setAttributeNode(btt1);
   
   var btt2 = document.createAttribute("class");
-  btt2.value = "bold";
+  btt2.value = "normal bold";
   bu.setAttributeNode(btt2);
   
   var btt3 = document.createAttribute("id");
