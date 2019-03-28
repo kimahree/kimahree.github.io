@@ -168,12 +168,12 @@
 <div class="form-row">
 <div class="form-group col mb-3">
 <label for="time" id="txt_hatch">Schlüpfzeit:</label>
-<input type="text" class="form-control timepicker" id="time" onchange="checkHatchTime()" autocomplete="off"></input>
+<input type="text" class="form-control timepicker" id="time" autocomplete="off"></input>
 <small class="form-text text-danger" id="timeh"></small>
 </div>
 <div class="form-group col mb-3">
 <label for="start" id="txt_start">Startzeit:</label>
-<input type="text" class="form-control timepicker" id="start" onchange="checkStartTime()" autocomplete="off"></input>
+<input type="text" class="form-control timepicker" id="start" autocomplete="off"></input>
 <small class="form-text text-danger" id="starth"></small>
 </div>
 </div>
@@ -468,95 +468,76 @@ function addRaid() {
   }
 }
 
-function checkHatchTime() {
-  var hat = new Date();
-  var hat2 = new Date(hat.toDateString());
-  var ti = document.getElementById("time").value;
-  var hatch = new Date("70 "+ti).getTime();
-  if (!hatch) {	
-	hatch = new Date(70,0,1,ti.substr(0,2),ti.substr(-2,2)).getTime();
-  }
-  var df = hat.getTimezoneOffset()*60000;
-  if (df) {
-	hat = hat - df;
-	hat2 = hat2 - df;
-	hatch = hatch - df;
-  }
-  console.log("checkHatchTime():"+hat+", "+hat2+", "+ti+", "+hatch);
-  hat2 = hat - hat2;
-  hat2 = hatch - hat2;
-  if (hatch < 21600000) {
-	hatchwarn = 1;
-  } else if (hatch > 75600000) {
-    hatchwarn = 2;
-  } else if (hat2 < -2700000) {
-    hatchwarn = 3;
-  } else if (hat2 > 3600000) {
-	hatchwarn = 10
-  } else {
-    hatchwarn = 0;
-  }
-  
-  if (getLang() == "de") {
-	document.getElementById("timeh").innerHTML = warn_de[hatchwarn];
-  }
-  if (getLang() == "en") {
-	document.getElementById("timeh").innerHTML = warn_en[hatchwarn];
-  }
-  
-}
-
-function checkStartTime() {
+function checkTime() {
   var now = new Date();
   var now2 = new Date(now.toDateString());
-  var st = document.getElementById("start").value
   var ti = document.getElementById("time").value;
-  var sta = new Date("70 "+st).getTime();
+  var st = document.getElementById("start").value;
   var hat = new Date("70 "+ti).getTime();
-  if (!sta) {	
-	sta = new Date(70,0,1,st.substr(0,2),st.substr(-2,2)).getTime();
-  }  
-  if (!hat) {	
-	hat = new Date(70,0,1,ti.substr(0,2),ti.substr(-2,2)).getTime();
-  }
+  var sta = new Date("70 "+st).getTime();
   var df = now.getTimezoneOffset()*60000;
   if (df) {
 	now = now - df;
 	now2 = now2 - df;
-	sta = sta - df;
 	hat = hat - df;
+	sta = sta - df;
   }
-  
   now2 = now - now2;
-  now2 = sta - now2;
-  hat = sta - hat;
   
-  var ste = document.createAttribute("class");
-  ste.value = "form-text text-danger";
- 
-  
-  if (now2 < 0) {
-	startwarn = 4;
-  } else if (hat >= 2700000) {
-    startwarn = 5;
-  } else if (hat > 2400000) {
-	ste.value = "form-text text-muted";
-    startwarn = 6;
-  } else if (hat < 0) {
-	startwarn = 7;
-  } else {
-    startwarn = 0;
+  if (ti) {
+	var hat2 = hat - now2;
+	if (hat < 21600000) {
+	hatchwarn = 1;
+	} else if (hat > 75600000) {
+	hatchwarn = 2;
+	} else if (hat2 < -2700000) {
+	hatchwarn = 3;
+	} else if (hat2 > 3600000) {
+	hatchwarn = 10
+	} else {
+	hatchwarn = 0;
+	}
+	
+	if (getLang() == "de") {
+	document.getElementById("timeh").innerHTML = warn_de[hatchwarn];
+	}
+	if (getLang() == "en") {
+	document.getElementById("timeh").innerHTML = warn_en[hatchwarn];
+	}
+	
   }
   
-  if (getLang() == "de") {
-	document.getElementById("starth").innerHTML = warn_de[startwarn];
+  if (st) {
+	var now3 = sta - now2;
+	hat = sta - hat;
+	
+	var ste = document.createAttribute("class");
+	ste.value = "form-text text-danger";
+	
+	
+	if (now3 < 0) {
+		startwarn = 4;
+	} else if (hat >= 2700000) {
+		startwarn = 5;
+	} else if (hat > 2400000) {
+		ste.value = "form-text text-muted";
+		startwarn = 6;
+	} else if (hat < 0) {
+		startwarn = 7;
+	} else {
+		startwarn = 0;
+	}
+	
+	if (getLang() == "de") {
+		document.getElementById("starth").innerHTML = warn_de[startwarn];
+	}
+	if (getLang() == "en") {
+		document.getElementById("starth").innerHTML = warn_en[startwarn];
+	}
+	document.getElementById("starth").setAttributeNode(ste);
   }
-  if (getLang() == "en") {
-	document.getElementById("starth").innerHTML = warn_en[startwarn];
-  }
-  document.getElementById("starth").setAttributeNode(ste);
 }
-  
+
 function checkEx(ext) {
   return ext == document.getElementById("gym").value;
 }
@@ -614,9 +595,13 @@ $('.timepicker').timepicker({
 	startTime: new Date(),
     dynamic: false,
     dropdown: false,
-    scrollbar: false
+    scrollbar: false,
+	change: checkTime,
 });
 
+function testTime() {
+	console.log("Hello " + document.getElementById("time").value + " + " + document.getElementById("start").value);
+}
 </script>
 
 </body>
