@@ -1,147 +1,152 @@
 ﻿<!DOCTYPE html>
-<html>
-<title>Gesundbrunnen Raid Tool</title>
+<html lang="de">
 <head>
-<style>
-body {
-	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-	font-size: x-large;
-}
-.normal {
-	font-size: x-large;
-	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-	margin-right: 8px;
-}
-span.title {
-	font-size: 150%;
-	font-weight: bold;
-	margin-top: 15px;
-}
-span.warnbl {
-	color: black;
-}
-span.warning {
-	color: red;
-}
-span.dis {
-	font-size: medium;
-}
-button.bold {
-	font-weight: bold;
-}
-</style>
+	<title>Gesundbrunnen Raid Tool</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.7/dist/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.7/dist/js/bootstrap-select.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+	<style>
+		div.dropdown-menu.show { width: 100% !important; } ul.dropdown-menu.inner>li>a { white-space: initial; }
+	</style>
 </head>
 <body>
 
-<span class="title" id="title">Gesundbrunnen Raid Tool</span><br><br>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark"> 
+  <ul class="navbar-nav">
+	<li class="nav-item">
+	  <a class="navbar-brand" href="./index.html">Gesundbrunnen Raid Tool</a>
+	</li>
+  </ul>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <select class="form-control" id="lang" onchange="changeLang()">
+  		<option value="de">🇩🇪</option>
+  		<option value="en">🇬🇧</option>
+	</select>
+    </li>
+  </ul>
+</nav>
 
-<!--<span class="normal" id="txt_beta">Achtung, dies ist die Beta Seite. Funktionen sind eventuell beeinträchtigt und fehlerhaft.</span><br>
-
-<span class="normal"><a id="txt_mainlink" href="https://kimahree.github.io/">Zur Hauptseite</a></span><br><br>-->
-
-<span id="txt_lang">Sprache:</span>
-<select class="normal" id="lang" onchange="changeLang()">
-  <option value="de">Deutsch</option>
-  <option value="en">English</option>
-</select> <br> <br>
-
-Raid:
-<select class="normal" id="raid">
-  <option disabled style="font-style:italic">5er</option>
-  <option id="t5_1">Dialga</option>
+<div class="container-fluid" style="margin-top:20px">
+<!--<p><span id="txt_beta">Achtung, dies ist die Beta Seite. Funktionen sind eventuell beeinträchtigt und fehlerhaft.</span><br>
+<a id="txt_mainlink" href="https://gesundbrunnen-raids.tk/">Zur Hauptseite</a></p>-->
+<form>
+<div class="form-row">
+<div class="form-group col-sm-4 mb-3">
+<label for="raid" class="mr-sm-2">Raid:</label>
+<select class="form-control selectpicker mr-sm-2" id="raid">
+  <optgroup label="5er">
+  <option hidden value="5er" style="font-style:italic" id="t5_0">5er Ei</option>
+  <option selected value="Giratina" id="t5_1">Giratina (Wandelform)</option>
   <option hidden id="t5_2"></option>
   <option hidden id="t5_3"></option>
   <option hidden id="t5_4"></option>
   <option hidden id="t5_5"></option>
-  <option disabled></option>
-  <option style="font-style:italic">4er</option>
-  <option id="t4_1">Absol</option>
-  <option id="t4_2">Alola-Knogga</option>
-  <option id="t4_3">Despotar</option>
-  <option id="t4_4">Quappo</option>
-  <option id="t4_5">Rizeros</option>
+  </optgroup>
+  <optgroup label="4er">
+  <option value="4er" style="font-style:italic" id="t4_0">4er Ei</option>
+  <option value="Absol" id="t4_1">Absol</option>
+  <option value="Alola-Knogga" id="t4_2">Alola-Knogga</option>
+  <option value="Despotar" id="t4_3">Despotar</option>
+  <option value="Quappo" id="t4_4">Quappo</option>
+  <option value="Rizeros" id="t4_5">Rizeros</option>
+  </optgroup>
 </select>
+</div>
+<div class="form-group col-sm-8 mb-3">
+<label for="gym" class="mr-sm-2" id="txt_gym">Arena:</label>
+<select class="form-control selectpicker mr-sm-2" data-live-search="true" data-none-results-text="Keine Ergebnisse / No result." id="gym">
+  <option value="1892 Historisches Gebäude" data-tokens="historisches haus">1892 Historisches Gebäude</option>
+  <option value="AEG Beamtentor">AEG Beamtentor</option>
+  <option value="Amtsgericht Wedding" data-tokens="ex raid arena gym" style="font-weight:bold">Amtsgericht Wedding (EX)</option>
+  <option value="Bahnhof Humboldthain" data-tokens="s-bahnhof">Bahnhof Humboldthain</option>
+  <option value="Bahnsteig S-Bahnhof Gesundbrunnen">Bahnsteig S-Bahnhof Gesundbrunnen</option>
+  <option value="Balance On The Globe">Balance On The Globe</option>
+  <option value="Berliner Mauer S Wollankstraße" data-tokens="s-bahnhof">Berliner Mauer S Wollankstraße</option>
+  <option value="Birkenmural">Birkenmural</option>
+  <option value="Bornholmer Straße Border Crossing">Bornholmer Straße Border Crossing</option>
+  <option value="Bösebrücke Bornholmer Straße">Bösebrücke Bornholmer Straße</option>
+  <option value="Brunnen DRK">Brunnen DRK</option>
+  <option value="Brunnenstraße" data-tokens="u-bahnhof voltastraße">Brunnenstraße</option>
+  <option value="Bunker Humboldthain">Bunker Humboldthain</option>
+  <option value="Drei-Säulen-Brunnen">Drei-Säulen-Brunnen</option>
+  <option value="Eingangstor St. Elisabeth" data-tokens="friedhof kirchhof cemetery graveyard">Eingangstor St. Elisabeth</option>
+  <option value="Ente" data-tokens="ex raid arena gym" style="font-weight:bold">Ente (EX)</option>
+  <option value="Ernst Reuter Büste">Ernst Reuter Büste</option>
+  <option value="Ev. Stephanus Kirche">Ev. Stephanus Kirche</option>
+  <option value="Gedenkstein Opfer der Berliner Mauer">Gedenkstein Opfer der Berliner Mauer</option>
+  <option value="Gewachsen auf Beton Mural" data-tokens="u-bahnhof pankstraße">Gewachsen auf Beton Mural</option>
+  <option value="Haus Graffiti">Haus Graffiti</option>
+  <option value="Hausmalerei">Hausmalerei</option>
+  <option value="Hauswächter">Hauswächter</option>
+  <option value="Hippo Fountain" data-tokens="ex raid arena gym" style="font-weight:bold">Hippo Fountain (EX)</option>
+  <option value="Humboldtpark">Humboldtpark</option>
+  <option value="Jungfräulich Maria St." data-tokens="sankt petrus bellermannstraße">Jungfräulich Maria St.</option>
+  <option value="Jux und Tollerei">Jux und Tollerei</option>
+  <option value="Kamel" data-tokens="ex raid arena gym" style="font-weight:bold">Kamel (EX)</option>
+  <option value="Kulturverein Christiana">Kulturverein Christiana</option>
+  <option value="Mother Statue">Mother Statue</option>
+  <option value="Portal zur Kaiser Wilhelm und Augusta Stiftung">Portal zur Kaiser Wilhelm und Augusta Stiftung</option>
+  <option value="Rosengarten am Humboldthain">Rosengarten am Humboldthain</option>
+  <option value="S-Bahnhof Bornholmer Straße">S-Bahnhof Bornholmer Straße</option>
+  <option value="Shadow People">Shadow People</option>
+  <option hidden value="Spinnennetz Spielplatz">Spinnennetz Spielplatz</option>
+  <option value="Springbrunnen am Rathaus">Springbrunnen am Rathaus</option>
+  <option value="St. Sebastian-Kirche" data-tokens="ex raid arena gym" style="font-weight:bold">St. Sebastian-Kirche (EX)</option>
+  <option value="Stolpersteine Georg und Rudolf Juliusburger" data-tokens="jüdisches krankenhaus hospital">Stolpersteine Georg und Rudolf Juliusburger</option>
+  <option value="Swinemünder Brücke">Swinemünder Brücke</option>
+  <option value="The Real Old Mechanical Door">The Real Old Mechanical Door</option>
+  <option value="U-Bahnhof Osloer Straße">U-Bahnhof Osloer Straße</option>
+  <option value="Vergessene Brücke">Vergessene Brücke</option>
+  <option value="Wyndham Garden Entrance Relief" data-tokens="hotel">Wyndham Garden Entrance Relief</option>
+  <option value="Zwillingsstatue" data-tokens="ex raid arena gym" style="font-weight:bold">Zwillingsstatue (EX)</option>
+  <option id="txt_chgym" value="" disabled selected hidden>Wähle eine Arena aus.</option>
+  </select>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group col mb-3">
+<label for="time" id="txt_hatch">Schlüpfzeit:</label>
+<input type="text" class="form-control timepicker" id="time" autocomplete="off"></input>
+<small class="form-text text-danger" id="timeh"></small>
+</div>
+<div class="form-group col mb-3">
+<label for="start" id="txt_start">Startzeit:</label>
+<input type="text" class="form-control timepicker" id="start" autocomplete="off"></input>
+<small class="form-text text-danger" id="starth"></small>
+</div>
+</div>
 
-<br><br>
-<span id="txt_gym">Arena:</span>
-<input type="text" id="gym" value list="gyms" class="normal" size="30">
-<datalist id="gyms">
-  <option value="1892 Historisches Gebäude">Historisches Haus</option>
-  <option value="AEG Beamtentor"></option>
-  <option value="Amtsgericht Wedding">EX-Raid Arena</option>
-  <option value="Bahnhof Humboldthain">S-Bahnhof Humboldthain</option>
-  <option value="Bahnsteig S-Bahnhof Gesundbrunnen"></option>
-  <option value="Balance On The Globe"></option>
-  <option value="Berliner Mauer S Wollankstraße"></option>
-  <option value="Birkenmural"></option>
-  <option value="Bornholmer Straße Border Crossing"></option>
-  <option value="Bösebrücke Bornholmer Straße"></option>
-  <option value="Brunnen DRK"></option>
-  <option value="Brunnenstraße">U Voltastraße</option>
-  <option value="Bunker Humboldthain"></option>
-  <option value="Drei-Säulen-Brunnen"></option>
-  <option value="Eingangstor St. Elisabeth">Friedhof / Kirchhof</option>
-  <option value="Ente">EX-Raid Arena</option>
-  <option value="Ernst Reuter Büste"></option>
-  <option value="Ev. Stephanus Kirche"></option>
-  <option value="Gedenkstein Opfer der Berliner Mauer"></option>
-  <option value="Gewachsen auf Beton Mural">U Pankstraße</option>
-  <option value="Haus Graffiti"></option>
-  <option value="Hausmalerei"></option>
-  <option value="Hauswächter"></option>
-  <option value="Hippo Fountain">EX-Raid Arena</option>
-  <option value="Humboldtpark"></option>
-  <option value="Jungfräulich Maria St.">Bellermannstraße</option>
-  <option value="Jux und Tollerei"></option>
-  <option value="Kamel">EX-Raid Arena</option>
-  <option value="Kulturverein Christiana"></option>
-  <option value="Mother Statue"></option>
-  <option value="Portal zur Kaiser Wilhelm und Augusta Stiftung"></option>
-  <option value="Rosengarten am Humboldthain"></option>
-  <option value="S-Bahnhof Bornholmer Straße"></option>
-  <option value="Shadow People"></option>
-  <option value="Springbrunnen am Rathaus"></option>
-  <option value="St. Sebastian-Kirche">EX-Raid Arena</option>
-  <option value="Stolpersteine Georg und Rudolf Juliusburger">Jüdisches Krankenhaus</option>
-  <option value="Swinemünder Brücke"></option>
-  <option value="The Real Old Mechanical Door"></option>
-  <option value="U-Bahnhof Osloer Straße"></option>
-  <option value="Vergessene Brücke"></option>
-  <option value="Wyndham Garden Entrance Relief">Hotel</option>
-  <option value="Zwillingsstatue">EX-Raid Arena</option>
-</datalist>
-<br><br>
-
-<span id="txt_hatch">Schlüpfzeit:</span>
-<input type="time" class="normal" id="time" oninput="checkHatchTime()"></input><span class="warning" id="timeh"></span>
-<br><br>
-
-<span id="txt_start">Startzeit:</span>
-<input type="time" class="normal" id="start" oninput="checkStartTime()"></input><span class="warning" id="starth"></span>
-<br><br>
-
-<span id="txt_player">Teilnehmer:</span><br>
-<textarea id="player" rows="3" cols="30" class="normal"></textarea>
-<br><br>
+<div class="form-group">
+<label for="player" id="txt_player">Teilnehmer:</label>
+<textarea class="form-control" id="player" rows="3"></textarea>
+</div>
 
 <span id="txt_instr">Drücke auf "Start!", überprüfe deine Angaben und drücke dann auf "In WhatsApp posten".<br></span>
 <span hidden id="txt_multi">Um einen Multiraid zu posten, ändere jetzt die Angaben oben für den nächsten Raid und drücke dann auf "Multiraid!". Wiederhole dies, bis alle Raids eingetragen sind.<br></span><br>
+</form>
 
-<span id="starter"><button class="normal" onclick='generateRaid("")'>Start!</button></span>
-<span hidden=true id="addRaid"><button class="normal" onclick="addRaid()">Multiraid!</button></span>
-<span id="raidwarn" class="warning"></span>
+<div class="mb-3">
+<button class="btn btn-primary" id="starter" onclick='generateRaid("")'>Start!</button>
+<span hidden id="addRaid"><button class="btn btn-secondary" onclick="addRaid()">Multiraid!</button></span>
+<span id="raidwarn" class="text-danger ml-2 align-middle"></span>
+</div>
 
-<br><br>
-<span id="ex"></span>
-<br><br>
-<span id="but"></span>
-<br><br>
+<div id="ex"></div>
+<div id="but"></div>
 
-<span class="dis">Made by kimahree. This website is not affiliated with Niantic or Nintendo.<br>Pokémon And All Respective Names are Trademark & © of Nintendo 1996-2019.</span>
+<p class="small">Made by kimahree. This website is not affiliated with Niantic or Nintendo. Pokémon And All Respective Names are Trademark & © of Nintendo 1996-2019.</p>
+</div>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mfranzke/datalist-polyfill/datalist-polyfill.min.js"></script>
 <script>
-var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_instr","txt_button","txt_multi"];
+var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_instr","txt_button","txt_multi","txt_nb_howto","txt_chgym","txt_howto_title","txt_howto_close","txt_faq_close"];
 
 var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beeinträchtigt und fehlerhaft.",
 "Zur Hauptseite",
@@ -152,7 +157,12 @@ var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beein
 "Teilnehmer:",
 'Drücke auf "Start!", überprüfe deine Angaben und drücke dann auf "In WhatsApp posten".<br>',
 "In WhatsApp posten",
-'Um einen Multiraid zu posten, ändere jetzt die Angaben oben für den nächsten Raid und drücke dann auf "Multiraid!". Wiederhole dies, bis alle Raids eingetragen sind.<br>'
+'Um einen Multiraid zu posten, ändere jetzt die Angaben oben für den nächsten Raid und drücke dann auf "Multiraid!". Wiederhole dies, bis alle Raids eingetragen sind.<br>',
+"Anleitung",
+"Wähle eine Arena aus.",
+"Anleitung",
+"Schließen",
+"Schließen"
 ];
 
 var txt_en = ["Attention, you're currently on the beta page. Functionality might be compromised and bugged.",
@@ -164,7 +174,12 @@ var txt_en = ["Attention, you're currently on the beta page. Functionality might
 "Participants:",
 'Press "Start!", check your data and then press "Post in WhatsApp".<br>',
 "Post in WhatsApp",
-'To post a Multiraid, change the data above for the next raid and then press "Multiraid!". Repeat until all raids have been added.<br>'
+'To post a Multiraid, change the data above for the next raid and then press "Multiraid!". Repeat until all raids have been added.<br>',
+"Instructions",
+"Choose a gym.",
+"Instructions",
+"Close",
+"Close"
 ];
 
 var hatchwarn = 0;
@@ -181,7 +196,8 @@ var warn_de =["",
 "Die Startzeit kann nicht vor der Schlüpfzeit sein.",
 "Du hast die maximale Anzahl an Raids für einen Multiraid erreicht.",
 "Bitte wähle eine Arena aus.",
-"Die Schlüpfzeit kann nicht mehr als eine Stunde in der Zukunft liegen."
+"Die Schlüpfzeit kann nicht mehr als eine Stunde in der Zukunft liegen.",
+"Bitte geb eine Uhrzeit ein."
 ];
 
 var warn_en =["",
@@ -194,11 +210,12 @@ var warn_en =["",
 "You cannot start a raid before it hatches.",
 "You have reached the maximum amount of raids for a multiraid.",
 "Please choose a gym.",
-"The hatch time must be within 1 hour from now."
+"The hatch time must be within 1 hour from now.",
+"Please enter a time."
 ];
 
-var raid_de = ["5er","Dialga","","","","","","4er","Absol","Alola-Knogga","Despotar","Quappo","Rizeros"];
-var raid_en = ["Tier 5","Dialga","","","","","","Tier 4","Absol","Alolan Marowak","Tyranitar","Poliwrath","Rhydon"];
+var raid_de = ["5er Ei","Giratina (Wandelform)","","","","","4er Ei","Absol","Alola-Knogga","Despotar","Quappo","Rizeros"];
+var raid_en = ["Tier 5 Egg","Giratina (Altered Form)","","","","","Tier 4 Egg","Absol","Alolan Marowak","Tyranitar","Poliwrath","Rhydon"];
 
 var ex = ["Amtsgericht Wedding", "Ente", "Hippo Fountain", "Kamel", "St. Sebastian-Kirche", "Zwillingsstatue"];
 
@@ -237,6 +254,7 @@ var maps = [
 "https://goo.gl/maps/uuFsiJBmDp72", // Rosengarten am Humboldthain
 "https://goo.gl/maps/fTpjjxxPXbK2", // S-Bahnhof Bornholmer Straße
 "https://goo.gl/maps/PzqU2mtenL42", // Shadow People
+"https://goo.gl/maps/vKtfoyDAsoS2", // Spinnennetz Spielplatz
 "https://goo.gl/maps/j5WL5s81k2K2", // Springbrunnen am Rathaus
 "https://goo.gl/maps/za2Fq6XPC5t",  // St. Sebastian-Kirche (EX)
 "https://goo.gl/maps/kPsKT4sGpPK2", // Stolpersteine Georg und Rudolf Juliusburger
@@ -323,19 +341,8 @@ function generateRaid(raidtext) {
 	text = text + "(🐣" + time + ")";
   }
   
-  var gyms = document.getElementById("gyms");
-  var i;
-  for (i=0; gyms.options[i].value != gym; i++) {
-	if (i == (gyms.options.length - 1)) {
-		i++;
-		break;
-	}
-  }
-  
-  if (i < gyms.options.length) {
-	text = text + "<br>" + maps[i];
-  }
-  
+  text = text + "<br>" + maps[document.getElementById("gym").selectedIndex];
+
   text = text + "<br><br><b>Start:</b> ";
    
   if ((diff <= 45 && diff >= 0) || (time == "" && start != "") || document.getElementById("start").type == "text") {
@@ -344,6 +351,11 @@ function generateRaid(raidtext) {
     text = text + "?";
   }
   text = text + "<br><br>" + player
+  
+  var exc = document.createAttribute("class");
+  exc.value = "m-3 p-2 border rounded bg-light";
+  document.getElementById("ex").setAttributeNode(exc);
+  
   document.getElementById("ex").innerHTML = text;
   
   var text2 = text.replace(/<br>/g,"\n");
@@ -358,7 +370,7 @@ function generateRaid(raidtext) {
   bu.setAttributeNode(btt1);
   
   var btt2 = document.createAttribute("class");
-  btt2.value = "normal bold";
+  btt2.value = "mb-3 btn btn-success";
   bu.setAttributeNode(btt2);
   
   var btt3 = document.createAttribute("id");
@@ -405,68 +417,82 @@ function addRaid() {
   }
 }
 
-function checkHatchTime() {
-  var hat = new Date();
-  var hat2 = new Date(hat.toDateString());
-  var hatch = document.getElementById("time").valueAsNumber;
-  hat2 = hat - hat2;
-  hat2 = hatch - hat2;
-  if (hatch < 21600000) {
-	hatchwarn = 1;
-  } else if (hatch > 75600000) {
-    hatchwarn = 2;
-  } else if (hat2 < -2700000) {
-    hatchwarn = 3;
-  } else if (hat2 > 3600000) {
-	hatchwarn = 10
-  } else {
-    hatchwarn = 0;
-  }
-  
-  if (getLang() == "de") {
-	document.getElementById("timeh").innerHTML = '<span style="font-size:20px">'+warn_de[hatchwarn]+'</span>';
-  }
-  if (getLang() == "en") {
-	document.getElementById("timeh").innerHTML = '<span style="font-size:20px">'+warn_en[hatchwarn]+'</span>';
-  }
-  
-}
-
-function checkStartTime() {
+function checkTime() {
   var now = new Date();
   var now2 = new Date(now.toDateString());
-  var sta = document.getElementById("start").valueAsNumber;
-  var hat = document.getElementById("time").valueAsNumber;
+  var ti = document.getElementById("time").value;
+  var st = document.getElementById("start").value;
+  var hat = new Date("70 "+ti).getTime();
+  var sta = new Date("70 "+st).getTime();
+  var df = now.getTimezoneOffset()*60000;
+  if (df) {
+	now = now - df;
+	now2 = now2 - df;
+	hat = hat - df;
+	sta = sta - df;
+  }
   now2 = now - now2;
-  now2 = sta - now2;
-  hat = sta - hat;
   
-  var ste = document.createAttribute("class");
-  ste.value = "warning";
- 
-  
-  if (now2 < 0) {
-	startwarn = 4;
-  } else if (hat > 2700000) {
-    startwarn = 5;
-  } else if (hat > 2400000) {
-	ste.value = "warnbl";
-    startwarn = 6;
-  } else if (hat < 0) {
-	startwarn = 7;
-  } else {
-    startwarn = 0;
+  if (ti) {
+	var hat2 = hat - now2;
+	ti = ti.substr(0,1)
+	if (ti != 0 && ti != 1 && ti != 2) {
+	hatchwarn = 11;
+	document.getElementById("time").value = null;
+	} else if (hat < 21600000) {
+	hatchwarn = 1;
+	} else if (hat > 75600000) {
+	hatchwarn = 2;
+	} else if (hat2 < -2700000) {
+	hatchwarn = 3;
+	} else if (hat2 > 3600000) {
+	hatchwarn = 10;
+	} else {
+	hatchwarn = 0;
+	}
+	
+	if (getLang() == "de") {
+	document.getElementById("timeh").innerHTML = warn_de[hatchwarn];
+	}
+	if (getLang() == "en") {
+	document.getElementById("timeh").innerHTML = warn_en[hatchwarn];
+	}
+	
   }
   
-  if (getLang() == "de") {
-	document.getElementById("starth").innerHTML = '<span style="font-size:20px">'+warn_de[startwarn]+'</span>';
+  if (st) {
+	var now3 = sta - now2;
+	hat = sta - hat;
+	
+	var ste = document.createAttribute("class");
+	ste.value = "form-text text-danger";
+	
+	st = st.substr(0,1)
+	if (st != 0 && st != 1 && st != 2) {
+		startwarn = 11;	
+	} else if (now3 < 0) {
+		startwarn = 4;
+	} else if (hat >= 2700000) {
+		startwarn = 5;
+	} else if (hat > 2400000) {
+		ste.value = "form-text text-muted";
+		startwarn = 6;
+	} else if (hat < 0) {
+		startwarn = 7;
+	} else {
+		startwarn = 0;
+	}
+	
+	if (getLang() == "de") {
+		document.getElementById("starth").innerHTML = warn_de[startwarn];
+	}
+	if (getLang() == "en") {
+		document.getElementById("starth").innerHTML = warn_en[startwarn];
+	}
+	document.getElementById("starth").setAttributeNode(ste);
   }
-  if (getLang() == "en") {
-	document.getElementById("starth").innerHTML = '<span style="font-size:20px">'+warn_en[startwarn]+'</span>';
-  }
-  document.getElementById("starth").setAttributeNode(ste);
 }
-  
+
 function checkEx(ext) {
   return ext == document.getElementById("gym").value;
 }
@@ -481,13 +507,14 @@ function changeLang() {
 	}
 	for (i = 0; i < raid_de.length; i++) {
 		if (raid_en[i] != raid_de[i]) {
-			var lab = document.getElementById("raid").options[i].getAttributeNode("label");
-			document.getElementById("raid").options[i].removeAttributeNode(lab);
+			document.getElementById("raid").options[i].innerHTML = raid_de[i];
 		}
 	}
-	document.getElementById("timeh").innerHTML = '<span style="font-size:20px">'+warn_de[hatchwarn]+'</span>';
-	document.getElementById("starth").innerHTML = '<span style="font-size:20px">'+warn_de[startwarn]+'</span>';
+	document.getElementById("timeh").innerHTML = warn_de[hatchwarn];
+	document.getElementById("starth").innerHTML = warn_de[startwarn];
 	document.getElementById("raidwarn").innerHTML = warn_de[raidwarn];
+	
+	$('.selectpicker').selectpicker('refresh');
   }
   if (getLang() == "en") {
 	for (i = 0; i < txtid.length; i++) {
@@ -497,20 +524,35 @@ function changeLang() {
 	}	
 	for (i = 0; i < raid_en.length; i++) {
 		if (raid_en[i] != raid_de[i]) {
-			var lab = document.createAttribute("label");
-			lab.value = raid_en[i];
-			document.getElementById("raid").options[i].setAttributeNode(lab);
+			document.getElementById("raid").options[i].innerHTML = raid_en[i];
 		}
 	}
-	document.getElementById("timeh").innerHTML = '<span style="font-size:20px">'+warn_en[hatchwarn]+'</span>';
-	document.getElementById("starth").innerHTML = '<span style="font-size:20px">'+warn_en[startwarn]+'</span>';
+	document.getElementById("timeh").innerHTML = warn_en[hatchwarn];
+	document.getElementById("starth").innerHTML = warn_en[startwarn];
 	document.getElementById("raidwarn").innerHTML = warn_en[raidwarn];
+	
+	$('.selectpicker').selectpicker('refresh');
   }
 }
 
 function getLang() {
 	return document.getElementById("lang").value;
 }
+
+$(document).ready(function(){
+    $('input.timepicker').timepicker({});
+});
+
+$('.timepicker').timepicker({
+    timeFormat: 'HH:mm',
+    interval: 5,
+    defaultTime: '',
+	startTime: new Date(),
+    dynamic: false,
+    dropdown: false,
+    scrollbar: false,
+	change: checkTime,
+});
 
 </script>
 
