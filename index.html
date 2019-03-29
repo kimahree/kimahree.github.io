@@ -41,11 +41,11 @@
 <div class="form-row">
 <div class="form-group col-sm-4 mb-3">
 <label for="raid" class="mr-sm-2">Raid:</label>
-<select class="form-control selectpicker mr-sm-2" id="raid">
+<select class="form-control selectpicker mr-sm-2" onchange="TierCheck()" id="raid">
   <optgroup label="5er">
-  <option hidden value="5er" style="font-style:italic" id="t5_0">5er Ei</option>
-  <option selected value="Giratina" id="t5_1">Giratina (Wandelform)</option>
-  <option hidden id="t5_2"></option>
+  <option hidden disabled value="5er" style="font-style:italic" id="t5_0">5er Ei</option>
+  <option value="Giratina" id="t5_1">Giratina (Wandelform)</option>
+  <option hidden value="Groudon" id="t5_2">Groudon</option>
   <option hidden id="t5_3"></option>
   <option hidden id="t5_4"></option>
   <option hidden id="t5_5"></option>
@@ -185,6 +185,8 @@
 </div>
 
 <script>
+var t5multi = 0;
+
 var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_instr","txt_button","txt_multi","txt_nb_howto","txt_chgym","txt_howto_title","txt_howto_close","txt_faq_close"];
 
 var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beeinträchtigt und fehlerhaft.",
@@ -236,7 +238,9 @@ var warn_de =["",
 "Du hast die maximale Anzahl an Raids für einen Multiraid erreicht.",
 "Bitte wähle eine Arena aus.",
 "Die Schlüpfzeit kann nicht mehr als eine Stunde in der Zukunft liegen.",
-"Bitte geb eine Uhrzeit ein."
+"Bitte geb eine Uhrzeit ein.",
+'Das 4er Ei ist noch nicht ausgeschlüpft, bitte wähle bei Raid "4er Ei" aus.',
+'Das 5er Ei ist noch nicht ausgeschlüpft, bitte wähle bei Raid "5er Ei" aus.'
 ];
 
 var warn_en =["",
@@ -250,11 +254,13 @@ var warn_en =["",
 "You have reached the maximum amount of raids for a multiraid.",
 "Please choose a gym.",
 "The hatch time must be within 1 hour from now.",
-"Please enter a time."
+"Please enter a time.",
+'The Tier 4 egg has not hatched yet, so please choose "Tier 4 egg" as raid.',
+'The Tier 5 egg has not hatched yet, so please choose "Tier 5 egg" as raid.'
 ];
 
-var raid_de = ["5er Ei","Giratina (Wandelform)","","","","","4er Ei","Absol","Alola-Knogga","Dragoran","Hundemon","Togetic"];
-var raid_en = ["Tier 5 Egg","Giratina (Altered Form)","","","","","Tier 4 Egg","Absol","Alolan Marowak","Dragonite","Houndoom","Togetic"];
+var raid_de = ["5er Ei","Giratina (Wandelform)","Groudon","","","","4er Ei","Absol","Alola-Knogga","Dragoran","Hundemon","Togetic"];
+var raid_en = ["Tier 5 Egg","Giratina (Altered Form)","Groudon","","","","Tier 4 Egg","Absol","Alolan Marowak","Dragonite","Houndoom","Togetic"];
 
 var ex = ["Amtsgericht Wedding", "Ente", "Hippo Fountain", "Kamel", "St. Sebastian-Kirche", "Zwillingsstatue"];
 
@@ -461,6 +467,7 @@ function checkTime() {
   var now2 = new Date(now.toDateString());
   var ti = document.getElementById("time").value;
   var st = document.getElementById("start").value;
+  var ra = document.getElementById("raid").selectedIndex;
   var hat = new Date("70 "+ti).getTime();
   var sta = new Date("70 "+st).getTime();
   var df = now.getTimezoneOffset()*60000;
@@ -476,18 +483,22 @@ function checkTime() {
 	var hat2 = hat - now2;
 	ti = ti.substr(0,1)
 	if (ti != 0 && ti != 1 && ti != 2) {
-	hatchwarn = 11;
-	document.getElementById("time").value = null;
+		hatchwarn = 11;
+		document.getElementById("time").value = null;
 	} else if (hat < 21600000) {
-	hatchwarn = 1;
+		hatchwarn = 1;
 	} else if (hat > 75600000) {
-	hatchwarn = 2;
+		hatchwarn = 2;
 	} else if (hat2 < -2700000) {
-	hatchwarn = 3;
+		hatchwarn = 3;
 	} else if (hat2 > 3600000) {
-	hatchwarn = 10;
+		hatchwarn = 10;
+	} else if (hat2 > 0 && ra > 6) {
+		hatchwarn = 12;
+	} else if (t5multi && hat2 > 0 && ra > 0) {
+		hatchwarn = 13;
 	} else {
-	hatchwarn = 0;
+		hatchwarn = 0;
 	}
 	
 	if (getLang() == "de") {
@@ -576,6 +587,26 @@ function changeLang() {
 
 function getLang() {
 	return document.getElementById("lang").value;
+}
+
+function TierCheck() {
+	var ind = document.getElementById("raid").selectedIndex;
+	if (hatchwarn == 12 && (ind == 6 || ind === 0 || (!t5multi && ind == 1))) {
+		hatchwarn = 0;
+		document.getElementById("timeh").innerHTML = "";
+	}
+	if (ind > 6 && document.getElementById("time").value) {
+		checkTime();
+	}
+	if (t5multi) {
+		if (hatchwarn == 13 && (ind === 0 || ind == 6)) {
+			hatchwarn = 0;
+			document.getElementById("timeh").innerHTML = "";
+		}
+		if (ind > 0 && ind < 6 && document.getElementById("time").value) {
+			checkTime();
+		}
+	}
 }
 
 $(document).ready(function(){
