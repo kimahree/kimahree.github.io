@@ -338,7 +338,8 @@ function generateRaid(raidtext) {
   var raid = document.getElementById("raid").value;
   var time = document.getElementById("time").value;
   var start = document.getElementById("start").value;
-  var diff = (document.getElementById("start").valueAsNumber - document.getElementById("time").valueAsNumber) / 60000;
+  var diff = (new Date("1970/01/01 "+start).getTime() - new Date("1970/01/01 "+time).getTime()) / 60000;
+  console.log("Diff: " + diff)
   var player = document.getElementById("player").value;
   player = player.replace(/\n/g,"<br>")
   
@@ -390,7 +391,7 @@ function generateRaid(raidtext) {
 
   text = text + "<br><br><b>Start:</b> ";
    
-  if ((diff <= 45 && diff >= 0) || (time == "" && start != "") || document.getElementById("start").type == "text") {
+  if ((diff <= 45 && diff >= 0) || (time == "" && start != "") || startwarn == 11) {
 	text = text + start;
   } else {
     text = text + "?";
@@ -468,8 +469,8 @@ function checkTime() {
   var ti = document.getElementById("time").value;
   var st = document.getElementById("start").value;
   var ra = document.getElementById("raid").selectedIndex;
-  var hat = new Date("70 "+ti).getTime();
-  var sta = new Date("70 "+st).getTime();
+  var hat = new Date("1970/01/01 "+ti).getTime();
+  var sta = new Date("1970/01/01 "+st).getTime();
   var df = now.getTimezoneOffset()*60000;
   if (df) {
 	now = now - df;
@@ -482,7 +483,7 @@ function checkTime() {
   if (ti) {
 	var hat2 = hat - now2;
 	ti = ti.substr(0,1)
-	if (ti != 0 && ti != 1 && ti != 2) {
+	if (ti != "0" && ti != "1" && ti != "2") {
 		hatchwarn = 11;
 		document.getElementById("time").value = null;
 	} else if (hat < 21600000) {
@@ -518,7 +519,7 @@ function checkTime() {
 	ste.value = "form-text text-danger";
 	
 	st = st.substr(0,1)
-	if (st != 0 && st != 1 && st != 2) {
+	if (st != "0" && st != "1" && st != "2") {
 		startwarn = 11;	
 	} else if (now3 < 0) {
 		startwarn = 4;
