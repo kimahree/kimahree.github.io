@@ -338,7 +338,7 @@ function generateRaid(raidtext) {
   var raid = document.getElementById("raid").value;
   var time = document.getElementById("time").value;
   var start = document.getElementById("start").value;
-  var diff = (new Date("1970/01/01 "+start).getTime() - new Date("1970/01/01 "+time).getTime()) / 60000;
+  var diff = (new Date("Jan 01 1970 "+start).getTime() - new Date("Jan 01 1970 "+time).getTime()) / 60000;
   console.log("Diff: " + diff)
   var player = document.getElementById("player").value;
   player = player.replace(/\n/g,"<br>")
@@ -469,8 +469,8 @@ function checkTime() {
   var ti = document.getElementById("time").value;
   var st = document.getElementById("start").value;
   var ra = document.getElementById("raid").selectedIndex;
-  var hat = new Date("1970/01/01 "+ti).getTime();
-  var sta = new Date("1970/01/01 "+st).getTime();
+  var hat = new Date("Jan 01 1970 "+ti).getTime();
+  var sta = new Date("Jan 01 1970 "+st).getTime();
   var df = now.getTimezoneOffset()*60000;
   if (df) {
 	now = now - df;
