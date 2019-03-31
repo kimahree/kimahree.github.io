@@ -78,7 +78,7 @@
   <option value="Bunker Humboldthain">Bunker Humboldthain</option>
   <option value="Drei-Säulen-Brunnen">Drei-Säulen-Brunnen</option>
   <option value="Eingangstor St. Elisabeth" data-tokens="friedhof kirchhof cemetery graveyard">Eingangstor St. Elisabeth</option>
-  <option value="Ente" data-tokens="ex raid arena gym" style="font-weight:bold">Ente (EX)</option>
+  <option value="Ente" data-tokens="ex raid arena gym 🦆" style="font-weight:bold">Ente (EX)</option>
   <option value="Ernst Reuter Büste">Ernst Reuter Büste</option>
   <option value="Ev. Stephanus Kirche">Ev. Stephanus Kirche</option>
   <option value="Gedenkstein Opfer der Berliner Mauer">Gedenkstein Opfer der Berliner Mauer</option>
@@ -90,14 +90,14 @@
   <option value="Humboldtpark">Humboldtpark</option>
   <option value="Jungfräulich Maria St." data-tokens="sankt petrus bellermannstraße">Jungfräulich Maria St.</option>
   <option value="Jux und Tollerei">Jux und Tollerei</option>
-  <option value="Kamel" data-tokens="ex raid arena gym" style="font-weight:bold">Kamel (EX)</option>
+  <option value="Kamel" data-tokens="ex raid arena gym 🐫 🐪" style="font-weight:bold">Kamel (EX)</option>
   <option value="Kulturverein Christiana">Kulturverein Christiana</option>
   <option value="Mother Statue">Mother Statue</option>
   <option value="Portal zur Kaiser Wilhelm und Augusta Stiftung">Portal zur Kaiser Wilhelm und Augusta Stiftung</option>
   <option value="Rosengarten am Humboldthain">Rosengarten am Humboldthain</option>
   <option value="S-Bahnhof Bornholmer Straße">S-Bahnhof Bornholmer Straße</option>
-  <option value="Shadow People">Shadow People</option>
-  <option value="Spinnennetz Spielplatz">Spinnennetz Spielplatz</option>
+  <option value="Shadow People">Shadow People</option
+  <option value="Spinnennetz Spielplatz" data-tokens="🕸">Spinnennetz Spielplatz</option>
   <option value="Springbrunnen am Rathaus">Springbrunnen am Rathaus</option>
   <option value="St. Sebastian-Kirche" data-tokens="ex raid arena gym" style="font-weight:bold">St. Sebastian-Kirche (EX)</option>
   <option value="Stolpersteine Georg und Rudolf Juliusburger" data-tokens="jüdisches krankenhaus hospital">Stolpersteine Georg und Rudolf Juliusburger</option>
@@ -142,7 +142,7 @@
 <div id="ex"></div>
 <div id="but"></div>
 
-<p class="small"><a href="" data-toggle="modal" data-target="#credits">Credits</a> - This website is not affiliated with Niantic or Nintendo. Pokémon And All Respective Names are Trademark & © of Nintendo 1996-2019.</p>
+<p class="small"><a href="" data-toggle="modal" data-target="#changelog">Changelog</a> - <a href="" data-toggle="modal" data-target="#credits">Credits</a> - This website is not affiliated with Niantic or Nintendo. Pokémon And All Respective Names are Trademark & © of Nintendo 1996-2019.</p>
 </div>
 
 <div class="modal fade" id="credits">
@@ -172,22 +172,54 @@
 			<li><a href="https://timepicker.co">jQuery Timepicker 1.3.5</a></li>
 			<li><a href="https://popper.js.org">Popper 1.14.7</a></li>
 		</ul>
-		Made by kimahree<br><small>v1.0 (29.03.2019)</small>
+		Made by kimahree<br><small>v1.0.1 (31.03.2019)</small>
       </div>
 
       <!-- Modal footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal" id="txt_cre_close">Schließen</button>
       </div>
 
     </div>
   </div>
 </div>
 
+<div class="modal fade" id="changelog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Changelog</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+		v1.0.1 (31.03.2019)
+		<ul>
+			<li>Fix Daylight Savings / Timezone Bug</li>
+		</ul> 
+        v1.0 (29.03.2019)
+		<ul>
+			<li>Initial Release</li>
+		</ul>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal" id="txt_cl_close">Schließen</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
 <script>
 var t5multi = 0;
 
-var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_instr","txt_button","txt_multi","txt_nb_howto","txt_chgym","txt_howto_title","txt_howto_close","txt_faq_close"];
+var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_instr","txt_button","txt_multi","txt_chgym","txt_cre_close","txt_cl_close"];
 
 var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beeinträchtigt und fehlerhaft.",
 "Zur Hauptseite",
@@ -199,9 +231,7 @@ var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beein
 'Drücke auf "Start!", überprüfe deine Angaben und drücke dann auf "In WhatsApp posten".<br>',
 "In WhatsApp posten",
 'Um einen Multiraid zu posten, ändere jetzt die Angaben oben für den nächsten Raid und drücke dann auf "Multiraid!". Wiederhole dies, bis alle Raids eingetragen sind.<br>',
-"Anleitung",
 "Wähle eine Arena aus.",
-"Anleitung",
 "Schließen",
 "Schließen"
 ];
@@ -216,9 +246,7 @@ var txt_en = ["Attention, you're currently on the beta page. Functionality might
 'Press "Start!", check your data and then press "Post in WhatsApp".<br>',
 "Post in WhatsApp",
 'To post a Multiraid, change the data above for the next raid and then press "Multiraid!". Repeat until all raids have been added.<br>',
-"Instructions",
 "Choose a gym.",
-"Instructions",
 "Close",
 "Close"
 ];
@@ -469,15 +497,12 @@ function checkTime() {
   var ti = document.getElementById("time").value;
   var st = document.getElementById("start").value;
   var ra = document.getElementById("raid").selectedIndex;
-  var hat = new Date("Jan 01 1970 "+ti).getTime();
-  var sta = new Date("Jan 01 1970 "+st).getTime();
-  var df = now.getTimezoneOffset()*60000;
-  if (df) {
-	now = now - df;
-	now2 = now2 - df;
-	hat = hat - df;
-	sta = sta - df;
-  }
+  var hat = new Date("Jan 01 1970 "+ti);
+  var sta = new Date("Jan 01 1970 "+st);
+  now -= now.getTimezoneOffset()*60000;
+  now2 -= now2.getTimezoneOffset()*60000;
+  hat = hat.getTime() - hat.getTimezoneOffset()*60000;
+  sta = sta.getTime() - sta.getTimezoneOffset()*60000;
   now2 = now - now2;
   
   if (ti) {
