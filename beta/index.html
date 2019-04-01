@@ -18,7 +18,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark"> 
+<nav class="navbar bg-dark navbar-dark"> 
   <ul class="navbar-nav">
 	<li class="nav-item">
 	  <a class="navbar-brand" href="./index.html">Gesundbrunnen Raid Tool</a>
@@ -34,10 +34,19 @@
   </ul>
 </nav>
 
-<div class="container-fluid" style="margin-top:20px">
+<div class="container-fluid mt-2">
+
+<ul class="nav nav-tabs mb-2">
+  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#raidtool">Raids</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#telegram">Telegram</a></li>
+  <!--<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a></li>-->
+</ul>
+
+<div class="tab-content">
+<div class="tab-pane active" id="raidtool">
 <p><span id="txt_beta">Achtung, dies ist die Beta Seite. Funktionen sind eventuell beeinträchtigt und fehlerhaft.</span><br>
 <a id="txt_mainlink" href="https://gesundbrunnen-raids.tk/">Zur Hauptseite</a></p>
-<form>
+
 <div class="form-row">
 <div class="form-group col-sm-4 mb-3">
 <label for="raid" class="mr-sm-2">Raid:</label>
@@ -96,7 +105,7 @@
   <option value="Portal zur Kaiser Wilhelm und Augusta Stiftung">Portal zur Kaiser Wilhelm und Augusta Stiftung</option>
   <option value="Rosengarten am Humboldthain">Rosengarten am Humboldthain</option>
   <option value="S-Bahnhof Bornholmer Straße">S-Bahnhof Bornholmer Straße</option>
-  <option value="Shadow People">Shadow People</option
+  <option value="Shadow People">Shadow People</option>
   <option value="Spinnennetz Spielplatz" data-tokens="🕸">Spinnennetz Spielplatz</option>
   <option value="Springbrunnen am Rathaus">Springbrunnen am Rathaus</option>
   <option value="St. Sebastian-Kirche" data-tokens="ex raid arena gym" style="font-weight:bold">St. Sebastian-Kirche (EX)</option>
@@ -129,20 +138,34 @@
 <textarea class="form-control" id="player" rows="3"></textarea>
 </div>
 
-<span id="txt_instr">Drücke auf "Start!", überprüfe deine Angaben und drücke dann auf "In WhatsApp posten".<br></span>
-<span hidden id="txt_multi">Um einen Multiraid zu posten, ändere jetzt die Angaben oben für den nächsten Raid und drücke dann auf "Multiraid!". Wiederhole dies, bis alle Raids eingetragen sind.<br></span><br>
-</form>
+<div class="mb-2"><span id="txt_instr">Drücke auf "Start!", überprüfe deine Angaben und drücke dann auf "In WhatsApp posten".<br></span>
+<span hidden id="txt_multi">Um einen Multiraid zu posten, ändere jetzt die Angaben oben für den nächsten Raid und drücke dann auf "Multiraid!". Wiederhole dies, bis alle Raids eingetragen sind.<br></span></div>
+
 
 <div class="mb-3">
 <button class="btn btn-primary" id="starter" onclick='generateRaid("")'>Start!</button>
 <span hidden id="addRaid"><button class="btn btn-secondary" onclick="addRaid()">Multiraid!</button></span>
 <span id="raidwarn" class="text-danger ml-2 align-middle"></span>
-</div>
+
 
 <div id="ex"></div>
 <div id="but"></div>
+</div>
+</div>
+
+<div class="tab-pane fade" id="telegram">
+  <div class="fluid-container mb-3">
+  <textarea class="form-control mb-3" id="tg_paste" rows="10"></textarea>
+  <button class="btn btn-primary" id="tg_start" onclick="pasteTelegram()">Start!</button>
+  <span id="tg_warn" class="text-danger ml-2 align-middle"></span>
+  <span id="tg_output"></span>
+  </div>
+</div>
+
+</div>
 
 <p class="small"><a href="" data-toggle="modal" data-target="#changelog">Changelog</a> - <a href="" data-toggle="modal" data-target="#credits">Credits</a> - This website is not affiliated with Niantic or Nintendo. Pokémon And All Respective Names are Trademark & © of Nintendo 1996-2019.</p>
+
 </div>
 
 <div class="modal fade" id="credits">
@@ -254,6 +277,7 @@ var txt_en = ["Attention, you're currently on the beta page. Functionality might
 var hatchwarn = 0;
 var startwarn = 0;
 var raidwarn = 0;
+var tg_warn = 0;
 
 var warn_de =["",
 "Raids schlüpfen nicht vor 6 Uhr.",
@@ -268,7 +292,8 @@ var warn_de =["",
 "Die Schlüpfzeit kann nicht mehr als eine Stunde in der Zukunft liegen.",
 "Bitte geb eine Uhrzeit ein.",
 'Das 4er Ei ist noch nicht ausgeschlüpft, bitte wähle bei Raid "4er Ei" aus.',
-'Das 5er Ei ist noch nicht ausgeschlüpft, bitte wähle bei Raid "5er Ei" aus.'
+'Das 5er Ei ist noch nicht ausgeschlüpft, bitte wähle bei Raid "5er Ei" aus.',
+"Fehler beim Einlesen der Daten"
 ];
 
 var warn_en =["",
@@ -284,13 +309,17 @@ var warn_en =["",
 "The hatch time must be within 1 hour from now.",
 "Please enter a time.",
 'The Tier 4 egg has not hatched yet, so please choose "Tier 4 egg" as raid.',
-'The Tier 5 egg has not hatched yet, so please choose "Tier 5 egg" as raid.'
+'The Tier 5 egg has not hatched yet, so please choose "Tier 5 egg" as raid.',
+"Failed to parse the input"
 ];
 
 var raid_de = ["5er Ei","Giratina (Wandelform)","Groudon","","","","4er Ei","Absol","Alola-Knogga","Dragoran","Hundemon","Togetic"];
 var raid_en = ["Tier 5 Egg","Giratina (Altered Form)","Groudon","","","","Tier 4 Egg","Absol","Alolan Marowak","Dragonite","Houndoom","Togetic"];
 
 var ex = ["Amtsgericht Wedding", "Ente", "Hippo Fountain", "Kamel", "St. Sebastian-Kirche", "Zwillingsstatue"];
+
+var tg_gymedit = ["Brunnen","Rosengarten am Humboldhain","U-Bahnhof Osloer Strasse"]
+var tg_gymnew = ["Brunnen DRK", "Rosengarten am Humboldthain", "U-Bahnhof Osloer Straße"]
 
 var maps = [
 "https://goo.gl/maps/LJthotdr7b72", // 1892 Historisches Gebäude
@@ -367,7 +396,6 @@ function generateRaid(raidtext) {
   var time = document.getElementById("time").value;
   var start = document.getElementById("start").value;
   var diff = (new Date("Jan 01 1970 "+start).getTime() - new Date("Jan 01 1970 "+time).getTime()) / 60000;
-  console.log("Diff: " + diff)
   var player = document.getElementById("player").value;
   player = player.replace(/\n/g,"<br>")
   
@@ -444,7 +472,7 @@ function generateRaid(raidtext) {
   bu.setAttributeNode(btt1);
   
   var btt2 = document.createAttribute("class");
-  btt2.value = "mb-3 btn btn-success";
+  btt2.value = "btn btn-success";
   bu.setAttributeNode(btt2);
   
   var btt3 = document.createAttribute("id");
@@ -573,6 +601,10 @@ function checkEx(ext) {
   return ext == document.getElementById("gym").value;
 }
 
+function checkGym(ext) {
+  return ext == this;
+}
+
 function changeLang() {
   var i
   if (getLang() == "de") {
@@ -589,6 +621,7 @@ function changeLang() {
 	document.getElementById("timeh").innerHTML = warn_de[hatchwarn];
 	document.getElementById("starth").innerHTML = warn_de[startwarn];
 	document.getElementById("raidwarn").innerHTML = warn_de[raidwarn];
+	document.getElementById("tg_warn").innerHTML = warn_de[tg_warn];
 	
 	$('.selectpicker').selectpicker('refresh');
   }
@@ -606,6 +639,7 @@ function changeLang() {
 	document.getElementById("timeh").innerHTML = warn_en[hatchwarn];
 	document.getElementById("starth").innerHTML = warn_en[startwarn];
 	document.getElementById("raidwarn").innerHTML = warn_en[raidwarn];
+	document.getElementById("tg_warn").innerHTML = warn_en[tg_warn];
 	
 	$('.selectpicker').selectpicker('refresh');
   }
@@ -632,6 +666,125 @@ function TierCheck() {
 		if (ind > 0 && ind < 6 && document.getElementById("time").value) {
 			checkTime();
 		}
+	}
+}
+
+function pasteTelegram() {
+	var tele = document.getElementById("tg_paste").value
+	var arr = tele.split("\n");
+	var txt = "";
+	var del = 0;
+	var st_m = ""; 
+	var c_m = "";
+	var i_m = 0; 
+	var p_m = "";
+	for (i=0; i < arr.length; i++) {
+		item = arr[i];
+		if (item == "" || item.includes("Spieler") || item.includes("EX-RAID") || item.includes("WP-Range:") || item.includes("[0]")) {
+			// check for certain terms to identify and delete empty lines, extra players, CP-Range, Ex-Raid tag & empty start times
+			arr.splice(i,1);
+			i--;
+				
+		} else if (i == 0 && item.includes("👤")) {
+			// if this is the first not-empty line: get Raidboss and either get hatch time or calculate depending on post format
+			var line = arr[i].split(" ");
+			var g = 1;
+			document.getElementById("raid").value = line[g];
+			g++;
+			if (line[g] == "Ei") { g++ }
+			if (line[g] == "bis") {	
+				g++;
+				var hatchtime = new Date(new Date("Jan 01 1970 "+line[g])- 2700000);
+				hatchtime = hatchtime.getHours() + ":" + hatchtime.getMinutes();
+			} else {
+				hatchtime = line[g];
+			}
+			document.getElementById("time").value = hatchtime;
+			
+		} else if (item.includes("Arena:")) {
+			// check for gym term, then extract gym name and modify it
+			var tg_gym = arr[i].substring(8,arr[i].length-2);
+			var tg_gi = tg_gymedit.findIndex(checkGym,tg_gym);
+			if (tg_gi >= 0) {
+				document.getElementById("gym").value = tg_gymnew[tg_gi];
+			} else {
+				document.getElementById("gym").value = tg_gym;
+			}
+			
+		} else if (item.includes("#")) {
+			// check for # as this indicates the start times, extract time and number of participants
+			del = 0;
+			var starttime = arr[i].substr(2,5);
+			var c = arr[i].substr(9,2);
+			if (c[1] == "]") {
+				c = "0"+c[0]; // we are comparing strings, so we have to make e.g. "9" into "09"
+			}
+			if (st_m) { // check if there are more than one start times
+				if (c_m >= c) {
+					// former start time has more or equal participants,  so delete the current start time and mark participants for deletion
+					del = 1;
+					arr.splice(i,1);
+					i--;
+				} else {
+					// former start time has less participants, so delete the former start time and their participants
+					for (j=i_m; j < i; i--) {
+						console.log("Array:"+j+" deleting old line: " + arr[j]);
+						arr.splice(j,1);
+					}
+				}
+			}
+			if (del == 0 || i == i_m) {
+				st_m = starttime;
+				c_m = c;
+				i_m = i;
+				p_m = "";
+			}
+		} else if (item.includes("└")) {
+			if (del == 1) {
+				// Player is marked for deletion, so delete them
+				arr.splice(i,1);
+				i--;
+			} else {
+				// delete Telegram username, then add (Telegram) and put it into the player list
+				item = item.replace(/\(@\w+\)/,"");
+				p_m += item.substr(2)+" (Telegram)\n";
+			}
+		}
+		
+	}
+	
+
+	document.getElementById("start").value = st_m;
+	document.getElementById("player").value = p_m;
+
+	$('.selectpicker').selectpicker('refresh');
+	
+	generateRaid("");
+	
+	if (raidwarn == 9) {
+		tg_warn = 14;
+		if (getLang() == "de") {
+			document.getElementById("tg_warn").innerHTML = warn_de[tg_warn];
+		}
+		if (getLang() == "en") {
+			document.getElementById("tg_warn").innerHTML = warn_en[tg_warn];
+		}
+	} else if (tg_warn == 14) {
+		tg_warn = 0;
+		document.getElementById("tg_warn").innerHTML = "";
+	}
+	
+	var output = document.getElementById("tg_output");
+	while (output.hasChildNodes()) {
+		output.removeChild(output.firstChild);
+	}
+	
+	if (tg_warn == 0) {
+	var cln1 = document.getElementById("ex").cloneNode(true);
+	document.getElementById("tg_output").appendChild(cln1);
+	
+	var cln2 = document.getElementById("but").cloneNode(true);
+	document.getElementById("tg_output").appendChild(cln2);
 	}
 }
 
