@@ -18,7 +18,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark"> 
+<nav class="navbar bg-dark navbar-dark"> 
   <ul class="navbar-nav">
 	<li class="nav-item">
 	  <a class="navbar-brand" href="./index.html">Gesundbrunnen Raid Tool</a>
@@ -34,10 +34,9 @@
   </ul>
 </nav>
 
-<div class="container-fluid" style="margin-top:20px">
+<div class="container-fluid mt-3">
 <!--<p><span id="txt_beta">Achtung, dies ist die Beta Seite. Funktionen sind eventuell beeinträchtigt und fehlerhaft.</span><br>
 <a id="txt_mainlink" href="https://gesundbrunnen-raids.tk/">Zur Hauptseite</a></p>-->
-<form>
 <div class="form-row">
 <div class="form-group col-sm-4 mb-3">
 <label for="raid" class="mr-sm-2">Raid:</label>
@@ -129,9 +128,8 @@
 <textarea class="form-control" id="player" rows="3"></textarea>
 </div>
 
-<span id="txt_instr">Drücke auf "Start!", überprüfe deine Angaben und drücke dann auf "In WhatsApp posten".<br></span>
-<span hidden id="txt_multi">Um einen Multiraid zu posten, ändere jetzt die Angaben oben für den nächsten Raid und drücke dann auf "Multiraid!". Wiederhole dies, bis alle Raids eingetragen sind.<br></span><br>
-</form>
+<div class="mb-2"><span id="txt_instr">Drücke auf "Start!", überprüfe deine Angaben und drücke dann auf "In WhatsApp posten".<br></span>
+<span hidden id="txt_multi">Um einen Multiraid zu posten, ändere jetzt die Angaben oben für den nächsten Raid und drücke dann auf "Multiraid!". Wiederhole dies, bis alle Raids eingetragen sind.<br></span></div>
 
 <div class="mb-3">
 <button class="btn btn-primary" id="starter" onclick='generateRaid("")'>Start!</button>
@@ -172,7 +170,7 @@
 			<li><a href="https://timepicker.co">jQuery Timepicker 1.3.5</a></li>
 			<li><a href="https://popper.js.org">Popper 1.14.7</a></li>
 		</ul>
-		Made by kimahree<br><small>v1.0.1 (31.03.2019)</small>
+		Made by kimahree<br><small>v1.0.2 (01.04.2019)</small>
       </div>
 
       <!-- Modal footer -->
@@ -196,6 +194,10 @@
 
       <!-- Modal body -->
       <div class="modal-body">
+		v1.0.2 (01.04.2019)
+		<ul>
+			<li>Adjust Raid end time</li>
+		</ul> 
 		v1.0.1 (31.03.2019)
 		<ul>
 			<li>Fix Daylight Savings / Timezone Bug</li>
@@ -257,7 +259,7 @@ var raidwarn = 0;
 
 var warn_de =["",
 "Raids schlüpfen nicht vor 6 Uhr.",
-"Raids schlüpfen nicht nach 21 Uhr.",
+"Raids schlüpfen nicht nach 21:45 Uhr.",
 "Dieser Raid ist bereits abgelaufen.",
 "Die Startzeit kann nicht in der Vergangenheit liegen.",
 "Die Startzeit muss innerhalb von 45 Minuten nach der Schlüpfzeit sein.",
@@ -273,7 +275,7 @@ var warn_de =["",
 
 var warn_en =["",
 "Raids do not hatch before 6:00.",
-"Raids do not hatch after 21:00.",
+"Raids do not hatch after 21:45.",
 "This raid has already expired.",
 "The start time cannot be in the past.",
 "The start time has to be within 45 minutes after the hatch time.",
@@ -513,7 +515,7 @@ function checkTime() {
 		document.getElementById("time").value = null;
 	} else if (hat < 21600000) {
 		hatchwarn = 1;
-	} else if (hat > 75600000) {
+	} else if (hat > 78300000) {
 		hatchwarn = 2;
 	} else if (hat2 < -2700000) {
 		hatchwarn = 3;
