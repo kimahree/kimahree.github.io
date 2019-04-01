@@ -39,7 +39,7 @@
 <ul class="nav nav-tabs mb-2">
   <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#raidtool">Raids</a></li>
   <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#telegram">Telegram</a></li>
-  <!--<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a></li>-->
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#checklist">Checklist</a></li>
 </ul>
 
 <div class="tab-content">
@@ -159,6 +159,20 @@
   <button class="btn btn-primary" id="tg_start" onclick="pasteTelegram()">Start!</button>
   <span id="tg_warn" class="text-danger ml-2 align-middle"></span>
   <span id="tg_output"></span>
+  </div>
+</div>
+
+<div class="tab-pane fade" id="checklist">
+  <div class="fluid-container mb-3">
+  <textarea class="form-control mb-3" id="cl_paste" rows="10"></textarea>
+  <button class="btn btn-primary" id="cl_start" onclick="createChecklist()">Start!</button>
+  <span id="cl_output" hidden>
+  <div id="cl_b" class="input-group mb-1">
+      <input type="text" class="form-control" id="cl_v" value="Hi" readonly>
+      <div class="input-group-append">
+		<button class="btn btn-success" type="button" onclick="deletePlayer(this)">&check;</button>
+      </div>
+  </div></span>
   </div>
 </div>
 
@@ -322,8 +336,8 @@ var raid_en = ["Tier 5 Egg","Giratina (Altered Form)","Groudon","","","","Tier 4
 
 var ex = ["Amtsgericht Wedding", "Ente", "Hippo Fountain", "Kamel", "St. Sebastian-Kirche", "Zwillingsstatue"];
 
-var tg_gymedit = ["Brunnen","Rosengarten am Humboldhain","U-Bahnhof Osloer Strasse"]
-var tg_gymnew = ["Brunnen DRK", "Rosengarten am Humboldthain", "U-Bahnhof Osloer Straße"]
+var tg_gymedit = ["Brunnen", "jungfräulich Maria St.", "Rosengarten am Humboldhain", "U-Bahnhof Osloer Strasse"]
+var tg_gymnew = ["Brunnen DRK", "Jungfräulich Maria St.", "Rosengarten am Humboldthain", "U-Bahnhof Osloer Straße"]
 
 var maps = [
 "https://goo.gl/maps/LJthotdr7b72", // 1892 Historisches Gebäude
@@ -790,6 +804,26 @@ function pasteTelegram() {
 	var cln2 = document.getElementById("but").cloneNode(true);
 	document.getElementById("tg_output").appendChild(cln2);
 	}
+}
+
+function createChecklist(){
+	var cl_h1 = document.createAttribute("hidden");
+	document.getElementById("cl_paste").setAttributeNode(cl_h1);
+	var cl_h2 = document.createAttribute("hidden");
+	document.getElementById("cl_start").setAttributeNode(cl_h2);	
+	var cl_h3 = document.getElementById("cl_output").getAttributeNode("hidden");
+	document.getElementById("cl_output").removeAttributeNode(cl_h3);	
+	var cl = document.getElementById("cl_paste").value.split("\n");
+	document.getElementById("cl_v").value = cl[0];
+	for (i=1; i < cl.length; i++) {
+		var cln = document.getElementById("cl_b").cloneNode(true);
+		cln.getElementsByTagName("input").cl_v.value = cl[i];
+		document.getElementById("cl_output").appendChild(cln);
+	}
+}
+
+function deletePlayer(pla){
+	pla.parentNode.parentNode.parentNode.removeChild(pla.parentNode.parentNode);
 }
 
 $(document).ready(function(){
