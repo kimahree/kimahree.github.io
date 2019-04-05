@@ -237,6 +237,7 @@
 	  	v1.0.4 (05.04.2019)
 		<ul>
 			<li>Add new gym "Caritas Berlin"</li>
+			<li>Adjust Raid end time again</li>
 		</ul> 
 		v1.0.3 (02.04.2019)
 		<ul>
@@ -308,7 +309,7 @@ var tg_warn = 0;
 
 var warn_de =["",
 "Raids schlüpfen nicht vor 6 Uhr.",
-"Raids schlüpfen nicht nach 21:45 Uhr.",
+"Raids schlüpfen nicht nach 22:45 Uhr.",
 "Dieser Raid ist bereits abgelaufen.",
 "Die Startzeit kann nicht in der Vergangenheit liegen.",
 "Die Startzeit muss innerhalb von 45 Minuten nach der Schlüpfzeit sein.",
@@ -325,7 +326,7 @@ var warn_de =["",
 
 var warn_en =["",
 "Raids do not hatch before 6:00.",
-"Raids do not hatch after 21:45.",
+"Raids do not hatch after 22:45.",
 "This raid has already expired.",
 "The start time cannot be in the past.",
 "The start time has to be within 45 minutes after the hatch time.",
@@ -569,7 +570,7 @@ function checkTime() {
 		document.getElementById("time").value = null;
 	} else if (hat < 21600000) {
 		hatchwarn = 1;
-	} else if (hat > 78300000) {
+	} else if (hat > 81900000) {
 		hatchwarn = 2;
 	} else if (hat2 < -2700000) {
 		hatchwarn = 3;
