@@ -16,7 +16,7 @@
 		div.dropdown-menu.show { width: 100% !important; } ul.dropdown-menu.inner>li>a { white-space: initial; }
 	</style>
 </head>
-<body>
+<body onload="init()">
 
 <nav class="navbar bg-dark navbar-dark"> 
   <ul class="navbar-nav">
@@ -41,73 +41,11 @@
 <div class="form-group col-sm-4 mb-3">
 <label for="raid" class="mr-sm-2">Raid:</label>
 <select class="form-control selectpicker mr-sm-2" onchange="TierCheck()" id="raid">
-  <optgroup label="5er">
-  <option hidden disabled value="5er" style="font-style:italic" id="t5_0">5er Ei</option>
-  <option value="Giratina" id="t5_1">Giratina (Urform)</option>
-  <option hidden value="Latios" id="t5_2">Latios</option>
-  <option hidden id="t5_3"></option>
-  <option hidden id="t5_4"></option>
-  <option hidden id="t5_5"></option>
-  </optgroup>
-  <optgroup label="4er">
-  <option value="4er" style="font-style:italic" id="t4_0">4er Ei</option>
-  <option value="Absol" id="t4_1">Absol</option>
-  <option value="Alola-Knogga" id="t4_2">Alola-Knogga</option>
-  <option value="Dragoran" id="t4_3">Dragoran</option>
-  <option value="Hundemon" id="t4_4">Hundemon</option>
-  <option value="Togetic" id="t4_5">Togetic</option>
-  </optgroup>
 </select>
 </div>
 <div class="form-group col-sm-8 mb-3">
 <label for="gym" class="mr-sm-2" id="txt_gym">Arena:</label>
 <select class="form-control selectpicker mr-sm-2" data-live-search="true" data-none-results-text="Keine Ergebnisse / No result." id="gym">
-  <option value="1892 Historisches Gebäude" data-tokens="historisches haus">1892 Historisches Gebäude</option>
-  <option value="AEG Beamtentor">AEG Beamtentor</option>
-  <option value="Amtsgericht Wedding" data-tokens="ex raid arena gym" style="font-weight:bold">Amtsgericht Wedding (EX)</option>
-  <option value="Bahnhof Humboldthain" data-tokens="s-bahnhof">Bahnhof Humboldthain</option>
-  <option value="Bahnsteig S-Bahnhof Gesundbrunnen">Bahnsteig S-Bahnhof Gesundbrunnen</option>
-  <option value="Balance On The Globe">Balance On The Globe</option>
-  <option value="Berliner Mauer S Wollankstraße" data-tokens="s-bahnhof">Berliner Mauer S Wollankstraße</option>
-  <option value="Birkenmural">Birkenmural</option>
-  <option value="Bornholmer Straße Border Crossing">Bornholmer Straße Border Crossing</option>
-  <option value="Bösebrücke Bornholmer Straße">Bösebrücke Bornholmer Straße</option>
-  <option value="Brunnen DRK">Brunnen DRK</option>
-  <option value="Brunnenstraße" data-tokens="u-bahnhof voltastraße">Brunnenstraße</option>
-  <option value="Bunker Humboldthain">Bunker Humboldthain</option>
-  <option value="Caritas Berlin">Caritas Berlin</option>
-  <option value="Drei-Säulen-Brunnen">Drei-Säulen-Brunnen</option>
-  <option value="Eingangstor St. Elisabeth" data-tokens="friedhof kirchhof cemetery graveyard">Eingangstor St. Elisabeth</option>
-  <option value="Ente" data-tokens="ex raid arena gym 🦆" style="font-weight:bold">Ente (EX)</option>
-  <option value="Ernst Reuter Büste">Ernst Reuter Büste</option>
-  <option value="Ev. Stephanus Kirche">Ev. Stephanus Kirche</option>
-  <option value="Gedenkstein Opfer der Berliner Mauer">Gedenkstein Opfer der Berliner Mauer</option>
-  <option value="Gewachsen auf Beton Mural" data-tokens="u-bahnhof pankstraße">Gewachsen auf Beton Mural</option>
-  <option value="Haus Graffiti">Haus Graffiti</option>
-  <option value="Hausmalerei">Hausmalerei</option>
-  <option value="Hauswächter">Hauswächter</option>
-  <option value="Hippo Fountain" data-tokens="ex raid arena gym" style="font-weight:bold">Hippo Fountain (EX)</option>
-  <option value="Humboldtpark">Humboldtpark</option>
-  <option value="Jungfräulich Maria St." data-tokens="sankt petrus bellermannstraße">Jungfräulich Maria St.</option>
-  <option value="Jux und Tollerei">Jux und Tollerei</option>
-  <option value="Kamel" data-tokens="ex raid arena gym 🐫 🐪" style="font-weight:bold">Kamel (EX)</option>
-  <option value="Kulturverein Christiana">Kulturverein Christiana</option>
-  <option value="Mother Statue">Mother Statue</option>
-  <option value="Portal zur Kaiser Wilhelm und Augusta Stiftung">Portal zur Kaiser Wilhelm und Augusta Stiftung</option>
-  <option value="Rosengarten am Humboldthain">Rosengarten am Humboldthain</option>
-  <option value="S-Bahnhof Bornholmer Straße">S-Bahnhof Bornholmer Straße</option>
-  <option value="Shadow People">Shadow People</option>
-  <option value="Spinnennetz Spielplatz" data-tokens="🕸️">Spinnennetz Spielplatz</option>
-  <option value="Springbrunnen am Rathaus">Springbrunnen am Rathaus</option>
-  <option value="St. Sebastian-Kirche" data-tokens="ex raid arena gym" style="font-weight:bold">St. Sebastian-Kirche (EX)</option>
-  <option value="Stolpersteine Georg und Rudolf Juliusburger" data-tokens="jüdisches krankenhaus hospital">Stolpersteine Georg und Rudolf Juliusburger</option>
-  <option value="Swinemünder Brücke">Swinemünder Brücke</option>
-  <option value="The Real Old Mechanical Door">The Real Old Mechanical Door</option>
-  <option value="U-Bahnhof Osloer Straße">U-Bahnhof Osloer Straße</option>
-  <option value="Vergessene Brücke">Vergessene Brücke</option>
-  <option value="Wyndham Garden Entrance Relief" data-tokens="hotel">Wyndham Garden Entrance Relief</option>
-  <option value="Zwillingsstatue" data-tokens="ex raid arena gym" style="font-weight:bold">Zwillingsstatue (EX)</option>
-  <option id="txt_chgym" value="" disabled selected hidden>Wähle eine Arena aus.</option>
   </select>
 </div>
 </div>
@@ -139,7 +77,7 @@
 </div>
 
 <div id="ex"></div>
-<div id="but"></div>
+<div id="but" class="mb-2"></div>
 
 <p class="small"><a href="" data-toggle="modal" data-target="#changelog">Changelog</a> - <a href="" data-toggle="modal" data-target="#credits">Credits</a> - This website is not affiliated with Niantic or Nintendo. Pokémon And All Respective Names are Trademark & © of Nintendo 1996-2019.</p>
 </div>
@@ -171,7 +109,7 @@
 			<li><a href="https://timepicker.co">jQuery Timepicker 1.3.5</a></li>
 			<li><a href="https://popper.js.org">Popper 1.14.7</a></li>
 		</ul>
-		Made by kimahree<br><small>v1.0.6 (10.04.2019)</small>
+		Made by kimahree<br><small>v1.0.7 (15.04.2019)</small>
       </div>
 
       <!-- Modal footer -->
@@ -195,6 +133,11 @@
 
       <!-- Modal body -->
       <div class="modal-body">
+		v1.0.7 (15.04.2019)
+		<ul>
+			<li>Enable Tier 5 Raids, add Latios</li>
+			<li>Load Raids and Gyms from JSON</li>
+		</ul>
 		v1.0.6 (10.04.2019)
 		<ul>
 			<li>Change Raid Bosses (End of Bug Event)</li>
@@ -238,6 +181,7 @@
 
 <script>
 var t5multi = 0;
+var t4index = 0;
 
 var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_instr","txt_button","txt_multi","txt_chgym","txt_cre_close","txt_cl_close"];
 
@@ -274,6 +218,7 @@ var txt_en = ["Attention, you're currently on the beta page. Functionality might
 var hatchwarn = 0;
 var startwarn = 0;
 var raidwarn = 0;
+var tg_warn = 0;
 
 var warn_de =["",
 "Raids schlüpfen nicht vor 6 Uhr.",
@@ -311,60 +256,158 @@ var warn_en =["",
 "Please enter a valid start time."
 ];
 
-var raid_de = ["5er Ei","Giratina (Urform)","Latios","","","","4er Ei","Absol","Alola-Knogga","Dragoran","Hundemon","Togetic"];
-var raid_en = ["Tier 5 Egg","Giratina (Origin Form)","Latios","","","","Tier 4 Egg","Absol","Alolan Marowak","Dragonite","Houndoom","Togetic"];
-
-var ex = ["Amtsgericht Wedding", "Ente", "Hippo Fountain", "Kamel", "St. Sebastian-Kirche", "Zwillingsstatue"];
-
-var maps = [
-"https://goo.gl/maps/LJthotdr7b72", // 1892 Historisches Gebäude
-"https://goo.gl/maps/pCd3BJgke8B2", // AEG Beamtentor
-"https://goo.gl/maps/q79rW3P5iz82", // Amtsgericht Wedding (EX)
-"https://goo.gl/maps/NoMxjQmX8Yz",  // Bahnhof Humboldthain
-"https://goo.gl/maps/P6fLg6nSaKM2", // Bahnsteig S-Bahnhof Gesundbrunnen
-"https://goo.gl/maps/bM2QWrCkDhq",  // Balance on the Globe
-"https://goo.gl/maps/7ggyACh3c7y",  // Berliner Mauer S Wollankstraße
-"https://goo.gl/maps/LUjPLZgELHR2", // Birkenmural
-"https://goo.gl/maps/borFEx1Zp3D2", // Bornholmer Straße Border Crossing
-"https://goo.gl/maps/Fkb2uqJf8kJ2", // Bösebrücke Bornholmer Straße
-"https://goo.gl/maps/WqegcLtthPx",  // Brunnen DRK
-"https://goo.gl/maps/QEN9FksYAUR2", // Brunnenstraße
-"https://goo.gl/maps/Q5xj3TTdQfR2", // Bunker Humboldthain
-"https://goo.gl/maps/hETMiMPwxyo",  // Caritas Berlin
-"https://goo.gl/maps/BD6HAd3WwAC2", // Drei-Säulen-Brunnen
-"https://goo.gl/maps/6WQqtbYTLFD2", // Eingangstor St. Elisabeth
-"https://goo.gl/maps/9BhrrYtz8432", // Ente (EX)
-"https://goo.gl/maps/c3bK2hVWqy32", // Ernst Reuter Büste
-"https://goo.gl/maps/Yxwu2ubRmm52", // Ev. Stephanus Kirche
-"https://goo.gl/maps/vKCJtW7CXjm",  // Gedenkstein Opfer der Berliner Mauer
-"https://goo.gl/maps/8MVUihQXCQ82", // Gewachsen auf Beton Mural
-"https://goo.gl/maps/NJWvyGY1xN22", // Haus Graffiti
-"https://goo.gl/maps/wJXuVvpzvTv",  // Hausmalerei
-"https://goo.gl/maps/Yv9g8aRw9S72", // Hauswächter
-"https://goo.gl/maps/zRQmhYSnYTG2", // Hippo Fountain (EX)
-"https://goo.gl/maps/L6gci4KrmRM2", // Humboldtpark
-"https://goo.gl/maps/4qMqQB4rPXG2", // Jungfräulich Maria St.
-"https://goo.gl/maps/vLZcbgbGXrD2", // Jux und Tollerei
-"https://goo.gl/maps/xCWVtJhqw1r",  // Kamel (EX)
-"https://goo.gl/maps/Mks22S8syUn",  // Kulturverein Christiana
-"https://goo.gl/maps/obrXpaCe8Kp",  // Mother Statue
-"https://goo.gl/maps/Z132sxwCnHE2", // Portal zur Kaiser Wilhelm und Augusta Stiftung
-"https://goo.gl/maps/uuFsiJBmDp72", // Rosengarten am Humboldthain
-"https://goo.gl/maps/fTpjjxxPXbK2", // S-Bahnhof Bornholmer Straße
-"https://goo.gl/maps/PzqU2mtenL42", // Shadow People
-"https://goo.gl/maps/vKtfoyDAsoS2", // Spinnennetz Spielplatz
-"https://goo.gl/maps/j5WL5s81k2K2", // Springbrunnen am Rathaus
-"https://goo.gl/maps/za2Fq6XPC5t",  // St. Sebastian-Kirche (EX)
-"https://goo.gl/maps/kPsKT4sGpPK2", // Stolpersteine Georg und Rudolf Juliusburger
-"https://goo.gl/maps/hH2WCCHeLwK2", // Swinemünder Brücke
-"https://goo.gl/maps/WvKP2eCWdu12", // The Real Old Mechanical Door
-"https://goo.gl/maps/67rcURgu1Y82", // U-Bahnhof Osloer Straße
-"https://goo.gl/maps/NTR2AcNt6pp",  // Vergessene Brücke
-"https://goo.gl/maps/o2XreJkiJTx",  // Wyndham Garden Entrance Relief
-"https://goo.gl/maps/q1rctADEE8q"   // Zwillingsstatue (EX)
-];
-
 var multi = 0;
+
+var gymjson = {
+"gyms": [
+{"value":"1892 Historisches Gebäude","token":"historisches haus","map":"https://goo.gl/maps/LJthotdr7b72"},
+{"value":"AEG Beamtentor","map":"https://goo.gl/maps/pCd3BJgke8B2"},
+{"value":"Amtsgericht Wedding","ex":true,"map":"https://goo.gl/maps/q79rW3P5iz82"},
+{"value":"Bahnhof Humboldthain","token":"s-bahnhof","map":"https://goo.gl/maps/NoMxjQmX8Yz"},
+{"value":"Bahnsteig S-Bahnhof Gesundbrunnen","map":"https://goo.gl/maps/P6fLg6nSaKM2"},
+{"value":"Balance on the Globe","tg":"Balance On The Globe","map":"https://goo.gl/maps/bM2QWrCkDhq"},
+{"value":"Berliner Mauer S Wollankstraße","token":"s-bahnhof","map":"https://goo.gl/maps/7ggyACh3c7y"},
+{"value":"Birkenmural","map":"https://goo.gl/maps/LUjPLZgELHR2"},
+{"value":"Bornholmer Straße Border Crossing","map":"https://goo.gl/maps/borFEx1Zp3D2"},
+{"value":"Bösebrücke Bornholmer Straße","map":"https://goo.gl/maps/Fkb2uqJf8kJ2"},
+{"value":"Brunnen DRK","tg":"Brunnen","map":"https://goo.gl/maps/WqegcLtthPx"},
+{"value":"Brunnenstraße","token":"u-bahnhof voltastraße","map":"https://goo.gl/maps/QEN9FksYAUR2"},
+{"value":"Bunker Humboldthain","map":"https://goo.gl/maps/Q5xj3TTdQfR2"},
+{"value":"Caritas Berlin","map":"https://goo.gl/maps/hETMiMPwxyo"},
+{"value":"Drei-Säulen-Brunnen","map":"https://goo.gl/maps/BD6HAd3WwAC2"},
+{"value":"Eingangstor St. Elisabeth","token":"friedhof kirchhof cemetery graveyard","map":"https://goo.gl/maps/6WQqtbYTLFD2"},
+{"value":"Ente","ex":true,"token":"🦆","map":"https://goo.gl/maps/9BhrrYtz8432"},
+{"value":"Ernst Reuter Büste","map":"https://goo.gl/maps/c3bK2hVWqy32"},
+{"value":"Ev. Stephanus Kirche","map":"https://goo.gl/maps/Yxwu2ubRmm52"},
+{"value":"Gedenkstein Opfer der Berliner Mauer","map":"https://goo.gl/maps/vKCJtW7CXjm"},
+{"value":"Gewachsen auf Beton Mural","token":"u-bahnhof pankstraße","map":"https://goo.gl/maps/8MVUihQXCQ82"},
+{"value":"Haus Graffiti","map":"https://goo.gl/maps/NJWvyGY1xN22"},
+{"value":"Hausmalerei","map":"https://goo.gl/maps/wJXuVvpzvTv"},
+{"value":"Hauswächter","map":"https://goo.gl/maps/Yv9g8aRw9S72"},
+{"value":"Hippo Fountain","ex":true,"map":"https://goo.gl/maps/zRQmhYSnYTG2"},
+{"value":"Humboldtpark","map":"https://goo.gl/maps/L6gci4KrmRM2"},
+{"value":"Jungfräulich Maria St.","tg":"jungfräulich Maria St.","token":"sankt petrus bellermannstraße","map":"https://goo.gl/maps/4qMqQB4rPXG2"},
+{"value":"Jux und Tollerei","map":"https://goo.gl/maps/vLZcbgbGXrD2"},
+{"value":"Kamel","ex":true,"token":"🐫 🐪","map":"https://goo.gl/maps/xCWVtJhqw1r"},
+{"value":"Kulturverein Christiana","map":"https://goo.gl/maps/Mks22S8syUn"},
+{"value":"Mother Statue","map":"https://goo.gl/maps/obrXpaCe8Kp"},
+{"value":"Portal zur Kaiser Wilhelm und Augusta Stiftung","tg":"Portal zur Kaiser Wilhelm Und Augusta Stiftung","map":"https://goo.gl/maps/Z132sxwCnHE2"},
+{"value":"Rosengarten am Humboldthain","tg":"Rosengarten am Humboldhain","map":"https://goo.gl/maps/uuFsiJBmDp72"},
+{"value":"S-Bahnhof Bornholmer Straße","map":"https://goo.gl/maps/fTpjjxxPXbK2"},
+{"value":"Shadow People","map":"https://goo.gl/maps/PzqU2mtenL42"},
+{"value":"Spinnennetz Spielplatz","token":"🕸️","map":"https://goo.gl/maps/vKtfoyDAsoS2"},
+{"value":"Springbrunnen am Rathaus","tg":"Springbrunnen Am Rathaus","map":"https://goo.gl/maps/j5WL5s81k2K2"},
+{"value":"St. Sebastian-Kirche","ex":true,"map":"https://goo.gl/maps/za2Fq6XPC5t"},
+{"value":"Stolpersteine Georg und Rudolf Juliusburger","tg":"Stolpersteine Georg Und Rudolf Juliusburger","token":"jüdisches krankenhaus jewish hospital","map":"https://goo.gl/maps/kPsKT4sGpPK2"},
+// {"value":"Stone Snake","token":"🐍","map":"https://goo.gl/maps/1vVp7mPAtzH2"},
+{"value":"Swinemünder Brücke","map":"https://goo.gl/maps/hH2WCCHeLwK2"},
+{"value":"The Real Old Mechanical Door","map":"https://goo.gl/maps/WvKP2eCWdu12"},
+{"value":"U-Bahnhof Osloer Straße","tg":"U-Bahnhof Osloer Strasse","map":"https://goo.gl/maps/67rcURgu1Y82"},
+{"value":"Vergessene Brücke","map":"https://goo.gl/maps/NTR2AcNt6pp"},
+{"value":"Wyndham Garden Entrance Relief","token":"hotel","map":"https://goo.gl/maps/o2XreJkiJTx"},
+{"value":"Zwillingsstatue","ex":true,"map":"https://goo.gl/maps/q1rctADEE8q"}
+]};
+
+var raidjson = {
+	"tier5":[
+		{"value":"Giratina","de":"Giratina (Urform)","en":"Giratina (Origin Forme)"},
+		{"value":"Latios"}
+	],
+	"tier4":[
+		{"value":"Absol"},
+		{"value":"Alola-Knogga","en":"Alolan Marowak"},
+		{"value":"Dragoran","en":"Dragonite"},
+		{"value":"Hundemon","en":"Houndoom"},
+		{"value":"Togetic"}
+	]
+};
+
+
+var raid_de = [];
+var raid_en = [];
+var tg_gymedit = [];
+var tg_gymnew = [];
+
+function init() {
+	// make Raids
+	var txt = "";
+	var t4 = 0;
+	var t5 = 0;
+	try {
+		t5 = raidjson.tier5.length;
+	} catch {}
+	if (t5 > 0) {
+		txt += '<optgroup label="5er"><option ';
+		if (t5 == 1) {
+			txt += "hidden disabled ";
+		}
+		txt += 'value="5er" style="font-style:italic">5er Ei</option>';
+		raid_de.push("5er Ei");
+		raid_en.push("Tier 5 Egg");
+		for (i = 0; i < t5; i++) {
+			var d = (raidjson.tier5[i].de) ? raidjson.tier5[i].de:raidjson.tier5[i].value;
+			var e = (raidjson.tier5[i].en) ? raidjson.tier5[i].en:raidjson.tier5[i].value;
+			txt += '<option value="' + raidjson.tier5[i].value + '">' + d + '</option>';
+			raid_de.push(d);
+			raid_en.push(e);
+		}
+		txt += '</optgroup>'
+	}
+	try { 
+		t4 = raidjson.tier4.length; 
+	} catch {}
+	if (t4 > 0) {
+		txt += '<optgroup label="4er"><option ';
+		if (t4 == 1) {
+			txt += "hidden disabled ";
+		}
+		txt += 'value="4er" style="font-style:italic">4er Ei</option>';
+		raid_de.push("4er Ei");
+		raid_en.push("Tier 4 Egg");
+		for (i = 0; i < t4; i++) {
+			var d = (raidjson.tier4[i].de) ? raidjson.tier4[i].de:raidjson.tier4[i].value;
+			var e = (raidjson.tier4[i].en) ? raidjson.tier4[i].en:raidjson.tier4[i].value;
+			txt += '<option value="' + raidjson.tier4[i].value + '">' + d + '</option>';
+			raid_de.push(d);
+			raid_en.push(e);
+		}
+		txt += '</optgroup>'
+	}
+	if (!txt) {
+		txt = '<option disabled style="font-style:italic">Keine Raids verfügbar.</option>';
+		raid_de.push("Keine Raids verfügbar.");
+		raid_en.push("No raids available.")
+	}
+	document.getElementById("raid").innerHTML = txt;
+	
+	if (t5 > 1) {
+		t5multi = 1;
+	}
+	t4index = (t4) ? t5+1:0;
+	
+	// make Gym list
+	
+	var txt = "";
+	for (i = 0; i < gymjson.gyms.length ; i++) {
+		txt += '<option value="' + gymjson.gyms[i].value + '"';
+		if (gymjson.gyms[i].token || gymjson.gyms[i].ex) {
+			txt += ' data-tokens="';
+			txt += (gymjson.gyms[i].token) ? gymjson.gyms[i].token:"";
+			txt += (gymjson.gyms[i].ex) ? ' ex raid arena gym" style="font-weight:bold"':'"';
+		}
+		txt += '>' + gymjson.gyms[i].value;
+		txt += (gymjson.gyms[i].ex) ? ' (EX)':"";
+		txt += '</option>';
+		if (gymjson.gyms[i].tg) {
+			tg_gymedit.push(gymjson.gyms[i].tg);
+			tg_gymnew.push(gymjson.gyms[i].value);
+		}	
+	}
+	txt += '<option id="txt_chgym" value="" disabled selected hidden>Wähle eine Arena aus.</option>'
+	document.getElementById("gym").innerHTML = txt;
+	
+	$('.selectpicker').selectpicker('refresh');
+}
 
 function generateRaid(raidtext) {
   document.getElementById("ex").innerHTML = "";
@@ -392,10 +435,9 @@ function generateRaid(raidtext) {
   var time = document.getElementById("time").value;
   var start = document.getElementById("start").value;
   var diff = (new Date("Jan 01 1970 "+start).getTime() - new Date("Jan 01 1970 "+time).getTime()) / 60000;
-  console.log("Diff: " + diff)
   var player = document.getElementById("player").value;
   player = player.replace(/\n/g,"<br>")
- 
+  
   if (player && (!start || (startwarn != 0 && startwarn != 6) ) ) {
 	raidwarn = 15;
 	if (getLang() == "de") {
@@ -410,7 +452,7 @@ function generateRaid(raidtext) {
 	}
 	return;
   }
- 
+  
   if (raidtext == "") { 
 	multi = 1;
 	var hid = document.getElementById("addRaid").getAttributeNode("hidden");
@@ -445,26 +487,26 @@ function generateRaid(raidtext) {
   
   
   
-  if (ex.find(checkEx)) {
-    text = text + "🎗 <b>EX-Raid Arena</b> 🎗 <br>";
+  if (gymjson.gyms[document.getElementById("gym").selectedIndex].ex) {
+    text += "🎗 <b>EX-Raid Arena</b> 🎗 <br>";
   }
   
-  text = text + "<b>" + raid + " " + gym + "</b> ";
+  text += "<b>" + raid + " " + gym + "</b> ";
   
   if (time) {
-	text = text + "(🐣" + time + ")";
+	text += "(🐣" + time + ")";
   }
   
-  text = text + "<br>" + maps[document.getElementById("gym").selectedIndex];
+  text += "<br>" + gymjson.gyms[document.getElementById("gym").selectedIndex].map;
 
-  text = text + "<br><br><b>Start:</b> ";
+  text += "<br><br><b>Start:</b> ";
    
   if ((diff <= 45 && diff >= 0) || (time == "" && start != "") || startwarn == 11) {
-	text = text + start;
+	text += start;
   } else {
-    text = text + "?";
+    text += "?";
   }
-  text = text + "<br><br>" + player
+  text += "<br><br>" + player
   
   var exc = document.createAttribute("class");
   exc.value = "m-3 p-2 border rounded bg-light";
@@ -484,7 +526,7 @@ function generateRaid(raidtext) {
   bu.setAttributeNode(btt1);
   
   var btt2 = document.createAttribute("class");
-  btt2.value = "mb-3 btn btn-success";
+  btt2.value = "btn btn-success";
   bu.setAttributeNode(btt2);
   
   var btt3 = document.createAttribute("id");
@@ -559,7 +601,7 @@ function checkTime() {
 		hatchwarn = 3;
 	} else if (hat2 > 3600000) {
 		hatchwarn = 10;
-	} else if (hat2 > 0 && ra > 6) {
+	} else if (hat2 > 0 && ra > t4index) {
 		hatchwarn = 12;
 	} else if (t5multi && hat2 > 0 && ra > 0) {
 		hatchwarn = 13;
@@ -609,8 +651,8 @@ function checkTime() {
   }
 }
 
-function checkEx(ext) {
-  return ext == document.getElementById("gym").value;
+function checkGym(ext) {
+  return ext == this;
 }
 
 function changeLang() {
@@ -657,19 +699,19 @@ function getLang() {
 
 function TierCheck() {
 	var ind = document.getElementById("raid").selectedIndex;
-	if (hatchwarn == 12 && (ind == 6 || ind === 0 || (!t5multi && ind == 1))) {
+	if (hatchwarn == 12 && (ind == t4index || ind === 0 || (!t5multi && ind == 1))) {
 		hatchwarn = 0;
 		document.getElementById("timeh").innerHTML = "";
 	}
-	if (ind > 6 && document.getElementById("time").value) {
+	if (ind > t4index && document.getElementById("time").value) {
 		checkTime();
 	}
 	if (t5multi) {
-		if (hatchwarn == 13 && (ind === 0 || ind == 6)) {
+		if (hatchwarn == 13 && (ind === 0 || ind == t4index)) {
 			hatchwarn = 0;
 			document.getElementById("timeh").innerHTML = "";
 		}
-		if (ind > 0 && ind < 6 && document.getElementById("time").value) {
+		if (ind > 0 && ind < t4index && document.getElementById("time").value) {
 			checkTime();
 		}
 	}
