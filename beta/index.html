@@ -4,13 +4,14 @@
 	<title>Gesundbrunnen Raid Tool</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="refresh" content="43200">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.7/dist/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.10/dist/css/bootstrap-select.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.7/dist/js/bootstrap-select.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.10/dist/js/bootstrap-select.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
 	<style>
 		div.dropdown-menu.show { width: 100% !important; } ul.dropdown-menu.inner>li>a { white-space: initial; }
@@ -143,12 +144,12 @@
 		This Website uses the following dependencies:
 		<ul>
 			<li><a href="https://getbootstrap.com">Bootstrap 4.3.1</a></li>
-			<li><a href="https://developer.snapappointments.com/bootstrap-select">Bootstrap-select 1.13.7</a></li>
+			<li><a href="https://developer.snapappointments.com/bootstrap-select">Bootstrap-select 1.13.10</a></li>
 			<li><a href="https://jquery.com">jQuery 3.3.1</a></li>
 			<li><a href="https://timepicker.co">jQuery Timepicker 1.3.5</a></li>
 			<li><a href="https://popper.js.org">Popper 1.14.7</a></li>
 		</ul>
-		Made by kimahree<br><small>v1.0.10 (29.04.2019)</small>
+		Made by kimahree<br><small id="credits-ver"></small>
       </div>
 
       <!-- Modal footer -->
@@ -171,53 +172,7 @@
       </div>
 
       <!-- Modal body -->
-      <div class="modal-body">
-		v1.0.10 (29.04.2019)
-		<ul>
-			<li>Change Raid Bosses (Earth Day Event)</li>
-		</ul>
-		v1.0.9 (23.04.2019)
-		<ul>
-			<li>Remove Latios</li>
-		</ul>
-		v1.0.8 (20.04.2019)
-		<ul>
-			<li>Add new gym "Stone Snake"</li>
-		</ul>
-		v1.0.7 (15.04.2019)
-		<ul>
-			<li>Enable Tier 5 Raids, add Latios</li>
-			<li>Load Raids and Gyms from JSON</li>
-		</ul>
-		v1.0.6 (10.04.2019)
-		<ul>
-			<li>Change Raid Bosses (End of Bug Event)</li>
-		</ul>	  
-		v1.0.5 (08.04.2019)
-		<ul>
-			<li>Add a warning, when you try to schedule a raid without entering a start time.</li>
-		</ul>
-	  	v1.0.4 (05.04.2019)
-		<ul>
-			<li>Add new gym "Caritas Berlin"</li>
-			<li>Adjust Raid end time again</li>
-		</ul> 
-		v1.0.3 (02.04.2019)
-		<ul>
-			<li>Change Raid Bosses (Giratina Origin Form + Bug Event)</li>
-		</ul> 
-	  	v1.0.2 (01.04.2019)
-		<ul>
-			<li>Adjust Raid end time</li>
-		</ul> 
-		v1.0.1 (31.03.2019)
-		<ul>
-			<li>Fix Daylight Savings / Timezone Bug</li>
-		</ul> 
-        v1.0 (29.03.2019)
-		<ul>
-			<li>Initial Release</li>
-		</ul>
+      <div id="changelog-txt" class="modal-body">
       </div>
 
       <!-- Modal footer -->
@@ -371,6 +326,23 @@ var raidjson = {
 	]
 };
 
+var changelogjson = {
+	"items": [
+		{"ver":"1.0.11","date":"01.05.2019","change":["Update Bootstrap-select to fix bug on iOS","Force reload after 12 hours to fix caching issues","Load changelog from JSON and only show the first 4 entries"]},
+		{"ver":"1.0.10","date":"29.04.2019","change":["Change Raid Bosses (Earth Day Event)"]},
+		{"ver":"1.0.9","date":"23.04.2019","change":["Remove Latios"]},
+		{"ver":"1.0.8","date":"20.04.2019","change":['Add new gym "Stone Snake"']},
+		{"ver":"1.0.7","date":"15.04.2019","change":["Add Latios","Load Raids and Gyms from JSON"]},
+		{"ver":"1.0.6","date":"10.04.2019","change":["Change Raid Bosses (End of Bug Event)"]},
+		{"ver":"1.0.5","date":"08.04.2019","change":["Add a warning, when you try to schedule a raid without entering a start time."]},
+		{"ver":"1.0.4","date":"05.04.2019","change":['Add new gym "Caritas Berlin"',"Adjust Raid end time again"]},
+		{"ver":"1.0.3","date":"02.04.2019","change":["Change Raid Bosses (Giratina Origin Form, Start of Bug Event)"]},
+		{"ver":"1.0.2","date":"01.04.2019","change":["Adjust Raid end time"]},
+		{"ver":"1.0.1","date":"31.03.2019","change":["Fix Daylight Savings / Timezone Bug"]},
+		{"ver":"1.0","date":"29.03.2019","change":["Initial Release"]}
+	]
+};
+
 
 var raid_de = [];
 var raid_en = [];
@@ -454,6 +426,27 @@ function init() {
 	}
 	txt += '<option id="txt_chgym" value="" disabled selected hidden>Wähle eine Arena aus.</option>'
 	document.getElementById("gym").innerHTML = txt;
+	
+	// make Changelog and add version to credits
+	
+	txt = "";
+	for (i = 0; i < changelogjson.items.length; i++) {
+		txt += "v" + changelogjson.items[i].ver + " (" + changelogjson.items[i].date +")";
+		if (i == 0) {
+			document.getElementById("credits-ver").innerHTML = txt;
+		}
+		txt += "<ul>";
+		for (j=0; j < changelogjson.items[i].change.length; j++) {
+			txt += "<li>" + changelogjson.items[i].change[j] + "</li>";
+		}
+		txt += "</ul>";
+		if (i == 3) {
+			txt += '<div id="changelog-txt-more" class="collapse">'
+		}
+	}
+	txt += '</div><button id="changelog-expand" type="button" class="btn btn-primary" data-toggle="collapse" data-target="#changelog-txt-more" onclick="deleteElement(this)">Show entire Changelog</button>'
+	
+	document.getElementById("changelog-txt").innerHTML = txt;
 	
 	$('.selectpicker').selectpicker('refresh');
 }
@@ -905,6 +898,10 @@ function createChecklist(){
 
 function deletePlayer(pla){
 	pla.parentNode.parentNode.parentNode.removeChild(pla.parentNode.parentNode);
+}
+
+function deleteElement(ele){
+	ele.parentNode.removeChild(ele);
 }
 
 $(document).ready(function(){
