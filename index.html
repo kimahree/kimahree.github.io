@@ -280,16 +280,16 @@ var raidjson = {
 		{"value":"Vesprit","en":"Mesprit"}
 	],
 	"tier4":[
-		{"value":"Absol"},
 		{"value":"Alola-Knogga","en":"Alolan Marowak"},
 		{"value":"Despotar","en":"Tyranitar"},
-		{"value":"Hundemon","en":"Houndoom"},
-		{"value":"Tengulist","en":"Shiftry"}
+		{"value":"Glurak","en":"Charizard"},
+		{"value":"Relaxo","en":"Snorlax"}
 	]
 };
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.0.13","date":"08.05.2019","change":["Change Raid Bosses (Detective Pikachu Event)","Fix bug when hatch time is empty"]},
 		{"ver":"1.0.12","date":"02.05.2019","change":["Change Raid Bosses (Lake Trio Arrival)"]},
 		{"ver":"1.0.11","date":"01.05.2019","change":["Update Bootstrap-select to fix bug on iOS","Force reload after 12 hours to fix caching issues","Load changelog from JSON and only show the first 4 entries"]},
 		{"ver":"1.0.10","date":"29.04.2019","change":["Change Raid Bosses (Earth Day Event)"]},
@@ -625,7 +625,7 @@ function checkTime() {
   
   if (st) {
 	var now3 = sta - now2;
-	hat = sta - hat;
+	hat = (ti != "") ? sta - hat:0;
 	
 	var ste = document.createAttribute("class");
 	ste.value = "form-text text-danger";
