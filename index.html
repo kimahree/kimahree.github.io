@@ -280,15 +280,17 @@ var raidjson = {
 		{"value":"Vesprit","en":"Mesprit"}
 	],
 	"tier4":[
+		{"value":"Absol"},
 		{"value":"Alola-Knogga","en":"Alolan Marowak"},
 		{"value":"Despotar","en":"Tyranitar"},
-		{"value":"Glurak","en":"Charizard"},
-		{"value":"Relaxo","en":"Snorlax"}
+		{"value":"Hundemon","en":"Houndoom"},
+		{"value":"Tengulist","en":"Shiftry"}
 	]
 };
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.0.14","date":"17.05.2019","change":["Change Raid Bosses (End of Detective Pikachu Event)","Fix bug when start and hatch time is empty"]},
 		{"ver":"1.0.13","date":"08.05.2019","change":["Change Raid Bosses (Detective Pikachu Event)","Fix bug when hatch time is empty"]},
 		{"ver":"1.0.12","date":"02.05.2019","change":["Change Raid Bosses (Lake Trio Arrival)"]},
 		{"ver":"1.0.11","date":"01.05.2019","change":["Update Bootstrap-select to fix bug on iOS","Force reload after 12 hours to fix caching issues","Load changelog from JSON and only show the first 4 entries"]},
@@ -506,7 +508,7 @@ function generateRaid(raidtext) {
 
   text += "<br><br><b>Start:</b> ";
    
-  if ((diff <= 45 && diff >= 0) || (time == "" && start != "") || startwarn == 11) {
+  if ((diff <= 45 && diff >= 0 && time != "") || (time == "" && start != "") || startwarn == 11) {
 	text += start;
   } else {
     text += "?";
