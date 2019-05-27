@@ -2,7 +2,7 @@
 var t4index = 0;
 var t3index = 0;
 
-var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_instr","txt_button","txt_multi","txt_chgym","txt_cre_close","txt_cl_close"];
+var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_instr","txt_button","txt_multi","txt_chgym","txt_cre_close","txt_cl_close","txt_boq_generate"];
 
 var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beeinträchtigt und fehlerhaft.",
 "Zur Hauptseite",
@@ -16,7 +16,8 @@ var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beein
 'Um einen Multiraid zu posten, ändere jetzt die Angaben oben für den nächsten Raid und drücke dann auf "Multiraid!". Wiederhole dies, bis alle Raids eingetragen sind.<br>',
 "Wähle eine Arena aus.",
 "Schließen",
-"Schließen"
+"Schließen",
+"Link erstellen!"
 ];
 
 var txt_en = ["Attention, you're currently on the beta page. Functionality might be compromised and bugged.",
@@ -31,7 +32,8 @@ var txt_en = ["Attention, you're currently on the beta page. Functionality might
 'To post a Multiraid, change the data above for the next raid and then press "Multiraid!". Repeat until all raids have been added.<br>',
 "Choose a gym.",
 "Close",
-"Close"
+"Close",
+"Generate Link!"
 ];
 
 var hatchwarn = 0;
@@ -689,7 +691,7 @@ var items = [
 
 var changelogjson = {
 	"items": [
-		{"ver":"1.1","date":"27.05.2019","change":["New Subpage: Book of Quests Link Generator","Change Raid Bosses (Cresselia's Return)"]},
+		{"ver":"1.1","date":"27.05.2019","change":["New Subpage: Book of Quests Link Generator","Load scripts from external file","Change Raid Bosses (Cresselia's Return)"]},
 		{"ver":"1.0.15","date":"21.05.2019","change":["Change Raid Bosses (Extraordinary Raid Week)"]},
 		{"ver":"1.0.14","date":"17.05.2019","change":["Change Raid Bosses (End of Detective Pikachu Event)","Fix bug when start and hatch time is empty"]},
 		{"ver":"1.0.13","date":"08.05.2019","change":["Change Raid Bosses (Detective Pikachu Event)","Fix bug when hatch time is empty"]},
@@ -716,8 +718,10 @@ var raids = {
 };
 
 var quests = [1,4,7,16,37,50,56,58,60,66,70,74,86,88,92,95,100,102,103,113,124,125,126,129,133,138,140,142,147,216,227,246,261,286,287,294,296,302,307,311,312,317,325,327,345,347,353,359,425,436];
+var legacy = [3,10,25,27,36,38,40,42,55,59,61,67,73,81,96,98,107,109,114,117,121,123,127,131,132,137,171,179,184,191,193,200,203,204,209,215,224,228,231,241,252,256,270,290,299,309,310,315,320,322,328,349,387,390,399,427];
 var checkbox = 0;
 var hidden = 1;
+var sel_q = [];
 
 var orignest = [1,4,7,25,35,37,43,54,58,60,63,66,72,77,81,84,86,90,92,95,100,102,104,111,116,123,124,125,126,127,129,133,138,140,152,155,158,170,185,190,193,200,202,203,206,209,211,213,215,216,220,226,227,231,234,252,255,258,261,273,278,283,285,296,299,300,302,307,309,311,312,318,320,322,325,333,341,343,345,347,353,355,370,387,390,393,399,449];
 var oldnest = orignest.slice();
@@ -860,18 +864,25 @@ function init() {
 
 	txt = "";
 	for (i = 0; i < quests.length ; i++) {
-		txt += '<div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" class="custom-control-input" id="checkbox' + i + '" value=' + quests[i] + '><label class="custom-control-label" for="checkbox' + i + '">' + getPkmnByDex(quests[i])[0].name + '</label></div>';
+		txt += '<button type="button" class="m-1 btn btn-outline-primary" id="button' + i + '" value=' + quests[i] + '>' + getPkmnByDex(quests[i])[0].name + '</button>';
 	}
 	document.getElementById("pokelist").innerHTML = txt;
 
 	txt = "";
 	for (i = 0; i < items.length; i++) {
 		var j = i + quests.length;
-		txt += '<div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" class="custom-control-input" id="checkbox' + j + '" value="' + items[i].id + '"><label class="custom-control-label" for="checkbox' + j + '">' + items[i].name + '</label></div>';
+		txt += '<button type="button" class="m-1 btn btn-outline-primary" id="button' + j + '" value="' + items[i].id + '">' + items[i].name + '</button>';
 	}
 	document.getElementById("itemlist").innerHTML = txt;
+
+	txt = "";
+	for (i = 0; i < legacy.length ; i++) {
+		var k = i + quests.length + items.length
+		txt += '<button type="button" class="m-1 btn btn-outline-primary" id="button' + k + '" value=' + legacy[i] + '>' + getPkmnByDex(legacy[i])[0].name + '</button>';
+	}
+	document.getElementById("legacylist").innerHTML = txt;
 	
-	checkbox = quests.length + items.length;
+	checkbox = quests.length + items.length + legacy.length;
 	
 	$('.selectpicker').selectpicker('refresh');
 }
@@ -1141,15 +1152,11 @@ function changeLang() {
 	document.getElementById("raidwarn").innerHTML = warn_de[raidwarn];
 	document.getElementById("tg_warn").innerHTML = warn_de[tg_warn];
 
-	for (i = 0; i < pokemon.length; i++) {
-		if (pokemon[i].en) {
-			document.getElementById("pokelist").innerHTML = document.getElementById("pokelist").innerHTML.replace(pokemon[i].en,pokemon[i].name);
-		}
-	}
+	$("#pokelist button, #legacylist button").text(function(i, origText){
+		return (getPkmnEng(origText)) ? getPkmnEng(origText).name:origText
+	});
 
-	for (i = 0; i < items.length; i++) {
-		document.getElementById("itemlist").innerHTML = document.getElementById("itemlist").innerHTML.replace(items[i].en,items[i].name);
-	}
+	$("#itemlist button").text(function(i){return items[i].name});
 	
 	$('.selectpicker').selectpicker('refresh');
   }
@@ -1169,15 +1176,11 @@ function changeLang() {
 	document.getElementById("raidwarn").innerHTML = warn_en[raidwarn];
 	document.getElementById("tg_warn").innerHTML = warn_en[tg_warn];
 
-	for (i = 0; i < pokemon.length; i++) {
-		if (pokemon[i].en) {
-			document.getElementById("pokelist").innerHTML = document.getElementById("pokelist").innerHTML.replace(pokemon[i].name,pokemon[i].en);
-		}
-	}
+	$("#pokelist button, #legacylist button").text(function(i, origText){
+		return (getPkmn(origText).en) ? getPkmn(origText).en:origText
+	});
 
-	for (i = 0; i < items.length; i++) {
-		document.getElementById("itemlist").innerHTML = document.getElementById("itemlist").innerHTML.replace(items[i].name,items[i].en);
-	}
+	$("#itemlist button").text(function(i){return items[i].en});
 	
 	$('.selectpicker').selectpicker('refresh');
   }
@@ -1354,6 +1357,24 @@ $(document).ready(function(){
     $('input.timepicker').timepicker({});
 });
 
+$(document).ready(function() {
+	$("#boq").on('click', '.btn-outline-primary', function(){
+		$(this).removeClass("btn-outline-primary").addClass("btn-primary");
+		sel_q.push($(this).attr("value"));
+		sel_q.sort();
+		console.log(sel_q);
+	});   
+});
+
+$(document).ready(function() {
+	$("#boq").on('click', '.btn-primary', function(){
+		$(this).removeClass("btn-primary").addClass("btn-outline-primary");
+		sel_q.splice(sel_q.indexOf($(this).attr("value")),1);
+
+		console.log(sel_q);
+	});   
+});
+
 $('.timepicker').timepicker({
     timeFormat: 'HH:mm',
     interval: 5,
@@ -1427,17 +1448,9 @@ function generateTable() {
 }
 
 function generateLink() {
-	var filter = ""
-	for (i = 0; i < checkbox; i++) {
-		if (document.getElementById("checkbox" + i).checked) {
-			filter += "," + document.getElementById("checkbox" + i).value;
-		}
-	}
-	
-	if (filter) {
-		filter = filter.substr(1);
-		link = "https://www.bookofquests.de/#14/1490031.01/6900393.52/0/f=" + filter;
-		document.getElementById("newLink").innerHTML = '<a href="' + link + '">' + link + '</a>';
+	if (sel_q.length > 0) {
+		link = "https://www.bookofquests.de/#14/1490031.01/6900393.52/0/f=" + sel_q.toString();
+		document.getElementById("newLink").innerHTML = '<a href="' + link + '" target="_blank">' + link + '</a>';
 	} else {
 		document.getElementById("newLink").innerHTML = "Bitte wähle mindestens 1 Pokémon oder Item aus.";
 	}

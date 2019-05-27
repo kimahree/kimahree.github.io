@@ -181,7 +181,7 @@
 </div>
 
 <div class="tab-pane fade" id="boq">
-  <div class="card">
+  <div class="card mb-1">
     <div class="card-header">
       <a class="card-link" data-toggle="collapse" href="#ChoosePokemon">
         Pokémon
@@ -194,7 +194,7 @@
     </div>
   </div>
 
-  <div class="card mb-2">
+  <div class="card mb-1">
     <div class="card-header">
       <a class="card-link" data-toggle="collapse" href="#ChooseItem">
         Items
@@ -206,8 +206,21 @@
       </div>
     </div>
   </div>
+
+  <div class="card mb-2">
+    <div class="card-header">
+      <a class="collapsed card-link" data-toggle="collapse" href="#ChooseLegacy">
+        Legacy Pokémon
+      </a>
+    </div>
+    <div id="ChooseLegacy" class="collapse">
+      <div class="card-body" id="legacylist">
+		
+      </div>
+    </div>
+  </div>
   
-  <button type="button" class="btn btn-success mb-2" onclick="generateLink()">Link erstellen!</button>
+  <button type="button" class="btn btn-success mb-2" id="txt_boq_generate" onclick="generateLink()">Link erstellen!</button>
   
   <div class="mb-2 p-2 border rounded bg-light" id="newLink" style="display: none; word-wrap: break-word;">
   </div>
