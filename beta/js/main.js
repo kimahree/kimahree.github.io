@@ -2,7 +2,7 @@
 var t4index = 0;
 var t3index = 0;
 
-var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_instr","txt_button","txt_multi","txt_chgym","txt_cre_close","txt_cl_close","txt_boq_generate"];
+var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_instr","txt_button","txt_multi","txt_chgym","txt_cre_close","txt_cl_close","txt_boq_intro","txt_boq_generate"];
 
 var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beeinträchtigt und fehlerhaft.",
 "Zur Hauptseite",
@@ -17,6 +17,7 @@ var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beein
 "Wähle eine Arena aus.",
 "Schließen",
 "Schließen",
+'Auf dieser Seite kannst du für <a href="https://www.bookofquests.de/">Book of Quests</a> einen Link erstellen, bei dem nur bestimmte Pokémon / Items auf der Karte angezeigt werden. Klicke dazu alle gewünschten Pokémon / Items an und drücke dann auf "Link erstellen!".', 
 "Link erstellen!"
 ];
 
@@ -33,6 +34,7 @@ var txt_en = ["Attention, you're currently on the beta page. Functionality might
 "Choose a gym.",
 "Close",
 "Close",
+'On this site you can generate a link to <a href="https://www.bookofquests.de/">Book of Quests</a>, which will only show certain Pokémon / items on the map. Click all the Pokémon / items you want to see and then press "Generate Link!".',
 "Generate Link!"
 ];
 
@@ -691,7 +693,7 @@ var items = [
 
 var changelogjson = {
 	"items": [
-		{"ver":"1.1","date":"27.05.2019","change":["New Subpage: Book of Quests Link Generator","Load scripts from external file","Change Raid Bosses (Cresselia's Return)"]},
+		{"ver":"1.1","date":"27.05.2019","change":["New Subpage: Book of Quests Link Generator","Load scripts from external file","Add TinySort dependency","Change Raid Bosses (Cresselia's Return)"]},
 		{"ver":"1.0.15","date":"21.05.2019","change":["Change Raid Bosses (Extraordinary Raid Week)"]},
 		{"ver":"1.0.14","date":"17.05.2019","change":["Change Raid Bosses (End of Detective Pikachu Event)","Fix bug when start and hatch time is empty"]},
 		{"ver":"1.0.13","date":"08.05.2019","change":["Change Raid Bosses (Detective Pikachu Event)","Fix bug when hatch time is empty"]},
@@ -867,6 +869,8 @@ function init() {
 		txt += '<button type="button" class="m-1 btn btn-outline-primary" id="button' + i + '" value=' + quests[i] + '>' + getPkmnByDex(quests[i])[0].name + '</button>';
 	}
 	document.getElementById("pokelist").innerHTML = txt;
+	
+	tinysort("#pokelist > button");
 
 	txt = "";
 	for (i = 0; i < items.length; i++) {
@@ -875,12 +879,16 @@ function init() {
 	}
 	document.getElementById("itemlist").innerHTML = txt;
 
+	tinysort("#itemlist > button");
+
 	txt = "";
 	for (i = 0; i < legacy.length ; i++) {
 		var k = i + quests.length + items.length
 		txt += '<button type="button" class="m-1 btn btn-outline-primary" id="button' + k + '" value=' + legacy[i] + '>' + getPkmnByDex(legacy[i])[0].name + '</button>';
 	}
 	document.getElementById("legacylist").innerHTML = txt;
+
+	tinysort("#legacylist > button");
 	
 	checkbox = quests.length + items.length + legacy.length;
 	
@@ -1153,10 +1161,16 @@ function changeLang() {
 	document.getElementById("tg_warn").innerHTML = warn_de[tg_warn];
 
 	$("#pokelist button, #legacylist button").text(function(i, origText){
-		return (getPkmnEng(origText)) ? getPkmnEng(origText).name:origText
+		return (getPkmnEng(origText)) ? getPkmnEng(origText).name:origText;
 	});
 
-	$("#itemlist button").text(function(i){return items[i].name});
+	$("#itemlist button").text(function(i, origText){
+		return getItemEng(origText).name;
+	});
+
+	tinysort("#pokelist button");
+	tinysort("#itemlist button");	
+	tinysort("#legacylist button");	
 	
 	$('.selectpicker').selectpicker('refresh');
   }
@@ -1177,10 +1191,16 @@ function changeLang() {
 	document.getElementById("tg_warn").innerHTML = warn_en[tg_warn];
 
 	$("#pokelist button, #legacylist button").text(function(i, origText){
-		return (getPkmn(origText).en) ? getPkmn(origText).en:origText
+		return (getPkmn(origText).en) ? getPkmn(origText).en:origText;
 	});
 
-	$("#itemlist button").text(function(i){return items[i].en});
+	$("#itemlist button").text(function(i, origText){
+		return getItem(origText).en;
+	});
+
+	tinysort("#pokelist button");
+	tinysort("#itemlist button");	
+	tinysort("#legacylist button");	
 	
 	$('.selectpicker').selectpicker('refresh');
   }
@@ -1485,6 +1505,14 @@ function getPkmn(name) {
 
 function getPkmnEng(name) {
   return pokemon.filter(function(pokemon){return pokemon.en == name})[0];
+}
+
+function getItem(name) {
+  return items.filter(function(items){return items.name == name})[0];
+}
+
+function getItemEng(name) {
+  return items.filter(function(items){return items.en == name})[0];
 }
 
 function isIn(dex) {
