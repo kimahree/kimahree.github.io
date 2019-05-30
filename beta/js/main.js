@@ -986,7 +986,7 @@ function generateRaid(raidtext) {
   
   text += "<br>" + gymjson.gyms[document.getElementById("gym").selectedIndex].map;
 
-  if (document.getElementById("raid").selectedIndex <= t3index || start != "") {
+  if (t3index == 0 || document.getElementById("raid").selectedIndex <= t3index || start != "") {
   text += "<br><br><b>Start:</b> ";
     if ((diff <= 45 && diff >= 0 && time != "") || (time == "" && start != "") || startwarn == 11) {
 	  text += start;
