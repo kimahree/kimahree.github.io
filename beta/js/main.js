@@ -17,7 +17,7 @@ var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beein
 "Wähle eine Arena aus.",
 "Schließen",
 "Schließen",
-'Auf dieser Seite kannst du für <a href="https://www.bookofquests.de/">Book of Quests</a> einen Link erstellen, bei dem nur bestimmte Pokémon / Items auf der Karte angezeigt werden. Klicke dazu alle gewünschten Pokémon / Items an und drücke dann auf "Link erstellen!".<br>Um einen Negativfilter zu erstellen, klicke das Pokémon / Item zweimal an.', 
+'Auf dieser Seite kannst du für <a href="https://www.bookofquests.de/">Book of Quests</a> einen Link erstellen, bei dem nur bestimmte Pokémon/Items auf der Karte angezeigt werden. Klicke dazu alle gewünschten Pokémon/Items an und drücke dann auf "Link erstellen!".<br>Um einen Negativfilter zu erstellen, klicke das Pokémon/Item zweimal an.', 
 "Link erstellen!"
 ];
 
@@ -34,7 +34,7 @@ var txt_en = ["Attention, you're currently on the beta page. Functionality might
 "Choose a gym.",
 "Close",
 "Close",
-'On this site you can generate a link to <a href="https://www.bookofquests.de/">Book of Quests</a>, which will only show certain Pokémon / items on the map. Click all the Pokémon / items you want to see and then press "Generate Link!".<br>Click a Pokémon / item twice to generate a negative filter.',
+'On this site you can generate a link to <a href="https://www.bookofquests.de/">Book of Quests</a>, which will only show certain Pokémon/items on the map. Click all the Pokémon/items you want to see and then press "Generate Link!".<br>Click a Pokémon/item twice to generate a negative filter.',
 "Generate Link!"
 ];
 
@@ -708,7 +708,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
-		{"ver":"1.1.2","date":"01.06.2019","change":["BoQ Link: Add new filter options","BoQ Link: Add an indicator for potential shiny Pokemon"]},
+		{"ver":"1.1.2","date":"02.06.2019","change":["BoQ Link: Add new filter options","BoQ Link: Add an indicator for potential shiny Pokemon"]},
 		{"ver":"1.1.1","date":"29.05.2019","change":["Change Raid Bosses (End of Extraordinary Raid Week)","Quests: Remove Absol and Bronzor"]},
 		{"ver":"1.1","date":"27.05.2019","change":["New Subpage: Book of Quests Link Generator","Load scripts from external file","Add TinySort dependency","Change Raid Bosses (Cresselia's Return)"]},
 		{"ver":"1.0.15","date":"21.05.2019","change":["Change Raid Bosses (Extraordinary Raid Week)"]},
@@ -738,7 +738,6 @@ var raids = {
 
 var quests = [1,4,7,16,37,50,56,58,60,66,70,74,86,88,92,95,100,102,103,113,124,125,126,129,133,138,140,142,147,216,227,246,261,286,287,294,296,302,307,311,312,317,325,327,345,347,353,425];
 var legacy = [3,10,25,27,36,38,40,42,55,59,61,67,73,81,96,98,107,109,114,117,121,123,127,131,132,137,171,179,184,191,193,200,203,204,209,215,224,228,231,241,252,256,270,290,299,309,310,315,320,322,328,349,359,387,390,399,427,436];
-var checkbox = 0;
 var hidden = 1;
 var sel_q = [];
 
@@ -883,13 +882,13 @@ function init() {
 
 	txt = "";
 	for (i = 0; i < specialfilter.length; i++) {
-		txt += '<button type="button" class="m-1 btn btn-outline-primary" id="buttonSpecial' + i + '" value="' + specialfilter[i].id + '">' + specialfilter[i].name + '</button>';
+		txt += '<button type="button" class="m-1 btn btn-outline-secondary" id="buttonSpecial' + i + '" value="' + specialfilter[i].id + '">' + specialfilter[i].name + '</button>';
 	}
 	document.getElementById("specialpoke").innerHTML = txt;
 	
 	txt = "";
 	for (i = 0; i < quests.length ; i++) {
-		txt += '<button type="button" class="m-1 btn btn-outline-primary" id="button' + i + '" value=' + quests[i] + '>' + getPkmnByDex(quests[i])[0].name; 
+		txt += '<button type="button" class="m-1 btn btn-outline-secondary" id="button' + i + '" value=' + quests[i] + '>' + getPkmnByDex(quests[i])[0].name; 
 		txt += (getPkmnByDex(quests[i])[0].getshiny)?"✨":"" + '</button>';
 	}
 	document.getElementById("pokelist").innerHTML = txt;
@@ -899,7 +898,7 @@ function init() {
 	txt = "";
 	for (i = 0; i < items.length; i++) {
 		var j = i + quests.length;
-		txt += '<button type="button" class="m-1 btn btn-outline-primary" id="button' + j + '" value="' + items[i].id + '">' + items[i].name + '</button>';
+		txt += '<button type="button" class="m-1 btn btn-outline-secondary" id="button' + j + '" value="' + items[i].id + '">' + items[i].name + '</button>';
 	}
 	document.getElementById("itemlist").innerHTML = txt;
 
@@ -908,14 +907,12 @@ function init() {
 	txt = "";
 	for (i = 0; i < legacy.length ; i++) {
 		var k = i + quests.length + items.length
-		txt += '<button type="button" class="m-1 btn btn-outline-primary" id="button' + k + '" value=' + legacy[i] + '>' + getPkmnByDex(legacy[i])[0].name;
+		txt += '<button type="button" class="m-1 btn btn-outline-secondary" id="button' + k + '" value=' + legacy[i] + '>' + getPkmnByDex(legacy[i])[0].name;
 		txt += (getPkmnByDex(legacy[i])[0].getshiny)?"✨":"" + '</button>';
 	}
 	document.getElementById("legacylist").innerHTML = txt;
 
 	tinysort("#legacylist > button");
-	
-	checkbox = quests.length + items.length + legacy.length;
 	
 	$('.selectpicker').selectpicker('refresh');
 }
@@ -1425,8 +1422,8 @@ $(document).ready(function(){
 });
 
 $(document).ready(function() {
-	$("#boq").on('click', '.btn-outline-primary', function(){
-		$(this).removeClass("btn-outline-primary").addClass("btn-primary");
+	$("#boq").on('click', '.btn-outline-secondary', function(){
+		$(this).removeClass("btn-outline-secondary").addClass("btn-primary");
 		sel_q.push($(this).attr("value"));
 		sel_q.sort();
 		console.log(sel_q);
@@ -1445,7 +1442,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 	$("#boq").on('click', '.btn-danger', function(){
-		$(this).removeClass("btn-danger").addClass("btn-outline-primary");
+		$(this).removeClass("btn-danger").addClass("btn-outline-secondary");
 		sel_q.splice(sel_q.indexOf($(this).attr("value")),1);
 
 		console.log(sel_q);
