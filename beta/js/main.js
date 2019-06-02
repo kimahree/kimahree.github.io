@@ -703,7 +703,7 @@ var items = [
 
 var specialfilter = [
 {"id":"P","name":"Alle Begegnungen","en":"All encounters"},
-{"id":"S","name":"Alle möglichen Shiny Begegnungen","en":"All potential Shiny encounters"}
+{"id":"S","name":"Alle möglichen Shiny Begegnungen","en":"all potential Shiny encounters"}
 ];
 
 var changelogjson = {
