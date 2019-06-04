@@ -248,7 +248,7 @@ var pokemon = [
 {"dex":92,"name":"Nebulak","en":"Gastly","getshiny":true},
 {"dex":93,"name":"Alpollo","en":"Haunter","evolved":true},
 {"dex":94,"name":"Gengar","evolved":true},
-{"dex":95,"name":"Onix"},
+{"dex":95,"name":"Onix","getshiny":true},
 {"dex":96,"name":"Traumato","en":"Drowzee","getshiny":true},
 {"dex":97,"name":"Hypno","evolved":true},
 {"dex":98,"name":"Krabby","getshiny":true},
@@ -500,9 +500,9 @@ var pokemon = [
 {"dex":342,"name":"Krebutack","en":"Crawdaunt","evolved":true},
 {"dex":343,"name":"Puppance","en":"Baltoy"},
 {"dex":344,"name":"Lepumentas","en":"Claydol","evolved":true},
-{"dex":345,"name":"Liliep","en":"Lileep"},
+{"dex":345,"name":"Liliep","en":"Lileep","getshiny":true},
 {"dex":346,"name":"Wielie","en":"Cradily","evolved":true},
-{"dex":347,"name":"Anorith"},
+{"dex":347,"name":"Anorith","getshiny":true},
 {"dex":348,"name":"Armaldo","evolved":true},
 {"dex":349,"name":"Barschwa","en":"Feebas","getshiny":true},
 {"dex":350,"name":"Milotic","evolved":true},
@@ -708,6 +708,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.1.3","date":"04.06.2019","change":["Change Raid Bosses (Adventure Week)","New Shinies: Anorith, Lileep & Onix","New Quests: Cranidos & Shieldon","Fix bug when switching language back to German"]},
 		{"ver":"1.1.2","date":"02.06.2019","change":["BoQ Link: Add new filter options","BoQ Link: Add an indicator for potential shiny Pokemon"]},
 		{"ver":"1.1.1","date":"29.05.2019","change":["Change Raid Bosses (End of Extraordinary Raid Week)","Quests: Remove Absol and Bronzor"]},
 		{"ver":"1.1","date":"27.05.2019","change":["New Subpage: Book of Quests Link Generator","Load scripts from external file","Add TinySort dependency","Change Raid Bosses (Cresselia's Return)"]},
@@ -732,11 +733,11 @@ var changelogjson = {
 
 var raids = {
 	"tier5":[488],
-	"tier4":[359,"105A",248,229],
+	"tier4":[359,"105A",248,112,306],
 	"tier3":["26A",303,403]
 };
 
-var quests = [1,4,7,16,37,50,56,58,60,66,70,74,86,88,92,95,100,102,103,113,124,125,126,129,133,138,140,142,147,216,227,246,261,286,287,294,296,302,307,311,312,317,325,327,345,347,353,425];
+var quests = [1,4,7,16,37,50,56,58,60,66,70,74,86,88,92,95,100,102,103,113,124,125,126,129,133,138,140,142,147,216,227,246,261,286,287,294,296,302,307,311,312,317,325,327,345,347,353,408,410,425];
 var legacy = [3,10,25,27,36,38,40,42,55,59,61,67,73,81,96,98,107,109,114,117,121,123,127,131,132,137,171,179,184,191,193,200,203,204,209,215,224,228,231,241,252,256,270,290,299,309,310,315,320,322,328,349,359,387,390,399,427,436];
 var hidden = 1;
 var sel_q = [];
