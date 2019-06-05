@@ -707,6 +707,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.1.4","date":"05.06.2019","change":["Fix bug where deselecting multiple negative filters caused incorrect filter combinations"]},
 		{"ver":"1.1.3","date":"04.06.2019","change":["Change Raid Bosses (Adventure Week)","New Shinies: Anorith, Lileep & Onix","New Quests: Cranidos & Shieldon","Fix bug when switching language back to German"]},
 		{"ver":"1.1.2","date":"02.06.2019","change":["BoQ Link: Add new filter options","BoQ Link: Add an indicator for potential shiny Pokemon"]},
 		{"ver":"1.1.1","date":"29.05.2019","change":["Change Raid Bosses (End of Extraordinary Raid Week)","Quests: Remove Absol and Bronzor"]},
@@ -1441,7 +1442,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 	$("#boq").on('click', '.btn-danger', function(){
 		$(this).removeClass("btn-danger").addClass("btn-outline-secondary");
-		sel_q.splice(sel_q.indexOf($(this).attr("value")),1);
+		sel_q.splice(sel_q.indexOf("-" + $(this).attr("value")),1);
 	});   
 });
 
