@@ -442,7 +442,7 @@ var pokemon = [
 {"dex":284,"name":"Maskeregen","en":"Masquerain","evolved":true},
 {"dex":285,"name":"Knilz","en":"Shroomish"},
 {"dex":286,"name":"Kapilz","en":"Breloom","evolved":true},
-{"dex":287,"name":"Bummelz","en":"Slakoth"},
+{"dex":287,"name":"Bummelz","en":"Slakoth","getshiny":true},
 {"dex":288,"name":"Muntier","en":"Vigoroth","evolved":true},
 {"dex":289,"name":"Letarking","en":"Slaking","evolved":true},
 {"dex":290,"name":"Nincada"},
@@ -708,6 +708,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.1.5","date":"08.06.2019","change":["Sort raid bosses alphabetically when changing language","New Shiny: Slakoth"]},
 		{"ver":"1.1.4","date":"05.06.2019","change":["Fix bug where deselecting multiple negative filters caused incorrect filter combinations"]},
 		{"ver":"1.1.3","date":"04.06.2019","change":["Change Raid Bosses (Adventure Week)","New Shinies: Anorith, Lileep & Onix","New Quests: Cranidos & Shieldon","Fix bug when switching language back to German"]},
 		{"ver":"1.1.2","date":"02.06.2019","change":["BoQ Link: Add new filter options","BoQ Link: Add an indicator for potential shiny Pokemon"]},
@@ -735,7 +736,7 @@ var changelogjson = {
 var raids = {
 	"tier5":[488],
 	"tier4":[359,"105A",248,112,306],
-	"tier3":["26A",303,403]
+	"tier3":[303]
 };
 
 var quests = [1,4,7,16,37,50,56,58,60,66,70,74,86,88,92,95,100,102,103,113,124,125,126,129,133,138,140,142,147,216,227,246,261,286,287,294,296,302,307,311,312,317,325,327,345,347,353,408,410,425];
@@ -758,7 +759,7 @@ function init() {
 		t5 = raids.tier5.length;
 	} catch {}
 	if (t5 > 0) {
-		txt += '<optgroup label="5er"><option ';
+		txt += '<optgroup id="t5" label="5er"><option ';
 		if (t5 == 1) {
 			txt += "hidden disabled ";
 		}
@@ -779,7 +780,7 @@ function init() {
 		t4 = raids.tier4.length; 
 	} catch {}
 	if (t4 > 0) {
-		txt += '<optgroup label="4er"><option ';
+		txt += '<optgroup id="t4" label="4er"><option ';
 		if (t4 == 1) {
 			txt += "hidden disabled ";
 		}
@@ -800,7 +801,7 @@ function init() {
 		t3 = raids.tier3.length; 
 	} catch {}
 	if (t3 > 0) {
-		txt += '<optgroup label="3er, 2er, 1er">';
+		txt += '<optgroup id="t3" label="3er, 2er, 1er">';
 		for (i = 0; i < t3; i++) {
 			var rp = getPkmnByDex(raids.tier3[i])[0];
 			var d = (rp.de) ? rp.de:rp.name;
@@ -1174,11 +1175,11 @@ function changeLang() {
 			document.getElementById(txtid[i]).innerHTML = txt_de[i];
 		} catch {}
 	}
-	for (i = 0; i < raid_de.length; i++) {
-		if (raid_en[i] != raid_de[i]) {
-			document.getElementById("raid").options[i].innerHTML = raid_de[i];
-		}
-	}
+	
+	$("#raid>optgroup>option").text(function(i,origText){
+		return raid_de[raid_en.indexOf(origText)];
+	});
+	
 	document.getElementById("timeh").innerHTML = warn_de[hatchwarn];
 	document.getElementById("starth").innerHTML = warn_de[startwarn];
 	document.getElementById("raidwarn").innerHTML = warn_de[raidwarn];
@@ -1207,6 +1208,9 @@ function changeLang() {
 	tinysort("#itemlist button");	
 	tinysort("#legacylist button");	
 	
+	tinysort("#t5>option:not(:first-child)");
+	tinysort("#t4>option:not(:first-child)");
+	
 	$('.selectpicker').selectpicker('refresh');
   }
   if (getLang() == "en") {
@@ -1214,12 +1218,12 @@ function changeLang() {
 		try {
 			document.getElementById(txtid[i]).innerHTML = txt_en[i];
 		} catch {}
-	}	
-	for (i = 0; i < raid_en.length; i++) {
-		if (raid_en[i] != raid_de[i]) {
-			document.getElementById("raid").options[i].innerHTML = raid_en[i];
-		}
 	}
+	
+	$("#raid>optgroup>option").text(function(i,origText){
+		return raid_en[raid_de.indexOf(origText)];
+	});
+	
 	document.getElementById("timeh").innerHTML = warn_en[hatchwarn];
 	document.getElementById("starth").innerHTML = warn_en[startwarn];
 	document.getElementById("raidwarn").innerHTML = warn_en[raidwarn];
@@ -1247,6 +1251,9 @@ function changeLang() {
 	tinysort("#pokelist button");
 	tinysort("#itemlist button");	
 	tinysort("#legacylist button");	
+	
+	tinysort("#t5>option:not(:first-child)");
+	tinysort("#t4>option:not(:first-child)");
 	
 	$('.selectpicker').selectpicker('refresh');
   }
