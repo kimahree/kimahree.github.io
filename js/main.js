@@ -220,7 +220,7 @@ var pokemon = [
 {"dex":113,"name":"Chaneira","en":"Chansey"},
 {"dex":114,"name":"Tangela"},
 {"dex":115,"name":"Kangama","en":"Kangaskhan","regional":true},
-{"dex":116,"name":"Seeper","en":"Horsea"},
+{"dex":116,"name":"Seeper","en":"Horsea","getshiny":true},
 {"dex":117,"name":"Seedra","en":"Seadra","evolved":true},
 {"dex":118,"name":"Goldini","en":"Goldeen"},
 {"dex":119,"name":"Golking","en":"Seaking","evolved":true},

@@ -19,7 +19,7 @@
 		nav.navbar.bg-dark { background-color: #000040 !important; }
 	</style>
 </head>
-<body>
+<body onload="init()">
 
 <nav class="navbar bg-dark navbar-dark"> 
   <ul class="navbar-nav">
@@ -27,10 +27,193 @@
 	  <a class="navbar-brand" href="./index.html">Marzahn Raid Tool</a>
 	</li>
   </ul>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <select class="form-control" id="lang" onchange="changeLang()">
+  		<option value="de">🇩🇪</option>
+  		<option value="en">🇬🇧</option>
+	</select>
+    </li>
+  </ul>
 </nav>
 
 <div class="container-fluid mt-2">
-Soon™
+
+<ul class="nav nav-tabs mb-2">
+  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#raidtool">Raids</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#boq">BoQ Link</a></li>
+</ul>
+
+<div class="tab-content">
+<div class="tab-pane active" id="raidtool">
+
+<div class="form-row">
+<div class="form-group col-sm-4 mb-3">
+<label for="raid" class="mr-sm-2">Raid:</label>
+<select class="form-control selectpicker mr-sm-2" onchange="TierCheck()" id="raid">
+</select>
 </div>
+<div class="form-group col-sm-8 mb-3">
+<label for="gym" class="mr-sm-2" id="txt_gym">Arena:</label>
+<select class="form-control selectpicker mr-sm-2" data-live-search="true" data-none-results-text="Keine Ergebnisse / No result." id="gym">
+</select>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group col mb-3">
+<label for="time" id="txt_hatch">Schlüpfzeit:</label>
+<input type="text" class="form-control timepicker" id="time" autocomplete="off"></input>
+<small class="form-text text-danger" id="timeh"></small>
+</div>
+<div class="form-group col mb-3">
+<label for="start" id="txt_start">Startzeit:</label>
+<input type="text" class="form-control timepicker" id="start" autocomplete="off"></input>
+<small class="form-text text-danger" id="starth"></small>
+</div>
+</div>
+
+<div class="form-group">
+<label for="player" id="txt_player">Teilnehmer:</label>
+<textarea class="form-control" id="player" rows="3" autocomplete="off"></textarea>
+</div>
+
+<div class="mb-2"><span id="txt_instr">Drücke auf "Start!", überprüfe deine Angaben und drücke dann auf "In WhatsApp posten".<br></span>
+<span hidden id="txt_multi">Um einen Multiraid zu posten, ändere jetzt die Angaben oben für den nächsten Raid und drücke dann auf "Multiraid!". Wiederhole dies, bis alle Raids eingetragen sind.<br></span></div>
+
+
+<div class="mb-3">
+<button class="btn btn-primary" id="starter" onclick='generateRaid("")'>Start!</button>
+<span hidden id="addRaid"><button class="btn btn-secondary" onclick="addRaid()">Multiraid!</button></span>
+<span id="raidwarn" class="text-danger ml-2 align-middle"></span>
+
+
+<div id="ex"></div>
+<div id="but"></div>
+</div>
+</div>
+
+<div class="tab-pane fade" id="boq">
+  <div class="mb-2" id="txt_boq_intro">Auf dieser Seite kannst du für <a href="https://www.bookofquests.de/">Book of Quests</a> einen Link erstellen, bei dem nur bestimmte Pokémon / Items auf der Karte angezeigt werden. Klicke dazu alle gewünschten Pokémon / Items an und drücke dann auf "Link erstellen!".<br>Um einen Negativfilter zu erstellen, klicke das Pokémon/Item zweimal an.</div>
+  <div class="card mb-1">
+    <div class="card-header">
+      <a class="card-link" data-toggle="collapse" href="#ChoosePokemon">
+        Pokémon
+      </a>
+    </div>
+    <div id="ChoosePokemon" class="collapse show">
+      <div class="card-body">
+		<div id="specialpoke">
+		</div>
+		<hr>
+		<div id="pokelist">
+		</div>  
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-1">
+    <div class="card-header">
+      <a class="card-link" data-toggle="collapse" href="#ChooseItem">
+        Items
+      </a>
+    </div>
+    <div id="ChooseItem" class="collapse show">
+      <div class="card-body" id="itemlist">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-2">
+    <div class="card-header">
+      <a class="collapsed card-link" data-toggle="collapse" href="#ChooseLegacy">
+        Legacy Pokémon
+      </a>
+    </div>
+    <div id="ChooseLegacy" class="collapse">
+      <div class="card-body" id="legacylist">
+		
+      </div>
+    </div>
+  </div>
+  
+  <button type="button" class="btn btn-success mb-2" id="txt_boq_generate" onclick="generateLink()">Link erstellen!</button>
+  
+  <div class="mb-2 p-2 border rounded bg-light" id="newLink" style="display: none; word-wrap: break-word;">
+  </div>
+  </div>
+
+</div>
+
+<p class="small"><a href="" data-toggle="modal" data-target="#changelog">Changelog</a> - <a href="" data-toggle="modal" data-target="#credits">Credits</a> - This website is not affiliated with Niantic or Nintendo. Pokémon And All Respective Names are Trademark & © of Nintendo 1996-2019.</p>
+
+</div>
+
+<div class="modal fade" id="credits">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Credits</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <h5>Special Thanks to:</h5>
+		<ul>
+			<li>WirEinmaligen (Beta Testing, bug hunting)</li>
+			<li>anaron12 (Beta Testing)</li>
+			<li>CptLuckyPunch (Beta Testing)</li>
+			<li>Gudoran (iOS Beta Testing)</li>
+		</ul>
+		This Website uses the following dependencies:
+		<ul>
+			<li><a href="https://getbootstrap.com">Bootstrap 4.3.1</a></li>
+			<li><a href="https://developer.snapappointments.com/bootstrap-select">Bootstrap-select 1.13.10</a></li>
+			<li><a href="https://jquery.com">jQuery 3.3.1</a></li>
+			<li><a href="https://timepicker.co">jQuery Timepicker 1.3.5</a></li>
+			<li><a href="https://popper.js.org">Popper 1.14.7</a></li>
+			<li><a href="http://tinysort.sjeiti.com/">TinySort 3.2.5</a></li>
+		</ul>
+		Made by kimahree<br><small id="credits-ver"></small>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal" id="txt_cre_close">Schließen</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="changelog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Changelog</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div id="changelog-txt" class="modal-body">
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal" id="txt_cl_close">Schließen</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="../js/marzahn.js"></script>
+<script src="../js/main.js"></script>
+
 </body>
 </html>
