@@ -121,7 +121,7 @@ var gymjson = {
 {"value":"Wo Wohnen Wenig Kostet","map":"https://goo.gl/maps/P85AZEfcgD1HmD7J9"},
 {"value":"Wuhletalwächter","ex":true,"map":"https://goo.gl/maps/V1qAyRyjdKCUy1QL9"},
 {"value":"WW2 Befreiung Marzahn","map":"https://goo.gl/maps/hQwAdiKVbfemeokWA"},
-{"value":"Великие подвиги Ваши бессмертны","token":"sowjetisches ehrenmal parkfriedhof velikiye podvigi vashi bessmertny","map":"https://goo.gl/maps/jB5GL2qXSoFJvskH7"}
+{"value":"Великие подвиги Ваши бессмертны","token":"russisch kyrillisch sowjetisches ehrenmal parkfriedhof velikiye podvigi vashi bessmertny","map":"https://goo.gl/maps/jB5GL2qXSoFJvskH7"}
 ]};
 
 var boqlink = "https://www.bookofquests.de/#13/1509651.48/6898631.34/0/f=";
