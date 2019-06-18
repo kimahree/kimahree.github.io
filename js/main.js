@@ -930,6 +930,8 @@ function generateRaid(raidtext) {
 		var hid2 = document.createAttribute("hidden");
 		document.getElementById("txt_instr").setAttributeNode(hid2);
 	}
+  } else if (region == "Marzahn") {
+	text += "<br>"
   }
   
   if (multi == 2) {
