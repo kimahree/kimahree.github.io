@@ -83,7 +83,7 @@ var gymjson = {
 {"value":"Quietsche-Ente","map":"https://goo.gl/maps/CzEfm7BEAdjfsJTC7"},
 {"value":"Rathaus Ahrensfelde","map":"https://goo.gl/maps/qhKtKsmMxsD2SFmh7"},
 {"value":"Red Sculpture","map":"https://goo.gl/maps/Tvv3RiyjsGpxxfeWA"},
-{"value":"Reifenkrönung","map":"https://goo.gl/maps/H6qgUQonsv1Kw6kd6"},
+{"value":"Reifenkröhnung","map":"https://goo.gl/maps/H6qgUQonsv1Kw6kd6"},
 {"value":"Richtungskreuz","map":"https://goo.gl/maps/CUz1zhZpEpKweHYf7"},
 {"value":"Rotes Spinnennetz","ex":true,"map":"https://goo.gl/maps/gybJccmS1rLRW6NYA"},
 {"value":"Rudolf #2","map":"https://goo.gl/maps/TZieBbNeb2fx77fc8"},
