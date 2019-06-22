@@ -639,7 +639,7 @@ var items = [
 {"id":"SP","name":"Supertrank","en":"Super Potion"},
 {"id":"HP","name":"Hypertrank","en":"Hyper Potion"},
 {"id":"MP","name":"Top-Trank","en":"Max Potion"},
-{"id":"EE","name":"Entwicklungsitem","en":"Evolution Item"},
+{"id":"EE","name":"Entwicklungsitems","en":"Evolution Items"},
 {"id":"SE","name":"Sonnenstein","en":"Sun Stone"},
 {"id":"KE","name":"King-Stein","en":"King's Rock"},
 {"id":"ME","name":"Metallmantel","en":"Metal Coat"},
@@ -954,7 +954,7 @@ function generateRaid(raidtext) {
   if (region == "Gesundbrunnen") {
   
 	if (gymjson.gyms[document.getElementById("gym").selectedIndex].ex) {
-	text += "🎗 <b>EX-Raid Arena</b> 🎗 <br>";
+		text += "🎗 <b>EX-Raid Arena</b> 🎗 <br>";
 	}
 	
 	text += "<b>" + raid + " " + gym + "</b> ";
@@ -1007,11 +1007,11 @@ function generateRaid(raidtext) {
 
 	  text += "<br><br><b>Teilnehmer:</b><br>" + player;
   }
-  
+
   var exc = document.createAttribute("class");
   exc.value = "m-3 p-2 border rounded bg-light";
   document.getElementById("ex").setAttributeNode(exc);
-    
+
   document.getElementById("ex").innerHTML = text;
   
   var text2 = text.replace(/<br>/g,"\n");
@@ -1191,7 +1191,7 @@ function changeLang() {
 	$("#specialpoke button").text(function(i, origText){
 		return getSpecialEng(origText).name;
 	});
-	
+
 	tinysort("#pokelist button");
 	tinysort("#itemlist button");	
 	tinysort("#legacylist button");	
@@ -1200,13 +1200,13 @@ function changeLang() {
 	tinysort("#t4>option:not(:first-child)");
 	
 	$('.selectpicker').selectpicker('refresh');
- }
+  }
   if (getLang() == "en") {
 	for (i = 0; i < txtid.length; i++) {
 		try {
 			document.getElementById(txtid[i]).innerHTML = txt_en[i];
 		} catch {}
-	}	
+	}
 	
 	$("#raid>optgroup>option").text(function(i,origText){
 		return raid_en[raid_de.indexOf(origText)];
@@ -1283,11 +1283,16 @@ function pasteTelegram() {
 	var p_m = "";
 	for (i=0; i < arr.length; i++) {
 		item = arr[i];
-		if (item == "" || item.includes("Spieler") || item.includes("EX-RAID") || item.includes("WP-Range:") || item.includes("[0]")) {
-			// check for certain terms to identify and delete empty lines, extra players, CP-Range, Ex-Raid tag & empty start times
+		if (item == "" || item.includes("Spieler") || item.includes("EX-RAID") || item.includes("[0]")) {
+			// check for certain terms to identify and delete empty lines, extra players, Ex-Raid tag & empty start times
 			arr.splice(i,1);
 			i--;
 				
+		} else if (item.includes("WP-Range:")) {
+			// delete WP-Range and the two following lines
+			arr.splice(i,3);
+			i = i-3;
+
 		} else if (i == 0 && item.includes("👤")) {
 			// if this is the first not-empty line: get Raidboss and either get hatch time or calculate depending on post format
 			var line = arr[i].split(" ");

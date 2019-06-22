@@ -17,7 +17,7 @@ var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beein
 "Wähle eine Arena aus.",
 "Schließen",
 "Schließen",
-'Auf dieser Seite kannst du für <a href="https://www.bookofquests.de/">Book of Quests</a> einen Link erstellen, bei dem nur bestimmte Pokémon/Items auf der Karte angezeigt werden. Klicke dazu alle gewünschten Pokémon/Items an und drücke dann auf "Link erstellen!".<br>Um einen Negativfilter zu erstellen, klicke das Pokémon/Item zweimal an.', 
+'Auf dieser Seite kannst du für <a href="https://www.bookofquests.de/">Book of Quests</a> einen Link erstellen, bei dem nur bestimmte Pokémon/Items auf der Karte angezeigt werden. Klicke dazu alle gewünschten Pokémon/Items an und drücke dann auf "Link erstellen!".<br>Um einen Negativfilter zu erstellen, klicke das Pokémon/Item zweimal an.',
 "Link erstellen!"
 ];
 
@@ -220,7 +220,7 @@ var pokemon = [
 {"dex":113,"name":"Chaneira","en":"Chansey"},
 {"dex":114,"name":"Tangela"},
 {"dex":115,"name":"Kangama","en":"Kangaskhan","regional":true},
-{"dex":116,"name":"Seeper","en":"Horsea"},
+{"dex":116,"name":"Seeper","en":"Horsea","getshiny":true},
 {"dex":117,"name":"Seedra","en":"Seadra","evolved":true},
 {"dex":118,"name":"Goldini","en":"Goldeen"},
 {"dex":119,"name":"Golking","en":"Seaking","evolved":true},
@@ -657,6 +657,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.2","date":"18.06.2019","change":['New Region: <a href="http://marzahn-raids.tk/" target="_blank">Marzahn</a>',"Change Raid Bosses (Return of Kyogre)"]},
 		{"ver":"1.1.6","date":"11.06.2019","change":["Load gyms seperately to prepare for subsites","Change Raid Bosses (End of Adventure Week)","Quests: Remove Cranidos & Shieldon"]},
 		{"ver":"1.1.5","date":"08.06.2019","change":["Sort raid bosses alphabetically when changing language","New Shiny: Slakoth"]},
 		{"ver":"1.1.4","date":"05.06.2019","change":["Fix bug where deselecting multiple negative filters caused incorrect filter combinations"]},
@@ -684,13 +685,13 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[488],
-	"tier4":[359,"105A",248,112,306],
-	"tier3":[303]
+	"tier5":[382],
+	"tier4":[359,"105A",3,248],
+	"tier3":[303,"26A",403]
 };
 
-var quests = [1,4,7,16,37,50,56,58,60,66,70,74,86,88,92,95,100,102,103,113,124,125,126,129,133,138,140,142,147,216,227,246,261,286,287,294,296,302,307,311,312,317,325,327,345,347,353,408,410,425];
-var legacy = [3,10,25,27,36,38,40,42,55,59,61,67,73,81,96,98,107,109,114,117,121,123,127,131,132,137,171,179,184,191,193,200,203,204,209,215,224,228,231,241,252,256,270,290,299,309,310,315,320,322,328,349,359,387,390,399,427,436];
+var quests = [1,4,7,16,37,50,56,58,60,66,70,74,86,88,92,95,100,102,103,113,124,125,126,129,133,138,140,142,147,216,227,246,261,286,287,294,296,302,307,311,312,317,325,327,345,347,353,425];
+var legacy = [3,10,25,27,36,38,40,42,55,59,61,67,73,81,96,98,107,109,114,117,121,123,127,131,132,137,171,179,184,191,193,200,203,204,209,215,224,228,231,241,252,256,270,290,299,309,310,315,320,322,328,349,359,387,390,399,408,410,427,436];
 var hidden = 1;
 var sel_q = [];
 
@@ -779,7 +780,7 @@ function init() {
 	
 	var txt = "";
 	for (i = 0; i < gymjson.gyms.length ; i++) {
-		txt += '<option value="' + gymjson.gyms[i].value + '"';
+		txt += "<option value='" + gymjson.gyms[i].value + "'";
 		if (gymjson.gyms[i].token || gymjson.gyms[i].ex) {
 			txt += ' data-tokens="';
 			txt += (gymjson.gyms[i].token) ? gymjson.gyms[i].token:"";
@@ -896,6 +897,9 @@ function generateRaid(raidtext) {
   var time = document.getElementById("time").value;
   var start = document.getElementById("start").value;
   var diff = (new Date("Jan 01 1970 "+start).getTime() - new Date("Jan 01 1970 "+time).getTime()) / 60000;
+  var end = new Date("Jan 01 1970 "+time);
+  end.setMinutes(end.getMinutes()+45);
+  end = end.toTimeString().substr(0,5);
   var player = document.getElementById("player").value;
   player = player.replace(/\n/g,"<br>")
   
@@ -928,6 +932,8 @@ function generateRaid(raidtext) {
 		var hid2 = document.createAttribute("hidden");
 		document.getElementById("txt_instr").setAttributeNode(hid2);
 	}
+  } else if (region == "Marzahn") {
+	text += "<br>"
   }
   
   if (multi == 2) {
@@ -946,34 +952,67 @@ function generateRaid(raidtext) {
 	text = text.replace("RAID-TRAIN","CRAZY RAID-TRAIN");
   }
   
+  if (region == "Gesundbrunnen") {
   
-  
-  if (gymjson.gyms[document.getElementById("gym").selectedIndex].ex) {
-    text += "🎗 <b>EX-Raid Arena</b> 🎗 <br>";
+	if (gymjson.gyms[document.getElementById("gym").selectedIndex].ex) {
+		text += "🎗 <b>EX-Raid Arena</b> 🎗 <br>";
+	}
+	
+	text += "<b>" + raid + " " + gym + "</b> ";
+	
+	if (time) {
+		text += "(🐣" + time + ")";
+	}
+	
+	text += "<br>" + gymjson.gyms[document.getElementById("gym").selectedIndex].map;
+	
+	if (t3index == 0 || document.getElementById("raid").selectedIndex <= t3index || start != "") {
+		text += "<br><br><b>Start:</b> ";
+		if ((diff <= 45 && diff >= 0 && time != "") || (time == "" && start != "") || startwarn == 11) {
+			text += start;
+		} else {
+			text += "?";
+		}
+	}
+	text += "<br><br>" + player
   }
   
-  text += "<b>" + raid + " " + gym + "</b> ";
-  
-  if (time) {
-	text += "(🐣" + time + ")";
-  }
-  
-  text += "<br>" + gymjson.gyms[document.getElementById("gym").selectedIndex].map;
+  if (region == "Marzahn") {
+	  if (raid == "4er" || raid == "5er") {
+		  raid += " RAID";
+	  }
+	  text += "<b>" + raid.toUpperCase() + "</b><br><br><b>Arena:</b> " + gym + "<br><br>";
+	  
+	  if (gymjson.gyms[$("#gym").prop("selectedIndex")].ex) {
+		  text += "<b>Ex-Raid Arena</b><br><br>";
+	  }
+	  
+	  text += "<b>Standort:</b> " + gymjson.gyms[$("#gym").prop("selectedIndex")].map;
 
-  if (t3index == 0 || document.getElementById("raid").selectedIndex <= t3index || start != "") {
-  text += "<br><br><b>Start:</b> ";
-    if ((diff <= 45 && diff >= 0 && time != "") || (time == "" && start != "") || startwarn == 11) {
-	  text += start;
-    } else {
-      text += "?";
-    }
+	  if (time) {
+		text += "<br><br><b>Schlüpft:</b> " + time;
+	  }
+
+	  if (t3index == 0 || $("#raid").prop("selectedIndex") <= t3index || start != "") {
+		text += "<br><br><b>Startzeit:</b> ";
+		if ((diff <= 45 && diff >= 0 && time != "") || (time == "" && start != "") || startwarn == 11) {
+			text += start;
+		} else {
+			text += "?";
+		}
+	  }
+	  
+	  if (time) {
+		text += "<br><br><b>Raid Ende:</b> " + end;
+	  }
+
+	  text += "<br><br><b>Teilnehmer:</b><br>" + player;
   }
-  text += "<br><br>" + player
-  
+
   var exc = document.createAttribute("class");
   exc.value = "m-3 p-2 border rounded bg-light";
   document.getElementById("ex").setAttributeNode(exc);
-  
+
   document.getElementById("ex").innerHTML = text;
   
   var text2 = text.replace(/<br>/g,"\n");
@@ -1206,6 +1245,7 @@ function changeLang() {
 	tinysort("#t4>option:not(:first-child)");
 	
 	$('.selectpicker').selectpicker('refresh');
+
   }
 }
 
@@ -1244,11 +1284,16 @@ function pasteTelegram() {
 	var p_m = "";
 	for (i=0; i < arr.length; i++) {
 		item = arr[i];
-		if (item == "" || item.includes("Spieler") || item.includes("EX-RAID") || item.includes("WP-Range:") || item.includes("[0]")) {
-			// check for certain terms to identify and delete empty lines, extra players, CP-Range, Ex-Raid tag & empty start times
+		if (item == "" || item.includes("Spieler") || item.includes("EX-RAID") || item.includes("[0]")) {
+			// check for certain terms to identify and delete empty lines, extra players, Ex-Raid tag & empty start times
 			arr.splice(i,1);
 			i--;
 				
+		} else if (item.includes("WP-Range:")) {
+			// delete WP-Range and the two following lines
+			arr.splice(i,3);
+			i = i-3;
+
 		} else if (i == 0 && item.includes("👤")) {
 			// if this is the first not-empty line: get Raidboss and either get hatch time or calculate depending on post format
 			var line = arr[i].split(" ");
@@ -1535,7 +1580,6 @@ function getSpecial(name) {
 function getSpecialEng(name) {
   return specialfilter.filter(function(specialfilter){return specialfilter.en == name})[0];
 }
-
 
 function isIn(dex) {
   return dex == this;
