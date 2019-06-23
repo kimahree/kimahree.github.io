@@ -95,6 +95,7 @@ var gymjson = {
 {"value":"Schwarzwurzel","map":"https://goo.gl/maps/rFL1XSLqQCUiNM8G9"},
 {"value":"Segel am Bärenstein","ex":true,"map":"https://goo.gl/maps/aEAto5KyKstRFeSF7"},
 {"value":"Sitzgruppe am Gehrensee","map":"https://goo.gl/maps/AvgA2gwM6CWXMEFN8"},
+{"value":"Skulptur am Barnim Platz","map":"https://goo.gl/maps/skWirZN2gfMn7gvd7"},
 {"value":"Skulptur Familie im Gruenen","tg":"Skulptur Familie Im Gruenen","map":"https://goo.gl/maps/6xixdB24W8ypD9XF9"},
 {"value":"Skyline Kasten","map":"https://goo.gl/maps/HrUXgNEkv6WaB9FD7"},
 {"value":"Sommer in Marzahn","tg":"Sommer In Marzahn","map":"https://goo.gl/maps/4QFnX6jrbqqGQYKQ6"},
