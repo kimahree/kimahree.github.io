@@ -106,7 +106,7 @@ var pokemon = [
 {"dex":17,"name":"Tauboga","en":"Pidgeotto","evolved":true},
 {"dex":18,"name":"Tauboss","en":"Pidgeot","evolved":true},
 {"dex":19,"name":"Rattfratz","en":"Rattata","getshiny":true},
-{"dex":"19A","name":"Alola-Rattfratz","en":"Alolan Rattata","alolan":true},
+{"dex":"19A","name":"Alola-Rattfratz","en":"Alolan Rattata","alolan":true,"getshiny":true},
 {"dex":20,"name":"Rattikarl","en":"Raticate","evolved":true},
 {"dex":"20A","name":"Alola-Rattikarl","en":"Alolan Raticate","alolan":true,"evolved":true},
 {"dex":21,"name":"Habitak","en":"Spearow"},
@@ -117,7 +117,7 @@ var pokemon = [
 {"dex":26,"name":"Raichu","evolved":true},
 {"dex":"26A","name":"Alola-Raichu","en":"Alolan Raichu","alolan":true,"evolved":true,"getshiny":true},
 {"dex":27,"name":"Sandan","en":"Sandshrew","getshiny":true},
-{"dex":"27A","name":"Alola-Sandan","en":"Alolan Sandshrew","alolan":true},
+{"dex":"27A","name":"Alola-Sandan","en":"Alolan Sandshrew","alolan":true,"getshiny":true},
 {"dex":28,"name":"Sandamer","en":"Sandslash","evolved":true},
 {"dex":"28A","name":"Alola-Sandamer","en":"Alolan Sandslash","alolan":true,"evolved":true},
 {"dex":29,"name":"Nidoran♀","getshiny":true},
@@ -129,7 +129,7 @@ var pokemon = [
 {"dex":35,"name":"Piepi","en":"Clefairy"},
 {"dex":36,"name":"Pixi","en":"Clefable","evolved":true},
 {"dex":37,"name":"Vulpix"},
-{"dex":"37A","name":"Alola-Vulpix","en":"Alolan Vulpix","alolan":true},
+{"dex":"37A","name":"Alola-Vulpix","en":"Alolan Vulpix","alolan":true,"getshiny":true},
 {"dex":38,"name":"Vulnona","en":"Ninetales","evolved":true},
 {"dex":"38A","name":"Alola-Vulnona","en":"Alolan Ninetales","alolan":true,"evolved":true},
 {"dex":39,"name":"Pummeluff","en":"Jigglypuff"},
@@ -144,11 +144,11 @@ var pokemon = [
 {"dex":48,"name":"Bluzuk","en":"Venonat"},
 {"dex":49,"name":"Omot","en":"Venomoth","evolved":true},
 {"dex":50,"name":"Digda","en":"Diglett","getshiny":true},
-{"dex":"50A","name":"Alola-Digda","en":"Alolan Diglett","alolan":true},
+{"dex":"50A","name":"Alola-Digda","en":"Alolan Diglett","alolan":true,"getshiny":true},
 {"dex":51,"name":"Digdri","en":"Dugtrio","evolved":true},
 {"dex":"51A","name":"Alola-Digdri","en":"Alolan Dugtrio","alolan":true,"evolved":true},
 {"dex":52,"name":"Mauzi","en":"Meowth"},
-{"dex":"52A","name":"Alola-Mauzi","en":"Alolan Meowth","alolan":true},
+{"dex":"52A","name":"Alola-Mauzi","en":"Alolan Meowth","alolan":true,"getshiny":true},
 {"dex":53,"name":"Snobilikat","en":"Persian","evolved":true},
 {"dex":"53A","name":"Alola-Snobilikat","en":"Alolan Persian","alolan":true,"evolved":true},
 {"dex":54,"name":"Enton","en":"Psyduck","getshiny":true},
@@ -172,7 +172,7 @@ var pokemon = [
 {"dex":72,"name":"Tentacha","en":"Tentacool"},
 {"dex":73,"name":"Tentoxa","en":"Tentacruel","evolved":true},
 {"dex":74,"name":"Kleinstein","en":"Geodude","getshiny":true},
-{"dex":"74A","name":"Alola-Kleinstein","en":"Alolan Geodude","alolan":true},
+{"dex":"74A","name":"Alola-Kleinstein","en":"Alolan Geodude","alolan":true,"getshiny":true},
 {"dex":75,"name":"Georok","en":"Graveler","evolved":true},
 {"dex":"75A","name":"Alola-Georok","en":"Alolan Graveler","alolan":true,"evolved":true},
 {"dex":76,"name":"Geowaz","en":"Golem","evolved":true},
@@ -189,7 +189,7 @@ var pokemon = [
 {"dex":86,"name":"Jurob","en":"Seel","getshiny":true},
 {"dex":87,"name":"Jugong","en":"Dewgong","evolved":true},
 {"dex":88,"name":"Sleima","en":"Grimer","getshiny":true},
-{"dex":"88A","name":"Alola-Sleima","en":"Alolan Grimer","alolan":true},
+{"dex":"88A","name":"Alola-Sleima","en":"Alolan Grimer","alolan":true,"getshiny":true},
 {"dex":89,"name":"Sleimok","en":"Muk","evolved":true},
 {"dex":"89A","name":"Alola-Sleimok","en":"Alolan Muk","alolan":true,"evolved":true},
 {"dex":90,"name":"Muschas","en":"Shellder","getshiny":true},
@@ -206,7 +206,7 @@ var pokemon = [
 {"dex":101,"name":"Lektrobal","en":"Electrode","evolved":true},
 {"dex":102,"name":"Owei","en":"Exeggcute"},
 {"dex":103,"name":"Kokowei","en":"Exeggutor","evolved":true},
-{"dex":"103A","name":"Alola-Kokowei","en":"Alolan Exeggutor","alolan":true,"evolved":true},
+{"dex":"103A","name":"Alola-Kokowei","en":"Alolan Exeggutor","alolan":true,"evolved":true,"getshiny":true},
 {"dex":104,"name":"Tragosso","en":"Cubone","getshiny":true},
 {"dex":105,"name":"Knogga","en":"Marowak","evolved":true},
 {"dex":"105A","name":"Alola-Knogga","en":"Alolan Marowak","alolan":true,"evolved":true,"getshiny":true},
@@ -657,9 +657,11 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.2.3","date":"28.06.2019","change":['Add support for Alolan forms in BoQ','New Shinies: Alolan Rattata, Alolan Sandshrew, Alolan Vulpix, Alolan Diglett, Alolan Meowth, Alolan Geodude, Alolan Grimer, Alolan Exeggutor']},
 		{"ver":"1.2.2","date":"27.06.2019","change":['Change Raid Bosses (Return of Groudon)']},
 		{"ver":"1.2.1","date":"23.06.2019","change":['[Marzahn] Add new Gym: "Skulptur am Barnim Platz"']},
 		{"ver":"1.2","date":"18.06.2019","change":['New Region: <a href="http://marzahn-raids.tk/" target="_blank">Marzahn</a>',"Change Raid Bosses (Return of Kyogre)"]},
+		{"ver":"1.1.7","date":"13.06.2019","change":["New shiny: Horsea"]},
 		{"ver":"1.1.6","date":"11.06.2019","change":["Load gyms seperately to prepare for subsites","Change Raid Bosses (End of Adventure Week)","Quests: Remove Cranidos & Shieldon"]},
 		{"ver":"1.1.5","date":"08.06.2019","change":["Sort raid bosses alphabetically when changing language","New Shiny: Slakoth"]},
 		{"ver":"1.1.4","date":"05.06.2019","change":["Fix bug where deselecting multiple negative filters caused incorrect filter combinations"]},
@@ -691,8 +693,9 @@ var raids = {
 	"tier4":[359,"105A",248,131,275]
 };
 
-var quests = [1,4,7,16,37,50,56,58,60,66,70,74,86,88,92,95,100,102,103,113,124,125,126,129,133,138,140,142,147,216,227,246,261,286,287,294,296,302,307,311,312,317,325,327,345,347,353,425];
+var quests = [1,4,7,16,37,50,56,58,60,66,70,74,86,88,92,95,100,102,"103A",113,124,125,126,129,133,138,140,142,147,216,227,246,261,286,287,294,296,302,307,311,312,317,325,327,345,347,353,425];
 var legacy = [3,10,25,27,36,38,40,42,55,59,61,67,73,81,96,98,107,109,114,117,121,123,127,131,132,137,171,179,184,191,193,200,203,204,209,215,224,228,231,241,252,256,270,290,299,309,310,315,320,322,328,349,359,387,390,399,408,410,427,436];
+var forms = ["19A","20A","26A","27A","28A","37A","38A","50A","51A","52A","53A","74A","75A","76A","88A","89A","103A","105A","351I","351R","351S","386A","386D","386S","412S","412T","413S","413T","421S","479F","479H","479I","479M","479W","487O","492S"];
 var hidden = 1;
 var sel_q = [];
 
@@ -1524,6 +1527,12 @@ function generateTable() {
 
 function generateLink() {
 	if (sel_q.length > 0) {
+		for (i=0; i < forms.length; i++) {
+			var fo = sel_q.indexOf(forms[i]);
+			if (fo >= 0) {
+				sel_q[fo] = parseInt(sel_q[fo].substr(0,sel_q[fo].length - 1));
+			}
+		}
 		link = boqlink + sel_q.toString();
 		document.getElementById("newLink").innerHTML = '<a href="' + link + '" target="_blank">' + link + '</a>';
 	} else {
