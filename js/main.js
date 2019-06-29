@@ -2,7 +2,7 @@
 var t4index = 0;
 var t3index = 0;
 
-var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_instr","txt_button","txt_multi","txt_chgym","txt_cre_close","txt_cl_close","txt_boq_intro","txt_boq_generate"];
+var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_instr","txt_button","txt_multi","txt_chgym","txt_cre_close","txt_cl_close","txt_reg_close","txt_boq_intro","txt_boq_generate"];
 
 var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beeinträchtigt und fehlerhaft.",
 "Zur Hauptseite",
@@ -15,6 +15,7 @@ var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beein
 "In WhatsApp posten",
 'Um einen Multiraid zu posten, ändere jetzt die Angaben oben für den nächsten Raid und drücke dann auf "Multiraid!". Wiederhole dies, bis alle Raids eingetragen sind.<br>',
 "Wähle eine Arena aus.",
+"Schließen",
 "Schließen",
 "Schließen",
 'Auf dieser Seite kannst du für <a href="https://www.bookofquests.de/">Book of Quests</a> einen Link erstellen, bei dem nur bestimmte Pokémon/Items auf der Karte angezeigt werden. Klicke dazu alle gewünschten Pokémon/Items an und drücke dann auf "Link erstellen!".<br>Um einen Negativfilter zu erstellen, klicke das Pokémon/Item zweimal an.',
@@ -32,6 +33,7 @@ var txt_en = ["Attention, you're currently on the beta page. Functionality might
 "Post in WhatsApp",
 'To post a Multiraid, change the data above for the next raid and then press "Multiraid!". Repeat until all raids have been added.<br>',
 "Choose a gym.",
+"Close",
 "Close",
 "Close",
 'On this site you can generate a link to <a href="https://www.bookofquests.de/">Book of Quests</a>, which will only show certain Pokémon/items on the map. Click all the Pokémon/items you want to see and then press "Generate Link!".<br>Click a Pokémon/item twice to generate a negative filter.',
@@ -347,7 +349,7 @@ var pokemon = [
 {"dex":240,"name":"Magby","baby":true,"getshiny":true},
 {"dex":241,"name":"Miltank"},
 {"dex":242,"name":"Heiteira","en":"Blissey","evolved":true},
-{"dex":243,"name":"Raikou","legendary":true},
+{"dex":243,"name":"Raikou","legendary":true,"getshiny":true},
 {"dex":244,"name":"Entei","legendary":true},
 {"dex":245,"name":"Suicune","legendary":true},
 {"dex":246,"name":"Larvitar","getshiny":true},
@@ -656,7 +658,8 @@ var specialfilter = [
 ];
 
 var changelogjson = {
-	"items": [
+	"items": [		
+		{"ver":"1.2.4","date":"29.06.2019","change":['Add regions list','New Shiny: Raikou']},
 		{"ver":"1.2.3","date":"28.06.2019","change":['Add support for Alolan forms in BoQ','New Shinies: Alolan Rattata, Alolan Sandshrew, Alolan Vulpix, Alolan Diglett, Alolan Meowth, Alolan Geodude, Alolan Grimer, Alolan Exeggutor']},
 		{"ver":"1.2.2","date":"27.06.2019","change":['Change Raid Bosses (Return of Groudon)']},
 		{"ver":"1.2.1","date":"23.06.2019","change":['[Marzahn] Add new Gym: "Skulptur am Barnim Platz"']},
