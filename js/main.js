@@ -433,7 +433,7 @@ var pokemon = [
 {"dex":324,"name":"Qurtel","en":"Torkoal","regional":true},
 {"dex":325,"name":"Spoink","getshiny":true},
 {"dex":326,"name":"Groink","en":"Grumpig","evolved":true},
-{"dex":327,"name":"Pandir","en":"Spinda"},
+{"dex":327,"name":"Pandir","en":"Spinda","getshiny":true},
 {"dex":328,"name":"Knacklion","en":"Trapinch"},
 {"dex":329,"name":"Vibrava","evolved":true},
 {"dex":330,"name":"Libelldra","en":"Flygon","evolved":true},
@@ -659,6 +659,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [		
+		{"ver":"1.2.5","date":"01.07.2019","change":['New Shiny: Spinda']},
 		{"ver":"1.2.4","date":"29.06.2019","change":['Add regions list','New Shiny: Raikou']},
 		{"ver":"1.2.3","date":"28.06.2019","change":['Add support for Alolan forms in BoQ','New Shinies: Alolan Rattata, Alolan Sandshrew, Alolan Vulpix, Alolan Diglett, Alolan Meowth, Alolan Geodude, Alolan Grimer, Alolan Exeggutor']},
 		{"ver":"1.2.2","date":"27.06.2019","change":['Change Raid Bosses (Return of Groudon)']},
