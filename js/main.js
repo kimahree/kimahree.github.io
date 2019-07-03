@@ -125,7 +125,7 @@ var pokemon = [
 {"dex":29,"name":"Nidoran♀","getshiny":true},
 {"dex":30,"name":"Nidorina","evolved":true},
 {"dex":31,"name":"Nidoqueen","evolved":true},
-{"dex":32,"name":"Nidoran♂"},
+{"dex":32,"name":"Nidoran♂","getshiny":true},
 {"dex":33,"name":"Nidorino","evolved":true},
 {"dex":34,"name":"Nidoking","evolved":true},
 {"dex":35,"name":"Piepi","en":"Clefairy"},
@@ -659,6 +659,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [		
+		{"ver":"1.2.6","date":"04.07.2019","change":['New Shiny: Nidoran♂']},
 		{"ver":"1.2.5","date":"01.07.2019","change":['New Shiny: Spinda']},
 		{"ver":"1.2.4","date":"29.06.2019","change":['Add regions list','New Shiny: Raikou']},
 		{"ver":"1.2.3","date":"28.06.2019","change":['Add support for Alolan forms in BoQ','New Shinies: Alolan Rattata, Alolan Sandshrew, Alolan Vulpix, Alolan Diglett, Alolan Meowth, Alolan Geodude, Alolan Grimer, Alolan Exeggutor']},
