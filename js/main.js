@@ -659,6 +659,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [		
+		{"ver":"1.2.7","date":"05.07.2019","change":['BoQ Link: Adjusting for filter changes']},
 		{"ver":"1.2.6","date":"04.07.2019","change":['New Shiny: Nidoran♂','Quests: Add Nidoran♂, Magnemite, Scyther and Feebas']},
 		{"ver":"1.2.5","date":"01.07.2019","change":['New Shiny: Spinda']},
 		{"ver":"1.2.4","date":"29.06.2019","change":['Add regions list','New Shiny: Raikou']},
@@ -1532,12 +1533,14 @@ function generateTable() {
 
 function generateLink() {
 	if (sel_q.length > 0) {
+		/*
 		for (i=0; i < forms.length; i++) {
 			var fo = sel_q.indexOf(forms[i]);
 			if (fo >= 0) {
 				sel_q[fo] = parseInt(sel_q[fo].substr(0,sel_q[fo].length - 1));
 			}
-		}
+		} 
+		*/
 		link = boqlink + sel_q.toString();
 		document.getElementById("newLink").innerHTML = '<a href="' + link + '" target="_blank">' + link + '</a>';
 	} else {
