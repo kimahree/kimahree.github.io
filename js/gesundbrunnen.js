@@ -18,7 +18,7 @@ var gymjson = {
 {"value":"Caritas Berlin","map":"https://goo.gl/maps/hETMiMPwxyo"},
 {"value":"Drei-Säulen-Brunnen","map":"https://goo.gl/maps/BD6HAd3WwAC2"},
 {"value":"Eingangstor St. Elisabeth","token":"friedhof kirchhof cemetery graveyard","map":"https://goo.gl/maps/6WQqtbYTLFD2"},
-{"value":"Ente","ex":true,"token":"🦆","map":"https://goo.gl/maps/9BhrrYtz8432"},
+{"value":"Ente","ex":true,"token":"🦆","map":"https://goo.gl/maps/nXUzN45onnB2"},
 {"value":"Ernst Reuter Büste","map":"https://goo.gl/maps/c3bK2hVWqy32"},
 {"value":"Ev. Stephanus Kirche","map":"https://goo.gl/maps/Yxwu2ubRmm52"},
 {"value":"Gedenkstein Opfer der Berliner Mauer","map":"https://goo.gl/maps/vKCJtW7CXjm"},
