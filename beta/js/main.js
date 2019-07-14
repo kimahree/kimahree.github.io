@@ -351,7 +351,7 @@ var pokemon = [
 {"dex":241,"name":"Miltank"},
 {"dex":242,"name":"Heiteira","en":"Blissey","evolved":true},
 {"dex":243,"name":"Raikou","legendary":true,"getshiny":true},
-{"dex":244,"name":"Entei","legendary":true},
+{"dex":244,"name":"Entei","legendary":true,"getshiny":true},
 {"dex":245,"name":"Suicune","legendary":true},
 {"dex":246,"name":"Larvitar","getshiny":true},
 {"dex":247,"name":"Pupitar","evolved":true},
@@ -1053,6 +1053,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [		
+		{"ver":"1.2.10","date":"14.07.2019","change":['New Shiny: Entei']},
 		{"ver":"1.2.9","date":"10.07.2019","change":['Change Raid Bosses (Armored Mewtwo)','Replace broken Google Maps links']},
 		{"ver":"1.2.8","date":"07.07.2019","change":['Quests: Remove Nidoran♂, Magnemite, Scyther and Feebas']},
 		{"ver":"1.2.7","date":"05.07.2019","change":['BoQ Link: Adjusting for filter changes']},
