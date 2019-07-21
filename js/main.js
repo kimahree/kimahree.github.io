@@ -365,7 +365,7 @@ var pokemon = [
 {"dex":255,"name":"Flemmli","en":"Torchic","getshiny":true},
 {"dex":256,"name":"Jungglut","en":"Combusken","evolved":true},
 {"dex":257,"name":"Lohgock","en":"Blaziken","evolved":true},
-{"dex":258,"name":"Hydropi","en":"Mudkip"},
+{"dex":258,"name":"Hydropi","en":"Mudkip","getshiny":true},
 {"dex":259,"name":"Moorabbel","en":"Marshtomp","evolved":true},
 {"dex":260,"name":"Sumpex","en":"Swampert","evolved":true},
 {"dex":261,"name":"Fiffyen","en":"Poochyena","getshiny":true},
@@ -660,6 +660,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [		
+		{"ver":"1.2.11","date":"21.07.2019","change":['New Shiny: Mudkip','Replace more broken Google Maps links']},
 		{"ver":"1.2.10","date":"14.07.2019","change":['New Shiny: Entei']},
 		{"ver":"1.2.9","date":"10.07.2019","change":['Change Raid Bosses (Armored Mewtwo)','Replace broken Google Maps links']},
 		{"ver":"1.2.8","date":"07.07.2019","change":['Quests: Remove Nidoran♂, Magnemite, Scyther and Feebas']},

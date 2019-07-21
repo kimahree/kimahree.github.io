@@ -23,7 +23,7 @@ var gymjson = {
 {"value":"Ev. Stephanus Kirche","map":"https://goo.gl/maps/Yxwu2ubRmm52"},
 {"value":"Gedenkstein Opfer der Berliner Mauer","map":"https://goo.gl/maps/vKCJtW7CXjm"},
 {"value":"Gewachsen auf Beton Mural","token":"u-bahnhof pankstraße","map":"https://goo.gl/maps/8MVUihQXCQ82"},
-{"value":"Haus Graffiti","map":"https://goo.gl/maps/NJWvyGY1xN22"},
+{"value":"Haus Graffiti","map":"https://goo.gl/maps/RgpNp4xwBZS2"},
 {"value":"Hausmalerei","map":"https://goo.gl/maps/wJXuVvpzvTv"},
 {"value":"Hauswächter","map":"https://goo.gl/maps/Yv9g8aRw9S72"},
 {"value":"Hippo Fountain","ex":true,"map":"https://goo.gl/maps/zRQmhYSnYTG2"},
