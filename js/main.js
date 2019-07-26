@@ -113,7 +113,7 @@ var pokemon = [
 {"dex":"20A","name":"Alola-Rattikarl","en":"Alolan Raticate","alolan":true,"evolved":true},
 {"dex":21,"name":"Habitak","en":"Spearow"},
 {"dex":22,"name":"Ibitak","en":"Fearow","evolved":true},
-{"dex":23,"name":"Rettan","en":"Ekans"},
+{"dex":23,"name":"Rettan","en":"Ekans","getshiny":true},
 {"dex":24,"name":"Arbok","evolved":true},
 {"dex":25,"name":"Pikachu","getshiny":true},
 {"dex":26,"name":"Raichu","evolved":true},
@@ -136,7 +136,7 @@ var pokemon = [
 {"dex":"38A","name":"Alola-Vulnona","en":"Alolan Ninetales","alolan":true,"evolved":true},
 {"dex":39,"name":"Pummeluff","en":"Jigglypuff"},
 {"dex":40,"name":"Knuddeluff","en":"Wigglytuff","evolved":true},
-{"dex":41,"name":"Zubat"},
+{"dex":41,"name":"Zubat","getshiny":true},
 {"dex":42,"name":"Golbat","evolved":true},
 {"dex":43,"name":"Myrapla","en":"Oddish"},
 {"dex":44,"name":"Duflor","en":"Gloom","evolved":true},
@@ -215,7 +215,7 @@ var pokemon = [
 {"dex":106,"name":"Kicklee","en":"Hitmonlee"},
 {"dex":107,"name":"Nockchan","en":"Hitmonchan"},
 {"dex":108,"name":"Schlurp","en":"Lickitung"},
-{"dex":109,"name":"Smogon","en":"Koffing"},
+{"dex":109,"name":"Smogon","en":"Koffing","getshiny":true},
 {"dex":110,"name":"Smogmog","en":"Weezing","evolved":true},
 {"dex":111,"name":"Rihorn","en":"Rhyhorn"},
 {"dex":112,"name":"Rizeros","en":"Rhydon","evolved":true},
@@ -322,7 +322,7 @@ var pokemon = [
 {"dex":212,"name":"Scherox","en":"Scizor","evolved":true},
 {"dex":213,"name":"Pottrott","en":"Shuckle","getshiny":true},
 {"dex":214,"name":"Skaraborn","en":"Heracross","regional":true},
-{"dex":215,"name":"Sniebel","en":"Sneasel"},
+{"dex":215,"name":"Sniebel","en":"Sneasel","getshiny":true},
 {"dex":216,"name":"Teddiursa"},
 {"dex":217,"name":"Ursaring","evolved":true},
 {"dex":218,"name":"Schneckmag","en":"Slugma"},
@@ -660,6 +660,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [		
+		{"ver":"1.2.12","date":"26.07.2019","change":['New Shinies: Ekans, Koffing, Sneasel, Zubat','Change Raid Bosses (Team GO Rocket Invasion)']},
 		{"ver":"1.2.11","date":"21.07.2019","change":['New Shiny: Mudkip','Replace more broken Google Maps links']},
 		{"ver":"1.2.10","date":"14.07.2019","change":['New Shiny: Entei']},
 		{"ver":"1.2.9","date":"10.07.2019","change":['Change Raid Bosses (Armored Mewtwo)','Replace broken Google Maps links']},
@@ -672,7 +673,7 @@ var changelogjson = {
 		{"ver":"1.2.2","date":"27.06.2019","change":['Change Raid Bosses (Return of Groudon)']},
 		{"ver":"1.2.1","date":"23.06.2019","change":['[Marzahn] Add new Gym: "Skulptur am Barnim Platz"']},
 		{"ver":"1.2","date":"18.06.2019","change":['New Region: <a href="http://marzahn-raids.tk/" target="_blank">Marzahn</a>',"Change Raid Bosses (Return of Kyogre)"]},
-		{"ver":"1.1.7","date":"13.06.2019","change":["New shiny: Horsea"]},
+		{"ver":"1.1.7","date":"13.06.2019","change":["New Shiny: Horsea"]},
 		{"ver":"1.1.6","date":"11.06.2019","change":["Load gyms seperately to prepare for subsites","Change Raid Bosses (End of Adventure Week)","Quests: Remove Cranidos & Shieldon"]},
 		{"ver":"1.1.5","date":"08.06.2019","change":["Sort raid bosses alphabetically when changing language","New Shiny: Slakoth"]},
 		{"ver":"1.1.4","date":"05.06.2019","change":["Fix bug where deselecting multiple negative filters caused incorrect filter combinations"]},
@@ -701,7 +702,7 @@ var changelogjson = {
 
 var raids = {
 	"tier5":["150R"],
-	"tier4":[359,"105A",248,229,275]
+	"tier4":[359,"105A",248,229,71,275]
 };
 
 var quests = [1,4,7,16,37,50,56,58,60,66,70,74,86,88,92,95,100,102,"103A",113,124,125,126,129,133,138,140,142,147,216,227,246,261,286,287,294,296,302,307,311,312,317,325,327,345,347,353,425];
