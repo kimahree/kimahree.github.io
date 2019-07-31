@@ -494,7 +494,7 @@ var pokemon = [
 {"dex":381,"name":"Latios","legendary":true,"getshiny":true},
 {"dex":382,"name":"Kyogre","legendary":true,"getshiny":true},
 {"dex":383,"name":"Groudon","legendary":true,"getshiny":true},
-{"dex":384,"name":"Rayquaza","legendary":true},
+{"dex":384,"name":"Rayquaza","legendary":true,"getshiny":true},
 {"dex":385,"name":"Jirachi","mythical":true},
 {"dex":386,"name":"Deoxys","mythical":true},
 {"dex":"386A","name":"Deoxys","de":"Deoxys (Angriffsform)","en":"Deoxys (Attack Forme)","mythical":true},
@@ -660,6 +660,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [		
+		{"ver":"1.2.13","date":"31.07.2019","change":['New Shiny: Rayquaza','Change Raid Bosses (Return of Rayquaza)']},
 		{"ver":"1.2.12","date":"26.07.2019","change":['New Shinies: Ekans, Koffing, Sneasel, Zubat','Change Raid Bosses (Team GO Rocket Invasion)']},
 		{"ver":"1.2.11","date":"21.07.2019","change":['New Shiny: Mudkip','Replace more broken Google Maps links']},
 		{"ver":"1.2.10","date":"14.07.2019","change":['New Shiny: Entei']},
@@ -701,8 +702,8 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":["150R"],
-	"tier4":[359,"105A",229,71]
+	"tier5":[384],
+	"tier4":["105A",149,210,131,176]
 };
 
 var quests = [1,4,7,16,37,50,56,58,60,66,70,74,86,88,92,95,100,102,"103A",113,124,125,126,129,133,138,140,142,147,216,227,246,261,286,287,294,296,302,307,311,312,317,325,327,345,347,353,425];
