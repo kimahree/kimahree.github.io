@@ -387,7 +387,7 @@ var pokemon = [
 {"dex":277,"name":"Schwalboss","en":"Swellow","evolved":true},
 {"dex":278,"name":"Wingull","getshiny":true},
 {"dex":279,"name":"Pelipper","evolved":true},
-{"dex":280,"name":"Trasla","en":"Ralts"},
+{"dex":280,"name":"Trasla","en":"Ralts", "getshiny":true},
 {"dex":281,"name":"Kirlia","evolved":true},
 {"dex":282,"name":"Guardevoir","en":"Gardevoir","evolved":true},
 {"dex":283,"name":"Gehweiher","en":"Surskit"},
@@ -660,6 +660,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [		
+		{"ver":"1.2.14","date":"03.08.2019","change":['New Shiny: Ralts']},
 		{"ver":"1.2.13","date":"31.07.2019","change":['New Shiny: Rayquaza','Change Raid Bosses (Return of Rayquaza)']},
 		{"ver":"1.2.12","date":"26.07.2019","change":['New Shinies: Ekans, Koffing, Sneasel, Zubat','Change Raid Bosses (Team GO Rocket Invasion)']},
 		{"ver":"1.2.11","date":"21.07.2019","change":['New Shiny: Mudkip','Replace more broken Google Maps links']},
