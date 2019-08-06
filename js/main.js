@@ -159,7 +159,7 @@ var pokemon = [
 {"dex":57,"name":"Rasaff","en":"Primeape","evolved":true},
 {"dex":58,"name":"Fukano","en":"Growlithe","getshiny":true},
 {"dex":59,"name":"Arkani","en":"Arcanine","evolved":true},
-{"dex":60,"name":"Quapsel","en":"Poliwag"},
+{"dex":60,"name":"Quapsel","en":"Poliwag","getshiny":true},
 {"dex":61,"name":"Quaputzi","en":"Poliwhirl","evolved":true},
 {"dex":62,"name":"Quappo","en":"Poliwrath","evolved":true},
 {"dex":63,"name":"Abra"},
@@ -556,7 +556,7 @@ var pokemon = [
 {"dex":435,"name":"Skuntank","evolved":true},
 {"dex":436,"name":"Bronzel","en":"Bronzor","getshiny":true},
 {"dex":437,"name":"Bronzong","evolved":true},
-{"dex":438,"name":"Mobai","en":"Bonsly","baby":true},
+{"dex":438,"name":"Mobai","en":"Bonsly","baby":true,"getshiny":true},
 {"dex":439,"name":"Pantimimi","en":"Mime Jr.","baby":true,"regional":true},
 {"dex":440,"name":"Wonneira","en":"Happiny","baby":true},
 {"dex":441,"name":"Plaudagei","en":"Chatot","regional":true},
@@ -660,6 +660,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [		
+		{"ver":"1.2.15","date":"06.08.2019","change":['New Shinies: Poliwag, Bonsly','Quests: Add Taillow, Lotad, Swablu, Snorunt']},
 		{"ver":"1.2.14","date":"03.08.2019","change":['New Shiny: Ralts']},
 		{"ver":"1.2.13","date":"31.07.2019","change":['New Shiny: Rayquaza','Change Raid Bosses (Return of Rayquaza)']},
 		{"ver":"1.2.12","date":"26.07.2019","change":['New Shinies: Ekans, Koffing, Sneasel, Zubat','Change Raid Bosses (Team GO Rocket Invasion)']},
@@ -707,8 +708,8 @@ var raids = {
 	"tier4":["105A",149,210,131,176]
 };
 
-var quests = [1,4,7,16,37,50,56,58,60,66,70,74,86,88,92,95,100,102,"103A",113,124,125,126,129,133,138,140,142,147,216,227,246,261,286,287,294,296,302,307,311,312,317,325,327,345,347,353,425];
-var legacy = [3,10,25,27,32,36,38,40,42,55,59,61,67,73,81,96,98,107,109,114,117,121,123,127,131,132,137,171,179,184,191,193,200,203,204,209,215,224,228,231,241,252,256,270,290,299,309,310,315,320,322,328,349,359,387,390,399,408,410,427,436];
+var quests = [1,4,7,16,37,50,56,58,60,66,70,74,86,88,92,95,100,102,"103A",113,124,125,126,129,133,138,140,142,147,216,227,246,261,270,276,286,287,294,296,302,307,311,312,317,325,327,333,345,347,353,361,425];
+var legacy = [3,10,25,27,32,36,38,40,42,55,59,61,67,73,81,96,98,107,109,114,117,121,123,127,131,132,137,171,179,184,191,193,200,203,204,209,215,224,228,231,241,252,256,290,299,309,310,315,320,322,328,349,359,387,390,399,408,410,427,436];
 var forms = ["19A","20A","26A","27A","28A","37A","38A","50A","51A","52A","53A","74A","75A","76A","88A","89A","103A","105A","150R","351I","351R","351S","386A","386D","386S","412S","412T","413S","413T","421S","479F","479H","479I","479M","479W","487O","492S"];
 var hidden = 1;
 var sel_q = [];
