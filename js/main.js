@@ -352,7 +352,7 @@ var pokemon = [
 {"dex":242,"name":"Heiteira","en":"Blissey","evolved":true},
 {"dex":243,"name":"Raikou","legendary":true,"getshiny":true},
 {"dex":244,"name":"Entei","legendary":true,"getshiny":true},
-{"dex":245,"name":"Suicune","legendary":true},
+{"dex":245,"name":"Suicune","legendary":true,"getshiny":true},
 {"dex":246,"name":"Larvitar","getshiny":true},
 {"dex":247,"name":"Pupitar","evolved":true},
 {"dex":248,"name":"Despotar","en":"Tyranitar","evolved":true},
@@ -660,6 +660,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [		
+		{"ver":"1.2.17","date":"17.08.2019","change":['New Shiny: Suicune']},
 		{"ver":"1.2.16","date":"12.08.2019","change":['Quests: Remove Taillow, Lotad, Swablu, Snorunt']},
 		{"ver":"1.2.15","date":"06.08.2019","change":['New Shinies: Poliwag, Bonsly','Quests: Add Taillow, Lotad, Swablu, Snorunt']},
 		{"ver":"1.2.14","date":"03.08.2019","change":['New Shiny: Ralts']},
