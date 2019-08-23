@@ -2,7 +2,7 @@
 var t4index = 0;
 var t3index = 0;
 
-var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_instr","txt_button","txt_multi","txt_chgym","txt_cre_close","txt_cl_close","txt_reg_close","txt_boq_intro","txt_boq_generate"];
+var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_instr","txt_button","txt_button2","txt_multi","txt_chgym","txt_cre_close","txt_cl_close","txt_reg_close","txt_boq_intro","txt_boq_generate"];
 
 var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beeinträchtigt und fehlerhaft.",
 "Zur Hauptseite",
@@ -13,6 +13,7 @@ var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beein
 "Teilnehmer:",
 'Drücke auf "Start!", überprüfe deine Angaben und drücke dann auf "In WhatsApp posten".<br>',
 "In WhatsApp posten",
+"In Telegram posten",
 'Um einen Multiraid zu posten, ändere jetzt die Angaben oben für den nächsten Raid und drücke dann auf "Multiraid!". Wiederhole dies, bis alle Raids eingetragen sind.<br>',
 "Wähle eine Arena aus.",
 "Schließen",
@@ -31,6 +32,7 @@ var txt_en = ["Attention, you're currently on the beta page. Functionality might
 "Participants:",
 'Press "Start!", check your data and then press "Post in WhatsApp".<br>',
 "Post in WhatsApp",
+"Post in Telegram",
 'To post a Multiraid, change the data above for the next raid and then press "Multiraid!". Repeat until all raids have been added.<br>',
 "Choose a gym.",
 "Close",
@@ -257,7 +259,7 @@ var pokemon = [
 {"dex":148,"name":"Dragonir","en":"Dragonair","evolved":true},
 {"dex":149,"name":"Dragoran","en":"Dragonite","evolved":true},
 {"dex":150,"name":"Mewtu","en":"Mewtwo","legendary":true},
-{"dex":"150R","name":"Mewtu","de":"Mewtu in Rüstung","en":"Armored Mewtwo","legendary":true},
+{"dex":"150R","name":"Mewtu (Rüstung)","de":"Mewtu in Rüstung","en":"Armored Mewtwo","legendary":true},
 {"dex":151,"name":"Mew","mythical":true},
 {"dex":152,"name":"Endivie","en":"Chikorita","getshiny":true},
 {"dex":153,"name":"Lorblatt","en":"Bayleef","evolved":true},
@@ -425,7 +427,7 @@ var pokemon = [
 {"dex":315,"name":"Roselia"},
 {"dex":316,"name":"Schluppuck","en":"Gulpin"},
 {"dex":317,"name":"Schlukwech","en":"Swalot","evolved":true},
-{"dex":318,"name":"Kanivanha","en":"Carvanha"},
+{"dex":318,"name":"Kanivanha","en":"Carvanha","getshiny":true},
 {"dex":319,"name":"Tohaido","en":"Sharpedo","evolved":true},
 {"dex":320,"name":"Wailmer","getshiny":true},
 {"dex":321,"name":"Wailord","evolved":true},
@@ -446,7 +448,7 @@ var pokemon = [
 {"dex":336,"name":"Vipitis","en":"Seviper","regional":true},
 {"dex":337,"name":"Lunastein","en":"Lunatone","regional":true,"getshiny":true},
 {"dex":338,"name":"Sonnfel","en":"Solrock","regional":true,"getshiny":true},
-{"dex":339,"name":"Schmerbe","en":"Barboach"},
+{"dex":339,"name":"Schmerbe","en":"Barboach","getshiny":true},
 {"dex":340,"name":"Welsar","en":"Whiscash","evolved":true},
 {"dex":341,"name":"Krebscorps","en":"Corphish"},
 {"dex":342,"name":"Krebutack","en":"Crawdaunt","evolved":true},
@@ -459,9 +461,9 @@ var pokemon = [
 {"dex":349,"name":"Barschwa","en":"Feebas","getshiny":true},
 {"dex":350,"name":"Milotic","evolved":true},
 {"dex":351,"name":"Formeo","en":"Castform","getshiny":true},
-{"dex":"351I","name":"Formeo","de":"Formeo (Schneeform)","en":"Castform (Snowy Form)","evolved":true},
-{"dex":"351R","name":"Formeo","de":"Formeo (Regenform)","en":"Castform (Rainy Form)","evolved":true},
-{"dex":"351S","name":"Formeo","de":"Formeo (Sonnenform)","en":"Castform (Sunny Form)","evolved":true},
+{"dex":"351I","name":"Formeo (Schnee)","de":"Formeo (Schneeform)","en":"Castform (Snowy Form)","evolved":true},
+{"dex":"351R","name":"Formeo (Regen)","de":"Formeo (Regenform)","en":"Castform (Rainy Form)","evolved":true},
+{"dex":"351S","name":"Formeo (Sonne)","de":"Formeo (Sonnenform)","en":"Castform (Sunny Form)","evolved":true},
 {"dex":352,"name":"Kecleon"},
 {"dex":353,"name":"Shuppet","getshiny":true},
 {"dex":354,"name":"Banette","evolved":true},
@@ -496,10 +498,10 @@ var pokemon = [
 {"dex":383,"name":"Groudon","legendary":true,"getshiny":true},
 {"dex":384,"name":"Rayquaza","legendary":true,"getshiny":true},
 {"dex":385,"name":"Jirachi","mythical":true},
-{"dex":386,"name":"Deoxys","mythical":true},
-{"dex":"386A","name":"Deoxys","de":"Deoxys (Angriffsform)","en":"Deoxys (Attack Forme)","mythical":true},
-{"dex":"386D","name":"Deoxys","de":"Deoxys (Verteidigungsform)","en":"Deoxys (Defense Forme)","mythical":true},
-{"dex":"386S","name":"Deoxys","de":"Deoxys (Initiativeform)","en":"Deoxys (Speed Forme)","mythical":true},
+{"dex":386,"name":"Deoxys (Normal)","de":"Deoxys (Normalform)","en":"Deoxys (Normal Forme)","mythical":true},
+{"dex":"386A","name":"Deoxys (Angriff)","de":"Deoxys (Angriffsform)","en":"Deoxys (Attack Forme)","mythical":true},
+{"dex":"386D","name":"Deoxys (Verteidigung)","de":"Deoxys (Verteidigungsform)","en":"Deoxys (Defense Forme)","mythical":true},
+{"dex":"386S","name":"Deoxys (Initiative)","de":"Deoxys (Initiativeform)","en":"Deoxys (Speed Forme)","mythical":true},
 {"dex":387,"name":"Chelast","en":"Turtwig"},
 {"dex":388,"name":"Chelcarain","en":"Grotle","evolved":true},
 {"dex":389,"name":"Chelterrar","en":"Torterra","evolved":true},
@@ -525,12 +527,12 @@ var pokemon = [
 {"dex":409,"name":"Rameidon","en":"Rampardos","evolved":true},
 {"dex":410,"name":"Schilterus","en":"Shieldon"},
 {"dex":411,"name":"Bollterus","en":"Bastiodon","evolved":true},
-{"dex":412,"name":"Burmy","de":"Burmy (Pflanzenumhang)","en":"Burmy (Plant Cloak)"},
-{"dex":"412S","name":"Burmy","de":"Burmy (Sandumhang)","en":"Burmy (Sandy Cloak)"},
-{"dex":"412T","name":"Burmy","de":"Burmy (Lumpenumhang)","en":"Burmy (Trash Cloak)"},
-{"dex":413,"name":"Burmadame","de":"Burmadame (Pflanzenumhang)","en":"Wormadam (Plant Cloak)","evolved":true},
-{"dex":"413S","name":"Burmadame","de":"Burmadame (Sandumhang)","en":"Wormadam (Sandy Cloak)","evolved":true},
-{"dex":"413T","name":"Burmadame","de":"Burmadame (Lumpenumhang)","en":"Wormadam (Trash Cloak)","evolved":true},
+{"dex":412,"name":"Burmy (Pflanze)","de":"Burmy (Pflanzenumhang)","en":"Burmy (Plant Cloak)"},
+{"dex":"412S","name":"Burmy (Sand)","de":"Burmy (Sandumhang)","en":"Burmy (Sandy Cloak)"},
+{"dex":"412T","name":"Burmy (Lumpen)","de":"Burmy (Lumpenumhang)","en":"Burmy (Trash Cloak)"},
+{"dex":413,"name":"Burmadame (Pflanze)","de":"Burmadame (Pflanzenumhang)","en":"Wormadam (Plant Cloak)","evolved":true},
+{"dex":"413S","name":"Burmadame (Sand)","de":"Burmadame (Sandumhang)","en":"Wormadam (Sandy Cloak)","evolved":true},
+{"dex":"413T","name":"Burmadame (Lumpen)","de":"Burmadame (Lumpenumhang)","en":"Wormadam (Trash Cloak)","evolved":true},
 {"dex":414,"name":"Moterpel","en":"Mothim","evolved":true},
 {"dex":415,"name":"Wadribie","en":"Combee"},
 {"dex":416,"name":"Honweisel","en":"Vespiquen","evolved":true},
@@ -538,8 +540,8 @@ var pokemon = [
 {"dex":418,"name":"Bamelin","en":"Buizel"},
 {"dex":419,"name":"Bojelin","en":"Floatzel","evolved":true},
 {"dex":420,"name":"Kikugi","en":"Cherubi"},
-{"dex":421,"name":"Kinoso","de":"Kinoso (Wolkenform)","en":"Cherrim (Overcast Form)","evolved":true},
-{"dex":"421S","name":"Kinoso","de":"Kinoso (Sonnenform)","en":"Cherrim (Sunshine Form)","evolved":true},
+{"dex":421,"name":"Kinoso (Bewölkt)","de":"Kinoso (Wolkenform)","en":"Cherrim (Overcast Form)","evolved":true},
+{"dex":"421S","name":"Kinoso (Sonne)","de":"Kinoso (Sonnenform)","en":"Cherrim (Sunshine Form)","evolved":true},
 {"dex":422,"name":"Schalellos","en":"Shellos"},
 {"dex":423,"name":"Gastrodon","evolved":true},
 {"dex":424,"name":"Ambidiffel","en":"Ambipom","evolved":true},
@@ -598,11 +600,11 @@ var pokemon = [
 {"dex":477,"name":"Zwirrfinst","en":"Dusknoir","evolved":true},
 {"dex":478,"name":"Frosdedje","en":"Froslass","evolved":true},
 {"dex":479,"name":"Rotom"},
-{"dex":"479F","name":"Rotom","de":"Wirbel-Rotom","en":"Fan Rotom","legendary":true},
-{"dex":"479H","name":"Rotom","de":"Hitze-Rotom","en":"Heat Rotom","legendary":true},
-{"dex":"479I","name":"Rotom","de":"Frost-Rotom","en":"Frost Rotom","legendary":true},
-{"dex":"479M","name":"Rotom","de":"Schneid-Rotom","en":"Mow Rotom","legendary":true},
-{"dex":"479W","name":"Rotom","de":"Wasch-Rotom","en":"Wash Rotom","legendary":true},
+{"dex":"479F","name":"Rotom (Wirbel)","de":"Wirbel-Rotom","en":"Fan Rotom","legendary":true},
+{"dex":"479H","name":"Rotom (Hitze)","de":"Hitze-Rotom","en":"Heat Rotom","legendary":true},
+{"dex":"479I","name":"Rotom (Frost)","de":"Frost-Rotom","en":"Frost Rotom","legendary":true},
+{"dex":"479M","name":"Rotom (Schneid)","de":"Schneid-Rotom","en":"Mow Rotom","legendary":true},
+{"dex":"479W","name":"Rotom (Wasch)","de":"Wasch-Rotom","en":"Wash Rotom","legendary":true},
 {"dex":480,"name":"Selfe","en":"Uxie","legendary":true,"regional":true},
 {"dex":481,"name":"Vesprit","en":"Mesprit","legendary":true,"regional":true},
 {"dex":482,"name":"Tobutz","en":"Azelf","legendary":true,"regional":true},
@@ -610,15 +612,179 @@ var pokemon = [
 {"dex":484,"name":"Palkia","legendary":true},
 {"dex":485,"name":"Heatran","legendary":true},
 {"dex":486,"name":"Regigigas","legendary":true},
-{"dex":487,"name":"Giratina","de":"Giratina (Wandelform)","en":"Giratina (Altered Forme)","legendary":true},
-{"dex":"487O","name":"Giratina","de":"Giratina (Urform)","en":"Giratina (Origin Forme)","legendary":true},
+{"dex":487,"name":"Giratina (Wandel)","de":"Giratina (Wandelform)","en":"Giratina (Altered Forme)","legendary":true},
+{"dex":"487O","name":"Giratina (Urform)","de":"Giratina (Urform)","en":"Giratina (Origin Forme)","legendary":true},
 {"dex":488,"name":"Cresselia","legendary":true,"getshiny":true},
 {"dex":489,"name":"Phione","mythical":true},
 {"dex":490,"name":"Manaphy","mythical":true},
 {"dex":491,"name":"Darkrai","mythical":true},
-{"dex":492,"name":"Shaymin","de":"Shaymin (Landform)","en":"Shaymin (Land Forme)","mythical":true},
-{"dex":"492S","name":"Shaymin","de":"Shaymin (Zenitform)","en":"Shaymin (Sky Forme)","mythical":true},
+{"dex":492,"name":"Shaymin (Land)","de":"Shaymin (Landform)","en":"Shaymin (Land Forme)","mythical":true},
+{"dex":"492S","name":"Shaymin (Zenit)","de":"Shaymin (Zenitform)","en":"Shaymin (Sky Forme)","mythical":true},
 {"dex":493,"name":"Arceus","mythical":true},
+{"dex":494,"name":"Victini","mythical":true},
+{"dex":495,"name":"Serpifeu","en":"Snivy"},
+{"dex":496,"name":"Efoserp","en":"Servine","evolved":true},
+{"dex":497,"name":"Serpiroyal","en":"Serperior","evolved":true},
+{"dex":498,"name":"Floink","en":"Tepig"},
+{"dex":499,"name":"Ferkokel","en":"Pignite","evolved":true},
+{"dex":500,"name":"Flambirex","en":"Emboar","evolved":true},
+{"dex":501,"name":"Ottaro","en":"Oshawott"},
+{"dex":502,"name":"Zwottronin","en":"Dewott","evolved":true},
+{"dex":503,"name":"Admurai","en":"Samurott","evolved":true},
+{"dex":504,"name":"Nagelotz","en":"Patrat"},
+{"dex":505,"name":"Kukmarda","en":"Watchog","evolved":true},
+{"dex":506,"name":"Yorkleff","en":"Lillipup"},
+{"dex":507,"name":"Terribark","en":"Herdier","evolved":true},
+{"dex":508,"name":"Bissbark","en":"Stoutland","evolved":true},
+{"dex":509,"name":"Felilou","en":"Purrloin"},
+{"dex":510,"name":"Kleoparda","en":"Liepard","evolved":true},
+{"dex":511,"name":"Vegimak","en":"Pansage"},
+{"dex":512,"name":"Vegichita","en":"Simisage","evolved":true},
+{"dex":513,"name":"Grillmak","en":"Pansear"},
+{"dex":514,"name":"Grillchita","en":"Simisear","evolved":true},
+{"dex":515,"name":"Sodamak","en":"Panpour"},
+{"dex":516,"name":"Sodachita","en":"Simipour","evolved":true},
+{"dex":517,"name":"Somniam","en":"Munna"},
+{"dex":518,"name":"Somnivora","en":"Musharna","evolved":true},
+{"dex":519,"name":"Dusselgurr","en":"Pidove"},
+{"dex":520,"name":"Navitaub","en":"Tranquill","evolved":true},
+{"dex":521,"name":"Fasasnob","en":"Unfezant","evolved":true},
+{"dex":522,"name":"Elezeba","en":"Blitzle"},
+{"dex":523,"name":"Zebritz","en":"Zebstrika","evolved":true},
+{"dex":524,"name":"Kiesling","en":"Roggenrola"},
+{"dex":525,"name":"Sedimantur","en":"Boldore","evolved":true},
+{"dex":526,"name":"Brockoloss","en":"Gigalith","evolved":true},
+{"dex":527,"name":"Fleknoil","en":"Woobat"},
+{"dex":528,"name":"Fletiamo","en":"Swoobat","evolved":true},
+{"dex":529,"name":"Rotomurf","en":"Drilbur"},
+{"dex":530,"name":"Stalobor","en":"Excadrill","evolved":true},
+{"dex":531,"name":"Ohrdoch","en":"Audino"},
+{"dex":532,"name":"Praktibalk","en":"Timburr"},
+{"dex":533,"name":"Strepoli","en":"Gurdurr","evolved":true},
+{"dex":534,"name":"Meistagrif","en":"Conkeldurr","evolved":true},
+{"dex":535,"name":"Schallquap","en":"Tympole"},
+{"dex":536,"name":"Mebrana","en":"Palpitoad","evolved":true},
+{"dex":537,"name":"Branawarz","en":"Seismitoad","evolved":true},
+{"dex":538,"name":"Jiutesto","en":"Throh"},
+{"dex":539,"name":"Karadonis","en":"Sawk"},
+{"dex":540,"name":"Strawickl","en":"Sewaddle"},
+{"dex":541,"name":"Folikon","en":"Swadloon","evolved":true},
+{"dex":542,"name":"Matrifol","en":"Leavanny","evolved":true},
+{"dex":543,"name":"Toxiped","en":"Venipede"},
+{"dex":544,"name":"Rollum","en":"Whirlipede","evolved":true},
+{"dex":545,"name":"Cerapendra","en":"Scolipede","evolved":true},
+{"dex":546,"name":"Waumboll","en":"Cottonee"},
+{"dex":547,"name":"Elfun","en":"Whimsicott","evolved":true},
+{"dex":548,"name":"Lilminip","en":"Petilil"},
+{"dex":549,"name":"Dressella","en":"Lilligant","evolved":true},
+{"dex":550,"name":"Barschuft (Rotlinig)","de":"Barschuft (Rotlinige Form)","en":"Basculin (Red-Striped Form)"},
+{"dex":"550B","name":"Barschuft (Blaulinig)","de":"Barschuft (Blaulinige Form)","en":"Basculin (Blue-Striped Form)"},
+{"dex":551,"name":"Ganovil","en":"Sandile"},
+{"dex":552,"name":"Rokkaiman","en":"Krokorok","evolved":true},
+{"dex":553,"name":"Rabigator","en":"Krookodile","evolved":true},
+{"dex":554,"name":"Flampion","en":"Darumaka"},
+{"dex":555,"name":"Flampivian","en":"Darmanitan"},
+{"dex":"555Z","name":"Flampivian (Trance)","de":"Flampivian (Trance-Modus)","en":"Darmanitan (Zen Mode)","evolved":true},
+{"dex":556,"name":"Maracamba","en":"Maractus"},
+{"dex":557,"name":"Lithomith","en":"Dwebble"},
+{"dex":558,"name":"Castellith","en":"Crustle","evolved":true},
+{"dex":559,"name":"Zurrokex","en":"Scraggy"},
+{"dex":560,"name":"Irokex","en":"Scrafty","evolved":true},
+{"dex":561,"name":"Symvolara","en":"Sigilyph"},
+{"dex":562,"name":"Makabaja","en":"Yamask"},
+{"dex":563,"name":"Echnatoll","en":"Cofagrigus","evolved":true},
+{"dex":564,"name":"Galapaflos","en":"Tirtouga"},
+{"dex":565,"name":"Karippas","en":"Carracosta","evolved":true},
+{"dex":566,"name":"Flapteryx","en":"Archen"},
+{"dex":567,"name":"Aeropteryx","en":"Archeops","evolved":true},
+{"dex":568,"name":"Unratütox","en":"Trubbish"},
+{"dex":569,"name":"Deponitox","en":"Garbodor","evolved":true},
+{"dex":570,"name":"Zorua"},
+{"dex":571,"name":"Zoroark","evolved":true},
+{"dex":572,"name":"Picochilla","en":"Minccino"},
+{"dex":573,"name":"Chillabell","en":"Cinccino","evolved":true},
+{"dex":574,"name":"Mollimorba","en":"Gothita"},
+{"dex":575,"name":"Hypnomorba","en":"Gothorita","evolved":true},
+{"dex":576,"name":"Morbitesse","en":"Gothitelle","evolved":true},
+{"dex":577,"name":"Monozyto","en":"Solosis"},
+{"dex":578,"name":"Mitodos","en":"Duosion","evolved":true},
+{"dex":579,"name":"Zytomega","en":"Reuniclus","evolved":true},
+{"dex":580,"name":"Piccolente","en":"Ducklett"},
+{"dex":581,"name":"Swaroness","en":"Swanna","evolved":true},
+{"dex":582,"name":"Gelatini","en":"Vanillite"},
+{"dex":583,"name":"Gelatroppo","en":"Vanillish","evolved":true},
+{"dex":584,"name":"Gelatwino","en":"Vanilluxe","evolved":true},
+{"dex":585,"name":"Sesokitz","en":"Deerling"},
+{"dex":586,"name":"Kronjuwild","en":"Sawsbuck","evolved":true},
+{"dex":587,"name":"Emolga"},
+{"dex":588,"name":"Laukaps","en":"Karrablast"},
+{"dex":589,"name":"Cavalanzas","en":"Escavalier","evolved":true},
+{"dex":590,"name":"Tarnpignon","en":"Foongus"},
+{"dex":591,"name":"Hutsassa","en":"Amoonguss","evolved":true},
+{"dex":592,"name":"Quabbel","en":"Frillish"},
+{"dex":593,"name":"Apoquallyp","en":"Jellicent","evolved":true},
+{"dex":594,"name":"Mamolida","en":"Alomomola"},
+{"dex":595,"name":"Wattzapf","en":"Joltik"},
+{"dex":596,"name":"Voltula","en":"Galvantula","evolved":true},
+{"dex":597,"name":"Kastadur","en":"Ferroseed"},
+{"dex":598,"name":"Tentantel","en":"Ferrothorn","evolved":true},
+{"dex":599,"name":"Klikk","en":"Klink"},
+{"dex":600,"name":"Kliklak","en":"Klang","evolved":true},
+{"dex":601,"name":"Klikdiklak","en":"Klinklang","evolved":true},
+{"dex":602,"name":"Zapplardin","en":"Tynamo"},
+{"dex":603,"name":"Zapplalek","en":"Eelektrik","evolved":true},
+{"dex":604,"name":"Zapplarang","en":"Eelektross","evolved":true},
+{"dex":605,"name":"Pygraulon","en":"Elgyem"},
+{"dex":606,"name":"Megalon","en":"Beheeyem","evolved":true},
+{"dex":607,"name":"Lichtel","en":"Litwick"},
+{"dex":608,"name":"Laternecto","en":"Lampent","evolved":true},
+{"dex":609,"name":"Skelabra","en":"Chandelure","evolved":true},
+{"dex":610,"name":"Milza","en":"Axew"},
+{"dex":611,"name":"Sharfax","en":"Fraxure","evolved":true},
+{"dex":612,"name":"Maxax","en":"Haxorus","evolved":true},
+{"dex":613,"name":"Petznief","en":"Cubchoo"},
+{"dex":614,"name":"Siberio","en":"Beartic","evolved":true},
+{"dex":615,"name":"Frigometri","en":"Cryogonal"},
+{"dex":616,"name":"Schnuthelm","en":"Shelmet"},
+{"dex":617,"name":"Hydragil","en":"Accelgor","evolved":true},
+{"dex":618,"name":"Flunschlik","en":"Stunfisk"},
+{"dex":619,"name":"Lin-Fu","en":"Mienfoo"},
+{"dex":620,"name":"Wie-Shu","en":"Mienshao","evolved":true},
+{"dex":621,"name":"Shardrago","en":"Druddigon"},
+{"dex":622,"name":"Golbit","en":"Golett"},
+{"dex":623,"name":"Golgantes","en":"Golurk","evolved":true},
+{"dex":624,"name":"Gladiantri","en":"Pawniard"},
+{"dex":625,"name":"Caesurio","en":"Bisharp","evolved":true},
+{"dex":626,"name":"Bisofank","en":"Bouffalant"},
+{"dex":627,"name":"Geronimatz","en":"Rufflet"},
+{"dex":628,"name":"Washakwil","en":"Braviary","evolved":true},
+{"dex":629,"name":"Skallyk","en":"Vullaby"},
+{"dex":630,"name":"Grypheldis","en":"Mandibuzz","evolved":true},
+{"dex":631,"name":"Furnifraß","en":"Heatmor"},
+{"dex":632,"name":"Fermicula","en":"Durant"},
+{"dex":633,"name":"Kapuno","en":"Deino"},
+{"dex":634,"name":"Duodino","en":"Zweilous","evolved":true},
+{"dex":635,"name":"Trikephalo","en":"Hydreigon","evolved":true},
+{"dex":636,"name":"Ignivor","en":"Larvesta"},
+{"dex":637,"name":"Ramoth","en":"Volcarona","evolved":true},
+{"dex":638,"name":"Kobalium","en":"Cobalion","legendary":true},
+{"dex":639,"name":"Terrakium","en":"Terrakion","legendary":true},
+{"dex":640,"name":"Viridium","en":"Virizion","legendary":true},
+{"dex":641,"name":"Boreos (Inkarnation)","de":"Boreos (Inkarnationsform)","en":"Tornadus (Incarnate Forme)","legendary":true},
+{"dex":"641T","name":"Boreos (Tiergeist)","de":"Boreos (Tiergeistform)","en":"Tornadus (Therian Forme)","legendary":true},
+{"dex":642,"name":"Voltolos (Inkarnation)","de":"Voltolos (Inkarnationsform)","en":"Thundurus (Incarnate Forme)","legendary":true},
+{"dex":"642T","name":"Voltolos (Tiergeist)","de":"Voltolos (Tiergeistform)","en":"Thundurus (Therian Forme)","legendary":true},
+{"dex":643,"name":"Reshiram","legendary":true},
+{"dex":644,"name":"Zekrom","legendary":true},
+{"dex":645,"name":"Demeteros (Inkarnation)","de":"Demeteros (Inkarnationsform)","en":"Landorus (Incarnate Forme)","legendary":true},
+{"dex":"645T","name":"Demeteros (Tiergeist)","de":"Demeteros (Tiergeistform)","en":"Landorus (Therian Forme)","legendary":true},
+{"dex":646,"name":"Kyurem","legendary":true},
+{"dex":"646B","name":"Schwarzes Kyurem","de":"Schwarzes Kyurem","en":"Black Kyurem","legendary":true},
+{"dex":"646W","name":"Weißes Kyurem","de":"Weißes Kyurem","en":"White Kyurem","legendary":true},
+{"dex":647,"name":"Keldeo","mythical":true},
+{"dex":648,"name":"Meloetta (Gesang)","de":"Meloetta (Gesangsform)","en":"Meloetta (Aria Forme)","mythical":true},
+{"dex":"648P","name":"Meloetta (Tanz)","de":"Meloetta (Tanzform)","en":"Meloetta (Pirouette Forme)","mythical":true},
+{"dex":649,"name":"Genesect","mythical":true},
 {"dex":808,"name":"Meltan","mythical":true},
 {"dex":809,"name":"Melmetal","mythical":true,"evolved":true}
 ];
@@ -660,6 +826,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [		
+		{"ver":"1.3","date":"23.08.2019","change":['New Shinies: Barboach, Carvanha','Quests: Add Blastoise, Krabby, Azumarill, Carvanha, Barboach, Clamperl','Change Raid Bosses (Water Festival 2019)','Initial Support for multiple messengers','Prepare for upcoming Unova release']},
 		{"ver":"1.2.17","date":"17.08.2019","change":['New Shiny: Suicune']},
 		{"ver":"1.2.16","date":"12.08.2019","change":['Quests: Remove Taillow, Lotad, Swablu, Snorunt']},
 		{"ver":"1.2.15","date":"06.08.2019","change":['New Shinies: Poliwag, Bonsly','Quests: Add Taillow, Lotad, Swablu, Snorunt']},
@@ -707,11 +874,11 @@ var changelogjson = {
 
 var raids = {
 	"tier5":[384],
-	"tier4":["105A",149,210,131,176]
+	"tier4":[359,"105A",248,131,9]
 };
 
-var quests = [1,4,7,16,37,50,56,58,60,66,70,74,86,88,92,95,100,102,"103A",113,124,125,126,129,133,138,140,142,147,216,227,246,261,286,287,294,296,302,307,311,312,317,325,327,345,347,353,425];
-var legacy = [3,10,25,27,32,36,38,40,42,55,59,61,67,73,81,96,98,107,109,114,117,121,123,127,131,132,137,171,179,184,191,193,200,203,204,209,215,224,228,231,241,252,256,270,276,290,299,309,310,315,320,322,328,333,349,359,361,387,390,399,408,410,427,436];
+var quests = [1,4,7,9,16,37,50,56,58,60,66,70,74,86,88,92,95,98,100,102,"103A",113,124,125,126,129,133,138,140,142,147,184,216,227,246,261,286,287,294,296,302,307,311,312,317,318,325,327,339,345,347,353,366,425];
+var legacy = [3,10,25,27,32,36,38,40,42,55,59,61,67,73,81,96,107,109,114,117,121,123,127,131,132,137,171,179,191,193,200,203,204,209,215,224,228,231,241,252,256,270,276,290,299,309,310,315,320,322,328,333,349,359,361,387,390,399,408,410,427,436];
 var forms = ["19A","20A","26A","27A","28A","37A","38A","50A","51A","52A","53A","74A","75A","76A","88A","89A","103A","105A","150R","351I","351R","351S","386A","386D","386S","412S","412T","413S","413T","421S","479F","479H","479I","479M","479W","487O","492S"];
 var hidden = 1;
 var sel_q = [];
@@ -894,7 +1061,7 @@ function init() {
 
 function generateRaid(raidtext) {
   document.getElementById("ex").innerHTML = "";
-  document.getElementById("but").innerHTML = "";
+  // document.getElementById("but").innerHTML = "";
 
   var text = raidtext;
   var gym = document.getElementById("gym").value;
@@ -1041,29 +1208,15 @@ function generateRaid(raidtext) {
   text2 = text2.replace(/<\/b>/g,"*");
   
   var n = encodeURIComponent(text2);
-  var bu = document.createElement("BUTTON");
+  $("#txt_button").attr("onclick", "window.open('https://api.whatsapp.com/send?text=" + n + "')");
   
-  var btt1 = document.createAttribute("onclick");
-  btt1.value = "location.href='https://api.whatsapp.com/send?text=" + n + "';";
-  bu.setAttributeNode(btt1);
+  // n = n.replace(/\*/g,"**");
+  // n = n.replace("%0A","&text=");
+  // $("#txt_button2").attr("onclick", "window.open('https://t.me/share/url?url=" + n + "')"); 
+
+  $("#but").show();
+
   
-  var btt2 = document.createAttribute("class");
-  btt2.value = "btn btn-success";
-  bu.setAttributeNode(btt2);
-  
-  var btt3 = document.createAttribute("id");
-  btt3.value = "txt_button";
-  bu.setAttributeNode(btt3);
-  
-  if (getLang() == "de") {
-	var bt = document.createTextNode(txt_de[8]);
-  }
-  if (getLang() == "en") {
-	var bt = document.createTextNode(txt_en[8]);
-  }
-  bu.appendChild(bt);
-  
-  document.getElementById("but").appendChild(bu);
  
   
   if (raidwarn != 0) {
