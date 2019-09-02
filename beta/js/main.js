@@ -1402,7 +1402,7 @@ function init() {
 	tinysort("#legacylist > button");
 	
 	$('.selectpicker').selectpicker('refresh');
-	$('[data-toggle="tooltip"]').tooltip({html: true, delay: {show: 500, hide: 100}}); 
+	$('[data-toggle="tooltip"]').tooltip({html: true, trigger: "hover", delay: {show: 500, hide: 100}}); 
 }
 
 function generateRaid(raidtext) {
