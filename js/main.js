@@ -802,6 +802,7 @@ var items = [
 {"id":"CT","name":"Lade-TM","en":"Charge TM"},
 {"id":"QT","name":"Sofort-TM","en":"Quick TM"},
 {"id":"DU","name":"Sternenstaub","en":"Stardust"},
+{"id":"DU:1000","name":"Sternenstaub (1000+)","en":"Stardust (1000+)"},
 {"id":"RE","name":"Beleber","en":"Revive"},
 {"id":"MR","name":"Top-Beleber","en":"Max Revive"},
 {"id":"PO","name":"Trank","en":"Potion"},
@@ -826,7 +827,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [			
-		{"ver":"1.3.2","date":"01.09.2019","change":['New Shiny: Electrike','New Quests (September Breakthrough Change)']},
+		{"ver":"1.3.2","date":"01.09.2019","change":['New Shiny: Electrike','New Quests (September Breakthrough Change)','Add filter to only show 1000 or more Stardust rewards']},
 		{"ver":"1.3.1","date":"30.08.2019","change":['Quests: Remove Blastoise, Krabby, Azumarill, Carvanha, Barboach, Clamperl','Change Raid Bosses (End of Water Festival 2019)']},
 		{"ver":"1.3","date":"23.08.2019","change":['New Shinies: Barboach, Carvanha','Quests: Add Blastoise, Krabby, Azumarill, Carvanha, Barboach, Clamperl','Change Raid Bosses (Water Festival 2019)','Initial Support for multiple messengers','Prepare for upcoming Unova release']},
 		{"ver":"1.2.17","date":"17.08.2019","change":['New Shiny: Suicune']},
@@ -879,8 +880,8 @@ var raids = {
 	"tier4":[359,"105A",149,131,210]
 };
 
-var quests = [1,4,7,27,37,56,60,66,77,84,86,92,95,96,100,102,104,113,123,124,125,126,129,133,138,140,142,147,177,183,187,215,220,227,246,261,263,296,302,309,316,325,327,345,347,361,427,436];
-var legacy = [3,9,10,16,25,32,36,38,40,42,50,55,58,59,61,67,70,73,74,81,88,98,"103A",107,109,114,117,121,127,131,132,137,171,179,184,191,193,200,203,204,209,216,224,228,231,241,252,256,270,276,286,287,290,294,299,307,310,311,312,315,317,318,320,322,328,333,339,349,353,359,366,387,390,399,408,410,425];
+var quests = [1,4,7,27,37,56,60,66,77,84,86,92,95,96,100,102,104,113,123,124,125,126,129,138,140,142,147,177,183,187,215,220,227,246,261,263,296,302,309,316,325,327,345,347,361,427,436];
+var legacy = [3,9,10,16,25,32,36,38,40,42,50,55,58,59,61,67,70,73,74,81,88,98,"103A",107,109,114,117,121,127,131,132,133,137,171,179,184,191,193,200,203,204,209,216,224,228,231,241,252,256,270,276,286,287,290,294,299,307,310,311,312,315,317,318,320,322,328,333,339,349,353,359,366,387,390,399,408,410,425];
 var forms = ["19A","20A","26A","27A","28A","37A","38A","50A","51A","52A","53A","74A","75A","76A","88A","89A","103A","105A","150R","351I","351R","351S","386A","386D","386S","412S","412T","413S","413T","421S","479F","479H","479I","479M","479W","487O","492S","550B","555Z","641T","642T","645T","646B","646W","648P"];
 var hidden = 1;
 var sel_q = [];
