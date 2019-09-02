@@ -2145,3 +2145,17 @@ $('#old').on('hidden.bs.select', function () {
 $('#new').on('hidden.bs.select', function () {
   updateNestlist("new");
 });
+
+$(document).ready(function(){
+	$('[data-toggle="tooltip"]').on({
+		contextmenu: function(){
+			$(this).tooltip("show");
+		},
+		click: function() {
+			$(this).tooltip("hide");
+		},
+		blur: function(){
+			$(this).tooltip("hide");
+		}
+	});
+});
