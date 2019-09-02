@@ -270,7 +270,7 @@ var pokemon = [
 {"dex":158,"name":"Karnimani","en":"Totodile","getshiny":true},
 {"dex":159,"name":"Tyracroc","en":"Croconaw","evolved":true},
 {"dex":160,"name":"Impergator","en":"Feraligatr","evolved":true},
-{"dex":161,"name":"Wiesor","en":"Sentret"},
+{"dex":161,"name":"Wiesor","en":"Sentret","getshiny":true},
 {"dex":162,"name":"Wiesenior","en":"Furret","evolved":true},
 {"dex":163,"name":"Hoothoot"},
 {"dex":164,"name":"Noctuh","en":"Noctowl","evolved":true},
@@ -316,7 +316,7 @@ var pokemon = [
 {"dex":204,"name":"Tannza","en":"Pineco","getshiny":true},
 {"dex":205,"name":"Forstellka","en":"Forretress","evolved":true},
 {"dex":206,"name":"Dummisel","en":"Dunsparce"},
-{"dex":207,"name":"Skorgla","en":"Gligar"},
+{"dex":207,"name":"Skorgla","en":"Gligar","getshiny":true},
 {"dex":208,"name":"Stahlos","en":"Steelix","evolved":true},
 {"dex":209,"name":"Snubbull","getshiny":true},
 {"dex":210,"name":"Granbull","evolved":true},
@@ -827,6 +827,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [			
+		{"ver":"1.3.3","date":"02.09.2019","change":['New Shinies: Sentret, Gligar','Change Raid Bosses (Ultra Bonus Week 1)']},
 		{"ver":"1.3.2","date":"01.09.2019","change":['New Shiny: Electrike','New Quests (September Breakthrough Change)','Add filter to only show 1000 or more Stardust rewards']},
 		{"ver":"1.3.1","date":"30.08.2019","change":['Quests: Remove Blastoise, Krabby, Azumarill, Carvanha, Barboach, Clamperl','Change Raid Bosses (End of Water Festival 2019)']},
 		{"ver":"1.3","date":"23.08.2019","change":['New Shinies: Barboach, Carvanha','Quests: Add Blastoise, Krabby, Azumarill, Carvanha, Barboach, Clamperl','Change Raid Bosses (Water Festival 2019)','Initial Support for multiple messengers','Prepare for upcoming Unova release']},
@@ -876,8 +877,8 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[384],
-	"tier4":[359,"105A",149,131,210]
+	"tier5":[243,244,245],
+	"tier4":[359,"105A",248,217]
 };
 
 var quests = [1,4,7,27,37,56,60,66,77,84,86,92,95,96,100,102,104,113,123,124,125,126,129,138,140,142,147,177,183,187,215,220,246,261,263,296,302,309,316,325,327,345,347,361,427,436];
