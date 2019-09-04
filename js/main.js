@@ -1196,7 +1196,7 @@ function generateRaid(raidtext) {
 	  }
 	  
 	  if (time) {
-		text += "<br><br><b>Raid Ende:</b> " + end;
+		// text += "<br><br><b>Raid Ende:</b> " + end;
 	  }
 
 	  text += "<br><br><b>Teilnehmer:</b><br>" + player;
@@ -1272,7 +1272,7 @@ function checkTime() {
 	ti = ti.substr(0,1)
 	if (ti != "0" && ti != "1" && ti != "2") {
 		hatchwarn = 11;
-		document.getElementById("time").value = null;
+		document.getElementById("time").value = null; /*
 	} else if (hat < 18900000) {
 		hatchwarn = 1;
 	} else if (hat > 79200000) {
@@ -1280,7 +1280,7 @@ function checkTime() {
 	} else if (hat2 < -5400000) {
 		hatchwarn = 3;
 	} else if (hat2 > 900000) {
-		hatchwarn = 10;
+		hatchwarn = 10; */
 	} else if (hat2 > 0 && ra > t4index) {
 		hatchwarn = 12;
 	} else if (t5multi && hat2 > 0 && ra > 0) {
@@ -1295,7 +1295,7 @@ function checkTime() {
 	if (getLang() == "en") {
 	document.getElementById("timeh").innerHTML = warn_en[hatchwarn];
 	}
-	
+
   }
   
   if (st) {
@@ -1309,12 +1309,12 @@ function checkTime() {
 	if (st != "0" && st != "1" && st != "2") {
 		startwarn = 11;	
 	} else if (now3 < 0) {
-		startwarn = 4;
+		startwarn = 4; /*
 	} else if (hat >= 5400000) {
 		startwarn = 5;
 	} else if (hat > 5100000) {
 		ste.value = "form-text text-muted";
-		startwarn = 6;
+		startwarn = 6; */
 	} else if (hat < 0) {
 		startwarn = 7;
 	} else {
