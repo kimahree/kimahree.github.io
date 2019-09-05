@@ -2,6 +2,11 @@
 var t4index = 0;
 var t3index = 0;
 
+var hatchtimer = 15;
+var raidtimer = 90;
+var starttimer = new Date(14400000 + hatchtimer * 60000);
+var endtimer = new Date(74700000 + hatchtimer * 60000);
+
 var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_instr","txt_button","txt_button2","txt_multi","txt_chgym","txt_cre_close","txt_cl_close","txt_reg_close","txt_boq_intro","txt_boq_generate"];
 
 var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beeinträchtigt und fehlerhaft.",
@@ -48,16 +53,16 @@ var raidwarn = 0;
 var tg_warn = 0;
 
 var warn_de =["",
-"Raids schlüpfen nicht vor 5:15 Uhr.",
-"Raids schlüpfen nicht nach 22 Uhr.",
+"Raids schlüpfen nicht vor " + starttimer.toTimeString().substr(0,5) + " Uhr.",
+"Raids schlüpfen nicht nach " + endtimer.toTimeString().substr(0,5) + " Uhr.",
 "Dieser Raid ist bereits abgelaufen.",
 "Die Startzeit kann nicht in der Vergangenheit liegen.",
-"Die Startzeit muss innerhalb von 90 Minuten nach der Schlüpfzeit sein.",
+"Die Startzeit muss innerhalb von " + raidtimer + " Minuten nach der Schlüpfzeit sein.",
 "Der Raidboss hat weniger als 5 Minuten Restzeit bei dieser Startzeit.",
 "Die Startzeit kann nicht vor der Schlüpfzeit sein.",
 "Du hast die maximale Anzahl an Raids für einen Multiraid erreicht.",
 "Bitte wähle eine Arena aus.",
-"Die Schlüpfzeit kann nicht mehr als 15 Minuten in der Zukunft liegen.",
+"Die Schlüpfzeit kann nicht mehr als " + hatchtimer + " Minuten in der Zukunft liegen.",
 "Bitte geb eine Uhrzeit ein.",
 'Das 4er Ei ist noch nicht ausgeschlüpft, bitte wähle bei Raid "4er Ei" aus.',
 'Das 5er Ei ist noch nicht ausgeschlüpft, bitte wähle bei Raid "5er Ei" aus.',
@@ -66,16 +71,16 @@ var warn_de =["",
 ];
 
 var warn_en =["",
-"Raids do not hatch before 5:15.",
-"Raids do not hatch after 22:00.",
+"Raids do not hatch before " + starttimer.toTimeString().substr(0,5) + ".",
+"Raids do not hatch after " + endtimer.toTimeString().substr(0,5) + ".",
 "This raid has already expired.",
 "The start time cannot be in the past.",
-"The start time has to be within 90 minutes after the hatch time.",
+"The start time has to be within " + raidtimer + " minutes after the hatch time.",
 "There will be less than 5 minutes remaining at this start time.",
 "You cannot start a raid before it hatches.",
 "You have reached the maximum amount of raids for a multiraid.",
 "Please choose a gym.",
-"The hatch time must be within 15 minutes from now.",
+"The hatch time must be within " + hatchtimer + " minutes from now.",
 "Please enter a time.",
 'The Tier 4 egg has not hatched yet, so please choose "Tier 4 egg" as raid.',
 'The Tier 5 egg has not hatched yet, so please choose "Tier 5 egg" as raid.',
@@ -827,7 +832,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [			
-		{"ver":"1.3.4","date":"04.09.2019","change":['Adjust to new raid timers']},
+		{"ver":"1.3.4","date":"04.09.2019","change":['Make raid timers adjustable for future changes']},
 		{"ver":"1.3.3","date":"02.09.2019","change":['New Shinies: Sentret, Gligar','Change Raid Bosses (Ultra Bonus Week 1)']},
 		{"ver":"1.3.2","date":"01.09.2019","change":['New Shiny: Electrike','New Quests (September Breakthrough Change)','Add filter to only show 1000 or more Stardust rewards']},
 		{"ver":"1.3.1","date":"30.08.2019","change":['Quests: Remove Blastoise, Krabby, Azumarill, Carvanha, Barboach, Clamperl','Change Raid Bosses (End of Water Festival 2019)']},
@@ -1091,7 +1096,7 @@ function generateRaid(raidtext) {
   var start = document.getElementById("start").value;
   var diff = (new Date("Jan 01 1970 "+start).getTime() - new Date("Jan 01 1970 "+time).getTime()) / 60000;
   var end = new Date("Jan 01 1970 "+time);
-  end.setMinutes(end.getMinutes()+90);
+  end.setMinutes(end.getMinutes()+raidtimer);
   end = end.toTimeString().substr(0,5);
   var player = document.getElementById("player").value;
   player = player.replace(/\n/g,"<br>")
@@ -1161,7 +1166,7 @@ function generateRaid(raidtext) {
 	
 	if (t3index == 0 || document.getElementById("raid").selectedIndex <= t3index || start != "") {
 		text += "<br><br><b>Start:</b> ";
-		if ((diff <= 90 && diff >= 0 && time != "") || (time == "" && start != "") || startwarn == 11) {
+		if ((diff <= raidtimer && diff >= 0 && time != "") || (time == "" && start != "") || startwarn == 11) {
 			text += start;
 		} else {
 			text += "?";
@@ -1188,7 +1193,7 @@ function generateRaid(raidtext) {
 
 	  if (t3index == 0 || $("#raid").prop("selectedIndex") <= t3index || start != "") {
 		text += "<br><br><b>Startzeit:</b> ";
-		if ((diff <= 90 && diff >= 0 && time != "") || (time == "" && start != "") || startwarn == 11) {
+		if ((diff <= raidtimer && diff >= 0 && time != "") || (time == "" && start != "") || startwarn == 11) {
 			text += start;
 		} else {
 			text += "?";
@@ -1196,7 +1201,7 @@ function generateRaid(raidtext) {
 	  }
 	  
 	  if (time) {
-		// text += "<br><br><b>Raid Ende:</b> " + end;
+		text += "<br><br><b>Raid Ende:</b> " + end;
 	  }
 
 	  text += "<br><br><b>Teilnehmer:</b><br>" + player;
@@ -1221,9 +1226,6 @@ function generateRaid(raidtext) {
 
   $("#but").show();
 
-  
- 
-  
   if (raidwarn != 0) {
 	raidwarn = 0;
 	document.getElementById("raidwarn").innerHTML = "";
@@ -1271,20 +1273,20 @@ function checkTime() {
 	var hat2 = hat - now2;
 	ti = ti.substr(0,1)
 	if (ti != "0" && ti != "1" && ti != "2") {
-		hatchwarn = 11;
-		document.getElementById("time").value = null; /*
-	} else if (hat < 18900000) {
-		hatchwarn = 1;
-	} else if (hat > 79200000) {
-		hatchwarn = 2;
-	} else if (hat2 < -5400000) {
-		hatchwarn = 3;
-	} else if (hat2 > 900000) {
-		hatchwarn = 10; */
+		hatchwarn = 11; // keine Uhrzeit
+		document.getElementById("time").value = null;
+	} else if (hat < (18000000 + hatchtimer*60000)) {
+		hatchwarn = 1; // vor (5:00 + hatchtimer)
+	} else if (hat > (78300000 + hatchtimer*60000)) {
+		hatchwarn = 2; // nach (21:45 + hatchtimer)
+	} else if (hat2 < -(raidtimer*60000)) {
+		hatchwarn = 3; // Raid abgelaufen
+	} else if (hat2 > hatchtimer*60000) {
+		hatchwarn = 10; // Schlüpft zu weit in der Zukunft
 	} else if (hat2 > 0 && ra > t4index) {
-		hatchwarn = 12;
+		hatchwarn = 12; // 4er noch nicht geschlüpft
 	} else if (t5multi && hat2 > 0 && ra > 0) {
-		hatchwarn = 13;
+		hatchwarn = 13; // 5er noch nicht geschlüpft (wenn mehr als 1 5er)
 	} else {
 		hatchwarn = 0;
 	}
@@ -1295,7 +1297,6 @@ function checkTime() {
 	if (getLang() == "en") {
 	document.getElementById("timeh").innerHTML = warn_en[hatchwarn];
 	}
-
   }
   
   if (st) {
@@ -1307,16 +1308,16 @@ function checkTime() {
 	
 	st = st.substr(0,1)
 	if (st != "0" && st != "1" && st != "2") {
-		startwarn = 11;	
+		startwarn = 11;	// keine Uhrzeit
 	} else if (now3 < 0) {
-		startwarn = 4; /*
-	} else if (hat >= 5400000) {
-		startwarn = 5;
-	} else if (hat > 5100000) {
+		startwarn = 4;  // Startzeit in der Vergangenheit
+	} else if (hat >= (raidtimer*60000)) {
+		startwarn = 5;  // Startzeit nicht innerhalb raidtimer
+	} else if (hat > (raidtimer*60000)-300000) {
 		ste.value = "form-text text-muted";
-		startwarn = 6; */
+		startwarn = 6;  // Startzeit 5 Minuten vor Ende
 	} else if (hat < 0) {
-		startwarn = 7;
+		startwarn = 7;  // Startzeit vor Schlüpfzeit
 	} else {
 		startwarn = 0;
 	}
