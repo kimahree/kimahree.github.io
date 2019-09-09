@@ -192,7 +192,7 @@ var pokemon = [
 {"dex":80,"name":"Lahmus","en":"Slowbro","evolved":true},
 {"dex":81,"name":"Magnetilo","en":"Magnemite","getshiny":true},
 {"dex":82,"name":"Magneton","evolved":true},
-{"dex":83,"name":"Porenta","en":"Farfetch'd","regional":true},
+{"dex":83,"name":"Porenta","en":"Farfetch'd","regional":true,"getshiny":true},
 {"dex":84,"name":"Dodu","en":"Doduo"},
 {"dex":85,"name":"Dodri","en":"Dodrio","evolved":true},
 {"dex":86,"name":"Jurob","en":"Seel","getshiny":true},
@@ -228,20 +228,20 @@ var pokemon = [
 {"dex":112,"name":"Rizeros","en":"Rhydon","evolved":true},
 {"dex":113,"name":"Chaneira","en":"Chansey"},
 {"dex":114,"name":"Tangela"},
-{"dex":115,"name":"Kangama","en":"Kangaskhan","regional":true},
+{"dex":115,"name":"Kangama","en":"Kangaskhan","regional":true,"getshiny":true},
 {"dex":116,"name":"Seeper","en":"Horsea","getshiny":true},
 {"dex":117,"name":"Seedra","en":"Seadra","evolved":true},
 {"dex":118,"name":"Goldini","en":"Goldeen"},
 {"dex":119,"name":"Golking","en":"Seaking","evolved":true},
 {"dex":120,"name":"Sterndu","en":"Staryu"},
 {"dex":121,"name":"Starmie","evolved":true},
-{"dex":122,"name":"Pantimos","en":"Mr. Mime","regional":true},
+{"dex":122,"name":"Pantimos","en":"Mr. Mime","regional":true,"getshiny":true},
 {"dex":123,"name":"Sichlor","en":"Scyther","getshiny":true},
 {"dex":124,"name":"Rossana","en":"Jynx"},
 {"dex":125,"name":"Elektek","en":"Electabuzz"},
 {"dex":126,"name":"Magmar"},
 {"dex":127,"name":"Pinsir","getshiny":true},
-{"dex":128,"name":"Tauros","regional":true},
+{"dex":128,"name":"Tauros","regional":true,"getshiny":true},
 {"dex":129,"name":"Karpador","en":"Magikarp","getshiny":true},
 {"dex":130,"name":"Garados","en":"Gyarados","evolved":true},
 {"dex":131,"name":"Lapras","getshiny":true},
@@ -832,6 +832,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [			
+		{"ver":"1.3.5","date":"09.09.2019","change":["New Shinies: Farfetch'd, Kangaskhan, Mr. Mime, Tauros",'Change Raid Bosses (Ultra Bonus Week 2)']},
 		{"ver":"1.3.4","date":"04.09.2019","change":['Make raid timers adjustable for future changes']},
 		{"ver":"1.3.3","date":"02.09.2019","change":['New Shinies: Sentret, Gligar','Change Raid Bosses (Ultra Bonus Week 1)']},
 		{"ver":"1.3.2","date":"01.09.2019","change":['New Shiny: Electrike','New Quests (September Breakthrough Change)','Add filter to only show 1000 or more Stardust rewards']},
@@ -883,8 +884,8 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[243,244,245],
-	"tier4":[359,"105A",248,217]
+	"tier5":[386,"386A","386D","386S"],
+	"tier4":[359,"105A",248,229,275]
 };
 
 var quests = [1,4,7,27,37,56,60,66,77,84,86,92,95,96,100,102,104,113,123,124,125,126,129,138,140,142,147,177,183,187,215,220,246,261,263,296,302,309,316,325,327,345,347,361,427,436];
