@@ -13,7 +13,7 @@ var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beein
 "Zur Hauptseite",
 "Sprache:",
 "Arena:",
-"Schlüpfzeit:",
+"Schlüpfzeit/Restzeit:",
 "Startzeit:",
 "Teilnehmer:",
 'Drücke auf "Start!", überprüfe deine Angaben und drücke dann auf "In WhatsApp posten".<br>',
@@ -32,7 +32,7 @@ var txt_en = ["Attention, you're currently on the beta page. Functionality might
 "To the main site",
 "Language:",
 "Gym:",
-"Hatch time:",
+"Hatch time/time remaining:",
 "Start time:",
 "Participants:",
 'Press "Start!", check your data and then press "Post in WhatsApp".<br>',
@@ -1537,8 +1537,15 @@ function generateRaid(raidtext) {
   var raid = document.getElementById("raid").value;
   var time = document.getElementById("time").value;
   var start = document.getElementById("start").value;
-  var diff = (new Date("Jan 01 1970 "+start).getTime() - new Date("Jan 01 1970 "+time).getTime()) / 60000;
+
   var end = new Date("Jan 01 1970 "+time);
+  if ((end.getTime() - end.getTimezoneOffset()*60000) < raidtimer*60000) {
+	end = new Date(new Date().getTime()+end.getTime()-end.getTimezoneOffset()*60000-raidtimer*60000);
+    time = end.toTimeString().substr(0,5);
+  }
+
+  var diff = (new Date("Jan 01 1970 "+start).getTime() - new Date("Jan 01 1970 "+time).getTime()) / 60000;
+
   end.setMinutes(end.getMinutes()+raidtimer);
   end = end.toTimeString().substr(0,5);
   var player = document.getElementById("player").value;
@@ -1710,7 +1717,12 @@ function checkTime() {
   now2 -= now2.getTimezoneOffset()*60000;
   hat = hat.getTime() - hat.getTimezoneOffset()*60000;
   sta = sta.getTime() - sta.getTimezoneOffset()*60000;
+
   now2 = now - now2;
+
+  if (hat < raidtimer * 60000) {
+	hat = hat + now2 - raidtimer*60000;
+  } 
   
   if (ti) {
 	var hat2 = hat - now2;
@@ -1772,6 +1784,12 @@ function checkTime() {
 		document.getElementById("starth").innerHTML = warn_en[startwarn];
 	}
 	document.getElementById("starth").setAttributeNode(ste);
+  }
+
+  if (hatchwarn == 0 && startwarn == 0) {
+	$("#warn").hide();
+  } else {
+	$("#warn").show();
   }
 }
 
