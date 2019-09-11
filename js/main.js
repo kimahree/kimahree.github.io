@@ -2,8 +2,8 @@
 var t4index = 0;
 var t3index = 0;
 
-var hatchtimer = 15;
-var raidtimer = 90;
+var hatchtimer = 60;
+var raidtimer = 45;
 var starttimer = new Date(14400000 + hatchtimer * 60000);
 var endtimer = new Date(74700000 + hatchtimer * 60000);
 
