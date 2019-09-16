@@ -2,8 +2,8 @@
 var t4index = 0;
 var t3index = 0;
 
-var hatchtimer = 15;
-var raidtimer = 90;
+var hatchtimer = 60;
+var raidtimer = 45;
 var starttimer = new Date(14400000 + hatchtimer * 60000);
 var endtimer = new Date(74700000 + hatchtimer * 60000);
 
@@ -263,7 +263,7 @@ var pokemon = [
 {"dex":147,"name":"Dratini","getshiny":true},
 {"dex":148,"name":"Dragonir","en":"Dragonair","evolved":true},
 {"dex":149,"name":"Dragoran","en":"Dragonite","evolved":true},
-{"dex":150,"name":"Mewtu","en":"Mewtwo","legendary":true},
+{"dex":150,"name":"Mewtu","en":"Mewtwo","legendary":true,"getshiny":true},
 {"dex":"150R","name":"Mewtu (Rüstung)","de":"Mewtu in Rüstung","en":"Armored Mewtwo","legendary":true},
 {"dex":151,"name":"Mew","mythical":true},
 {"dex":152,"name":"Endivie","en":"Chikorita","getshiny":true},
@@ -653,19 +653,19 @@ var pokemon = [
 {"dex":501,"name":"Ottaro","en":"Oshawott"},
 {"dex":502,"name":"Zwottronin","en":"Dewott","evolved":true},
 {"dex":503,"name":"Admurai","en":"Samurott","evolved":true},
-{"dex":504,"name":"Nagelotz","en":"Patrat"},
+{"dex":504,"name":"Nagelotz","en":"Patrat","getshiny":true},
 {"dex":505,"name":"Kukmarda","en":"Watchog","evolved":true},
-{"dex":506,"name":"Yorkleff","en":"Lillipup"},
+{"dex":506,"name":"Yorkleff","en":"Lillipup","getshiny":true},
 {"dex":507,"name":"Terribark","en":"Herdier","evolved":true},
 {"dex":508,"name":"Bissbark","en":"Stoutland","evolved":true},
 {"dex":509,"name":"Felilou","en":"Purrloin"},
 {"dex":510,"name":"Kleoparda","en":"Liepard","evolved":true},
-{"dex":511,"name":"Vegimak","en":"Pansage"},
-{"dex":512,"name":"Vegichita","en":"Simisage","evolved":true},
-{"dex":513,"name":"Grillmak","en":"Pansear"},
-{"dex":514,"name":"Grillchita","en":"Simisear","evolved":true},
-{"dex":515,"name":"Sodamak","en":"Panpour"},
-{"dex":516,"name":"Sodachita","en":"Simipour","evolved":true},
+{"dex":511,"name":"Vegimak","en":"Pansage","regional":true},
+{"dex":512,"name":"Vegichita","en":"Simisage","evolved":true,"regional":true},
+{"dex":513,"name":"Grillmak","en":"Pansear","regional":true},
+{"dex":514,"name":"Grillchita","en":"Simisear","evolved":true,"regional":true},
+{"dex":515,"name":"Sodamak","en":"Panpour","regional":true},
+{"dex":516,"name":"Sodachita","en":"Simipour","evolved":true,"regional":true},
 {"dex":517,"name":"Somniam","en":"Munna"},
 {"dex":518,"name":"Somnivora","en":"Musharna","evolved":true},
 {"dex":519,"name":"Dusselgurr","en":"Pidove"},
@@ -756,7 +756,7 @@ var pokemon = [
 {"dex":596,"name":"Voltula","en":"Galvantula","evolved":true},
 {"dex":597,"name":"Kastadur","en":"Ferroseed"},
 {"dex":598,"name":"Tentantel","en":"Ferrothorn","evolved":true},
-{"dex":599,"name":"Klikk","en":"Klink"},
+{"dex":599,"name":"Klikk","en":"Klink","getshiny":true},
 {"dex":600,"name":"Kliklak","en":"Klang","evolved":true},
 {"dex":601,"name":"Klikdiklak","en":"Klinklang","evolved":true},
 {"dex":602,"name":"Zapplardin","en":"Tynamo"},
@@ -788,8 +788,8 @@ var pokemon = [
 {"dex":628,"name":"Washakwil","en":"Braviary","evolved":true},
 {"dex":629,"name":"Skallyk","en":"Vullaby"},
 {"dex":630,"name":"Grypheldis","en":"Mandibuzz","evolved":true},
-{"dex":631,"name":"Furnifraß","en":"Heatmor"},
-{"dex":632,"name":"Fermicula","en":"Durant"},
+{"dex":631,"name":"Furnifraß","en":"Heatmor","regional":true},
+{"dex":632,"name":"Fermicula","en":"Durant","regional":true},
 {"dex":633,"name":"Kapuno","en":"Deino"},
 {"dex":634,"name":"Duodino","en":"Zweilous","evolved":true},
 {"dex":635,"name":"Trikephalo","en":"Hydreigon","evolved":true},
@@ -859,7 +859,8 @@ var specialfilter = [
 ];
 
 var changelogjson = {
-	"items": [			
+	"items": [
+		{"ver":"1.3.7","date":"16.09.2019","change":["New Shinies: Mewtwo, Patrat, Lillipup, Klink","Change Raid Bosses (Ultra Bonus Week 3 - UNOVA!)"]},
 		{"ver":"1.3.6","date":"15.09.2019","change":["New Shiny: Turtwig","Add missing Pokémon forms"]},
 		{"ver":"1.3.5","date":"09.09.2019","change":["New Shinies: Farfetch'd, Kangaskhan, Mr. Mime, Tauros",'Change Raid Bosses (Ultra Bonus Week 2)']},
 		{"ver":"1.3.4","date":"04.09.2019","change":['Make raid timers adjustable for future changes']},
@@ -913,7 +914,7 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[386,"386A","386D","386S"],
+	"tier5":[150],
 	"tier4":[359,"105A",248,229,275]
 };
 
