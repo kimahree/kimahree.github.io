@@ -307,7 +307,7 @@ var pokemon = [
 {"dex":190,"name":"Griffel","en":"Aipom","getshiny":true},
 {"dex":191,"name":"Sonnkern","en":"Sunkern","getshiny":true},
 {"dex":192,"name":"Sonnflora","en":"Sunflora","evolved":true},
-{"dex":193,"name":"Yanma"},
+{"dex":193,"name":"Yanma","getshiny":true},
 {"dex":194,"name":"Felino","en":"Wooper"},
 {"dex":195,"name":"Morlord","en":"Quagsire","evolved":true},
 {"dex":196,"name":"Psiana","en":"Espeon","evolved":true},
@@ -860,6 +860,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.3.8","date":"20.09.2019","change":["New Shiny: Yanma"]},
 		{"ver":"1.3.7","date":"16.09.2019","change":["New Shinies: Mewtwo, Patrat, Lillipup, Klink","Change Raid Bosses (Ultra Bonus Week 3 - UNOVA!)"]},
 		{"ver":"1.3.6","date":"15.09.2019","change":["New Shiny: Turtwig","Add missing Pokémon forms"]},
 		{"ver":"1.3.5","date":"09.09.2019","change":["New Shinies: Farfetch'd, Kangaskhan, Mr. Mime, Tauros",'Change Raid Bosses (Ultra Bonus Week 2)']},
