@@ -617,7 +617,7 @@ var pokemon = [
 {"dex":484,"name":"Palkia","legendary":true},
 {"dex":485,"name":"Heatran","legendary":true},
 {"dex":486,"name":"Regigigas","legendary":true},
-{"dex":487,"name":"Giratina (Wandel)","de":"Giratina (Wandelform)","en":"Giratina (Altered Forme)","legendary":true},
+{"dex":487,"name":"Giratina","de":"Giratina (Wandelform)","en":"Giratina (Altered Forme)","legendary":true,"getshiny":true},
 {"dex":"487O","name":"Giratina (Urform)","de":"Giratina (Urform)","en":"Giratina (Origin Forme)","legendary":true},
 {"dex":488,"name":"Cresselia","legendary":true,"getshiny":true},
 {"dex":489,"name":"Phione","mythical":true},
@@ -860,6 +860,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.3.9","date":"23.09.2019","change":["New Shiny: Giratina","Change Raid Bosses (Return of Giratina)"]},
 		{"ver":"1.3.8","date":"20.09.2019","change":["New Shiny: Yanma"]},
 		{"ver":"1.3.7","date":"16.09.2019","change":["New Shinies: Mewtwo, Patrat, Lillipup, Klink","Change Raid Bosses (Ultra Bonus Week 3 - UNOVA!)"]},
 		{"ver":"1.3.6","date":"15.09.2019","change":["New Shiny: Turtwig","Add missing Pokémon forms"]},
@@ -915,8 +916,8 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[150],
-	"tier4":[359,"105A",248,229,275]
+	"tier5":[487],
+	"tier4":[359,"105A",149,229]
 };
 
 var quests = [1,4,7,27,37,56,60,66,77,84,86,92,95,96,100,102,104,113,123,124,125,126,129,138,140,142,147,177,183,187,215,220,246,261,263,296,302,309,316,325,327,345,347,361,427,436];
@@ -925,7 +926,7 @@ var forms = ["19A","20A","26A","27A","28A","37A","38A","50A","51A","52A","53A","
 var hidden = 1;
 var sel_q = [];
 
-var orignest = [1,4,7,25,35,37,43,54,58,60,63,66,72,77,81,84,86,90,92,95,100,102,104,111,116,123,124,125,126,127,129,133,138,140,152,155,158,170,185,190,193,200,202,203,206,209,211,213,215,216,220,226,227,231,234,252,255,258,261,273,278,283,285,296,299,300,302,307,309,311,312,318,320,322,325,333,341,343,345,347,353,355,370,387,390,393,399,449];
+var orignest = [1,4,7,25,35,37,43,54,58,60,63,66,72,77,81,84,86,90,92,95,100,102,104,111,116,123,124,125,126,127,129,133,138,140,152,155,158,170,185,190,193,200,202,203,206,209,211,213,215,216,220,226,227,231,234,252,255,258,261,273,278,283,285,296,299,300,302,307,309,311,312,318,320,322,325,333,341,343,345,347,353,355,370,387,390,393,399,449,495,498,501,504,506,509,522,590];
 var oldnest = orignest.slice();
 var newnest = oldnest.slice();
 
