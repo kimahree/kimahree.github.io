@@ -145,7 +145,7 @@ var pokemon = [
 {"dex":40,"name":"Knuddeluff","en":"Wigglytuff","evolved":true},
 {"dex":41,"name":"Zubat","getshiny":true},
 {"dex":42,"name":"Golbat","evolved":true},
-{"dex":43,"name":"Myrapla","en":"Oddish"},
+{"dex":43,"name":"Myrapla","en":"Oddish","getshiny":true},
 {"dex":44,"name":"Duflor","en":"Gloom","evolved":true},
 {"dex":45,"name":"Giflor","en":"Vileplume","evolved":true},
 {"dex":46,"name":"Paras"},
@@ -860,6 +860,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.3.12","date":"03.09.2019","change":["New Shiny: Oddish"]},
 		{"ver":"1.3.11","date":"01.10.2019","change":["Quests: Remove Lapras, Nosepass, Zangoose, Seviper"]},
 		{"ver":"1.3.10","date":"26.09.2019","change":["New Shinies: Zangoose, Seviper, Mime Jr.","Quests: Add Lapras, Nosepass, Zangoose, Seviper"]},
 		{"ver":"1.3.9","date":"23.09.2019","change":["New Shiny: Giratina","Change Raid Bosses (Return of Giratina)"]},
