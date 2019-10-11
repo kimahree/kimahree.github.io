@@ -860,7 +860,8 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
-		{"ver":"1.3.12","date":"03.09.2019","change":["New Shiny: Oddish"]},
+		{"ver":"1.3.13","date":"11.10.2019","change":["[Gesundbrunnen] Add new EX-Raid gyms","[Gesundbrunnen] Change indicator for EX-Raid gyms"]},
+		{"ver":"1.3.12","date":"03.10.2019","change":["New Shiny: Oddish"]},
 		{"ver":"1.3.11","date":"01.10.2019","change":["Quests: Remove Lapras, Nosepass, Zangoose, Seviper"]},
 		{"ver":"1.3.10","date":"26.09.2019","change":["New Shinies: Zangoose, Seviper, Mime Jr.","Quests: Add Lapras, Nosepass, Zangoose, Seviper"]},
 		{"ver":"1.3.9","date":"23.09.2019","change":["New Shiny: Giratina","Change Raid Bosses (Return of Giratina)"]},
@@ -1018,7 +1019,10 @@ function init() {
 		if (gymjson.gyms[i].token || gymjson.gyms[i].ex) {
 			txt += ' data-tokens="';
 			txt += (gymjson.gyms[i].token) ? gymjson.gyms[i].token:"";
-			txt += (gymjson.gyms[i].ex) ? ' ex raid arena gym" style="font-weight:bold"':'"';
+			txt += (gymjson.gyms[i].ex) ? ' ex raid arena gym"':'"';
+		}
+		if (gymjson.gyms[i].hidden) {
+			txt += " hidden";
 		}
 		txt += '>' + gymjson.gyms[i].value;
 		txt += (gymjson.gyms[i].ex) ? ' (EX)':"";
@@ -1188,11 +1192,14 @@ function generateRaid(raidtext) {
   
   if (region == "Gesundbrunnen") {
   
+	text += "<b>" + raid + " " + gym;
+
 	if (gymjson.gyms[document.getElementById("gym").selectedIndex].ex) {
-		text += "🎗 <b>EX-Raid Arena</b> 🎗 <br>";
+		text += " (EX)";
 	}
+
+	text += "</b> "
 	
-	text += "<b>" + raid + " " + gym + "</b> ";
 	
 	if (time) {
 		text += "(🐣" + time + ")";
