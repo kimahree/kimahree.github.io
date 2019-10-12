@@ -442,7 +442,7 @@ var pokemon = [
 {"dex":325,"name":"Spoink","getshiny":true},
 {"dex":326,"name":"Groink","en":"Grumpig","evolved":true},
 {"dex":327,"name":"Pandir","en":"Spinda","getshiny":true},
-{"dex":328,"name":"Knacklion","en":"Trapinch"},
+{"dex":328,"name":"Knacklion","en":"Trapinch","getshiny":true},
 {"dex":329,"name":"Vibrava","evolved":true},
 {"dex":330,"name":"Libelldra","en":"Flygon","evolved":true},
 {"dex":331,"name":"Tuska","en":"Cacnea"},
@@ -860,6 +860,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.3.14","date":"12.10.2019","change":["New Shiny: Trapinch"]},
 		{"ver":"1.3.13","date":"11.10.2019","change":["[Gesundbrunnen] Add new EX-Raid gyms","[Gesundbrunnen] Change indicator for EX-Raid gyms"]},
 		{"ver":"1.3.12","date":"03.10.2019","change":["New Shiny: Oddish"]},
 		{"ver":"1.3.11","date":"01.10.2019","change":["Quests: Remove Lapras, Nosepass, Zangoose, Seviper"]},
