@@ -860,6 +860,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.3.15","date":"14.10.2019","change":['[Marzahn] Add new gym "Klettern am Boschpoler Platz','[Marzahn] Remove indicators for EX-Raid gyms due to nearly all gyms being Ex-Raid gyms']},
 		{"ver":"1.3.14","date":"12.10.2019","change":["New Shiny: Trapinch"]},
 		{"ver":"1.3.13","date":"11.10.2019","change":["[Gesundbrunnen] Add new EX-Raid gyms","[Gesundbrunnen] Change indicator for EX-Raid gyms"]},
 		{"ver":"1.3.12","date":"03.10.2019","change":["New Shiny: Oddish"]},
