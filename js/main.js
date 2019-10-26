@@ -860,6 +860,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.3.17","date":"14.10.2019","change":['[Marzahn] Add new gyms "Griechische Statue" and "Kinder - Grundschule an der Geissenweide"','[Marzahn] Remove gym "Peter Pan Grundschule"']},
 		{"ver":"1.3.16","date":"17.10.2019","change":["New Shiny: Yamask","Change Raid Bosses (Halloween 2019)","Quests: Add Yamask, Golett"]},
 		{"ver":"1.3.15","date":"14.10.2019","change":['[Marzahn] Add new gym "Klettern am Boschpoler Platz','[Marzahn] Remove indicators for EX-Raid gyms due to nearly all gyms being Ex-Raid gyms']},
 		{"ver":"1.3.14","date":"12.10.2019","change":["New Shiny: Trapinch"]},
