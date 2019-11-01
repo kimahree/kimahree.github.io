@@ -341,7 +341,7 @@ var pokemon = [
 {"dex":224,"name":"Octillery","evolved":true},
 {"dex":225,"name":"Botogel","en":"Delibird","getshiny":true},
 {"dex":226,"name":"Mantax","en":"Mantine"},
-{"dex":227,"name":"Panzaeron","en":"Skarmory"},
+{"dex":227,"name":"Panzaeron","en":"Skarmory","getshiny":true},
 {"dex":228,"name":"Hunduster","en":"Houndour","getshiny":true},
 {"dex":229,"name":"Hundemon","en":"Houndoom","evolved":true},
 {"dex":230,"name":"Seedraking","en":"Kingdra","evolved":true},
@@ -494,9 +494,9 @@ var pokemon = [
 {"dex":374,"name":"Tanhel","en":"Beldum","getshiny":true},
 {"dex":375,"name":"Metang","evolved":true},
 {"dex":376,"name":"Metagross","evolved":true},
-{"dex":377,"name":"Regirock","legendary":true},
-{"dex":378,"name":"Regice","legendary":true},
-{"dex":379,"name":"Registeel","legendary":true},
+{"dex":377,"name":"Regirock","legendary":true,"getshiny":true},
+{"dex":378,"name":"Regice","legendary":true,"getshiny":true},
+{"dex":379,"name":"Registeel","legendary":true,"getshiny":true},
 {"dex":380,"name":"Latias","legendary":true,"getshiny":true},
 {"dex":381,"name":"Latios","legendary":true,"getshiny":true},
 {"dex":382,"name":"Kyogre","legendary":true,"getshiny":true},
@@ -860,6 +860,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.3.18","date":"01.11.2019","change":["New Shinies: Skarmory, Regirock, Regice, Registeel","Change Raid Bosses (A Colossal Discovery)","Quests: Remove Yamask, Golett","Quests: Add Eevee"]},
 		{"ver":"1.3.17","date":"14.10.2019","change":['[Marzahn] Add new gyms "Griechische Statue" and "Kinder - Grundschule an der Geissenweide"','[Marzahn] Remove gym "Peter Pan Grundschule"']},
 		{"ver":"1.3.16","date":"17.10.2019","change":["New Shiny: Yamask","Change Raid Bosses (Halloween 2019)","Quests: Add Yamask, Golett"]},
 		{"ver":"1.3.15","date":"14.10.2019","change":['[Marzahn] Add new gym "Klettern am Boschpoler Platz','[Marzahn] Remove indicators for EX-Raid gyms due to nearly all gyms being Ex-Raid gyms']},
@@ -924,12 +925,12 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[491],
-	"tier4":[359,"105A",248,197]
+	"tier5":[377,378,379],
+	"tier4":[359,"105A",131,306,365]
 };
 
-var quests = [1,4,7,27,37,56,60,66,77,84,86,92,95,96,100,102,104,113,123,124,125,126,129,138,140,142,147,177,183,187,215,220,246,261,263,296,302,309,316,325,327,345,347,361,427,436,562,622];
-var legacy = [3,9,10,16,25,32,36,38,40,42,50,55,58,59,61,67,70,73,74,81,88,98,"103A",107,109,114,117,121,127,131,132,133,137,171,179,184,191,193,200,203,204,209,216,224,227,228,231,241,252,256,270,276,286,287,290,294,299,307,310,311,312,315,317,318,320,322,328,333,335,336,339,349,353,359,366,387,390,399,408,410,425];
+var quests = [1,4,7,27,37,56,60,66,77,84,86,92,95,96,100,102,104,113,123,124,125,126,129,133,138,140,142,147,177,183,187,215,220,246,261,263,296,302,309,316,325,327,345,347,361,427,436];
+var legacy = [3,9,10,16,25,32,36,38,40,42,50,55,58,59,61,67,70,73,74,81,88,98,"103A",107,109,114,117,121,127,131,132,137,171,179,184,191,193,200,203,204,209,216,224,227,228,231,241,252,256,270,276,286,287,290,294,299,307,310,311,312,315,317,318,320,322,328,333,335,336,339,349,353,359,366,387,390,399,408,410,425,562,622];
 var forms = ["19A","20A","26A","27A","28A","37A","38A","50A","51A","52A","53A","74A","75A","76A","88A","89A","103A","105A","150R","351I","351R","351S","386A","386D","386S","412S","412T","413S","413T","421S","479F","479H","479I","479M","479W","487O","492S","550B","555Z","641T","642T","645T","646B","646W","648P"];
 var hidden = 1;
 var sel_q = [];
