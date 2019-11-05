@@ -13,7 +13,7 @@ var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beein
 "Zur Hauptseite",
 "Sprache:",
 "Arena:",
-"Schlüpfzeit:",
+"Schlüpfzeit/Restzeit:",
 "Startzeit:",
 "Teilnehmer:",
 'Drücke auf "Start!", überprüfe deine Angaben und drücke dann auf "In WhatsApp posten".<br>',
@@ -32,7 +32,7 @@ var txt_en = ["Attention, you're currently on the beta page. Functionality might
 "To the main site",
 "Language:",
 "Gym:",
-"Hatch time:",
+"Hatch time/time remaining:",
 "Start time:",
 "Participants:",
 'Press "Start!", check your data and then press "Post in WhatsApp".<br>',
@@ -860,6 +860,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4","date":"02.11.2019","change":["Hatch time can now also use remaining time of an active raid to calculate the hatch time","Change Raid Bosses (Cobalion's Debut)","Minor text fixes"]},
 		{"ver":"1.3.18","date":"01.11.2019","change":["New Shinies: Skarmory, Regirock, Regice, Registeel","Change Raid Bosses (A Colossal Discovery)","Quests: Remove Yamask, Golett","Quests: Add Eevee"]},
 		{"ver":"1.3.17","date":"14.10.2019","change":['[Marzahn] Add new gyms "Griechische Statue" and "Kinder - Grundschule an der Geissenweide"','[Marzahn] Remove gym "Peter Pan Grundschule"']},
 		{"ver":"1.3.16","date":"17.10.2019","change":["New Shiny: Yamask","Change Raid Bosses (Halloween 2019)","Quests: Add Yamask, Golett"]},
@@ -925,8 +926,8 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[377,378,379],
-	"tier4":[359,"105A",131,306,365]
+	"tier5":[638],
+	"tier4":[359,"105A",248,6,257]
 };
 
 var quests = [1,4,7,27,37,56,60,66,77,84,86,92,95,96,100,102,104,113,123,124,125,126,129,133,138,140,142,147,177,183,187,215,220,246,261,263,296,302,309,316,325,327,345,347,361,427,436];
@@ -1139,8 +1140,15 @@ function generateRaid(raidtext) {
   var raid = document.getElementById("raid").value;
   var time = document.getElementById("time").value;
   var start = document.getElementById("start").value;
-  var diff = (new Date("Jan 01 1970 "+start).getTime() - new Date("Jan 01 1970 "+time).getTime()) / 60000;
+
   var end = new Date("Jan 01 1970 "+time);
+  if ((end.getTime() - end.getTimezoneOffset()*60000) < raidtimer*60000) {
+	end = new Date(new Date().getTime()+end.getTime()-end.getTimezoneOffset()*60000-raidtimer*60000);
+    time = end.toTimeString().substr(0,5);
+  }
+
+  var diff = (new Date("Jan 01 1970 "+start).getTime() - new Date("Jan 01 1970 "+time).getTime()) / 60000;
+
   end.setMinutes(end.getMinutes()+raidtimer);
   end = end.toTimeString().substr(0,5);
   var player = document.getElementById("player").value;
@@ -1256,7 +1264,7 @@ function generateRaid(raidtext) {
   }
 
   var exc = document.createAttribute("class");
-  exc.value = "m-3 p-2 border rounded bg-light";
+  exc.value = "m-3 p-2 border rounded bg-light text-break";
   document.getElementById("ex").setAttributeNode(exc);
 
   document.getElementById("ex").innerHTML = text;
@@ -1315,7 +1323,12 @@ function checkTime() {
   now2 -= now2.getTimezoneOffset()*60000;
   hat = hat.getTime() - hat.getTimezoneOffset()*60000;
   sta = sta.getTime() - sta.getTimezoneOffset()*60000;
+
   now2 = now - now2;
+
+  if (hat < raidtimer * 60000) {
+	hat = hat + now2 - raidtimer*60000;
+  } 
   
   if (ti) {
 	var hat2 = hat - now2;
@@ -1377,6 +1390,12 @@ function checkTime() {
 		document.getElementById("starth").innerHTML = warn_en[startwarn];
 	}
 	document.getElementById("starth").setAttributeNode(ste);
+  }
+
+  if (hatchwarn == 0 && startwarn == 0) {
+	$("#warn").hide();
+  } else {
+	$("#warn").show();
   }
 }
 
