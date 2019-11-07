@@ -860,6 +860,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.2","date":"07.11.2019","change":['[Marzahn] Add new gym "Spielplatz - Havemannstr 🎠"','[Marzahn] Remove gym "Sport Frei"']},
 		{"ver":"1.4.1","date":"06.11.2019","change":['[Gesundbrunnen] Add new gym "Phantom der Lichtburg"']},
 		{"ver":"1.4","date":"02.11.2019","change":["Hatch time can now also use remaining time of an active raid to calculate the hatch time","Change Raid Bosses (Cobalion's Debut)","Minor text fixes"]},
 		{"ver":"1.3.18","date":"01.11.2019","change":["New Shinies: Skarmory, Regirock, Regice, Registeel","Change Raid Bosses (A Colossal Discovery)","Quests: Remove Yamask, Golett","Quests: Add Eevee"]},
