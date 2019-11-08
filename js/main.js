@@ -156,7 +156,7 @@ var pokemon = [
 {"dex":"50A","name":"Alola-Digda","en":"Alolan Diglett","alolan":true,"getshiny":true},
 {"dex":51,"name":"Digdri","en":"Dugtrio","evolved":true},
 {"dex":"51A","name":"Alola-Digdri","en":"Alolan Dugtrio","alolan":true,"evolved":true},
-{"dex":52,"name":"Mauzi","en":"Meowth"},
+{"dex":52,"name":"Mauzi","en":"Meowth","getshiny":true},
 {"dex":"52A","name":"Alola-Mauzi","en":"Alolan Meowth","alolan":true,"getshiny":true},
 {"dex":53,"name":"Snobilikat","en":"Persian","evolved":true},
 {"dex":"53A","name":"Alola-Snobilikat","en":"Alolan Persian","alolan":true,"evolved":true},
@@ -860,6 +860,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.3","date":"08.11.2019","change":["New Shiny: Meowth"]},
 		{"ver":"1.4.2","date":"07.11.2019","change":['[Marzahn] Add new gym "Spielplatz - Havemannstr 🎠"','[Marzahn] Remove gym "Sport Frei"']},
 		{"ver":"1.4.1","date":"06.11.2019","change":['[Gesundbrunnen] Add new gym "Phantom der Lichtburg"']},
 		{"ver":"1.4","date":"02.11.2019","change":["Hatch time can now also use remaining time of an active raid to calculate the hatch time","Change Raid Bosses (Cobalion's Debut)","Minor text fixes"]},
