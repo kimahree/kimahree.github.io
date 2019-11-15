@@ -860,6 +860,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.5","date":"15.11.2019","change":["Change Raid Bosses (End of Team GO Rocket Disruption)"]},
 		{"ver":"1.4.4","date":"08.11.2019","change":["Change Raid Bosses (Team GO Rocket Disruption)"]},
 		{"ver":"1.4.3","date":"08.11.2019","change":["New Shiny: Meowth"]},
 		{"ver":"1.4.2","date":"07.11.2019","change":['[Marzahn] Add new gym "Spielplatz - Havemannstr 🎠"','[Marzahn] Remove gym "Sport Frei"']},
@@ -931,7 +932,7 @@ var changelogjson = {
 
 var raids = {
 	"tier5":[638],
-	"tier4":[359,"105A",76,34,112]
+	"tier4":[359,"105A",248,6,257]
 };
 
 var quests = [1,4,7,27,37,56,60,66,77,84,86,92,95,96,100,102,104,113,123,124,125,126,129,133,138,140,142,147,177,183,187,215,220,246,261,263,296,302,309,316,325,327,345,347,361,427,436];
