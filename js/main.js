@@ -863,6 +863,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.7","date":"16.11.2019","change":['[Gesundbrunnen] Add new gym "Mosaik Kompass"']},
 		{"ver":"1.4.6","date":"16.11.2019","change":["Add Galar forms","New Shiny: Chimchar","Change Raid Bosses (Galarian Weezing)"]},
 		{"ver":"1.4.5","date":"15.11.2019","change":["Change Raid Bosses (End of Team GO Rocket Disruption)"]},
 		{"ver":"1.4.4","date":"08.11.2019","change":["Change Raid Bosses (Team GO Rocket Disruption)"]},
