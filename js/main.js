@@ -224,6 +224,7 @@ var pokemon = [
 {"dex":108,"name":"Schlurp","en":"Lickitung"},
 {"dex":109,"name":"Smogon","en":"Koffing","getshiny":true},
 {"dex":110,"name":"Smogmog","en":"Weezing","evolved":true},
+{"dex":"110G","name":"Galar-Smogmog","en":"Galarian Weezing","evolved":true,"galarian":true},
 {"dex":111,"name":"Rihorn","en":"Rhyhorn"},
 {"dex":112,"name":"Rizeros","en":"Rhydon","evolved":true},
 {"dex":113,"name":"Chaneira","en":"Chansey"},
@@ -378,7 +379,9 @@ var pokemon = [
 {"dex":261,"name":"Fiffyen","en":"Poochyena","getshiny":true},
 {"dex":262,"name":"Magnayen","en":"Mightyena","evolved":true},
 {"dex":263,"name":"Zigzachs","en":"Zigzagoon","getshiny":true},
+{"dex":"263G","name":"Galar-Zigzachs","en":"Galarian Zigzagoon","galarian":true},
 {"dex":264,"name":"Geradaks","en":"Linoone","evolved":true},
+{"dex":"264G","name":"Galar-Geradaks","en":"Galarian Linoone","evolved":true,"galarian":true},
 {"dex":265,"name":"Waumpel","en":"Wurmple"},
 {"dex":266,"name":"Schaloko","en":"Silcoon","evolved":true},
 {"dex":267,"name":"Papinella","en":"Beautifly","evolved":true},
@@ -510,7 +513,7 @@ var pokemon = [
 {"dex":387,"name":"Chelast","en":"Turtwig","getshiny":true},
 {"dex":388,"name":"Chelcarain","en":"Grotle","evolved":true},
 {"dex":389,"name":"Chelterrar","en":"Torterra","evolved":true},
-{"dex":390,"name":"Panflam","en":"Chimchar"},
+{"dex":390,"name":"Panflam","en":"Chimchar","getshiny":true},
 {"dex":391,"name":"Panpyro","en":"Monferno","evolved":true},
 {"dex":392,"name":"Panferno","en":"Infernape","evolved":true},
 {"dex":393,"name":"Plinfa","en":"Piplup"},
@@ -860,6 +863,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.6","date":"16.11.2019","change":["Add Galar forms","New Shiny: Chimchar","Change Raid Bosses (Galarian Weezing)"]},
 		{"ver":"1.4.5","date":"15.11.2019","change":["Change Raid Bosses (End of Team GO Rocket Disruption)"]},
 		{"ver":"1.4.4","date":"08.11.2019","change":["Change Raid Bosses (Team GO Rocket Disruption)"]},
 		{"ver":"1.4.3","date":"08.11.2019","change":["New Shiny: Meowth"]},
@@ -932,7 +936,7 @@ var changelogjson = {
 
 var raids = {
 	"tier5":[638],
-	"tier4":[359,"105A",248,6,257]
+	"tier4":[359,"105A",248,"110G",6,257]
 };
 
 var quests = [1,4,7,27,37,56,60,66,77,84,86,92,95,96,100,102,104,113,123,124,125,126,129,133,138,140,142,147,177,183,187,215,220,246,261,263,296,302,309,316,325,327,345,347,361,427,436];
