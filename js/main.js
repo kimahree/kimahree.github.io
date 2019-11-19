@@ -178,7 +178,7 @@ var pokemon = [
 {"dex":69,"name":"Knofensa","en":"Bellsprout"},
 {"dex":70,"name":"Ultrigaria","en":"Weepinbell","evolved":true},
 {"dex":71,"name":"Sarzenia","en":"Victreebel","evolved":true},
-{"dex":72,"name":"Tentacha","en":"Tentacool"},
+{"dex":72,"name":"Tentacha","en":"Tentacool","getshiny":true},
 {"dex":73,"name":"Tentoxa","en":"Tentacruel","evolved":true},
 {"dex":74,"name":"Kleinstein","en":"Geodude","getshiny":true},
 {"dex":"74A","name":"Alola-Kleinstein","en":"Alolan Geodude","alolan":true,"getshiny":true},
@@ -863,6 +863,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.8","date":"19.11.2019","change":["New Shiny: Tentacool","Quests: Add Tentacool","Change Raid Bosses (Super effective week)"]},
 		{"ver":"1.4.7","date":"16.11.2019","change":['[Gesundbrunnen] Add new gym "Mosaik Kompass"','Fix bug when hatch time is empty']},
 		{"ver":"1.4.6","date":"16.11.2019","change":["Add Galar forms","New Shiny: Chimchar","Change Raid Bosses (Add Galarian Weezing)"]},
 		{"ver":"1.4.5","date":"15.11.2019","change":["Change Raid Bosses (End of Team GO Rocket Disruption)"]},
@@ -937,10 +938,10 @@ var changelogjson = {
 
 var raids = {
 	"tier5":[638],
-	"tier4":[359,"105A",248,"110G",6,257]
+	"tier4":["105A",248,"110G",76,131]
 };
 
-var quests = [1,4,7,27,37,56,60,66,77,84,86,92,95,96,100,102,104,113,123,124,125,126,129,133,138,140,142,147,177,183,187,215,220,246,261,263,296,302,309,316,325,327,345,347,361,427,436];
+var quests = [1,4,7,27,37,56,60,66,72,77,84,86,92,95,96,100,102,104,113,123,124,125,126,129,133,138,140,142,147,177,183,187,215,220,246,261,263,296,302,309,316,325,327,345,347,361,427,436];
 var legacy = [3,9,10,16,25,32,36,38,40,42,50,55,58,59,61,67,70,73,74,81,88,98,"103A",107,109,114,117,121,127,131,132,137,171,179,184,191,193,200,203,204,209,216,224,227,228,231,241,252,256,270,276,286,287,290,294,299,307,310,311,312,315,317,318,320,322,328,333,335,336,339,349,353,359,366,387,390,399,408,410,425,562,622];
 var forms = ["19A","20A","26A","27A","28A","37A","38A","50A","51A","52A","53A","74A","75A","76A","88A","89A","103A","105A","150R","351I","351R","351S","386A","386D","386S","412S","412T","413S","413T","421S","479F","479H","479I","479M","479W","487O","492S","550B","555Z","641T","642T","645T","646B","646W","648P"];
 var hidden = 1;
