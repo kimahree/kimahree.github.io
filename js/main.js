@@ -863,6 +863,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.11","date":"28.11.2019","change":['[Gesundbrunnen] Add EX-Raid tag for "Mosaik Kompass"']},
 		{"ver":"1.4.10","date":"28.11.2019","change":["Quests: Add Nidoran♀, Nidorina, Nidoqueen, Nidoran♂, Nidorino, Nidoking, Dugtrio, Dodrio"]},
 		{"ver":"1.4.9","date":"26.11.2019","change":["Quests: Remove Tentacool","Change Raid Bosses (Terrakion's debut)"]},
 		{"ver":"1.4.8","date":"19.11.2019","change":["New Shiny: Tentacool","Quests: Add Tentacool","Change Raid Bosses (Super effective week)"]},
