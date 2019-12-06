@@ -854,8 +854,8 @@ var items = [
 {"id":"LG","name":"Gletscher-Lockmodul","en":"Glacial Lure Module"},
 {"id":"LMO","name":"Moos-Lockmodul","en":"Mossy Lure Module"},
 {"id":"LMA","name":"Magnet-Lockmodul","en":"Magnetic Lure Module"},
-{"id":"SS","name":"Sinnoh-Stein","en":"Sinnoh Stone"},
-{"id":"US","name":"Einall-Stein","en":"Unova Stone"}
+{"id":"SIE","name":"Sinnoh-Stein","en":"Sinnoh Stone"},
+{"id":"EIE","name":"Einall-Stein","en":"Unova Stone"}
 ];
 
 var specialfilter = [
@@ -865,6 +865,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.14","date":"06.12.2019","change":["[BoQ] Fix wrong id for Sinnoh Stone and Unova Stone"]},
 		{"ver":"1.4.13","date":"05.12.2019","change":["New Shiny: Burmy","Quests: Add Clamperl, Burmy, Sinnoh Stone, Unova Stone","Change Raid Bosses (Evolution Event)"]},
 		{"ver":"1.4.12","date":"02.12.2019","change":["Quests: Remove Nidoran♀, Nidorina, Nidoqueen, Nidoran♂, Nidorino, Nidoking, Dugtrio, Dodrio"]},
 		{"ver":"1.4.11","date":"28.11.2019","change":['[Gesundbrunnen] Add EX-Raid tag for "Mosaik Kompass"']},
