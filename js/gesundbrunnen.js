@@ -38,6 +38,7 @@ var gymjson = {
 {"value":"Portal zur Kaiser Wilhelm und Augusta Stiftung","tg":"Portal zur Kaiser Wilhelm Und Augusta Stiftung","map":"https://goo.gl/maps/Z132sxwCnHE2"},
 {"value":"Rosengarten am Humboldthain","ex":true,"tg":"Rosengarten am Humboldhain","map":"https://goo.gl/maps/uuFsiJBmDp72"},
 {"value":"S-Bahnhof Bornholmer Straße","map":"https://goo.gl/maps/fTpjjxxPXbK2"},
+{"value":"Schönwalder Straßenbrücke","tg":"Schoenwalder Strassenbruecke","map":"https://goo.gl/maps/n5gAnPhfmWFpCgHWA"},
 {"value":"Shadow People","ex":true,"map":"https://goo.gl/maps/PzqU2mtenL42"},
 {"value":"Spinnennetz Spielplatz","token":"🕸️","map":"https://goo.gl/maps/vKtfoyDAsoS2"},
 {"value":"Springbrunnen am Rathaus","ex":true,"tg":"Springbrunnen Am Rathaus","map":"https://goo.gl/maps/j5WL5s81k2K2"},

@@ -865,6 +865,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.15","date":"07.12.2019","change":['[Gesundbrunnen] Add new gym "Schönwalder Straßenbrücke"']},
 		{"ver":"1.4.14","date":"06.12.2019","change":["[BoQ] Fix wrong id for Sinnoh Stone and Unova Stone"]},
 		{"ver":"1.4.13","date":"05.12.2019","change":["New Shiny: Burmy","Quests: Add Clamperl, Burmy, Sinnoh Stone, Unova Stone","Change Raid Bosses (Evolution Event)"]},
 		{"ver":"1.4.12","date":"02.12.2019","change":["Quests: Remove Nidoran♀, Nidorina, Nidoqueen, Nidoran♂, Nidorino, Nidoking, Dugtrio, Dodrio"]},
