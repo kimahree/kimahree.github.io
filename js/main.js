@@ -571,7 +571,7 @@ var pokemon = [
 {"dex":440,"name":"Wonneira","en":"Happiny","baby":true},
 {"dex":441,"name":"Plaudagei","en":"Chatot","regional":true},
 {"dex":442,"name":"Kryppuk","en":"Spiritomb"},
-{"dex":443,"name":"Kaumalat","en":"Gible"},
+{"dex":443,"name":"Kaumalat","en":"Gible","getshiny":true},
 {"dex":444,"name":"Knarksel","en":"Gabite","evolved":true},
 {"dex":445,"name":"Knakrack","en":"Garchomp","evolved":true},
 {"dex":446,"name":"Mampfaxo","en":"Munchlax","baby":true},
@@ -865,6 +865,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.17","date":"16.12.2019","change":["New Shiny: Gible"]},
 		{"ver":"1.4.16","date":"12.12.2019","change":["Quests: Remove Clamperl, Burmy","Change Raid Bosses (End of Evolution Event)"]},
 		{"ver":"1.4.15","date":"07.12.2019","change":['[Gesundbrunnen] Add new gym "Schönwalder Straßenbrücke"']},
 		{"ver":"1.4.14","date":"06.12.2019","change":["[BoQ] Fix wrong id for Sinnoh Stone and Unova Stone"]},
