@@ -865,6 +865,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.19","date":"17.12.2019","change":['[Marzahn] Change name of gym "Man" to "Statue am Ahrensfelder Berg"']},
 		{"ver":"1.4.18","date":"17.12.2019","change":["Change Raid Bosses (Virizion's Debut)"]},
 		{"ver":"1.4.17","date":"16.12.2019","change":["New Shiny: Gible"]},
 		{"ver":"1.4.16","date":"12.12.2019","change":["Quests: Remove Clamperl, Burmy","Change Raid Bosses (End of Evolution Event)"]},
