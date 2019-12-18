@@ -865,6 +865,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.18","date":"17.12.2019","change":["Change Raid Bosses (Virizion's Debut)"]},
 		{"ver":"1.4.17","date":"16.12.2019","change":["New Shiny: Gible"]},
 		{"ver":"1.4.16","date":"12.12.2019","change":["Quests: Remove Clamperl, Burmy","Change Raid Bosses (End of Evolution Event)"]},
 		{"ver":"1.4.15","date":"07.12.2019","change":['[Gesundbrunnen] Add new gym "Schönwalder Straßenbrücke"']},
@@ -948,8 +949,8 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[639],
-	"tier4":[359,"105A",248,"110G",306,176]
+	"tier5":[640],
+	"tier4":["105A",149,"110G",398,176]
 };
 
 var quests = [1,4,7,27,37,56,60,66,77,84,86,92,95,96,100,102,104,113,123,124,125,126,129,133,138,140,142,147,177,183,187,215,220,246,261,263,296,302,309,316,325,327,345,347,361,427,436];
