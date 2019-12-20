@@ -865,6 +865,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.20","date":"20.12.2019","change":["Change Raid Bosses (Ho-Oh and Lugia Special Weekend)"]},
 		{"ver":"1.4.19","date":"17.12.2019","change":['[Marzahn] Change name of gym "Man" to "Statue am Ahrensfelder Berg"']},
 		{"ver":"1.4.18","date":"17.12.2019","change":["Change Raid Bosses (Virizion's Debut)"]},
 		{"ver":"1.4.17","date":"16.12.2019","change":["New Shiny: Gible"]},
@@ -950,7 +951,7 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[640],
+	"tier5":[250,249,640],
 	"tier4":["105A",149,"110G",398,176]
 };
 
