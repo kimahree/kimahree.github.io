@@ -4,7 +4,7 @@ var t3index = 0;
 
 var hatchtimer = 60;
 var raidtimer = 45;
-var t5over = 1;
+var t5over = 0;
 
 var starttimer = new Date(14400000 + hatchtimer * 60000);
 var endtimer = new Date(74700000 + hatchtimer * 60000);
@@ -867,6 +867,8 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.23","date":"28.12.2019","change":["Remove Regice from raids"]},
+		{"ver":"1.4.22","date":"28.12.2019","change":["Change Raid Bosses (Regice Raid Day)"]},
 		{"ver":"1.4.21","date":"24.12.2019","change":["New Shinies: Stantler, Snover","Quests: Add Pikachu, Lapras, Snover, Cubchoo","Change Raid Bosses (Christmas 2019)"]},
 		{"ver":"1.4.20","date":"20.12.2019","change":["Change Raid Bosses (Ho-Oh and Lugia Special Weekend)"]},
 		{"ver":"1.4.19","date":"17.12.2019","change":['[Marzahn] Change name of gym "Man" to "Statue am Ahrensfelder Berg"']},
@@ -954,7 +956,7 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[378,640],
+	"tier5":[640],
 	"tier4":["105A","110G",131,460,365]
 };
 
