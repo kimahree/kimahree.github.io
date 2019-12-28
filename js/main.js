@@ -4,6 +4,8 @@ var t3index = 0;
 
 var hatchtimer = 60;
 var raidtimer = 45;
+var t5over = 1;
+
 var starttimer = new Date(14400000 + hatchtimer * 60000);
 var endtimer = new Date(74700000 + hatchtimer * 60000);
 
@@ -952,7 +954,7 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[640],
+	"tier5":[378,640],
 	"tier4":["105A","110G",131,460,365]
 };
 
@@ -978,7 +980,7 @@ function init() {
 	} catch {}
 	if (t5 > 0) {
 		txt += '<optgroup id="t5" label="5er"><option ';
-		if (t5 == 1) {
+		if (t5 == 1 || t5over == 1) {
 			txt += "hidden disabled ";
 		}
 		txt += 'value="5er" style="font-style:italic">5er Ei</option>';
@@ -1037,7 +1039,7 @@ function init() {
 	}
 	document.getElementById("raid").innerHTML = txt;
 	
-	if (t5 > 1) {
+	if (t5 > 1 && t5over == 0) {
 		t5multi = 1;
 	}
 	t4index = (t4) ? t5+1:0;
