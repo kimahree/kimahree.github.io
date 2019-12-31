@@ -1233,7 +1233,7 @@ function generateRaid(raidtext) {
 	text = text.replace("RAID-TRAIN","CRAZY RAID-TRAIN");
   }
   
-  if (region == "Gesundbrunnen") {
+  if (region == "Gesundbrunnen" || region == "Wedding") {
   
 	text += "<b>" + raid + " " + gym;
 
