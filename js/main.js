@@ -620,7 +620,7 @@ var pokemon = [
 {"dex":482,"name":"Tobutz","en":"Azelf","legendary":true,"regional":true},
 {"dex":483,"name":"Dialga","legendary":true},
 {"dex":484,"name":"Palkia","legendary":true},
-{"dex":485,"name":"Heatran","legendary":true},
+{"dex":485,"name":"Heatran","legendary":true,"getshiny":true},
 {"dex":486,"name":"Regigigas","legendary":true},
 {"dex":487,"name":"Giratina","de":"Giratina (Wandelform)","en":"Giratina (Altered Forme)","legendary":true,"getshiny":true},
 {"dex":"487O","name":"Giratina (Urform)","de":"Giratina (Urform)","en":"Giratina (Origin Forme)","legendary":true},
@@ -867,7 +867,8 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
-		{"ver":"1.4.24","date":"02.01.2020","change":["Change Raid Bosses (End of Christmas Event","Quests: Add Alolan Vulpix, Dewgong, Shellder, Stantler, Lotad, Glalie, Clamperl","Quests: Remove Pikachu, Sandshrew, Ponyta, Doduo, Seel, Drowzee, Cubone, Scyther, Lapras, Natu, Marill, Hoppip, Poochyena, Zigzagoon, Makuhita, Sableye, Electrike, Gulpin, Spoink, Buneary, Bronzor"]},
+		{"ver":"1.4.25","date":"07.01.2020","change":["New Shiny: Heatran","Change Raid Bosses (Heatran's Return)","Update dependencies"]},
+		{"ver":"1.4.24","date":"02.01.2020","change":["Change Raid Bosses (End of Christmas Event)","Quests: Add Alolan Vulpix, Dewgong, Shellder, Stantler, Lotad, Glalie, Clamperl","Quests: Remove Pikachu, Sandshrew, Ponyta, Doduo, Seel, Drowzee, Cubone, Scyther, Lapras, Natu, Marill, Hoppip, Poochyena, Zigzagoon, Makuhita, Sableye, Electrike, Gulpin, Spoink, Buneary, Bronzor"]},
 		{"ver":"1.4.23","date":"28.12.2019","change":["Remove Regice from raids"]},
 		{"ver":"1.4.22","date":"28.12.2019","change":["Change Raid Bosses (Regice Raid Day)"]},
 		{"ver":"1.4.21","date":"24.12.2019","change":["New Shinies: Stantler, Snover","Quests: Add Pikachu, Lapras, Snover, Cubchoo","Change Raid Bosses (Christmas 2019)"]},
@@ -957,8 +958,8 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[640],
-	"tier4":["105A","110G",149,398,176]
+	"tier5":[485],
+	"tier4":["105A",248,"110G",76,112,530]
 };
 
 var quests = [1,4,7,37,"37A",56,60,66,87,90,92,95,100,102,113,124,125,126,129,133,138,140,142,147,215,220,234,246,270,327,345,347,361,362,366,459,613];
