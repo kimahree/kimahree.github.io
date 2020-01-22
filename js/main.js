@@ -692,8 +692,8 @@ var pokemon = [
 {"dex":535,"name":"Schallquap","en":"Tympole"},
 {"dex":536,"name":"Mebrana","en":"Palpitoad","evolved":true},
 {"dex":537,"name":"Branawarz","en":"Seismitoad","evolved":true},
-{"dex":538,"name":"Jiutesto","en":"Throh"},
-{"dex":539,"name":"Karadonis","en":"Sawk"},
+{"dex":538,"name":"Jiutesto","en":"Throh","regional":true},
+{"dex":539,"name":"Karadonis","en":"Sawk","regional":true},
 {"dex":540,"name":"Strawickl","en":"Sewaddle"},
 {"dex":541,"name":"Folikon","en":"Swadloon","evolved":true},
 {"dex":542,"name":"Matrifol","en":"Leavanny","evolved":true},
@@ -704,20 +704,20 @@ var pokemon = [
 {"dex":547,"name":"Elfun","en":"Whimsicott","evolved":true},
 {"dex":548,"name":"Lilminip","en":"Petilil"},
 {"dex":549,"name":"Dressella","en":"Lilligant","evolved":true},
-{"dex":550,"name":"Barschuft (Rotlinig)","de":"Barschuft (Rotlinige Form)","en":"Basculin (Red-Striped Form)"},
-{"dex":"550B","name":"Barschuft (Blaulinig)","de":"Barschuft (Blaulinige Form)","en":"Basculin (Blue-Striped Form)"},
+{"dex":550,"name":"Barschuft (Rotlinig)","de":"Barschuft (Rotlinige Form)","en":"Basculin (Red-Striped Form)","regional":true},
+{"dex":"550B","name":"Barschuft (Blaulinig)","de":"Barschuft (Blaulinige Form)","en":"Basculin (Blue-Striped Form)","regional":true},
 {"dex":551,"name":"Ganovil","en":"Sandile"},
 {"dex":552,"name":"Rokkaiman","en":"Krokorok","evolved":true},
 {"dex":553,"name":"Rabigator","en":"Krookodile","evolved":true},
 {"dex":554,"name":"Flampion","en":"Darumaka"},
 {"dex":555,"name":"Flampivian","en":"Darmanitan"},
 {"dex":"555Z","name":"Flampivian (Trance)","de":"Flampivian (Trance-Modus)","en":"Darmanitan (Zen Mode)","evolved":true},
-{"dex":556,"name":"Maracamba","en":"Maractus"},
+{"dex":556,"name":"Maracamba","en":"Maractus","regional":true},
 {"dex":557,"name":"Lithomith","en":"Dwebble"},
 {"dex":558,"name":"Castellith","en":"Crustle","evolved":true},
 {"dex":559,"name":"Zurrokex","en":"Scraggy"},
 {"dex":560,"name":"Irokex","en":"Scrafty","evolved":true},
-{"dex":561,"name":"Symvolara","en":"Sigilyph"},
+{"dex":561,"name":"Symvolara","en":"Sigilyph","regional":true},
 {"dex":562,"name":"Makabaja","en":"Yamask","getshiny":true},
 {"dex":563,"name":"Echnatoll","en":"Cofagrigus","evolved":true},
 {"dex":564,"name":"Galapaflos","en":"Tirtouga"},
@@ -867,6 +867,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.27","date":"22.01.2020","change":["Quests: Add Alolan Vulpix again"]},
 		{"ver":"1.4.26","date":"10.01.2020","change":["Quests: Remove Alolan Vulpix"]},
 		{"ver":"1.4.25","date":"07.01.2020","change":["New Shiny: Heatran","Change Raid Bosses (Heatran's Return)","Update dependencies"]},
 		{"ver":"1.4.24","date":"02.01.2020","change":["Change Raid Bosses (End of Christmas Event)","Quests: Add Alolan Vulpix, Dewgong, Shellder, Stantler, Lotad, Glalie, Clamperl","Quests: Remove Pikachu, Sandshrew, Ponyta, Doduo, Seel, Drowzee, Cubone, Scyther, Lapras, Natu, Marill, Hoppip, Poochyena, Zigzagoon, Makuhita, Sableye, Electrike, Gulpin, Spoink, Buneary, Bronzor"]},
@@ -963,8 +964,8 @@ var raids = {
 	"tier4":["105A",248,"110G",76,112,530]
 };
 
-var quests = [1,4,7,37,56,60,66,87,90,92,95,100,102,113,124,125,126,129,133,138,140,142,147,215,220,234,246,270,327,345,347,361,362,366,459,613];
-var legacy = [3,9,10,16,25,27,29,30,31,32,33,34,36,"37A",38,40,42,50,51,55,58,59,61,67,70,72,73,74,77,81,84,85,86,88,96,98,"103A",104,107,109,114,117,121,123,127,131,132,137,171,177,179,183,184,187,191,193,200,203,204,209,216,224,227,228,231,241,252,256,261,263,270,276,286,287,290,294,296,299,302,307,309,310,311,312,315,316,317,318,320,322,325,328,333,335,336,339,349,353,359,366,387,390,399,408,410,412,"412S","412T",425,427,436,562,622];
+var quests = [1,4,7,37,"37A",56,60,66,87,90,92,95,100,102,113,124,125,126,129,133,138,140,142,147,215,220,234,246,270,327,345,347,361,362,366,459,613];
+var legacy = [3,9,10,16,25,27,29,30,31,32,33,34,36,38,40,42,50,51,55,58,59,61,67,70,72,73,74,77,81,84,85,86,88,96,98,"103A",104,107,109,114,117,121,123,127,131,132,137,171,177,179,183,184,187,191,193,200,203,204,209,216,224,227,228,231,241,252,256,261,263,270,276,286,287,290,294,296,299,302,307,309,310,311,312,315,316,317,318,320,322,325,328,333,335,336,339,349,353,359,366,387,390,399,408,410,412,"412S","412T",425,427,436,562,622];
 var forms = ["19A","20A","26A","27A","28A","37A","38A","50A","51A","52A","53A","74A","75A","76A","88A","89A","103A","105A","150R","351I","351R","351S","386A","386D","386S","412S","412T","413S","413T","421S","479F","479H","479I","479M","479W","487O","492S","550B","555Z","641T","642T","645T","646B","646W","648P"];
 var hidden = 1;
 var sel_q = [];
