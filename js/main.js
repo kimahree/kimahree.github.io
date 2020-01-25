@@ -2,7 +2,7 @@
 var t4index = 0;
 var t3index = 0;
 
-var hatchtimer = 60;
+var hatchtimer = 30;
 var raidtimer = 45;
 var t5over = 0;
 
@@ -242,11 +242,11 @@ var pokemon = [
 {"dex":123,"name":"Sichlor","en":"Scyther","getshiny":true},
 {"dex":124,"name":"Rossana","en":"Jynx"},
 {"dex":125,"name":"Elektek","en":"Electabuzz"},
-{"dex":126,"name":"Magmar"},
+{"dex":126,"name":"Magmar","getshiny":true},
 {"dex":127,"name":"Pinsir","getshiny":true},
 {"dex":128,"name":"Tauros","regional":true,"getshiny":true},
 {"dex":129,"name":"Karpador","en":"Magikarp","getshiny":true},
-{"dex":130,"name":"Garados","en":"Gyarados","evolved":true},
+{"dex":130,"name":"Garados","en":"Gyarados","evolved":true,"getshiny":true},
 {"dex":131,"name":"Lapras","getshiny":true},
 {"dex":132,"name":"Ditto"},
 {"dex":133,"name":"Evoli","en":"Eevee","getshiny":true},
@@ -867,6 +867,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.28","date":"24.01.2020","change":["Change Raid Bosses (Latios & Latias Special Weekend)","New Shiny Encounters: Magmar, Gyarados"]},
 		{"ver":"1.4.27","date":"22.01.2020","change":["Quests: Add Alolan Vulpix again"]},
 		{"ver":"1.4.26","date":"10.01.2020","change":["Quests: Remove Alolan Vulpix"]},
 		{"ver":"1.4.25","date":"07.01.2020","change":["New Shiny: Heatran","Change Raid Bosses (Heatran's Return)","Update dependencies"]},
@@ -960,8 +961,8 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[485],
-	"tier4":["105A",248,"110G",76,112,530]
+	"tier5":[380,381,485],
+	"tier4":["105A",248,"110G",130,530]
 };
 
 var quests = [1,4,7,37,"37A",56,60,66,87,90,92,95,100,102,113,124,125,126,129,133,138,140,142,147,215,220,234,246,270,327,345,347,361,362,366,459,613];
