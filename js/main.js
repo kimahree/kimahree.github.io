@@ -2,7 +2,7 @@
 var t4index = 0;
 var t3index = 0;
 
-var hatchtimer = 30;
+var hatchtimer = 60;
 var raidtimer = 45;
 var t5over = 0;
 
@@ -867,6 +867,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.29","date":"27.01.2020","change":["Change Raid Bosses (Remove Latios & Latias)"]},
 		{"ver":"1.4.28","date":"24.01.2020","change":["Change Raid Bosses (Latios & Latias Special Weekend)","New Shiny Encounters: Magmar, Gyarados"]},
 		{"ver":"1.4.27","date":"22.01.2020","change":["Quests: Add Alolan Vulpix again"]},
 		{"ver":"1.4.26","date":"10.01.2020","change":["Quests: Remove Alolan Vulpix"]},
@@ -961,7 +962,7 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[380,381,485],
+	"tier5":[485],
 	"tier4":["105A",248,"110G",130,530]
 };
 
