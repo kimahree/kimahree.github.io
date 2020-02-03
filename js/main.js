@@ -867,6 +867,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.31","date":"03.01.2020","change":["Change Raid Bosses (End of Lunar New Year Event)"]},
 		{"ver":"1.4.30","date":"02.02.2020","change":["New Shiny: Minccino","Quests: Add Pikachu, Clefairy, Jigglypuff, Zubat, Alolan Meowth, Marill, Espeon, Umbreon. Ralts, Roselia, Feebas","Quests: Remove Dewgong, Shellder, Sneasel, Swinub, Stantler, Lotad, Snorunt, Glalie, Clamperl, Snover, Cubchoo"]},
 		{"ver":"1.4.29","date":"27.01.2020","change":["Change Raid Bosses (Remove Latios & Latias)"]},
 		{"ver":"1.4.28","date":"24.01.2020","change":["Change Raid Bosses (Latios & Latias Special Weekend)","New Shiny Encounters: Magmar, Gyarados"]},
@@ -964,7 +965,7 @@ var changelogjson = {
 
 var raids = {
 	"tier5":[485],
-	"tier4":["105A",248,"110G",130,530]
+	"tier4":["105A",248,"110G",76,112,530]
 };
 
 var quests = [1,4,7,25,35,37,"37A",39,41,"52A",56,60,66,92,95,100,102,113,124,125,126,129,133,138,140,142,147,196,197,183,246,280,315,327,345,347,349];
