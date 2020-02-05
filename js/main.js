@@ -803,13 +803,13 @@ var pokemon = [
 {"dex":638,"name":"Kobalium","en":"Cobalion","legendary":true},
 {"dex":639,"name":"Terrakium","en":"Terrakion","legendary":true},
 {"dex":640,"name":"Viridium","en":"Virizion","legendary":true},
-{"dex":641,"name":"Boreos (Inkarnation)","de":"Boreos (Inkarnationsform)","en":"Tornadus (Incarnate Forme)","legendary":true},
+{"dex":641,"name":"Boreos","de":"Boreos (Inkarnationsform)","en":"Tornadus (Incarnate Forme)","legendary":true},
 {"dex":"641T","name":"Boreos (Tiergeist)","de":"Boreos (Tiergeistform)","en":"Tornadus (Therian Forme)","legendary":true},
-{"dex":642,"name":"Voltolos (Inkarnation)","de":"Voltolos (Inkarnationsform)","en":"Thundurus (Incarnate Forme)","legendary":true},
+{"dex":642,"name":"Voltolos","de":"Voltolos (Inkarnationsform)","en":"Thundurus (Incarnate Forme)","legendary":true},
 {"dex":"642T","name":"Voltolos (Tiergeist)","de":"Voltolos (Tiergeistform)","en":"Thundurus (Therian Forme)","legendary":true},
 {"dex":643,"name":"Reshiram","legendary":true},
 {"dex":644,"name":"Zekrom","legendary":true},
-{"dex":645,"name":"Demeteros (Inkarnation)","de":"Demeteros (Inkarnationsform)","en":"Landorus (Incarnate Forme)","legendary":true},
+{"dex":645,"name":"Demeteros","de":"Demeteros (Inkarnationsform)","en":"Landorus (Incarnate Forme)","legendary":true},
 {"dex":"645T","name":"Demeteros (Tiergeist)","de":"Demeteros (Tiergeistform)","en":"Landorus (Therian Forme)","legendary":true},
 {"dex":646,"name":"Kyurem","legendary":true},
 {"dex":"646B","name":"Schwarzes Kyurem","de":"Schwarzes Kyurem","en":"Black Kyurem","legendary":true},
@@ -867,7 +867,8 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
-		{"ver":"1.4.31","date":"03.01.2020","change":["Change Raid Bosses (End of Lunar New Year Event)"]},
+		{"ver":"1.4.32","date":"04.02.2020","change":["Change Raid Bosses (Tornadus's Debut)"]},
+		{"ver":"1.4.31","date":"03.02.2020","change":["Change Raid Bosses (End of Lunar New Year Event)"]},
 		{"ver":"1.4.30","date":"02.02.2020","change":["New Shiny: Minccino","Quests: Add Pikachu, Clefairy, Jigglypuff, Zubat, Alolan Meowth, Marill, Espeon, Umbreon. Ralts, Roselia, Feebas","Quests: Remove Dewgong, Shellder, Sneasel, Swinub, Stantler, Lotad, Snorunt, Glalie, Clamperl, Snover, Cubchoo"]},
 		{"ver":"1.4.29","date":"27.01.2020","change":["Change Raid Bosses (Remove Latios & Latias)"]},
 		{"ver":"1.4.28","date":"24.01.2020","change":["Change Raid Bosses (Latios & Latias Special Weekend)","New Shiny Encounters: Magmar, Gyarados"]},
@@ -964,7 +965,7 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[485],
+	"tier5":[641],
 	"tier4":["105A",248,"110G",76,112,530]
 };
 
