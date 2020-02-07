@@ -242,11 +242,11 @@ var pokemon = [
 {"dex":123,"name":"Sichlor","en":"Scyther","getshiny":true},
 {"dex":124,"name":"Rossana","en":"Jynx"},
 {"dex":125,"name":"Elektek","en":"Electabuzz"},
-{"dex":126,"name":"Magmar","getshiny":true},
+{"dex":126,"name":"Magmar"},
 {"dex":127,"name":"Pinsir","getshiny":true},
 {"dex":128,"name":"Tauros","regional":true,"getshiny":true},
 {"dex":129,"name":"Karpador","en":"Magikarp","getshiny":true},
-{"dex":130,"name":"Garados","en":"Gyarados","evolved":true,"getshiny":true},
+{"dex":130,"name":"Garados","en":"Gyarados","evolved":true},
 {"dex":131,"name":"Lapras","getshiny":true},
 {"dex":132,"name":"Ditto"},
 {"dex":133,"name":"Evoli","en":"Eevee","getshiny":true},
@@ -577,9 +577,9 @@ var pokemon = [
 {"dex":444,"name":"Knarksel","en":"Gabite","evolved":true},
 {"dex":445,"name":"Knakrack","en":"Garchomp","evolved":true},
 {"dex":446,"name":"Mampfaxo","en":"Munchlax","baby":true},
-{"dex":447,"name":"Riolu","baby":true},
+{"dex":447,"name":"Riolu","baby":true,"getshiny":true},
 {"dex":448,"name":"Lucario"},
-{"dex":449,"name":"Hippopotas"},
+{"dex":449,"name":"Hippopotas","getshiny":true},
 {"dex":450,"name":"Hippoterus","en":"Hippowdon","evolved":true},
 {"dex":451,"name":"Pionskora","en":"Skorupi"},
 {"dex":452,"name":"Piondragi","en":"Drapion","evolved":true},
@@ -867,6 +867,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.33","date":"07.02.2020","change":["New Shinies: Hippopotas, Riolu","Quests: Add Cranidos, Combee, Hippopotas","Change Raid Bosses (Sinnoh Celebration)"]},
 		{"ver":"1.4.32","date":"04.02.2020","change":["Change Raid Bosses (Tornadus's Debut)"]},
 		{"ver":"1.4.31","date":"03.02.2020","change":["Change Raid Bosses (End of Lunar New Year Event)"]},
 		{"ver":"1.4.30","date":"02.02.2020","change":["New Shiny: Minccino","Quests: Add Pikachu, Clefairy, Jigglypuff, Zubat, Alolan Meowth, Marill, Espeon, Umbreon. Ralts, Roselia, Feebas","Quests: Remove Dewgong, Shellder, Sneasel, Swinub, Stantler, Lotad, Snorunt, Glalie, Clamperl, Snover, Cubchoo"]},
@@ -966,11 +967,11 @@ var changelogjson = {
 
 var raids = {
 	"tier5":[641],
-	"tier4":["105A",248,"110G",76,112,530]
+	"tier4":["105A",389,"110G",392,112,530,176]
 };
 
-var quests = [1,4,7,25,35,37,"37A",39,41,"52A",56,60,66,92,95,100,102,113,124,125,126,129,133,138,140,142,147,196,197,183,246,280,315,327,345,347,349];
-var legacy = [3,9,10,16,27,29,30,31,32,33,34,36,38,40,42,50,51,55,58,59,61,67,70,72,73,74,77,81,84,85,86,87,88,90,96,98,"103A",104,107,109,114,117,121,123,127,131,132,137,171,177,179,184,187,191,193,200,203,204,209,215,216,220,224,227,228,231,234,241,252,256,261,263,270,276,286,287,290,294,296,299,302,307,309,310,311,312,316,317,318,320,322,325,328,333,335,336,339,353,359,361,362,366,387,390,399,408,410,412,"412S","412T",425,427,436,459,562,613,622];
+var quests = [1,4,7,25,35,37,"37A",39,41,"52A",56,60,66,92,95,100,102,113,124,125,126,129,133,138,140,142,147,196,197,183,246,280,315,327,345,347,349,408,415,449];
+var legacy = [3,9,10,16,27,29,30,31,32,33,34,36,38,40,42,50,51,55,58,59,61,67,70,72,73,74,77,81,84,85,86,87,88,90,96,98,"103A",104,107,109,114,117,121,123,127,131,132,137,171,177,179,184,187,191,193,200,203,204,209,215,216,220,224,227,228,231,234,241,252,256,261,263,270,276,286,287,290,294,296,299,302,307,309,310,311,312,316,317,318,320,322,325,328,333,335,336,339,353,359,361,362,366,387,390,399,410,412,"412S","412T",425,427,436,459,562,613,622];
 var forms = ["19A","20A","26A","27A","28A","37A","38A","50A","51A","52A","53A","74A","75A","76A","88A","89A","103A","105A","150R","351I","351R","351S","386A","386D","386S","412S","412T","413S","413T","421S","479F","479H","479I","479M","479W","487O","492S","550B","555Z","641T","642T","645T","646B","646W","648P"];
 var hidden = 1;
 var sel_q = [];
