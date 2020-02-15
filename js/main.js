@@ -223,7 +223,7 @@ var pokemon = [
 {"dex":"105A","name":"Alola-Knogga","en":"Alolan Marowak","alolan":true,"evolved":true,"getshiny":true},
 {"dex":106,"name":"Kicklee","en":"Hitmonlee"},
 {"dex":107,"name":"Nockchan","en":"Hitmonchan"},
-{"dex":108,"name":"Schlurp","en":"Lickitung"},
+{"dex":108,"name":"Schlurp","en":"Lickitung","getshiny":true},
 {"dex":109,"name":"Smogon","en":"Koffing","getshiny":true},
 {"dex":110,"name":"Smogmog","en":"Weezing","evolved":true},
 {"dex":"110G","name":"Galar-Smogmog","en":"Galarian Weezing","evolved":true,"galarian":true},
@@ -867,6 +867,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.36","date":"15.02.2020","change":["New Shiny: Lickitung"]},
 		{"ver":"1.4.35","date":"14.02.2020","change":["New Shinies: Chansey, Happiny","Quests: Add Lickitung, Cherubi, Alomomola","Change Raid Bosses (Valentine's Day Event)"]},
 		{"ver":"1.4.34","date":"11.02.2020","change":["Quests: Remove Cranidos, Combee, Hippopotas","Change Raid Bosses (End of Sinnoh Celebration)"]},
 		{"ver":"1.4.33","date":"07.02.2020","change":["New Shinies: Hippopotas, Riolu","Quests: Add Cranidos, Combee, Hippopotas","Change Raid Bosses (Sinnoh Celebration)"]},
