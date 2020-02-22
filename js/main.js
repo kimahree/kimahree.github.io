@@ -227,7 +227,7 @@ var pokemon = [
 {"dex":109,"name":"Smogon","en":"Koffing","getshiny":true},
 {"dex":110,"name":"Smogmog","en":"Weezing","evolved":true},
 {"dex":"110G","name":"Galar-Smogmog","en":"Galarian Weezing","evolved":true,"galarian":true},
-{"dex":111,"name":"Rihorn","en":"Rhyhorn"},
+{"dex":111,"name":"Rihorn","en":"Rhyhorn","getshiny":true},
 {"dex":112,"name":"Rizeros","en":"Rhydon","evolved":true},
 {"dex":113,"name":"Chaneira","en":"Chansey","getshiny":true},
 {"dex":114,"name":"Tangela"},
@@ -867,6 +867,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.38","date":"22.02.2020","change":["New Shiny: Rhyhorn"]},
 		{"ver":"1.4.37","date":"18.02.2020","change":["Quests: Remove Lickitung, Cherubi, Alomomola","Change Raid Bosses (End of Valentine's Day Event)"]},
 		{"ver":"1.4.36","date":"15.02.2020","change":["New Shiny: Lickitung"]},
 		{"ver":"1.4.35","date":"14.02.2020","change":["New Shinies: Chansey, Happiny","Quests: Add Lickitung, Cherubi, Alomomola","Change Raid Bosses (Valentine's Day Event)"]},
