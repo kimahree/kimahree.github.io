@@ -13,6 +13,7 @@ var gymjson = {
 {"value":"Bornholmer Straße Border Crossing","ex":true,"map":"https://goo.gl/maps/borFEx1Zp3D2"},
 {"value":"Bösebrücke Bornholmer Straße","ex":true,"map":"https://goo.gl/maps/Fkb2uqJf8kJ2"},
 {"value":"Brunnen DRK","tg":"Brunnen","ex":true,"map":"https://goo.gl/maps/WqegcLtthPx"},
+{"value":"Brunnen: Tanz auf dem Vulkan","token":"nettelbeckplatz 🌋","map":"https://goo.gl/maps/DYjujPe8rBoKwqGa6"},
 {"value":"Brunnenstraße","ex":true,"token":"u-bahnhof voltastraße","map":"https://goo.gl/maps/QEN9FksYAUR2"},
 {"value":"Bunker Humboldthain","ex":true,"map":"https://goo.gl/maps/Q5xj3TTdQfR2"},
 {"value":"Caritas Berlin","ex":true,"map":"https://goo.gl/maps/hETMiMPwxyo"},
