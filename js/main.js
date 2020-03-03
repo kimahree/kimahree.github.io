@@ -867,6 +867,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.41","date":"03.03.2020","change":["Change Raid Bosses (Thundurus's Debut)"]},
 		{"ver":"1.4.40","date":"02.03.2020","change":['[Gesundbrunnen] Add new Gym: "Brunnen: Tanz auf dem Vulkan"',"Quests: Add Bulbasaur, Charmander, Squirtle, Gloom, Diglett, Growlithe, Tangela, Pinsir, Hoppip, Sunkern, Gligar, Torchic, Cherrim","Quests: Remove Pikachu, Clefairy, Alolan Vulpix, Jigglypuff, Zubat, Alolan Meowth, Marill, Espeon, Umbreon, Ralts, Roselia, Feebas"]},
 		{"ver":"1.4.39","date":"25.02.2020","change":["Change Raid Bosses (Pokémon Day Event)","Quests: Remove Bulbasaur, Charmander, Squirtle"]},
 		{"ver":"1.4.38","date":"22.02.2020","change":["New Shiny: Rhyhorn"]},
@@ -973,8 +974,8 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":["150R"],
-	"tier4":["105A",3,6,9]
+	"tier5":[642],
+	"tier4":["105A",248,76,306]
 };
 
 var quests = [1,4,7,37,44,50,56,58,60,66,92,95,100,102,113,114,124,125,126,127,129,133,138,140,142,147,187,191,207,246,255,327,345,347,"421S"];
