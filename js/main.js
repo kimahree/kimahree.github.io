@@ -581,7 +581,7 @@ var pokemon = [
 {"dex":448,"name":"Lucario"},
 {"dex":449,"name":"Hippopotas","getshiny":true},
 {"dex":450,"name":"Hippoterus","en":"Hippowdon","evolved":true},
-{"dex":451,"name":"Pionskora","en":"Skorupi"},
+{"dex":451,"name":"Pionskora","en":"Skorupi","getshiny":true},
 {"dex":452,"name":"Piondragi","en":"Drapion","evolved":true},
 {"dex":453,"name":"Glibunkel","en":"Croagunk"},
 {"dex":454,"name":"Toxiquak","en":"Toxicroak","evolved":true},
@@ -627,7 +627,7 @@ var pokemon = [
 {"dex":488,"name":"Cresselia","legendary":true,"getshiny":true},
 {"dex":489,"name":"Phione","mythical":true},
 {"dex":490,"name":"Manaphy","mythical":true},
-{"dex":491,"name":"Darkrai","mythical":true},
+{"dex":491,"name":"Darkrai","mythical":true,"getshiny":true},
 {"dex":492,"name":"Shaymin (Land)","de":"Shaymin (Landform)","en":"Shaymin (Land Forme)","mythical":true},
 {"dex":"492S","name":"Shaymin (Zenit)","de":"Shaymin (Zenitform)","en":"Shaymin (Sky Forme)","mythical":true},
 {"dex":493,"name":"Arceus (Normal)","en":"Arceus (Normal type)","mythical":true},
@@ -867,6 +867,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.42","date":"06.03.2020","change":["New Shinies: Skorupi, Darkrai","Change Raid Bosses (Team GO Rocket Takeover)"]},
 		{"ver":"1.4.41","date":"03.03.2020","change":["Change Raid Bosses (Thundurus's Debut)"]},
 		{"ver":"1.4.40","date":"02.03.2020","change":['[Gesundbrunnen] Add new Gym: "Brunnen: Tanz auf dem Vulkan"',"Quests: Add Bulbasaur, Charmander, Squirtle, Gloom, Diglett, Growlithe, Tangela, Pinsir, Hoppip, Sunkern, Gligar, Torchic, Cherrim","Quests: Remove Pikachu, Clefairy, Alolan Vulpix, Jigglypuff, Zubat, Alolan Meowth, Marill, Espeon, Umbreon, Ralts, Roselia, Feebas"]},
 		{"ver":"1.4.39","date":"25.02.2020","change":["Change Raid Bosses (Pokémon Day Event)","Quests: Remove Bulbasaur, Charmander, Squirtle"]},
@@ -974,8 +975,8 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[642],
-	"tier4":["105A",248,76,306]
+	"tier5":[491,642],
+	"tier4":["105A",248,34,275]
 };
 
 var quests = [1,4,7,37,44,50,56,58,60,66,92,95,100,102,113,114,124,125,126,127,129,133,138,140,142,147,187,191,207,246,255,327,345,347,"421S"];
