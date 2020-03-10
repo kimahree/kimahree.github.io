@@ -7,7 +7,7 @@ var raidtimer = 45;
 var t5over = 0;
 
 var starttimer = new Date(14400000 + hatchtimer * 60000);
-var endtimer = new Date(74700000 + hatchtimer * 60000);
+var endtimer = new Date(67500000 + hatchtimer * 60000);
 
 var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_instr","txt_button","txt_button2","txt_multi","txt_chgym","txt_cre_close","txt_cl_close","txt_reg_close","txt_boq_intro","txt_boq_generate"];
 
@@ -867,6 +867,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.43","date":"06.03.2020","change":["Change Raid Bosses (GO Battle League Preparation Event)","Adjust Raid end time"]},
 		{"ver":"1.4.42","date":"06.03.2020","change":["New Shinies: Skorupi, Darkrai","Change Raid Bosses (Team GO Rocket Takeover)"]},
 		{"ver":"1.4.41","date":"03.03.2020","change":["Change Raid Bosses (Thundurus's Debut)"]},
 		{"ver":"1.4.40","date":"02.03.2020","change":['[Gesundbrunnen] Add new Gym: "Brunnen: Tanz auf dem Vulkan"',"Quests: Add Bulbasaur, Charmander, Squirtle, Gloom, Diglett, Growlithe, Tangela, Pinsir, Hoppip, Sunkern, Gligar, Torchic, Cherrim","Quests: Remove Pikachu, Clefairy, Alolan Vulpix, Jigglypuff, Zubat, Alolan Meowth, Marill, Espeon, Umbreon, Ralts, Roselia, Feebas"]},
@@ -975,8 +976,8 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[491,642],
-	"tier4":["105A",248,34,275]
+	"tier5":[488,379,642],
+	"tier4":[6,197,143,260,176]
 };
 
 var quests = [1,4,7,37,44,50,56,58,60,66,92,95,100,102,113,114,124,125,126,127,129,133,138,140,142,147,187,191,207,246,255,327,345,347,"421S"];
