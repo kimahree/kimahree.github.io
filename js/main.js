@@ -686,7 +686,7 @@ var pokemon = [
 {"dex":529,"name":"Rotomurf","en":"Drilbur"},
 {"dex":530,"name":"Stalobor","en":"Excadrill","evolved":true},
 {"dex":531,"name":"Ohrdoch","en":"Audino"},
-{"dex":532,"name":"Praktibalk","en":"Timburr"},
+{"dex":532,"name":"Praktibalk","en":"Timburr","getshiny":true},
 {"dex":533,"name":"Strepoli","en":"Gurdurr","evolved":true},
 {"dex":534,"name":"Meistagrif","en":"Conkeldurr","evolved":true},
 {"dex":535,"name":"Schallquap","en":"Tympole"},
@@ -867,6 +867,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.44","date":"13.03.2020","change":["New Shiny: Timburr","Change Raid Bosses (Giratina Special Raid Weekend)"]},
 		{"ver":"1.4.43","date":"06.03.2020","change":["Change Raid Bosses (GO Battle League Preparation Event)","Adjust Raid end time"]},
 		{"ver":"1.4.42","date":"06.03.2020","change":["New Shinies: Skorupi, Darkrai","Change Raid Bosses (Team GO Rocket Takeover)"]},
 		{"ver":"1.4.41","date":"03.03.2020","change":["Change Raid Bosses (Thundurus's Debut)"]},
@@ -976,7 +977,7 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[488,379,642],
+	"tier5":[487,642],
 	"tier4":[6,197,143,260,176]
 };
 
