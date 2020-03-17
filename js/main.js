@@ -867,6 +867,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.45","date":"17.03.2020","change":["Change Raid Bosses (End of GO Battle League Celebration)"]},
 		{"ver":"1.4.44","date":"13.03.2020","change":["New Shiny: Timburr","Change Raid Bosses (Giratina Special Raid Weekend)"]},
 		{"ver":"1.4.43","date":"06.03.2020","change":["Change Raid Bosses (GO Battle League Preparation Event)","Adjust Raid end time"]},
 		{"ver":"1.4.42","date":"06.03.2020","change":["New Shinies: Skorupi, Darkrai","Change Raid Bosses (Team GO Rocket Takeover)"]},
@@ -977,8 +978,8 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[487,642],
-	"tier4":[6,197,143,260,176]
+	"tier5":[642],
+	"tier4":["105A",248,76,306]
 };
 
 var quests = [1,4,7,37,44,50,56,58,60,66,92,95,100,102,113,114,124,125,126,127,129,133,138,140,142,147,187,191,207,246,255,327,345,347,"421S"];
