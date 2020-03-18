@@ -800,7 +800,7 @@ var pokemon = [
 {"dex":635,"name":"Trikephalo","en":"Hydreigon","evolved":true},
 {"dex":636,"name":"Ignivor","en":"Larvesta"},
 {"dex":637,"name":"Ramoth","en":"Volcarona","evolved":true},
-{"dex":638,"name":"Kobalium","en":"Cobalion","legendary":true},
+{"dex":638,"name":"Kobalium","en":"Cobalion","legendary":true,"getshiny":true},
 {"dex":639,"name":"Terrakium","en":"Terrakion","legendary":true},
 {"dex":640,"name":"Viridium","en":"Virizion","legendary":true},
 {"dex":641,"name":"Boreos","de":"Boreos (Inkarnationsform)","en":"Tornadus (Incarnate Forme)","legendary":true},
@@ -867,6 +867,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.46","date":"18.03.2020","change":["New Shiny: Cobalion","Change Raid Bosses (Cobalion's return)"]},
 		{"ver":"1.4.45","date":"17.03.2020","change":["Change Raid Bosses (End of GO Battle League Celebration)"]},
 		{"ver":"1.4.44","date":"13.03.2020","change":["New Shiny: Timburr","Change Raid Bosses (Giratina Special Raid Weekend)"]},
 		{"ver":"1.4.43","date":"06.03.2020","change":["Change Raid Bosses (GO Battle League Preparation Event)","Adjust Raid end time"]},
@@ -978,7 +979,7 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[642],
+	"tier5":[638,642],
 	"tier4":["105A",248,76,306]
 };
 
