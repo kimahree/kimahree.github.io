@@ -409,7 +409,7 @@ var pokemon = [
 {"dex":287,"name":"Bummelz","en":"Slakoth","getshiny":true},
 {"dex":288,"name":"Muntier","en":"Vigoroth","evolved":true},
 {"dex":289,"name":"Letarking","en":"Slaking","evolved":true},
-{"dex":290,"name":"Nincada"},
+{"dex":290,"name":"Nincada","getshiny":true},
 {"dex":291,"name":"Ninjask","evolved":true},
 {"dex":292,"name":"Ninjatom","en":"Shedinja","evolved":true},
 {"dex":293,"name":"Flurmel","en":"Whismur"},
@@ -867,6 +867,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.47","date":"20.03.2020","change":["New Shiny: Nincada","Change Raid Bosses (Genesect Special Research event)"]},
 		{"ver":"1.4.46","date":"18.03.2020","change":["New Shiny: Cobalion","Change Raid Bosses (Cobalion's return)"]},
 		{"ver":"1.4.45","date":"17.03.2020","change":["Change Raid Bosses (End of GO Battle League Celebration)"]},
 		{"ver":"1.4.44","date":"13.03.2020","change":["New Shiny: Timburr","Change Raid Bosses (Giratina Special Raid Weekend)"]},
@@ -980,7 +981,7 @@ var changelogjson = {
 
 var raids = {
 	"tier5":[638,642],
-	"tier4":["105A",248,76,306]
+	"tier4":["105A",15,376,530]
 };
 
 var quests = [1,4,7,37,44,50,56,58,60,66,92,95,100,102,113,114,124,125,126,127,129,133,138,140,142,147,187,191,207,246,255,327,345,347,"421S"];
