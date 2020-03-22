@@ -867,6 +867,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.4.49","date":"22.03.2020","change":["Completely disable all functions due to new regulations"]},
 		{"ver":"1.4.48","date":"21.03.2020","change":["Disable BoQ Link until further notice","Add COVID-19 notice"]},
 		{"ver":"1.4.47","date":"20.03.2020","change":["New Shiny: Nincada","Change Raid Bosses (Genesect Special Research event)"]},
 		{"ver":"1.4.46","date":"18.03.2020","change":["New Shiny: Cobalion","Change Raid Bosses (Cobalion's return)"]},
