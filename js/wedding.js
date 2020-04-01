@@ -51,7 +51,8 @@ var gymjson = {
 {"value":"Wappen","map":"https://goo.gl/maps/7EJPSrw1E7XnKZut7"},
 {"value":"Wasserturm","map":"https://goo.gl/maps/UGMEedx6KQxeJT6e9"},
 {"value":"Wilhelm-Hasenclever-Platz","map":"https://goo.gl/maps/hAG4KaovnjxAd6zZ8"},
-{"value":"Wintergarten Reinickendorfer Straße","tg":"Wintergarten Reinickendorferst","map":"https://goo.gl/maps/NcNQ5PDLuMFJxZkN8"}
+{"value":"Wintergarten Reinickendorfer Straße","tg":"Wintergarten Reinickendorferst","map":"https://goo.gl/maps/NcNQ5PDLuMFJxZkN8"},
+{"value":"Zuckermuseum (Berlin)","map":"https://goo.gl/maps/13WRueDnqnFfwRnv5"}
 ]};
 
 var boqlink = "https://www.bookofquests.de/#14/1485750.97/6900116.96/0/f=";

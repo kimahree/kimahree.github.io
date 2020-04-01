@@ -302,7 +302,7 @@ var pokemon = [
 {"dex":182,"name":"Blubella","en":"Bellossom","evolved":true},
 {"dex":183,"name":"Marill"},
 {"dex":184,"name":"Azumarill","evolved":true},
-{"dex":185,"name":"Mogelbaum","en":"Sudowoodo"},
+{"dex":185,"name":"Mogelbaum","en":"Sudowoodo","getshiny":true},
 {"dex":186,"name":"Quaxo","en":"Politoed","evolved":true},
 {"dex":187,"name":"Hoppspross","en":"Hoppip"},
 {"dex":188,"name":"Hubelupf","en":"Skiploom","evolved":true},
@@ -333,7 +333,7 @@ var pokemon = [
 {"dex":213,"name":"Pottrott","en":"Shuckle","getshiny":true},
 {"dex":214,"name":"Skaraborn","en":"Heracross","regional":true},
 {"dex":215,"name":"Sniebel","en":"Sneasel","getshiny":true},
-{"dex":216,"name":"Teddiursa"},
+{"dex":216,"name":"Teddiursa","getshiny":true},
 {"dex":217,"name":"Ursaring","evolved":true},
 {"dex":218,"name":"Schneckmag","en":"Slugma"},
 {"dex":219,"name":"Magcargo","evolved":true},
@@ -462,7 +462,7 @@ var pokemon = [
 {"dex":340,"name":"Welsar","en":"Whiscash","evolved":true},
 {"dex":341,"name":"Krebscorps","en":"Corphish"},
 {"dex":342,"name":"Krebutack","en":"Crawdaunt","evolved":true},
-{"dex":343,"name":"Puppance","en":"Baltoy"},
+{"dex":343,"name":"Puppance","en":"Baltoy","getshiny":true},
 {"dex":344,"name":"Lepumentas","en":"Claydol","evolved":true},
 {"dex":345,"name":"Liliep","en":"Lileep","getshiny":true},
 {"dex":346,"name":"Wielie","en":"Cradily","evolved":true},
@@ -583,7 +583,7 @@ var pokemon = [
 {"dex":450,"name":"Hippoterus","en":"Hippowdon","evolved":true},
 {"dex":451,"name":"Pionskora","en":"Skorupi","getshiny":true},
 {"dex":452,"name":"Piondragi","en":"Drapion","evolved":true},
-{"dex":453,"name":"Glibunkel","en":"Croagunk"},
+{"dex":453,"name":"Glibunkel","en":"Croagunk","getshiny":true},
 {"dex":454,"name":"Toxiquak","en":"Toxicroak","evolved":true},
 {"dex":455,"name":"Venuflibis","en":"Carnivine","regional":true},
 {"dex":456,"name":"Finneon"},
@@ -867,6 +867,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.5","date":"01.04.2020","change":['Change domain to "berlin-raids.tk"',"Move Gesundbrunnen to subpage"]},
 		{"ver":"1.4.49","date":"22.03.2020","change":["Completely disable all functions due to new regulations"]},
 		{"ver":"1.4.48","date":"21.03.2020","change":["Disable BoQ Link until further notice","Add COVID-19 notice"]},
 		{"ver":"1.4.47","date":"20.03.2020","change":["New Shiny: Nincada","Change Raid Bosses (Genesect Special Research event)"]},
@@ -982,12 +983,12 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[638,642],
-	"tier4":["105A",15,376,530]
+	"tier5":[645],
+	"tier4":["105A",248,76,452,275]
 };
 
-var quests = [1,4,7,37,44,50,56,58,60,66,92,95,100,102,113,114,124,125,126,127,129,133,138,140,142,147,187,191,207,246,255,327,345,347,"421S"];
-var legacy = [3,9,10,16,25,27,29,30,31,32,33,34,35,36,"37A",38,39,40,41,42,51,"52A",55,59,61,67,70,72,73,74,77,81,84,85,86,87,88,90,96,98,"103A",104,107,108,109,117,121,123,131,132,137,171,177,179,183,184,193,196,197,200,203,204,209,215,216,220,224,227,228,231,234,241,252,256,261,263,270,276,280,286,287,290,294,296,299,302,307,309,310,311,312,315,316,317,318,320,322,325,328,333,335,336,339,349,353,359,361,362,366,387,390,399,408,410,412,"412S","412T",415,420,425,427,436,449,459,562,594,613,622];
+var quests = [1,4,7,37,44,50,56,58,60,92,95,100,114,127,129,133,138,140,142,147,185,187,191,207,246,255,327,345,347,"421S",453,618];
+var legacy = [3,9,10,16,25,27,29,30,31,32,33,34,35,36,"37A",38,39,40,41,42,51,"52A",55,59,61,66,67,70,72,73,74,77,80,81,84,85,86,87,88,90,96,98,102,"103A",104,107,108,109,113,117,121,123,124,125,126,131,132,137,171,177,179,183,184,193,196,197,200,202,203,204,209,215,216,220,224,227,228,231,234,241,252,256,261,263,270,276,280,286,287,290,294,296,299,302,307,309,310,311,312,315,316,317,318,320,322,325,328,333,335,336,339,343,349,353,359,361,362,366,387,390,399,408,410,412,"412S","412T",415,420,425,427,436,449,459,562,594,613,622];
 var forms = ["19A","20A","26A","27A","28A","37A","38A","50A","51A","52A","53A","74A","75A","76A","88A","89A","103A","105A","150R","351I","351R","351S","386A","386D","386S","412S","412T","413S","413T","421S","479F","479H","479I","479M","479W","487O","492S","550B","555Z","641T","642T","645T","646B","646W","648P"];
 var hidden = 1;
 var sel_q = [];
