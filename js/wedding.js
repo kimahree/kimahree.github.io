@@ -7,7 +7,7 @@ var gymjson = {
 {"value":"Alien Painting","map":"https://goo.gl/maps/LjnC6KmVLzJ6XRqH9"},
 {"value":"Alte Turmuhr","map":"https://goo.gl/maps/yyRLUHUpNrnR33zt8"},
 {"value":"Amtsgericht Wedding","ex":true,"map":"https://goo.gl/maps/q79rW3P5iz82"},
-{"value":"Antikriegsdenkmal","map":"https://goo.gl/maps/CBNhqsGi2Bd6r4k99"},
+{"value":"Antikriegsdenkmal","map":"https://goo.gl/maps/Z1BhrWds9spG3YNj7"},
 {"value":"Bahnhof Humboldthain","token":"s-bahnhof","map":"https://goo.gl/maps/NoMxjQmX8Yz"},
 {"value":"Balance on the Globe","ex":true,"tg":"Balance On The Globe","map":"https://goo.gl/maps/bM2QWrCkDhq"},
 {"value":"Beuth Hochschule für Technik","ex":true,"map":"https://goo.gl/maps/mj6fTamuHCL6iUe59"},
@@ -51,7 +51,7 @@ var gymjson = {
 {"value":"Wappen","map":"https://goo.gl/maps/7EJPSrw1E7XnKZut7"},
 {"value":"Wasserturm","map":"https://goo.gl/maps/UGMEedx6KQxeJT6e9"},
 {"value":"Wilhelm-Hasenclever-Platz","map":"https://goo.gl/maps/hAG4KaovnjxAd6zZ8"},
-{"value":"Wintergarten Reinickendorfer Straße","tg":"Wintergarten Reinickendorferst","map":"https://goo.gl/maps/NcNQ5PDLuMFJxZkN8"},
+{"value":"Wintergarten Reinickendorfer Straße","tg":"Wintergarten Reinickendorferst","map":"https://goo.gl/maps/hTjLWTddfem8zLhm9"},
 {"value":"Zuckermuseum (Berlin)","map":"https://goo.gl/maps/13WRueDnqnFfwRnv5"}
 ]};
 

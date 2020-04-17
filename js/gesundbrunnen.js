@@ -33,6 +33,7 @@ var gymjson = {
 {"value":"Jux und Tollerei","map":"https://goo.gl/maps/vLZcbgbGXrD2"},
 {"value":"Kamel","ex":true,"token":"🐫 🐪","map":"https://goo.gl/maps/xCWVtJhqw1r"},
 {"value":"Kulturverein Christiana","ex":true,"map":"https://goo.gl/maps/Mks22S8syUn"},
+{"value":"Laughing Sun","map":"https://goo.gl/maps/gfynFLDRop3kf85k7"},
 {"value":"Mosaik Kompass","ex":true,"map":"https://goo.gl/maps/wN6bKLB5y3kmZP8k8"},
 {"value":"Mother Statue","ex":true,"map":"https://goo.gl/maps/obrXpaCe8Kp"},
 {"value":"Phantom der Lichtburg","ex":true,"map":"https://goo.gl/maps/SrWT2D8UXxy6Y1XQ6"},
