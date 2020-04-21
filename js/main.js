@@ -289,7 +289,7 @@ var pokemon = [
 {"dex":167,"name":"Webarak","en":"Spinarak"},
 {"dex":168,"name":"Ariados","evolved":true},
 {"dex":169,"name":"Iksbat","en":"Crobat","evolved":true},
-{"dex":170,"name":"Lampi","en":"Chinchou"},
+{"dex":170,"name":"Lampi","en":"Chinchou","getshiny":true},
 {"dex":171,"name":"Lanturn","evolved":true},
 {"dex":172,"name":"Pichu","baby":true,"getshiny":true},
 {"dex":173,"name":"Pii","en":"Cleffa","baby":true,"getshiny":true},
@@ -321,7 +321,7 @@ var pokemon = [
 {"dex":199,"name":"Laschoking","en":"Slowking","evolved":true},
 {"dex":200,"name":"Traunfugil","en":"Misdreavus","getshiny":true},
 {"dex":201,"name":"Icognito","en":"Unown"},
-{"dex":202,"name":"Woingenau","en":"Wobbuffet"},
+{"dex":202,"name":"Woingenau","en":"Wobbuffet","getshiny":true},
 {"dex":203,"name":"Girafarig"},
 {"dex":204,"name":"Tannza","en":"Pineco","getshiny":true},
 {"dex":205,"name":"Forstellka","en":"Forretress","evolved":true},
@@ -434,8 +434,8 @@ var pokemon = [
 {"dex":310,"name":"Voltenso","en":"Manectric","evolved":true},
 {"dex":311,"name":"Plusle","getshiny":true},
 {"dex":312,"name":"Minun","getshiny":true},
-{"dex":313,"name":"Volbeat","regional":true},
-{"dex":314,"name":"Illumise","regional":true},
+{"dex":313,"name":"Volbeat","regional":true,"getshiny":true},
+{"dex":314,"name":"Illumise","regional":true,"getshiny":true},
 {"dex":315,"name":"Roselia","getshiny":true},
 {"dex":316,"name":"Schluppuck","en":"Gulpin"},
 {"dex":317,"name":"Schlukwech","en":"Swalot","evolved":true},
@@ -869,8 +869,17 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
-		{"ver":"1.5.1","date":"17.04.2020","change":['Add new gym "Laughing Sun"']},		
-		{"ver":"1.5","date":"01.04.2020","change":['Change domain to "berlin-raids.tk"',"Move Gesundbrunnen to subpage"]},
+		{"ver":"1.5.6","date":"21.04.2020","change":["New Shinies: Chinchou, Wobbuffet, Volbeat, Illumise","Quests: Add Alolan Meowth, Volbeat, Illumise, Woobat","Change Raid Bosses (Buddy Up Event)"]},
+		{"ver":"1.5.5","date":"17.04.2020","change":['Add new gym "Laughing Sun"']},
+		{"ver":"1.5.4","date":"16.04.2020","change":["Quests: Remove Alolan Exeggutor, Chansey, Azumarill, Audino"]},
+		{"ver":"1.5.3","date":"09.04.2020","change":["New Shinies: Exeggcute, Marill","Quests: Add Alolan Exeggutor, Chansey, Azumarill, Audino"]},
+		{"ver":"1.5.2","date":"08.04.2020","change":["Quests: Remove Sudowoodo, Croagunk","Change Raid Bosses (End of Tricky Pokémon Event)"]},
+		{"ver":"1.5.1","date":"02.04.2020","change":["Quests: Add Parasect, Alolan Diglett, Magmar, Bayleef, Bellossom, Pineco, Magcargo, Lotad, Shroomish, Cacnea, Burmy (Plant)","Quests: Remove Gloom, Diglett, Mankey, Growlithe, Tangela, Pinsir, Hoppip, Sunkern, Gligar, Torchic, Cherrim"]},		
+		{"ver":"1.5","date":"01.04.2020","change":['Change domain to "berlin-raids.tk"',"Move Gesundbrunnen to subpage","New Shinies: Sudowoodo, Croagunk","Quests: Add Sudowoodo, Croagunk, Stunfisk","Change Raid Bosses (Landorus's debut & Tricky Pokémon Event)"]},
+		{"ver":"1.4.53","date":"31.03.2020","change":["Quests: Remove Slowbro, Wobbuffet, Baltoy","Change Raid Bosses (End of Psychic Spectacular)"]},
+		{"ver":"1.4.52","date":"27.03.2020","change":["New Shinies: Teddiursa, Baltoy","Quests: Add Slowbro, Wobbuffet, Baltoy","Change Raid Bosses (Psychic Spectacular)"]},
+		{"ver":"1.4.51","date":"25.03.2020","change":['[Gesundbrunnen] Add EX-Raid tag for "Spinnennetz Spielplatz" and "Phantom der Lichtburg"',"Quests: Remove Machop, Exeggcute, Chansey, Jynx, Electabuzz, Magmar"]},
+		{"ver":"1.4.50","date":"24.03.2020","change":["Change Raid Bosses (End of Genesect Event)"]},
 		{"ver":"1.4.49","date":"22.03.2020","change":["Completely disable all functions due to new regulations"]},
 		{"ver":"1.4.48","date":"21.03.2020","change":["Disable BoQ Link until further notice","Add COVID-19 notice"]},
 		{"ver":"1.4.47","date":"20.03.2020","change":["New Shiny: Nincada","Change Raid Bosses (Genesect Special Research event)"]},
@@ -987,11 +996,11 @@ var changelogjson = {
 
 var raids = {
 	"tier5":[645],
-	"tier4":["105A",160,131,62,9]
+	"tier4":["105A",272,131,176]
 };
 
-var quests = [1,4,7,37,47,"50A",60,92,95,100,126,129,133,138,140,142,147,153,182,204,219,246,270,285,327,331,345,347,412,618];
-var legacy = [3,9,10,16,25,27,29,30,31,32,33,34,35,36,"37A",38,39,40,41,42,44,50,51,"52A",55,56,58,59,61,66,67,70,72,73,74,77,80,81,84,85,86,87,88,90,96,98,102,"103A",104,107,108,109,113,114,117,121,123,124,125,127,131,132,137,171,177,179,183,184,185,187,191,193,196,197,200,202,203,207,209,215,216,220,224,227,228,231,234,241,252,255,256,261,263,276,280,286,287,290,294,296,299,302,307,309,310,311,312,315,316,317,318,320,322,325,328,333,335,336,339,343,349,353,359,361,362,366,387,390,399,408,410,"412S","412T",415,420,"421S",425,427,436,449,453,459,531,562,594,613,622];
+var quests = [1,4,7,37,47,"50A","52A",60,92,95,100,126,129,133,138,140,142,147,153,182,204,219,246,270,285,313,314,327,331,345,347,412,527,618];
+var legacy = [3,9,10,16,25,27,29,30,31,32,33,34,35,36,"37A",38,39,40,41,42,44,50,51,55,56,58,59,61,66,67,70,72,73,74,77,80,81,84,85,86,87,88,90,96,98,102,"103A",104,107,108,109,113,114,117,121,123,124,125,127,131,132,137,171,177,179,183,184,185,187,191,193,196,197,200,202,203,207,209,215,216,220,224,227,228,231,234,241,252,255,256,261,263,276,280,286,287,290,294,296,299,302,307,309,310,311,312,315,316,317,318,320,322,325,328,333,335,336,339,343,349,353,359,361,362,366,387,390,399,408,410,"412S","412T",415,420,"421S",425,427,436,449,453,459,531,562,594,613,622];
 var forms = ["19A","20A","26A","27A","28A","37A","38A","50A","51A","52A","53A","74A","75A","76A","88A","89A","103A","105A","150R","351I","351R","351S","386A","386D","386S","412S","412T","413S","413T","421S","479F","479H","479I","479M","479W","487O","492S","550B","555Z","641T","642T","645T","646B","646W","648P"];
 var hidden = 1;
 var sel_q = [];
