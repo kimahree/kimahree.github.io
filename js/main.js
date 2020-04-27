@@ -869,6 +869,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.5.9","date":"27.04.2020","change":["Enable raids again, after remote raids were released"]},
 		{"ver":"1.5.8","date":"25.04.2020","change":["New Shiny: Abra"]},
 		{"ver":"1.5.7","date":"21.04.2020","change":['[Marzahn] Add new gym "Interkultureller Garten Marzahn e.V."','[Marzahn] Change name of gym "Brunnen (Glambecker Ring)" to "Brunnen am Ahrensfelder Berg"']},
 		{"ver":"1.5.6","date":"21.04.2020","change":["New Shinies: Chinchou, Wobbuffet, Volbeat, Illumise","Quests: Add Alolan Meowth, Volbeat, Illumise, Woobat","Change Raid Bosses (Buddy Up Event)"]},
