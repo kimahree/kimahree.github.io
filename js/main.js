@@ -173,7 +173,7 @@ var pokemon = [
 {"dex":60,"name":"Quapsel","en":"Poliwag","getshiny":true},
 {"dex":61,"name":"Quaputzi","en":"Poliwhirl","evolved":true},
 {"dex":62,"name":"Quappo","en":"Poliwrath","evolved":true},
-{"dex":63,"name":"Abra"},
+{"dex":63,"name":"Abra","getshiny":true},
 {"dex":64,"name":"Kadabra","evolved":true},
 {"dex":65,"name":"Simsala","en":"Alakazam","evolved":true},
 {"dex":66,"name":"Machollo","en":"Machop","getshiny":true},
@@ -869,6 +869,8 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.5.8","date":"25.04.2020","change":["New Shiny: Abra"]},
+		{"ver":"1.5.7","date":"21.04.2020","change":['[Marzahn] Add new gym "Interkultureller Garten Marzahn e.V."','[Marzahn] Change name of gym "Brunnen (Glambecker Ring)" to "Brunnen am Ahrensfelder Berg"']},
 		{"ver":"1.5.6","date":"21.04.2020","change":["New Shinies: Chinchou, Wobbuffet, Volbeat, Illumise","Quests: Add Alolan Meowth, Volbeat, Illumise, Woobat","Change Raid Bosses (Buddy Up Event)"]},
 		{"ver":"1.5.5","date":"17.04.2020","change":['Add new gym "Laughing Sun"']},
 		{"ver":"1.5.4","date":"16.04.2020","change":["Quests: Remove Alolan Exeggutor, Chansey, Azumarill, Audino"]},
@@ -1000,7 +1002,7 @@ var raids = {
 };
 
 var quests = [1,4,7,37,47,"50A","52A",60,92,95,100,126,129,133,138,140,142,147,153,182,204,219,246,270,285,313,314,327,331,345,347,412,527,618];
-var legacy = [3,9,10,16,25,27,29,30,31,32,33,34,35,36,"37A",38,39,40,41,42,44,50,51,55,56,58,59,61,66,67,70,72,73,74,77,80,81,84,85,86,87,88,90,96,98,102,"103A",104,107,108,109,113,114,117,121,123,124,125,127,131,132,137,171,177,179,183,184,185,187,191,193,196,197,200,202,203,207,209,215,216,220,224,227,228,231,234,241,252,255,256,261,263,276,280,286,287,290,294,296,299,302,307,309,310,311,312,315,316,317,318,320,322,325,328,333,335,336,339,343,349,353,359,361,362,366,387,390,399,408,410,"412S","412T",415,420,"421S",425,427,436,449,453,459,531,562,594,613,622];
+var legacy = [3,9,10,16,25,27,29,30,31,32,33,34,35,36,"37A",38,39,40,41,42,44,50,51,55,56,58,59,61,63,66,67,70,72,73,74,77,80,81,84,85,86,87,88,90,96,98,102,"103A",104,107,108,109,111,113,114,117,121,123,124,125,127,131,132,137,171,177,179,183,184,185,187,191,193,196,197,200,202,203,207,209,215,216,220,224,227,228,231,234,241,252,255,256,261,263,276,280,286,287,290,294,296,299,302,307,309,310,311,312,315,316,317,318,320,322,325,328,333,335,336,339,343,349,353,359,361,362,366,387,390,393,399,408,410,"412S","412T",415,420,"421S",425,427,436,449,453,459,531,562,594,613,622];
 var forms = ["19A","20A","26A","27A","28A","37A","38A","50A","51A","52A","53A","74A","75A","76A","88A","89A","103A","105A","150R","351I","351R","351S","386A","386D","386S","412S","412T","413S","413T","421S","479F","479H","479I","479M","479W","487O","492S","550B","555Z","641T","642T","645T","646B","646W","648P"];
 var hidden = 1;
 var sel_q = [];
@@ -1905,14 +1907,14 @@ function isIn(dex) {
   return dex == this;
 }
 
-function counter() {
+/* function counter() {
   secret++;
   if (secret > 5) {
 	$('#maske').removeAttr('hidden');
 	$('#covid').hide();
 	alert("Das Raiden erfolgt auf eigene Verantwortung. berlin-raids.tk ist nicht für gesundheitliche, finanzielle oder andere Schäden durch Missachtung der Verordnung zur Eindämmung von COVID-19 verantwortlich.");
 	}
-}
+} */
 
 $('#old').on('hidden.bs.select', function () {
   updateNestlist("old");
