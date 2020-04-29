@@ -869,6 +869,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.5.11","date":"28.04.2020","change":["Change Raid Bosses (Remote Raid Celebration: Darkrai)"]},
 		{"ver":"1.5.10","date":"27.04.2020","change":["Change Raid Bosses (End of Buddy Up Event)"]},
 		{"ver":"1.5.9","date":"27.04.2020","change":["Enable raids again, after remote raids were released"]},
 		{"ver":"1.5.8","date":"25.04.2020","change":["New Shiny: Abra"]},
@@ -999,8 +1000,8 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[645],
-	"tier4":["105A",131,160,62,9]
+	"tier5":[491],
+	"tier4":["105A","110G",68,12,176]
 };
 
 var quests = [1,4,7,37,47,"50A","52A",60,92,95,100,126,129,133,138,140,142,147,153,182,204,219,246,270,285,313,314,327,331,345,347,412,527,618];
