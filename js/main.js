@@ -869,6 +869,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.5.12","date":"30.04.2020","change":["Enable BoQ again"]},
 		{"ver":"1.5.11","date":"28.04.2020","change":["Change Raid Bosses (Remote Raid Celebration: Darkrai)"]},
 		{"ver":"1.5.10","date":"27.04.2020","change":["Change Raid Bosses (End of Buddy Up Event)"]},
 		{"ver":"1.5.9","date":"27.04.2020","change":["Enable raids again, after remote raids were released"]},
