@@ -521,7 +521,7 @@ var pokemon = [
 {"dex":390,"name":"Panflam","en":"Chimchar","getshiny":true},
 {"dex":391,"name":"Panpyro","en":"Monferno","evolved":true},
 {"dex":392,"name":"Panferno","en":"Infernape","evolved":true},
-{"dex":393,"name":"Plinfa","en":"Piplup"},
+{"dex":393,"name":"Plinfa","en":"Piplup","getshiny":true},
 {"dex":394,"name":"Pliprin","en":"Prinplup","evolved":true},
 {"dex":395,"name":"Impoleon","en":"Empoleon","evolved":true},
 {"dex":396,"name":"Staralili","en":"Starly"},
@@ -876,6 +876,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.5.15","date":"05.05.2020","change":["Change Raid Bosses (Remote Raid Celebration: Giratina)"]},
 		{"ver":"1.5.14","date":"01.05.2020","change":['Quests: Mark Event Quests with "⏱"',"Quests: Add Raichu, Alolan Geodude, Magnemite, Electabuzz, Jolteon, Lanturn, Mareep, Electrike, Blitzle, Joltik","Quests: Remove Parasect, Alolan Diglett, Magmar, Bayleef, Bellossom, Pineco, Magcargo, Lotad, Shroomish, Cacnea Burmy (Plant Cloak)"]},
 		{"ver":"1.5.13","date":"01.05.2020","change":["Add new Galar Pokémon","New Shiny: Venonat","Change Raid Bosses (Throwback Challenge: Kanto)","Quests: Add Butterfree, Pikachu, Mankey, Venonat, Muk, Krabby"]},
 		{"ver":"1.5.12","date":"30.04.2020","change":["Enable BoQ again"]},
@@ -1010,7 +1011,7 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[491],
+	"tier5":[487],
 	"tier4":[149,76,34,31,62,143]
 };
 
@@ -1154,7 +1155,7 @@ function init() {
 	
 	txt = "";
 	for (var i = 0; i < pokemon.length ; i++) {
-		if (!pokemon[i].evolved && !pokemon[i].legendary && !pokemon[i].mythical && !pokemon[i].baby && !pokemon[i].alolan && !pokemon[i].mega && !pokemon[i].ultrabeast && !pokemon[i].galarian) {
+		if (!pokemon[i].evolved && !pokemon[i].legendary && !pokemon[i].mythical && !pokemon[i].baby && !pokemon[i].alolan && !pokemon[i].mega && !pokemon[i].ultrabeast && !pokemon[i].galarian && !pokemon[i].gigantamax) {
 			txt += "<option value=" + pokemon[i].dex + ">" + pokemon[i].name + "</option>";
 		}
 	}
@@ -1302,8 +1303,7 @@ function generateRaid(raidtext) {
 	}
 
 	text += "</b> "
-	
-	
+
 	if (time) {
 		text += "(🐣" + time + ")";
 	}
