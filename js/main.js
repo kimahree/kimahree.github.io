@@ -198,6 +198,7 @@ var pokemon = [
 {"dex":81,"name":"Magnetilo","en":"Magnemite","getshiny":true},
 {"dex":82,"name":"Magneton","evolved":true},
 {"dex":83,"name":"Porenta","en":"Farfetch'd","regional":true,"getshiny":true},
+{"dex":"83G","name":"Galar-Porenta","en":"Galarian Farfetch'd","regional":true,"galarian":true},
 {"dex":84,"name":"Dodu","en":"Doduo"},
 {"dex":85,"name":"Dodri","en":"Dodrio","evolved":true},
 {"dex":86,"name":"Jurob","en":"Seel","getshiny":true},
@@ -216,7 +217,7 @@ var pokemon = [
 {"dex":97,"name":"Hypno","evolved":true},
 {"dex":98,"name":"Krabby","getshiny":true},
 {"dex":99,"name":"Kingler","evolved":true},
-{"dex":100,"name":"Voltobal","en":"Voltorb"},
+{"dex":100,"name":"Voltobal","en":"Voltorb","getshiny":true},
 {"dex":101,"name":"Lektrobal","en":"Electrode","evolved":true},
 {"dex":102,"name":"Owei","en":"Exeggcute","getshiny":true},
 {"dex":103,"name":"Kokowei","en":"Exeggutor","evolved":true},
@@ -326,7 +327,7 @@ var pokemon = [
 {"dex":203,"name":"Girafarig"},
 {"dex":204,"name":"Tannza","en":"Pineco","getshiny":true},
 {"dex":205,"name":"Forstellka","en":"Forretress","evolved":true},
-{"dex":206,"name":"Dummisel","en":"Dunsparce"},
+{"dex":206,"name":"Dummisel","en":"Dunsparce","getshiny":true},
 {"dex":207,"name":"Skorgla","en":"Gligar","getshiny":true},
 {"dex":208,"name":"Stahlos","en":"Steelix","evolved":true},
 {"dex":209,"name":"Snubbull","getshiny":true},
@@ -833,7 +834,8 @@ var pokemon = [
 {"dex":808,"name":"Meltan","mythical":true},
 {"dex":809,"name":"Melmetal","mythical":true,"evolved":true},
 {"dex":862,"name":"Barrikadax","en":"Obstagoon","evolved":true},
-{"dex":863,"name":"Mauzinger","en":"Perrserker","evolved":true}
+{"dex":863,"name":"Mauzinger","en":"Perrserker","evolved":true},
+{"dex":865,"name":"Lauchzelot","en":"Sirfetch'd","evolved":true}
 ];
 
 var items = [
@@ -876,6 +878,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.5.16","date":"08.05.2020","change":["Change Raid Bosses (Throwback Challenge: Johto)","New Shinies: Voltorb, Dunsparce","Quests: Add Bayleef, Quilava, Totodile, Noctowl, Aipom, Pineco, Dunsparce, Phanpy","Quests: Remove Butterfree, Pikachu, Mankey, Venonat, Muk, Krabby","Add Galarian Farfetch'd and Sirfetch'd"]},
 		{"ver":"1.5.15","date":"05.05.2020","change":["Change Raid Bosses (Remote Raid Celebration: Giratina)"]},
 		{"ver":"1.5.14","date":"01.05.2020","change":['Quests: Mark Event Quests with "⏱"',"Quests: Add Raichu, Alolan Geodude, Magnemite, Electabuzz, Jolteon, Lanturn, Mareep, Electrike, Blitzle, Joltik","Quests: Remove Parasect, Alolan Diglett, Magmar, Bayleef, Bellossom, Pineco, Magcargo, Lotad, Shroomish, Cacnea Burmy (Plant Cloak)"]},
 		{"ver":"1.5.13","date":"01.05.2020","change":["Add new Galar Pokémon","New Shiny: Venonat","Change Raid Bosses (Throwback Challenge: Kanto)","Quests: Add Butterfree, Pikachu, Mankey, Venonat, Muk, Krabby"]},
@@ -1012,12 +1015,12 @@ var changelogjson = {
 
 var raids = {
 	"tier5":[487],
-	"tier4":[149,76,34,31,62,143]
+	"tier4":[359,248,210,176,217]
 };
 
 var quests = [1,4,7,26,37,60,"74A",81,92,95,100,125,129,133,135,138,140,142,147,171,179,246,309,327,345,347,522,595,618];
-var quests_event = [12,25,48,56,89,98];
-var legacy = [3,9,10,16,27,29,30,31,32,33,34,35,36,"37A",38,39,40,41,42,44,47,50,"50A",51,"52A",55,58,59,61,63,66,67,70,72,73,74,77,80,84,85,86,87,88,90,96,102,"103A",104,107,108,109,111,113,114,117,121,123,124,126,127,131,132,137,153,177,182,183,184,185,187,191,193,196,197,200,202,203,204,207,209,215,216,219,220,224,227,228,231,234,241,252,255,256,261,263,270,276,280,285,286,287,290,294,296,299,302,307,310,311,312,313,314,315,316,317,318,320,322,325,328,331,333,335,336,339,343,349,353,359,361,362,366,387,390,393,399,408,410,412,"412S","412T",415,420,"421S",425,427,436,449,453,459,527,531,562,594,613,622];
+var quests_event = [153,156,158,164,190,204,206,231];
+var legacy = [3,9,10,12,16,25,27,29,30,31,32,33,34,35,36,"37A",38,39,40,41,42,44,47,48,50,"50A",51,"52A",55,56,58,59,61,63,66,67,70,72,73,74,77,80,84,85,86,87,88,89,90,96,98,102,"103A",104,107,108,109,111,113,114,117,121,123,124,126,127,131,132,137,153,177,182,183,184,185,187,191,193,196,197,200,202,203,204,207,209,215,216,219,220,224,227,228,231,234,241,252,255,256,261,263,270,276,280,285,286,287,290,294,296,299,302,307,310,311,312,313,314,315,316,317,318,320,322,325,328,331,333,335,336,339,343,349,353,359,361,362,366,387,390,393,399,408,410,412,"412S","412T",415,420,"421S",425,427,436,449,453,459,527,531,562,594,613,622];
 var forms = ["19A","20A","26A","27A","28A","37A","38A","50A","51A","52A","53A","74A","75A","76A","88A","89A","103A","105A","150R","351I","351R","351S","386A","386D","386S","412S","412T","413S","413T","421S","479F","479H","479I","479M","479W","487O","492S","550B","555Z","641T","642T","645T","646B","646W","648P"];
 var hidden = 1;
 var sel_q = [];
