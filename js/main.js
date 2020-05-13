@@ -810,7 +810,7 @@ var pokemon = [
 {"dex":637,"name":"Ramoth","en":"Volcarona","evolved":true},
 {"dex":638,"name":"Kobalium","en":"Cobalion","legendary":true,"getshiny":true},
 {"dex":639,"name":"Terrakium","en":"Terrakion","legendary":true},
-{"dex":640,"name":"Viridium","en":"Virizion","legendary":true},
+{"dex":640,"name":"Viridium","en":"Virizion","legendary":true,"getshiny":true},
 {"dex":641,"name":"Boreos","de":"Boreos (Inkarnationsform)","en":"Tornadus (Incarnate Forme)","legendary":true},
 {"dex":"641T","name":"Boreos (Tiergeist)","de":"Boreos (Tiergeistform)","en":"Tornadus (Therian Forme)","legendary":true},
 {"dex":642,"name":"Voltolos","de":"Voltolos (Inkarnationsform)","en":"Thundurus (Incarnate Forme)","legendary":true},
@@ -878,6 +878,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.5.17","date":"12.05.2020","change":["Change Raid Bosses (Remote Raid Celebration: Virizion)","New Shiny: Virizion"]},
 		{"ver":"1.5.16","date":"08.05.2020","change":["Change Raid Bosses (Throwback Challenge: Johto)","New Shinies: Voltorb, Dunsparce","Quests: Add Bayleef, Quilava, Totodile, Noctowl, Aipom, Pineco, Dunsparce, Phanpy","Quests: Remove Butterfree, Pikachu, Mankey, Venonat, Muk, Krabby","Add Galarian Farfetch'd and Sirfetch'd"]},
 		{"ver":"1.5.15","date":"05.05.2020","change":["Change Raid Bosses (Remote Raid Celebration: Giratina)"]},
 		{"ver":"1.5.14","date":"01.05.2020","change":['Quests: Mark Event Quests with "⏱"',"Quests: Add Raichu, Alolan Geodude, Magnemite, Electabuzz, Jolteon, Lanturn, Mareep, Electrike, Blitzle, Joltik","Quests: Remove Parasect, Alolan Diglett, Magmar, Bayleef, Bellossom, Pineco, Magcargo, Lotad, Shroomish, Cacnea Burmy (Plant Cloak)"]},
@@ -1014,7 +1015,7 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[487],
+	"tier5":[640],
 	"tier4":[359,248,210,176,217]
 };
 
