@@ -423,7 +423,7 @@ var pokemon = [
 {"dex":297,"name":"Hariyama","evolved":true},
 {"dex":298,"name":"Azurill","baby":true,"getshiny":true},
 {"dex":299,"name":"Nasgnet","en":"Nosepass"},
-{"dex":300,"name":"Eneco","en":"Skitty"},
+{"dex":300,"name":"Eneco","en":"Skitty","getshiny":true},
 {"dex":301,"name":"Enecoro","en":"Delcatty","evolved":true},
 {"dex":302,"name":"Zobiris","en":"Sableye","getshiny":true},
 {"dex":303,"name":"Flunkifer","en":"Mawile","getshiny":true},
@@ -878,6 +878,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.5.18","date":"15.05.2020","change":["Change Raid Bosses (Throwback Challenge: Hoenn)","New Shiny: Skitty","Quests: Add Treecko, Combusken, Marshtomp, Lotad, Swellow, Ralts, Skitty, Corphish, Snorunt","Quests: Remove Bayleef, Quilava, Totodile, Noctowl, Aipom, Pineco, Dunsparce, Phanpy"]},
 		{"ver":"1.5.17","date":"12.05.2020","change":["Change Raid Bosses (Remote Raid Celebration: Virizion)","New Shiny: Virizion"]},
 		{"ver":"1.5.16","date":"08.05.2020","change":["Change Raid Bosses (Throwback Challenge: Johto)","New Shinies: Voltorb, Dunsparce","Quests: Add Bayleef, Quilava, Totodile, Noctowl, Aipom, Pineco, Dunsparce, Phanpy","Quests: Remove Butterfree, Pikachu, Mankey, Venonat, Muk, Krabby","Add Galarian Farfetch'd and Sirfetch'd"]},
 		{"ver":"1.5.15","date":"05.05.2020","change":["Change Raid Bosses (Remote Raid Celebration: Giratina)"]},
@@ -1016,12 +1017,12 @@ var changelogjson = {
 
 var raids = {
 	"tier5":[640],
-	"tier4":[359,248,210,176,217]
+	"tier4":[359,308,376,365]
 };
 
 var quests = [1,4,7,26,37,60,"74A",81,92,95,100,125,129,133,135,138,140,142,147,171,179,246,309,327,345,347,522,595,618];
-var quests_event = [153,156,158,164,190,204,206,231];
-var legacy = [3,9,10,12,16,25,27,29,30,31,32,33,34,35,36,"37A",38,39,40,41,42,44,47,48,50,"50A",51,"52A",55,56,58,59,61,63,66,67,70,72,73,74,77,80,84,85,86,87,88,89,90,96,98,102,"103A",104,107,108,109,111,113,114,117,121,123,124,126,127,131,132,137,153,177,182,183,184,185,187,191,193,196,197,200,202,203,204,207,209,215,216,219,220,224,227,228,231,234,241,252,255,256,261,263,270,276,280,285,286,287,290,294,296,299,302,307,310,311,312,313,314,315,316,317,318,320,322,325,328,331,333,335,336,339,343,349,353,359,361,362,366,387,390,393,399,408,410,412,"412S","412T",415,420,"421S",425,427,436,449,453,459,527,531,562,594,613,622];
+var quests_event = [252,256,259,270,277,280,300,341,361];
+var legacy = [3,9,10,12,16,25,27,29,30,31,32,33,34,35,36,"37A",38,39,40,41,42,44,47,48,50,"50A",51,"52A",55,56,58,59,61,63,66,67,70,72,73,74,77,80,84,85,86,87,88,89,90,96,98,102,"103A",104,107,108,109,111,113,114,117,121,123,124,126,127,131,132,137,153,156,158,164,177,182,183,184,185,187,190,191,193,196,197,200,202,203,204,206,207,209,215,216,219,220,224,227,228,231,234,241,255,261,263,276,285,286,287,290,294,296,299,302,307,310,311,312,313,314,315,316,317,318,320,322,325,328,331,333,335,336,339,343,349,353,359,362,366,387,390,393,399,408,410,412,"412S","412T",415,420,"421S",425,427,436,449,453,459,527,531,562,594,613,622];
 var forms = ["19A","20A","26A","27A","28A","37A","38A","50A","51A","52A","53A","74A","75A","76A","88A","89A","103A","105A","150R","351I","351R","351S","386A","386D","386S","412S","412T","413S","413T","421S","479F","479H","479I","479M","479W","487O","492S","550B","555Z","641T","642T","645T","646B","646W","648P"];
 var hidden = 1;
 var sel_q = [];
