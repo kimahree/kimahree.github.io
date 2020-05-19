@@ -809,7 +809,7 @@ var pokemon = [
 {"dex":636,"name":"Ignivor","en":"Larvesta"},
 {"dex":637,"name":"Ramoth","en":"Volcarona","evolved":true},
 {"dex":638,"name":"Kobalium","en":"Cobalion","legendary":true,"getshiny":true},
-{"dex":639,"name":"Terrakium","en":"Terrakion","legendary":true},
+{"dex":639,"name":"Terrakium","en":"Terrakion","legendary":true,"getshiny":true},
 {"dex":640,"name":"Viridium","en":"Virizion","legendary":true,"getshiny":true},
 {"dex":641,"name":"Boreos","de":"Boreos (Inkarnationsform)","en":"Tornadus (Incarnate Forme)","legendary":true},
 {"dex":"641T","name":"Boreos (Tiergeist)","de":"Boreos (Tiergeistform)","en":"Tornadus (Therian Forme)","legendary":true},
@@ -878,6 +878,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.5.19","date":"19.05.2020","change":["Change Raid Bosses (Terrakion's return)","New Shiny: Terrakion"]},
 		{"ver":"1.5.18","date":"15.05.2020","change":["Change Raid Bosses (Throwback Challenge: Hoenn)","New Shiny: Skitty","Quests: Add Treecko, Combusken, Marshtomp, Lotad, Swellow, Ralts, Skitty, Corphish, Snorunt","Quests: Remove Bayleef, Quilava, Totodile, Noctowl, Aipom, Pineco, Dunsparce, Phanpy"]},
 		{"ver":"1.5.17","date":"12.05.2020","change":["Change Raid Bosses (Remote Raid Celebration: Virizion)","New Shiny: Virizion"]},
 		{"ver":"1.5.16","date":"08.05.2020","change":["Change Raid Bosses (Throwback Challenge: Johto)","New Shinies: Voltorb, Dunsparce","Quests: Add Bayleef, Quilava, Totodile, Noctowl, Aipom, Pineco, Dunsparce, Phanpy","Quests: Remove Butterfree, Pikachu, Mankey, Venonat, Muk, Krabby","Add Galarian Farfetch'd and Sirfetch'd"]},
@@ -1016,7 +1017,7 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[640],
+	"tier5":[639],
 	"tier4":[359,308,376,365]
 };
 
