@@ -565,7 +565,7 @@ var pokemon = [
 {"dex":428,"name":"Schlapor","en":"Lopunny","evolved":true},
 {"dex":429,"name":"Traunmagil","en":"Mismagius","evolved":true},
 {"dex":430,"name":"Kramshef","en":"Honchkrow","evolved":true},
-{"dex":431,"name":"Charmian","en":"Glameow"},
+{"dex":431,"name":"Charmian","en":"Glameow","getshiny":true},
 {"dex":432,"name":"Shnurgarst","en":"Purugly","evolved":true},
 {"dex":433,"name":"Klingplim","en":"Chingling","baby":true},
 {"dex":434,"name":"Skunkapuh","en":"Stunky"},
@@ -878,6 +878,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.5.20","date":"22.05.2020","change":["Change Raid Bosses (Throwback Challenge: Sinnoh)","New Shiny: Glameow","Quests: Add Turtwig, Chimchar, Piplup, Starly, Shieldon, Buneary, Glameow, Croagunk","Quests: Remove Treecko, Combusken, Marshtomp, Lotad, Swellow, Ralts, Skitty, Corphish, Snorunt","Add timed message for maintenance on June 1"]},
 		{"ver":"1.5.19","date":"19.05.2020","change":["Change Raid Bosses (Terrakion's return)","New Shiny: Terrakion"]},
 		{"ver":"1.5.18","date":"15.05.2020","change":["Change Raid Bosses (Throwback Challenge: Hoenn)","New Shiny: Skitty","Quests: Add Treecko, Combusken, Marshtomp, Lotad, Swellow, Ralts, Skitty, Corphish, Snorunt","Quests: Remove Bayleef, Quilava, Totodile, Noctowl, Aipom, Pineco, Dunsparce, Phanpy"]},
 		{"ver":"1.5.17","date":"12.05.2020","change":["Change Raid Bosses (Remote Raid Celebration: Virizion)","New Shiny: Virizion"]},
@@ -1018,12 +1019,12 @@ var changelogjson = {
 
 var raids = {
 	"tier5":[639],
-	"tier4":[359,308,376,365]
+	"tier4":[359,437,450,452,460]
 };
 
 var quests = [1,4,7,26,37,60,"74A",81,92,95,100,125,129,133,135,138,140,142,147,171,179,246,309,327,345,347,522,595,618];
-var quests_event = [252,256,259,270,277,280,300,341,361];
-var legacy = [3,9,10,12,16,25,27,29,30,31,32,33,34,35,36,"37A",38,39,40,41,42,44,47,48,50,"50A",51,"52A",55,56,58,59,61,63,66,67,70,72,73,74,77,80,84,85,86,87,88,89,90,96,98,102,"103A",104,107,108,109,111,113,114,117,121,123,124,126,127,131,132,137,153,156,158,164,177,182,183,184,185,187,190,191,193,196,197,200,202,203,204,206,207,209,215,216,219,220,224,227,228,231,234,241,255,261,263,276,285,286,287,290,294,296,299,302,307,310,311,312,313,314,315,316,317,318,320,322,325,328,331,333,335,336,339,343,349,353,359,362,366,387,390,393,399,408,410,412,"412S","412T",415,420,"421S",425,427,436,449,453,459,527,531,562,594,613,622];
+var quests_event = [387,390,393,396,410,427,431,453];
+var legacy = [3,9,10,12,16,25,27,29,30,31,32,33,34,35,36,"37A",38,39,40,41,42,44,47,48,50,"50A",51,"52A",55,56,58,59,61,63,66,67,70,72,73,74,77,80,84,85,86,87,88,89,90,96,98,102,"103A",104,107,108,109,111,113,114,117,121,123,124,126,127,131,132,137,153,156,158,164,177,182,183,184,185,187,190,191,193,196,197,200,202,203,204,206,207,209,215,216,219,220,224,227,228,231,234,241,252,255,256,259,261,263,270,276,277,280,285,286,287,290,294,296,299,300,302,307,310,311,312,313,314,315,316,317,318,320,322,325,328,331,333,335,336,339,341,343,349,353,359,361,362,366,399,408,412,"412S","412T",415,420,"421S",425,436,449,459,527,531,562,594,613,622];
 var forms = ["19A","20A","26A","27A","28A","37A","38A","50A","51A","52A","53A","74A","75A","76A","88A","89A","103A","105A","150R","351I","351R","351S","386A","386D","386S","412S","412T","413S","413T","421S","479F","479H","479I","479M","479W","487O","492S","550B","555Z","641T","642T","645T","646B","646W","648P"];
 var hidden = 1;
 var sel_q = [];
@@ -1034,6 +1035,17 @@ var newnest = oldnest.slice();
 
 
 function init() {
+	// Change Covid message to maintenance message
+	var timenow = new Date().getTime()
+	if (timenow > 1590991200000 && timenow < 1591034400000) {
+		$('#covid').attr("class","alert alert-danger alert-dismissible fade show");
+		$('#covid > strong').html("Von ca. 20 Uhr bis morgen 3 Uhr findet eine Serverwartung bei Pokémon GO statt. In dieser Zeit ist kein Zugriff auf das Spiel möglich.<hr>From around 8:00 p.m. to 3:00 a.m. tomorrow, Pokémon GO will be undergoing server maintenance and will be inaccessible.")
+	}
+	if (timenow >= 1591034400000 && timenow < 1591059600000) {
+		$('#covid').attr("class","alert alert-danger alert-dismissible fade show");
+		$('#covid > strong').html("Zurzeit findet eine Serverwartung bei Pokémon GO statt. Bis vorausichtlich 3 Uhr ist kein Zugriff auf das Spiel möglich.<hr>Pokémon GO is currently undergoing server maintenance and will be inaccessible until around 3:00 a.m.")
+	}
+
 	// make Raids
 	var txt = "";
 	var t3 = 0;
