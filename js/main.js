@@ -878,6 +878,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.5.22","date":"26.05.2020","change":["Change Raid Bosses (Unova's legendary elite: Reshiram)"]},
 		{"ver":"1.5.21","date":"24.05.2020","change":["New Shiny: Seedot"]},
 		{"ver":"1.5.20","date":"22.05.2020","change":["Change Raid Bosses (Throwback Challenge: Sinnoh)","New Shiny: Glameow","Quests: Add Turtwig, Chimchar, Piplup, Starly, Shieldon, Buneary, Glameow, Croagunk","Quests: Remove Treecko, Combusken, Marshtomp, Lotad, Swellow, Ralts, Skitty, Corphish, Snorunt","Add timed message for maintenance on June 1"]},
 		{"ver":"1.5.19","date":"19.05.2020","change":["Change Raid Bosses (Terrakion's return)","New Shiny: Terrakion"]},
@@ -1019,7 +1020,7 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[639],
+	"tier5":[643],
 	"tier4":[359,437,450,452,460]
 };
 
