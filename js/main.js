@@ -192,8 +192,11 @@ var pokemon = [
 {"dex":76,"name":"Geowaz","en":"Golem","evolved":true},
 {"dex":"76A","name":"Alola-Geowaz","en":"Alolan Golem","alolan":true,"evolved":true},
 {"dex":77,"name":"Ponita","en":"Ponyta","getshiny":true},
+{"dex":"77G","name":"Galar-Ponita","en":"Galarian Ponyta","galarian":true},
 {"dex":78,"name":"Gallopa","en":"Rapidash","evolved":true},
+{"dex":"78G","name":"Galar-Gallopa","en":"Galarian Rapidash","evolved":true,"galarian":true},
 {"dex":79,"name":"Flegmon","en":"Slowpoke"},
+{"dex":"79G","name":"Galar-Flegmon","en":"Galarian Slowpoke","galarian":true},
 {"dex":80,"name":"Lahmus","en":"Slowbro","evolved":true},
 {"dex":81,"name":"Magnetilo","en":"Magnemite","getshiny":true},
 {"dex":82,"name":"Magneton","evolved":true},
@@ -243,6 +246,7 @@ var pokemon = [
 {"dex":120,"name":"Sterndu","en":"Staryu"},
 {"dex":121,"name":"Starmie","evolved":true},
 {"dex":122,"name":"Pantimos","en":"Mr. Mime","regional":true,"getshiny":true},
+{"dex":"122G","name":"Galar-Pantimos","en":"Galarian Mr. Mime","regional":true,"galarian":true},
 {"dex":123,"name":"Sichlor","en":"Scyther","getshiny":true},
 {"dex":124,"name":"Rossana","en":"Jynx"},
 {"dex":125,"name":"Elektek","en":"Electabuzz"},
@@ -344,6 +348,7 @@ var pokemon = [
 {"dex":220,"name":"Quiekel","en":"Swinub","getshiny":true},
 {"dex":221,"name":"Keifel","en":"Piloswine","evolved":true},
 {"dex":222,"name":"Corasonn","en":"Corsola","regional":true},
+{"dex":"222G","name":"Galar-Corasonn","en":"Galarian Corsola","regional":true,"galarian":true},
 {"dex":223,"name":"Remoraid"},
 {"dex":224,"name":"Octillery","evolved":true},
 {"dex":225,"name":"Botogel","en":"Delibird","getshiny":true},
@@ -726,6 +731,7 @@ var pokemon = [
 {"dex":560,"name":"Irokex","en":"Scrafty","evolved":true},
 {"dex":561,"name":"Symvolara","en":"Sigilyph","regional":true},
 {"dex":562,"name":"Makabaja","en":"Yamask","getshiny":true},
+{"dex":"562G","name":"Galar-Makabaja","en":"Galarian Yamask","galarian":true},
 {"dex":563,"name":"Echnatoll","en":"Cofagrigus","evolved":true},
 {"dex":564,"name":"Galapaflos","en":"Tirtouga"},
 {"dex":565,"name":"Karippas","en":"Carracosta","evolved":true},
@@ -835,7 +841,10 @@ var pokemon = [
 {"dex":809,"name":"Melmetal","mythical":true,"evolved":true},
 {"dex":862,"name":"Barrikadax","en":"Obstagoon","evolved":true},
 {"dex":863,"name":"Mauzinger","en":"Perrserker","evolved":true},
-{"dex":865,"name":"Lauchzelot","en":"Sirfetch'd","evolved":true}
+{"dex":864,"name":"Gorgasonn","en":"Cursola","regional":true,"evolved":true},
+{"dex":865,"name":"Lauchzelot","en":"Sirfetch'd","evolved":true},
+{"dex":866,"name":"Pantifrost","en":"Mr. Rime","regional":true,"evolved":true},
+{"dex":867,"name":"Oghnatoll","en":"Runerigus","evolved":true}
 ];
 
 var items = [
@@ -878,6 +887,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.5.23","date":"29.05.2020","change":["Change Raid Bosses (End of Throwback Challenge)","Quests: Remove Turtwig, Chimchar, Piplup, Starly, Shieldon, Buneary, Glameow, Croagunk","Add all remaining Galar forms and their evolutions"]},
 		{"ver":"1.5.22","date":"26.05.2020","change":["Change Raid Bosses (Unova's legendary elite: Reshiram)"]},
 		{"ver":"1.5.21","date":"24.05.2020","change":["New Shiny: Seedot"]},
 		{"ver":"1.5.20","date":"22.05.2020","change":["Change Raid Bosses (Throwback Challenge: Sinnoh)","New Shiny: Glameow","Quests: Add Turtwig, Chimchar, Piplup, Starly, Shieldon, Buneary, Glameow, Croagunk","Quests: Remove Treecko, Combusken, Marshtomp, Lotad, Swellow, Ralts, Skitty, Corphish, Snorunt","Add timed message for maintenance on June 1"]},
@@ -1021,12 +1031,12 @@ var changelogjson = {
 
 var raids = {
 	"tier5":[643],
-	"tier4":[359,437,450,452,460]
+	"tier4":["105A","110G",112,530,306]
 };
 
 var quests = [1,4,7,26,37,60,"74A",81,92,95,100,125,129,133,135,138,140,142,147,171,179,246,309,327,345,347,522,595,618];
-var quests_event = [387,390,393,396,410,427,431,453];
-var legacy = [3,9,10,12,16,25,27,29,30,31,32,33,34,35,36,"37A",38,39,40,41,42,44,47,48,50,"50A",51,"52A",55,56,58,59,61,63,66,67,70,72,73,74,77,80,84,85,86,87,88,89,90,96,98,102,"103A",104,107,108,109,111,113,114,117,121,123,124,126,127,131,132,137,153,156,158,164,177,182,183,184,185,187,190,191,193,196,197,200,202,203,204,206,207,209,215,216,219,220,224,227,228,231,234,241,252,255,256,259,261,263,270,273,276,277,280,285,286,287,290,294,296,299,300,302,307,310,311,312,313,314,315,316,317,318,320,322,325,328,331,333,335,336,339,341,343,349,353,359,361,362,366,399,408,412,"412S","412T",415,420,"421S",425,436,449,459,527,531,562,594,613,622];
+var quests_event = [];
+var legacy = [3,9,10,12,16,25,27,29,30,31,32,33,34,35,36,"37A",38,39,40,41,42,44,47,48,50,"50A",51,"52A",55,56,58,59,61,63,66,67,70,72,73,74,77,80,84,85,86,87,88,89,90,96,98,102,"103A",104,107,108,109,111,113,114,117,121,123,124,126,127,131,132,137,153,156,158,164,177,182,183,184,185,187,190,191,193,196,197,200,202,203,204,206,207,209,215,216,219,220,224,227,228,231,234,241,252,255,256,259,261,263,270,273,276,277,280,285,286,287,290,294,296,299,300,302,307,310,311,312,313,314,315,316,317,318,320,322,325,328,331,333,335,336,339,341,343,349,353,359,361,362,366,387,390,393,396,399,408,410,412,"412S","412T",415,420,"421S",425,427,431,436,449,453,459,527,531,562,594,613,622];
 var forms = ["19A","20A","26A","27A","28A","37A","38A","50A","51A","52A","53A","74A","75A","76A","88A","89A","103A","105A","150R","351I","351R","351S","386A","386D","386S","412S","412T","413S","413T","421S","479F","479H","479I","479M","479W","487O","492S","550B","555Z","641T","642T","645T","646B","646W","648P"];
 var hidden = 1;
 var sel_q = [];
