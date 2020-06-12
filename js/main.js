@@ -198,6 +198,7 @@ var pokemon = [
 {"dex":79,"name":"Flegmon","en":"Slowpoke"},
 {"dex":"79G","name":"Galar-Flegmon","en":"Galarian Slowpoke","galarian":true},
 {"dex":80,"name":"Lahmus","en":"Slowbro","evolved":true},
+{"dex":"80G","name":"Galar-Lahmus","en":"Galarian Slowbro","evolved":true,"galarian":true},
 {"dex":81,"name":"Magnetilo","en":"Magnemite","getshiny":true},
 {"dex":82,"name":"Magneton","evolved":true},
 {"dex":83,"name":"Porenta","en":"Farfetch'd","regional":true,"getshiny":true},
@@ -887,6 +888,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.5.25","date":"12.06.2020","change":["Change Raid Bosses (Latios/Latias Special Raid Weekend)"]},
 		{"ver":"1.5.24","date":"02.06.2020","change":["Quests: Add Sandslash, Diglett, Cubone, Rhyhorn, Wooper, Swinub, Marshtomp, Numel, Barboach, Hippopotas, Drilbur, Palpitoad","Quests: Remove Raichu, Alolan Geodude, Magnemite, Electabuzz, Jolteon, Lanturn, Mareep, Electrike, Blitzle, Joltik"]},
 		{"ver":"1.5.23","date":"29.05.2020","change":["Change Raid Bosses (End of Throwback Challenge)","Quests: Remove Turtwig, Chimchar, Piplup, Starly, Shieldon, Buneary, Glameow, Croagunk","Add all remaining Galar forms and their evolutions"]},
 		{"ver":"1.5.22","date":"26.05.2020","change":["Change Raid Bosses (Unova's legendary elite: Reshiram)"]},
@@ -1031,7 +1033,7 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[643],
+	"tier5":[380,381,643],
 	"tier4":["105A","110G",112,530,306]
 };
 
