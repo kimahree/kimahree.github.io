@@ -887,7 +887,8 @@ var specialfilter = [
 ];
 
 var changelogjson = {
-	"items": [
+	"items": 
+		{"ver":"1.5.26","date":"15.06.2020","change":["Change Raid Bosses (End of Latios/Latias Special Raid Weekend)"]},
 		{"ver":"1.5.25","date":"12.06.2020","change":["Change Raid Bosses (Latios/Latias Special Raid Weekend)"]},
 		{"ver":"1.5.24","date":"02.06.2020","change":["Quests: Add Sandslash, Diglett, Cubone, Rhyhorn, Wooper, Swinub, Marshtomp, Numel, Barboach, Hippopotas, Drilbur, Palpitoad","Quests: Remove Raichu, Alolan Geodude, Magnemite, Electabuzz, Jolteon, Lanturn, Mareep, Electrike, Blitzle, Joltik"]},
 		{"ver":"1.5.23","date":"29.05.2020","change":["Change Raid Bosses (End of Throwback Challenge)","Quests: Remove Turtwig, Chimchar, Piplup, Starly, Shieldon, Buneary, Glameow, Croagunk","Add all remaining Galar forms and their evolutions"]},
@@ -1033,7 +1034,7 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[380,381,643],
+	"tier5":[643],
 	"tier4":["105A","110G",112,530,306]
 };
 
