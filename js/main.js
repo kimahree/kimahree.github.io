@@ -888,6 +888,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.5.27","date":"16.06.2020","change":["Change Raid Bosses (Unova's legendary elite: Zekrom)"]},
 		{"ver":"1.5.26","date":"15.06.2020","change":["Change Raid Bosses (End of Latios/Latias Special Raid Weekend)"]},
 		{"ver":"1.5.25","date":"12.06.2020","change":["Change Raid Bosses (Latios/Latias Special Raid Weekend)"]},
 		{"ver":"1.5.24","date":"02.06.2020","change":["Quests: Add Sandslash, Diglett, Cubone, Rhyhorn, Wooper, Swinub, Marshtomp, Numel, Barboach, Hippopotas, Drilbur, Palpitoad","Quests: Remove Raichu, Alolan Geodude, Magnemite, Electabuzz, Jolteon, Lanturn, Mareep, Electrike, Blitzle, Joltik"]},
@@ -1034,8 +1035,8 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[643],
-	"tier4":["105A","110G",112,530,306]
+	"tier5":[644],
+	"tier4":["105A","110G",131,530,176]
 };
 
 var quests = [1,4,7,28,37,50,60,92,95,100,104,111,129,133,138,140,142,147,194,220,246,259,322,327,339,345,347,449,529,536,618];
