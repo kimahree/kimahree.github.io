@@ -888,6 +888,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.5.35","date":"06.07.2020","change":["Change Raid Bosses again",]},
 		{"ver":"1.5.34","date":"06.07.2020","change":["Change Raid Bosses (End of Ho-Oh Special Raid Weekend)",'[Gesundbrunnen] Add EX-Raid tag for "Laughing Sun"']},
 		{"ver":"1.5.33","date":"03.07.2020","change":["New Shiny: Pidove","Change Raid Bosses (Fourth-anniversary Event)","Quests: Add Pidgey, Natu, Hoppip, Murkrow, Gligar, Skarmory, Taillow, Swablu, Starly, Drifloon, Pidove"]},
 		{"ver":"1.5.32","date":"01.07.2020","change":["Change Raid Bosses (End of Bug Out Event)","Quests: Add Alolan Geodude, Graveler, Rhydon, Sudowoodo, Shuckle, Nosepass, Aron","Quests: Remove Sandslash, Diglett, Cubone, Rhyhorn, Scyther, Wooper, Pineco, Swinub, Marshtomp, Numel, Barboach, Burmy, Hippopotas, Drilbur, Palpitoad, Karrablast, Shelmet"]},
@@ -1043,7 +1044,7 @@ var changelogjson = {
 
 var raids = {
 	"tier5":[644],
-	"tier4":[248,76,160,131]
+	"tier4":["105A",373,149,18,176]
 };
 
 var quests = [1,4,7,37,60,"74A",75,92,95,100,112,129,133,138,140,142,147,185,213,246,299,304,327,345,347,557,618];
