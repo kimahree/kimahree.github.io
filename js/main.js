@@ -888,6 +888,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.5.36","date":"07.07.2020","change":["Change Raid Bosses once more (Unova's legendary elite: Kyurem)",]},
 		{"ver":"1.5.35","date":"06.07.2020","change":["Change Raid Bosses again",]},
 		{"ver":"1.5.34","date":"06.07.2020","change":["Change Raid Bosses (End of Ho-Oh Special Raid Weekend)",'[Gesundbrunnen] Add EX-Raid tag for "Laughing Sun"']},
 		{"ver":"1.5.33","date":"03.07.2020","change":["New Shiny: Pidove","Change Raid Bosses (Fourth-anniversary Event)","Quests: Add Pidgey, Natu, Hoppip, Murkrow, Gligar, Skarmory, Taillow, Swablu, Starly, Drifloon, Pidove"]},
@@ -1043,7 +1044,7 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[644],
+	"tier5":[646],
 	"tier4":["105A",373,149,18,176]
 };
 
