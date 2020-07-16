@@ -888,6 +888,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.5.39","date":"16.07.2020","change":["Change Raid Bosses (End of Team GO Rocket takeover event)",]},
 		{"ver":"1.5.38","date":"10.07.2020","change":["Change Raid Bosses once again (Team GO Rocket takeover event)",]},
 		{"ver":"1.5.37","date":"08.07.2020","change":["Change Raid Bosses one more time (End of Fourth-anniversary event)","Quests: Remove Pidgey, Natu, Hoppip, Murkrow, Gligar, Skarmory, Taillow, Swablu, Starly, Drifloon, Pidove"]},
 		{"ver":"1.5.36","date":"07.07.2020","change":["Change Raid Bosses once more (Unova's legendary elite: Kyurem)",]},
@@ -1047,7 +1048,7 @@ var changelogjson = {
 
 var raids = {
 	"tier5":[646],
-	"tier4":[359,"105A",34,71,108]
+	"tier4":[248,76,376,176]
 };
 
 var quests = [1,4,7,37,60,"74A",75,92,95,100,112,129,133,138,140,142,147,185,213,246,299,304,327,345,347,557,618];
