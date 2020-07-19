@@ -1763,7 +1763,11 @@ function TierCheck() {
 		if (custom != null) {
 			nr.remove(tcindex);
 			var nc = document.createElement("option");
-			nc.text = cl=="de" ? "Anderer Raidboss" : "Custom Raid Boss";
+			nc.text = cl=="de" ? "Anderer Raidboss ("+custom+")" : "Custom Raid Boss ("+custom+")";
+			raid_de.pop();
+			raid_de.push("Anderer Raidboss ("+custom+")");
+			raid_en.pop();
+			raid_en.push("Custom Raid Boss ("+custom+")");
 			nc.setAttribute("id","tc")
 			nc.setAttribute("value",custom);
 			nr.add(nc,tcindex);
