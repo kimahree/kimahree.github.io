@@ -892,6 +892,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.6 BETA","date":"20.07.2020","change":["Add Tier 1, 2 and 3 raids","Add Custom Raid Boss option"]},
 		{"ver":"1.5.40","date":"17.07.2020","change":["New Shiny: Bellsprout","Change Raid Bosses (Summer event)","Quests: Add Bellsprout, Slowpoke, Shellder, Snorlax, Slakoth, Clamperl, Petilil"]},
 		{"ver":"1.5.39","date":"16.07.2020","change":["Change Raid Bosses (End of Team GO Rocket takeover event)",]},
 		{"ver":"1.5.38","date":"10.07.2020","change":["Change Raid Bosses once again (Team GO Rocket takeover event)",]},
@@ -1053,7 +1054,10 @@ var changelogjson = {
 
 var raids = {
 	"tier5":[646],
-	"tier4":[359,"105A",131,143]
+	"tier4":[359,"105A",131,143],
+	"tier3":["26A",342,189,114],
+	"tier2":["103A",449,126,315,28],
+	"tier1":[287,548,532,320,278]
 };
 
 var quests = [1,4,7,37,60,"74A",75,92,95,100,112,129,133,138,140,142,147,185,213,246,299,304,327,345,347,557,618];
