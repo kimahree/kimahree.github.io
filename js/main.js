@@ -1,6 +1,10 @@
 ﻿var t5multi = 0;
+var t5index = 0;
 var t4index = 0;
 var t3index = 0;
+var t2index = 0;
+var t1index = 0;
+var tcindex = 0;
 
 var hatchtimer = 60;
 var raidtimer = 45;
@@ -68,7 +72,7 @@ var warn_de =["",
 "Bitte wähle eine Arena aus.",
 "Die Schlüpfzeit kann nicht mehr als " + hatchtimer + " Minuten in der Zukunft liegen.",
 "Bitte geb eine Uhrzeit ein.",
-'Das 4er Ei ist noch nicht ausgeschlüpft, bitte wähle bei Raid "4er Ei" aus.',
+'Das Ei ist noch nicht ausgeschlüpft, bitte wähle bei Raid die "Ei"-Option aus.',
 'Das 5er Ei ist noch nicht ausgeschlüpft, bitte wähle bei Raid "5er Ei" aus.',
 "Fehler beim Einlesen der Daten",
 "Bitte geb eine passende Startzeit ein."
@@ -86,7 +90,7 @@ var warn_en =["",
 "Please choose a gym.",
 "The hatch time must be within " + hatchtimer + " minutes from now.",
 "Please enter a time.",
-'The Tier 4 egg has not hatched yet, so please choose "Tier 4 egg" as raid.',
+'The egg has not hatched yet, so please choose the "egg" option as raid.',
 'The Tier 5 egg has not hatched yet, so please choose "Tier 5 egg" as raid.',
 "Failed to parse the input",
 "Please enter a valid start time."
@@ -145,7 +149,7 @@ var pokemon = [
 {"dex":"37A","name":"Alola-Vulpix","en":"Alolan Vulpix","alolan":true,"getshiny":true},
 {"dex":38,"name":"Vulnona","en":"Ninetales","evolved":true},
 {"dex":"38A","name":"Alola-Vulnona","en":"Alolan Ninetales","alolan":true,"evolved":true},
-{"dex":39,"name":"Pummeluff","en":"Jigglypuff"},
+{"dex":39,"name":"Pummeluff","en":"Jigglypuff","getshiny":true},
 {"dex":40,"name":"Knuddeluff","en":"Wigglytuff","evolved":true},
 {"dex":41,"name":"Zubat","getshiny":true},
 {"dex":42,"name":"Golbat","evolved":true},
@@ -238,7 +242,7 @@ var pokemon = [
 {"dex":111,"name":"Rihorn","en":"Rhyhorn","getshiny":true},
 {"dex":112,"name":"Rizeros","en":"Rhydon","evolved":true},
 {"dex":113,"name":"Chaneira","en":"Chansey","getshiny":true},
-{"dex":114,"name":"Tangela"},
+{"dex":114,"name":"Tangela","getshiny":true},
 {"dex":115,"name":"Kangama","en":"Kangaskhan","regional":true,"getshiny":true},
 {"dex":116,"name":"Seeper","en":"Horsea","getshiny":true},
 {"dex":117,"name":"Seedra","en":"Seadra","evolved":true},
@@ -327,7 +331,35 @@ var pokemon = [
 {"dex":198,"name":"Kramurx","en":"Murkrow","getshiny":true},
 {"dex":199,"name":"Laschoking","en":"Slowking","evolved":true},
 {"dex":200,"name":"Traunfugil","en":"Misdreavus","getshiny":true},
-{"dex":201,"name":"Icognito","en":"Unown"},
+{"dex":201,"name":"Icognito","en":"Unown","getshiny":true},
+{"dex":"201A","name":"Icognito A","en":"Unown A","getshiny":true},
+{"dex":"201B","name":"Icognito B","en":"Unown B","getshiny":true},
+{"dex":"201C","name":"Icognito C","en":"Unown C","getshiny":true},
+{"dex":"201D","name":"Icognito D","en":"Unown D","getshiny":true},
+{"dex":"201E","name":"Icognito E","en":"Unown E","getshiny":true},
+{"dex":"201F","name":"Icognito F","en":"Unown F","getshiny":true},
+{"dex":"201G","name":"Icognito G","en":"Unown G","getshiny":true},
+{"dex":"201H","name":"Icognito H","en":"Unown H","getshiny":true},
+{"dex":"201I","name":"Icognito I","en":"Unown I","getshiny":true},
+{"dex":"201J","name":"Icognito J","en":"Unown J","getshiny":true},
+{"dex":"201K","name":"Icognito K","en":"Unown K","getshiny":true},
+{"dex":"201L","name":"Icognito L","en":"Unown L","getshiny":true},
+{"dex":"201M","name":"Icognito M","en":"Unown M","getshiny":true},
+{"dex":"201N","name":"Icognito N","en":"Unown N","getshiny":true},
+{"dex":"201O","name":"Icognito O","en":"Unown O","getshiny":true},
+{"dex":"201P","name":"Icognito P","en":"Unown P","getshiny":true},
+{"dex":"201Q","name":"Icognito Q","en":"Unown Q","getshiny":true},
+{"dex":"201R","name":"Icognito R","en":"Unown R","getshiny":true},
+{"dex":"201S","name":"Icognito S","en":"Unown S","getshiny":true},
+{"dex":"201T","name":"Icognito T","en":"Unown T","getshiny":true},
+{"dex":"201U","name":"Icognito U","en":"Unown U","getshiny":true},
+{"dex":"201V","name":"Icognito V","en":"Unown V","getshiny":true},
+{"dex":"201W","name":"Icognito W","en":"Unown W","getshiny":true},
+{"dex":"201X","name":"Icognito X","en":"Unown X","getshiny":true},
+{"dex":"201Y","name":"Icognito Y","en":"Unown Y","getshiny":true},
+{"dex":"201Z","name":"Icognito Z","en":"Unown Z","getshiny":true},
+{"dex":"201Em","name":"Icognito !","en":"Unown !","getshiny":true},
+{"dex":"201Qm","name":"Icognito ?","en":"Unown ?","getshiny":true},
 {"dex":202,"name":"Woingenau","en":"Wobbuffet","getshiny":true},
 {"dex":203,"name":"Girafarig"},
 {"dex":204,"name":"Tannza","en":"Pineco","getshiny":true},
@@ -337,7 +369,7 @@ var pokemon = [
 {"dex":208,"name":"Stahlos","en":"Steelix","evolved":true},
 {"dex":209,"name":"Snubbull","getshiny":true},
 {"dex":210,"name":"Granbull","evolved":true},
-{"dex":211,"name":"Baldorfish","en":"Quilfish"},
+{"dex":211,"name":"Baldorfish","en":"Quilfish","getshiny":true},
 {"dex":212,"name":"Scherox","en":"Scizor","evolved":true},
 {"dex":213,"name":"Pottrott","en":"Shuckle","getshiny":true},
 {"dex":214,"name":"Skaraborn","en":"Heracross","regional":true},
@@ -691,7 +723,7 @@ var pokemon = [
 {"dex":524,"name":"Kiesling","en":"Roggenrola"},
 {"dex":525,"name":"Sedimantur","en":"Boldore","evolved":true},
 {"dex":526,"name":"Brockoloss","en":"Gigalith","evolved":true},
-{"dex":527,"name":"Fleknoil","en":"Woobat"},
+{"dex":527,"name":"Fleknoil","en":"Woobat","getshiny":true},
 {"dex":528,"name":"Fletiamo","en":"Swoobat","evolved":true},
 {"dex":529,"name":"Rotomurf","en":"Drilbur"},
 {"dex":530,"name":"Stalobor","en":"Excadrill","evolved":true},
@@ -803,13 +835,13 @@ var pokemon = [
 {"dex":623,"name":"Golgantes","en":"Golurk","evolved":true},
 {"dex":624,"name":"Gladiantri","en":"Pawniard"},
 {"dex":625,"name":"Caesurio","en":"Bisharp","evolved":true},
-{"dex":626,"name":"Bisofank","en":"Bouffalant"},
+{"dex":626,"name":"Bisofank","en":"Bouffalant","regional":true},
 {"dex":627,"name":"Geronimatz","en":"Rufflet"},
 {"dex":628,"name":"Washakwil","en":"Braviary","evolved":true},
 {"dex":629,"name":"Skallyk","en":"Vullaby"},
 {"dex":630,"name":"Grypheldis","en":"Mandibuzz","evolved":true},
-{"dex":631,"name":"Furnifraß","en":"Heatmor","regional":true},
-{"dex":632,"name":"Fermicula","en":"Durant","regional":true},
+{"dex":631,"name":"Furnifraß","en":"Heatmor","regional":true,"getshiny":true},
+{"dex":632,"name":"Fermicula","en":"Durant","regional":true,"getshiny":true},
 {"dex":633,"name":"Kapuno","en":"Deino"},
 {"dex":634,"name":"Duodino","en":"Zweilous","evolved":true},
 {"dex":635,"name":"Trikephalo","en":"Hydreigon","evolved":true},
@@ -888,7 +920,8 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
-		{"ver":"1.5.41","date":"23.07.2020","change":["New Shiny: Bellsprout","Change Raid Bosses (End of Summer event)","Quests: Remove Bellsprout, Slowpoke, Shellder, Snorlax, Slakoth, Clamperl, Petilil"]},
+		{"ver":"1.6","date":"25.07.2020","change":["Add Custom Raid Boss option","Add support for Tier 1-3 raids for future events","Add all Unown forms","New Shinies: Jigglypuff, Tangela, Unown, Qwilfish, Woobat, Heatmor, Durant","Change Raid Bosses (Pokémon GO Fest 2020 - Day 1)"]},
+		{"ver":"1.5.41","date":"23.07.2020","change":["Change Raid Bosses (End of Summer event)","Quests: Remove Bellsprout, Slowpoke, Shellder, Snorlax, Slakoth, Clamperl, Petilil"]},
 		{"ver":"1.5.40","date":"17.07.2020","change":["New Shiny: Bellsprout","Change Raid Bosses (Summer event)","Quests: Add Bellsprout, Slowpoke, Shellder, Snorlax, Slakoth, Clamperl, Petilil"]},
 		{"ver":"1.5.39","date":"16.07.2020","change":["Change Raid Bosses (End of Team GO Rocket takeover event)",]},
 		{"ver":"1.5.38","date":"10.07.2020","change":["Change Raid Bosses once again (Team GO Rocket takeover event)",]},
@@ -1049,8 +1082,8 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[646],
-	"tier4":[248,76,376,176]
+	"tier5":[383,382],
+	"tier4":[3,6,9]
 };
 
 var quests = [1,4,7,37,60,"74A",75,92,95,100,112,129,133,138,140,142,147,185,213,246,299,304,327,345,347,557,618];
@@ -1079,6 +1112,8 @@ function init() {
 
 	// make Raids
 	var txt = "";
+	var t1 = 0;
+	var t2 = 0;
 	var t3 = 0;
 	var t4 = 0;
 	var t5 = 0;
@@ -1128,7 +1163,13 @@ function init() {
 		t3 = raids.tier3.length; 
 	} catch {}
 	if (t3 > 0) {
-		txt += '<optgroup id="t3" label="3er, 2er, 1er">';
+		txt += '<optgroup id="t3" label="3er"><option ';
+		if (t3 == 1) {
+			txt += "hidden disabled ";
+		}
+		txt += 'value="3er" style="font-style:italic">3er Ei</option>';
+		raid_de.push("3er Ei");
+		raid_en.push("Tier 3 Egg");
 		for (i = 0; i < t3; i++) {
 			var rp = getPkmnByDex(raids.tier3[i])[0];
 			var d = (rp.de) ? rp.de:rp.name;
@@ -1139,19 +1180,99 @@ function init() {
 		}
 		txt += '</optgroup>'
 	}
+	try { 
+		t2 = raids.tier2.length; 
+	} catch {}
+	if (t2 > 0) {
+		txt += '<optgroup id="t2" label="2er"><option ';
+		if (t2 == 1) {
+			txt += "hidden disabled ";
+		}
+		txt += 'value="2er" style="font-style:italic">2er Ei</option>';
+		raid_de.push("2er Ei");
+		raid_en.push("Tier 2 Egg");
+		for (i = 0; i < t2; i++) {
+			var rp = getPkmnByDex(raids.tier2[i])[0];
+			var d = (rp.de) ? rp.de:rp.name;
+			var e = (rp.en) ? rp.en:rp.name;
+			txt += '<option value="' + rp.name + '">' + d + '</option>';
+			raid_de.push(d);
+			raid_en.push(e);
+		}
+		txt += '</optgroup>'
+	}	
+	try { 
+		t1 = raids.tier1.length; 
+	} catch {}
+	if (t1 > 0) {
+		txt += '<optgroup id="t1" label="1er"><option ';
+		if (t1 == 1) {
+			txt += "hidden disabled ";
+		}
+		txt += 'value="1er" style="font-style:italic">1er Ei</option>';
+		raid_de.push("1er Ei");
+		raid_en.push("Tier 1 Egg");
+		for (i = 0; i < t1; i++) {
+			var rp = getPkmnByDex(raids.tier1[i])[0];
+			var d = (rp.de) ? rp.de:rp.name;
+			var e = (rp.en) ? rp.en:rp.name;
+			txt += '<option value="' + rp.name + '">' + d + '</option>';
+			raid_de.push(d);
+			raid_en.push(e);
+		}
+		txt += '</optgroup>'
+	}	
 	if (!txt) {
 		txt = '<option selected disabled value="" style="font-style:italic">Keine Raids verfügbar.</option>';
 		raid_de.push("Keine Raids verfügbar.");
 		raid_en.push("No raids available.")
+	} else {
+		txt += '<optgroup><option value="custom">Anderer Raidboss</option></optgroup>'
+		raid_de.push("Anderer Raidboss");
+		raid_en.push("Custom Raid Boss");
 	}
 	document.getElementById("raid").innerHTML = txt;
 	
 	if (t5 > 1 && t5over == 0) {
 		t5multi = 1;
 	}
+	t5index = (t5) ? 1:0;
 	t4index = (t4) ? t5+1:0;
-	t3index = (t3) ? t5+t4+1:0;
-	
+	t3index = (t3) ? t5+t4+2:0;
+	t2index = (t2) ? t5+t4+t3+3:0;
+	t1index = (t1) ? t5+t4+t3+t2+4:0;
+	tcindex = t5+t4+t3+t2+t1+5;
+
+	if (!t5) {
+		t4index--;
+		t3index--;
+		t2index--;
+		t1index--;
+		tcindex--;
+	}
+
+	if (!t4) {
+		t3index--;
+		t2index--;
+		t1index--;
+		tcindex--;
+	}	
+
+	if (!t3) {
+		t2index--;
+		t1index--;
+		tcindex--;
+	}
+
+	if (!t2) {
+		t1index--;
+		tcindex--;
+	}
+
+	if (!t1) {
+		tcindex--;
+	}
+
 	// make Gym list
 	
 	var txt = "";
@@ -1483,8 +1604,8 @@ function checkTime() {
 		hatchwarn = 3; // Raid abgelaufen
 	} else if (hat2 > hatchtimer*60000) {
 		hatchwarn = 10; // Schlüpft zu weit in der Zukunft
-	} else if (hat2 > 0 && ra > t4index) {
-		hatchwarn = 12; // 4er noch nicht geschlüpft
+	} else if (hat2 > 0 && (ra > t4index && ra != t3index && ra != t2index && ra != t1index && ra != tcindex)) {
+		hatchwarn = 12; // Ei noch nicht geschlüpft
 	} else if (t5multi && hat2 > 0 && ra > 0) {
 		hatchwarn = 13; // 5er noch nicht geschlüpft (wenn mehr als 1 5er)
 	} else {
@@ -1551,7 +1672,7 @@ function changeLang() {
 		} catch {}
 	}
 	
-	$("#raid>optgroup>option").text(function(i,origText){
+	$("#raid>optgroup>option, #tc").text(function(i,origText){
 		return raid_de[raid_en.indexOf(origText)];
 	});
 	
@@ -1589,8 +1710,11 @@ function changeLang() {
 	tinysort("#itemlist button");	
 	tinysort("#legacylist button");	
 	
-	tinysort("#t5>option:not(:first-child)");
-	tinysort("#t4>option:not(:first-child)");
+	if (t5index > 0) { tinysort("#t5>option:not(:first-child)"); }
+	if (t4index > 0) { tinysort("#t4>option:not(:first-child)"); }
+	if (t3index > 0) { tinysort("#t3>option:not(:first-child)"); }
+	if (t2index > 0) { tinysort("#t2>option:not(:first-child)"); }
+	if (t1index > 0) { tinysort("#t1>option:not(:first-child)"); }
 	
 	$('.selectpicker').selectpicker('refresh');
   }
@@ -1601,7 +1725,7 @@ function changeLang() {
 		} catch {}
 	}
 	
-	$("#raid>optgroup>option").text(function(i,origText){
+	$("#raid>optgroup>option, #tc").text(function(i,origText){
 		return raid_en[raid_de.indexOf(origText)];
 	});
 	
@@ -1639,8 +1763,11 @@ function changeLang() {
 	tinysort("#itemlist button");	
 	tinysort("#legacylist button");	
 	
-	tinysort("#t5>option:not(:first-child)");
-	tinysort("#t4>option:not(:first-child)");
+	if (t5index > 0) { tinysort("#t5>option:not(:first-child)"); }
+	if (t4index > 0) { tinysort("#t4>option:not(:first-child)"); }
+	if (t3index > 0) { tinysort("#t3>option:not(:first-child)"); }
+	if (t2index > 0) { tinysort("#t2>option:not(:first-child)"); }
+	if (t1index > 0) { tinysort("#t1>option:not(:first-child)"); }
 	
 	$('.selectpicker').selectpicker('refresh');
 
@@ -1653,7 +1780,35 @@ function getLang() {
 
 function TierCheck() {
 	var ind = document.getElementById("raid").selectedIndex;
-	if (hatchwarn == 12 && (ind == t4index || ind === 0 || (!t5multi && ind == 1))) {
+	if (ind == tcindex) {
+		var nr = document.getElementById("raid");
+		var custom
+		var cl = getLang()
+		if (cl == "de") {
+			custom = prompt("Gib den Namen des Raidboss ein.",document.getElementById("raid")[1].value)
+		} else {
+			custom = prompt("Enter the name of the raid boss.",document.getElementById("raid")[1].value)
+		}
+		custom = custom.replace(/<.+?>/g,"")
+		if (custom != null && custom != "") {
+			nr.remove(tcindex);
+			var nc = document.createElement("option");
+			nc.text = cl=="de" ? "Anderer Raidboss ("+custom+")" : "Custom Raid Boss ("+custom+")";
+			raid_de.pop();
+			raid_de.push("Anderer Raidboss ("+custom+")");
+			raid_en.pop();
+			raid_en.push("Custom Raid Boss ("+custom+")");
+			nc.setAttribute("id","tc")
+			nc.setAttribute("value",custom);
+			nr.add(nc,tcindex);
+			nr.value = custom;
+			$('#raid.selectpicker').selectpicker('refresh');
+		} else {
+			$('#raid.selectpicker').selectpicker('val',$("#raid>optgroup>option:nth-child(2)").val());
+		}
+		
+	}
+	if (hatchwarn == 12 && (ind == t4index || ind == t3index || ind == t2index || ind == t1index || ind === 0 || (!t5multi && ind == 1))) {
 		hatchwarn = 0;
 		document.getElementById("timeh").innerHTML = "";
 	}
