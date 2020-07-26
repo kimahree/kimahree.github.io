@@ -664,7 +664,7 @@ var pokemon = [
 {"dex":484,"name":"Palkia","legendary":true},
 {"dex":485,"name":"Heatran","legendary":true,"getshiny":true},
 {"dex":486,"name":"Regigigas","legendary":true},
-{"dex":487,"name":"Giratina","de":"Giratina (Wandelform)","en":"Giratina (Altered Forme)","legendary":true,"getshiny":true},
+{"dex":487,"name":"Giratina (Wandel)","de":"Giratina (Wandelform)","en":"Giratina (Altered Forme)","legendary":true,"getshiny":true},
 {"dex":"487O","name":"Giratina (Urform)","de":"Giratina (Urform)","en":"Giratina (Origin Forme)","legendary":true},
 {"dex":488,"name":"Cresselia","legendary":true,"getshiny":true},
 {"dex":489,"name":"Phione","mythical":true},
@@ -920,6 +920,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.6.1","date":"26.07.2020","change":["Change Raid Bosses (Pokémon GO Fest 2020 - Day 2)"]},
 		{"ver":"1.6","date":"25.07.2020","change":["Add Custom Raid Boss option","Add support for Tier 1-3 raids for future events","Add all Unown forms","New Shinies: Jigglypuff, Tangela, Unown, Qwilfish, Woobat, Heatmor, Durant","Change Raid Bosses (Pokémon GO Fest 2020 - Day 1)"]},
 		{"ver":"1.5.41","date":"23.07.2020","change":["Change Raid Bosses (End of Summer event)","Quests: Remove Bellsprout, Slowpoke, Shellder, Snorlax, Slakoth, Clamperl, Petilil"]},
 		{"ver":"1.5.40","date":"17.07.2020","change":["New Shiny: Bellsprout","Change Raid Bosses (Summer event)","Quests: Add Bellsprout, Slowpoke, Shellder, Snorlax, Slakoth, Clamperl, Petilil"]},
@@ -1082,7 +1083,7 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[383,382],
+	"tier5":[483,"487O",487,484],
 	"tier4":[3,6,9]
 };
 
