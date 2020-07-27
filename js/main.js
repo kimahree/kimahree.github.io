@@ -920,6 +920,7 @@ var specialfilter = [
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.6.2","date":"27.07.2020","change":["Change Raid Bosses (End of Pokémon GO Fest 2020)"]},
 		{"ver":"1.6.1","date":"26.07.2020","change":["Change Raid Bosses (Pokémon GO Fest 2020 - Day 2)"]},
 		{"ver":"1.6","date":"25.07.2020","change":["Add Custom Raid Boss option","Add support for Tier 1-3 raids for future events","Add all Unown forms","New Shinies: Jigglypuff, Tangela, Unown, Qwilfish, Woobat, Heatmor, Durant","Change Raid Bosses (Pokémon GO Fest 2020 - Day 1)"]},
 		{"ver":"1.5.41","date":"23.07.2020","change":["Change Raid Bosses (End of Summer event)","Quests: Remove Bellsprout, Slowpoke, Shellder, Snorlax, Slakoth, Clamperl, Petilil"]},
@@ -1083,8 +1084,8 @@ var changelogjson = {
 };
 
 var raids = {
-	"tier5":[483,"487O",487,484],
-	"tier4":[3,6,9]
+	"tier5":[646],
+	"tier4":[248,76,376,176]
 };
 
 var quests = [1,4,7,37,60,"74A",75,92,95,100,112,129,133,138,140,142,147,185,213,246,299,304,327,345,347,557,618];
