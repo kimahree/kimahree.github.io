@@ -332,7 +332,7 @@ var pokemon = [
 {"dex":199,"name":"Laschoking","en":"Slowking","evolved":true},
 {"dex":200,"name":"Traunfugil","en":"Misdreavus","getshiny":true},
 {"dex":201,"name":"Icognito","en":"Unown"},
-{"dex":"201A","name":"Icognito A","en":"Unown A","getshiny":true},
+{"dex":"201A","name":"Icognito A","en":"Unown A"},
 {"dex":"201B","name":"Icognito B","en":"Unown B"},
 {"dex":"201C","name":"Icognito C","en":"Unown C"},
 {"dex":"201D","name":"Icognito D","en":"Unown D"},
@@ -343,16 +343,16 @@ var pokemon = [
 {"dex":"201I","name":"Icognito I","en":"Unown I"},
 {"dex":"201J","name":"Icognito J","en":"Unown J"},
 {"dex":"201K","name":"Icognito K","en":"Unown K"},
-{"dex":"201L","name":"Icognito L","en":"Unown L","getshiny":true},
+{"dex":"201L","name":"Icognito L","en":"Unown L"},
 {"dex":"201M","name":"Icognito M","en":"Unown M"},
 {"dex":"201N","name":"Icognito N","en":"Unown N"},
 {"dex":"201O","name":"Icognito O","en":"Unown O"},
 {"dex":"201P","name":"Icognito P","en":"Unown P"},
 {"dex":"201Q","name":"Icognito Q","en":"Unown Q"},
-{"dex":"201R","name":"Icognito R","en":"Unown R","getshiny":true},
+{"dex":"201R","name":"Icognito R","en":"Unown R"},
 {"dex":"201S","name":"Icognito S","en":"Unown S"},
-{"dex":"201T","name":"Icognito T","en":"Unown T","getshiny":true},
-{"dex":"201U","name":"Icognito U","en":"Unown U","getshiny":true},
+{"dex":"201T","name":"Icognito T","en":"Unown T"},
+{"dex":"201U","name":"Icognito U","en":"Unown U"},
 {"dex":"201V","name":"Icognito V","en":"Unown V"},
 {"dex":"201W","name":"Icognito W","en":"Unown W"},
 {"dex":"201X","name":"Icognito X","en":"Unown X"},
@@ -720,7 +720,7 @@ var pokemon = [
 {"dex":521,"name":"Fasasnob","en":"Unfezant","evolved":true},
 {"dex":522,"name":"Elezeba","en":"Blitzle"},
 {"dex":523,"name":"Zebritz","en":"Zebstrika","evolved":true},
-{"dex":524,"name":"Kiesling","en":"Roggenrola"},
+{"dex":524,"name":"Kiesling","en":"Roggenrola","getshiny":true},
 {"dex":525,"name":"Sedimantur","en":"Boldore","evolved":true},
 {"dex":526,"name":"Brockoloss","en":"Gigalith","evolved":true},
 {"dex":527,"name":"Fleknoil","en":"Woobat","getshiny":true},
@@ -865,7 +865,7 @@ var pokemon = [
 {"dex":"647R","name":"Keldeo (Resolut)","de":"Keldeo (Resolutform)","en":"Keldeo (Resolute Form)","mythical":true},
 {"dex":648,"name":"Meloetta (Gesang)","de":"Meloetta (Gesangsform)","en":"Meloetta (Aria Forme)","mythical":true},
 {"dex":"648P","name":"Meloetta (Tanz)","de":"Meloetta (Tanzform)","en":"Meloetta (Pirouette Forme)","mythical":true},
-{"dex":649,"name":"Genesect","mythical":true},
+{"dex":649,"name":"Genesect","mythical":true,"getshiny":true},
 {"dex":"649B","name":"Genesect (Feuer)","de":"Genesect mit Flammenmodul","en":"Genesect with Burn Drive","mythical":true},
 {"dex":"649C","name":"Genesect (Eis)","de":"Genesect mit Gefriermodul","en":"Genesect with Chill Drive","mythical":true},
 {"dex":"649D","name":"Genesect (Wasser)","de":"Genesect mit Aquamodul","en":"Genesect with Douse Drive","mythical":true},
@@ -919,18 +919,18 @@ var specialfilter = [
 ];
 
 var raids = {
-	"tier5":[386],
-	"tier4":["105A",437,376,176],
-	"tier2":["201U","201L","201T","201R","201A"]
+	"tier5":[649],
+	"tier4":["105A",508,569]
 };
 
 var quests = [1,4,7,37,56,60,61,66,92,95,100,106,107,129,133,138,140,142,147,246,256,285,296,307,327,345,347,391,427,453];
-var quests_event = [120,343];
-var legacy = [3,9,10,12,13,16,25,26,27,28,29,30,31,32,33,34,35,36,"37A",38,39,40,41,42,44,47,48,50,"50A",51,"52A",55,58,59,63,66,67,69,70,72,73,74,"74A",75,77,79,80,81,84,85,86,87,88,89,90,96,98,102,"103A",104,108,109,111,112,113,114,117,121,123,124,125,126,127,131,132,135,137,143,153,156,158,164,171,177,179,182,183,184,185,187,190,191,193,194,196,197,198,200,202,203,204,206,207,209,213,215,216,219,220,224,227,228,231,234,241,252,255,259,261,263,270,273,276,277,280,286,287,290,294,299,300,302,304,309,310,311,312,313,314,315,316,317,318,320,322,325,328,331,333,335,336,337,338,339,341,343,349,353,359,361,362,366,371,387,390,393,396,399,408,410,412,"412S","412T",415,420,"421S",425,431,436,449,459,519,522,527,529,531,536,548,557,562,588,594,595,613,616,618,622];
+var quests_event = [504,506,509,519,524,529];
+var legacy = [3,9,10,12,13,16,25,26,27,28,29,30,31,32,33,34,35,36,"37A",38,39,40,41,42,44,47,48,50,"50A",51,"52A",55,58,59,63,66,67,69,70,72,73,74,"74A",75,77,79,80,81,84,85,86,87,88,89,90,96,98,102,"103A",104,108,109,111,112,113,114,117,120,121,123,124,125,126,127,131,132,135,137,143,153,156,158,164,171,177,179,182,183,184,185,187,190,191,193,194,196,197,198,200,202,203,204,206,207,209,213,215,216,219,220,224,227,228,231,234,241,252,255,259,261,263,270,273,276,277,280,286,287,290,294,299,300,302,304,309,310,311,312,313,314,315,316,317,318,320,322,325,328,331,333,335,336,337,338,339,341,343,349,353,359,361,362,366,371,387,390,393,396,399,408,410,412,"412S","412T",415,420,"421S",425,431,436,449,459,522,527,531,536,548,557,562,588,594,595,613,616,618,622];
 
 var changelogjson = {
 	"items": [
-		{"ver":"1.6.5","date":"07.08.2020","change":["New Shiny: Staryu, Deoxys (Normal)","Temporary Shiny: Unown U, L, T, R, A","Change Raid Bosses (Ultra Unlock: Enigma Week)","Quests: Add Starmie, Baltoy","Quests: Remove Bagon"]},
+		{"ver":"1.6.6","date":"14.08.2020","change":["New Shinies: Roggenrola, Genesect","Change Raid Bosses (Ultra Unlock: Unova Week)","Quests: Add Patrat, Lillipup, Purrloin, Pidove, Roggenrola, Drilbur","Quests: Remove Staryu, Baltoy"]},
+		{"ver":"1.6.5","date":"07.08.2020","change":["New Shinies: Staryu, Deoxys (Normal)","Temporary Shiny: Unown U, L, T, R, A","Change Raid Bosses (Ultra Unlock: Enigma Week)","Quests: Add Staryu, Baltoy","Quests: Remove Bagon"]},
 		{"ver":"1.6.4","date":"01.08.2020","change":["Quests: Add Mankey, Poliwhirl, Machop, Hitmonlee, Hitmonchan, Combusken, Shroomish, Makuhita, Meditite, Monferno, Buneary, Croagunk","Quests: Remove Alolan Geodude, Graveler, Rhydon, Sudowoodo, Shuckle, Nosepass, Aron, Dwebble, Stunfisk"]},
 		{"ver":"1.6.3","date":"31.07.2020","change":["New Shiny: Deino","Change Raid Bosses (Ultra Unlock: Dragon Week)","Quests: Add Bagon"]},
 		{"ver":"1.6.2","date":"27.07.2020","change":["Change Raid Bosses (End of Pokémon GO Fest 2020)"]},
