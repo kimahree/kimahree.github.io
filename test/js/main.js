@@ -1,10 +1,17 @@
 ﻿var t5multi = 0;
+var tMindex = 0;
 var t5index = 0;
 var t4index = 0;
 var t3index = 0;
 var t2index = 0;
 var t1index = 0;
 var tcindex = 0;
+var t1 = 0;
+var t2 = 0;
+var t3 = 0;
+var t4 = 0;
+var t5 = 0;
+var tM = 0;	
 
 var hatchtimer = 60;
 var raidtimer = 45;
@@ -149,7 +156,7 @@ var pokemon = [
 {"dex":"37A","name":"Alola-Vulpix","en":"Alolan Vulpix","alolan":true,"getshiny":true},
 {"dex":38,"name":"Vulnona","en":"Ninetales","evolved":true},
 {"dex":"38A","name":"Alola-Vulnona","en":"Alolan Ninetales","alolan":true,"evolved":true},
-{"dex":39,"name":"Pummeluff","en":"Jigglypuff"},
+{"dex":39,"name":"Pummeluff","en":"Jigglypuff","getshiny":true},
 {"dex":40,"name":"Knuddeluff","en":"Wigglytuff","evolved":true},
 {"dex":41,"name":"Zubat","getshiny":true},
 {"dex":42,"name":"Golbat","evolved":true},
@@ -242,13 +249,13 @@ var pokemon = [
 {"dex":111,"name":"Rihorn","en":"Rhyhorn","getshiny":true},
 {"dex":112,"name":"Rizeros","en":"Rhydon","evolved":true},
 {"dex":113,"name":"Chaneira","en":"Chansey","getshiny":true},
-{"dex":114,"name":"Tangela"},
+{"dex":114,"name":"Tangela","getshiny":true},
 {"dex":115,"name":"Kangama","en":"Kangaskhan","regional":true,"getshiny":true},
 {"dex":116,"name":"Seeper","en":"Horsea","getshiny":true},
 {"dex":117,"name":"Seedra","en":"Seadra","evolved":true},
 {"dex":118,"name":"Goldini","en":"Goldeen"},
 {"dex":119,"name":"Golking","en":"Seaking","evolved":true},
-{"dex":120,"name":"Sterndu","en":"Staryu"},
+{"dex":120,"name":"Sterndu","en":"Staryu","getshiny":true},
 {"dex":121,"name":"Starmie","evolved":true},
 {"dex":122,"name":"Pantimos","en":"Mr. Mime","regional":true,"getshiny":true},
 {"dex":"122G","name":"Galar-Pantimos","en":"Galarian Mr. Mime","regional":true,"galarian":true},
@@ -332,6 +339,34 @@ var pokemon = [
 {"dex":199,"name":"Laschoking","en":"Slowking","evolved":true},
 {"dex":200,"name":"Traunfugil","en":"Misdreavus","getshiny":true},
 {"dex":201,"name":"Icognito","en":"Unown"},
+{"dex":"201A","name":"Icognito A","en":"Unown A"},
+{"dex":"201B","name":"Icognito B","en":"Unown B"},
+{"dex":"201C","name":"Icognito C","en":"Unown C"},
+{"dex":"201D","name":"Icognito D","en":"Unown D"},
+{"dex":"201E","name":"Icognito E","en":"Unown E"},
+{"dex":"201F","name":"Icognito F","en":"Unown F"},
+{"dex":"201G","name":"Icognito G","en":"Unown G"},
+{"dex":"201H","name":"Icognito H","en":"Unown H"},
+{"dex":"201I","name":"Icognito I","en":"Unown I"},
+{"dex":"201J","name":"Icognito J","en":"Unown J"},
+{"dex":"201K","name":"Icognito K","en":"Unown K"},
+{"dex":"201L","name":"Icognito L","en":"Unown L"},
+{"dex":"201M","name":"Icognito M","en":"Unown M"},
+{"dex":"201N","name":"Icognito N","en":"Unown N"},
+{"dex":"201O","name":"Icognito O","en":"Unown O"},
+{"dex":"201P","name":"Icognito P","en":"Unown P"},
+{"dex":"201Q","name":"Icognito Q","en":"Unown Q"},
+{"dex":"201R","name":"Icognito R","en":"Unown R"},
+{"dex":"201S","name":"Icognito S","en":"Unown S"},
+{"dex":"201T","name":"Icognito T","en":"Unown T"},
+{"dex":"201U","name":"Icognito U","en":"Unown U"},
+{"dex":"201V","name":"Icognito V","en":"Unown V"},
+{"dex":"201W","name":"Icognito W","en":"Unown W"},
+{"dex":"201X","name":"Icognito X","en":"Unown X"},
+{"dex":"201Y","name":"Icognito Y","en":"Unown Y"},
+{"dex":"201Z","name":"Icognito Z","en":"Unown Z"},
+{"dex":"201Em","name":"Icognito !","en":"Unown !"},
+{"dex":"201Qm","name":"Icognito ?","en":"Unown ?"},
 {"dex":202,"name":"Woingenau","en":"Wobbuffet","getshiny":true},
 {"dex":203,"name":"Girafarig"},
 {"dex":204,"name":"Tannza","en":"Pineco","getshiny":true},
@@ -341,7 +376,7 @@ var pokemon = [
 {"dex":208,"name":"Stahlos","en":"Steelix","evolved":true},
 {"dex":209,"name":"Snubbull","getshiny":true},
 {"dex":210,"name":"Granbull","evolved":true},
-{"dex":211,"name":"Baldorfish","en":"Quilfish"},
+{"dex":211,"name":"Baldorfish","en":"Quilfish","getshiny":true},
 {"dex":212,"name":"Scherox","en":"Scizor","evolved":true},
 {"dex":213,"name":"Pottrott","en":"Shuckle","getshiny":true},
 {"dex":214,"name":"Skaraborn","en":"Heracross","regional":true},
@@ -522,7 +557,7 @@ var pokemon = [
 {"dex":383,"name":"Groudon","legendary":true,"getshiny":true},
 {"dex":384,"name":"Rayquaza","legendary":true,"getshiny":true},
 {"dex":385,"name":"Jirachi","mythical":true},
-{"dex":386,"name":"Deoxys (Normal)","de":"Deoxys (Normalform)","en":"Deoxys (Normal Forme)","mythical":true},
+{"dex":386,"name":"Deoxys (Normal)","de":"Deoxys (Normalform)","en":"Deoxys (Normal Forme)","mythical":true,"getshiny":true},
 {"dex":"386A","name":"Deoxys (Angriff)","de":"Deoxys (Angriffsform)","en":"Deoxys (Attack Forme)","mythical":true},
 {"dex":"386D","name":"Deoxys (Verteidigung)","de":"Deoxys (Verteidigungsform)","en":"Deoxys (Defense Forme)","mythical":true},
 {"dex":"386S","name":"Deoxys (Initiative)","de":"Deoxys (Initiativeform)","en":"Deoxys (Speed Forme)","mythical":true},
@@ -636,7 +671,7 @@ var pokemon = [
 {"dex":484,"name":"Palkia","legendary":true},
 {"dex":485,"name":"Heatran","legendary":true,"getshiny":true},
 {"dex":486,"name":"Regigigas","legendary":true},
-{"dex":487,"name":"Giratina","de":"Giratina (Wandelform)","en":"Giratina (Altered Forme)","legendary":true,"getshiny":true},
+{"dex":487,"name":"Giratina (Wandel)","de":"Giratina (Wandelform)","en":"Giratina (Altered Forme)","legendary":true,"getshiny":true},
 {"dex":"487O","name":"Giratina (Urform)","de":"Giratina (Urform)","en":"Giratina (Origin Forme)","legendary":true},
 {"dex":488,"name":"Cresselia","legendary":true,"getshiny":true},
 {"dex":489,"name":"Phione","mythical":true},
@@ -692,10 +727,10 @@ var pokemon = [
 {"dex":521,"name":"Fasasnob","en":"Unfezant","evolved":true},
 {"dex":522,"name":"Elezeba","en":"Blitzle"},
 {"dex":523,"name":"Zebritz","en":"Zebstrika","evolved":true},
-{"dex":524,"name":"Kiesling","en":"Roggenrola"},
+{"dex":524,"name":"Kiesling","en":"Roggenrola","getshiny":true},
 {"dex":525,"name":"Sedimantur","en":"Boldore","evolved":true},
 {"dex":526,"name":"Brockoloss","en":"Gigalith","evolved":true},
-{"dex":527,"name":"Fleknoil","en":"Woobat"},
+{"dex":527,"name":"Fleknoil","en":"Woobat","getshiny":true},
 {"dex":528,"name":"Fletiamo","en":"Swoobat","evolved":true},
 {"dex":529,"name":"Rotomurf","en":"Drilbur"},
 {"dex":530,"name":"Stalobor","en":"Excadrill","evolved":true},
@@ -807,14 +842,14 @@ var pokemon = [
 {"dex":623,"name":"Golgantes","en":"Golurk","evolved":true},
 {"dex":624,"name":"Gladiantri","en":"Pawniard"},
 {"dex":625,"name":"Caesurio","en":"Bisharp","evolved":true},
-{"dex":626,"name":"Bisofank","en":"Bouffalant"},
+{"dex":626,"name":"Bisofank","en":"Bouffalant","regional":true},
 {"dex":627,"name":"Geronimatz","en":"Rufflet"},
 {"dex":628,"name":"Washakwil","en":"Braviary","evolved":true},
 {"dex":629,"name":"Skallyk","en":"Vullaby"},
 {"dex":630,"name":"Grypheldis","en":"Mandibuzz","evolved":true},
-{"dex":631,"name":"Furnifraß","en":"Heatmor","regional":true},
-{"dex":632,"name":"Fermicula","en":"Durant","regional":true},
-{"dex":633,"name":"Kapuno","en":"Deino"},
+{"dex":631,"name":"Furnifraß","en":"Heatmor","regional":true,"getshiny":true},
+{"dex":632,"name":"Fermicula","en":"Durant","regional":true,"getshiny":true},
+{"dex":633,"name":"Kapuno","en":"Deino","getshiny":true},
 {"dex":634,"name":"Duodino","en":"Zweilous","evolved":true},
 {"dex":635,"name":"Trikephalo","en":"Hydreigon","evolved":true},
 {"dex":636,"name":"Ignivor","en":"Larvesta"},
@@ -837,11 +872,61 @@ var pokemon = [
 {"dex":"647R","name":"Keldeo (Resolut)","de":"Keldeo (Resolutform)","en":"Keldeo (Resolute Form)","mythical":true},
 {"dex":648,"name":"Meloetta (Gesang)","de":"Meloetta (Gesangsform)","en":"Meloetta (Aria Forme)","mythical":true},
 {"dex":"648P","name":"Meloetta (Tanz)","de":"Meloetta (Tanzform)","en":"Meloetta (Pirouette Forme)","mythical":true},
-{"dex":649,"name":"Genesect","mythical":true},
+{"dex":649,"name":"Genesect","mythical":true,"getshiny":true},
 {"dex":"649B","name":"Genesect (Feuer)","de":"Genesect mit Flammenmodul","en":"Genesect with Burn Drive","mythical":true},
 {"dex":"649C","name":"Genesect (Eis)","de":"Genesect mit Gefriermodul","en":"Genesect with Chill Drive","mythical":true},
 {"dex":"649D","name":"Genesect (Wasser)","de":"Genesect mit Aquamodul","en":"Genesect with Douse Drive","mythical":true},
 {"dex":"649S","name":"Genesect (Elektro)","de":"Genesect mit Blitzmodul","en":"Genesect with Shock Drive","mythical":true},
+{"dex":"3M","name":"Mega-Bisaflor","en":"Mega Venusaur","evolved":true,"mega":true},
+{"dex":"6X","name":"Mega-Glurak X","en":"Mega Charizard X","evolved":true,"mega":true},
+{"dex":"6Y","name":"Mega-Glurak Y","en":"Mega Charizard Y","evolved":true,"mega":true},
+{"dex":"9M","name":"Mega-Turtok","en":"Mega Blastoise","evolved":true,"mega":true},
+{"dex":"15M","name":"Mega-Bibor","en":"Mega Beedrill","evolved":true,"mega":true},
+{"dex":"18M","name":"Mega-Tauboss","en":"Mega Pidgeot","evolved":true,"mega":true},
+{"dex":"65M","name":"Mega-Simsala","en":"Mega Alakazam","evolved":true,"mega":true},
+{"dex":"80M","name":"Mega-Lahmus","en":"Mega Slowbro","evolved":true,"mega":true},
+{"dex":"94M","name":"Mega-Gengar","en":"Mega Gengar","evolved":true,"mega":true},
+{"dex":"115M","name":"Mega-Kangama","en":"Mega Kangaskhan","mega":true},
+{"dex":"127M","name":"Mega-Pinsir","en":"Mega Pinsir","mega":true},
+{"dex":"130M","name":"Mega-Garados","en":"Mega Gyarados","evolved":true,"mega":true},
+{"dex":"142M","name":"Mega-Aerodactyl","en":"Mega Aerodactyl","mega":true},
+{"dex":"150X","name":"Mega-Mewtu X","en":"Mega Mewtwo X","mega":true},
+{"dex":"150Y","name":"Mega-Mewtu Y","en":"Mega Mewtwo Y","mega":true},
+{"dex":"181M","name":"Mega-Ampharos","en":"Mega Ampharos","evolved":true,"mega":true},
+{"dex":"208M","name":"Mega-Stahlos","en":"Mega Steelix","evolved":true,"mega":true},
+{"dex":"212M","name":"Mega-Scherox","en":"Mega Scizor","evolved":true,"mega":true},
+{"dex":"214M","name":"Mega-Skaraborn","en":"Mega Heracross","evolved":true,"mega":true},
+{"dex":"229M","name":"Mega-Hundemon","en":"Mega Houndoom","evolved":true,"mega":true},
+{"dex":"248M","name":"Mega-Despotar","en":"Mega Tyranitar","evolved":true,"mega":true},
+{"dex":"254M","name":"Mega-Gewaldro","en":"Mega Sceptile","evolved":true,"mega":true},
+{"dex":"257M","name":"Mega-Lohgock","en":"Mega Blaziken","evolved":true,"mega":true},
+{"dex":"260M","name":"Mega-Sumpex","en":"Mega Swampert","evolved":true,"mega":true},
+{"dex":"282M","name":"Mega-Guardevoir","en":"Mega Gardevoir","evolved":true,"mega":true},
+{"dex":"302M","name":"Mega-Zobiris","en":"Mega Sableye","mega":true},
+{"dex":"303M","name":"Mega-Flunkifer","en":"Mega Mawile","mega":true},
+{"dex":"306M","name":"Mega-Stolloss","en":"Mega Aggron","evolved":true,"mega":true},
+{"dex":"308M","name":"Mega-Meditalis","en":"Mega Medicham","evolved":true,"mega":true},
+{"dex":"310M","name":"Mega-Voltenso","en":"Mega Manectric","evolved":true,"mega":true},
+{"dex":"319M","name":"Mega-Tohaido","en":"Mega Sharpedo","evolved":true,"mega":true},
+{"dex":"323M","name":"Mega-Camerupt","en":"Mega Camerupt","evolved":true,"mega":true},
+{"dex":"334M","name":"Mega-Altaria","en":"Mega Altaria","evolved":true,"mega":true},
+{"dex":"354M","name":"Mega-Banette","en":"Mega Banette","evolved":true,"mega":true},
+{"dex":"359M","name":"Mega-Absol","en":"Mega Absol","mega":true},
+{"dex":"362M","name":"Mega-Firnontor","en":"Mega Glalie","evolved":true,"mega":true},
+{"dex":"373M","name":"Mega-Brutalanda","en":"Mega Salamence","evolved":true,"mega":true},
+{"dex":"376M","name":"Mega-Metagross","en":"Mega Metagross","evolved":true,"mega":true},
+{"dex":"380M","name":"Mega-Latias","en":"Mega Latias","legendary":true,"mega":true},
+{"dex":"381M","name":"Mega-Latios","en":"Mega Latios","legendary":true,"mega":true},
+{"dex":"382P","name":"Proto-Kyogre","en":"Primal Kyogre","legendary":true,"mega":true},
+{"dex":"383P","name":"Proto-Groudon","en":"Primal Groudon","legendary":true,"mega":true},
+{"dex":"384M","name":"Mega-Rayquaza","en":"Mega Rayquaza","legendary":true,"mega":true},
+{"dex":"428M","name":"Mega-Schlapor","en":"Mega Lopunny","evolved":true,"mega":true},
+{"dex":"445M","name":"Mega-Knakrack","en":"Mega Garchomp","evolved":true,"mega":true},
+{"dex":"448M","name":"Mega-Lucario","en":"Mega Lucario","evolved":true,"mega":true},
+{"dex":"460M","name":"Mega-Rexblisar","en":"Mega Abomasnow","evolved":true,"mega":true},
+{"dex":"475M","name":"Mega-Galagladi","en":"Mega Gallade","evolved":true,"mega":true},
+{"dex":"531M","name":"Mega-Ohrdoch","en":"Mega Audino","mega":true},
+{"dex":"719M","name":"Mega-Diancie","en":"Mega Diancie","mythical":true,"mega":true},
 {"dex":808,"name":"Meltan","mythical":true},
 {"dex":809,"name":"Melmetal","mythical":true,"evolved":true},
 {"dex":862,"name":"Barrikadax","en":"Obstagoon","evolved":true},
@@ -890,9 +975,29 @@ var specialfilter = [
 {"id":"S","name":"Alle möglichen Shiny Begegnungen","en":"All potential Shiny encounters"}
 ];
 
+var raids = {
+	"tierM":["3M","6X","6Y","9M"],
+	"tier5":[485],
+	"tier4":["105A",248,"110G",76,112,530]
+};
+
+var quests = [1,4,7,37,60,61,66,92,95,100,106,107,129,133,138,140,142,147,246,256,285,296,307,327,345,347,391,427,453];
+var quests_event = [];
+var legacy = [3,9,10,12,13,16,25,26,27,28,29,30,31,32,33,34,35,36,"37A",38,39,40,41,42,44,47,48,50,"50A",51,"52A",55,56,58,59,63,66,67,69,70,72,73,74,"74A",75,77,79,80,81,84,85,86,87,88,89,90,96,98,102,"103A",104,108,109,111,112,113,114,117,120,121,123,124,125,126,127,131,132,135,137,143,153,156,158,164,171,177,179,182,183,184,185,187,190,191,193,194,196,197,198,200,202,203,204,206,207,209,213,215,216,219,220,224,227,228,231,234,241,252,255,259,261,263,270,273,276,277,280,286,287,290,294,299,300,302,304,309,310,311,312,313,314,315,316,317,318,320,322,325,328,331,333,335,336,337,338,339,341,343,349,353,359,361,362,366,371,387,390,393,396,399,408,410,412,"412S","412T",415,420,"421S",425,431,436,449,459,504,506,509,519,522,524,527,529,531,536,548,557,562,588,594,595,613,616,618,622];
+
 var changelogjson = {
 	"items": [
-		{"ver":"1.6 BETA","date":"20.07.2020","change":["Add Tier 1, 2 and 3 raids","Add Custom Raid Boss option"]},
+		{"ver":"1.7 BETA","date":"25.08.2020","change":["Add support for Mega Raids","Add all Mega Pokémon"]},
+		{"ver":"1.6.8","date":"23.08.2020","change":["Quests: Remove Mankey"]},
+		{"ver":"1.6.7","date":"21.08.2020","change":["Change Raid Bosses (Return of Heatran)","Quests: Remove Patrat, Lillipup, Purrloin, Pidove, Roggenrola, Drilbur"]},
+		{"ver":"1.6.6","date":"14.08.2020","change":["New Shinies: Roggenrola, Genesect","Change Raid Bosses (Ultra Unlock: Unova Week)","Quests: Add Patrat, Lillipup, Purrloin, Pidove, Roggenrola, Drilbur","Quests: Remove Staryu, Baltoy"]},
+		{"ver":"1.6.5","date":"07.08.2020","change":["New Shinies: Staryu, Deoxys (Normal)","Temporary Shiny: Unown U, L, T, R, A","Change Raid Bosses (Ultra Unlock: Enigma Week)","Quests: Add Staryu, Baltoy","Quests: Remove Bagon"]},
+		{"ver":"1.6.4","date":"01.08.2020","change":["Quests: Add Mankey, Poliwhirl, Machop, Hitmonlee, Hitmonchan, Combusken, Shroomish, Makuhita, Meditite, Monferno, Buneary, Croagunk","Quests: Remove Alolan Geodude, Graveler, Rhydon, Sudowoodo, Shuckle, Nosepass, Aron, Dwebble, Stunfisk"]},
+		{"ver":"1.6.3","date":"31.07.2020","change":["New Shiny: Deino","Change Raid Bosses (Ultra Unlock: Dragon Week)","Quests: Add Bagon"]},
+		{"ver":"1.6.2","date":"27.07.2020","change":["Change Raid Bosses (End of Pokémon GO Fest 2020)"]},
+		{"ver":"1.6.1","date":"26.07.2020","change":["Change Raid Bosses (Pokémon GO Fest 2020 - Day 2)"]},
+		{"ver":"1.6","date":"25.07.2020","change":["Add Custom Raid Boss option","Add support for Tier 1-3 raids for future events","Add all Unown forms","New Shinies: Jigglypuff, Tangela, Qwilfish, Woobat, Heatmor, Durant","Temporary Shiny: Unown G, O","Change Raid Bosses (Pokémon GO Fest 2020 - Day 1)"]},
+		{"ver":"1.5.41","date":"23.07.2020","change":["Change Raid Bosses (End of Summer event)","Quests: Remove Bellsprout, Slowpoke, Shellder, Snorlax, Slakoth, Clamperl, Petilil"]},
 		{"ver":"1.5.40","date":"17.07.2020","change":["New Shiny: Bellsprout","Change Raid Bosses (Summer event)","Quests: Add Bellsprout, Slowpoke, Shellder, Snorlax, Slakoth, Clamperl, Petilil"]},
 		{"ver":"1.5.39","date":"16.07.2020","change":["Change Raid Bosses (End of Team GO Rocket takeover event)",]},
 		{"ver":"1.5.38","date":"10.07.2020","change":["Change Raid Bosses once again (Team GO Rocket takeover event)",]},
@@ -1052,17 +1157,6 @@ var changelogjson = {
 	]
 };
 
-var raids = {
-	"tier5":[646],
-	"tier4":[359,"105A",131,143],
-	"tier3":["26A",342,189,114],
-	"tier2":["103A",449,126,315,28],
-	"tier1":[287,548,532,320,278]
-};
-
-var quests = [1,4,7,37,60,"74A",75,92,95,100,112,129,133,138,140,142,147,185,213,246,299,304,327,345,347,557,618];
-var quests_event = [69,79,90,143,287,366,548];
-var legacy = [3,9,10,12,13,16,25,26,27,28,29,30,31,32,33,34,35,36,"37A",38,39,40,41,42,44,47,48,50,"50A",51,"52A",55,56,58,59,61,63,66,67,70,72,73,74,77,80,81,84,85,86,87,88,89,90,96,98,102,"103A",104,107,108,109,111,113,114,117,121,123,124,125,126,127,131,132,135,137,153,156,158,164,171,177,179,182,183,184,187,190,191,193,194,196,197,198,200,202,203,204,206,207,209,215,216,219,220,224,227,228,231,234,241,252,255,256,259,261,263,270,273,276,277,280,285,286,287,290,294,296,300,302,307,309,310,311,312,313,314,315,316,317,318,320,322,325,328,331,333,335,336,337,338,339,341,343,349,353,359,361,362,366,387,390,393,396,399,408,410,412,"412S","412T",415,420,"421S",425,427,431,436,449,453,459,519,522,527,529,531,536,562,588,594,595,613,616,622];
 var forms = ["19A","20A","26A","27A","28A","37A","38A","50A","51A","52A","53A","74A","75A","76A","88A","89A","103A","105A","150R","351I","351R","351S","386A","386D","386S","412S","412T","413S","413T","421S","479F","479H","479I","479M","479W","487O","492S","550B","555Z","641T","642T","645T","646B","646W","648P"];
 var hidden = 1;
 var sel_q = [];
@@ -1086,11 +1180,33 @@ function init() {
 
 	// make Raids
 	var txt = "";
-	var t1 = 0;
-	var t2 = 0;
-	var t3 = 0;
-	var t4 = 0;
-	var t5 = 0;
+	t1 = 0;
+	t2 = 0;
+	t3 = 0;
+	t4 = 0;
+	t5 = 0;
+	tM = 0;	
+	try {
+		tM = raids.tierM.length;
+	} catch {}
+	if (tM > 0) {
+		txt += '<optgroup id="tM" label="Mega-Raids"><option ';
+		if (tM == 1) {
+			txt += "hidden disabled ";
+		}
+		txt += 'value="Mega-Raid" style="font-style:italic">Mega-Raid Ei</option>';
+		raid_de.push("Mega-Raid Ei");
+		raid_en.push("Mega Raid Egg");
+		for (i = 0; i < tM; i++) {
+			var rp = getPkmnByDex(raids.tierM[i])[0];
+			var d = (rp.de) ? rp.de:rp.name;
+			var e = (rp.en) ? rp.en:rp.name;
+			txt += '<option value="' + rp.name + '">' + d + '</option>';
+			raid_de.push(d);
+			raid_en.push(e);
+		}
+		txt += '</optgroup>'
+	}
 	try {
 		t5 = raids.tier5.length;
 	} catch {}
@@ -1210,12 +1326,22 @@ function init() {
 	if (t5 > 1 && t5over == 0) {
 		t5multi = 1;
 	}
-	t5index = (t5) ? 1:0;
-	t4index = (t4) ? t5+1:0;
-	t3index = (t3) ? t5+t4+2:0;
-	t2index = (t2) ? t5+t4+t3+3:0;
-	t1index = (t1) ? t5+t4+t3+t2+4:0;
-	tcindex = t5+t4+t3+t2+t1+5;
+	tMindex = (tM) ? 1:0;
+	t5index = (t5) ? tM+1:0;
+	t4index = (t4) ? tM+t5+2:0;
+	t3index = (t3) ? tM+t5+t4+3:0;
+	t2index = (t2) ? tM+t5+t4+t3+4:0;
+	t1index = (t1) ? tM+t5+t4+t3+t2+5:0;
+	tcindex = tM+t5+t4+t3+t2+t1+6;
+
+	if (!tM) {
+		t5index--;
+		t4index--;
+		t3index--;
+		t2index--;
+		t1index--;
+		tcindex--;
+	}
 
 	if (!t5) {
 		t4index--;
@@ -1246,7 +1372,6 @@ function init() {
 	if (!t1) {
 		tcindex--;
 	}
-
 
 	// make Gym list
 	
@@ -1579,9 +1704,9 @@ function checkTime() {
 		hatchwarn = 3; // Raid abgelaufen
 	} else if (hat2 > hatchtimer*60000) {
 		hatchwarn = 10; // Schlüpft zu weit in der Zukunft
-	} else if (hat2 > 0 && (ra > t4index && ra != t3index && ra != t2index && ra != t1index && ra != tcindex)) {
+	} else if (hat2 > 0 && (ra != t5index && ra != t4index && ra != t3index && ra != t2index && ra != t1index && ra != tcindex && ra != 0) && (ra != t5index+1 || t5multi) && (ra != tMindex || tM != 1)) {
 		hatchwarn = 12; // Ei noch nicht geschlüpft
-	} else if (t5multi && hat2 > 0 && ra > 0) {
+	} else if (t5multi && hat2 > 0 && ra > t5index && ra < t4index) {
 		hatchwarn = 13; // 5er noch nicht geschlüpft (wenn mehr als 1 5er)
 	} else {
 		hatchwarn = 0;
@@ -1669,7 +1794,7 @@ function changeLang() {
 		}
 		var newText = (getPkmnEng(origText)) ? getPkmnEng(origText).name:origText;
 		newText += s?"✨":"";
-		newText += evt?"⏱":"";
+		newText += evt?"⏱️":"";
 		return newText;
 	});
 
@@ -1685,6 +1810,7 @@ function changeLang() {
 	tinysort("#itemlist button");	
 	tinysort("#legacylist button");	
 	
+	if (tMindex > 0) { tinysort("#tM>option:not(:first-child)"); }
 	if (t5index > 0) { tinysort("#t5>option:not(:first-child)"); }
 	if (t4index > 0) { tinysort("#t4>option:not(:first-child)"); }
 	if (t3index > 0) { tinysort("#t3>option:not(:first-child)"); }
@@ -1722,7 +1848,7 @@ function changeLang() {
 		}
 		var newText = (getPkmn(origText).en) ? getPkmn(origText).en:origText;
 		newText += s?"✨":"";
-		newText += evt?"⏱":"";
+		newText += evt?"⏱️":"";
 		return newText;
 	});
 
@@ -1738,6 +1864,7 @@ function changeLang() {
 	tinysort("#itemlist button");	
 	tinysort("#legacylist button");	
 	
+	if (tMindex > 0) { tinysort("#tM>option:not(:first-child)"); }
 	if (t5index > 0) { tinysort("#t5>option:not(:first-child)"); }
 	if (t4index > 0) { tinysort("#t4>option:not(:first-child)"); }
 	if (t3index > 0) { tinysort("#t3>option:not(:first-child)"); }
@@ -1760,11 +1887,14 @@ function TierCheck() {
 		var custom
 		var cl = getLang()
 		if (cl == "de") {
-			custom = prompt("Gib den Namen des Raidboss ein.",document.getElementById("raid")[1].value)
+			custom = prompt("Gib den Namen des Raidboss ein.",getPkmnByDex(Math.ceil(Math.random()*649))[0].name)
 		} else {
-			custom = prompt("Enter the name of the raid boss.",document.getElementById("raid")[1].value)
+			custom = prompt("Enter the name of the raid boss.",getPkmnByDex(Math.ceil(Math.random()*649))[0].name)
 		}
-		if (custom != null) {
+		try {
+			custom = custom.replace(/<.+?>/g,"");
+		} catch {}
+		if (custom != null && custom != "") {
 			nr.remove(tcindex);
 			var nc = document.createElement("option");
 			nc.text = cl=="de" ? "Anderer Raidboss ("+custom+")" : "Custom Raid Boss ("+custom+")";
@@ -1778,23 +1908,25 @@ function TierCheck() {
 			nr.value = custom;
 			$('#raid.selectpicker').selectpicker('refresh');
 		} else {
-			$('#raid.selectpicker').selectpicker('val',$("#raid>optgroup>option:nth-child(2)").val());
+			$('#raid.selectpicker').selectpicker('val',$("#raid>optgroup>option:nth-child(1)").val());
 		}
 		
 	}
-	if (hatchwarn == 12 && (ind == t4index || ind == t3index || ind == t2index || ind == t1index || ind === 0 || (!t5multi && ind == 1))) {
+	if (hatchwarn == 12 && (ind == t4index || ind == t3index || ind == t2index || ind == t1index || ind === 0 || (!t5multi && ind == t5index+1))) {
 		hatchwarn = 0;
 		document.getElementById("timeh").innerHTML = "";
 	}
-	if (ind > t4index && document.getElementById("time").value) {
-		checkTime();
+	if (ind > 0 && document.getElementById("time").value) {
+		if (ind != t5index+1 || t5multi) {
+			checkTime();
+		}
 	}
 	if (t5multi) {
 		if (hatchwarn == 13 && (ind === 0 || ind == t4index)) {
 			hatchwarn = 0;
 			document.getElementById("timeh").innerHTML = "";
 		}
-		if (ind > 0 && ind < t4index && document.getElementById("time").value) {
+		if (ind > t5index && ind < t4index && document.getElementById("time").value) {
 			checkTime();
 		}
 	}
