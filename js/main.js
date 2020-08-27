@@ -920,7 +920,7 @@ var specialfilter = [
 
 var raids = {
 	"tier5":[485],
-	"tier4":["105A",248,"110G",76,112,530]
+	"tier3":["105A","26A",134,232,68,95,112]
 };
 
 var quests = [1,4,7,37,60,61,66,92,95,100,106,107,129,133,138,140,142,147,246,256,285,296,307,327,345,347,391,427,453];
@@ -929,6 +929,7 @@ var legacy = [3,9,10,12,13,16,25,26,27,28,29,30,31,32,33,34,35,36,"37A",38,39,40
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.6.9","date":"27.08.2020","change":["Change Raid Bosses (Removal of Tier 2 and 4 raids)"]},
 		{"ver":"1.6.8","date":"23.08.2020","change":["Quests: Remove Mankey"]},
 		{"ver":"1.6.7","date":"21.08.2020","change":["Change Raid Bosses (Return of Heatran)","Quests: Remove Patrat, Lillipup, Purrloin, Pidove, Roggenrola, Drilbur"]},
 		{"ver":"1.6.6","date":"14.08.2020","change":["New Shinies: Roggenrola, Genesect","Change Raid Bosses (Ultra Unlock: Unova Week)","Quests: Add Patrat, Lillipup, Purrloin, Pidove, Roggenrola, Drilbur","Quests: Remove Staryu, Baltoy"]},
