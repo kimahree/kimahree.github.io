@@ -1072,6 +1072,7 @@ var legacy = [3,9,10,12,13,16,25,26,27,28,29,30,31,32,33,34,35,36,"37A",38,39,40
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.7.5","date":"15.09.2020","change":['[Gesundbrunnen] Add new gym "Golden Globe"']},
 		{"ver":"1.7.4","date":"11.09.2020","change":["New Shiny: Ledyba","Change Raid Bosses (Return of Cresselia)","Quests: Add Ledyba"]},
 		{"ver":"1.7.3","date":"08.09.2020","change":["Quests: Remove Chansey, Lotad, Cranidos"]},
 		{"ver":"1.7.2","date":"01.09.2020","change":["Quests: Add Mega Energy","Quests: Add Abra, Slowpoke, Drowzee, Exeggcute, Natu, Wobbuffet, Ralts, Baltoy, Beldum, Bronzor, Woobat","Quests: Remove Poliwhirl, Machop, Hitmonlee, Hitmonchan, Combusken, Shroomish, Makuhita, Meditite, Monferno, Buneary, Croagunk"]},

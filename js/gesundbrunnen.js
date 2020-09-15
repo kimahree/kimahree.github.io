@@ -24,6 +24,7 @@ var gymjson = {
 {"value":"Ev. Stephanus Kirche","ex":true,"map":"https://goo.gl/maps/t3zqccxjfS5YzZsT7"},
 {"value":"Gedenkstein Opfer der Berliner Mauer","ex":true,"map":"https://goo.gl/maps/vKCJtW7CXjm"},
 {"value":"Gewachsen auf Beton Mural","ex":true,"token":"u-bahnhof pankstraße","map":"https://goo.gl/maps/8MVUihQXCQ82"},
+{"value":"Golden Globe","map":"https://goo.gl/maps/HoasoNPoHyAZnKNY7"},
 {"value":"Haus Graffiti","map":"https://goo.gl/maps/RgpNp4xwBZS2"},
 {"value":"Hausmalerei","ex":true,"map":"https://goo.gl/maps/wJXuVvpzvTv"},
 {"value":"Hauswächter","ex":true,"map":"https://goo.gl/maps/Yv9g8aRw9S72"},
