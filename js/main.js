@@ -273,7 +273,7 @@ var pokemon = [
 {"dex":134,"name":"Aquana","en":"Vaporeon","evolved":true},
 {"dex":135,"name":"Blitza","en":"Jolteon","evolved":true},
 {"dex":136,"name":"Flamara","en":"Flareon","evolved":true},
-{"dex":137,"name":"Porygon"},
+{"dex":137,"name":"Porygon","getshiny":true},
 {"dex":138,"name":"Amonitas","en":"Omanyte","getshiny":true},
 {"dex":139,"name":"Amoroso","en":"Omastar","evolved":true},
 {"dex":140,"name":"Kabuto","getshiny":true},
@@ -1072,6 +1072,7 @@ var legacy = [3,9,10,12,13,16,25,26,27,28,29,30,31,32,33,34,35,36,"37A",38,39,40
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.7.8","date":"20.09.2020","change":["New Shiny: Porygon"]},
 		{"ver":"1.7.7","date":"18.09.2020","change":["Change Raid Bosses (Return of Articuno)","New Shiny: Pidgeot"]},
 		{"ver":"1.7.6","date":"17.09.2020","change":["Quests: Remove Ledyba"]},
 		{"ver":"1.7.5","date":"15.09.2020","change":['[Gesundbrunnen] Add new gym "Golden Globe"']},
