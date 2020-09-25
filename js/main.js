@@ -1062,7 +1062,7 @@ var specialfilter = [
 
 var raids = {
 	"tierM":["3M","6X","6Y","18M","9M"],
-	"tier5":[144],
+	"tier5":[145],
 	"tier3":["103A",149,131,95,127]
 };
 
@@ -1072,6 +1072,7 @@ var legacy = [3,9,10,12,13,16,25,26,27,28,29,30,31,32,33,34,35,36,"37A",38,39,40
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.7.10","date":"25.09.2020","change":["Change Raid Bosses (Return of Zapdos)"]},
 		{"ver":"1.7.9","date":"22.09.2020","change":["New Shiny: Doduo","Change Raid Bosses (Mega Evolution Buddy Event)","Quests: Add Doduo"]},
 		{"ver":"1.7.8","date":"20.09.2020","change":["New Shiny: Porygon"]},
 		{"ver":"1.7.7","date":"18.09.2020","change":["Change Raid Bosses (Return of Articuno)","New Shiny: Pidgeot"]},
