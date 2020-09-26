@@ -5,15 +5,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="refresh" content="43200">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.12/dist/css/bootstrap-select.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.12/dist/js/bootstrap-select.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/tinysort@3.2.5/dist/tinysort.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" integrity="sha256-Ww++W3rXBfapN8SZitAvc9jw2Xb+Ixt0rvDsmWmQyTo=" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.18/dist/css/bootstrap-select.min.css" integrity="sha256-wiMI7buOV5UBzdWN4s4kXqE/LZ794hx5oJOOIQlDBaM=" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-timepicker@1.3.3/jquery.timepicker.css" integrity="sha256-0grYPCio07OSu/k+zNx703Nw3kv/pWbM1L0yFzULpHY=" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha256-/ijcOLwFf26xEYAjW75FizKVo5tnTYiQddPZoLUHHZ8=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js" integrity="sha256-ecWZ3XYM7AwWIaGvSdmipJ2l1F4bN9RXW6zgpeAiZYI=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.18/dist/js/bootstrap-select.min.js" integrity="sha256-qo0Cam4XJ0QQ06XnCiCFYBh3GDXU45j3lpUp+em2yBU=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-timepicker@1.3.3/jquery.timepicker.js" integrity="sha256-ZEFHMstKm4uJuA95aFxPyq4WI6R019HkdKH5BraYLSI=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/tinysort@3.2.7/dist/tinysort.min.js" integrity="sha256-X8z0uLZN7JidYpXPJeOvXbx6W6llh1/wfw7/nJjtTe8=" crossorigin="anonymous"></script>
 	<style>
 		div.dropdown-menu.show { width: 100% !important; } ul.dropdown-menu.inner>li>a { white-space: initial; }
 		nav.navbar.bg-dark { background-color: #004000 !important; }
@@ -43,12 +43,13 @@
 
 <div hidden id="covid" class="alert alert-warning alert-dismissible fade show">
 <button type="button" class="close" data-dismiss="alert">&times;</button>
-<strong>Die Kontaktbeschränkungen wegen COVID-19 gelten weiterhin. Wir empfehlen nur via Remote zu raiden. Alle Raids erfolgen auf eigene Verantwortung.<hr>The contact restrictions due to COVID-19 are still active. We recommend raiding only via remote. All raids are held at your own risk.</strong>
+<strong>Neue Kontaktbeschränkungen wegen COVID-19 wurden eingeführt. Es wird empfohlen nur aus der Ferne zu raiden. Alle Raids erfolgen auf eigene Verantwortung.<hr>Contact restrictions due to COVID-19 have been introduced. It is recommended to raid only via remote. All raids are held at your own risk.</strong>
 </div>
 
 <ul class="nav nav-tabs mb-2">
   <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#raidtool">Raids</a></li>
   <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#boq">BoQ Link</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#events">Events</a></li>
 </ul>
 
 <div class="tab-content">
@@ -62,7 +63,7 @@
 </div>
 <div class="form-group col-sm-8 mb-3">
 <label for="gym" class="mr-sm-2" id="txt_gym">Arena:</label>
-<select class="form-control selectpicker mr-sm-2" data-live-search="true" data-none-results-text="Keine Ergebnisse / No result." id="gym">
+<select class="form-control selectpicker mr-sm-2" data-live-search="true" data-none-selected-text="Wähle eine Arena aus. / Choose a gym."  data-none-results-text="Keine Ergebnisse / No result." id="gym">
 </select>
 </div>
 </div>
@@ -167,6 +168,15 @@
   </div>
   </div>
 
+  <div class="tab-pane fade" id="events">
+	<h3>Aktuelle Events</h3>
+    <div class="mb-2" id="current">
+    </div>
+	<h3>Bevorstehende Events</h3>
+    <div id="upcoming">
+    </div>
+  </div>
+
 </div>
 
 <p class="small"><a href="" data-toggle="modal" data-target="#changelog">Changelog</a> - <a href="" data-toggle="modal" data-target="#credits">Credits</a> - <a href="" data-toggle="modal" data-target="#regions">Regions</a> - This website is not affiliated with Niantic or Nintendo. Pokémon And All Respective Names are Trademark & © of Nintendo 1996-2020.</p>
@@ -194,12 +204,12 @@
 		</ul>
 		This Website uses the following dependencies:
 		<ul>
-			<li><a href="https://getbootstrap.com" target="_blank">Bootstrap 4.4.1</a></li>
-			<li><a href="https://developer.snapappointments.com/bootstrap-select" target="_blank">Bootstrap-select 1.13.12</a></li>
-			<li><a href="https://jquery.com" target="_blank">jQuery 3.4.1</a></li>
-			<li><a href="https://timepicker.co" target="_blank">jQuery Timepicker 1.3.5</a></li>
-			<li><a href="https://popper.js.org" target="_blank">Popper 1.16.0</a></li>
-			<li><a href="http://tinysort.sjeiti.com/" target="_blank">TinySort 3.2.5</a></li>
+			<li><a href="https://getbootstrap.com" target="_blank">Bootstrap 4.5.2</a></li>
+			<li><a href="https://developer.snapappointments.com/bootstrap-select" target="_blank">Bootstrap-select 1.13.18</a></li>
+			<li><a href="https://jquery.com" target="_blank">jQuery 3.5.1</a></li>
+			<li><a href="https://timepicker.co" target="_blank">jQuery Timepicker 1.3.3</a></li>
+			<li><a href="https://popper.js.org" target="_blank">Popper 1.16.1</a></li>
+			<li><a href="http://tinysort.sjeiti.com/" target="_blank">TinySort 3.2.7</a></li>
 		</ul>
 		Made by <a href="mailto:kimahree@berlin-raids.tk">kimahree</a><br><small id="credits-ver"></small>
       </div>
@@ -265,6 +275,7 @@
 </div>
 
 <script src="../js/wedding.js"></script>
+<script src="../js/events.js"></script>
 <script src="../js/main.js"></script>
 
 </body>
