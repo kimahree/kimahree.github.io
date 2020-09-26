@@ -1072,7 +1072,7 @@ var legacy = [3,9,10,12,13,16,25,26,27,28,29,30,31,32,33,34,35,36,"37A",38,39,40
 
 var changelogjson = {
 	"items": [
-		{"ver":"BETA 1.8","date":"27.09.2020","change":["New Events Tab","Update dependencies and modify code","Only use jsdelivr.com for Dependencies"]},
+		{"ver":"BETA 1.8","date":"27.09.2020","change":["New Events Tab","Update dependencies and modify code","Only use jsdelivr.com for Dependencies","Fix translation bug"]},
 		{"ver":"1.7.10","date":"25.09.2020","change":["Change Raid Bosses (Return of Zapdos)"]},
 		{"ver":"1.7.9","date":"22.09.2020","change":["New Shiny: Doduo","Change Raid Bosses (Mega Evolution Buddy Event)","Quests: Add Doduo"]},
 		{"ver":"1.7.8","date":"20.09.2020","change":["New Shiny: Porygon"]},
@@ -1274,6 +1274,8 @@ function init() {
 		$('#covid').attr("class","alert alert-danger alert-dismissible fade show");
 		$('#covid > strong').html("Zurzeit findet eine Serverwartung bei Pokémon GO statt. Bis vorausichtlich 3 Uhr ist kein Zugriff auf das Spiel möglich.<hr>Pokémon GO is currently undergoing server maintenance and will be inaccessible until around 3:00 a.m.")
 	} */
+
+	// $('#covid').removeAttr("hidden");
 
 	// make Raids
 	var txt = "";
@@ -1491,6 +1493,7 @@ function init() {
 			tg_gymnew.push(gymjson.gyms[i].value);
 		}	
 	}
+	txt += '<option id="txt_chgym" value="" disabled selected hidden>Wähle eine Arena aus.</option>'
 	document.getElementById("gym").innerHTML = txt;
 	
 	// make Changelog and add version to credits
