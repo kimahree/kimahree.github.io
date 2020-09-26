@@ -1072,6 +1072,7 @@ var legacy = [3,9,10,12,13,16,25,26,27,28,29,30,31,32,33,34,35,36,"37A",38,39,40
 
 var changelogjson = {
 	"items": [
+		{"ver":"BETA 1.8","date":"27.09.2020","change":["New Events Tab","Update dependencies and modify code","Only use jsdelivr.com for Dependencies"]},
 		{"ver":"1.7.10","date":"25.09.2020","change":["Change Raid Bosses (Return of Zapdos)"]},
 		{"ver":"1.7.9","date":"22.09.2020","change":["New Shiny: Doduo","Change Raid Bosses (Mega Evolution Buddy Event)","Quests: Add Doduo"]},
 		{"ver":"1.7.8","date":"20.09.2020","change":["New Shiny: Porygon"]},
@@ -1490,7 +1491,6 @@ function init() {
 			tg_gymnew.push(gymjson.gyms[i].value);
 		}	
 	}
-	txt += '<option id="txt_chgym" value="" disabled selected hidden>Wähle eine Arena aus.</option>'
 	document.getElementById("gym").innerHTML = txt;
 	
 	// make Changelog and add version to credits
@@ -1577,37 +1577,58 @@ function init() {
 	var curtime = new Date().getTime()
 	var current = 0;
 	var upcoming = 0;
+	events.forEach(function(val) {
+		if (!val.start) {
+			val.start = Infinity;
+		}
+		if (!val.end) {
+			val.end = Infinity;
+		}
+		if (!val.color) {
+			val.color = "#f2f2f2";
+		}
+	});
+    events.sort((a,b) => (a.end > b.end) ? 1 : ((b.end > a.end) ? -1 : 0));
 	for (i = 0; i < events.length; i++) {
 		txt = "";
-		if (events[i].end - curtime < 0) {
+		var diff = events[i].end - curtime;
+		if (diff < 0 || events[i].start - curtime >= 0 ) {
 			continue;
 		}
-		var timecheck = events[i].start - curtime;
-		var cardcolor = events[i].color?events[i].color:"#f2f2f2"
-		txt += '<div class="card mb-3" style="background:' + cardcolor + '"><div class="card-body" ' + "onclick='window.open(" + '"' + events[i].url + '"' + ")'>" + '<div class="row"><div class="col-9 mb-2"><div class="box h-100 d-flex justify-content-end flex-column"><h4 class="card-title">' + events[i].de + '</h4><p class="card-text">';
-		if (timecheck < 0) {
-			current++;
-			txt += "bis " + new Date(events[i].end).toLocaleString();
+		current++;
+		txt += '<div class="card mb-3" style="background:' + events[i].color + '"><div class="card-body" ' + "onclick='window.open(" + '"' + events[i].url + '"' + ")'>" + '<div class="row"><div class="col-9 mb-2"><div class="box h-100 d-flex justify-content-end flex-column"><h4 class="card-title">' + events[i].de + '</h4><p class="card-text">';
+
+		if (events[i].end != Infinity) {
+			txt += 'bis ' + new Date(events[i].end).toLocaleString() + '</p></div></div><div class="col-3"><div class="box h-100 d-flex justify-content-center flex-column"><p class="card-text">endet in ' + DiffString(diff) + '</p></div></div></div></div></div>'; 
 		}
 		else {
-			upcoming++;
-			txt += "ab " + new Date(events[i].start).toLocaleString();
+			txt += 'Enddatum unbekannt</p></div></div><div class="col-3"><div class="box h-100 d-flex justify-content-center flex-column"><p class="card-text"></p></div></div></div></div></div>'; 
 		}
-		txt += '</p></div></div><div class="col-3"><div class="box h-100 d-flex justify-content-center flex-column"><p class="card-text">';
-		if (timecheck < 0) {
-			var diff = events[i].end - curtime;
-			txt += "endet in " + DiffString(diff);
+		document.getElementById("current").innerHTML += txt; 
+		events.splice(i,1);
+		i--;
+	}
+
+    events.sort((a,b) => (a.start > b.start) ? 1 : ((b.start > a.start) ? -1 : 0));
+	for (i = 0; i < events.length; i++) {
+		txt = "";
+		upcoming++;
+		txt += '<div class="card mb-3" style="background:' + events[i].color + '"><div class="card-body" ' + "onclick='window.open(" + '"' + events[i].url + '"' + ")'>" + '<div class="row"><div class="col-9 mb-2"><div class="box h-100 d-flex justify-content-end flex-column"><h4 class="card-title">' + events[i].de + '</h4><p class="card-text">';
+		if (events[i].start != Infinity) {
+			txt += 'ab ' + new Date(events[i].start).toLocaleString() + '</p></div></div><div class="col-3"><div class="box h-100 d-flex justify-content-center flex-column"><p class="card-text">startet in ' + DiffString(events[i].start - curtime) + '</p></div></div></div></div></div>'; 
 		}
 		else {
-			txt += "startet in " + DiffString(timecheck);
+			txt += 'Startdatum unbekannt</p></div></div><div class="col-3"><div class="box h-100 d-flex justify-content-center flex-column"><p class="card-text"></p></div></div></div></div></div>'; 
 		}
-		txt += '</p></div></div></div></div></div>'
-		if (timecheck < 0) {
-			document.getElementById("current").innerHTML += txt;
-		}
-		else {
-			document.getElementById("upcoming").innerHTML += txt;
-		}
+		document.getElementById("upcoming").innerHTML += txt;
+	}
+
+	if (current == 0) {
+		document.getElementById("current").innerHTML += "Keine aktuellen Events :(<br><br>"; 
+	}	
+
+	if (upcoming == 0) {
+		document.getElementById("upcoming").innerHTML += "Keine bevorstehenden Events :(<br><br>"; 
 	}
 }
 
@@ -1929,7 +1950,7 @@ function changeLang() {
 		}
 		var newText = (getPkmnEng(origText)) ? getPkmnEng(origText).name:origText;
 		newText += s?"✨":"";
-		newText += evt?"⏱️":"";
+		newText += evt?"⏱":"";
 		return newText;
 	});
 
@@ -1983,7 +2004,7 @@ function changeLang() {
 		}
 		var newText = (getPkmn(origText).en) ? getPkmn(origText).en:origText;
 		newText += s?"✨":"";
-		newText += evt?"⏱️":"";
+		newText += evt?"⏱":"";
 		return newText;
 	});
 
