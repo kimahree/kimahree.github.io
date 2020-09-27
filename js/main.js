@@ -22,7 +22,7 @@ var endtimer = new Date(67500000 + hatchtimer * 60000);
 
 var secret = 0;
 
-var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_instr","txt_button","txt_button2","txt_multi","txt_chgym","txt_cre_close","txt_cl_close","txt_reg_close","txt_boq_intro","txt_boq_generate"];
+var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_instr","txt_button","txt_button2","txt_multi","txt_chgym","txt_cre_close","txt_cl_close","txt_reg_close","txt_boq_intro","txt_boq_generate","txt_evt_current","txt_evt_upcoming"];
 
 var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beeinträchtigt und fehlerhaft.",
 "Zur Hauptseite",
@@ -40,7 +40,9 @@ var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beein
 "Schließen",
 "Schließen",
 'Auf dieser Seite kannst du für <a href="https://www.bookofquests.de/">Book of Quests</a> einen Link erstellen, bei dem nur bestimmte Pokémon/Items auf der Karte angezeigt werden. Klicke dazu alle gewünschten Pokémon/Items an und drücke dann auf "Link erstellen!".<br>Um einen Negativfilter zu erstellen, klicke das Pokémon/Item zweimal an.',
-"Link erstellen!"
+"Link erstellen!",
+"Aktuelle Events",
+"Bevorstehende Events"
 ];
 
 var txt_en = ["Attention, you're currently on the beta page. Functionality might be compromised and bugged.",
@@ -59,7 +61,29 @@ var txt_en = ["Attention, you're currently on the beta page. Functionality might
 "Close",
 "Close",
 'On this site you can generate a link to <a href="https://www.bookofquests.de/">Book of Quests</a>, which will only show certain Pokémon/items on the map. Click all the Pokémon/items you want to see and then press "Generate Link!".<br>Click a Pokémon/item twice to generate a negative filter.',
-"Generate Link!"
+"Generate Link!",
+"Current events",
+"Upcoming events"
+];
+
+var evt_txt_de = ["bis ",
+"endet in ",
+"Enddatum unbekannt",
+"ab ",
+"startet in ",
+"Startdatum unbekannt",
+"Keine aktuellen Events",
+"Keine bevorstehenden Events"
+];
+
+var evt_txt_en = ["until ",
+"ends in ",
+"Unknown end date",
+"from ",
+"starts in ",
+"Unknown start date",
+"No current events",
+"No upcoming events"
 ];
 
 var hatchwarn = 0;
@@ -1575,12 +1599,19 @@ function init() {
 	$('.selectpicker').selectpicker('refresh');
 
 	// make Eventlist
+	createEventlist("de");
 
-	txt = "";
+}
+
+function createEventlist(lang) {
+	var txt = "";
 	var curtime = new Date().getTime();
 	var current = 0;
 	var upcoming = 0;
-	events.forEach(function(val) {
+	document.getElementById("current").innerHTML = ""; 
+	document.getElementById("upcoming").innerHTML = ""; 
+	eventlist = events.slice();
+	eventlist.forEach(function(val) {
 		if (!val.start) {
 			val.start = Infinity;
 		}
@@ -1591,52 +1622,52 @@ function init() {
 			val.color = "#f2f2f2";
 		}
 	});
-    events.sort((a,b) => (a.end > b.end) ? 1 : ((b.end > a.end) ? -1 : 0));
-	for (i = 0; i < events.length; i++) {
+    eventlist.sort((a,b) => (a.end > b.end) ? 1 : ((b.end > a.end) ? -1 : 0));
+	for (i = 0; i < eventlist.length; i++) {
 		txt = "";
-		var diff = events[i].end - curtime;
+		var diff = eventlist[i].end - curtime;
 		if (diff < 0) {
-			events.splice(i,1);
+			eventlist.splice(i,1);
 			i--;
 			continue;
 		}
-		if (events[i].start - curtime >= 0 ) {
+		if (eventlist[i].start - curtime >= 0 ) {
 			continue;
 		}
 		current++;
-		txt += '<div class="card mb-3" style="background:' + events[i].color + '"><div class="card-body" ' + "onclick='window.open(" + '"' + events[i].url + '"' + ")'>" + '<div class="row"><div class="col-9 mb-2"><div class="box h-100 d-flex justify-content-end flex-column"><h4 class="card-title">' + events[i].de + '</h4><p class="card-text">';
+		txt += '<div class="card mb-3" style="background:' + eventlist[i].color + '"><div class="card-body" ' + "onclick='window.open(" + '"' + eventlist[i].url + '"' + ")'>" + '<div class="row"><div class="col-9 mb-2"><div class="box h-100 d-flex justify-content-end flex-column"><h4 class="card-title">' + eval("eventlist[i]."+lang) + '</h4><p class="card-text">';
 
-		if (events[i].end != Infinity) {
-			txt += 'bis ' + new Date(events[i].end).toLocaleString() + '</p></div></div><div class="col-3"><div class="box h-100 d-flex justify-content-center flex-column"><p class="card-text">endet in ' + DiffString(diff) + '</p></div></div></div></div></div>'; 
+		if (eventlist[i].end != Infinity) {
+			txt += eval("evt_txt_"+lang+"[0]") + new Date(eventlist[i].end).toLocaleString() + '</p></div></div><div class="col-3"><div class="box h-100 d-flex justify-content-center flex-column"><p class="card-text">' + eval("evt_txt_"+lang+"[1]") + DiffString(diff) + '</p></div></div></div></div></div>'; 
 		}
 		else {
-			txt += 'Enddatum unbekannt</p></div></div><div class="col-3"><div class="box h-100 d-flex justify-content-center flex-column"><p class="card-text"></p></div></div></div></div></div>'; 
+			txt += eval("evt_txt_"+lang+"[2]") + '</p></div></div><div class="col-3"><div class="box h-100 d-flex justify-content-center flex-column"><p class="card-text"></p></div></div></div></div></div>'; 
 		}
 		document.getElementById("current").innerHTML += txt; 
-		events.splice(i,1);
+		eventlist.splice(i,1);
 		i--;
 	}
 
-    events.sort((a,b) => (a.start > b.start) ? 1 : ((b.start > a.start) ? -1 : 0));
-	for (i = 0; i < events.length; i++) {
+    eventlist.sort((a,b) => (a.start > b.start) ? 1 : ((b.start > a.start) ? -1 : 0));
+	for (i = 0; i < eventlist.length; i++) {
 		txt = "";
 		upcoming++;
-		txt += '<div class="card mb-3" style="background:' + events[i].color + '"><div class="card-body" ' + "onclick='window.open(" + '"' + events[i].url + '"' + ")'>" + '<div class="row"><div class="col-9 mb-2"><div class="box h-100 d-flex justify-content-end flex-column"><h4 class="card-title">' + events[i].de + '</h4><p class="card-text">';
-		if (events[i].start != Infinity) {
-			txt += 'ab ' + new Date(events[i].start).toLocaleString() + '</p></div></div><div class="col-3"><div class="box h-100 d-flex justify-content-center flex-column"><p class="card-text">startet in ' + DiffString(events[i].start - curtime) + '</p></div></div></div></div></div>'; 
+		txt += '<div class="card mb-3" style="background:' + eventlist[i].color + '"><div class="card-body" ' + "onclick='window.open(" + '"' + eventlist[i].url + '"' + ")'>" + '<div class="row"><div class="col-9 mb-2"><div class="box h-100 d-flex justify-content-end flex-column"><h4 class="card-title">' +  eval("eventlist[i]."+lang) + '</h4><p class="card-text">';
+		if (eventlist[i].start != Infinity) {
+			txt += eval("evt_txt_"+lang+"[3]") + new Date(eventlist[i].start).toLocaleString() + '</p></div></div><div class="col-3"><div class="box h-100 d-flex justify-content-center flex-column"><p class="card-text">' + eval("evt_txt_"+lang+"[4]") + DiffString(eventlist[i].start - curtime) + '</p></div></div></div></div></div>'; 
 		}
 		else {
-			txt += 'Startdatum unbekannt</p></div></div><div class="col-3"><div class="box h-100 d-flex justify-content-center flex-column"><p class="card-text"></p></div></div></div></div></div>'; 
+			txt += eval("evt_txt_"+lang+"[5]") + '</p></div></div><div class="col-3"><div class="box h-100 d-flex justify-content-center flex-column"><p class="card-text"></p></div></div></div></div></div>'; 
 		}
 		document.getElementById("upcoming").innerHTML += txt;
 	}
 
 	if (current == 0) {
-		document.getElementById("current").innerHTML += "Keine aktuellen Events :(<br><br>"; 
+		document.getElementById("current").innerHTML += eval("evt_txt_"+lang+"[6]") + " :(<br><br>"; 
 	}	
 
 	if (upcoming == 0) {
-		document.getElementById("upcoming").innerHTML += "Keine bevorstehenden Events :(<br><br>"; 
+		document.getElementById("upcoming").innerHTML += eval("evt_txt_"+lang+"[7]") + " :(<br><br>"; 
 	}
 }
 
@@ -1980,6 +2011,8 @@ function changeLang() {
 	if (t3index > 0) { tinysort("#t3>option:not(:first-child)"); }
 	if (t2index > 0) { tinysort("#t2>option:not(:first-child)"); }
 	if (t1index > 0) { tinysort("#t1>option:not(:first-child)"); }
+
+	createEventlist("de");
 	
 	$('.selectpicker').selectpicker('refresh');
   }
@@ -2035,6 +2068,8 @@ function changeLang() {
 	if (t2index > 0) { tinysort("#t2>option:not(:first-child)"); }
 	if (t1index > 0) { tinysort("#t1>option:not(:first-child)"); }
 	
+	createEventlist("en");
+
 	$('.selectpicker').selectpicker('refresh');
 
   }
