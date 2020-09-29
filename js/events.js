@@ -1,13 +1,9 @@
 ﻿var events = [
-{"de":"GBL Season 4 - Superliga","en":"GBL Season 4 - Great League","start":1600113600000,"end":1601323200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season4/"},
-{"de":"Mega-Kumpel Herausforderung","en":"Mega Buddy Challenge","start":1600754400000,"end":1601323200000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/mega-september-event/"},
 {"de":"Jessie & James in Mauzi-Ballons","en":"Jessie & James in Meowth Balloons","start":1600725600000,"end":1601503140000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/jessie-james-leaving/"},
 {"de":"September Forschungsdurchbruch","en":"September Research Breakthrough","start":1598990400000,"end":1601582400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/sept-content-update/"},
 {"de":"Alola- und Galar-Formen in 7km Eiern","en":"Alolan and Galarian Forms in 7km eggs","start":1591653600000,"url":"https://pokemongolive.com/post/7kmeggs-alolan-galarian-forms/"},
 {"de":"Zapdos in Raids","en":"Zapdos in Raids","start":1601038800000,"end":1601668800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/sept-content-update/"},
 {"de":"GBL Season 4 - Hyperliga","en":"GBL Season 4 - Ultra League","start":1601323200000,"end":1602532800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season4/"},
-{"de":"Eneco Rampenlichtstunde","en":"Skitty Spotlight Hour","start":1601395200000,"end":1601398800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/sept-content-update/"},
-{"de":"Mega-Hundemon in Raids","en":"Mega Houndoom in Raids","start":1601409600000,"end":1601409600000,"color":"#ffe6e6","url":"https://twitter.com/PokemonGoApp/status/1309221060450168838"},
 {"de":"Oktober Forschungsdurchbruch","en":"October Research Breakthrough","start":1601582400000,"end":1604264400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/oct2020-events/"},
 {"de":"Longchamp x Pokémon Event","en":"Longchamp x Pokémon Event","start":1601650800000,"end":1602219600000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/longchampfashionweek"},
 {"de":"Lavados in Raids","en":"Moltres in Raids","start":1601668800000,"end":1602273600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/oct2020-events/"},
