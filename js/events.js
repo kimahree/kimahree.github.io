@@ -12,13 +12,13 @@
 {"de":"Begrenzte Forschung mit Mauzi","en":"Meowth Limited Research","start":1602309600000,"end":1602360000000,"color":"#e5fff9","url":"https://pokemongolive.com/post/oct2020-events/"},
 {"de":"GBL Season 4 - Meisterliga","en":"GBL Season 4 - Master League","start":1602532800000,"end":1603742400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season4/"},
 {"de":"Pikachu (Original-Kappe) Rampenlichtstunde","en":"Original Cap Pikachu Spotlight Hour","start":1602604800000,"end":1602608400000,"color":"#ffffe6","url":"https://pokemongolive.com/post/oct2020-events/"},
-{"de":"Glumanda Community Day","en":"Charmander Community Day","start":1602925200000,"end":1602946800000,"color":"#e5fff9","url":"https://pokemongolive.com/events/community-day/"},
+{"de":"Glumanda Community Day","en":"Charmander Community Day","start":1602925200000,"end":1602946800000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communityday-oct20/"},
 {"de":"Shuppet Rampenlichtstunde","en":"Shuppet Spotlight Hour","start":1603209600000,"end":1603213200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/oct2020-events/"},
 {"de":"GBL Season 4 - Halloween Cup","en":"GBL Season 4 - Halloween Cup","start":1603742400000,"end":1604437200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season4/"},
 {"de":"Zwirrlicht Rampenlichtstunde","en":"Duskull Spotlight Hour","start":1603818000000,"end":1603821600000,"color":"#ffffe6","url":"https://pokemongolive.com/post/oct2020-events/"},
 {"de":"GBL Season 4 - Alle Ligen","en":"GBL Season 4 - All Leagues","start":1604437200000,"end":1604955600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season4/"},
 {"de":"GBL Season 5","en":"GBL Season 5","start":1604955600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season4/"},
-{"de":"Victini Spezialforschung","en":"Victini Special Research","color":"#e6ffe6","url":"https://pokemongolive.com/post/sept-content-update/"},
+{"de":"Halbe Brutdistanz, Besserer Rauch und andere Boni","en":"Half Hatch Distance, Improved Incense and other bonuses","end":1601582400000,"url":"https://pokemongolive.com/post/sept-content-update/"},
 {"de":"GO Kampfabend","en":"GO Battle Night","color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season4/"},
 ];
 

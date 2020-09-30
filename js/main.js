@@ -1614,7 +1614,7 @@ function createEventlist(lang) {
 	eventlist = events.slice();
 	eventlist.forEach(function(val) {
 		if (!val.start) {
-			val.start = Infinity;
+			val.start = (!val.end)?Infinity:0;
 		}
 		if (!val.end) {
 			val.end = Infinity;
