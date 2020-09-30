@@ -419,7 +419,7 @@ var pokemon = [
 {"dex":226,"name":"Mantax","en":"Mantine"},
 {"dex":227,"name":"Panzaeron","en":"Skarmory","getshiny":true},
 {"dex":228,"name":"Hunduster","en":"Houndour","getshiny":true},
-{"dex":229,"name":"Hundemon","en":"Houndoom","evolved":true,"getshiny":true},
+{"dex":229,"name":"Hundemon","en":"Houndoom","evolved":true},
 {"dex":230,"name":"Seedraking","en":"Kingdra","evolved":true},
 {"dex":231,"name":"Phanpy"},
 {"dex":232,"name":"Donphan","evolved":true},
@@ -1087,7 +1087,7 @@ var specialfilter = [
 var raids = {
 	"tierM":["3M","6X","6Y","229M","18M","9M"],
 	"tier5":[145],
-	"tier3":["103A",149,131,95,127]
+	"tier3":[359,"103A","26A",450,95,112]
 };
 
 var quests = [1,4,7,37,60,63,79,92,95,96,100,102,129,133,138,140,142,147,177,202,246,280,327,343,345,347,374,436,527];
@@ -1096,7 +1096,7 @@ var legacy = [3,9,10,12,13,16,25,26,27,28,29,30,31,32,33,34,35,36,"37A",38,39,40
 
 var changelogjson = {
 	"items": [
-		{"ver":"1.8.1","date":"29.09.2020","change":["Change Raid Bosses (Mega Houndoom)","New Shiny: Houndoom"]},
+		{"ver":"1.8.1","date":"29.09.2020","change":["Change Raid Bosses (Mega Houndoom)"]},
 		{"ver":"1.8","date":"27.09.2020","change":["New Events Tab","Update dependencies and modify code","Only use jsdelivr.com for dependencies","Fix translation bug"]},
 		{"ver":"1.7.10","date":"25.09.2020","change":["Change Raid Bosses (Return of Zapdos)"]},
 		{"ver":"1.7.9","date":"22.09.2020","change":["New Shiny: Doduo","Change Raid Bosses (Mega Evolution Buddy Event)","Quests: Add Doduo"]},
