@@ -1086,7 +1086,7 @@ var specialfilter = [
 
 var raids = {
 	"tierM":["3M","6X","6Y","229M","18M","9M"],
-	"tier5":[145],
+	"tier5":[146],
 	"tier3":[573,575,281]
 };
 
@@ -1096,6 +1096,7 @@ var legacy = [3,9,10,12,13,16,25,26,27,28,29,30,31,32,33,34,35,36,"37A",38,39,40
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.8.4","date":"03.10.2020","change":["Change Raid Bosses (Return of Moltres)"]},
 		{"ver":"1.8.3","date":"02.10.2020","change":["New Shiny: Kricketot","Change Raid Bosses (Longchamp Collaboration Event)","Quests: Add Smoochum"]},
 		{"ver":"1.8.2","date":"01.10.2020","change":["New Shiny: Houndoom","Quests: Add Alolan Rattata, Haunter, Murkrow, Misdreavus, Sableye, Shuppet, Duskull, Drifloon, Stunky, Yamask, Litwick","Quests: Remove Abra, Slowpoke, Drowzee, Exeggcute, Natu, Wobbuffet, Ralts, Baltoy, Beldum, Bronzor, Woobat"]},
 		{"ver":"1.8.1","date":"29.09.2020","change":["Change Raid Bosses (Mega Houndoom)","Quests: Remove Doduo"]},
