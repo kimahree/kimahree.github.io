@@ -599,7 +599,7 @@ var pokemon = [
 {"dex":398,"name":"Staraptor","evolved":true},
 {"dex":399,"name":"Bidiza","en":"Bidoof"},
 {"dex":400,"name":"Bidifas","en":"Bibarel","evolved":true},
-{"dex":401,"name":"Zirpurze","en":"Kricketot"},
+{"dex":401,"name":"Zirpurze","en":"Kricketot","getshiny":true},
 {"dex":402,"name":"Zirpeise","en":"Kricketune","evolved":true},
 {"dex":403,"name":"Sheinux","en":"Shinx","getshiny":true},
 {"dex":404,"name":"Luxio","evolved":true},
@@ -1087,15 +1087,16 @@ var specialfilter = [
 var raids = {
 	"tierM":["3M","6X","6Y","229M","18M","9M"],
 	"tier5":[145],
-	"tier3":[359,"103A","26A",450,95,112]
+	"tier3":[573,575,281]
 };
 
 var quests = [1,4,7,"19A",37,60,92,93,95,100,129,133,138,140,142,147,198,200,246,302,327,345,347,353,355,425,434,562,607];
-var quests_event = [];
+var quests_event = [238];
 var legacy = [3,9,10,12,13,16,25,26,27,28,29,30,31,32,33,34,35,36,"37A",38,39,40,41,42,44,47,48,50,"50A",51,"52A",55,56,58,59,61,63,66,67,69,70,72,73,74,"74A",75,77,79,80,81,84,85,86,87,88,89,90,98,102,"103A",104,106,107,108,109,111,112,113,114,117,120,121,123,124,125,126,127,131,132,135,137,143,153,156,158,164,165,171,177,179,182,183,184,185,187,190,191,193,194,196,197,202,203,204,206,207,209,213,215,216,219,220,224,227,228,231,234,241,252,255,256,259,261,263,270,273,276,277,280,285,286,287,290,294,296,299,300,304,307,309,310,311,312,313,314,315,316,317,318,320,322,325,328,331,333,335,336,337,338,339,341,343,349,359,361,362,366,371,374,387,390,391,393,396,399,408,410,412,"412S","412T",415,420,"421S",427,431,436,449,453,459,504,506,509,519,522,524,527,529,531,536,548,557,588,594,595,613,616,618,622];
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.8.3","date":"02.10.2020","change":["New Shiny: Kricketot","Change Raid Bosses (Longchamp Collaboration Event)","Quests: Add Smoochum"]},
 		{"ver":"1.8.2","date":"01.10.2020","change":["New Shiny: Houndoom","Quests: Add Alolan Rattata, Haunter, Murkrow, Misdreavus, Sableye, Shuppet, Duskull, Drifloon, Stunky, Yamask, Litwick","Quests: Remove Abra, Slowpoke, Drowzee, Exeggcute, Natu, Wobbuffet, Ralts, Baltoy, Beldum, Bronzor, Woobat"]},
 		{"ver":"1.8.1","date":"29.09.2020","change":["Change Raid Bosses (Mega Houndoom)","Quests: Remove Doduo"]},
 		{"ver":"1.8","date":"27.09.2020","change":["New Events Tab","Update dependencies and modify code","Only use jsdelivr.com for dependencies","Fix translation bug"]},
