@@ -20,6 +20,7 @@
 {"de":"Kostenloser Fern-Raidpass, jeden Montag","en":"Free Remote Raid Pass on Mondays","start":1601928000000,"end":1606770000000,"url":"https://pokemongolive.com/post/limitedtime-remoteraidpass/"},
 {"de":"Herbst Event","en":"Autumn Event","start":1602255600000,"end":1602532800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/autumn-event-2020/"},
 {"de":"Event (Details noch nicht bekannt)","en":"Event (Details not known yet)","start":1602500400000,"end":1603137600000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/autumn-event-2020/"},
+{"de":"Niantic Geburtstagsevent","en":"Niantic Birthday Event","start":1601802000000,"end":1601823600000,"color":"#e5fff9","url":"https://pokemongolive.com/post/niantic-birthday-event-2020/"},
 ];
 
 var colors = [

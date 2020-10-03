@@ -47,6 +47,7 @@ var gymjson = {
 {"value":"Hallo Moderne Skulptur","map":"https://goo.gl/maps/Wv6zdyZbkj9uGyM96"},
 {"value":"High Voltage Man","map":"https://goo.gl/maps/J43qX2WGr7UGvxvH9"},
 {"value":"Hirsch","map":"https://goo.gl/maps/FJwFemXJMMUbmpVg7"},
+{"value":"Hochzeitsgarten","hidden":true,"map":"https://goo.gl/maps/fcdUXYjCTWtrP8pH7"},
 {"value":"Hochzeitsplattform","map":"https://goo.gl/maps/BGnrywMziQD68mJMA"},
 {"value":"Interkultureller Garten Marzahn e.V.","map":"https://goo.gl/maps/xJnWKAukw93hA3EN8"},
 {"value":"Iron Man","map":"https://goo.gl/maps/cdEyM5Be4kYgRgCV7"},
