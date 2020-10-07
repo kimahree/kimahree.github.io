@@ -29,6 +29,13 @@ function createEventlist(lang) {
 	document.getElementById("current").innerHTML = ""; 
 	document.getElementById("upcoming").innerHTML = ""; 
 	eventlist = events.slice();
+	var nestmigrate = 1601510400000;
+	var nestmigct = 124;
+	while (nestmigrate < curtime) {
+		nestmigrate += 1209600000;
+		nestmigct++
+	}
+	eventlist.push({"de":"Nesterwechsel #"+nestmigct,"en":"Nest migration #"+nestmigct,"start":nestmigrate,"color":"#ffe6cc","url":"https://pogo.berlin/exraids/nester.html"});
 	eventlist.forEach(function(val) {
 		if (!val.start) {
 			val.start = (!val.end)?Infinity:0;

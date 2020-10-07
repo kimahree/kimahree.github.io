@@ -1096,6 +1096,7 @@ var legacy = [3,9,10,12,13,16,25,26,27,28,29,30,31,32,33,34,35,36,"37A",38,39,40
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.8.5","date":"07.10.2020","change":["Add Nest Migration to Events tab",'[Gesundbrunnen] Add EX-Raid tag for "Golden Globe"']},
 		{"ver":"1.8.4","date":"03.10.2020","change":["Change Raid Bosses (Return of Moltres)"]},
 		{"ver":"1.8.3","date":"02.10.2020","change":["New Shiny: Kricketot","Change Raid Bosses (Longchamp Collaboration Event)","Quests: Add Smoochum"]},
 		{"ver":"1.8.2","date":"01.10.2020","change":["New Shiny: Houndoom","Quests: Add Alolan Rattata, Haunter, Murkrow, Misdreavus, Sableye, Shuppet, Duskull, Drifloon, Stunky, Yamask, Litwick","Quests: Remove Abra, Slowpoke, Drowzee, Exeggcute, Natu, Wobbuffet, Ralts, Baltoy, Beldum, Bronzor, Woobat"]},
@@ -1615,6 +1616,13 @@ function createEventlist(lang) {
 	document.getElementById("current").innerHTML = ""; 
 	document.getElementById("upcoming").innerHTML = ""; 
 	eventlist = events.slice();
+	var nestmigrate = 1601510400000;
+	var nestmigct = 124;
+	while (nestmigrate < curtime) {
+		nestmigrate += 1209600000;
+		nestmigct++
+	}
+	eventlist.push({"de":"Nesterwechsel #"+nestmigct,"en":"Nest migration #"+nestmigct,"start":nestmigrate,"color":"#ffe6cc","url":"https://pogo.berlin/exraids/nester.html"});
 	eventlist.forEach(function(val) {
 		if (!val.start) {
 			val.start = (!val.end)?Infinity:0;
