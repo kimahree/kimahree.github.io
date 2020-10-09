@@ -22,7 +22,7 @@ var endtimer = new Date(67500000 + hatchtimer * 60000);
 
 var secret = 0;
 
-var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_instr","txt_button","txt_button2","txt_multi","txt_chgym","txt_cre_close","txt_cl_close","txt_reg_close","txt_boq_intro","txt_boq_generate","txt_evt_current","txt_evt_upcoming"];
+var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_remote","txt_instr","txt_button","txt_button2","txt_multi","txt_chgym","txt_cre_close","txt_cl_close","txt_reg_close","txt_boq_intro","txt_boq_generate","txt_evt_current","txt_evt_upcoming"];
 
 var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beeinträchtigt und fehlerhaft.",
 "Zur Hauptseite",
@@ -30,7 +30,8 @@ var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beein
 "Arena:",
 "Schlüpfzeit/Restzeit:",
 "Startzeit:",
-"Teilnehmer:",
+"Spieler vor Ort:",
+"Fern-Spieler:",
 'Drücke auf "Start!", überprüfe deine Angaben und drücke dann auf "In WhatsApp posten".<br>',
 "In WhatsApp posten",
 "In Telegram posten",
@@ -51,7 +52,8 @@ var txt_en = ["Attention, you're currently on the beta page. Functionality might
 "Gym:",
 "Hatch time/time remaining:",
 "Start time:",
-"Participants:",
+"Local players:",
+"Remote players:",
 'Press "Start!", check your data and then press "Post in WhatsApp".<br>',
 "Post in WhatsApp",
 "Post in Telegram",
@@ -106,7 +108,9 @@ var warn_de =["",
 'Das Ei ist noch nicht ausgeschlüpft, bitte wähle bei Raid die "Ei"-Option aus.',
 'Das 5er Ei ist noch nicht ausgeschlüpft, bitte wähle bei Raid "5er Ei" aus.',
 "Fehler beim Einlesen der Daten",
-"Bitte geb eine passende Startzeit ein."
+"Bitte geb eine passende Startzeit ein.",
+"Es können nur maximal 10 Spieler aus der Ferne teilnehmen.",
+"Bitte trage jeden Account bei Fernspielern einzeln ein."
 ];
 
 var warn_en =["",
@@ -124,7 +128,9 @@ var warn_en =["",
 'The egg has not hatched yet, so please choose the "egg" option as raid.',
 'The Tier 5 egg has not hatched yet, so please choose "Tier 5 egg" as raid.',
 "Failed to parse the input",
-"Please enter a valid start time."
+"Please enter a valid start time.",
+"Only a maximum of 10 remote players can join a single raid.",
+"Please enter each account at remote players seperately."
 ];
 
 var multi = 0;
@@ -696,7 +702,7 @@ var pokemon = [
 {"dex":485,"name":"Heatran","legendary":true,"getshiny":true},
 {"dex":486,"name":"Regigigas","legendary":true},
 {"dex":487,"name":"Giratina (Wandel)","de":"Giratina (Wandelform)","en":"Giratina (Altered Forme)","legendary":true,"getshiny":true},
-{"dex":"487O","name":"Giratina (Urform)","de":"Giratina (Urform)","en":"Giratina (Origin Forme)","legendary":true},
+{"dex":"487O","name":"Giratina","de":"Giratina (Urform)","en":"Giratina (Origin Forme)","legendary":true,"getshiny":true},
 {"dex":488,"name":"Cresselia","legendary":true,"getshiny":true},
 {"dex":489,"name":"Phione","mythical":true},
 {"dex":490,"name":"Manaphy","mythical":true},
@@ -1086,7 +1092,7 @@ var specialfilter = [
 
 var raids = {
 	"tierM":["3M","6X","6Y","229M","18M","9M"],
-	"tier5":[146],
+	"tier5":["487O"],
 	"tier3":[44,286,185,164,127]
 };
 
@@ -1096,6 +1102,7 @@ var legacy = [3,9,10,12,13,16,25,26,27,28,29,30,31,32,33,34,35,36,"37A",38,39,40
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9","date":"09.10.2020","change":["[Gesundbrunnen] Seperate local from remote raiders in GUI","New Shiny: Giratina (Origin Forme)","Change Raid Bosses (Return of Giratina Origin Forme)"]},
 		{"ver":"1.8.7","date":"09.10.2020","change":["New Shiny: Vulpix","Change Raid Bosses (Autumn Event)"]},
 		{"ver":"1.8.6","date":"09.10.2020","change":["Change Raid Bosses (End of Longchamp Collaboration Event)","Quests: Remove Smoochum"]},
 		{"ver":"1.8.5","date":"07.10.2020","change":["Add Nest Migration to Events tab",'[Gesundbrunnen] Add EX-Raid tag for "Golden Globe"']},
@@ -1722,7 +1729,9 @@ function generateRaid(raidtext) {
   end.setMinutes(end.getMinutes()+raidtimer);
   end = end.toTimeString().substr(0,5);
   var player = document.getElementById("player").value;
-  player = player.replace(/\n/g,"<br>")
+  var remote = document.getElementById("remote").value;
+  player = player.replace(/\n/g,"<br>");
+  remote = remote.replace(/\n/g,"<br>");
   
   if (player && (!start || (startwarn != 0 && startwarn != 6) ) ) {
 	raidwarn = 15;
@@ -1738,7 +1747,42 @@ function generateRaid(raidtext) {
 	}
 	return;
   }
+
+  var remcheck = remote.match(/<br>/g);
+  if (remcheck == null) {
+	remcheck = "";
+	}
+
+  if (remote && (remcheck.length >= 10) ) {
+	raidwarn = 16;
+	if (getLang() == "de") {
+		document.getElementById("raidwarn").innerHTML = warn_de[16];
+	}
+	if (getLang() == "en") {
+		document.getElementById("raidwarn").innerHTML = warn_en[16];
+	}
+	if (raidtext == "" && !document.getElementById("addRaid").getAttributeNode("hidden")) {
+	    var hid3 = document.createAttribute("hidden");
+		document.getElementById("addRaid").setAttributeNode(hid3);
+	}
+	return;
+  }
   
+  if (remote && (remote.match(/\+[0-9]/g) != null) ) {
+	raidwarn = 17;
+	if (getLang() == "de") {
+		document.getElementById("raidwarn").innerHTML = warn_de[17];
+	}
+	if (getLang() == "en") {
+		document.getElementById("raidwarn").innerHTML = warn_en[17];
+	}
+	if (raidtext == "" && !document.getElementById("addRaid").getAttributeNode("hidden")) {
+	    var hid3 = document.createAttribute("hidden");
+		document.getElementById("addRaid").setAttributeNode(hid3);
+	}
+	return;
+  }
+
   if (raidtext == "") { 
 	multi = 1;
 	var hid = document.getElementById("addRaid").getAttributeNode("hidden");
@@ -1797,7 +1841,7 @@ function generateRaid(raidtext) {
 			text += "?";
 		}
 	}
-	text += "<br><br>" + player
+	text += "<br><br>📍 <b>vor Ort</b><br>" + player + "<br><br>🏠 <b>Fern</b> <i>(Limit 10!)</i><br>" + remote + "<br>";
   }
   
   if (region == "Marzahn") {
@@ -1841,6 +1885,8 @@ function generateRaid(raidtext) {
   var text2 = text.replace(/<br>/g,"\n");
   text2 = text2.replace(/<b>/g,"*");
   text2 = text2.replace(/<\/b>/g,"*");
+  text2 = text2.replace(/<i>/g,"_");
+  text2 = text2.replace(/<\/i>/g,"_");
   
   var n = encodeURIComponent(text2);
   $("#txt_button").attr("onclick", "window.open('https://api.whatsapp.com/send?text=" + n + "')");
