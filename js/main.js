@@ -176,7 +176,7 @@ var pokemon = [
 {"dex":34,"name":"Nidoking","evolved":true},
 {"dex":35,"name":"Piepi","en":"Clefairy","getshiny":true},
 {"dex":36,"name":"Pixi","en":"Clefable","evolved":true},
-{"dex":37,"name":"Vulpix"},
+{"dex":37,"name":"Vulpix","getshiny":true},
 {"dex":"37A","name":"Alola-Vulpix","en":"Alolan Vulpix","alolan":true,"getshiny":true},
 {"dex":38,"name":"Vulnona","en":"Ninetales","evolved":true},
 {"dex":"38A","name":"Alola-Vulnona","en":"Alolan Ninetales","alolan":true,"evolved":true},
@@ -1087,7 +1087,7 @@ var specialfilter = [
 var raids = {
 	"tierM":["3M","6X","6Y","229M","18M","9M"],
 	"tier5":[146],
-	"tier3":[359,"105A","26A",450,76,141,95,310]
+	"tier3":[44,286,185,164,127]
 };
 
 var quests = [1,4,7,"19A",37,60,92,93,95,100,129,133,138,140,142,147,198,200,246,302,327,345,347,353,355,425,434,562,607];
@@ -1096,6 +1096,7 @@ var legacy = [3,9,10,12,13,16,25,26,27,28,29,30,31,32,33,34,35,36,"37A",38,39,40
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.8.7","date":"09.10.2020","change":["New Shiny: Vulpix","Change Raid Bosses (Autumn Event)"]},
 		{"ver":"1.8.6","date":"09.10.2020","change":["Change Raid Bosses (End of Longchamp Collaboration Event)","Quests: Remove Smoochum"]},
 		{"ver":"1.8.5","date":"07.10.2020","change":["Add Nest Migration to Events tab",'[Gesundbrunnen] Add EX-Raid tag for "Golden Globe"']},
 		{"ver":"1.8.4","date":"03.10.2020","change":["Change Raid Bosses (Return of Moltres)"]},
