@@ -1102,6 +1102,7 @@ var legacy = [3,9,10,12,13,16,25,26,27,28,29,30,31,32,33,34,35,36,"37A",38,39,40
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.1","date":"10.10.2020","change":["Add line to visually seperate multiraids","[Marzahn] Fix major bug, which prevented creating raids"]},
 		{"ver":"1.9","date":"09.10.2020","change":["[Gesundbrunnen] Seperate local from remote raiders in GUI","New Shiny: Giratina (Origin Forme)","Change Raid Bosses (Return of Giratina Origin Forme)"]},
 		{"ver":"1.8.7","date":"09.10.2020","change":["New Shiny: Vulpix","Change Raid Bosses (Autumn Event)"]},
 		{"ver":"1.8.6","date":"09.10.2020","change":["Change Raid Bosses (End of Longchamp Collaboration Event)","Quests: Remove Smoochum"]},
@@ -1729,7 +1730,11 @@ function generateRaid(raidtext) {
   end.setMinutes(end.getMinutes()+raidtimer);
   end = end.toTimeString().substr(0,5);
   var player = document.getElementById("player").value;
-  var remote = document.getElementById("remote").value;
+  try {
+	var remote = document.getElementById("remote").value;
+  } catch {
+	var remote = "";
+  }
   player = player.replace(/\n/g,"<br>");
   remote = remote.replace(/\n/g,"<br>");
   
@@ -1906,7 +1911,7 @@ function generateRaid(raidtext) {
 function addRaid() {
   multi++;
   var ol = document.getElementById("ex").innerHTML;
-  var old = ol + "<br><br>";
+  var old = ol + "<br>------------------------------------------------------------<br>";
   generateRaid(old);
   if (raidwarn != 0) {
 	multi--;
