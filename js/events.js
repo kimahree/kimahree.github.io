@@ -3,7 +3,6 @@
 {"de":"GBL Season 4 - Hyperliga","en":"GBL Season 4 - Ultra League","start":1601323200000,"end":1602532800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season4/"},
 {"de":"Oktober Forschungsdurchbruch","en":"October Research Breakthrough","start":1601582400000,"end":1604264400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/oct2020-events/"},
 {"de":"Giratina (Urform) in Raids","en":"Giratina Origin Forme in Raids","start":1602273600000,"end":1603483200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/oct2020-events/"},
-{"de":"Begrenzte Forschung mit Mauzi","en":"Meowth Limited Research","start":1602309600000,"end":1602360000000,"color":"#e5fff9","url":"https://pokemongolive.com/post/oct2020-events/"},
 {"de":"GBL Season 4 - Meisterliga","en":"GBL Season 4 - Master League","start":1602532800000,"end":1603742400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season4/"},
 {"de":"Pikachu (Original-Kappe) Rampenlichtstunde","en":"Original Cap Pikachu Spotlight Hour","start":1602604800000,"end":1602608400000,"color":"#ffffe6","url":"https://pokemongolive.com/post/spotlight-oct20/"},
 {"de":"Glumanda Community Day","en":"Charmander Community Day","start":1602925200000,"end":1602946800000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communityday-oct20/"},

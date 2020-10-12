@@ -1091,7 +1091,7 @@ var specialfilter = [
 ];
 
 var raids = {
-	"tierM":["3M","6X","6Y","229M","18M","9M"],
+	"tier4":["3M","6X","6Y","229M","18M","9M"],
 	"tier5":["487O"],
 	"tier3":[44,286,185,164,127]
 };
@@ -1370,13 +1370,13 @@ function init() {
 		t4 = raids.tier4.length; 
 	} catch {}
 	if (t4 > 0) {
-		txt += '<optgroup id="t4" label="4er"><option ';
+		txt += '<optgroup id="t4" label="Mega-Raids"><option ';
 		if (t4 == 1) {
 			txt += "hidden disabled ";
 		}
-		txt += 'value="4er" style="font-style:italic">4er Ei</option>';
-		raid_de.push("4er Ei");
-		raid_en.push("Tier 4 Egg");
+		txt += 'value="Mega-Raid" style="font-style:italic">Mega-Raid Ei</option>';
+		raid_de.push("Mega-Raid Ei");
+		raid_en.push("Mega Raid Egg");
 		for (i = 0; i < t4; i++) {
 			var rp = getPkmnByDex(raids.tier4[i])[0];
 			var d = (rp.de) ? rp.de:rp.name;
