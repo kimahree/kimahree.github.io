@@ -1102,6 +1102,7 @@ var legacy = [3,9,10,12,13,16,25,26,27,28,29,30,31,32,33,34,35,36,"37A",38,39,40
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.2","date":"12.10.2020","change":["Change order of raids"]},
 		{"ver":"1.9.1","date":"10.10.2020","change":["Add line to visually seperate multiraids","[Marzahn] Fix major bug, which prevented creating raids"]},
 		{"ver":"1.9","date":"09.10.2020","change":["[Gesundbrunnen] Seperate local from remote raiders in GUI","New Shiny: Giratina (Origin Forme)","Change Raid Bosses (Return of Giratina Origin Forme)"]},
 		{"ver":"1.8.7","date":"09.10.2020","change":["New Shiny: Vulpix","Change Raid Bosses (Autumn Event)"]},
