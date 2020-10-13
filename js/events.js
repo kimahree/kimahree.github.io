@@ -1,6 +1,5 @@
 ﻿var events = [
 {"de":"Alola- und Galar-Formen in 7km Eiern","en":"Alolan and Galarian Forms in 7km eggs","start":1591653600000,"url":"https://pokemongolive.com/post/7kmeggs-alolan-galarian-forms/"},
-{"de":"GBL Season 4 - Hyperliga","en":"GBL Season 4 - Ultra League","start":1601323200000,"end":1602532800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season4/"},
 {"de":"Oktober Forschungsdurchbruch","en":"October Research Breakthrough","start":1601582400000,"end":1604264400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/oct2020-events/"},
 {"de":"Giratina (Urform) in Raids","en":"Giratina Origin Forme in Raids","start":1602273600000,"end":1603483200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/oct2020-events/"},
 {"de":"GBL Season 4 - Meisterliga","en":"GBL Season 4 - Master League","start":1602532800000,"end":1603742400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season4/"},
@@ -13,8 +12,7 @@
 {"de":"GBL Season 5","en":"GBL Season 5","start":1604955600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season4/"},
 {"de":"GO Kampfabend","en":"GO Battle Night","color":"#f5e6ff","start":1604595600000,"end":1604617200000,"url":"https://pokemongolive.com/post/gobattleleague-season4/"},
 {"de":"Kostenloser Fern-Raidpass, jeden Montag","en":"Free Remote Raid Pass on Mondays","start":1601928000000,"end":1606770000000,"url":"https://pokemongolive.com/post/limitedtime-remoteraidpass/"},
-{"de":"Herbst Event","en":"Autumn Event","start":1602255600000,"end":1602532800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/autumn-event-2020/"},
-{"de":"Event (Details noch nicht bekannt)","en":"Event (Details not known yet)","start":1602532800000,"end":1603170000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/autumn-event-2020/"},
+{"de":"Herbst Event - Teil 2 (Kurios-Eier)","en":"Autumn Event - Part 2 (Strange Eggs)","start":1602532800000,"end":1603170000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/autumn-event-2020-strange-eggs/"},
 ];
 
 var colors = [

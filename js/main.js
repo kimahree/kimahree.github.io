@@ -1093,7 +1093,7 @@ var specialfilter = [
 var raids = {
 	"tier4":["3M","6X","6Y","229M","18M","9M"],
 	"tier5":["487O"],
-	"tier3":[44,286,185,164,127]
+	"tier3":[359,569,303,"110G",342,34]
 };
 
 var quests = [1,4,7,"19A",37,60,92,93,95,100,129,133,138,140,142,147,198,200,246,302,327,345,347,353,355,425,434,562,607];
@@ -1102,6 +1102,7 @@ var legacy = [3,9,10,12,13,16,25,26,27,28,29,30,31,32,33,34,35,36,"37A",38,39,40
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.3","date":"12.10.2020","change":["Change Raid Bosses (Autumn Event Part 2)"]},
 		{"ver":"1.9.2","date":"12.10.2020","change":["Change order of raids"]},
 		{"ver":"1.9.1","date":"10.10.2020","change":["Add line to visually seperate multiraids","[Marzahn] Fix major bug, which prevented creating raids"]},
 		{"ver":"1.9","date":"09.10.2020","change":["[Gesundbrunnen] Seperate local from remote raiders in GUI","New Shiny: Giratina (Origin Forme)","Change Raid Bosses (Return of Giratina Origin Forme)"]},
