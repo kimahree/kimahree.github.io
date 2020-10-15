@@ -3,7 +3,6 @@
 {"de":"Oktober Forschungsdurchbruch","en":"October Research Breakthrough","start":1601582400000,"end":1604264400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/oct2020-events/"},
 {"de":"Giratina (Urform) in Raids","en":"Giratina Origin Forme in Raids","start":1602273600000,"end":1603483200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/oct2020-events/"},
 {"de":"GBL Season 4 - Meisterliga","en":"GBL Season 4 - Master League","start":1602532800000,"end":1603742400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season4/"},
-{"de":"Giratina Raidstunde","en":"Giratina Raid Hour","start":1602691200000,"end":1602694800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/oct2020-events/"},
 {"de":"Glumanda Community Day","en":"Charmander Community Day","start":1602925200000,"end":1602946800000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communityday-oct20/"},
 {"de":"Shuppet Rampenlichtstunde","en":"Shuppet Spotlight Hour","start":1603209600000,"end":1603213200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/oct2020-events/"},
 {"de":"Giratina Raidstunde","en":"Giratina Raid Hour","start":1603296000000,"end":1603299600000,"color":"#ffffe6","url":"https://pokemongolive.com/post/oct2020-events/"},
@@ -15,6 +14,7 @@
 {"de":"GO Kampfabend","en":"GO Battle Night","color":"#f5e6ff","start":1604595600000,"end":1604617200000,"url":"https://pokemongolive.com/post/gobattleleague-season4/"},
 {"de":"Kostenloser Fern-Raidpass, jeden Montag","en":"Free Remote Raid Pass on Mondays","start":1601928000000,"end":1606770000000,"url":"https://pokemongolive.com/post/limitedtime-remoteraidpass/"},
 {"de":"Herbst Event - Teil 2 (Kurios-Eier)","en":"Autumn Event - Part 2 (Strange Eggs)","start":1602532800000,"end":1603170000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/autumn-event-2020-strange-eggs/"},
+{"de":"Fang-Herausforderung: Geist-Pokémon","en":"Catch Mastery: Ghost","start":1603609200000,"end":1603659600000,"color":"#e5fff9","url":"https://pokemongolive.com/post/catchmastery-ghost-2020/"},
 ];
 
 var colors = [
