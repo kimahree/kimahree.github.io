@@ -2,6 +2,7 @@
 {"de":"Alola- und Galar-Formen in 7km Eiern","en":"Alolan and Galarian Forms in 7km eggs","start":1591653600000,"url":"https://pokemongolive.com/post/7kmeggs-alolan-galarian-forms/"},
 {"de":"Oktober Forschungsdurchbruch","en":"October Research Breakthrough","start":1601582400000,"end":1604264400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/oct2020-events/"},
 {"de":"Giratina (Urform) in Raids","en":"Giratina Origin Forme in Raids","start":1602273600000,"end":1603483200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/oct2020-events/"},
+{"de":"Die Schneelande der Krone","en":"The Crown Tundra","start":1603414800000,"end":1603501200000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/the-crown-tundra"},
 {"de":"GBL Season 4 - Meisterliga","en":"GBL Season 4 - Master League","start":1602532800000,"end":1603742400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season4/"},
 {"de":"GBL Season 4 - Halloween Cup","en":"GBL Season 4 - Halloween Cup","start":1603742400000,"end":1604437200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season4/"},
 {"de":"Zwirrlicht Rampenlichtstunde","en":"Duskull Spotlight Hour","start":1603818000000,"end":1603821600000,"color":"#ffffe6","url":"https://pokemongolive.com/post/oct2020-events/"},
