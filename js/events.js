@@ -1,8 +1,6 @@
 ﻿var events = [
 {"de":"Alola- und Galar-Formen in 7km Eiern","en":"Alolan and Galarian Forms in 7km eggs","start":1591653600000,"url":"https://pokemongolive.com/post/7kmeggs-alolan-galarian-forms/"},
 {"de":"Oktober Forschungsdurchbruch","en":"October Research Breakthrough","start":1601582400000,"end":1604264400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/oct2020-events/"},
-{"de":"Giratina (Urform) in Raids","en":"Giratina Origin Forme in Raids","start":1602273600000,"end":1603483200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/oct2020-events/"},
-{"de":"Die Schneelande der Krone","en":"The Crown Tundra","start":1603414800000,"end":1603501200000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/the-crown-tundra"},
 {"de":"GBL Season 4 - Meisterliga","en":"GBL Season 4 - Master League","start":1602532800000,"end":1603742400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season4/"},
 {"de":"GBL Season 4 - Halloween Cup","en":"GBL Season 4 - Halloween Cup","start":1603742400000,"end":1604437200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season4/"},
 {"de":"Zwirrlicht Rampenlichtstunde","en":"Duskull Spotlight Hour","start":1603818000000,"end":1603821600000,"color":"#ffffe6","url":"https://pokemongolive.com/post/oct2020-events/"},
@@ -14,8 +12,6 @@
 {"de":"Herbst Event - Teil 2 (Kurios-Eier)","en":"Autumn Event - Part 2 (Strange Eggs)","start":1602532800000,"end":1603170000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/autumn-event-2020-strange-eggs/"},
 {"de":"Fang-Herausforderung: Geist-Pokémon","en":"Catch Mastery: Ghost Pokémon","start":1603609200000,"end":1603659600000,"color":"#e5fff9","url":"https://pokemongolive.com/post/catchmastery-ghost-2020/"},
 {"de":"Halloween 2020","en":"Halloween 2020","start":1603501200000,"end":1604455200000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/halloween2020/"},
-{"de":"Verstärkt Mega-Bisaflor in Mega-Raids","en":"Mega Venusaur in Mega Raids more frequently","end":1603501200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/megavenusaurraids/"},
-{"de":"Mega-Gengar in Mega-Raids","en":"Mega Gengar in Mega Raids","start":1603501200000,"end":1603501200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/megavenusaurraids/"},
 {"de":"Raid-Tag mit Alola-Knogga","en":"Alolan Marowak Raid Day","start":1604138400000,"end":1604160000000,"color":"#e5fff9","url":"https://pokemongolive.com/post/halloween2020/"},
 {"de":"November Forschungsdurchbruch","en":"November Research Breakthrough","start":1604264400000,"end":1606856400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/nov2020-events/"},
 {"de":"Darkrai in Raids","en":"Darkrai in Raids","start":1603483200000,"end":1604610000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/nov2020-events/"},
