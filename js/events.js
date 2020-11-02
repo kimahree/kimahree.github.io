@@ -1,6 +1,5 @@
 ﻿var events = [
 {"de":"Alola- und Galar-Formen in 7km Eiern","en":"Alolan and Galarian Forms in 7km eggs","start":1591653600000,"url":"https://pokemongolive.com/post/7kmeggs-alolan-galarian-forms/"},
-{"de":"Oktober Forschungsdurchbruch","en":"October Research Breakthrough","start":1601582400000,"end":1604264400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/oct2020-events/"},
 {"de":"GBL Season 4 - Halloween Cup","en":"GBL Season 4 - Halloween Cup","start":1603742400000,"end":1604437200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season4/"},
 {"de":"Zwirrlicht Rampenlichtstunde","en":"Duskull Spotlight Hour","start":1603818000000,"end":1603821600000,"color":"#ffffe6","url":"https://pokemongolive.com/post/oct2020-events/"},
 {"de":"Darkrai Raidstunde","en":"Darkrai Raid Hour","start":1603904400000,"end":1603908000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/oct2020-events/"},
