@@ -1,13 +1,9 @@
 ﻿var events = [
 {"de":"Alola- und Galar-Formen in 7km Eiern","en":"Alolan and Galarian Forms in 7km eggs","start":1591653600000,"url":"https://pokemongolive.com/post/7kmeggs-alolan-galarian-forms/"},
 {"de":"Kostenloser Fern-Raidpass, jeden Montag","en":"Free Remote Raid Pass on Mondays","start":1601928000000,"end":1606770000000,"url":"https://pokemongolive.com/post/limitedtime-remoteraidpass/"},
-{"de":"Darkrai in Raids","en":"Darkrai in Raids","start":1603483200000,"end":1604610000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/nov2020-events/"},
 {"de":"November Forschungsdurchbruch","en":"November Research Breakthrough","start":1604264400000,"end":1606856400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/nov2020-events/"},
 {"de":"GBL Season 4 - Alle Ligen","en":"GBL Season 4 - All Leagues","start":1604437200000,"end":1604955600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season4/"},
-{"de":"Darkrai Raidstunde","en":"Darkrai Raid Hour","start":1604509200000,"end":1604512800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/nov2020-events/"},
-{"de":"GO Kampfabend","en":"GO Battle Night","color":"#f5e6ff","start":1604595600000,"end":1604617200000,"url":"https://pokemongolive.com/post/gobattleleague-season4/"},
 {"de":'Lugia in Raids',"en":'Lugia in Raids',"start":1604610000000,"end":1605560400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/animationweek2020/"},
-{"de":"Umstellung Münzsystem","en":"Change of coin system","start":1604617140000,"end":1604617140000,"url":"https://pokemongolive.com/post/pokecoinupdate/"},
 {"de":"Zeichentrick-Woche","en":"Animation Week","start":1604646000000,"end":1605214800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/animationweek2020/"},
 {"de":"GBL Season 5 - Little Cup","en":"GBL Season 5 - Little Cup","start":1604955600000,"end":1605560400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season5/"},
 {"de":"Pummeluff Rampenlichtstunde","en":"Jigglypuff Spotlight Hour","start":1605027600000,"end":1605031200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/nov2020-events/"},
