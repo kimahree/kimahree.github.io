@@ -842,7 +842,7 @@ var pokemon = [
 {"dex":594,"name":"Mamolida","en":"Alomomola"},
 {"dex":595,"name":"Wattzapf","en":"Joltik"},
 {"dex":596,"name":"Voltula","en":"Galvantula","evolved":true},
-{"dex":597,"name":"Kastadur","en":"Ferroseed"},
+{"dex":597,"name":"Kastadur","en":"Ferroseed","getshiny":true},
 {"dex":598,"name":"Tentantel","en":"Ferrothorn","evolved":true},
 {"dex":599,"name":"Klikk","en":"Klink","getshiny":true},
 {"dex":600,"name":"Kliklak","en":"Klang","evolved":true},
@@ -1102,6 +1102,7 @@ var legacy = [3,4,9,10,12,13,16,"19A",25,26,27,28,29,30,31,32,33,34,36,"37A",38,
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.9","date":"07.11.2020","change":["New Shiny: Ferroseed"]},
 		{"ver":"1.9.8","date":"05.11.2020","change":["Change Raid Bosses (Animation Week 2020)"]},
 		{"ver":"1.9.7","date":"01.11.2020","change":["Change Raid Bosses (End of Halloween Event)","Quests: Remove Cubone, Spiritomb, Yamask"]},
 		{"ver":"1.9.6","date":"01.11.2020","change":["Add Covid notice","Quests: Add Clefairy, Jigglypuff, Seadra, Snubbull, Ralts, Mawile, Vibrava, Bagon, Cottonee","Quests: Remove Alolan Rattata, Haunter, Murkrow, Misdreavus, Sableye, Shuppet, Duskull, Drifloon, Stunky, Yamask, Litwick"]},
