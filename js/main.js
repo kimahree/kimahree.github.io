@@ -1093,7 +1093,7 @@ var specialfilter = [
 var raids = {
 	"tier4":["94M","6X","6Y","229M","18M","9M"],
 	"tier5":[249],
-	"tier3":["105A","103A",623,127,143]
+	"tier3":[359,"26A",135,131,306]
 };
 
 var quests = [1,4,7,35,37,39,60,92,95,100,117,129,133,138,140,142,147,209,246,280,303,327,329,333,345,347,371,546];
@@ -1102,6 +1102,7 @@ var legacy = [3,4,9,10,12,13,16,"19A",25,26,27,28,29,30,31,32,33,34,36,"37A",38,
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.10","date":"12.11.2020","change":["Change Raid Bosses (End of Animation Week 2020)"]},
 		{"ver":"1.9.9","date":"07.11.2020","change":["New Shiny: Ferroseed"]},
 		{"ver":"1.9.8","date":"05.11.2020","change":["Change Raid Bosses (Animation Week 2020)"]},
 		{"ver":"1.9.7","date":"01.11.2020","change":["Change Raid Bosses (End of Halloween Event)","Quests: Remove Cubone, Spiritomb, Yamask"]},
