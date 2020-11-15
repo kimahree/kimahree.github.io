@@ -291,7 +291,7 @@ var pokemon = [
 {"dex":"122G","name":"Galar-Pantimos","en":"Galarian Mr. Mime","regional":true,"galarian":true},
 {"dex":123,"name":"Sichlor","en":"Scyther","getshiny":true},
 {"dex":124,"name":"Rossana","en":"Jynx"},
-{"dex":125,"name":"Elektek","en":"Electabuzz"},
+{"dex":125,"name":"Elektek","en":"Electabuzz","getshiny":true},
 {"dex":126,"name":"Magmar","getshiny":true},
 {"dex":127,"name":"Pinsir","getshiny":true},
 {"dex":128,"name":"Tauros","regional":true,"getshiny":true},
@@ -1102,6 +1102,7 @@ var legacy = [3,4,9,10,12,13,16,"19A",25,26,27,28,29,30,31,32,33,34,36,"37A",38,
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.11","date":"15.11.2020","change":["New Shiny: Electabuzz"]},
 		{"ver":"1.9.10","date":"12.11.2020","change":["Change Raid Bosses (End of Animation Week 2020)"]},
 		{"ver":"1.9.9","date":"07.11.2020","change":["New Shiny: Ferroseed"]},
 		{"ver":"1.9.8","date":"05.11.2020","change":["Change Raid Bosses (Animation Week 2020)"]},
