@@ -2,8 +2,6 @@
 {"de":"Alola- und Galar-Formen in 7km Eiern","en":"Alolan and Galarian Forms in 7km eggs","start":1591653600000,"url":"https://pokemongolive.com/post/7kmeggs-alolan-galarian-forms/"},
 {"de":"Kostenloser Fern-Raidpass, jeden Montag","en":"Free Remote Raid Pass on Mondays","start":1601928000000,"end":1606770000000,"url":"https://pokemongolive.com/post/limitedtime-remoteraidpass/"},
 {"de":"November Forschungsdurchbruch","en":"November Research Breakthrough","start":1604264400000,"end":1606856400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/nov2020-events/"},
-{"de":'Lugia in Raids',"en":'Lugia in Raids',"start":1604610000000,"end":1605560400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/animationweek2020/"},
-{"de":"GBL Season 5 - Mini-Cup","en":"GBL Season 5 - Little Cup","start":1604955600000,"end":1605560400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season5/"},
 {"de":"Terrakium, Kobalium und Viridium in Raids","en":"Terrakion, Cobalion and Virizion in Raids","start":1605560400000,"end":1606251600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/nov2020-events/"},
 {"de":"GBL Season 5 - Kanto-Cup","en":"GBL Season 5 - Kanto Cup","start":1605560400000,"end":1606165200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season5/"},
 {"de":"Pokémon HOME Event","en":"Pokémon HOME Event","start":1605596400000,"end":1606165200000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/pokemonhome-2020-details/"},
