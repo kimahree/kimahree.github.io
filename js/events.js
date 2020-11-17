@@ -10,9 +10,10 @@
 {"de":"Magmar Community Day","en":"Magmar Community Day","start":1605952800000,"end":1605974400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communityday-nov20"},
 {"de":"GBL Season 5 - Fang-Cup","en":"GBL Season 5 - Catch Cup","start":1606165200000,"end":1606770000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season5/"},
 {"de":"Schmerbe Rampenlichtstunde","en":"Barboach Spotlight Hour","start":1606237200000,"end":1606240800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/nov2020-events/"},
-{"de":"Unbekannter Raid-Boss in Raids","en":"Unknown Raid Boss in Raids","start":1606251600000,"end":1606770000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/nov2020-events/"},
-{"de":"Raidstunde","en":"Raid Hour","start":1606323600000,"end":1606327200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/nov2020-events/"},
-{"de":"Begrenzte Forschung","en":"Limited Research","start":1606546800000,"end":1606597200000,"color":"#e5fff9","url":"https://pokemongolive.com/post/nov2020-events/"},
+{"de":"Vesprit in Raids","en":"Mesprit in Raids","start":1606251600000,"end":1606770000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/lakelegends2020/"},
+{"de":"Hüter der Seen Event","en":"Lake Legends Event","start":1606251600000,"end":1606770000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/lakelegends2020/"},
+{"de":"Vesprit Raidstunde","en":"Mesprit Raid Hour","start":1606323600000,"end":1606327200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/nov2020-events/"},
+{"de":"Begrenzte Forschung mit Nidoran♀ und Nidoran♂","en":"Nidoran♀ and Nidoran♂ Limited Research","start":1606546800000,"end":1606597200000,"color":"#e5fff9","url":"https://pokemongolive.com/post/limitedresearch-nov2020/"},
 {"de":"GBL Season 6","en":"GBL Season 6","start":1606770000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season5/"},
 ];
 
