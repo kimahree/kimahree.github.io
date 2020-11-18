@@ -11,10 +11,14 @@
 {"de":"GBL Season 5 - Fang-Cup","en":"GBL Season 5 - Catch Cup","start":1606165200000,"end":1606770000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season5/"},
 {"de":"Schmerbe Rampenlichtstunde","en":"Barboach Spotlight Hour","start":1606237200000,"end":1606240800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/nov2020-events/"},
 {"de":"Vesprit in Raids","en":"Mesprit in Raids","start":1606251600000,"end":1606770000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/lakelegends2020/"},
-{"de":"Hüter der Seen Event","en":"Lake Legends Event","start":1606251600000,"end":1606770000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/lakelegends2020/"},
+{"de":"See-Legenden Event","en":"Lake Legends Event","start":1606251600000,"end":1606770000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/lakelegends2020/"},
 {"de":"Vesprit Raidstunde","en":"Mesprit Raid Hour","start":1606323600000,"end":1606327200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/nov2020-events/"},
 {"de":"Begrenzte Forschung mit Nidoran♀ und Nidoran♂","en":"Nidoran♀ and Nidoran♂ Limited Research","start":1606546800000,"end":1606597200000,"color":"#e5fff9","url":"https://pokemongolive.com/post/limitedresearch-nov2020/"},
 {"de":"GBL Season 6","en":"GBL Season 6","start":1606770000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season5/"},
+{"de":"GO Beyond - 12 Tage der Freundschaft","en":"GO Beyond - 12 days of friendship","start":1605733200000,"end":1606770000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/gobeyond-12daysoffriendship/"},
+{"de":"GO Beyond - Doppelte Fang EXP","en":"GO Beyond - Double Catch XP","start":1605733200000,"end":1609448400000,"url":"https://pokemongolive.com/post/gobeyond-12daysoffriendship/"},
+{"de":"GO Beyond - Kalos-Region","en":"GO Beyond - Kalos region","start":1606899600000,"end":1607461200000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/gobeyond-kalos/"},
+{"de":"GO Beyond - Festliche Jahreszeit","en":"GO Beyond - Season of Celebration","start":1606806000000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/gobeyond-seasons/"},
 ];
 
 var colors = [
