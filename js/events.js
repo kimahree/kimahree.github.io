@@ -5,8 +5,6 @@
 {"de":"Terrakium, Kobalium und Viridium in Raids","en":"Terrakion, Cobalion and Virizion in Raids","start":1605560400000,"end":1606251600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/nov2020-events/"},
 {"de":"GBL Season 5 - Kanto-Cup","en":"GBL Season 5 - Kanto Cup","start":1605560400000,"end":1606165200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season5/"},
 {"de":"Pokémon HOME Event","en":"Pokémon HOME Event","start":1605596400000,"end":1606165200000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/pokemonhome-2020-details/"},
-{"de":"Mauzi Rampenlichtstunde","en":"Meowth Spotlight Hour","start":1605632400000,"end":1605636000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/nov2020-events/"},
-{"de":"Terrakium, Kobalium und Viridium Raidstunde","en":"Terrakion, Cobalion and Virizion Raid Hour","start":1605718800000,"end":1605722400000,"color":"#ffffe6","url":"https://pokemongolive.com/post/nov2020-events/"},
 {"de":"Magmar Community Day","en":"Magmar Community Day","start":1605952800000,"end":1605974400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communityday-nov20"},
 {"de":"GBL Season 5 - Fang-Cup","en":"GBL Season 5 - Catch Cup","start":1606165200000,"end":1606770000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season5/"},
 {"de":"Schmerbe Rampenlichtstunde","en":"Barboach Spotlight Hour","start":1606237200000,"end":1606240800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/nov2020-events/"},
@@ -16,9 +14,10 @@
 {"de":"Begrenzte Forschung mit Nidoran♀ und Nidoran♂","en":"Nidoran♀ and Nidoran♂ Limited Research","start":1606546800000,"end":1606597200000,"color":"#e5fff9","url":"https://pokemongolive.com/post/limitedresearch-nov2020/"},
 {"de":"GBL Season 6","en":"GBL Season 6","start":1606770000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season5/"},
 {"de":"GO Beyond - 12 Tage der Freundschaft","en":"GO Beyond - 12 days of friendship","start":1605733200000,"end":1606770000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/gobeyond-12daysoffriendship/"},
-{"de":"GO Beyond - Doppelte Fang EXP","en":"GO Beyond - Double Catch XP","start":1605733200000,"end":1609448400000,"url":"https://pokemongolive.com/post/gobeyond-12daysoffriendship/"},
+{"de":"GO Beyond - Doppelte EP beim Fangen","en":"GO Beyond - Double Catch XP","start":1605733200000,"end":1609455540000,"url":"https://pokemongolive.com/post/gobeyond-12daysoffriendship/"},
 {"de":"GO Beyond - Kalos-Region","en":"GO Beyond - Kalos region","start":1606899600000,"end":1607461200000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/gobeyond-kalos/"},
 {"de":"GO Beyond - Festliche Jahreszeit","en":"GO Beyond - Season of Celebration","start":1606806000000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/gobeyond-seasons/"},
+{"de":"Erhöhte Tauschreichweite","en":"Increased trade range","end":1606176000000,"url":"https://twitter.com/PokemonGoApp/status/1329192607679991814"},
 ];
 
 var colors = [
