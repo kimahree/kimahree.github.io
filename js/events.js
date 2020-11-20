@@ -1,5 +1,6 @@
 ﻿var events = [
 {"de":"Alola- und Galar-Formen in 7km Eiern","en":"Alolan and Galarian Forms in 7km eggs","start":1591653600000,"url":"https://pokemongolive.com/post/7kmeggs-alolan-galarian-forms/"},
+{"de":"Temporäre Boni (Covid)","en":"Temporary bonuses (Covid)","end":1625032800000,"url":"https://pokemongolive.com/post/update-20200929/"},
 {"de":"Kostenloser Fern-Raidpass, jeden Montag","en":"Free Remote Raid Pass on Mondays","start":1601928000000,"end":1606770000000,"url":"https://pokemongolive.com/post/limitedtime-remoteraidpass/"},
 {"de":"November Forschungsdurchbruch","en":"November Research Breakthrough","start":1604264400000,"end":1606856400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/nov2020-events/"},
 {"de":"Terrakium, Kobalium und Viridium in Raids","en":"Terrakion, Cobalion and Virizion in Raids","start":1605560400000,"end":1606251600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/nov2020-events/"},
