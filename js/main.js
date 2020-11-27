@@ -1106,6 +1106,7 @@ var legacy = [3,4,9,10,12,13,16,"19A",25,26,27,28,29,30,31,32,33,34,36,"37A",38,
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.15","date":"27.11.2020","change":['[Gesundbrunnen] Add new gym "Kunstwerk Paul Pfarr"']},
 		{"ver":"1.9.14","date":"24.11.2020","change":["New Shiny: Goldeen","Change Raid Bosses (Lake Legends Event)","Quests: Add Goldeen, Turtwig, Chimchar, Piplup, Starly, Bronzor"]},
 		{"ver":"1.9.13","date":"23.11.2020","change":["Quests: Remove Nidoran♀, Nidoran♂, Slowpoke, Beldum"]},
 		{"ver":"1.9.12","date":"17.11.2020","change":["New Shiny: Slowpoke","New temporary Shiny: Meltan","Change Raid Bosses (Pokémon HOME Event)","Quests: Add Nidoran♀, Nidoran♂, Slowpoke, Beldum"]},
