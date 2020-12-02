@@ -929,7 +929,7 @@ var pokemon = [
 {"dex":664,"name":"Purmel","en":"Scatterbug"},
 {"dex":665,"name":"Puponcho","en":"Spewpa","evolved":true},
 {"dex":666,"name":"Vivillon","evolved":true},
-{"dex":667,"name":"Leofeo","en":"Litleo"},
+{"dex":667,"name":"Leufeo","en":"Litleo"},
 {"dex":668,"name":"Pyroleo","en":"Pyroar","evolved":true},
 {"dex":669,"name":"Flabébé"},
 {"dex":670,"name":"Floette","evolved":true},
