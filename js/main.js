@@ -673,7 +673,7 @@ var pokemon = [
 {"dex":457,"name":"Lumineon","evolved":true},
 {"dex":458,"name":"Mantirps","en":"Mantyke","baby":true},
 {"dex":459,"name":"Shnebedeck","en":"Snover","getshiny":true},
-{"dex":460,"name":"Rexblisar","en":"Abomasnow","evolved":true},
+{"dex":460,"name":"Rexblisar","en":"Abomasnow","evolved":true,"getshiny":true},
 {"dex":461,"name":"Snibunna","en":"Weavile","evolved":true},
 {"dex":462,"name":"Magnezone","evolved":true},
 {"dex":463,"name":"Schlurplek","en":"Lickilicky","evolved":true},
@@ -1106,7 +1106,7 @@ var legacy = [1,3,4,7,9,10,12,13,16,"19A",25,26,27,"27A",28,29,30,31,32,33,34,35
 
 var changelogjson = {
 	"items": [
-		{"ver":"1.9.17","date":"01.12.2020","change":["Change Raid Bosses (Kyurem and Generation 6)","Quests: Add Alolan Sandshrem, Growlithe, Ponyta, Flareon, Cyndaquil, Sneasel, Houndour, Torchic, Snorunt, Spheal, Chimchar, Gible, Snover, Tepig, Bunnelby, Fletchling, Litleo","Quests: Remove Clefairy, Jigglypuff, Seadra, Snubbull, Larvitar, Ralts, Mawile, Vibrava, Bagon, Cottonee"]},
+		{"ver":"1.9.17","date":"01.12.2020","change":["New Shiny: Abomasnow","Change Raid Bosses (Kyurem and Generation 6)","Quests: Add Alolan Sandshrem, Growlithe, Ponyta, Flareon, Cyndaquil, Sneasel, Houndour, Torchic, Snorunt, Spheal, Chimchar, Gible, Snover, Tepig, Bunnelby, Fletchling, Litleo","Quests: Remove Clefairy, Jigglypuff, Seadra, Snubbull, Larvitar, Ralts, Mawile, Vibrava, Bagon, Cottonee"]},
 		{"ver":"1.9.16","date":"30.11.2020","change":["Quests: Remove Goldeen, Turtwig, Chimchar, Piplup, Starly, Bronzor"]},
 		{"ver":"1.9.15","date":"27.11.2020","change":['[Gesundbrunnen] Add new gym "Kunstwerk Paul Pfarr"']},
 		{"ver":"1.9.14","date":"24.11.2020","change":["New Shiny: Goldeen","Change Raid Bosses (Lake Legends Event)","Quests: Add Goldeen, Turtwig, Chimchar, Piplup, Starly, Bronzor"]},
