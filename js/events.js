@@ -26,6 +26,9 @@
 {"de":"Shnebedeck Rampenlichtstunde","en":"Snover Spotlight Hour","start":1609261200000,"end":1609264800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/dec2020-events/"},
 {"de":"Kyurem Raidstunde","en":"Kyurem Raid Hour","start":1609347600000,"end":1609351200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/dec2020-events/"},
 {"de":"GBL Season 6 - Alle Ligen","en":"GBL Season 6 - All Leagues","start":1609794000000,"end":1610398800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season6/"},
+{"de":"Januar Community Day","en":"January Community Day","start":1610791200000,"end":1610812800000,"color":"#e5fff9","url":"https://pokemongolive.com/post/pokemongotour-kanto/"},
+{"de":"Februar Community Day","en":"February Community Day","start":1612692000000,"end":1612713600000,"color":"#e5fff9","url":"https://pokemongolive.com/post/pokemongotour-kanto/"},
+{"de":"Pokémon GO Tour: Kanto","en":"Pokémon GO Tour: Kanto","start":1613894400000,"end":1613937600000,"color":"#e5fff9","url":"https://pokemongolive.com/post/pokemongotour-kanto/"},
 ];
 
 var colors = [
