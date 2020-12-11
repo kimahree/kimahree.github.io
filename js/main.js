@@ -1096,7 +1096,7 @@ var specialfilter = [
 
 var raids = {
 	"tier4":["94M","6X","460M"],
-	"tier5":[646],
+	"tier5":[646,377],
 	"tier3":["105A",303,297,68,530,306]
 };
 
@@ -1106,6 +1106,7 @@ var legacy = [1,3,4,7,9,10,12,13,16,"19A",25,26,27,"27A",28,29,30,31,32,33,34,35
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.20","date":"12.12.2020","change":["Change Raid Bosses (Community Day Weekend & Regirock"]},
 		{"ver":"1.9.19","date":"11.12.2020","change":["New Shiny: Wooper"]},
 		{"ver":"1.9.18","date":"08.12.2020","change":["Quests: Remove Bunnelby, Fletchling, Litleo"]},
 		{"ver":"1.9.17","date":"01.12.2020","change":["New Shiny: Abomasnow","Change Raid Bosses (Kyurem and Generation 6)","Quests: Add Alolan Sandshrem, Growlithe, Ponyta, Flareon, Cyndaquil, Sneasel, Houndour, Torchic, Snorunt, Spheal, Chimchar, Gible, Snover, Tepig, Bunnelby, Fletchling, Litleo","Quests: Remove Clefairy, Jigglypuff, Seadra, Snubbull, Larvitar, Ralts, Mawile, Vibrava, Bagon, Cottonee"]},
