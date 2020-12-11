@@ -364,7 +364,7 @@ var pokemon = [
 {"dex":191,"name":"Sonnkern","en":"Sunkern","getshiny":true},
 {"dex":192,"name":"Sonnflora","en":"Sunflora","evolved":true},
 {"dex":193,"name":"Yanma","getshiny":true},
-{"dex":194,"name":"Felino","en":"Wooper"},
+{"dex":194,"name":"Felino","en":"Wooper","getshiny":true},
 {"dex":195,"name":"Morlord","en":"Quagsire","evolved":true},
 {"dex":196,"name":"Psiana","en":"Espeon","evolved":true},
 {"dex":197,"name":"Nachtara","en":"Umbreon","evolved":true},
@@ -1106,6 +1106,7 @@ var legacy = [1,3,4,7,9,10,12,13,16,"19A",25,26,27,"27A",28,29,30,31,32,33,34,35
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.19","date":"11.12.2020","change":["New Shiny: Wooper"]},
 		{"ver":"1.9.18","date":"08.12.2020","change":["Quests: Remove Bunnelby, Fletchling, Litleo"]},
 		{"ver":"1.9.17","date":"01.12.2020","change":["New Shiny: Abomasnow","Change Raid Bosses (Kyurem and Generation 6)","Quests: Add Alolan Sandshrem, Growlithe, Ponyta, Flareon, Cyndaquil, Sneasel, Houndour, Torchic, Snorunt, Spheal, Chimchar, Gible, Snover, Tepig, Bunnelby, Fletchling, Litleo","Quests: Remove Clefairy, Jigglypuff, Seadra, Snubbull, Larvitar, Ralts, Mawile, Vibrava, Bagon, Cottonee"]},
 		{"ver":"1.9.16","date":"30.11.2020","change":["Quests: Remove Goldeen, Turtwig, Chimchar, Piplup, Starly, Bronzor"]},
