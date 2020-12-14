@@ -877,7 +877,7 @@ var pokemon = [
 {"dex":624,"name":"Gladiantri","en":"Pawniard"},
 {"dex":625,"name":"Caesurio","en":"Bisharp","evolved":true},
 {"dex":626,"name":"Bisofank","en":"Bouffalant","regional":true},
-{"dex":627,"name":"Geronimatz","en":"Rufflet"},
+{"dex":627,"name":"Geronimatz","en":"Rufflet","getshiny":true},
 {"dex":628,"name":"Washakwil","en":"Braviary","evolved":true},
 {"dex":629,"name":"Skallyk","en":"Vullaby"},
 {"dex":630,"name":"Grypheldis","en":"Mandibuzz","evolved":true},
@@ -1096,8 +1096,8 @@ var specialfilter = [
 
 var raids = {
 	"tier4":["94M","6X","460M"],
-	"tier5":[646,377],
-	"tier3":["105A",303,297,68,530,306]
+	"tier5":[646],
+	"tier3":[274,113,632,330,127,108]
 };
 
 var quests = [1,4,7,"27A",37,58,60,77,92,95,100,129,133,136,138,140,142,147,155,215,228,255,327,329,345,347,361,363,371,390,443,459,498,546];
@@ -1106,7 +1106,8 @@ var legacy = [1,3,4,7,9,10,12,13,16,"19A",25,26,27,"27A",28,29,30,31,32,33,34,35
 
 var changelogjson = {
 	"items": [
-		{"ver":"1.9.20","date":"12.12.2020","change":["Change Raid Bosses (Community Day Weekend & Regirock"]},
+		{"ver":"1.9.21","date":"14.12.2020","change":["New Shiny: Rufflet","Change Raid Bosses (Pokémon the Movie - Secrets of the Jungle Celebration)"]},
+		{"ver":"1.9.20","date":"12.12.2020","change":["Change Raid Bosses (Community Day Weekend & Regirock)"]},
 		{"ver":"1.9.19","date":"11.12.2020","change":["New Shiny: Wooper"]},
 		{"ver":"1.9.18","date":"08.12.2020","change":["Quests: Remove Bunnelby, Fletchling, Litleo"]},
 		{"ver":"1.9.17","date":"01.12.2020","change":["New Shiny: Abomasnow","Change Raid Bosses (Kyurem and Generation 6)","Quests: Add Alolan Sandshrem, Growlithe, Ponyta, Flareon, Cyndaquil, Sneasel, Houndour, Torchic, Snorunt, Spheal, Chimchar, Gible, Snover, Tepig, Bunnelby, Fletchling, Litleo","Quests: Remove Clefairy, Jigglypuff, Seadra, Snubbull, Larvitar, Ralts, Mawile, Vibrava, Bagon, Cottonee"]},
