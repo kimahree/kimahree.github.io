@@ -1106,6 +1106,7 @@ var legacy = [1,3,4,7,9,10,12,13,16,"19A",25,26,27,"27A",28,29,30,31,32,33,34,35
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.22","date":"16.12.2020","change":["Temporarily hide local players input due to lockdown"]},
 		{"ver":"1.9.21","date":"14.12.2020","change":["New Shiny: Rufflet","Change Raid Bosses (Pokémon the Movie - Secrets of the Jungle Celebration)"]},
 		{"ver":"1.9.20","date":"12.12.2020","change":["Change Raid Bosses (Community Day Weekend & Regirock)"]},
 		{"ver":"1.9.19","date":"11.12.2020","change":["New Shiny: Wooper"]},
@@ -1805,7 +1806,7 @@ function generateRaid(raidtext) {
 	return;
   }
   
-  if (remote && (remote.match(/\+[0-9]/g) != null) ) {
+/*  if (remote && (remote.match(/\+[0-9]/g) != null) ) {
 	raidwarn = 17;
 	if (getLang() == "de") {
 		document.getElementById("raidwarn").innerHTML = warn_de[17];
@@ -1818,7 +1819,7 @@ function generateRaid(raidtext) {
 		document.getElementById("addRaid").setAttributeNode(hid3);
 	}
 	return;
-  }
+  } */
 
   if (raidtext == "") { 
 	multi = 1;
@@ -1878,7 +1879,8 @@ function generateRaid(raidtext) {
 			text += "?";
 		}
 	}
-	text += "<br><br>📍 <b>vor Ort</b><br>" + player + "<br><br>🏠 <b>Fern</b> <i>(Limit 10!)</i><br>" + remote + "<br>";
+	// text += "<br><br>📍 <b>vor Ort</b><br>" + player;
+	text += "<br><br>🏠 <b>Fern</b> <i>(Limit 10!)</i><br>" + remote + "<br>";
   }
   
   if (region == "Marzahn") {
@@ -2183,9 +2185,9 @@ function TierCheck() {
 		var custom
 		var cl = getLang()
 		if (cl == "de") {
-			custom = prompt("Gib den Namen des Raidboss ein.",getPkmnByDex(Math.ceil(Math.random()*649))[0].name)
+			custom = prompt("Gib den Namen des Raidboss ein.",getPkmnByDex(Math.ceil(Math.random()*721))[0].name)
 		} else {
-			custom = prompt("Enter the name of the raid boss.",getPkmnByDex(Math.ceil(Math.random()*649))[0].name)
+			custom = prompt("Enter the name of the raid boss.",getPkmnByDex(Math.ceil(Math.random()*721))[0].name)
 		}
 		try {
 			custom = custom.replace(/<.+?>/g,"");
