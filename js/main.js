@@ -862,7 +862,7 @@ var pokemon = [
 {"dex":610,"name":"Milza","en":"Axew"},
 {"dex":611,"name":"Sharfax","en":"Fraxure","evolved":true},
 {"dex":612,"name":"Maxax","en":"Haxorus","evolved":true},
-{"dex":613,"name":"Petznief","en":"Cubchoo"},
+{"dex":613,"name":"Petznief","en":"Cubchoo","getshiny":true},
 {"dex":614,"name":"Siberio","en":"Beartic","evolved":true},
 {"dex":615,"name":"Frigometri","en":"Cryogonal"},
 {"dex":616,"name":"Schnuthelm","en":"Shelmet"},
@@ -1097,7 +1097,7 @@ var specialfilter = [
 var raids = {
 	"tier4":["94M","6X","460M"],
 	"tier5":[646],
-	"tier3":[274,113,632,330,127,108]
+	"tier3":["105A",303,297,68,530,306]
 };
 
 var quests = [1,4,7,"27A",37,58,60,77,92,95,100,129,133,136,138,140,142,147,155,215,228,255,327,329,345,347,361,363,371,390,443,459,498,546];
@@ -1106,6 +1106,7 @@ var legacy = [1,3,4,7,9,10,12,13,16,"19A",25,26,27,"27A",28,29,30,31,32,33,34,35
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.23","date":"18.12.2020","change":["New Shiny: Cubchoo","Change Raid Bosses (End of Movie Event)"]},
 		{"ver":"1.9.22","date":"16.12.2020","change":["Temporarily hide local players input due to lockdown"]},
 		{"ver":"1.9.21","date":"14.12.2020","change":["New Shiny: Rufflet","Change Raid Bosses (Pokémon the Movie - Secrets of the Jungle Celebration)"]},
 		{"ver":"1.9.20","date":"12.12.2020","change":["Change Raid Bosses (Community Day Weekend & Regirock)"]},
