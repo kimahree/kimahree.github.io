@@ -1096,7 +1096,7 @@ var specialfilter = [
 
 var raids = {
 	"tier4":["94M","6X","460M"],
-	"tier5":[646],
+	"tier5":[646,379],
 	"tier3":["105A",303,297,68,530,306]
 };
 
@@ -1106,6 +1106,7 @@ var legacy = [1,3,4,7,9,10,12,13,16,"19A",25,26,27,"27A",28,29,30,31,32,33,34,35
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.24","date":"19.12.2020","change":["Change Raid Bosses (Return of Registeel)"]},
 		{"ver":"1.9.23","date":"18.12.2020","change":["New Shiny: Cubchoo","Change Raid Bosses (End of Movie Event)"]},
 		{"ver":"1.9.22","date":"16.12.2020","change":["Temporarily hide local players input due to lockdown"]},
 		{"ver":"1.9.21","date":"14.12.2020","change":["New Shiny: Rufflet","Change Raid Bosses (Pokémon the Movie - Secrets of the Jungle Celebration)"]},
