@@ -9,7 +9,6 @@
 {"de":"Forscher Pikachu in der Wildnis und Raids","en":"Explorer Pikachu in the wild and in raids","start":1607929200000,"end":1608584400000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/movie2020/"},
 {"de":"GBL Season 6 - Hyperliga und Hyper-Premier Cup","en":"GBL Season 6 - Ultra League and Ultra Premier Cup","start":1607979600000,"end":1609189200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season6/"},
 {"de":"Eis-Pokémon Wochenende","en":"Ice-type Pokémon weekend","start":1608282000000,"end":1608577200000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/galarianmrmimespecialresearch/"},
-{"de":"Galar-Pantimos Spezialforschung (Ticket)","en":"Galarian Mr. Mime Special Research (Ticket)","start":1608368400000,"end":1608577200000,"color":"#fdddfd","url":"https://pokemongolive.com/post/galarianmrmimespecialresearch/"},
 {"de":"Registeel in Raids","en":"Registeel in Raids","start":1608354000000,"end":1608498000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/weekendraid2020-regi/"},
 {"de":"Weihnachten 2020","en":"Holidays 2020","start":1608620400000,"end":1609448400000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/holiday2020/"},
 {"de":"Weihnachten 2020 - Doppelte Raid-EP","en":"Holidays 2020 - Double Raid EXP","start":1608591600000,"end":1608764340000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/holiday2020/"},
