@@ -243,7 +243,7 @@ var pokemon = [
 {"dex":81,"name":"Magnetilo","en":"Magnemite","getshiny":true},
 {"dex":82,"name":"Magneton","evolved":true},
 {"dex":83,"name":"Porenta","en":"Farfetch'd","regional":true,"getshiny":true},
-{"dex":"83G","name":"Galar-Porenta","en":"Galarian Farfetch'd","regional":true,"galarian":true},
+{"dex":"83G","name":"Galar-Porenta","en":"Galarian Farfetch'd","galarian":true},
 {"dex":84,"name":"Dodu","en":"Doduo","getshiny":true},
 {"dex":85,"name":"Dodri","en":"Dodrio","evolved":true},
 {"dex":86,"name":"Jurob","en":"Seel","getshiny":true},
@@ -288,7 +288,7 @@ var pokemon = [
 {"dex":120,"name":"Sterndu","en":"Staryu","getshiny":true},
 {"dex":121,"name":"Starmie","evolved":true},
 {"dex":122,"name":"Pantimos","en":"Mr. Mime","regional":true,"getshiny":true},
-{"dex":"122G","name":"Galar-Pantimos","en":"Galarian Mr. Mime","regional":true,"galarian":true},
+{"dex":"122G","name":"Galar-Pantimos","en":"Galarian Mr. Mime","galarian":true},
 {"dex":123,"name":"Sichlor","en":"Scyther","getshiny":true},
 {"dex":124,"name":"Rossana","en":"Jynx","getshiny":true},
 {"dex":125,"name":"Elektek","en":"Electabuzz","getshiny":true},
@@ -1050,8 +1050,8 @@ var pokemon = [
 {"dex":862,"name":"Barrikadax","en":"Obstagoon","evolved":true},
 {"dex":863,"name":"Mauzinger","en":"Perrserker","evolved":true},
 {"dex":864,"name":"Gorgasonn","en":"Cursola","regional":true,"evolved":true},
-{"dex":865,"name":"Lauchzelot","en":"Sirfetch'd","regional":true,"evolved":true},
-{"dex":866,"name":"Pantifrost","en":"Mr. Rime","regional":true,"evolved":true},
+{"dex":865,"name":"Lauchzelot","en":"Sirfetch'd","evolved":true},
+{"dex":866,"name":"Pantifrost","en":"Mr. Rime","evolved":true},
 {"dex":867,"name":"Oghnatoll","en":"Runerigus","evolved":true}
 ];
 
@@ -1096,7 +1096,7 @@ var specialfilter = [
 
 var raids = {
 	"tier4":["94M","6X","460M"],
-	"tier5":[646],
+	"tier5":[646,378],
 	"tier3":["26A",615,87,124,365]
 };
 
@@ -1106,6 +1106,7 @@ var legacy = [1,3,4,7,9,10,12,13,16,"19A",25,26,27,"27A",28,29,30,31,32,33,34,35
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.27","date":"26.12.2020","change":["Change Raid Bosses (Return of Regice)"]},
 		{"ver":"1.9.26","date":"22.12.2020","change":["New Shiny: Jynx","Change Raid Bosses (Holidays 2020)","Quests: Add Alolan Vulpix, Delibird, Vanillite, Cryogonal"]},
 		{"ver":"1.9.25","date":"21.12.2020","change":["Change Raid Bosses (End of Registeel weekend)"]},
 		{"ver":"1.9.24","date":"19.12.2020","change":["Change Raid Bosses (Return of Registeel)"]},
