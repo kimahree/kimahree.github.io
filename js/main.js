@@ -1096,7 +1096,7 @@ var specialfilter = [
 
 var raids = {
 	"tier4":["94M","6X","460M"],
-	"tier5":[646,378],
+	"tier5":[646],
 	"tier3":["26A",615,87,124,365]
 };
 
@@ -1106,6 +1106,7 @@ var legacy = [1,3,4,7,9,10,12,13,16,"19A",25,26,27,"27A",28,29,30,31,32,33,34,35
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.28","date":"28.12.2020","change":["Change Raid Bosses (End of Regice weekend)"]},
 		{"ver":"1.9.27","date":"26.12.2020","change":["Change Raid Bosses (Return of Regice)"]},
 		{"ver":"1.9.26","date":"22.12.2020","change":["New Shiny: Jynx","Change Raid Bosses (Holidays 2020)","Quests: Add Alolan Vulpix, Delibird, Vanillite, Cryogonal"]},
 		{"ver":"1.9.25","date":"21.12.2020","change":["Change Raid Bosses (End of Registeel weekend)"]},
