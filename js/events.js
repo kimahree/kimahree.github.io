@@ -1,13 +1,11 @@
 ﻿var events = [
 {"de":"Alola- und Galar-Formen in 7km Eiern","en":"Alolan and Galarian Forms in 7km eggs","start":1591653600000,"url":"https://pokemongolive.com/post/7kmeggs-alolan-galarian-forms/"},
 {"de":"Temporäre Boni (Covid)","en":"Temporary bonuses (Covid)","end":1625032800000,"url":"https://pokemongolive.com/post/update-20200929/"},
-{"de":"GO Beyond - Doppelte EP beim Fangen","en":"GO Beyond - Double Catch XP","start":1605733200000,"end":1609455540000,"url":"https://pokemongolive.com/post/gobeyond-12daysoffriendship/"},
 {"de":"GO Beyond - Festliche Jahreszeit","en":"GO Beyond - Season of Celebration","start":1606806000000,"end":1614582000000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/season-of-celebration-2020/"},
 {"de":"Dezember Forschungsdurchbruch","en":"December Research Breakthrough","start":1606856400000,"end":1609534800000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/dec2020-events/"},
 {"de":"Kyurem in Raids","en":"Kyurem in Raids","start":1606856400000,"end":1609534800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/dec2020-events/"},
 {"de":"Jessie und James in Mauzi-Ballons","en":"Jessie and James in Meowth balloons","start":1607929200000,"end":1614582000000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/movie2020/"},
 {"de":"GBL Season 6 - Meisterliga und mehr","en":"GBL Season 6 - Master League and more","start":1609189200000,"end":1609794000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season6/"},
-{"de":"Weihnachten 2020 - Doppelt Fang-Sternenstaub","en":"Holidays 2020 - Double Catch Stardust","start":1609282800000,"end":1609455540000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/holiday2020/"},
 {"de":"Neujahr-Event","en":"New Year's Event","start":1609448400000,"end":1609794000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/new-year-2021/"},
 {"de":"Januar Forschungsdurchbruch","en":"January Research Breakthrough","start":1609534800000,"end":1612213200000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/jan2021-events/"},
 {"de":"Ho-Oh in Raids","en":"Ho-Oh in Raids","start":1609534800000,"end":1609837200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jan2021-events/"},
