@@ -2,8 +2,6 @@
 {"de":"Alola- und Galar-Formen in 7km Eiern","en":"Alolan and Galarian Forms in 7km eggs","start":1591653600000,"url":"https://pokemongolive.com/post/7kmeggs-alolan-galarian-forms/"},
 {"de":"Temporäre Boni (Covid)","en":"Temporary bonuses (Covid)","end":1625032800000,"url":"https://pokemongolive.com/post/update-20200929/"},
 {"de":"GO Beyond - Festliche Jahreszeit","en":"GO Beyond - Season of Celebration","start":1606806000000,"end":1614582000000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/season-of-celebration-2020/"},
-{"de":"Dezember Forschungsdurchbruch","en":"December Research Breakthrough","start":1606856400000,"end":1609534800000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/dec2020-events/"},
-{"de":"Kyurem in Raids","en":"Kyurem in Raids","start":1606856400000,"end":1609534800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/dec2020-events/"},
 {"de":"Jessie und James in Mauzi-Ballons","en":"Jessie and James in Meowth balloons","start":1607929200000,"end":1614582000000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/movie2020/"},
 {"de":"GBL Season 6 - Meisterliga und mehr","en":"GBL Season 6 - Master League and more","start":1609189200000,"end":1609794000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season6/"},
 {"de":"Neujahr-Event","en":"New Year's Event","start":1609448400000,"end":1609794000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/new-year-2021/"},
@@ -12,7 +10,7 @@
 {"de":"GBL Season 6 - Alle Ligen","en":"GBL Season 6 - All Leagues","start":1609794000000,"end":1610398800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season6/"},
 {"de":"Einall-Event","en":"Unova Celebration","start":1609837200000,"end":1610305200000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/unova-celebration-event-2021/"},
 {"de":"Genesect mit Flammenmodul in Raids","en":"Genesect with Burn Drive in Raids","start":1609837200000,"end":1610442000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jan2021-events/"},
-{"de":"Mega-Glurak Y, Mega-Turtok und Mega-Rexblisar in Mega-Raids","en":"Mega Charizard Y, Mega Blastoise and Mega Abomasnow in Mega Raids","start":1609837200000,"end":1611046800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jan2021-events/"},
+{"de":"Mega-Glurak Y, Mega-Turtok und Mega-Rexblisar in Mega-Raids","en":"Mega Charizard Y, Mega Blastoise and Mega Abomasnow in Mega Raids","end":1611046800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jan2021-events/"},
 {"de":"Yorkleff Rampenlichtstunde","en":"Lillipup Spotlight Hour","start":1609866000000,"end":1609869600000,"color":"#ffffe6","url":"https://pokemongolive.com/post/jan2021-events/"},
 {"de":"Genesect Raidstunde","en":"Genesect Raid Hour","start":1609952400000,"end":1609956000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/jan2021-events/"},
 {"de":"Heatran in Raids","en":"Heatran in Raids","start":1610442000000,"end":1611046800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jan2021-events/"},
@@ -28,7 +26,7 @@
 {"de":"Phanpy Rampenlichtstunde","en":"Phanpy Spotlight Hour","start":1611680400000,"end":1611684000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/jan2021-events/"},
 {"de":"Raidstunde","en":"Raid Hour","start":1611766800000,"end":1611770400000,"color":"#ffffe6","url":"https://pokemongolive.com/post/jan2021-events/"},
 {"de":"Februar Community Day","en":"February Community Day","start":1612692000000,"end":1612713600000,"color":"#e5fff9","url":"https://pokemongolive.com/post/pokemongotour-kanto/"},
-{"de":"Pokémon GO Tour: Kanto (Ticket)","en":"Pokémon GO Tour: Kanto (Ticket)","start":1613894400000,"end":1613937600000,"color":"#fdddfd","url":"https://pokemongolive.com/post/pokemongotour-kanto/"},
+{"de":"Pokémon GO Tour: Kanto [Ticket]","en":"Pokémon GO Tour: Kanto [Ticket]","start":1613894400000,"end":1613937600000,"color":"#fdddfd","url":"https://pokemongolive.com/post/pokemongotour-kanto/"},
 ];
 
 var colors = [
