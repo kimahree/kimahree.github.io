@@ -1095,17 +1095,18 @@ var specialfilter = [
 ];
 
 var raids = {
-	"tier4":["94M","6X","460M"],
-	"tier5":[646],
+	"tier4":["6Y","460M","9M"],
+	"tier5":[250],
 	"tier3":["26A",80,185,227,20]
 };
 
-var quests = [1,4,7,"27A",37,58,60,77,92,95,100,129,133,136,138,140,142,147,155,215,228,255,327,329,345,347,361,363,371,390,443,459,498,546];
+var quests = [1,4,7,37,39,60,92,95,100,103,117,123,129,133,138,140,142,147,183,220,296,307,327,329,345,347,443,506,607];
 var quests_event = [25,79];
-var legacy = [1,3,4,7,9,10,12,13,16,"19A",25,26,27,"27A",28,29,30,31,32,33,34,35,36,37,"37A",38,39,40,41,42,44,47,48,50,"50A",51,"52A",55,56,58,59,60,61,63,66,67,69,70,72,73,74,"74A",75,77,79,80,81,84,85,86,87,88,89,90,92,93,95,98,100,102,"103A",104,106,107,108,109,111,112,113,114,117,118,120,121,123,124,125,126,127,129,131,132,133,135,136,137,138,140,142,143,147,153,155,156,158,164,165,171,177,179,182,183,184,185,187,190,191,193,194,196,197,198,200,202,203,204,206,207,209,213,215,216,219,220,224,225,227,228,231,234,238,241,246,252,255,256,259,261,263,270,273,276,277,280,285,286,287,290,294,296,299,300,302,303,304,307,309,310,311,312,313,314,315,316,317,318,320,322,325,327,328,329,331,333,335,336,337,338,339,341,343,345,347,349,353,355,359,361,362,363,366,371,374,387,390,391,393,396,399,408,410,412,"412S","412T",415,420,"421S",425,427,431,434,436,442,443,449,453,459,498,504,506,509,519,522,524,527,529,531,536,546,548,557,562,582,588,594,595,607,613,615,616,618,622,659,661,667];
+var legacy = [1,3,4,7,9,10,12,13,16,"19A",25,26,27,"27A",28,29,30,31,32,33,34,35,36,37,"37A",38,39,40,41,42,44,47,48,50,"50A",51,"52A",55,56,58,59,60,61,63,66,67,69,70,72,73,74,"74A",75,77,79,80,81,84,85,86,87,88,89,90,92,93,95,98,100,102,103,"103A",104,106,107,108,109,111,112,113,114,117,118,120,121,123,124,125,126,127,129,131,132,133,135,136,137,138,140,142,143,147,153,155,156,158,164,165,171,177,179,182,183,184,185,187,190,191,193,194,196,197,198,200,202,203,204,206,207,209,213,215,216,219,220,224,225,227,228,231,234,238,241,246,252,255,256,259,261,263,270,273,276,277,280,285,286,287,290,294,296,299,300,302,303,304,307,309,310,311,312,313,314,315,316,317,318,320,322,325,327,328,329,331,333,335,336,337,338,339,341,343,345,347,349,353,355,359,361,362,363,366,371,374,387,390,391,393,396,399,408,410,412,"412S","412T",415,420,"421S",425,427,431,434,436,442,443,449,453,459,498,504,506,509,519,522,524,527,529,531,536,546,548,557,562,582,588,594,595,607,613,615,616,618,622,659,661,667];
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.30","date":"01.01.2021","change":["Change Raid Bosses (Return of Ho-Oh)","Quests: Add Jigglypuff, Exeggutor, Seadra, Scyther, Marill, Swinub, Makuhita, Meditite, Lillipup, Litwick","Quests: Remove Alolan Sandshrew, Growlithe, Ponyta, Flareon, Cyndaquil, Sneasel, Houndour, Torchic, Snorunt, Spheal, Chimchar, Gible, Snover, Tepig"]},
 		{"ver":"1.9.29","date":"31.12.2020","change":["Change Raid Bosses (New Year's Event)","Quests: Add Pikachu, Slowpoke","Quests: Remove Alolan Vulpix, Delibird, Vanillite, Cryogonal"]},
 		{"ver":"1.9.28","date":"28.12.2020","change":["Change Raid Bosses (End of Regice weekend)"]},
 		{"ver":"1.9.27","date":"26.12.2020","change":["Change Raid Bosses (Return of Regice)"]},
@@ -1118,7 +1119,7 @@ var changelogjson = {
 		{"ver":"1.9.20","date":"12.12.2020","change":["Change Raid Bosses (Community Day Weekend & Regirock)"]},
 		{"ver":"1.9.19","date":"11.12.2020","change":["New Shiny: Wooper"]},
 		{"ver":"1.9.18","date":"08.12.2020","change":["Quests: Remove Bunnelby, Fletchling, Litleo"]},
-		{"ver":"1.9.17","date":"01.12.2020","change":["New Shiny: Abomasnow","Change Raid Bosses (Kyurem and Generation 6)","Quests: Add Alolan Sandshrem, Growlithe, Ponyta, Flareon, Cyndaquil, Sneasel, Houndour, Torchic, Snorunt, Spheal, Chimchar, Gible, Snover, Tepig, Bunnelby, Fletchling, Litleo","Quests: Remove Clefairy, Jigglypuff, Seadra, Snubbull, Larvitar, Ralts, Mawile, Vibrava, Bagon, Cottonee"]},
+		{"ver":"1.9.17","date":"01.12.2020","change":["New Shiny: Abomasnow","Change Raid Bosses (Kyurem and Generation 6)","Quests: Add Alolan Sandshrew, Growlithe, Ponyta, Flareon, Cyndaquil, Sneasel, Houndour, Torchic, Snorunt, Spheal, Chimchar, Gible, Snover, Tepig, Bunnelby, Fletchling, Litleo","Quests: Remove Clefairy, Jigglypuff, Seadra, Snubbull, Larvitar, Ralts, Mawile, Vibrava, Bagon, Cottonee"]},
 		{"ver":"1.9.16","date":"30.11.2020","change":["Quests: Remove Goldeen, Turtwig, Chimchar, Piplup, Starly, Bronzor"]},
 		{"ver":"1.9.15","date":"27.11.2020","change":['[Gesundbrunnen] Add new gym "Kunstwerk Paul Pfarr"']},
 		{"ver":"1.9.14","date":"24.11.2020","change":["New Shiny: Goldeen","Change Raid Bosses (Lake Legends Event)","Quests: Add Goldeen, Turtwig, Chimchar, Piplup, Starly, Bronzor"]},
