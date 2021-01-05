@@ -3,8 +3,6 @@
 {"de":"Temporäre Boni (Covid)","en":"Temporary bonuses (Covid)","end":1625032800000,"url":"https://pokemongolive.com/post/update-20200929/"},
 {"de":"GO Beyond - Festliche Jahreszeit","en":"GO Beyond - Season of Celebration","start":1606806000000,"end":1614582000000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/season-of-celebration-2020/"},
 {"de":"Jessie und James in Mauzi-Ballons","en":"Jessie and James in Meowth balloons","start":1607929200000,"end":1614582000000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/movie2020/"},
-{"de":"GBL Season 6 - Meisterliga und mehr","en":"GBL Season 6 - Master League and more","start":1609189200000,"end":1609794000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season6/"},
-{"de":"Neujahr-Event","en":"New Year's Event","start":1609448400000,"end":1609794000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/new-year-2021/"},
 {"de":"Januar Forschungsdurchbruch","en":"January Research Breakthrough","start":1609534800000,"end":1612213200000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/jan2021-events/"},
 {"de":"Ho-Oh in Raids","en":"Ho-Oh in Raids","start":1609534800000,"end":1609837200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jan2021-events/"},
 {"de":"GBL Season 6 - Alle Ligen","en":"GBL Season 6 - All Leagues","start":1609794000000,"end":1610398800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season6/"},
