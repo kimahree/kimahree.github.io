@@ -630,7 +630,7 @@ var pokemon = [
 {"dex":415,"name":"Wadribie","en":"Combee"},
 {"dex":416,"name":"Honweisel","en":"Vespiquen","evolved":true},
 {"dex":417,"name":"Pachirisu","regional":true},
-{"dex":418,"name":"Bamelin","en":"Buizel"},
+{"dex":418,"name":"Bamelin","en":"Buizel","getshiny":true},
 {"dex":419,"name":"Bojelin","en":"Floatzel","evolved":true},
 {"dex":420,"name":"Kikugi","en":"Cherubi"},
 {"dex":421,"name":"Kinoso (Bewölkt)","de":"Kinoso (Wolkenform)","en":"Cherrim (Overcast Form)","evolved":true},
@@ -1096,17 +1096,20 @@ var specialfilter = [
 
 var raids = {
 	"tier4":["6Y","460M","9M"],
-	"tier5":["649B"],
-	"tier3":[591,520,525,530,507]
+	"tier5":[485],
+	"tier3":[450,457,428,454],
+	"tier1":[443]
 };
 
 var quests = [1,4,7,37,39,60,92,95,100,103,117,123,129,133,138,140,142,147,183,220,296,307,327,329,345,347,443,506,607];
-var quests_event = [495,498,501,597];
-var legacy = [1,3,4,7,9,10,12,13,16,"19A",25,26,27,"27A",28,29,30,31,32,33,34,35,36,37,"37A",38,39,40,41,42,44,47,48,50,"50A",51,"52A",55,56,58,59,60,61,63,66,67,69,70,72,73,74,"74A",75,77,79,80,81,84,85,86,87,88,89,90,92,93,95,98,100,102,103,"103A",104,106,107,108,109,111,112,113,114,117,118,120,121,123,124,125,126,127,129,131,132,133,135,136,137,138,140,142,143,147,153,155,156,158,164,165,171,177,179,182,183,184,185,187,190,191,193,194,196,197,198,200,202,203,204,206,207,209,213,215,216,219,220,224,225,227,228,231,234,238,241,246,252,255,256,259,261,263,270,273,276,277,280,285,286,287,290,294,296,299,300,302,303,304,307,309,310,311,312,313,314,315,316,317,318,320,322,325,327,328,329,331,333,335,336,337,338,339,341,343,345,347,349,353,355,359,361,362,363,366,371,374,387,390,391,393,396,399,408,410,412,"412S","412T",415,420,"421S",425,427,431,434,436,442,443,449,453,459,495,498,501,504,506,509,519,522,524,527,529,531,536,546,548,557,562,582,588,594,595,597,607,613,615,616,618,622,659,661,667];
+var quests_event = [387,390,393,408,410,418];
+var legacy = [1,3,4,7,9,10,12,13,16,"19A",25,26,27,"27A",28,29,30,31,32,33,34,35,36,37,"37A",38,39,40,41,42,44,47,48,50,"50A",51,"52A",55,56,58,59,60,61,63,66,67,69,70,72,73,74,"74A",75,77,79,80,81,84,85,86,87,88,89,90,92,93,95,98,100,102,103,"103A",104,106,107,108,109,111,112,113,114,117,118,120,121,123,124,125,126,127,129,131,132,133,135,136,137,138,140,142,143,147,153,155,156,158,164,165,171,177,179,182,183,184,185,187,190,191,193,194,196,197,198,200,202,203,204,206,207,209,213,215,216,219,220,224,225,227,228,231,234,238,241,246,252,255,256,259,261,263,270,273,276,277,280,285,286,287,290,294,296,299,300,302,303,304,307,309,310,311,312,313,314,315,316,317,318,320,322,325,327,328,329,331,333,335,336,337,338,339,341,343,345,347,349,353,355,359,361,362,363,366,371,374,387,390,391,393,396,399,408,410,412,"412S","412T",415,418,420,"421S",425,427,431,434,436,442,443,449,453,459,495,498,501,504,506,509,519,522,524,527,529,531,536,546,548,557,562,582,588,594,595,597,607,613,615,616,618,622,659,661,667];
 
 var changelogjson = {
 	"items": [
-		{"ver":"1.9.31","date":"01.01.2021","change":["New Shiny: Snivy","Change Raid Bosses (Unova Celebration)","Quests: Add Snivy, Tepig, Oshawott, Ferroseed","Quests: Remove Pikachu, Slowpoke"]},
+		{"ver":"1.9.33","date":"12.01.2021","change":["New Shiny: Buizel","Change Raid Bosses (Sinnoh Celebration)","Quests: Add Turtwig, Chimchar, Piplup, Cranidos, Shieldon, Buizel"]},
+		{"ver":"1.9.32","date":"10.01.2021","change":["Quests: Remove Snivy, Tepig, Oshawott, Ferroseed"]},
+		{"ver":"1.9.31","date":"04.01.2021","change":["New Shiny: Snivy","Change Raid Bosses (Unova Celebration)","Quests: Add Snivy, Tepig, Oshawott, Ferroseed","Quests: Remove Pikachu, Slowpoke"]},
 		{"ver":"1.9.30","date":"01.01.2021","change":["Change Raid Bosses (Return of Ho-Oh)","Quests: Add Jigglypuff, Exeggutor, Seadra, Scyther, Marill, Swinub, Makuhita, Meditite, Lillipup, Litwick","Quests: Remove Alolan Sandshrew, Growlithe, Ponyta, Flareon, Cyndaquil, Sneasel, Houndour, Torchic, Snorunt, Spheal, Chimchar, Gible, Snover, Tepig"]},
 		{"ver":"1.9.29","date":"31.12.2020","change":["Change Raid Bosses (New Year's Event)","Quests: Add Pikachu, Slowpoke","Quests: Remove Alolan Vulpix, Delibird, Vanillite, Cryogonal"]},
 		{"ver":"1.9.28","date":"28.12.2020","change":["Change Raid Bosses (End of Regice weekend)"]},
@@ -1349,6 +1352,30 @@ function init() {
 	} */
 
 	// $('#covid').removeAttr("hidden");
+
+	// change Raids after certain time
+	/*var timenow = new Date().getTime();
+	if (timenow > 1609837200000) {
+		try {
+			tier5 = tier5N;
+		} catch {}
+		try {
+			tier4 = tier4N;
+		} catch {}		
+		try {
+			tier3 = tier3N;
+		} catch {}
+		try {
+			tier2 = tier2N;
+		} catch {}
+		try {
+			tier1 = tier1N;
+		} catch {}
+		try {
+			tierM = tierMN;
+		} catch {}
+	}*/
+
 
 	// make Raids
 	var txt = "";
