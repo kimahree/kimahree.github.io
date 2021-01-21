@@ -9,8 +9,6 @@
 {"de":"Kyogre und Groudon in Raids","en":"Kyogre and Groudon in Raids","start":1611046800000,"end":1611651600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jan2021-events/"},
 {"de":"Hoenn-Event","en":"Hoenn Celebration","start":1611046800000,"end":1611514800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/hoenn-celebration-event-2021/"},
 {"de":"Mega-Bisaflor, Mega-Hundemon und Mega-Ampharos in Mega-Raids","en":"Mega Venusaur, Mega Houndoom and Mega Ampharos in Mega Raids","start":1611046800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jan2021-events/"},
-{"de":"Knilz Rampenlichtstunde","en":"Shroomish Spotlight Hour","start":1611075600000,"end":1611079200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/jan2021-events/"},
-{"de":"Kyogre und Groudon Raidstunde","en":"Kyogre and Groudon Raid Hour","start":1611162000000,"end":1611165600000,"color":"#ffffe6","url":"https://pokemongolive.com/post/jan2021-events/"},
 {"de":"Rauch Event - Voltilamm","en":"Incense Day - Mareep","start":1611482400000,"end":1611504000000,"color":"#e5fff9","url":"https://pokemongolive.com/post/incenseday-electric-dragon-mareep/"},
 {"de":"GBL Season 6 - Hyperliga","en":"GBL Season 6 - Ultra League","start":1611608400000,"end":1612818000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season6/"},
 {"de":"Entei in Raids","en":"Entei in Raids","start":1611651600000,"end":1612083600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/johto-celebration-event-2021/"},
