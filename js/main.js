@@ -1097,6 +1097,7 @@ var specialfilter = [
 var raids = {
 	"tier4":["181M","3M","229M"],
 	"tier5":[244],
+	"tier5N":[243],
 	"tier3":[241,197,227,196,176]
 };
 
@@ -1106,6 +1107,7 @@ var legacy = [1,3,4,7,9,10,12,13,16,"19A",25,26,27,"27A",28,29,30,31,32,33,34,35
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.38","date":"31.01.2021","change":["Change Raid Bosses (Return of Raikou)"]},
 		{"ver":"1.9.37","date":"26.01.2021","change":["New Shiny: Miltank","Change Raid Bosses (Johto Celebration)","Quests: Add Chikorita, Cyndaquil, Totodile, Chinchou, Mareep, Sudowoodo, Miltank"]},
 		{"ver":"1.9.36","date":"24.01.2021","change":["Quests: Remove Treecko, Torchic, Mudkip, Aron, Plusle, Minun, Wailmer"]},
 		{"ver":"1.9.35","date":"19.01.2021","change":["New Shiny: Ampharos","Change Raid Bosses (Hoenn Celebration)","Quests: Add Treecko, Torchic, Mudkip, Aron, Plusle, Minun, Wailmer"]},
@@ -1357,27 +1359,27 @@ function init() {
 	// $('#covid').removeAttr("hidden");
 
 	// change Raids after certain time
-	/*var timenow = new Date().getTime();
-	if (timenow > 1609837200000) {
+	var timenow = new Date().getTime();
+	if (timenow > 1612083600000) {
 		try {
-			tier5 = tier5N;
+			raids.tier5 = raids.tier5N;
 		} catch {}
-		try {
-			tier4 = tier4N;
+		/*try {
+			raids.tier4 = raids.tier4N;
 		} catch {}		
 		try {
-			tier3 = tier3N;
+			raids.tier3 = raids.tier3N;
 		} catch {}
 		try {
-			tier2 = tier2N;
+			raids.tier2 = raids.tier2N;
 		} catch {}
 		try {
-			tier1 = tier1N;
+			raids.tier1 = raids.tier1N;
 		} catch {}
 		try {
-			tierM = tierMN;
-		} catch {}
-	}*/
+			raids.tierM = raids.tierMN;
+		} catch {}*/
+	}
 
 
 	// make Raids
