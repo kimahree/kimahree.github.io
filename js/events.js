@@ -3,7 +3,6 @@
 {"de":"Temporäre Boni (Covid)","en":"Temporary bonuses (Covid)","end":1625032800000,"url":"https://pokemongolive.com/post/update-20200929/"},
 {"de":"GO Beyond - Festliche Jahreszeit","en":"GO Beyond - Season of Celebration","start":1606806000000,"end":1614582000000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/season-of-celebration-2020/"},
 {"de":"Jessie und James in Mauzi-Ballons","en":"Jessie and James in Meowth balloons","start":1607929200000,"end":1614582000000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/movie2020/"},
-{"de":"Januar Forschungsdurchbruch","en":"January Research Breakthrough","start":1609534800000,"end":1612213200000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/jan2021-events/"},
 {"de":"Mega-Bisaflor, Mega-Hundemon und Mega-Ampharos in Mega-Raids","en":"Mega Venusaur, Mega Houndoom and Mega Ampharos in Mega Raids","start":1611046800000,"end":1612861200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/feb-2021-events/"},
 {"de":"GBL Season 6 - Hyperliga","en":"GBL Season 6 - Ultra League","start":1611608400000,"end":1612818000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season6/"},
 {"de":"Begrenzte Forschung - Team GO Rocket","en":"Team GO Rocket Timed Research","start":1611651600000,"end":1612724400000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/limited-research-sneasel-challenge/"},
