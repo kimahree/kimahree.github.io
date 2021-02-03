@@ -1097,7 +1097,7 @@ var specialfilter = [
 var raids = {
 	"tier4":["181M","3M","229M"],
 	"tier5":[243],
-	"tier3":[241,197,227,196,176]
+	"tier3":[359,168,248,197,31]
 };
 
 var quests = [1,4,7,23,37,60,63,66,74,81,92,95,100,104,106,107,109,129,133,138,140,142,147,216,315,325,327,345,347,443,495,498,501];
@@ -1360,10 +1360,11 @@ function init() {
 	// $('#covid').removeAttr("hidden");
 
 	// change Raids after certain time
-	var timenow = new Date().getTime();
+	
+	/*var timenow = new Date().getTime();
 	if (timenow > 1612256400000) {
 		raids.tier3 = [359,168,248,197,31];
-	}
+	}*/
 
 
 	// make Raids
