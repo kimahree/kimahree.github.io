@@ -1096,7 +1096,7 @@ var specialfilter = [
 
 var raids = {
 	"tier4":["181M","3M","229M"],
-	"tier5":[243],
+	"tier5":[245],
 	"tier3":[359,168,248,197,31]
 };
 
@@ -1106,6 +1106,7 @@ var legacy = [1,3,4,7,9,10,12,13,16,"19A",23,25,26,27,"27A",28,29,30,31,32,33,34
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.41","date":"04.01.2021","change":["Change Raid Bosses (Return of Suicune)"]},
 		{"ver":"1.9.40","date":"02.02.2021","change":["Change Raid Bosses (Team GO Rocket Celebration)","Quests: Add Ekans, Nidoran♀, Nidoran♂, Abra,  Machop, Geodude, Magnemite, Cubone, Hitmonlee, Hitmonchan, Koffing, Umbreon, Misdreavus, Gligar, Teddiursa, Roselia, Spoink, Snivy, Tepig, Oshawott","Quests: Remove Jigglypuff, Exeggutor, Seadra, Scyther, Marill, Swinub, Makuhita, Meditite, Lillipup, Litwick"]},
 		{"ver":"1.9.39","date":"31.01.2021","change":["Quests: Remove Chikorita, Cyndaquil, Totodile, Chinchou, Mareep, Sudowoodo, Miltank"]},
 		{"ver":"1.9.38","date":"31.01.2021","change":["Change Raid Bosses (Return of Raikou)"]},
@@ -1362,8 +1363,8 @@ function init() {
 	// change Raids after certain time
 	
 	/*var timenow = new Date().getTime();
-	if (timenow > 1612256400000) {
-		raids.tier3 = [359,168,248,197,31];
+	if (timenow > 1612429200000) {
+		raids.tier5 = [245];
 	}*/
 
 
