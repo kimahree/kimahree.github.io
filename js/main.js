@@ -1101,12 +1101,13 @@ var raids = {
 };
 
 var quests = [1,4,7,23,37,60,63,66,74,81,92,95,100,104,106,107,109,129,133,138,140,142,147,216,315,325,327,345,347,443,495,498,501];
-var quests_event = [29,32,197,200,207];
+var quests_event = [];
 var legacy = [1,3,4,7,9,10,12,13,16,"19A",23,25,26,27,"27A",28,29,30,31,32,33,34,35,36,37,"37A",38,39,40,41,42,44,47,48,50,"50A",51,"52A",55,56,58,59,60,61,63,66,67,69,70,72,73,74,"74A",75,77,79,80,81,84,85,86,87,88,89,90,92,93,95,98,100,102,103,"103A",104,106,107,108,109,111,112,113,114,117,118,120,121,123,124,125,126,127,129,131,132,133,135,136,137,138,140,142,143,147,152,153,155,156,158,164,165,170,171,177,179,182,183,184,185,187,190,191,193,194,196,197,198,200,202,203,204,206,207,209,213,215,216,219,220,224,225,227,228,231,234,238,241,246,252,255,256,258,259,261,263,270,273,276,277,280,285,286,287,290,294,296,299,300,302,303,304,307,309,310,311,312,313,314,315,316,317,318,320,322,325,327,328,329,331,333,335,336,337,338,339,341,343,345,347,349,353,355,359,361,362,363,366,371,374,387,390,391,393,396,399,408,410,412,"412S","412T",415,418,420,"421S",425,427,431,434,436,442,443,449,453,459,495,498,501,504,506,509,519,522,524,527,529,531,536,546,548,557,562,582,588,594,595,597,607,613,615,616,618,622,659,661,667];
 
 var changelogjson = {
 	"items": [
-		{"ver":"1.9.41","date":"04.01.2021","change":["Change Raid Bosses (Return of Suicune)"]},
+		{"ver":"1.9.42","date":"07.02.2021","change":["Quests: Remove Nidoran♀, Nidoran♂, Umbreon, Misdreavus, Gligar"]},
+		{"ver":"1.9.41","date":"04.02.2021","change":["Change Raid Bosses (Return of Suicune)"]},
 		{"ver":"1.9.40","date":"02.02.2021","change":["Change Raid Bosses (Team GO Rocket Celebration)","Quests: Add Ekans, Nidoran♀, Nidoran♂, Abra,  Machop, Geodude, Magnemite, Cubone, Hitmonlee, Hitmonchan, Koffing, Umbreon, Misdreavus, Gligar, Teddiursa, Roselia, Spoink, Snivy, Tepig, Oshawott","Quests: Remove Jigglypuff, Exeggutor, Seadra, Scyther, Marill, Swinub, Makuhita, Meditite, Lillipup, Litwick"]},
 		{"ver":"1.9.39","date":"31.01.2021","change":["Quests: Remove Chikorita, Cyndaquil, Totodile, Chinchou, Mareep, Sudowoodo, Miltank"]},
 		{"ver":"1.9.38","date":"31.01.2021","change":["Change Raid Bosses (Return of Raikou)"]},
