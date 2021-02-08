@@ -1097,7 +1097,7 @@ var specialfilter = [
 var raids = {
 	"tier4":["181M","3M","229M"],
 	"tier5":[245],
-	"tier3":[359,168,248,197,31]
+	"tier3":[241,197,227,196,176]
 };
 
 var quests = [1,4,7,23,37,60,63,66,74,81,92,95,100,104,106,107,109,129,133,138,140,142,147,216,315,325,327,345,347,443,495,498,501];
@@ -1106,6 +1106,7 @@ var legacy = [1,3,4,7,9,10,12,13,16,"19A",23,25,26,27,"27A",28,29,30,31,32,33,34
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.43","date":"08.02.2021","change":["Change Raid Bosses (End of Rocket Event)"]},
 		{"ver":"1.9.42","date":"07.02.2021","change":["Quests: Remove Nidoran♀, Nidoran♂, Umbreon, Misdreavus, Gligar"]},
 		{"ver":"1.9.41","date":"04.02.2021","change":["Change Raid Bosses (Return of Suicune)"]},
 		{"ver":"1.9.40","date":"02.02.2021","change":["Change Raid Bosses (Team GO Rocket Celebration)","Quests: Add Ekans, Nidoran♀, Nidoran♂, Abra,  Machop, Geodude, Magnemite, Cubone, Hitmonlee, Hitmonchan, Koffing, Umbreon, Misdreavus, Gligar, Teddiursa, Roselia, Spoink, Snivy, Tepig, Oshawott","Quests: Remove Jigglypuff, Exeggutor, Seadra, Scyther, Marill, Swinub, Makuhita, Meditite, Lillipup, Litwick"]},
