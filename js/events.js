@@ -5,7 +5,7 @@
 {"de":"Jessie und James in Mauzi-Ballons","en":"Jessie and James in Meowth balloons","start":1607929200000,"end":1614582000000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/movie2020/"},
 {"de":"Februar Forschungsdurchbruch","en":"February Research Breakthrough","start":1612213200000,"end":1614632400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/feb-2021-events/"},
 {"de":"GBL Season 6 - Meisterliga, Love Cup und mehr","en":"GBL Season 6 - Master League, Love Cup and more","start":1612818000000,"end":1613422800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season6/"},
-{"de":"Erhöhte Tauschreichweite (40 km)","en":"Increased Trade distance (40 km)","start":1612818000000,"end":1613422800000,"url":"https://pokemongolive.com/post/lunar-2021/"},
+{"de":"Erhöhte Tauschreichweite (40 km)","en":"Increased Trade distance (40 km)","start":1612818000000,"end":1614582000000,"url":"https://leekduck.com/events/increased-trading-range-lunar-new-year/"},
 {"de":"Mondneujahr Event","en":"Lunar New Year Event","start":1612861200000,"end":1613304000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/lunar-2021/"},
 {"de":"Latias und Latios in Raids","en":"Latias and Latios in Raids","start":1612861200000,"end":1613808000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/feb-2021-events/"},
 {"de":"Mega-Tauboss, Mega-Ampharos und Mega-Garados in Mega-Raids","en":"Mega Pidgeot, Mega Ampharos and Mega Gyarados in Mega Raids","start":1612861200000,"end":1613808000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/lunar-2021/"},
