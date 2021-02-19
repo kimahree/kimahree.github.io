@@ -7,7 +7,6 @@
 {"de":"Erhöhte Tauschreichweite (40 km)","en":"Increased Trade distance (40 km)","start":1612818000000,"end":1614582000000,"url":"https://leekduck.com/events/increased-trading-range-lunar-new-year/"},
 {"de":"Latias und Latios in Raids","en":"Latias and Latios in Raids","start":1612861200000,"end":1613808000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/feb-2021-events/"},
 {"de":"Mega-Tauboss, Mega-Ampharos und Mega-Garados in Mega-Raids","en":"Mega Pidgeot, Mega Ampharos and Mega Gyarados in Mega Raids","start":1612861200000,"end":1613808000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/lunar-2021/"},
-{"de":"Valentinstag Event","en":"Valentine's Day Event","start":1613304000000,"end":1613674800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/valentinesday2021/"},
 {"de":"GBL Season 6 - Alle Ligen","en":"GBL Season 6 - All Leagues","start":1613422800000,"end":1614027600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season6/"},
 {"de":"Latias und Latios Raidstunde","en":"Latias and Latios Raid Hour","start":1613581200000,"end":1613584800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/feb-2021-events/"},
 {"de":"Arktos, Zapdos, Lavados und Mewtu in Raids","en":"Articuno, Zapdos, Moltres and Mewtwo in Raids","start":1613808000000,"end":1614582000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/feb-2021-events/"},
@@ -18,6 +17,7 @@
 {"de":"GBL Season 6 - Kanto-Cup","en":"GBL Season 6 - Kanto Cup","start":1614027600000,"end":1614632400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season6/"},
 {"de":"Pikachu Rampenlichtstunde","en":"Pikachu Spotlight Hour","start":1614099600000,"end":1614103200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/feb-2021-events/"},
 {"de":"Arktos, Zapdos, Lavados und Mewtu Raidstunde","en":"Articuno, Zapdos, Moltres and Mewtwo Raid Hour","start":1614186000000,"end":1614189600000,"color":"#ffffe6","url":"https://pokemongolive.com/post/feb-2021-events/"},
+{"de":"Kanto Raid Tag","en":"Kanto Raid Day","start":1614506400000,"end":1614517200000,"color":"#e5fff9","url":"https://pokemongolive.com/post/kanto-raid-day-2021/"},
 {"de":"GBL Season 7","en":"GBL Season 7","start":1614632400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season6/"},
 {"de":"Dartiri Community Day","en":"Fletchling Community Day","start":1615024800000,"end":1615046400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communityday-mar21/"},
 ];
