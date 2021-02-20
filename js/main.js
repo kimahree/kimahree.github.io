@@ -436,7 +436,7 @@ var pokemon = [
 {"dex":233,"name":"Porygon2","evolved":true},
 {"dex":234,"name":"Damhirplex","en":"Stantler","getshiny":true},
 {"dex":235,"name":"Farbeagle","en":"Smeargle"},
-{"dex":236,"name":"Rabauz","en":"Tyrogue","baby":true,"getshiny":true},
+{"dex":236,"name":"Rabauz","en":"Tyrogue","baby":true},
 {"dex":237,"name":"Kapoera","en":"Hitmontop"},
 {"dex":238,"name":"Kussila","en":"Smoochum","baby":true,"getshiny":true},
 {"dex":239,"name":"Elekid","baby":true,"getshiny":true},
@@ -659,7 +659,7 @@ var pokemon = [
 {"dex":443,"name":"Kaumalat","en":"Gible","getshiny":true},
 {"dex":444,"name":"Knarksel","en":"Gabite","evolved":true},
 {"dex":445,"name":"Knakrack","en":"Garchomp","evolved":true},
-{"dex":446,"name":"Mampfaxo","en":"Munchlax","baby":true,"getshiny":true},
+{"dex":446,"name":"Mampfaxo","en":"Munchlax","baby":true},
 {"dex":447,"name":"Riolu","baby":true,"getshiny":true},
 {"dex":448,"name":"Lucario"},
 {"dex":449,"name":"Hippopotas","getshiny":true},
@@ -1106,7 +1106,7 @@ var legacy = [1,3,4,7,9,10,12,13,16,"19A",23,25,26,27,"27A",28,29,30,31,32,33,34
 
 var changelogjson = {
 	"items": [
-		{"ver":"1.9.47","date":"20.02.2021","change":["New Shinies: Ivysaur, Charmeleon, Wartortle, Metapod, Butterfree, Kakuna, Pidgeotto, Raticate, Spearow, Fearow, Arbok, Raichu, Sandslash, Nidorina, Nidoqueen, Nidorino, Nidoking, Clefable, Ninetales, Wigglytuff, Golbat, Gloom, Vileplume, Paras, Parasect, Venomoth, Dugtrio, Persian, Golduck, Primeape, Arcanine, Poliwhirl, Poliwrath, Kadabra, Alakazam, Machoke, Machamp, Weepinbell, Victreebel, Tentacruel, Graveler, Golem, Rapidash, Slowbro, Magneton, Dodrio, Dewgong, Muk, Cloyster, Haunter, Hypno, Kingler, Electrode, Exeggutor, Marowak, Hitmonlee, Hitmonchan, Weezing, Rhydon, Seadra, Seaking, Starmie, Ditto, Vaporeon, Jolteon, Flareon, Omastar, Kabutops, Snorlax, Dragonair, Dragonite, Tyrogue, Munchlax","Change Raid Bosses (Pokémon GO Tour - Kanto)","Re-enable Tier 4 Raids temporarily","Quests: Add Tangela, Snorlax"]},
+		{"ver":"1.9.47","date":"20.02.2021","change":["New Shinies: Ivysaur, Charmeleon, Wartortle, Metapod, Butterfree, Kakuna, Pidgeotto, Raticate, Spearow, Fearow, Arbok, Raichu, Sandslash, Nidorina, Nidoqueen, Nidorino, Nidoking, Clefable, Ninetales, Wigglytuff, Golbat, Gloom, Vileplume, Paras, Parasect, Venomoth, Dugtrio, Persian, Golduck, Primeape, Arcanine, Poliwhirl, Poliwrath, Kadabra, Alakazam, Machoke, Machamp, Weepinbell, Victreebel, Tentacruel, Graveler, Golem, Rapidash, Slowbro, Magneton, Dodrio, Dewgong, Muk, Cloyster, Haunter, Hypno, Kingler, Electrode, Exeggutor, Marowak, Hitmonlee, Hitmonchan, Weezing, Rhydon, Seadra, Seaking, Starmie, Ditto, Vaporeon, Jolteon, Flareon, Omastar, Kabutops, Snorlax, Dragonair, Dragonite","Change Raid Bosses (Pokémon GO Tour - Kanto)","Re-enable Tier 4 Raids temporarily","Quests: Add Tangela, Snorlax"]},
 		{"ver":"1.9.46","date":"19.02.2021","change":["Change Raid Bosses (End of Valentine's Day Event)","Quests: Remove Ralts, Volbeat, Illumise, Alomomola"]},
 		{"ver":"1.9.45","date":"14.02.2021","change":["Enable local raids again","New Shiny: Alomomola","Change Raid Bosses (Valentine's Day Event)","Quests: Add Ralts, Volbeat, Illumise, Alomomola","Quests: Remove Meowth, Alolan Meowth, Galarian Meowth, Miltank, Meditite"]},
 		{"ver":"1.9.44","date":"09.02.2021","change":["New Shiny: Gyarados","Change Raid Bosses (Lunar New Year & Mega Gyarados Debut)","Quests: Add Meowth, Alolan Meowth, Galarian Meowth, Miltank, Meditite"]},
