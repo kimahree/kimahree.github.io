@@ -8,7 +8,6 @@
 {"de":"GBL Season 6 - Alle Ligen","en":"GBL Season 6 - All Leagues","start":1613422800000,"end":1614027600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season6/"},
 {"de":"Arktos, Zapdos, Lavados und Mewtu in Raids","en":"Articuno, Zapdos, Moltres and Mewtwo in Raids","start":1613808000000,"end":1614582000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/feb-2021-events/"},
 {"de":"Mega-Bisaflor, Mega-Glurak X, Mega-Glurak Y und Mega-Turtok in Mega-Raids","en":"Mega Venusaur, Mega Charizard X, Mega Charizard Y and Mega Blastoise in Mega Raids","start":1613808000000,"end":1614582000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/feb-2021-events/"},
-{"de":"Pokémon GO Tour: Kanto [Ticket]","en":"Pokémon GO Tour: Kanto [Ticket]","start":1613808000000,"end":1613937600000,"color":"#fdddfd","url":"https://pokemongolive.com/post/pokemongotour-kanto/"},
 {"de":"Pokémon GO Tour: Kanto - Sammler-Herausforderungen","en":"Pokémon GO Tour: Kanto - Collection Challenges","start":1613808000000,"end":1614538740000,"color":"#fdddfd","url":"https://pokemongolive.com/post/pokemongotour-kanto-details/"},
 {"de":"Kanto-Event","en":"Kanto Celebration","start":1613898000000,"end":1614452400000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/kanto-celebration-event-2021/"},
 {"de":"GBL Season 6 - Kanto-Cup","en":"GBL Season 6 - Kanto Cup","start":1614027600000,"end":1614632400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season6/"},
