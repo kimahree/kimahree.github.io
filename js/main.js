@@ -1097,7 +1097,7 @@ var specialfilter = [
 var raids = {
 	"tier4":["3M","6X","6Y","9M"],
 	"tier5":[144,145,146,150],
-	"tier3":[93,75,64,131,67,127,123]
+	"tier3":[93,75,64,131,67,122,127,123]
 };
 
 var quests = [1,4,7,23,37,60,63,66,74,81,92,95,100,104,106,107,109,129,133,138,140,142,147,216,315,325,327,345,347,443,495,498,501];
@@ -1106,6 +1106,7 @@ var legacy = [1,3,4,7,9,10,12,13,16,"19A",23,25,26,27,"27A",28,29,30,31,32,33,34
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.49","date":"24.02.2021","change":["Change Raid Bosses (Mr. Mime added)"]},
 		{"ver":"1.9.48","date":"21.02.2021","change":["Change Raid Bosses (Kanto Celebration)","Quests: Add Nidoran♀, Nidoran♂, Clefairy, Jigglypuff, Zubat, Venonat, Diglett, Doduo","Quests: Remove Lickitung, Tangela, Lapras"]},
 		{"ver":"1.9.47","date":"20.02.2021","change":["New Shinies: Ivysaur, Charmeleon, Wartortle, Metapod, Butterfree, Kakuna, Pidgeotto, Raticate, Spearow, Fearow, Arbok, Raichu, Sandslash, Nidorina, Nidoqueen, Nidorino, Nidoking, Clefable, Ninetales, Wigglytuff, Golbat, Gloom, Vileplume, Paras, Parasect, Venomoth, Dugtrio, Persian, Golduck, Primeape, Arcanine, Poliwhirl, Poliwrath, Kadabra, Alakazam, Machoke, Machamp, Weepinbell, Victreebel, Tentacruel, Graveler, Golem, Rapidash, Slowbro, Magneton, Dodrio, Dewgong, Muk, Cloyster, Haunter, Hypno, Kingler, Electrode, Exeggutor, Marowak, Hitmonlee, Hitmonchan, Weezing, Rhydon, Seadra, Seaking, Starmie, Ditto, Vaporeon, Jolteon, Flareon, Omastar, Kabutops, Snorlax, Dragonair, Dragonite","Change Raid Bosses (Pokémon GO Tour - Kanto)","Re-enable Tier 4 Raids temporarily","Quests: Add Lickitung, Tangela, Lapras, Snorlax"]},
 		{"ver":"1.9.46","date":"19.02.2021","change":["Change Raid Bosses (End of Valentine's Day Event)","Quests: Remove Ralts, Volbeat, Illumise, Alomomola"]},
