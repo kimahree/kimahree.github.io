@@ -10,7 +10,7 @@
 {"de":"Pokémon GO Tour: Kanto - Sammler-Herausforderungen","en":"Pokémon GO Tour: Kanto - Collection Challenges","start":1613808000000,"end":1614538740000,"color":"#fdddfd","url":"https://pokemongolive.com/post/pokemongotour-kanto-details/"},
 {"de":"GBL Season 6 - Kanto-Cup","en":"GBL Season 6 - Kanto Cup","start":1614027600000,"end":1614632400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season6/"},
 {"de":"Kanto Raid Tag","en":"Kanto Raid Day","start":1614506400000,"end":1614517200000,"color":"#e5fff9","url":"https://pokemongolive.com/post/kanto-raid-day-2021/"},
-{"de":"Giovanni: Crypto-Arktos","en":"Giovanni: Shadow Articuno","start":1614553200000,"end":1617227940000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/mar-2021-events/"},
+{"de":"Giovanni: Crypto-Arktos","en":"Giovanni: Shadow Articuno","end":1617227940000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/mar-2021-events/"},
 {"de":"Legendäre Jahreszeit","en":"Season of Legends","start":1614582000000,"end":1622534400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/season-of-legends-2021/"},
 {"de":"Demeteros (Inkarnationsform) in Raids","en":"Landorus (Incarnate Forme) in Raids","start":1614582000000,"end":1615014000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/mar-2021-events/"},
 {"de":"Mega-Turtok, Mega-Tauboss und Mega-Ampharos in Mega-Raids","en":"Mega Blastoise, Mega Pidgeot and Mega Ampharos in Mega Raids","start":1614582000000,"end":1615885200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/mar-2021-events/"},
