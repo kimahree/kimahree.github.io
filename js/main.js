@@ -897,7 +897,7 @@ var pokemon = [
 {"dex":"642T","name":"Voltolos (Tiergeist)","de":"Voltolos (Tiergeistform)","en":"Thundurus (Therian Forme)","legendary":true},
 {"dex":643,"name":"Reshiram","legendary":true},
 {"dex":644,"name":"Zekrom","legendary":true},
-{"dex":645,"name":"Demeteros","de":"Demeteros (Inkarnationsform)","en":"Landorus (Incarnate Forme)","legendary":true},
+{"dex":645,"name":"Demeteros","de":"Demeteros (Inkarnationsform)","en":"Landorus (Incarnate Forme)","legendary":true,"getshiny":true},
 {"dex":"645T","name":"Demeteros (Tiergeist)","de":"Demeteros (Tiergeistform)","en":"Landorus (Therian Forme)","legendary":true},
 {"dex":646,"name":"Kyurem","legendary":true},
 {"dex":"646B","name":"Schwarzes Kyurem","de":"Schwarzes Kyurem","en":"Black Kyurem","legendary":true},
@@ -1095,9 +1095,9 @@ var specialfilter = [
 ];
 
 var raids = {
-	"tier4":["3M","6X","6Y","9M"],
-	"tier5":[144,145,146,150],
-	"tier3":[93,75,64,131,67,122,127,123]
+	"tier4":["181M","18M","9M"],
+	"tier5":[645],
+	"tier3":[389,232,362,207,340]
 };
 
 var quests = [1,4,7,23,37,60,63,66,74,81,92,95,100,104,106,107,109,129,133,138,140,142,147,216,315,325,327,345,347,443,495,498,501];
@@ -1106,6 +1106,7 @@ var legacy = [1,3,4,7,9,10,12,13,16,"19A",23,25,26,27,"27A",28,29,30,31,32,33,34
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.51","date":"01.03.2021","change":["New Shiny: Landorus (Incarnate Forme)","Change Raid Bosses (Return of Landorus)"]},
 		{"ver":"1.9.50","date":"27.02.2021","change":["Quests: Remove Nidoran♀, Nidoran♂, Clefairy, Jigglypuff, Zubat, Venonat, Diglett, Doduo, Snorlax"]},
 		{"ver":"1.9.49","date":"24.02.2021","change":["Change Raid Bosses (Mr. Mime added)"]},
 		{"ver":"1.9.48","date":"21.02.2021","change":["Change Raid Bosses (Kanto Celebration)","Quests: Add Nidoran♀, Nidoran♂, Clefairy, Jigglypuff, Zubat, Venonat, Diglett, Doduo","Quests: Remove Lickitung, Tangela, Lapras"]},
