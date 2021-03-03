@@ -9,6 +9,7 @@
 {"de":"GBL Season 7 - Superliga","en":"GBL Season 7 - Great League","start":1614632400000,"end":1615838400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
 {"de":"Demeteros (Inkarnationsform) Raidstunde","en":"Landorus (Incarnate Forme) Raid Hour","start":1614790800000,"end":1614794400000,"color":"#ffffe6","url":"https://pokemongolive.com/post/mar-2021-events/"},
 {"de":"GO Rocket-Stunde","en":"Go Rocket Hour","start":1614877200000,"end":1614880800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/mar-2021-events/"},
+{"de":"Pokémon GO Tour: Kanto Bonus-Event","en":"Pokémon GO Tour: Kanto bonus event","start":1614934800000,"end":1617609600000,"url":"https://pokemongolive.com/post/gotourkanto-bonus/"},
 {"de":"Boreos (Inkarnationsform) in Raids","en":"Tornadus (Incarnate Forme) in Raids","start":1615014000000,"end":1615446000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/mar-2021-events/"},
 {"de":"Dartiri Community Day","en":"Fletchling Community Day","start":1615024800000,"end":1615046400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communityday-mar21/"},
 {"de":"Auf Legendensuche","en":"Searching for Legends","start":1615280400000,"end":1615705200000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/searching-for-legends-2021/"},
