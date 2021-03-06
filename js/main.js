@@ -891,7 +891,7 @@ var pokemon = [
 {"dex":638,"name":"Kobalium","en":"Cobalion","legendary":true,"getshiny":true},
 {"dex":639,"name":"Terrakium","en":"Terrakion","legendary":true,"getshiny":true},
 {"dex":640,"name":"Viridium","en":"Virizion","legendary":true,"getshiny":true},
-{"dex":641,"name":"Boreos","de":"Boreos (Inkarnationsform)","en":"Tornadus (Incarnate Forme)","legendary":true},
+{"dex":641,"name":"Boreos","de":"Boreos (Inkarnationsform)","en":"Tornadus (Incarnate Forme)","legendary":true,"getshiny":true},
 {"dex":"641T","name":"Boreos (Tiergeist)","de":"Boreos (Tiergeistform)","en":"Tornadus (Therian Forme)","legendary":true},
 {"dex":642,"name":"Voltolos","de":"Voltolos (Inkarnationsform)","en":"Thundurus (Incarnate Forme)","legendary":true},
 {"dex":"642T","name":"Voltolos (Tiergeist)","de":"Voltolos (Tiergeistform)","en":"Thundurus (Therian Forme)","legendary":true},
@@ -923,7 +923,7 @@ var pokemon = [
 {"dex":"658A","name":"Ash-Quajutsu","en":"Ash-Greninja","evolved":true},
 {"dex":659,"name":"Scoppel","en":"Bunnelby"},
 {"dex":660,"name":"Grebbit","en":"Diggersby","evolved":true},
-{"dex":661,"name":"Dartiri","en":"Fletchling"},
+{"dex":661,"name":"Dartiri","en":"Fletchling","getshiny":true},
 {"dex":662,"name":"Dartignis","en":"Fletchinder","evolved":true},
 {"dex":663,"name":"Fiaro","en":"Talonflame","evolved":true},
 {"dex":664,"name":"Purmel","en":"Scatterbug"},
@@ -1096,8 +1096,8 @@ var specialfilter = [
 
 var raids = {
 	"tier4":["181M","18M","9M"],
-	"tier5":[645],
-	"tier3":[389,232,362,207,340]
+	"tier5":[641],
+	"tier3":[142,426,82,520,306]
 };
 
 var quests = [1,4,7,37,60,"88A",92,95,100,129,133,137,138,140,142,147,165,188,193,220,246,265,274,277,309,327,345,347,443,580];
@@ -1106,6 +1106,7 @@ var legacy = [1,3,4,7,9,10,12,13,16,"19A",23,25,26,27,"27A",28,29,30,31,32,33,34
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.53","date":"05.03.2021","change":["New Shinies: Tornadus (Incarnate Forme), Fletchling","Change Raid Bosses (Return of Tornadus)"]},
 		{"ver":"1.9.52","date":"02.03.2021","change":["Quests: Add Alolan Grimer, Porygon, Ledyba, Skiploom, Yanma, Swinub, Larvitar, Wurmple, Nuzleaf, Swellow, Electrike, Ducklett","Quests: Remove Ekans, Abra, Machop, Geodude, Magnemite, Cubone, Hitmonlee, Hitmonchan, Koffing, Gligar, Teddiursa, Roselia, Spoink, Snivy, Tepig, Oshawott"]},
 		{"ver":"1.9.51","date":"01.03.2021","change":["New Shiny: Landorus (Incarnate Forme)","Change Raid Bosses (Return of Landorus)"]},
 		{"ver":"1.9.50","date":"27.02.2021","change":["Quests: Remove Nidoran♀, Nidoran♂, Clefairy, Jigglypuff, Zubat, Venonat, Diglett, Doduo, Snorlax"]},
