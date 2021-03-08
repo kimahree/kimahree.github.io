@@ -14,7 +14,7 @@
 {"de":"Boreos (Inkarnationsform) Raidstunde","en":"Tornadus (Incarnate Forme) Raid Hour","start":1615395600000,"end":1615399200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/mar-2021-events/"},
 {"de":"Voltolos (Inkarnationsform) in Raids","en":"Thundurus (Incarnate Forme) in Raids","start":1615446000000,"end":1615885200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/mar-2021-events/"},
 {"de":"Mega-Bonusstunde","en":"Mega Bonus Hour","start":1615482000000,"end":1615485600000,"color":"#ffffe6","url":"https://pokemongolive.com/post/mar-2021-events/"},
-{"de":"Rauch-Tag mit Psycho- und Stahl-Pokémon","en":"Incense Day: Psychic-Type and Steel-Type","start":1615705200000,"end":1615748400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/mar-2021-events/"},
+{"de":"Rauch-Tag mit Tanhel und anderen Psycho- und Stahl-Pokémon","en":"Incense Day: Beldum and other Psychic-type and Steel-type Pokémon","start":1615716000000,"end":1615737600000,"color":"#e5fff9","url":"https://pokemongolive.com/post/incenseday-psychic-steel-beldum/"},
 {"de":"Voltolos (Inkarnationsform) Raidstunde","en":"Thundurus (Incarnate Forme) Raid Hour","start":1615827600000,"end":1615831000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/mar-2021-events/"},
 {"de":"GBL Season 7 - Hyperliga und Premier Cup","en":"GBL Season 7 - Ultra League and its Premier Cup","start":1615838400000,"end":1617048000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
 {"de":"Voltolos (Tiergeistform) in Raids","en":"Thundurus (Therian Forme) in Raids","start":1615885200000,"end":1617091200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/mar-2021-events/"},
