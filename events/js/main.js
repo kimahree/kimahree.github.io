@@ -29,8 +29,8 @@ function createEventlist(lang) {
 	document.getElementById("current").innerHTML = ""; 
 	document.getElementById("upcoming").innerHTML = ""; 
 	eventlist = events.slice();	
-	var nestmigrate = 1605142800000;
-	var nestmigct = 127;
+	var nestmigrate = 1617235200000;
+	var nestmigct = 137;
 	while (nestmigrate < curtime) {
 		nestmigrate += 1209600000;
 		nestmigct++

@@ -34,6 +34,7 @@
 {"de":"GBL Season 7 - alle Ligen","en":"GBL Season 7 - All Leagues","start":1621281600000,"end":1621886400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
 {"de":"GBL Season 7 - Kanto-Cup","en":"GBL Season 7 - Kanto Cup","start":1621886400000,"end":1622491200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
 {"de":"GBL Season 8","en":"GBL Season 8","start":1622491200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
+{"de":"Nesterwechsel #136","en":"Nest migration #136","start":1616025600000,"end":1616025600000,"color":"#ffe6cc","url":"https://pogo.berlin/exraids/nester.html"},
 ];
 
 var colors = [

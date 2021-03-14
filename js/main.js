@@ -1106,7 +1106,7 @@ var legacy = [1,3,4,7,9,10,12,13,16,"19A",23,25,26,27,"27A",28,29,30,31,32,33,34
 
 var changelogjson = {
 	"items": [
-		{"ver":"1.9.56","date":"14.03.2021","change":["Change Raid Bosses (End of Searching for Legends Event)","Quests: Remove Skarmory, Nosepass, Shieldon, Roggenrola"]},
+		{"ver":"1.9.56","date":"14.03.2021","change":["Change Raid Bosses (End of Searching for Legends Event)","Quests: Remove Skarmory, Nosepass, Shieldon, Roggenrola","Fix Nest migration time"]},
 		{"ver":"1.9.55","date":"11.03.2021","change":["New Shiny: Thundurus (Incarnate Forme)","Change Raid Boss (Return of Thundurus)"]},
 		{"ver":"1.9.54","date":"09.03.2021","change":["New Shiny: Nosepass","Change Raid Bosses (Searching for Legends Event)","Quests: Add Skarmory, Nosepass, Shieldon, Roggenrola","Remove several Gen 1 shinys, which colud never be shiny in the wild despite Niantic saying so"]},
 		{"ver":"1.9.53","date":"06.03.2021","change":["New Shinies: Tornadus (Incarnate Forme), Fletchling","Change Raid Bosses (Return of Tornadus)"]},
@@ -1701,8 +1701,8 @@ function createEventlist(lang) {
 	document.getElementById("current").innerHTML = ""; 
 	document.getElementById("upcoming").innerHTML = ""; 
 	eventlist = events.slice();
-	var nestmigrate = 1605142800000;
-	var nestmigct = 127;
+	var nestmigrate = 1617235200000;
+	var nestmigct = 137;
 	while (nestmigrate < curtime) {
 		nestmigrate += 1209600000;
 		nestmigct++
