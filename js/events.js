@@ -9,8 +9,6 @@
 {"de":"Voltolos (Tiergeistform) in Raids","en":"Thundurus (Therian Forme) in Raids","start":1615885200000,"end":1617091200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/mar-2021-events/"},
 {"de":"Mega-Hundemon, Mega-Rexblisar und Mega-Voltenso in Mega-Raids","en":"Mega Houndoom, Mega Abomasnow and Mega Manectric in Mega Raids","start":1615885200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/mar-2021-events/"},
 {"de":"Elektrotastisch-Event","en":"Charge Up!","start":1615885200000,"end":1616439600000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/chargeup-2021/"},
-{"de":"Voltolos (Tiergeistform) Raidstunde","en":"Thundurus (Therian Forme) Raid Hour","start":1616000400000,"end":1616004000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/mar-2021-events/"},
-{"de":"Mega-Raidstunde","en":"Mega Raid Hour","start":1616086800000,"end":1616090400000,"color":"#ffffe6","url":"https://pokemongolive.com/post/mar-2021-events/"},
 {"de":"Gehweiher Rampenlichtstunde","en":"Surskit Spotlight Hour","start":1616518800000,"end":1616522400000,"color":"#ffffe6","url":"https://pokemongolive.com/post/mar-2021-events/"},
 {"de":"Wetterwoche","en":"Weather Week","start":1616576400000,"end":1617040800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/weather-week-2021/"},
 {"de":"Voltolos (Tiergeistform) Raidstunde","en":"Thundurus (Therian Forme) Raid Hour","start":1616605200000,"end":1616608800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/mar-2021-events/"},
