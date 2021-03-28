@@ -1096,7 +1096,7 @@ var specialfilter = [
 
 var raids = {
 	"tier4":["229M","460M","310M"],
-	"tier5":[384,"642T"],
+	"tier5":["642T"],
 	"tier3":[279,62,108,277]
 };
 
@@ -1106,6 +1106,7 @@ var legacy = [1,3,4,7,9,10,12,13,16,"19A",23,25,26,27,"27A",28,29,30,31,32,33,34
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.62","date":"27.03.2021","change":["Change Raid Boss (End of Rayquaza Special Weekend)"]},
 		{"ver":"1.9.61","date":"27.03.2021","change":["Change Raid Boss (Rayquaza Special Weekend)"]},
 		{"ver":"1.9.60","date":"26.03.2021","change":["Fix Castform in Quests"]},
 		{"ver":"1.9.59","date":"24.03.2021","change":["New Shiny: Castform (Rainy Form)","Change Raid Bosses (Weather Week)","Quests: Add Swablu, Castform (Rainy Form), Tympole"]},
