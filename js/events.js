@@ -8,7 +8,6 @@
 {"de":"GBL Season 7 - Hyperliga und Premier Cup","en":"GBL Season 7 - Ultra League and its Premier Cup","start":1615838400000,"end":1617048000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
 {"de":"Voltolos (Tiergeistform) in Raids","en":"Thundurus (Therian Forme) in Raids","start":1615885200000,"end":1617091200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/mar-2021-events/"},
 {"de":"Mega-Hundemon, Mega-Rexblisar und Mega-Voltenso in Mega-Raids","en":"Mega Houndoom, Mega Abomasnow and Mega Manectric in Mega Raids","start":1615885200000,"end":1617523200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/apr-2021-events/"},
-{"de":"Wetterwoche","en":"Weather Week","start":1616576400000,"end":1617040800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/weather-week-2021/"},
 {"de":"GBL Season 7 - Meisterliga und mehr","en":"GBL Season 7 - Master League and more","start":1617048000000,"end":1617652800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
 {"de":"Boreos (Tiergeistform) in Raids","en":"Tornadus (Therian Forme) in Raids","start":1617091200000,"end":1618300800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/apr-2021-events/"},
 {"de":"Schneckmag Rampenlichtstunde","en":"Slugma Spotlight Hour","start":1617120000000,"end":1617123600000,"color":"#ffffe6","url":"https://pokemongolive.com/post/mar-2021-events/"},
