@@ -1106,6 +1106,7 @@ var legacy = [1,3,4,7,9,10,12,13,16,"19A",23,25,26,27,"27A",28,29,30,31,32,33,34
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.64","date":"30.03.2021","change":["Change Raid Bosses (Debut of Therian Forme Tornadus)"]},
 		{"ver":"1.9.63","date":"29.03.2021","change":["Quests: Remove Swablu, Castform (Rainy Form), Tympole"]},
 		{"ver":"1.9.62","date":"27.03.2021","change":["Change Raid Boss (End of Rayquaza Special Weekend)"]},
 		{"ver":"1.9.61","date":"27.03.2021","change":["Change Raid Boss (Rayquaza Special Weekend)"]},
@@ -1384,10 +1385,11 @@ function init() {
 
 	// change Raids after certain time
 	
-	/*var timenow = new Date().getTime();
-	if (timenow > 1612429200000) {
-		raids.tier5 = [245];
-	}*/
+	var timenow = new Date().getTime();
+	if (timenow > 1617091200000) {
+		raids.tier5 = ["641T"];
+		raids.tier3 = [142,426,82,520,306]
+	}
 
 
 	// make Raids
