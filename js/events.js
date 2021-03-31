@@ -8,6 +8,7 @@
 {"de":"Mega-Hundemon, Mega-Rexblisar und Mega-Voltenso in Mega-Raids","en":"Mega Houndoom, Mega Abomasnow and Mega Manectric in Mega Raids","start":1615885200000,"end":1617523200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/apr-2021-events/"},
 {"de":"GBL Season 7 - Meisterliga und mehr","en":"GBL Season 7 - Master League and more","start":1617048000000,"end":1617652800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
 {"de":"Boreos (Tiergeistform) in Raids","en":"Tornadus (Therian Forme) in Raids","start":1617091200000,"end":1618300800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/apr-2021-events/"},
+{"de":"Kürzere Abklingzeit beim Pokémon-Wechsel in der GO Kampfliga","en":"Shorter switch timer in GO Battle League","start":1617188400000,"end":1617656400000,"color":"#f5e6ff","url":"https://twitter.com/NianticHelp/status/1377082446869536771"},
 {"de":"Boreos (Tiergeistform) Raidstunde","en":"Tornadus (Therian Forme) Raid Hour","start":1617206400000,"end":1617210000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/mar-2021-events/"},
 {"de":"Giovanni: Crypto-Zapdos","en":"Giovanni: Shadow Zapdos","start":1617228000000,"end":1619819940000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/apr-2021-events/"},
 {"de":"Befristete Forschung - Team GO Rocket","en":"Team GO Rocket Timed Research","start":1617228000000,"end":1617919140000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/apr-2021-events/"},
