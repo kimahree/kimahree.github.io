@@ -1,9 +1,7 @@
 ﻿var events = [
 {"de":"Alola- und Galar-Formen in 7km Eiern","en":"Alolan and Galarian Forms in 7km eggs","start":1591653600000,"url":"https://pokemongolive.com/post/7kmeggs-alolan-galarian-forms/"},
 {"de":"Temporäre Boni (Covid)","en":"Temporary bonuses (Covid)","end":1625032800000,"url":"https://pokemongolive.com/post/update-20200929/"},
-{"de":"Giovanni: Crypto-Arktos","en":"Giovanni: Shadow Articuno","end":1617227940000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/mar-2021-events/"},
 {"de":"Legendäre Jahreszeit","en":"Season of Legends","start":1614582000000,"end":1622534400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/season-of-legends-2021/"},
-{"de":"März Forschungsdurchbruch","en":"March Research Breakthrough","start":1614632400000,"end":1617307200000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/mar-2021-events/"},
 {"de":"Pokémon GO Tour: Kanto Bonus-Event","en":"Pokémon GO Tour: Kanto bonus event","start":1614934800000,"end":1617609600000,"url":"https://pokemongolive.com/post/gotourkanto-bonus/"},
 {"de":"Mega-Hundemon, Mega-Rexblisar und Mega-Voltenso in Mega-Raids","en":"Mega Houndoom, Mega Abomasnow and Mega Manectric in Mega Raids","start":1615885200000,"end":1617523200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/apr-2021-events/"},
 {"de":"GBL Season 7 - Meisterliga und mehr","en":"GBL Season 7 - Master League and more","start":1617048000000,"end":1617652800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
@@ -12,7 +10,6 @@
 {"de":"Boreos (Tiergeistform) Raidstunde","en":"Tornadus (Therian Forme) Raid Hour","start":1617206400000,"end":1617210000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/mar-2021-events/"},
 {"de":"Giovanni: Crypto-Zapdos","en":"Giovanni: Shadow Zapdos","start":1617228000000,"end":1619819940000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/apr-2021-events/"},
 {"de":"Befristete Forschung - Team GO Rocket","en":"Team GO Rocket Timed Research","start":1617228000000,"end":1617919140000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/apr-2021-events/"},
-{"de":"Tricky Pokémon Event","en":"Tricky Pokémon Event","start":1617228000000,"end":1617314340000,"color":"#e5fff9","url":"https://pokemongolive.com/post/trickypokemon-2021/"},
 {"de":"April Forschungsdurchbruch","en":"April Research Breakthrough","start":1617307200000,"end":1619899200000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/apr-2021-events/"},
 {"de":"Mega Schlapor in Mega-Raids","en":"Mega Lopunny in Mega Raids","start":1617523200000,"end":1617609600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/springevent2021/"},
 {"de":"Frühlingsevent","en":"Spring Event","start":1617523200000,"end":1617904800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/springevent2021/"},
