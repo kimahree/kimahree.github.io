@@ -641,7 +641,7 @@ var pokemon = [
 {"dex":425,"name":"Driftlon","en":"Drifloon","getshiny":true},
 {"dex":426,"name":"Drifzepeli","en":"Drifblim","evolved":true},
 {"dex":427,"name":"Haspiror","en":"Buneary","getshiny":true},
-{"dex":428,"name":"Schlapor","en":"Lopunny","evolved":true},
+{"dex":428,"name":"Schlapor","en":"Lopunny","evolved":true,"getshiny":true},
 {"dex":429,"name":"Traunmagil","en":"Mismagius","evolved":true},
 {"dex":430,"name":"Kramshef","en":"Honchkrow","evolved":true},
 {"dex":431,"name":"Charmian","en":"Glameow","getshiny":true},
@@ -921,7 +921,7 @@ var pokemon = [
 {"dex":657,"name":"Amphizel","en":"Frogadier","evolved":true},
 {"dex":658,"name":"Quajutsu","en":"Greninja","evolved":true},
 {"dex":"658A","name":"Ash-Quajutsu","en":"Ash-Greninja","evolved":true},
-{"dex":659,"name":"Scoppel","en":"Bunnelby"},
+{"dex":659,"name":"Scoppel","en":"Bunnelby","getshiny":true},
 {"dex":660,"name":"Grebbit","en":"Diggersby","evolved":true},
 {"dex":661,"name":"Dartiri","en":"Fletchling","getshiny":true},
 {"dex":662,"name":"Dartignis","en":"Fletchinder","evolved":true},
@@ -1095,17 +1095,18 @@ var specialfilter = [
 ];
 
 var raids = {
-	"tier4":["229M","460M","310M"],
+	"tier4":["94M","428M","310M"],
 	"tier5":["641T"],
-	"tier3":[142,426,82,520,306]
+	"tier3":["103A",184,113,176]
 };
 
 var quests = [1,4,7,29,32,37,43,60,69,92,95,100,104,129,133,138,140,142,147,152,265,294,327,345,347,434,443,597,659];
-var quests_event = [];
+var quests_event = [25,113,184,427,627];
 var legacy = [1,3,4,7,9,10,12,13,16,"19A",23,25,26,27,"27A",28,29,30,31,32,33,34,35,36,37,"37A",38,39,40,41,42,43,44,47,48,50,"50A",51,52,"52A","52G",55,56,58,59,60,61,63,66,67,69,70,72,73,74,"74A",75,77,79,80,81,84,85,86,87,88,"88A",89,90,92,93,95,98,100,102,103,"103A",104,106,107,108,109,111,112,113,114,117,118,120,121,123,124,125,126,127,129,131,132,133,135,136,137,138,140,142,143,147,152,153,155,156,158,164,165,170,171,177,179,182,183,184,185,187,188,190,191,193,194,196,197,198,200,202,203,204,206,207,209,213,215,216,219,220,224,225,227,228,231,234,238,241,246,252,255,256,258,259,261,263,265,270,273,274,276,277,280,285,286,287,290,294,296,299,300,302,303,304,307,309,310,311,312,313,314,315,316,317,318,320,322,325,327,328,329,331,333,335,336,337,338,339,341,343,345,347,349,"351R",353,355,359,361,362,363,366,371,374,387,390,391,393,396,399,408,410,412,"412S","412T",415,418,420,"421S",425,427,431,434,436,442,443,449,453,459,495,498,501,504,506,509,519,522,524,527,529,531,535,536,546,548,557,562,580,582,587,588,594,595,597,602,607,613,615,616,618,622,659,661,667];
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.66","date":"04.04.2021","change":["New Shinies: Bunnelby, Lopunny","Change Raid Bosses (Spring Event & Mega Lopunny Debut)","Quests: Add Pikachu, Chansey, Azumarill, Buneary, Rufflet"]},
 		{"ver":"1.9.65","date":"01.04.2021","change":["Quests: Add Nidoran♀, Nidoran♂, Oddish, Bellsprout, Cubone, Chikorita, Loudred, Stunky, Ferroseed, Bunnelby","Quests: Remove Alolan Grimer, Porygon, Ledyba, Skiploom, Yanma, Swinub, Larvitar, Nuzleaf, Swellow, Electrike, Ducklett"]},
 		{"ver":"1.9.64","date":"30.03.2021","change":["Change Raid Bosses (Debut of Therian Forme Tornadus)"]},
 		{"ver":"1.9.63","date":"29.03.2021","change":["Quests: Remove Swablu, Castform (Rainy Form), Tympole"]},
