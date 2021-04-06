@@ -2,10 +2,7 @@
 {"de":"Alola- und Galar-Formen in 7km Eiern","en":"Alolan and Galarian Forms in 7km eggs","start":1591653600000,"url":"https://pokemongolive.com/post/7kmeggs-alolan-galarian-forms/"},
 {"de":"Temporäre Boni (Covid)","en":"Temporary bonuses (Covid)","end":1625032800000,"url":"https://pokemongolive.com/post/update-20200929/"},
 {"de":"Legendäre Jahreszeit","en":"Season of Legends","start":1614582000000,"end":1622534400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/season-of-legends-2021/"},
-{"de":"Pokémon GO Tour: Kanto Bonus-Event","en":"Pokémon GO Tour: Kanto bonus event","start":1614934800000,"end":1617609600000,"url":"https://pokemongolive.com/post/gotourkanto-bonus/"},
-{"de":"GBL Season 7 - Meisterliga und mehr","en":"GBL Season 7 - Master League and more","start":1617048000000,"end":1617652800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
 {"de":"Boreos (Tiergeistform) in Raids","en":"Tornadus (Therian Forme) in Raids","start":1617091200000,"end":1618300800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/apr-2021-events/"},
-{"de":"Kürzere Abklingzeit beim Pokémon-Wechsel in der GO Kampfliga","en":"Shorter switch timer in GO Battle League","start":1617188400000,"end":1617656400000,"color":"#f5e6ff","url":"https://twitter.com/NianticHelp/status/1377082446869536771"},
 {"de":"Giovanni: Crypto-Zapdos","en":"Giovanni: Shadow Zapdos","start":1617228000000,"end":1619819940000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/apr-2021-events/"},
 {"de":"Befristete Forschung - Team GO Rocket","en":"Team GO Rocket Timed Research","start":1617228000000,"end":1617919140000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/apr-2021-events/"},
 {"de":"April Forschungsdurchbruch","en":"April Research Breakthrough","start":1617307200000,"end":1619899200000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/apr-2021-events/"},
@@ -17,7 +14,7 @@
 {"de":"Serpifeu Community Day","en":"Snivy Community Day","start":1618131600000,"end":1618153200000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communityday-apr21/"},
 {"de":"GBL Season 7 - Superliga und Superliga Remix","en":"GBL Season 7 - Great League and Great League Remix","start":1618257600000,"end":1619467200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
 {"de":"Demeteros (Tiergeistform) in Raids","en":"Landorus (Therian Forme) in Raids","start":1618300800000,"end":1619510400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/apr-2021-events/"},
-{"de":"Rivalenwoche","en":"Rivals' Week","start":1618300800000,"end":1618768800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/apr-2021-events/"},
+{"de":"Rivalenwoche","en":"Rivals' Week","start":1618300800000,"end":1618768800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/rivals-week-2021/"},
 {"de":"Menki Rampenlichtstunde","en":"Mankey Spotlight Hour","start":1618329600000,"end":1618333200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/apr-2021-events/"},
 {"de":"Demeteros (Tiergeistform) Raidstunde","en":"Landorus (Therian Forme) Raid Hour","start":1618416000000,"end":1618419600000,"color":"#ffffe6","url":"https://pokemongolive.com/post/apr-2021-events/"},
 {"de":"Mega-Bisaflor, Mega-Rexblisar und Mega-Schlapor in Mega-Raids","en":"Mega Venusaur, Mega Abomasnow and Mega Lopunny in Mega Raids","start":1618905600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/apr-2021-events/"},
@@ -35,7 +32,6 @@
 {"de":"GBL Season 7 - alle Ligen","en":"GBL Season 7 - All Leagues","start":1621281600000,"end":1621886400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
 {"de":"GBL Season 7 - Kanto-Cup","en":"GBL Season 7 - Kanto Cup","start":1621886400000,"end":1622491200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
 {"de":"GBL Season 8","en":"GBL Season 8","start":1622491200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
-{"de":"Nesterwechsel #136","en":"Nest migration #136","start":1616025600000,"end":1616025600000,"color":"#ffe6cc","url":"https://pogo.berlin/exraids/nester.html"},
 ];
 
 var colors = [
