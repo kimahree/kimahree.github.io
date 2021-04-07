@@ -29,6 +29,7 @@ function createEventlist(lang) {
 	document.getElementById("current").innerHTML = ""; 
 	document.getElementById("upcoming").innerHTML = ""; 
 	eventlist = events.slice();	
+	var pastlist = [];
 	var nestmigrate = 1617235200000;
 	var nestmigct = 137;
 	while (nestmigrate < curtime) {
@@ -52,6 +53,7 @@ function createEventlist(lang) {
 		txt = "";
 		var diff = eventlist[i].end - curtime;
 		if (diff < 0) {
+			pastlist.push(eventlist[i]);
 			eventlist.splice(i,1);
 			i--;
 			continue;
@@ -85,6 +87,8 @@ function createEventlist(lang) {
 			txt += eval("evt_txt_"+lang+"[5]") + '</p></div></div><div class="col-3"><div class="box h-100 d-flex justify-content-center flex-column"><p class="card-text"></p></div></div></div></div></div>'; 
 		}
 		document.getElementById("upcoming").innerHTML += txt;
+		eventlist.splice(i,1);
+		i--;
 	}
 
 	if (current == 0) {
@@ -94,6 +98,14 @@ function createEventlist(lang) {
 	if (upcoming == 0) {
 		document.getElementById("upcoming").innerHTML += eval("evt_txt_"+lang+"[7]") + " :(<br><br>"; 
 	}
+
+	if (pastlist.length > 0) {
+		for (i = 0; i < pastlist.length; i++) {
+			txt = "";
+			txt += '<div class="card mb-3" style="background:' + pastlist[i].color + '"><div class="card-body" ' + "onclick='window.open(" + '"' + pastlist[i].url + '"' + ")'>" + '<div class="row"><div class="col-9 mb-2"><div class="box h-100 d-flex justify-content-end flex-column"><h4 class="card-title">' +  eval("pastlist[i]."+lang) + '</h4><p class="card-text">Event ist zu Ende</p></div></div><div class="col-3"><div class="box h-100 d-flex justify-content-center flex-column"><p class="card-text"></p></div></div></div></div></div>';			
+			document.getElementById("past").innerHTML += txt;
+		}		
+	} 
 }
 
 function DiffString(difference) {
