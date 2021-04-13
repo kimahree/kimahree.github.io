@@ -6,7 +6,6 @@
 {"de":"Giovanni: Crypto-Zapdos","en":"Giovanni: Shadow Zapdos","start":1617228000000,"end":1619819940000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/apr-2021-events/"},
 {"de":"April Forschungsdurchbruch","en":"April Research Breakthrough","start":1617307200000,"end":1619899200000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/apr-2021-events/"},
 {"de":"Mega-Gengar, Mega-Voltenso und Mega-Schlapor in Mega-Raids","en":"Mega Gengar, Mega Manectric and Mega Lopunny in Mega Raids","start":1617523200000,"end":1618905600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/apr-2021-events/"},
-{"de":"GBL Season 7 - alle Ligen","en":"GBL Season 7 - all Leagues","start":1617652800000,"end":1618257600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
 {"de":"GBL Season 7 - Superliga und Superliga Remix","en":"GBL Season 7 - Great League and Great League Remix","start":1618257600000,"end":1619467200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
 {"de":"Demeteros (Tiergeistform) in Raids","en":"Landorus (Therian Forme) in Raids","start":1618300800000,"end":1619510400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/apr-2021-events/"},
 {"de":"Rivalenwoche","en":"Rivals' Week","start":1618300800000,"end":1618768800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/rivals-week-2021/"},
