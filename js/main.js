@@ -1096,8 +1096,8 @@ var specialfilter = [
 
 var raids = {
 	"tier4":["94M","428M","310M"],
-	"tier5":["641T"],
-	"tier3":[142,426,82,520,306]
+	"tier5":["645T"],
+	"tier3":[106,34,31,107,335,336]
 };
 
 var quests = [1,4,7,29,32,37,43,60,69,92,95,100,104,129,133,138,140,142,147,152,265,294,327,345,347,434,443,597,659];
@@ -1389,11 +1389,11 @@ function init() {
 
 	// change Raids after certain time
 	
-	var timenow = new Date().getTime();
+	/*var timenow = new Date().getTime();
 	if (timenow > 1618300800000) {
 		raids.tier5 = ["645T"];
 		raids.tier3 = [106,34,31,107,335,336]
-	}
+	}*/
 
 
 	// make Raids
