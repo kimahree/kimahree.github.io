@@ -8,8 +8,6 @@
 {"de":"Demeteros (Tiergeistform) in Raids","en":"Landorus (Therian Forme) in Raids","start":1618300800000,"end":1619510400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/apr-2021-events/"},
 {"de":"Mega-Bisaflor, Mega-Rexblisar und Mega-Schlapor in Mega-Raids","en":"Mega Venusaur, Mega Abomasnow and Mega Lopunny in Mega Raids","start":1618905600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/apr-2021-events/"},
 {"de":"Nachhaltigkeitswoche","en":"Sustainability Week","start":1618905600000,"end":1619373600000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/sustainabilityweek-2021/"},
-{"de":"Sleima Rampenlichtstunde","en":"Grimer Spotlight Hour","start":1618934400000,"end":1618938000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/apr-2021-events/"},
-{"de":"Demeteros (Tiergeistform) Raidstunde","en":"Landorus (Therian Forme) Raid Hour","start":1619020800000,"end":1619024400000,"color":"#ffffe6","url":"https://pokemongolive.com/post/apr-2021-events/"},
 {"de":"Tag der Freundschaft","en":"Friendship Day","start":1619254800000,"end":1619265600000,"color":"#e5fff9","url":"https://pokemongolive.com/post/friendshipday-grass-2021/"},
 {"de":"Nachhaltigkeitswoche Bonus","en":"Sustainability Week Bonus","start":1619337600000,"end":1619373600000,"color":"#e5fff9","url":"https://pokemongolive.com/post/sustainabilityweek-2021/"},
 {"de":"GBL Season 7 - Hyperliga und Premier Cup","en":"GBL Season 7 - Ultra League and its Premier Cup","start":1619467200000,"end":1620676800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
@@ -22,6 +20,7 @@
 {"de":"GBL Season 7 - alle Ligen","en":"GBL Season 7 - All Leagues","start":1621281600000,"end":1621886400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
 {"de":"GBL Season 7 - Kanto-Cup","en":"GBL Season 7 - Kanto Cup","start":1621886400000,"end":1622491200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
 {"de":"GBL Season 8","en":"GBL Season 8","start":1622491200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
+{"de":"Giovanni: Crypto-Zapdos","en":"Giovanni: Shadow Zapdos","start":1622498400000,"end":1623880740000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/rocket-return/"},
 ];
 
 var colors = [
