@@ -891,13 +891,13 @@ var pokemon = [
 {"dex":638,"name":"Kobalium","en":"Cobalion","legendary":true,"getshiny":true},
 {"dex":639,"name":"Terrakium","en":"Terrakion","legendary":true,"getshiny":true},
 {"dex":640,"name":"Viridium","en":"Virizion","legendary":true,"getshiny":true},
-{"dex":641,"name":"Boreos","de":"Boreos (Inkarnationsform)","en":"Tornadus (Incarnate Forme)","legendary":true,"getshiny":true},
+{"dex":641,"name":"Boreos (Inkarnation)","de":"Boreos (Inkarnationsform)","en":"Tornadus (Incarnate Forme)","legendary":true,"getshiny":true},
 {"dex":"641T","name":"Boreos (Tiergeist)","de":"Boreos (Tiergeistform)","en":"Tornadus (Therian Forme)","legendary":true},
-{"dex":642,"name":"Voltolos","de":"Voltolos (Inkarnationsform)","en":"Thundurus (Incarnate Forme)","legendary":true,"getshiny":true},
+{"dex":642,"name":"Voltolos (Inkarnation)","de":"Voltolos (Inkarnationsform)","en":"Thundurus (Incarnate Forme)","legendary":true,"getshiny":true},
 {"dex":"642T","name":"Voltolos (Tiergeist)","de":"Voltolos (Tiergeistform)","en":"Thundurus (Therian Forme)","legendary":true},
 {"dex":643,"name":"Reshiram","legendary":true},
 {"dex":644,"name":"Zekrom","legendary":true},
-{"dex":645,"name":"Demeteros","de":"Demeteros (Inkarnationsform)","en":"Landorus (Incarnate Forme)","legendary":true,"getshiny":true},
+{"dex":645,"name":"Demeteros (Inkarnation)","de":"Demeteros (Inkarnationsform)","en":"Landorus (Incarnate Forme)","legendary":true,"getshiny":true},
 {"dex":"645T","name":"Demeteros (Tiergeist)","de":"Demeteros (Tiergeistform)","en":"Landorus (Therian Forme)","legendary":true},
 {"dex":646,"name":"Kyurem","legendary":true},
 {"dex":"646B","name":"Schwarzes Kyurem","de":"Schwarzes Kyurem","en":"Black Kyurem","legendary":true},
@@ -1106,6 +1106,7 @@ var legacy = [1,3,4,7,9,10,12,13,16,"19A",23,25,26,27,"27A",28,29,30,31,32,33,34
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.71","date":"27.04.2021","change":["Change Raid Bosses (Return of the Incarnate Forces of Nature)"]},
 		{"ver":"1.9.71","date":"26.04.2021","change":["Change Raid Bosses (End of Sustainability Week)","Quests: Remove Spheal, Sewaddle, Ducklett, Cottonee, Chespin, Binacle"]},
 		{"ver":"1.9.70","date":"20.04.2021","change":["New Shiny: Trubbish","Change Raid Bosses (Sustainability Week)","Quests: Add Spheal, Sewaddle, Ducklett, Cottonee, Chespin, Binacle"]},
 		{"ver":"1.9.69","date":"18.04.2021","change":["Change Raid Bosses (End of Rivals Week)","Quests: Remove Hitmonlee, Hitmonchan, Zangoose, Seviper, Skrelp, Clauncher"]},
@@ -1392,11 +1393,11 @@ function init() {
 
 	// change Raids after certain time
 	
-	/*var timenow = new Date().getTime();
-	if (timenow > 1618300800000) {
-		raids.tier5 = ["645T"];
-		raids.tier3 = [106,34,31,107,335,336]
-	}*/
+	var timenow = new Date().getTime();
+	if (timenow > 1619510400000) {
+		raids.tier5 = [641,645,642];
+		raids.tier3 = [362,618,76,277,207]
+	}
 
 
 	// make Raids
