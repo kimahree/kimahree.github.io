@@ -4,11 +4,9 @@
 {"de":"Legendäre Jahreszeit","en":"Season of Legends","start":1614582000000,"end":1622534400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/season-of-legends-2021/"},
 {"de":"Giovanni: Crypto-Zapdos","en":"Giovanni: Shadow Zapdos","start":1617228000000,"end":1619819940000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/apr-2021-events/"},
 {"de":"April Forschungsdurchbruch","en":"April Research Breakthrough","start":1617307200000,"end":1619899200000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/apr-2021-events/"},
-{"de":"Demeteros (Tiergeistform) in Raids","en":"Landorus (Therian Forme) in Raids","start":1618300800000,"end":1619510400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/apr-2021-events/"},
 {"de":"Mega-Bisaflor, Mega-Rexblisar und Mega-Schlapor in Mega-Raids","en":"Mega Venusaur, Mega Abomasnow and Mega Lopunny in Mega Raids","start":1618905600000,"end":1620115200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/may-2021-events/"},
 {"de":"GBL Season 7 - Hyperliga und Premier Cup","en":"GBL Season 7 - Ultra League and its Premier Cup","start":1619467200000,"end":1620676800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
 {"de":"Boreos, Voltolos und Demeteros (alle Inkarnationsform) in Raids","en":"Tornadus, Thundurus and Landorus (all Incarnate Forme) in Raids","start":1619510400000,"end":1620115200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/may-2021-events/"},
-{"de":"Finneon Rampenlichtstunde","en":"Finneon Spotlight Hour","start":1619539200000,"end":1619542800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/apr-2021-events/"},
 {"de":"Boreos, Voltolos und Demeteros Raidstunde","en":"Tornadus, Thundurus and Landorus Raid Hour","start":1619625600000,"end":1619629200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/apr-2021-events/"},
 {"de":"New Pokémon Snap Release Event","en":"New Pokémon Snap Release Event","start":1619683200000,"end":1619978400000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/new-pokemon-snap-celebration"},
 {"de":"Giovanni: Crypto-Lavados","en":"Giovanni: Shadow Moltres","start":1619820000000,"end":1622498340000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/may-2021-events/"},
@@ -34,6 +32,7 @@
 {"de":"Yveltal Raidstunde","en":"Yveltal Raid Hour","start":1622044800000,"end":1622048400000,"color":"#ffffe6","url":"https://pokemongolive.com/post/may-2021-events/"},
 {"de":"GBL Season 8","en":"GBL Season 8","start":1622491200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
 {"de":"Giovanni: Crypto-Zapdos","en":"Giovanni: Shadow Zapdos","start":1622498400000,"end":1623880740000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/rocket-return/"},
+{"de":"Pokémon GO Fest 2021","en":"Pokémon GO Fest 2021","start":1626508800000,"end":1626631200000,"color":"#fdddfd","url":"https://pokemongolive.com/post/pokemongofest2021-save-the-date/"},
 ];
 
 var colors = [
