@@ -5,7 +5,6 @@
 {"de":"Mega-Bisaflor, Mega-Rexblisar und Mega-Schlapor in Mega-Raids","en":"Mega Venusaur, Mega Abomasnow and Mega Lopunny in Mega Raids","start":1618905600000,"end":1620115200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/may-2021-events/"},
 {"de":"GBL Season 7 - Hyperliga und Premier Cup","en":"GBL Season 7 - Ultra League and its Premier Cup","start":1619467200000,"end":1620676800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
 {"de":"Boreos, Voltolos und Demeteros (alle Inkarnationsform) in Raids","en":"Tornadus, Thundurus and Landorus (all Incarnate Forme) in Raids","start":1619510400000,"end":1620115200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/may-2021-events/"},
-{"de":"New Pokémon Snap Release Event","en":"New Pokémon Snap Release Event","start":1619683200000,"end":1619978400000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/new-pokemon-snap-celebration"},
 {"de":"Giovanni: Crypto-Lavados","en":"Giovanni: Shadow Moltres","start":1619820000000,"end":1622498340000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/may-2021-events/"},
 {"de":"Mai Forschungsdurchbruch","en":"May Research Breakthrough","start":1619899200000,"end":1622577600000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/may-2021-events/"},
 {"de":"Illuminierende Legenden X","en":"Luminous Legends X","start":1620115200000,"end":1621274400000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/luminouslegends-x-2021/"},
