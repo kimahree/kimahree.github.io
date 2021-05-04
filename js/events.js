@@ -12,6 +12,7 @@
 {"de":"Mega-Bisaflor, Mega-Glurak Y und Mega-Schlapor in Mega-Raids","en":"Mega Venusaur, Mega Charizard Y and Mega Lopunny in Mega Raids","start":1620115200000,"end":1621090800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/may-2021-events/"},
 {"de":"Waumboll Rampenlichtstunde","en":"Cottonee Spotlight Hour","start":1620144000000,"end":1620147600000,"color":"#ffffe6","url":"https://pokemongolive.com/post/may-2021-events/"},
 {"de":"Xerneas Raidstunde","en":"Xerneas Raid Hour","start":1620230400000,"end":1620234000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/may-2021-events/"},
+{"de":"Marill Begrenzte Forschung","en":"Marill Limited Research","start":1620540000000,"end":1620590400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/limitedresearch-may2021/"},
 {"de":"GBL Season 7 - Meisterliga und mehr","en":"GBL Season 7 - Master League and more","start":1620676800000,"end":1621281600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
 {"de":"Illuminierende Legenden X Bonus","en":"Luminous Legends X Bonus","start":1620720000000,"end":1621274400000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/luminouslegends-x-2021/"},
 {"de":"Dratini Rampenlichtstunde","en":"Dratini Spotlight Hour","start":1620748800000,"end":1620752400000,"color":"#ffffe6","url":"https://pokemongolive.com/post/may-2021-events/"},
