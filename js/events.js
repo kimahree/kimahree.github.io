@@ -1,17 +1,12 @@
 ﻿var events = [
-{"de":"Alola- und Galar-Formen in 7km Eiern","en":"Alolan and Galarian Forms in 7km eggs","start":1591653600000,"end":1620115200000,"url":"https://pokemongolive.com/post/may-2021-events/"},
 {"de":"Temporäre Boni (Covid)","en":"Temporary bonuses (Covid)","end":1625032800000,"url":"https://pokemongolive.com/post/update-20200929/"},
 {"de":"Legendäre Jahreszeit","en":"Season of Legends","start":1614582000000,"end":1622534400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/season-of-legends-2021/"},
-{"de":"Mega-Bisaflor, Mega-Rexblisar und Mega-Schlapor in Mega-Raids","en":"Mega Venusaur, Mega Abomasnow and Mega Lopunny in Mega Raids","start":1618905600000,"end":1620115200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/may-2021-events/"},
 {"de":"GBL Season 7 - Hyperliga und Premier Cup","en":"GBL Season 7 - Ultra League and its Premier Cup","start":1619467200000,"end":1620676800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
-{"de":"Boreos, Voltolos und Demeteros (alle Inkarnationsform) in Raids","en":"Tornadus, Thundurus and Landorus (all Incarnate Forme) in Raids","start":1619510400000,"end":1620115200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/may-2021-events/"},
 {"de":"Giovanni: Crypto-Lavados","en":"Giovanni: Shadow Moltres","start":1619820000000,"end":1622498340000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/may-2021-events/"},
 {"de":"Mai Forschungsdurchbruch","en":"May Research Breakthrough","start":1619899200000,"end":1622577600000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/may-2021-events/"},
 {"de":"Illuminierende Legenden X","en":"Luminous Legends X","start":1620115200000,"end":1621274400000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/luminouslegends-x-2021/"},
 {"de":"Xerneas in Raids","en":"Xerneas in Raids","start":1620115200000,"end":1621324800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/may-2021-events/"},
 {"de":"Mega-Bisaflor, Mega-Glurak Y und Mega-Schlapor in Mega-Raids","en":"Mega Venusaur, Mega Charizard Y and Mega Lopunny in Mega Raids","start":1620115200000,"end":1621090800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/may-2021-events/"},
-{"de":"Waumboll Rampenlichtstunde","en":"Cottonee Spotlight Hour","start":1620144000000,"end":1620147600000,"color":"#ffffe6","url":"https://pokemongolive.com/post/may-2021-events/"},
-{"de":"Xerneas Raidstunde","en":"Xerneas Raid Hour","start":1620230400000,"end":1620234000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/may-2021-events/"},
 {"de":"Marill Begrenzte Forschung","en":"Marill Limited Research","start":1620540000000,"end":1620590400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/limitedresearch-may2021/"},
 {"de":"GBL Season 7 - Meisterliga und mehr","en":"GBL Season 7 - Master League and more","start":1620676800000,"end":1621281600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
 {"de":"Illuminierende Legenden X Bonus","en":"Luminous Legends X Bonus","start":1620720000000,"end":1621274400000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/luminouslegends-x-2021/"},
@@ -29,6 +24,7 @@
 {"de":"Yveltal Raidstunde","en":"Yveltal Raid Hour","start":1622044800000,"end":1622048400000,"color":"#ffffe6","url":"https://pokemongolive.com/post/may-2021-events/"},
 {"de":"GBL Season 8","en":"GBL Season 8","start":1622491200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
 {"de":"Giovanni: Crypto-Zapdos","en":"Giovanni: Shadow Zapdos","start":1622498400000,"end":1623880740000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/rocket-return/"},
+{"de":"Kaumalat Community Day","en":"Gible Community Day","start":1622970000000,"end":1622991600000,"color":"#e5fff9","url":"https://twitter.com/PokemonGoApp/status/1390652640112091141"},
 {"de":"Pokémon GO Fest 2021","en":"Pokémon GO Fest 2021","start":1626508800000,"end":1626631200000,"color":"#fdddfd","url":"https://pokemongolive.com/post/pokemongofest2021-save-the-date/"},
 ];
 
