@@ -233,7 +233,7 @@ var pokemon = [
 {"dex":76,"name":"Geowaz","en":"Golem","evolved":true},
 {"dex":"76A","name":"Alola-Geowaz","en":"Alolan Golem","alolan":true,"evolved":true},
 {"dex":77,"name":"Ponita","en":"Ponyta","getshiny":true},
-{"dex":"77G","name":"Galar-Ponita","en":"Galarian Ponyta","galarian":true},
+{"dex":"77G","name":"Galar-Ponita","en":"Galarian Ponyta","galarian":true,"getshiny":true},
 {"dex":78,"name":"Gallopa","en":"Rapidash","evolved":true},
 {"dex":"78G","name":"Galar-Gallopa","en":"Galarian Rapidash","evolved":true,"galarian":true},
 {"dex":79,"name":"Flegmon","en":"Slowpoke","getshiny":true},
@@ -1096,9 +1096,9 @@ var specialfilter = [
 ];
 
 var raids = {
-	"tier4":["3M","460M","428M"],
-	"tier5":[641,645,642],
-	"tier3":[362,618,76,277,207]
+	"tier4":["3M","6Y","428M"],
+	"tier5":[716],
+	"tier3":["103A",303,330,176]
 };
 
 var quests = [1,4,7,13,17,35,37,39,60,92,95,100,123,129,133,138,140,142,147,163,183,209,265,327,345,347,374,443,529];
@@ -1107,6 +1107,7 @@ var legacy = [1,3,4,7,9,10,12,13,16,17,"19A",23,25,26,27,"27A",28,29,30,31,32,33
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.77","date":"11.05.2021","change":["New Shiny: Galarian Ponyta"]},
 		{"ver":"1.9.76","date":"04.05.2021","change":["Change Raid Bosses (Luminous Legends X)","Quests: Add Galarian Ponyta, Spritzee, Swirlix"]},
 		{"ver":"1.9.75","date":"02.05.2021","change":["Change Raid Bosses (End of New Pokémon Snap Celebration)","Quests: Remove Alolan Vulpix, Dodrio, Lapras, Wooper, Mantine, Skarmory, Wurmple, Croagunk, Stunfisk"]},
 		{"ver":"1.9.74","date":"01.05.2021","change":["Quests: Add Weedle, Pidgeotto, Clefairy, Jigglypuff, Scyther, Hoothoot, Marill, Snubbull, Beldum, Drilbur","Quests: Remove Nidoran♀, Nidoran♂, Oddish, Bellsprout, Cubone, Chikorita, Loudred, Stunky, Ferroseed, Bunnelby"]},
@@ -1398,12 +1399,12 @@ function init() {
 
 	// change Raids after certain time
 	
-	var timenow = new Date().getTime();
+	/*var timenow = new Date().getTime();
 	if (timenow > 1620115200000) {
 		raids.tier4 = ["3M","6Y","428M"];
 		raids.tier5 = [716];
 		raids.tier3 = ["103A",303,330,176];
-	}
+	}*/
 
 
 	// make Raids
