@@ -536,7 +536,7 @@ var pokemon = [
 {"dex":331,"name":"Tuska","en":"Cacnea"},
 {"dex":332,"name":"Noktuska","en":"Cacturne","evolved":true},
 {"dex":333,"name":"Wablu","en":"Swablu","getshiny":true},
-{"dex":334,"name":"Altaria","evolved":true},
+{"dex":334,"name":"Altaria","evolved":true,"getshiny":true},
 {"dex":335,"name":"Sengo","en":"Zangoose","regional":true,"getshiny":true},
 {"dex":336,"name":"Vipitis","en":"Seviper","regional":true,"getshiny":true},
 {"dex":337,"name":"Lunastein","en":"Lunatone","regional":true,"getshiny":true},
@@ -1107,6 +1107,7 @@ var legacy = [1,3,4,7,9,10,12,13,16,17,"19A",23,25,26,27,"27A",28,29,30,31,32,33
 
 var changelogjson = {
 	"items": [
+		{"ver":"1.9.78","date":"15.05.2021","change":["New Shiny: Altaria","Change Raid Bosses (Debut of Mega Altaria)"]},
 		{"ver":"1.9.77","date":"11.05.2021","change":["New Shiny: Galarian Ponyta"]},
 		{"ver":"1.9.76","date":"04.05.2021","change":["Change Raid Bosses (Luminous Legends X)","Quests: Add Galarian Ponyta, Spritzee, Swirlix"]},
 		{"ver":"1.9.75","date":"02.05.2021","change":["Change Raid Bosses (End of New Pokémon Snap Celebration)","Quests: Remove Alolan Vulpix, Dodrio, Lapras, Wooper, Mantine, Skarmory, Wurmple, Croagunk, Stunfisk"]},
@@ -1399,12 +1400,10 @@ function init() {
 
 	// change Raids after certain time
 	
-	/*var timenow = new Date().getTime();
-	if (timenow > 1620115200000) {
-		raids.tier4 = ["3M","6Y","428M"];
-		raids.tier5 = [716];
-		raids.tier3 = ["103A",303,330,176];
-	}*/
+	var timenow = new Date().getTime();
+	if (timenow > 1621090800000) {
+		raids.tier4 = ["334M","181M","229M"];
+	}
 
 
 	// make Raids
