@@ -8,8 +8,6 @@
 {"de":"Mega-Bisaflor, Mega-Glurak Y und Mega-Schlapor in Mega-Raids","en":"Mega Venusaur, Mega Charizard Y and Mega Lopunny in Mega Raids","start":1620115200000,"end":1621090800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/may-2021-events/"},
 {"de":"GBL Season 7 - Meisterliga und mehr","en":"GBL Season 7 - Master League and more","start":1620676800000,"end":1621281600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
 {"de":"Illuminierende Legenden X Bonus","en":"Luminous Legends X Bonus","start":1620720000000,"end":1621274400000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/luminouslegends-x-2021/"},
-{"de":"Dratini Rampenlichtstunde","en":"Dratini Spotlight Hour","start":1620748800000,"end":1620752400000,"color":"#ffffe6","url":"https://pokemongolive.com/post/may-2021-events/"},
-{"de":"Xerneas Raidstunde","en":"Xerneas Raid Hour","start":1620835200000,"end":1620838800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/may-2021-events/"},
 {"de":"Wablu Community Day","en":"Swablu Community Day","start":1621069200000,"end":1621090800000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communityday-may21/"},
 {"de":"Mega-Ampharos, Mega-Hundemon und Mega-Altaria in Mega-Raids","en":"Mega Ampharos, Mega Houndoom and Mega Altaria in Mega Raids","start":1621090800000,"end":1622534400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/may-2021-events/"},
 {"de":"GBL Season 7 - alle Ligen","en":"GBL Season 7 - All Leagues","start":1621281600000,"end":1621886400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
