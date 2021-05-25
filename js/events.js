@@ -4,11 +4,7 @@
 {"de":"Giovanni: Crypto-Lavados","en":"Giovanni: Shadow Moltres","start":1619820000000,"end":1622498340000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/may-2021-events/"},
 {"de":"Mai Forschungsdurchbruch","en":"May Research Breakthrough","start":1619899200000,"end":1622577600000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/may-2021-events/"},
 {"de":"Mega-Ampharos, Mega-Hundemon und Mega-Altaria in Mega-Raids","en":"Mega Ampharos, Mega Houndoom and Mega Altaria in Mega Raids","start":1621090800000,"end":1622534400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/may-2021-events/"},
-{"de":"GBL Season 7 - alle Ligen","en":"GBL Season 7 - All Leagues","start":1621281600000,"end":1621886400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
-{"de":"Illuminierende Legenden Y - Teil 1","en":"Luminous Legends Y - Part 1","start":1621324800000,"end":1621879200000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/luminouslegends-y-2021/"},
 {"de":"Yveltal in Raids","en":"Yveltal in Raids","start":1621324800000,"end":1622534400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/may-2021-events/"},
-{"de":"Alola-Rattfratz Rampenlichtstunde","en":"Alolan Rattata Spotlight Hour","start":1621353600000,"end":1621357200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/may-2021-events/"},
-{"de":"Yveltal Raidstunde","en":"Yveltal Raid Hour","start":1621440000000,"end":1621443600000,"color":"#ffffe6","url":"https://pokemongolive.com/post/may-2021-events/"},
 {"de":"GBL Season 7 - Kanto-Cup","en":"GBL Season 7 - Kanto Cup","start":1621886400000,"end":1622491200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
 {"de":"Illuminierende Legenden Y - Teil 2","en":"Luminous Legends Y - Part 2","start":1621929600000,"end":1622484000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/luminouslegends-y-2021/"},
 {"de":"Marill Rampenlichtstunde","en":"Marill Rattata Spotlight Hour","start":1621958400000,"end":1621962000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/may-2021-events/"},
@@ -16,7 +12,7 @@
 {"de":"Pokémon GO Special Weekend Bonus","en":"Pokémon GO Special Weekend Bonus","start":1622221200000,"end":1622480400000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/specialweekend2021/"},
 {"de":"GBL Season 8","en":"GBL Season 8","start":1622491200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season7/"},
 {"de":"Giovanni: Crypto-Zapdos","en":"Giovanni: Shadow Zapdos","start":1622498400000,"end":1623880740000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/rocket-return/"},
-{"de":"Kaumalat Community Day","en":"Gible Community Day","start":1622970000000,"end":1622991600000,"color":"#e5fff9","url":"https://twitter.com/PokemonGoApp/status/1390652640112091141"},
+{"de":"Kaumalat Community Day","en":"Gible Community Day","start":1622970000000,"end":1622991600000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communityday-jun21/"},
 {"de":"Pokémon GO Fest 2021","en":"Pokémon GO Fest 2021","start":1626508800000,"end":1626631200000,"color":"#fdddfd","url":"https://pokemongolive.com/post/pokemongofest2021-save-the-date/"},
 ];
 
