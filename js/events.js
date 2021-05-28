@@ -13,7 +13,7 @@
 {"de":"Jahreszeit der Entdeckung","en":"Season of Discovery","start":1622534400000,"end":1630483200000,"color":"#e6f3ff","url":""},
 {"de":"Regirock, Regice und Registeel in Raids","en":"Regirock, Regice and Registeel in Raids","start":1622534400000,"end":1623916800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jun-2021-events/"},
 {"de":"Mega-Schlapor in Mega-Raids","en":"Mega Lopunny in Mega Raids","start":1622534400000,"end":1623139200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jun-2021-events/"},
-{"de":"Galar-Ponita Bonus","en":"Galar-Ponita Bonus","start":1622534400000,"end":1623139200000,"color":"#e6ffe6","url":"https://twitter.com/niantichelp/status/1398036291430895618"},
+{"de":"Galar-Ponita Bonus","en":"Galarian Ponyta Bonus","start":1622534400000,"end":1623139200000,"color":"#e6ffe6","url":"https://twitter.com/niantichelp/status/1398036291430895618"},
 {"de":"Lithomith Rampenlichtstunde (2x Fang-EP)","en":"Dwebble Spotlight Hour (2x Catch XP)","start":1622563200000,"end":1622566800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/jun-2021-events/"},
 {"de":"Juni Forschungsdurchbruch","en":"June Research Breakthrough","start":1622577600000,"end":1625169600000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/jun-2021-events/"},
 {"de":"Regirock Raidstunde","en":"Regirock Raid Hour","start":1622649600000,"end":1622653200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/jun-2021-events/"},
