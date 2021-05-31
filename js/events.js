@@ -10,7 +10,7 @@
 {"de":"Pokémon GO Special Weekend Bonus","en":"Pokémon GO Special Weekend Bonus","start":1622221200000,"end":1622480400000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/specialweekend2021/"},
 {"de":"GBL Season 8 - Superliga","en":"GBL Season 8 - Great League","start":1622491200000,"end":1623700800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season8/"},
 {"de":"Giovanni: Crypto-Zapdos","en":"Giovanni: Shadow Zapdos","start":1622498400000,"end":1623880800000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/jun-2021-events/"},
-{"de":"Jahreszeit der Entdeckung","en":"Season of Discovery","start":1622534400000,"end":1630483200000,"color":"#e6f3ff","url":""},
+{"de":"Jahreszeit der Entdeckung","en":"Season of Discovery","start":1622534400000,"end":1630483200000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/season-of-discovery-2021/"},
 {"de":"Regirock, Regice und Registeel in Raids","en":"Regirock, Regice and Registeel in Raids","start":1622534400000,"end":1623916800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jun-2021-events/"},
 {"de":"Mega-Schlapor in Mega-Raids","en":"Mega Lopunny in Mega Raids","start":1622534400000,"end":1623139200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jun-2021-events/"},
 {"de":"Galar-Ponita Bonus","en":"Galarian Ponyta Bonus","start":1622534400000,"end":1623139200000,"color":"#e6ffe6","url":"https://twitter.com/niantichelp/status/1398036291430895618"},
