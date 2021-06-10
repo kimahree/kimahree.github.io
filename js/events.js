@@ -11,7 +11,7 @@
 {"de":"GBL Season 8 - Hyperliga und Premier Cup","en":"GBL Season 8 - Ultra League and its Premier Cup","start":1623700800000,"end":1624910400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season8/"},
 {"de":"Flegmon Rampenlichtstunde (2x Verschick-Bonbons)","en":"Slowpoke Spotlight Hour (2x Transfer Candy)","start":1623772800000,"end":1623776400000,"color":"#ffffe6","url":"https://pokemongolive.com/post/jun-2021-events/"},
 {"de":"Regice Raidstunde","en":"Regice Raid Hour","start":1623859200000,"end":1623862800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/jun-2021-events/"},
-{"de":"Giovanni: ???","en":"Giovanni: ???","start":1623880800000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/jun-2021-events/"},
+{"de":"Giovanni: Crypto-Ho-Oh","en":"Giovanni: Shadow Ho-Oh","start":1623880800000,"end":1630447200000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/jun-2021-events/"},
 {"de":"Event zur Sonnenwende","en":"Solstice Event","start":1623916800000,"end":1624212000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/jun-2021-events/"},
 {"de":"??? in Raids","en":"??? in Raids","start":1623916800000,"end":1625126400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jun-2021-events/"},
 {"de":"Mega-Garados in Mega-Raids","en":"Mega Gyarados in Mega Raids","start":1623916800000,"end":1625212800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jun-2021-events/"},
