@@ -1,5 +1,5 @@
 ﻿var events = [
-{"de":"Temporäre Boni (Covid)","en":"Temporary bonuses (Covid)","end":1625032800000,"url":"https://pokemongolive.com/post/update-20200929/"},
+{"de":"Temporäre Boni (Covid)","en":"Temporary bonuses (Covid)","end":1627768800000,"url":"https://pokemongolive.com/post/hello-world-pokemon-go"},
 {"de":"Jahreszeit der Entdeckung","en":"Season of Discovery","start":1622534400000,"end":1630483200000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/season-of-discovery-2021/"},
 {"de":"Juni Forschungsdurchbruch","en":"June Research Breakthrough","start":1622577600000,"end":1625169600000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/jun-2021-events/"},
 {"de":"GBL Season 8 - Hyperliga und Premier Cup","en":"GBL Season 8 - Ultra League and its Premier Cup","start":1623700800000,"end":1624910400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season8/"},
@@ -16,7 +16,7 @@
 {"de":"Griffel Rampenlichtstunde (2x Fang-Sternenstaub)","en":"Slowpoke Spotlight Hour (2x Catch Stardust)","start":1624982400000,"end":1624986000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/jun-2021-events/"},
 {"de":"Regigigas Raidstunde","en":"Regigigas Raid Hour","start":1625068800000,"end":1625072400000,"color":"#ffffe6","url":"https://pokemongolive.com/post/jun-2021-events/"},
 {"de":"Bidiza lernt spezielle Attacken per Lade-TM","en":"Bidoof learns special attacks when using a Charged TM","start":1625126400000,"end":1625162400000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/bidoof-breakout-2021/"},
-{"de":"Community Day","en":"Community Day","start":1625302800000,"end":1625324400000,"color":"#e5fff9","url":"https://nianticlabs.com/blog/meet-you-at-live-events-2021"},
+{"de":"Floink Community Day","en":"Tepig Community Day","start":1625302800000,"end":1625324400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communityday-jul21/"},
 {"de":"GO-Kampfabend","en":"GO Battle Night","start":1626019200000,"end":1626040740000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season8/"},
 {"de":"GBL Season 8 - Superliga und Superliga-Remix","en":"GBL Season 8 - Great League and Great League Remix","start":1626120000000,"end":1627329600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season8/"},
 {"de":"Pokémon GO Fest 2021 - Tag 1","en":"Pokémon GO Fest 2021 - Day 1","start":1626508800000,"end":1626537600000,"color":"#fdddfd","url":"https://pokemongolive.com/post/pokemongofest2021-announcement/"},
