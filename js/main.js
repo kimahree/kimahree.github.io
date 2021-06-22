@@ -1107,7 +1107,7 @@ var legacy = [1,3,4,7,9,10,12,13,16,17,"19A",23,25,26,27,"27A",28,29,30,31,32,33
 
 var changelogjson = {
 	"items": [
-		{"ver":"1.9.87","date":"20.06.2021","change":["Change Raid Bosses (End of Solstice 2021)","Quests: Remove Lunatone, Solrock"]},
+		{"ver":"1.9.87","date":"20.06.2021","change":["Remove Tier 3 Raids","Change Raid Bosses (End of Solstice 2021)","Quests: Remove Lunatone, Solrock"]},
 		{"ver":"1.9.86","date":"13.06.2021","change":["New Shiny: Regigigas","Change Raid Bosses (Solstice 2021)","Quests: Add Lunatone, Solrock"]},
 		{"ver":"1.9.85","date":"13.06.2021","change":["Change Raid Bosses (End of A Very Slow Discovery)","Quests: Remove Slowpoke, Galarian Slowpoke, Shellder, Slakoth, Gulpin"]},
 		{"ver":"1.9.84","date":"08.06.2021","change":["New Shiny: Slowbro","Change Raid Bosses (A Very Slow Discovery)","Quests: Add Slowpoke, Galarian Slowpoke, Shellder, Slakoth, Gulpin"]},
