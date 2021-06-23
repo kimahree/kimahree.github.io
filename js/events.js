@@ -1,12 +1,11 @@
 ﻿var events = [
-{"de":"Temporäre Boni (Covid)","en":"Temporary bonuses (Covid)","end":1627768800000,"url":"https://pokemongolive.com/post/hello-world-pokemon-go"},
+{"de":"Temporäre Boni (Covid)","en":"Temporary bonuses (Covid)","end":1627804800000,"url":"https://pokemongolive.com/post/hello-world-pokemon-go"},
 {"de":"Jahreszeit der Entdeckung","en":"Season of Discovery","start":1622534400000,"end":1630483200000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/season-of-discovery-2021/"},
 {"de":"Juni Forschungsdurchbruch","en":"June Research Breakthrough","start":1622577600000,"end":1625169600000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/jun-2021-events/"},
 {"de":"GBL Season 8 - Hyperliga und Premier Cup","en":"GBL Season 8 - Ultra League and its Premier Cup","start":1623700800000,"end":1624910400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season8/"},
 {"de":"Giovanni: Crypto-Ho-Oh","en":"Giovanni: Shadow Ho-Oh","start":1623880800000,"end":1630447200000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/jun-2021-events/"},
 {"de":"Regigigas in Raids","en":"Regigigas in Raids","start":1623916800000,"end":1625126400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/solstice-2021/"},
 {"de":"Mega-Garados in Mega-Raids","en":"Mega Gyarados in Mega Raids","start":1623916800000,"end":1625212800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jun-2021-events/"},
-{"de":"Quiekel Rampenlichtstunde (2x Entwickel-EP)","en":"Swinub Spotlight Hour (2x Evolve XP)","start":1624377600000,"end":1624381200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/jun-2021-events/"},
 {"de":"Regigigas Raidstunde","en":"Regigigas Raid Hour","start":1624464000000,"end":1624467600000,"color":"#ffffe6","url":"https://pokemongolive.com/post/jun-2021-events/"},
 {"de":"Bidiza-Ausbruch","en":"Bidoof Breakout","start":1624608000000,"end":1625162400000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/bidoof-breakout-2021/"},
 {"de":"Bidiza mit Spukball, 2x Fang-EP","en":"Bidoof with Shadow Ball, 2x Catch EXP","start":1624608000000,"end":1624744740000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/bidoof-breakout-2021/"},
