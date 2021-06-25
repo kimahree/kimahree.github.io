@@ -18,7 +18,7 @@
 {"de":"GO-Kampfabend","en":"GO Battle Night","start":1626019200000,"end":1626040740000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season8/"},
 {"de":"GBL Season 8 - Superliga und Superliga-Remix","en":"GBL Season 8 - Great League and Great League Remix","start":1626120000000,"end":1627329600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season8/"},
 {"de":"Pokémon GO Fest 2021 - Tag 1","en":"Pokémon GO Fest 2021 - Day 1","start":1626508800000,"end":1626537600000,"color":"#fdddfd","url":"https://pokemongolive.com/post/pokemongofest2021-announcement/"},
-{"de":"Pokémon GO Fest 2021 - Tag 2","en":"Pokémon GO Fest 2021 - Day 2","start":1626595200000,"end":1626624000000,"color":"#fdddfd","url":"https://pokemongolive.com/post/pokemongofest2021-announcement/"},
+{"de":"Pokémon GO Fest 2021 - Tag 2","en":"Pokémon GO Fest 2021 - Day 2","start":1626595200000,"end":1626624000000,"color":"#fdddfd","url":"https://pokemongolive.com/post/pokemongofest2021-raidday/"},
 {"de":"GBL Season 8 - Hyperliga und Hyperliga-Remix","en":"GBL Season 8 - Ultra League and Ultra League Remix","start":1627329600000,"end":1628539200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season8/"},
 {"de":"GBL Season 8 - Meisterliga und mehr","en":"GBL Season 8 - Master League and more","start":1628539200000,"end":1629748800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season8/"},
 {"de":"Community Day","en":"Community Day","start":1629018000000,"end":1629039600000,"color":"#e5fff9","url":"https://nianticlabs.com/blog/meet-you-at-live-events-2021"},
