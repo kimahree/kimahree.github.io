@@ -593,7 +593,7 @@ var pokemon = [
 {"dex":385,"name":"Jirachi","mythical":true},
 {"dex":386,"name":"Deoxys (Normal)","de":"Deoxys (Normalform)","en":"Deoxys (Normal Forme)","mythical":true,"getshiny":true},
 {"dex":"386A","name":"Deoxys (Angriff)","de":"Deoxys (Angriffsform)","en":"Deoxys (Attack Forme)","mythical":true},
-{"dex":"386D","name":"Deoxys (Verteidigung)","de":"Deoxys (Verteidigungsform)","en":"Deoxys (Defense Forme)","mythical":true},
+{"dex":"386D","name":"Deoxys","de":"Deoxys (Verteidigungsform)","en":"Deoxys (Defense Forme)","mythical":true},
 {"dex":"386S","name":"Deoxys (Initiative)","de":"Deoxys (Initiativeform)","en":"Deoxys (Speed Forme)","mythical":true},
 {"dex":387,"name":"Chelast","en":"Turtwig","getshiny":true},
 {"dex":388,"name":"Chelcarain","en":"Grotle","evolved":true},
@@ -1097,8 +1097,8 @@ var specialfilter = [
 ];
 
 var raids = {
-	"tier4":["130M"],
-	"tier5":[486]
+	"tier4":["229M"],
+	"tier5":["386D"]
 };
 
 var quests = [1,4,7,37,56,60,75,81,"83G",95,106,107,129,133,138,140,142,147,152,155,158,170,185,187,193,198,204,206,209,226,252,255,258,280,296,307,309,327,345,347,371,374,443,449,459,618,659];
@@ -1107,6 +1107,7 @@ var legacy = [1,3,4,7,9,10,12,13,16,17,"19A",23,25,26,27,"27A",28,29,30,31,32,33
 
 var changelogjson = {
     "items": [
+        {"ver":"1.9.90","date":"01.07.2021","change":["Change Raid Bosses (End of Bidoof Day)"]},
         {"ver":"1.9.89","date":"01.07.2021","change":["Change Raid Bosses (Bidoof Day)"]},
         {"ver":"1.9.88","date":"25.06.2021","change":["New Shiny: Bidoof","Quests: Add Bidoof"]},
 		{"ver":"1.9.87","date":"20.06.2021","change":["Remove Tier 3 Raids","Change Raid Bosses (End of Solstice 2021)","Quests: Remove Lunatone, Solrock"]},
@@ -1411,12 +1412,12 @@ function init() {
 
 	// change Raids after certain time
 	
-	var timenow = new Date().getTime();
+	/*var timenow = new Date().getTime();
 	if (timenow > 1625126400000) {
 		raids = {
 			"tier5":[399]
 		};
-	}
+	}*/
 
 
 	// make Raids
