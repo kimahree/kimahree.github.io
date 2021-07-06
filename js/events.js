@@ -7,7 +7,6 @@
 {"de":"Deoxys (Verteidigungsform) in Raids","en":"Deoxys (Defense Forme) in Raids","start":1625162400000,"end":1626422400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jul-2021-events/"},
 {"de":"Mega-Hundemon in Mega-Raids","en":"Mega Houndoom in Mega Raids","start":1625162400000,"end":1626422400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jul-2021-events/"},
 {"de":"Juli Forschungsdurchbruch","en":"July Research Breakthrough","start":1625169600000,"end":1627848000000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/jul-2021-events/"},
-{"de":"Floink Community Day","en":"Tepig Community Day","start":1625302800000,"end":1625324400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communityday-jul21/"},
 {"de":"5 Jahre Pokémon GO!","en":"Pokémon GO's 5-year anniversary","start":1625558400000,"end":1626372000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/bidoof-breakout-2021/"},
 {"de":"Bisasam Rampenlichtstunde (2x Fang-EP)","en":"Bulbasaur Spotlight Hour (2x Catch EXP)","start":1625587200000,"end":1625590800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/jul-2021-events/"},
 {"de":"Deoxys Raidstunde","en":"Deoxys Raid Hour","start":1625673600000,"end":1625677200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/jul-2021-events/"},

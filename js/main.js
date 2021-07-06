@@ -467,7 +467,7 @@ var pokemon = [
 {"dex":"263G","name":"Galar-Zigzachs","en":"Galarian Zigzagoon","galarian":true,"getshiny":true},
 {"dex":264,"name":"Geradaks","en":"Linoone","evolved":true},
 {"dex":"264G","name":"Galar-Geradaks","en":"Galarian Linoone","evolved":true,"galarian":true},
-{"dex":265,"name":"Waumpel","en":"Wurmple"},
+{"dex":265,"name":"Waumpel","en":"Wurmple","getshiny":true},
 {"dex":266,"name":"Schaloko","en":"Silcoon","evolved":true},
 {"dex":267,"name":"Papinella","en":"Beautifly","evolved":true},
 {"dex":268,"name":"Panekon","en":"Cascoon","evolved":true},
@@ -735,7 +735,7 @@ var pokemon = [
 {"dex":495,"name":"Serpifeu","en":"Snivy","getshiny":true},
 {"dex":496,"name":"Efoserp","en":"Servine","evolved":true},
 {"dex":497,"name":"Serpiroyal","en":"Serperior","evolved":true},
-{"dex":498,"name":"Floink","en":"Tepig"},
+{"dex":498,"name":"Floink","en":"Tepig","getshiny":true},
 {"dex":499,"name":"Ferkokel","en":"Pignite","evolved":true},
 {"dex":500,"name":"Flambirex","en":"Emboar","evolved":true},
 {"dex":501,"name":"Ottaro","en":"Oshawott"},
@@ -792,7 +792,7 @@ var pokemon = [
 {"dex":551,"name":"Ganovil","en":"Sandile"},
 {"dex":552,"name":"Rokkaiman","en":"Krokorok","evolved":true},
 {"dex":553,"name":"Rabigator","en":"Krookodile","evolved":true},
-{"dex":554,"name":"Flampion","en":"Darumaka"},
+{"dex":554,"name":"Flampion","en":"Darumaka","getshiny":true},
 {"dex":"554G","name":"Galar-Flampion","en":"Galarian Darumaka","galarian":true},
 {"dex":555,"name":"Flampivian","en":"Darmanitan","evolved":true},
 {"dex":"555G","name":"Galar-Flampivian","en":"Galarian Darmanitan","evolved":true,"galarian":true},
@@ -1045,7 +1045,7 @@ var pokemon = [
 {"dex":"475M","name":"Mega-Galagladi","en":"Mega Gallade","evolved":true,"mega":true},
 {"dex":"531M","name":"Mega-Ohrdoch","en":"Mega Audino","mega":true},
 {"dex":"719M","name":"Mega-Diancie","en":"Mega Diancie","mythical":true,"mega":true},
-{"dex":808,"name":"Meltan","mythical":true},
+{"dex":808,"name":"Meltan","mythical":true,"getshiny":true},
 {"dex":809,"name":"Melmetal","mythical":true,"evolved":true},
 {"dex":862,"name":"Barrikadax","en":"Obstagoon","evolved":true},
 {"dex":863,"name":"Mauzinger","en":"Perrserker","evolved":true},
@@ -1101,13 +1101,16 @@ var raids = {
 	"tier5":["386D"]
 };
 
-var quests = [1,4,7,37,56,60,75,81,"83G",95,106,107,129,133,138,140,142,147,152,155,158,170,185,187,193,198,204,206,209,226,252,255,258,280,296,307,309,327,345,347,371,374,443,449,459,618,659];
-var quests_event = [399];
-var legacy = [1,3,4,7,9,10,12,13,16,17,"19A",23,25,26,27,"27A",28,29,30,31,32,33,34,35,36,37,"37A",38,39,40,41,42,43,44,47,48,50,"50A",51,52,"52A","52G",55,56,58,59,60,61,63,66,67,69,70,72,73,74,"74A",75,77,"77G",79,"79G",80,81,"83G",84,85,86,87,88,"88A",89,90,92,93,95,98,100,102,103,"103A",104,106,107,108,109,111,112,113,114,117,118,120,121,123,124,125,126,127,129,131,132,133,135,136,137,138,140,142,143,147,152,153,155,156,158,163,164,165,170,171,177,179,182,183,184,185,187,188,190,191,193,194,196,197,198,200,202,203,204,206,207,209,213,215,216,219,220,224,225,226,227,228,231,234,238,241,246,252,255,256,258,259,261,263,"263G",265,270,273,274,276,277,280,285,286,287,290,294,296,299,300,302,303,304,307,309,310,311,312,313,314,315,316,317,318,320,322,325,327,328,329,331,333,335,336,337,338,339,341,343,345,347,349,"351R",353,355,359,361,362,363,366,371,374,387,390,391,393,396,399,408,410,412,"412S","412T",415,418,420,"421S",425,427,431,434,436,442,443,449,451,453,459,495,498,501,504,506,509,519,522,524,527,529,531,535,536,540,546,548,557,559,562,580,582,587,588,594,595,597,602,607,613,615,616,618,622,650,659,661,667,682,684,688,690,692];
+var quests = [1,4,7,11,14,37,39,60,67,95,"103A",129,133,138,140,142,147,152,155,158,185,187,193,198,206,207,209,226,252,255,258,265,280,285,293,327,345,347,359,371,374,399,401,443,449,459,531,535,618,659];
+var quests_event = [387,390,393,495,498,501,650,653,656];
+var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,"19A",23,25,26,27,"27A",28,29,30,31,32,33,34,35,36,37,"37A",38,39,40,41,42,43,44,47,48,50,"50A",51,52,"52A","52G",55,56,58,59,60,61,63,66,67,69,70,72,73,74,"74A",75,77,"77G",79,"79G",80,81,"83G",84,85,86,87,88,"88A",89,90,92,93,95,98,100,102,103,"103A",104,106,107,108,109,111,112,113,114,117,118,120,121,123,124,125,126,127,129,131,132,133,135,136,137,138,140,142,143,147,152,153,155,156,158,163,164,165,170,171,177,179,182,183,184,185,187,188,190,191,193,194,196,197,198,200,202,203,204,206,207,209,213,215,216,219,220,224,225,226,227,228,231,234,238,241,246,252,255,256,258,259,261,263,"263G",265,270,273,274,276,277,280,285,286,287,290,293,294,296,299,300,302,303,304,307,309,310,311,312,313,314,315,316,317,318,320,322,325,327,328,329,331,333,335,336,337,338,339,341,343,345,347,349,"351R",353,355,359,361,362,363,366,371,374,387,390,391,393,396,399,401,408,410,412,"412S","412T",415,418,420,"421S",425,427,431,434,436,442,443,449,451,453,459,495,498,501,504,506,509,519,522,524,527,529,531,535,536,540,546,548,557,559,562,580,582,587,588,594,595,597,602,607,613,615,616,618,622,650,653,656,659,661,667,682,684,688,690,692];
 
 var changelogjson = {
     "items": [
-        {"ver":"1.9.90","date":"01.07.2021","change":["Change Raid Bosses (End of Bidoof Day)"]},
+        {"ver":"1.9.93","date":"06.07.2021","change":["New Shiny: Darumaka","Temporary Shiny: Meltan","Quests: Add Turtwig, Chimchar, Piplup, Snivy, Tepig, Oshawott, Chespin, Fennekin, Froakie"]},
+        {"ver":"1.9.92","date":"03.07.2021","change":["New Shiny: Tepig"]},
+        {"ver":"1.9.91","date":"02.07.2021","change":["Quests: Add Metapod, Kakuna, Jigglypuff, Machoke, Alolan Exeggutor, Gligar, Wurmple, Shroomish, Whismur, Absol, Bidoof, Kricketot, Audino, Tympole", "Quests: Remove Mankey, Graveler, Magnemite, Galarian Farfetch'd, Hitmonlee, Hitmonchan, Chinchou, Pineco, Makuhita, Meditite, Electrike","Small fixes"]},
+        {"ver":"1.9.90","date":"01.07.2021","change":["Change Raid Bosses (End of Bidoof Day)","Quests: Remove Bidoof"]},
         {"ver":"1.9.89","date":"01.07.2021","change":["Change Raid Bosses (Bidoof Day)"]},
         {"ver":"1.9.88","date":"25.06.2021","change":["New Shiny: Bidoof","Quests: Add Bidoof"]},
 		{"ver":"1.9.87","date":"20.06.2021","change":["Remove Tier 3 Raids","Change Raid Bosses (End of Solstice 2021)","Quests: Remove Lunatone, Solrock"]},
