@@ -1045,7 +1045,7 @@ var pokemon = [
 {"dex":"475M","name":"Mega-Galagladi","en":"Mega Gallade","evolved":true,"mega":true},
 {"dex":"531M","name":"Mega-Ohrdoch","en":"Mega Audino","mega":true},
 {"dex":"719M","name":"Mega-Diancie","en":"Mega Diancie","mythical":true,"mega":true},
-{"dex":808,"name":"Meltan","mythical":true,"getshiny":true},
+{"dex":808,"name":"Meltan","mythical":true},
 {"dex":809,"name":"Melmetal","mythical":true,"evolved":true},
 {"dex":862,"name":"Barrikadax","en":"Obstagoon","evolved":true},
 {"dex":863,"name":"Mauzinger","en":"Perrserker","evolved":true},
@@ -1102,11 +1102,12 @@ var raids = {
 };
 
 var quests = [1,4,7,11,14,37,39,60,67,95,"103A",129,133,138,140,142,147,152,155,158,185,187,193,198,206,207,209,226,252,255,258,265,280,285,293,327,345,347,359,371,374,399,401,443,449,459,531,535,618,659];
-var quests_event = [387,390,393,495,498,501,650,653,656];
+var quests_event = [];
 var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,"19A",23,25,26,27,"27A",28,29,30,31,32,33,34,35,36,37,"37A",38,39,40,41,42,43,44,47,48,50,"50A",51,52,"52A","52G",55,56,58,59,60,61,63,66,67,69,70,72,73,74,"74A",75,77,"77G",79,"79G",80,81,"83G",84,85,86,87,88,"88A",89,90,92,93,95,98,100,102,103,"103A",104,106,107,108,109,111,112,113,114,117,118,120,121,123,124,125,126,127,129,131,132,133,135,136,137,138,140,142,143,147,152,153,155,156,158,163,164,165,170,171,177,179,182,183,184,185,187,188,190,191,193,194,196,197,198,200,202,203,204,206,207,209,213,215,216,219,220,224,225,226,227,228,231,234,238,241,246,252,255,256,258,259,261,263,"263G",265,270,273,274,276,277,280,285,286,287,290,293,294,296,299,300,302,303,304,307,309,310,311,312,313,314,315,316,317,318,320,322,325,327,328,329,331,333,335,336,337,338,339,341,343,345,347,349,"351R",353,355,359,361,362,363,366,371,374,387,390,391,393,396,399,401,408,410,412,"412S","412T",415,418,420,"421S",425,427,431,434,436,442,443,449,451,453,459,495,498,501,504,506,509,519,522,524,527,529,531,535,536,540,546,548,557,559,562,580,582,587,588,594,595,597,602,607,613,615,616,618,622,650,653,656,659,661,667,682,684,688,690,692];
 
 var changelogjson = {
     "items": [
+        {"ver":"1.9.94","date":"16.07.2021","change":["Change Raid Boss (Return of Mewtwo)","Quests: Remove Turtwig, Chimchar, Piplup, Snivy, Tepig, Oshawott, Chespin, Fennekin, Froakie"]},
         {"ver":"1.9.93","date":"06.07.2021","change":["New Shiny: Darumaka","Temporary Shiny: Meltan","Quests: Add Turtwig, Chimchar, Piplup, Snivy, Tepig, Oshawott, Chespin, Fennekin, Froakie"]},
         {"ver":"1.9.92","date":"03.07.2021","change":["New Shiny: Tepig"]},
         {"ver":"1.9.91","date":"02.07.2021","change":["Quests: Add Metapod, Kakuna, Jigglypuff, Machoke, Alolan Exeggutor, Gligar, Wurmple, Shroomish, Whismur, Absol, Bidoof, Kricketot, Audino, Tympole", "Quests: Remove Mankey, Graveler, Magnemite, Galarian Farfetch'd, Hitmonlee, Hitmonchan, Chinchou, Pineco, Makuhita, Meditite, Electrike","Small fixes"]},
@@ -1415,12 +1416,20 @@ function init() {
 
 	// change Raids after certain time
 	
-	/*var timenow = new Date().getTime();
-	if (timenow > 1625126400000) {
+	var timenow = new Date().getTime();
+	if (timenow > 1626422400000) {
 		raids = {
-			"tier5":[399]
+			"tier4":["94M"],
+			"tier5":[150]
 		};
-	}*/
+	}
+	if (timenow > 1626595200000 && timenow < 1626627600000) {
+		raids = {
+			"tier5":[144,"641T",488,"645T",483,244,487,383,485,250,638,382,646,380,381,146,249,150,484,243,384,378,486,377,379,643,245,639,481,640,"642T",716,717,145,644]
+		};
+	}
+	
+	
 
 
 	// make Raids
