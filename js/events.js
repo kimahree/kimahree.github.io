@@ -3,8 +3,6 @@
 {"de":"Jahreszeit der Entdeckung","en":"Season of Discovery","start":1622534400000,"end":1630483200000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/season-of-discovery-2021/"},
 {"de":"Juni Forschungsdurchbruch","en":"June Research Breakthrough","start":1622577600000,"end":1625169600000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/jun-2021-events/"},
 {"de":"Giovanni: Crypto-Ho-Oh","en":"Giovanni: Shadow Ho-Oh","start":1623880800000,"end":1630447200000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/jun-2021-events/"},
-{"de":"Deoxys (Verteidigungsform) in Raids","en":"Deoxys (Defense Forme) in Raids","start":1625162400000,"end":1626422400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jul-2021-events/"},
-{"de":"Mega-Hundemon in Mega-Raids","en":"Mega Houndoom in Mega Raids","start":1625162400000,"end":1626422400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jul-2021-events/"},
 {"de":"Juli Forschungsdurchbruch","en":"July Research Breakthrough","start":1625169600000,"end":1627848000000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/jul-2021-events/"},
 {"de":"GBL Season 8 - Superliga und Superliga-Remix","en":"GBL Season 8 - Great League and Great League Remix","start":1626120000000,"end":1627329600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season8/"},
 {"de":"Mewtu in Raids","en":"Mewtwo in Raids","start":1626422400000,"end":1627027200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jul-2021-events/"},
