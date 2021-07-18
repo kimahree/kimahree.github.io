@@ -8,8 +8,6 @@
 {"de":"Mewtu in Raids","en":"Mewtwo in Raids","start":1626422400000,"end":1627027200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jul-2021-events/"},
 {"de":"Mega-Gengar in Mega-Raids","en":"Mega Gengar in Mega Raids","start":1626422400000,"end":1627027200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jul-2021-events/"},
 {"de":"6x Spezial-Tausch pro Tag","en":"6 Special Trades per day","start":1626465600000,"end":1626674400000,"url":"https://pokemongolive.com/post/pokemongofest2021-ultraunlock/"},
-{"de":"Pokémon GO Fest 2021 - Tag 1","en":"Pokémon GO Fest 2021 - Day 1","start":1626508800000,"end":1626537600000,"color":"#fdddfd","url":"https://pokemongolive.com/post/pokemongofest2021-announcement/"},
-{"de":"Pokémon GO Fest 2021 - Tag 2","en":"Pokémon GO Fest 2021 - Day 2","start":1626595200000,"end":1626624000000,"color":"#fdddfd","url":"https://pokemongolive.com/post/pokemongofest2021-raidday/"},
 {"de":"Schiggy Rampenlichtstunde (2x Bonbons beim Verschicken)","en":"Squirtle Spotlight Hour (2x Transfer Candy)","start":1626796800000,"end":1626800400000,"color":"#ffffe6","url":"https://pokemongolive.com/post/jul-2021-events/"},
 {"de":"Mewtu Raidstunde","en":"Mewtwo Raid Hour","start":1626883200000,"end":1626886800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/jul-2021-events/"},
 {"de":"??? in Raids","en":"??? in Raids","start":1627027200000,"end":1628236800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jul-2021-events/"},
