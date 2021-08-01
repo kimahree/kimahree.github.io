@@ -1,5 +1,5 @@
 ﻿var events = [
-{"de":"Temporäre Boni (Covid)","en":"Temporary bonuses (Covid)","end":1627804800000,"url":"https://pokemongolive.com/post/hello-world-pokemon-go"},
+{"de":"Temporäre Boni (Covid)","en":"Temporary bonuses (Covid)","end":1630483200000,"url":"https://pokemongolive.com/post/hello-world-pokemon-go"},
 {"de":"Jahreszeit der Entdeckung","en":"Season of Discovery","start":1622534400000,"end":1630483200000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/season-of-discovery-2021/"},
 {"de":"Giovanni: Crypto-Ho-Oh","en":"Giovanni: Shadow Ho-Oh","start":1623880800000,"end":1630447200000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/jun-2021-events/"},
 {"de":"Juli Forschungsdurchbruch","en":"July Research Breakthrough","start":1625169600000,"end":1627848000000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/jul-2021-events/"},
@@ -7,8 +7,6 @@
 {"de":"Mega-Glurak X in Mega-Raids","en":"Mega Charizard X in Mega Raids","start":1627027200000,"end":1628236800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jul-2021-events/"},
 {"de":"Hyperbonus Teil 1: Zeit","en":"Ultra Unlock Part 1: Time","start":1627027200000,"end":1628013600000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/pokemongofest2021-ultraunlock-time-space"},
 {"de":"GBL Season 8 - Hyperliga und Hyperliga-Remix","en":"GBL Season 8 - Ultra League and Ultra League Remix","start":1627329600000,"end":1628539200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season8/"},
-{"de":"Natu Rampenlichtstunde (2x Entwickel-EP)","en":"Natu Spotlight Hour (2x Evolve EXP)","start":1627401600000,"end":1627405200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/jul-2021-events/"},
-{"de":"Dialga Raidstunde","en":"Dialga Raid Hour","start":1627488000000,"end":1627491600000,"color":"#ffffe6","url":"https://pokemongolive.com/post/jul-2021-events/"},
 {"de":"August Forschungsdurchbruch","en":"August Research Breakthrough","start":1627848000000,"end":1630526400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/aug-2021-events/"},
 {"de":"Magnetilo Rampenlichtstunde (2x Fang-Sternenstaub)","en":"Magnemite Spotlight Hour (2x Catch Stardust)","start":1628006400000,"end":1628010000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/aug-2021-events/"},
 {"de":"Dialga Raidstunde","en":"Dialga Raid Hour","start":1628092800000,"end":1628096400000,"color":"#ffffe6","url":"https://pokemongolive.com/post/aug-2021-events/"},
