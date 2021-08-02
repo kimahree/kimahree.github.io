@@ -1109,7 +1109,7 @@ var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,"19A",23,25,26,27,"27A",28,29,30,31
 
 var changelogjson = {
     "items": [
-        {"ver":"1.9.99","date":"02.08.2021","change":["Quests: Add Clefairy, Psyduck, Poliwhirl, Geodude, Alolan Geodude, Rhyhorn, Snorlax, Wooper, Swinub, Roselia, Feebas, Skorupi, Roggenrola","Quests: Remove Metapod, Kakuna, Jigglypuff, Machoke, Alolan Exeggutor, Gligar, Wurmple, Shroomish, Whismur, Absol, Bidoof, Kricketot, Audino, Tympole"]},
+        {"ver":"1.9.99","date":"02.08.2021","change":["Add Shellos forms","Quests: Add Clefairy, Psyduck, Poliwhirl, Geodude, Alolan Geodude, Rhyhorn, Snorlax, Wooper, Swinub, Roselia, Feebas, Skorupi, Roggenrola","Quests: Remove Metapod, Kakuna, Jigglypuff, Machoke, Alolan Exeggutor, Gligar, Wurmple, Shroomish, Whismur, Absol, Bidoof, Kricketot, Audino, Tympole"]},
         {"ver":"1.9.98","date":"23.07.2021","change":["New Shinies: Cranidos, Shieldon, Dialga","Temporary Shiny: Unown U","Change Raid Bosses (GO Fest 2021 Ultra Bonus Part 1)","Quests: Add Cranidos, Shieldon"]},
         {"ver":"1.9.97","date":"18.07.2021","change":["Change Raid Bosses (End of Pokémon GO Fest 2021)","Quests: Remove Deino, Pikachu"]},
         {"ver":"1.9.96","date":"18.07.2021","change":["Change Raid Bosses (Pokémon GO Fest 2021 - Day 2)","Temporarily disabled certain raid limitation","Quests: Add Deino","Quests: Remove Chimecho"]},
