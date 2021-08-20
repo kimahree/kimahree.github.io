@@ -1054,7 +1054,8 @@ var pokemon = [
 {"dex":864,"name":"Gorgasonn","en":"Cursola","regional":true,"evolved":true},
 {"dex":865,"name":"Lauchzelot","en":"Sirfetch'd","evolved":true},
 {"dex":866,"name":"Pantifrost","en":"Mr. Rime","evolved":true},
-{"dex":867,"name":"Oghnatoll","en":"Runerigus","evolved":true}
+{"dex":867,"name":"Oghnatoll","en":"Runerigus","evolved":true},
+{"dex":888,"name":"Zacian","legendary":true}
 ];
 
 var items = [
@@ -1428,9 +1429,9 @@ function init() {
 	var timenow = new Date().getTime();
 	if (timenow > 1628236800000) {
 		raids = {
-			"tier4":["181M"],
-			"tier5":[484],
-			"tier3":[214]
+			"tier4":["15M"],
+			"tier5":[888],
+			"tier3":["110G"]
 		};
 	} 
 	
