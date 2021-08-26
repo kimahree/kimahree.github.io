@@ -1314,9 +1314,9 @@ var specialfilter = [
 ];
 
 var raids = {
-	"tier4":["181M"],
-	"tier5":[484],
-	"tier3":[214]
+	"tier4":["15M"],
+	"tier5":[888],
+	"tier3":["110G"]
 };
 
 var quests = [1,4,7,35,37,54,60,61,74,"74A",95,111,129,133,138,140,142,143,147,152,155,158,185,187,193,194,198,206,209,220,226,252,255,258,280,315,327,345,347,349,371,374,443,449,451,459,524,618,659];
@@ -1325,6 +1325,7 @@ var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,"19A",23,25,26,27,"27A",28,29,30,31
 
 var changelogjson = {
     "items": [
+        {"ver":"1.10.1","date":"26.08.2021","change":["Change Raid Bosses (GO Fest 2021 Ultra Bonus Part 3 - Zamazenta)"]},
         {"ver":"1.10","date":"20.08.2021","change":["Add all Gen 7 and Gen 8 Pokémon","New Shinies: Galarian Meowth, Galarian Farfetch'd, Galarian Weezing, Galarian Stunfisk","Change Raid Bosses (GO Fest 2021 Ultra Bonus Part 3)","Quests: Add Galarian Farfetch'd, Skwovet, Wooloo, Falinks","Quests: Remove Staryu, Lunatone, Solrock, Shellos"]},
         {"ver":"1.9.100","date":"06.08.2021","change":["New Shinies: Heracross, Palkia","Change Raid Bosses (GO Fest 2021 Ultra Bonus Part 2)","Quests: Add Staryu, Lunatone, Solrock, Shellos","Quests: Remove Cranidos, Shieldon"]},
         {"ver":"1.9.99","date":"02.08.2021","change":["Add Shellos forms","Quests: Add Clefairy, Psyduck, Poliwhirl, Geodude, Alolan Geodude, Rhyhorn, Snorlax, Wooper, Swinub, Roselia, Feebas, Skorupi, Roggenrola","Quests: Remove Metapod, Kakuna, Jigglypuff, Machoke, Alolan Exeggutor, Gligar, Wurmple, Shroomish, Whismur, Absol, Bidoof, Kricketot, Audino, Tympole"]},
@@ -1642,11 +1643,11 @@ function init() {
 	// change Raids after certain time
 	
 	var timenow = new Date().getTime();
-	if (timenow > 1629446400000) {
+	if (timenow > 1629964800000) {
 		raids = {
-			"tier4":["15M"],
-			"tier5":[888],
-			"tier3":["110G"]
+			"tier4":["18M"],
+			"tier5":[889],
+			"tier3":["618G",68,143]
 		};
 	} 
 	
