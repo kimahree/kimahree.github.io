@@ -4,7 +4,6 @@
 {"de":"Lugia in Raids","en":"Lugia in Raids","start":1630483200000,"end":1631606400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/sept-2021-events/"},
 {"de":"Mega-Lahmus in Mega-Raids","en":"Mega Slowbro in Mega Raids","start":1630483200000,"end":1631606400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/sept-2021-events/"},
 {"de":"September Forschungsdurchbruch","en":"September Research Breakthrough","start":1630526400000,"end":1633118400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/sept-2021-events/"},
-{"de":"Rauch-Event: Psycho, Geist und Unlicht","en":"Incense Day: Psychic, Ghost and Dark","start":1630832400000,"end":1630854000000,"color":"#e5fff9","url":"https://pokemongolive.com/post/season-of-mischief-2021/"},
 {"de":"Spoink Rampenlichtstunde (2x Fang-Sternenstaub)","en":"Spoink Spotlight Hour (2x Catch Stardust)","start":1631030400000,"end":1631034000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/sept-2021-events/"},
 {"de":"Psycho-Spektakel","en":"Psychic Spectacular","start":1631088000000,"end":1631556000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/psychic-spectacular-2021/"},
 {"de":"Lugia Raidstunde","en":"Lugia Raid Hour","start":1631116800000,"end":1631120400000,"color":"#ffffe6","url":"https://pokemongolive.com/post/sept-2021-events/"},
