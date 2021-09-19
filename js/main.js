@@ -740,7 +740,7 @@ var pokemon = [
 {"dex":498,"name":"Floink","en":"Tepig","getshiny":true},
 {"dex":499,"name":"Ferkokel","en":"Pignite","evolved":true},
 {"dex":500,"name":"Flambirex","en":"Emboar","evolved":true},
-{"dex":501,"name":"Ottaro","en":"Oshawott"},
+{"dex":501,"name":"Ottaro","en":"Oshawott","getshiny":true},
 {"dex":502,"name":"Zwottronin","en":"Dewott","evolved":true},
 {"dex":503,"name":"Admurai","en":"Samurott","evolved":true},
 {"dex":504,"name":"Nagelotz","en":"Patrat","getshiny":true},
@@ -1314,8 +1314,8 @@ var specialfilter = [
 ];
 
 var raids = {
-	"tier4":["80M"],
-	"tier5":[249]
+	"tier4":["229M"],
+	"tier5":[481]
 };
 
 var quests = [1,4,7,19,"19A",23,37,52,60,79,95,109,129,133,138,140,142,147,152,155,158,177,183,185,187,193,198,206,209,226,246,252,255,258,270,273,280,300,303,304,327,345,347,371,374,443,449,459,618,659];
@@ -1324,6 +1324,7 @@ var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",28,29,30
 
 var changelogjson = {
     "items": [
+        {"ver":"1.10.6","date":"19.09.2021","change":["New Shiny: Oshawott"]},
         {"ver":"1.10.5","date":"14.09.2021","change":["New Shinies: Uxie, Mesprit, Azelf","Change Raid Bosses (Return of the Lake Trio)","Quests: Remove Abra, Drowzee, Ralts, Woobat, Inkay"]},
         {"ver":"1.10.4","date":"08.09.2021","change":["Quests: Add Abra, Drowzee, Ralts, Woobat, Inkay"]},
         {"ver":"1.10.3","date":"02.09.2021","change":["New Shinies: Ditto, Espeon","Quests: Add Rattata, Alolan Rattata, Ekans, Meowth, Slowpoke, Koffing, Natu, Marill, Larvitar, Lotad, Seedot, Skitty, Mawile, Aron","Quests: Remove Clefairy, Psyduck, Poliwhirl, Geodude, Alolan Geodude, Rhyhorn, Snorlax, Wooper, Swinub, Roselia, Feebas, Skorupi, Roggenrola"]},
@@ -1645,13 +1646,13 @@ function init() {
 
 	// change Raids after certain time
 	
-	var timenow = new Date().getTime();
+	/*var timenow = new Date().getTime();
 	if (timenow > 1631606400000) {
 		raids = {
 			"tier4":["229M"],
 			"tier5":[481]
 		};
-	} 
+	} */
 	
 	
 
