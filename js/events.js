@@ -4,7 +4,6 @@
 {"de":"GBL Season 9 - Hyperliga","en":"GBL Season 9 - Ultra League","start":1631563200000,"end":1632772800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season9/"},
 {"de":"Vesprit in Raids","en":"Mesprit in Raids","start":1631606400000,"end":1633075200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/sept-2021-events/"},
 {"de":"Mega-Hundemon in Mega-Raids","en":"Mega Houndoom in Mega Raids","start":1631606400000,"end":1633075200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/sept-2021-events/"},
-{"de":"Ottaro Community Day","en":"Oshawott Community Day","start":1632042000000,"end":1632063600000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communityday-sept21/"},
 {"de":"Fashion Week","en":"Fashion Week","start":1632211200000,"end":1632852000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/fashion-week-2021/"},
 {"de":"Eneco Rampenlichtstunde (2x Fang-Bonbons)","en":"Skitty Spotlight Hour (2x Catch Candy)","start":1632240000000,"end":1632243600000,"color":"#ffffe6","url":"https://pokemongolive.com/post/sept-2021-events/"},
 {"de":"Vesprit Raidstunde","en":"Mesprit Raid Hour","start":1632326400000,"end":1632330000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/sept-2021-events/"},
