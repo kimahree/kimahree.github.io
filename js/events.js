@@ -1,12 +1,9 @@
 ﻿var events = [
 {"de":"Jahreszeit des Schabernacks","en":"Season of Mischief","start":1630483200000,"end":1638349200000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/season-of-mischief-2021/"},
 {"de":"September Forschungsdurchbruch","en":"September Research Breakthrough","start":1630526400000,"end":1633118400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/sept-2021-events/"},
-{"de":"GBL Season 9 - Hyperliga","en":"GBL Season 9 - Ultra League","start":1631563200000,"end":1632772800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season9/"},
 {"de":"Vesprit in Raids","en":"Mesprit in Raids","start":1631606400000,"end":1633075200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/sept-2021-events/"},
 {"de":"Mega-Hundemon in Mega-Raids","en":"Mega Houndoom in Mega Raids","start":1631606400000,"end":1633075200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/sept-2021-events/"},
-{"de":"Fashion Week","en":"Fashion Week","start":1632211200000,"end":1632852000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/fashion-week-2021/"},
 {"de":"GBL Season 9 - Meisterliga und mehr","en":"GBL Season 9 - Master League and more","start":1632772800000,"end":1633982400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season9/"},
-{"de":"Alola-Mauzi Rampenlichtstunde (2x Verschick-Bonbons)","en":"Alolan Meowth Spotlight Hour (2x Transfer Candy)","start":1632844800000,"end":1632848400000,"color":"#ffffe6","url":"https://pokemongolive.com/post/sept-2021-events/"},
 {"de":"Vesprit Raidstunde","en":"Mesprit Raid Hour","start":1632931200000,"end":1632934800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/sept-2021-events/"},
 {"de":"Genesect mit Aquamodul in Raids","en":"Genesect with Douse Drive in Raids","start":1633075200000,"end":1634025600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/oct-2021-events/"},
 {"de":"Mega-Gengar in Mega-Raids","en":"Mega Gengar in Mega Raids","start":1633075200000,"end":1634889600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/oct-2021-events/"},
