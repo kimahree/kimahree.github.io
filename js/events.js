@@ -4,7 +4,6 @@
 {"de":"Vesprit in Raids","en":"Mesprit in Raids","start":1631606400000,"end":1633075200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/sept-2021-events/"},
 {"de":"Mega-Hundemon in Mega-Raids","en":"Mega Houndoom in Mega Raids","start":1631606400000,"end":1633075200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/sept-2021-events/"},
 {"de":"GBL Season 9 - Meisterliga und mehr","en":"GBL Season 9 - Master League and more","start":1632772800000,"end":1633982400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season9/"},
-{"de":"Vesprit Raidstunde","en":"Mesprit Raid Hour","start":1632931200000,"end":1632934800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/sept-2021-events/"},
 {"de":"Genesect mit Aquamodul in Raids","en":"Genesect with Douse Drive in Raids","start":1633075200000,"end":1634025600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/oct-2021-events/"},
 {"de":"Mega-Gengar in Mega-Raids","en":"Mega Gengar in Mega Raids","start":1633075200000,"end":1634889600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/oct-2021-events/"},
 {"de":"Pokémon der Film - Geheimnisse des Dschungels","en":"Pokémon the Movie: Secrets of the Jungle","start":1633075200000,"end":1633888800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/movie-2021/"},
