@@ -707,8 +707,8 @@ var pokemon = [
 {"dex":484,"name":"Palkia","legendary":true,"getshiny":true},
 {"dex":485,"name":"Heatran","legendary":true,"getshiny":true},
 {"dex":486,"name":"Regigigas","legendary":true,"getshiny":true},
-{"dex":487,"name":"Giratina (Wandel)","de":"Giratina (Wandelform)","en":"Giratina (Altered Forme)","legendary":true,"getshiny":true},
-{"dex":"487O","name":"Giratina","de":"Giratina (Urform)","en":"Giratina (Origin Forme)","legendary":true,"getshiny":true},
+{"dex":487,"name":"Giratina","de":"Giratina (Wandelform)","en":"Giratina (Altered Forme)","legendary":true,"getshiny":true},
+{"dex":"487O","name":"Giratina (Urform)","de":"Giratina (Urform)","en":"Giratina (Origin Forme)","legendary":true,"getshiny":true},
 {"dex":488,"name":"Cresselia","legendary":true,"getshiny":true},
 {"dex":489,"name":"Phione","mythical":true},
 {"dex":490,"name":"Manaphy","mythical":true},
@@ -1314,8 +1314,8 @@ var specialfilter = [
 ];
 
 var raids = {
-	"tier4":["229M"],
-	"tier5":[481]
+	"tier4":["94M"],
+	"tier5":["649D"]
 };
 
 var quests = [1,4,7,37,60,"88A",92,95,123,127,129,133,138,140,142,147,152,155,158,163,167,185,187,193,198,206,209,226,252,255,258,261,280,302,327,345,347,353,371,374,442,443,449,459,557,588,607,618,659];
@@ -1324,6 +1324,7 @@ var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",28,29,30
 
 var changelogjson = {
     "items": [
+        {"ver":"1.10.12","date":"12.10.2021","change":["Change Raid Bosses (Return of Altered Form Giratina)"]},
         {"ver":"1.10.11","date":"10.10.2021","change":["Quests: Remove Diglett, Exeggcute, Pidove, Audino, Rufflet"]},
         {"ver":"1.10.10","date":"02.10.2021","change":["Quests: Add Alolan Grimer, Gastly, Scyther, Pinsir, Hoothoot, Spinarak, Poochyena, Sableye, Shuppet, Spritomb, Karrablast, Litwick","Quests: Remove Rattata, Alolan Rattata, Ekans, Meowth, Slowpoke, Koffing, Natu, Marill, Larvitar, Lotad, Seedot, Skitty, Mawile, Aron"]},
         {"ver":"1.10.9","date":"01.10.2021","change":["Change Raid Bosses (Secrets of the Jungle)","Quests: Add Diglett, Exeggcute, Pidove, Audino, Dwebble, Rufflet"]},
@@ -1652,10 +1653,10 @@ function init() {
 	// change Raids after certain time
 	
 	var timenow = new Date().getTime();
-	if (timenow > 1633075200000) {
+	if (timenow > 1634025600000) {
 		raids = {
 			"tier4":["94M"],
-			"tier5":["649D"]
+			"tier5":[487]
 		};
 	}
 	
