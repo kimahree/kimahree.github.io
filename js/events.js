@@ -1,13 +1,10 @@
 ﻿var events = [
 {"de":"Jahreszeit des Schabernacks","en":"Season of Mischief","start":1630483200000,"end":1638349200000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/season-of-mischief-2021/"},
-{"de":"Genesect mit Aquamodul in Raids","en":"Genesect with Douse Drive in Raids","start":1633075200000,"end":1634025600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/oct-2021-events/"},
 {"de":"Mega-Gengar in Mega-Raids","en":"Mega Gengar in Mega Raids","start":1633075200000,"end":1634889600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/oct-2021-events/"},
 {"de":"Jessie und James in Mauzi-Ballons","en":"Jessie and James in Meowth Balloons","start":1633075200000,"end":1634284800000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/movie-2021/"},
 {"de":"Oktober Forschungsdurchbruch","en":"October Research Breakthrough","start":1633118400000,"end":1635796800000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/oct-2021-events/"},
 {"de":"GBL Season 9 - Superliga","en":"GBL Season 9 - Great League","start":1633982400000,"end":1635192000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season9/"},
 {"de":"Giratina (Wandelform) in Raids","en":"Giratina (Altered Forme) in Raids","start":1634025600000,"end":1634889600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/oct-2021-events/"},
-{"de":"Nebulak Rampenlichtstunde (2x Fang-Sternenstaub)","en":"Gastly Spotlight Hour (2x Catch Stardust)","start":1634054400000,"end":1634058000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/oct-2021-events/"},
-{"de":"Giratina (Wandelform) Raidstunde","en":"Giratina (Wandelform) Raid Hour","start":1634140800000,"end":1634144400000,"color":"#ffffe6","url":"https://pokemongolive.com/post/oct-2021-events/"},
 {"de":"Pokémon GO Halloween-Schabernack","en":"Pokémon GO Halloween Mischief","start":1634284800000,"end":1635706800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/halloween-2021/"},
 {"de":"Halloween-Schabernack Teil 1: Gruselige Gesellschaft","en":"Halloween Mischief Part 1: Creepy Companions","start":1634284800000,"end":1634889600000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/halloween-2021/"},
 {"de":"GBL Season 9 - Halloween-Cup","en":"GBL Season 9 - Halloween Cup","start":1634328000000,"end":1635883200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season9/"},
