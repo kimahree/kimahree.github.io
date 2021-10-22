@@ -1,15 +1,12 @@
 ﻿var events = [
 {"de":"Jahreszeit des Schabernacks","en":"Season of Mischief","start":1630483200000,"end":1638349200000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/season-of-mischief-2021/"},
 {"de":"Mega-Gengar in Mega-Raids","en":"Mega Gengar in Mega Raids","start":1633075200000,"end":1634889600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/oct-2021-events/"},
-{"de":"Jessie und James in Mauzi-Ballons","en":"Jessie and James in Meowth Balloons","start":1633075200000,"end":1634284800000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/movie-2021/"},
 {"de":"Oktober Forschungsdurchbruch","en":"October Research Breakthrough","start":1633118400000,"end":1635796800000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/oct-2021-events/"},
 {"de":"GBL Season 9 - Superliga","en":"GBL Season 9 - Great League","start":1633982400000,"end":1635192000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season9/"},
 {"de":"Giratina (Wandelform) in Raids","en":"Giratina (Altered Forme) in Raids","start":1634025600000,"end":1634889600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/oct-2021-events/"},
 {"de":"Pokémon GO Halloween-Schabernack","en":"Pokémon GO Halloween Mischief","start":1634284800000,"end":1635706800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/halloween-2021/"},
 {"de":"Halloween-Schabernack Teil 1: Gruselige Gesellschaft","en":"Halloween Mischief Part 1: Creepy Companions","start":1634284800000,"end":1634889600000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/halloween-2021/"},
 {"de":"GBL Season 9 - Halloween-Cup","en":"GBL Season 9 - Halloween Cup","start":1634328000000,"end":1635883200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season9/"},
-{"de":"Mollimorba Rampenlichtstunde (2x Fang-EP)","en":"Gothita Spotlight Hour (2x Catch XP)","start":1634659200000,"end":1634662800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/oct-2021-events/"},
-{"de":"Giratina (Wandelform) Raidstunde","en":"Giratina (Wandelform) Raid Hour","start":1634745600000,"end":1634749200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/oct-2021-events/"},
 {"de":"Darkrai mit Matschbombe in Raids","en":"Darkrai knowing Sludge Bomb in Raids","start":1634889600000,"end":1636102800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/oct-2021-events/"},
 {"de":"Mega-Absol in Mega-Raids","en":"Mega Absol in Mega Raids","start":1634889600000,"end":1636102800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/oct-2021-events/"},
 {"de":"Halloween-Schabernack Teil 2: Schaurige Gesellen","en":"Halloween Mischief Part 2: Ghoulish Pals","start":1634889600000,"end":1635706800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/halloween-2021/"},
@@ -20,8 +17,11 @@
 {"de":"GO-Kampftag","en":"GO Battle Day","start":1635721200000,"end":1635807540000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season9/"},
 {"de":"GBL Season 9 - Meisterliga und mehr","en":"GBL Season 9 - Master League and more","start":1636405200000,"end":1637614800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season9/"},
 {"de":"GO-Kampftag","en":"GO Battle Day","start":1637362800000,"end":1637449140000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season9/"},
+{"de":"Sheinux Community Day","en":"Shinx Community Day","start":1637488800000,"end":1637510400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/devdiary-10192021/"},
 {"de":"GBL Season 9 - alle Ligen","en":"GBL Season 9 - all Leagues","start":1637614800000,"end":1638219600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season9/"},
 {"de":"GBL Season 10","en":"GBL Season 10","start":1638219600000,"end":1638219600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season9/"},
+{"de":"Dezember Community Day - Samstag","en":"December Community Day - Saturday","start":1639821600000,"end":1639843200000,"color":"#e5fff9","url":"https://pokemongolive.com/post/devdiary-10192021/"},
+{"de":"Dezember Community Day - Sonntag","en":"December Community Day - Sunday","start":1639908000000,"end":1639929600000,"color":"#e5fff9","url":"https://pokemongolive.com/post/devdiary-10192021/"},
 ];
 
 var colors = [
