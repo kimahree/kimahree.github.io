@@ -1,7 +1,6 @@
 ﻿var events = [
 {"de":"Jahreszeit des Schabernacks","en":"Season of Mischief","start":1630483200000,"end":1638349200000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/season-of-mischief-2021/"},
 {"de":"Oktober Forschungsdurchbruch","en":"October Research Breakthrough","start":1633118400000,"end":1635796800000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/oct-2021-events/"},
-{"de":"GBL Season 9 - Superliga","en":"GBL Season 9 - Great League","start":1633982400000,"end":1635192000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season9/"},
 {"de":"Pokémon GO Halloween-Schabernack","en":"Pokémon GO Halloween Mischief","start":1634284800000,"end":1635706800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/halloween-2021/"},
 {"de":"GBL Season 9 - Halloween-Cup","en":"GBL Season 9 - Halloween Cup","start":1634328000000,"end":1635883200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season9/"},
 {"de":"Darkrai mit Matschbombe in Raids","en":"Darkrai knowing Sludge Bomb in Raids","start":1634889600000,"end":1636102800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/oct-2021-events/"},
@@ -12,7 +11,7 @@
 {"de":"Darkrai Raidstunde","en":"Darkrai Raid Hour","start":1635350400000,"end":1635354000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/oct-2021-events/"},
 {"de":"Halloween-Schabernack Spezial-Raid-Wochenende","en":"Halloween Mischief Special Raid Weekend","start":1635580800000,"end":1635706800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/halloween-2021/"},
 {"de":"GO-Kampftag","en":"GO Battle Day","start":1635721200000,"end":1635807540000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season9/"},
-{"de":"Día de Muertos","en":"Día de Muertos","start":1635757200000,"end":1635879600000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/nov-2021-events/"},
+{"de":"Día de Muertos","en":"Día de Muertos","start":1635757200000,"end":1635879600000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/diademuertos2021/"},
 {"de":"November Forschungsdurchbruch","en":"November Research Breakthrough","start":1635796800000,"end":1638392400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/nov-2021-events/"},
 {"de":"Tuska Rampenlichtstunde (2x Fang-Bonbons)","en":"Cacnea Spotlight Hour (2x Catch Candy)","start":1635872400000,"end":1635876000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/nov-2021-events/"},
 {"de":"Darkrai Raidstunde","en":"Darkrai Raid Hour","start":1635958800000,"end":1635962400000,"color":"#ffffe6","url":"https://pokemongolive.com/post/nov-2021-events/"},
