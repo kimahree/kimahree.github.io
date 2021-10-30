@@ -1324,6 +1324,7 @@ var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",28,29,30
 
 var changelogjson = {
     "items": [
+        {"ver":"1.10.14","date":"30.10.2021","change":['[Gesundbrunnen] Add new Gyms "Der blaue Bus" and "Stolperstein Paul Kuchenbäcker"']},
         {"ver":"1.10.14","date":"22.10.2021","change":["Change Raid Bosses (Return of Darkrai)","Quests: Add Duskull, Yamask","Quests: Remove Zubat, Drowzee, Woobat, Gothita"]},
         {"ver":"1.10.13","date":"15.10.2021","change":["New Shinies: Spinarak, Drifblim","Quests: Add Pikachu, Zubat, Drowzee, Piplup, Drifblim, Woobat, Galarian Yamask, Gothita"]},
         {"ver":"1.10.12","date":"12.10.2021","change":["Change Raid Bosses (Return of Altered Form Giratina)"]},

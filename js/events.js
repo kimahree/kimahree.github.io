@@ -7,8 +7,6 @@
 {"de":"Mega-Absol in Mega-Raids","en":"Mega Absol in Mega Raids","start":1634889600000,"end":1636102800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/oct-2021-events/"},
 {"de":"Halloween-Schabernack Teil 2: Schaurige Gesellen","en":"Halloween Mischief Part 2: Ghoulish Pals","start":1634889600000,"end":1635706800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/halloween-2021/"},
 {"de":"GBL Season 9 - Hyperliga und mehr","en":"GBL Season 9 - Ultra League and more","start":1635192000000,"end":1636405200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season9/"},
-{"de":"Kramurx Rampenlichtstunde (2x Entwickel-EP)","en":"Murkrow Spotlight Hour (2x Evolve XP)","start":1635264000000,"end":1635267600000,"color":"#ffffe6","url":"https://pokemongolive.com/post/oct-2021-events/"},
-{"de":"Darkrai Raidstunde","en":"Darkrai Raid Hour","start":1635350400000,"end":1635354000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/oct-2021-events/"},
 {"de":"Halloween-Schabernack Spezial-Raid-Wochenende","en":"Halloween Mischief Special Raid Weekend","start":1635580800000,"end":1635706800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/halloween-2021/"},
 {"de":"GO-Kampftag","en":"GO Battle Day","start":1635721200000,"end":1635807540000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season9/"},
 {"de":"Día de Muertos","en":"Día de Muertos","start":1635757200000,"end":1635879600000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/diademuertos2021/"},
