@@ -367,7 +367,7 @@ var pokemon = [
 {"dex":194,"name":"Felino","en":"Wooper","getshiny":true},
 {"dex":195,"name":"Morlord","en":"Quagsire","evolved":true},
 {"dex":196,"name":"Psiana","en":"Espeon","evolved":true,"getshiny":true},
-{"dex":197,"name":"Nachtara","en":"Umbreon","evolved":true},
+{"dex":197,"name":"Nachtara","en":"Umbreon","evolved":true,"getshiny":true},
 {"dex":198,"name":"Kramurx","en":"Murkrow","getshiny":true},
 {"dex":199,"name":"Laschoking","en":"Slowking","evolved":true},
 {"dex":"199G","name":"Galar-Laschoking","en":"Galarian Slowking","evolved":true,"galarian":true},
@@ -1314,18 +1314,19 @@ var specialfilter = [
 ];
 
 var raids = {
-	"tier4":["94M"],
-	"tier5":[487]
+	"tier4":["359M"],
+	"tier5":[491]
 };
 
 var quests = [1,4,7,37,38,60,67,79,81,95,108,113,129,133,138,140,142,147,152,155,158,170,185,187,193,198,200,206,209,226,252,255,258,280,327,343,345,347,371,374,410,443,449,459,527,595,618,659];
-var quests_event = [];
-var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",28,29,30,31,32,33,34,35,36,37,"37A",38,39,40,41,42,43,44,47,48,50,"50A",51,52,"52A","52G",54,55,56,58,59,60,61,63,66,67,69,70,72,73,74,"74A",75,77,"77G",79,"79G",80,81,"83G",84,85,86,87,88,"88A",89,90,92,93,95,96,98,100,102,103,"103A",104,"105A",106,107,108,109,111,112,113,114,117,118,120,121,123,124,125,126,127,129,131,132,133,135,136,137,138,140,142,143,147,152,153,155,156,158,163,164,165,167,170,171,177,179,182,183,184,185,187,188,190,191,193,194,196,197,198,200,202,203,204,206,207,209,213,215,216,219,220,224,225,226,227,228,231,234,238,241,246,252,255,256,258,259,261,263,"263G",265,270,273,274,276,277,280,285,286,287,290,293,294,296,299,300,302,303,304,307,309,310,311,312,313,314,315,316,317,318,320,322,325,327,328,329,331,333,335,336,337,338,339,341,343,345,347,349,"351R",353,355,358,359,361,362,363,366,371,374,387,390,391,393,396,399,401,408,410,412,"412S","412T",415,418,420,"421S",422,425,426,427,431,434,436,442,443,449,451,453,459,495,498,501,504,506,509,519,522,524,527,529,531,535,536,540,546,548,557,559,562,"562G",574,580,582,587,588,592,594,595,597,602,607,613,615,616,618,622,627,633,650,653,656,659,661,667,676,682,684,686,688,690,692,819,831,870];
+var quests_event = [125,126,309,522,554,667,702];
+var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",28,29,30,31,32,33,34,35,36,37,"37A",38,39,40,41,42,43,44,47,48,50,"50A",51,52,"52A","52G",54,55,56,58,59,60,61,63,66,67,69,70,72,73,74,"74A",75,77,"77G",79,"79G",80,81,"83G",84,85,86,87,88,"88A",89,90,92,93,95,96,98,100,102,103,"103A",104,"105A",106,107,108,109,111,112,113,114,117,118,120,121,123,124,125,126,127,129,131,132,133,135,136,137,138,140,142,143,147,152,153,155,156,158,163,164,165,167,170,171,177,179,182,183,184,185,187,188,190,191,193,194,196,197,198,200,202,203,204,206,207,209,213,215,216,219,220,224,225,226,227,228,231,234,238,241,246,252,255,256,258,259,261,263,"263G",265,270,273,274,276,277,280,285,286,287,290,293,294,296,299,300,302,303,304,307,309,310,311,312,313,314,315,316,317,318,320,322,325,327,328,329,331,333,335,336,337,338,339,341,343,345,347,349,"351R",353,355,358,359,361,362,363,366,371,374,387,390,391,393,396,399,401,408,410,412,"412S","412T",415,418,420,"421S",422,425,426,427,431,434,436,442,443,449,451,453,459,495,498,501,504,506,509,519,522,524,527,529,531,535,536,540,546,548,554,557,559,562,"562G",574,580,582,587,588,592,594,595,597,602,607,613,615,616,618,622,627,633,650,653,656,659,661,667,676,682,684,686,688,690,692,702,819,831,870];
 
 var changelogjson = {
     "items": [
+        {"ver":"1.10.19","date":"05.11.2021","change":["Change Raid Bosses (Return of the Swords of Justice)","Quests: Add Electabuzz, Magmar, Electrike, Blitzle, Darumaka, Litleo, Dedenne"]},
         {"ver":"1.10.18","date":"02.11.2021","change":["Quests: Remove Cubone, Alolan Marowak, Sunkern, Roselia"]},
-        {"ver":"1.10.17","date":"02.11.2021","change":["Quests: Add Ninetales, Machoke, Slowpoke, Magnemite, Lickitung, Chansey, Chinchou, Misdreavus, Baltoy, Shieldon, Woobat, Joltik","Quests: Remove Alolan Grimer, Gastly, Scyther, Pinsir, Hoothoot, Spinarak, Houndour, Poochyena, Sableye, Shuppet, Spritomb, Dwebble, Karrablast, Litwick"]},
+        {"ver":"1.10.17","date":"02.11.2021","change":["New Shiny: Umbreon","Quests: Add Ninetales, Machoke, Slowpoke, Magnemite, Lickitung, Chansey, Chinchou, Misdreavus, Baltoy, Shieldon, Woobat, Joltik","Quests: Remove Alolan Grimer, Gastly, Scyther, Pinsir, Hoothoot, Spinarak, Houndour, Poochyena, Sableye, Shuppet, Spritomb, Dwebble, Karrablast, Litwick"]},
         {"ver":"1.10.16","date":"01.11.2021","change":["Quests: Add Cubone, Alolan Marowak, Sunkern, Roselia","Quests: Remove Pikachu, Duskull, Piplup, Drifblim, Yamask, Galarian Yamask"]},
         {"ver":"1.10.15","date":"30.10.2021","change":['[Gesundbrunnen] Add new Gyms "Der blaue Bus" and "Stolperstein Paul Kuchenbäcker"']},
         {"ver":"1.10.14","date":"22.10.2021","change":["Change Raid Bosses (Return of Darkrai)","Quests: Add Duskull, Yamask","Quests: Remove Zubat, Drowzee, Woobat, Gothita"]},
@@ -1659,10 +1660,10 @@ function init() {
 	// change Raids after certain time
 	
 	var timenow = new Date().getTime();
-	if (timenow > 1634889600000) {
+	if (timenow > 1636102800000) {
 		raids = {
-			"tier4":["359M"],
-			"tier5":[491]
+			"tier4":["310M"],
+			"tier5":[638,639,640]
 		};
 	}
 	

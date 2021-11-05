@@ -4,8 +4,6 @@
 {"de":"Mega-Absol in Mega-Raids","en":"Mega Absol in Mega Raids","start":1634889600000,"end":1636102800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/oct-2021-events/"},
 {"de":"GBL Season 9 - Hyperliga und mehr","en":"GBL Season 9 - Ultra League and more","start":1635192000000,"end":1636405200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season9/"},
 {"de":"November Forschungsdurchbruch","en":"November Research Breakthrough","start":1635796800000,"end":1638392400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/nov-2021-events/"},
-{"de":"Tuska Rampenlichtstunde (2x Fang-Bonbons)","en":"Cacnea Spotlight Hour (2x Catch Candy)","start":1635872400000,"end":1635876000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/nov-2021-events/"},
-{"de":"Darkrai Raidstunde","en":"Darkrai Raid Hour","start":1635958800000,"end":1635962400000,"color":"#ffffe6","url":"https://pokemongolive.com/post/nov-2021-events/"},
 {"de":"Lichtfestival","en":"Festival of Lights","start":1636102800000,"end":1636916400000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/festival-of-lights-2021/"},
 {"de":"Kobalium, Terrakium und Viridium in Raids","en":"Cobalion, Terrakion and Virizion in Raids","start":1636102800000,"end":1637053200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/nov-2021-events/"},
 {"de":"Mega-Voltenso in Mega-Raids","en":"Mega Manectric in Mega Raids","start":1636102800000,"end":1637053200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/nov-2021-events/"},
