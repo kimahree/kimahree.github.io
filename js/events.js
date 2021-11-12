@@ -6,8 +6,6 @@
 {"de":"Mega-Voltenso in Mega-Raids","en":"Mega Manectric in Mega Raids","start":1636102800000,"end":1637053200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/nov-2021-events/"},
 {"de":"GBL Season 9 - Meisterliga und mehr","en":"GBL Season 9 - Master League and more","start":1636405200000,"end":1637614800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season9/"},
 {"de":"Team GO Rocket greift an","en":"Team GO Rocket strikes","start":1636412400000,"end":1636794000000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/festival-of-lights-2021/"},
-{"de":"Lampi Rampenlichtstunde (2x Verschick-Bonbons)","en":"Chinchou Spotlight Hour (2x Transfer Candy)","start":1636477200000,"end":1636480800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/nov-2021-events/"},
-{"de":"Kobalium, Terrakium und Viridium Raidstunde","en":"Cobalion, Terrakion and Virizion Raid Hour","start":1636563600000,"end":1636567200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/nov-2021-events/"},
 {"de":"Strahlender Diamant und Leuchtende Perle - Teil 1","en":"Brilliant Diamond and Shining Pearl Celebration - Part 1","start":1637053200000,"end":1637226000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/brilliant-diamond-shining-pearl-event/"},
 {"de":"Cresselia in Raids","en":"Cresselia in Raids","start":1637053200000,"end":1638349200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/nov-2021-events/"},
 {"de":"Mega-Schlapor in Mega-Raids","en":"Mega Lopunny in Mega Raids","start":1637053200000,"end":1638349200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/nov-2021-events/"},
