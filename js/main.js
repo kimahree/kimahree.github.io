@@ -1324,6 +1324,7 @@ var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",28,29,30
 
 var changelogjson = {
     "items": [
+        {"ver":"1.10.21","date":"12.11.2021","change":['[Gesundbrunnen] Remove Gyms "Der blaue Bus" and "Stolperstein Paul Kuchenbäcker"']},
         {"ver":"1.10.20","date":"09.11.2021","change":["New Shiny: Vullaby","Quests: Add Vullaby"]},
         {"ver":"1.10.19","date":"05.11.2021","change":["Change Raid Bosses (Return of the Swords of Justice)","Quests: Add Electabuzz, Magmar, Electrike, Blitzle, Darumaka, Litleo, Dedenne"]},
         {"ver":"1.10.18","date":"02.11.2021","change":["Quests: Remove Cubone, Alolan Marowak, Sunkern, Roselia"]},
