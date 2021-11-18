@@ -15,8 +15,9 @@
 {"de":'"Spektakuläres" Event zum Ende der Jahreszeit',"en":'"Epic" end of season event',"start":1637917200000,"end":1638212400000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/nov-2021-events/"},
 {"de":"GBL Season 10","en":"GBL Season 10","start":1638219600000,"end":1638219600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season9/"},
 {"de":"Plinfa Rampenlichtstunde (2x Fang-Bonbons)","en":"Piplup Spotlight Hour (2x Catch Candy)","start":1638291600000,"end":1638295200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/nov-2021-events/"},
-{"de":"Dezember Community Day - Samstag","en":"December Community Day - Saturday","start":1639821600000,"end":1639843200000,"color":"#e5fff9","url":"https://pokemongolive.com/post/devdiary-10192021/"},
-{"de":"Dezember Community Day - Sonntag","en":"December Community Day - Sunday","start":1639908000000,"end":1639929600000,"color":"#e5fff9","url":"https://pokemongolive.com/post/devdiary-10192021/"},
+{"de":"Dezember Community Day - diverse Boni","en":"December Community Day - various bonuses","start":1639764000000,"end":1640023200000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/community-day-dec21/"},
+{"de":"Dezember Community Day - Samstag","en":"December Community Day - Saturday","start":1639821600000,"end":1639843200000,"color":"#e5fff9","url":"https://pokemongolive.com/post/community-day-dec21/"},
+{"de":"Dezember Community Day - Sonntag","en":"December Community Day - Sunday","start":1639908000000,"end":1639929600000,"color":"#e5fff9","url":"https://pokemongolive.com/post/community-day-dec21/"},
 ];
 
 var colors = [
