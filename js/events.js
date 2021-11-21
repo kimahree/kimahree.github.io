@@ -4,8 +4,6 @@
 {"de":"GBL Season 9 - Meisterliga und mehr","en":"GBL Season 9 - Master League and more","start":1636405200000,"end":1637614800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season9/"},
 {"de":"Cresselia in Raids","en":"Cresselia in Raids","start":1637053200000,"end":1638349200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/nov-2021-events/"},
 {"de":"Mega-Schlapor in Mega-Raids","en":"Mega Lopunny in Mega Raids","start":1637053200000,"end":1638349200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/nov-2021-events/"},
-{"de":"Strahlender Diamant und Leuchtende Perle - Teil 2","en":"Brilliant Diamond and Shining Pearl Celebration - Part 2","start":1637226000000,"end":1637521200000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/brilliant-diamond-shining-pearl-event/"},
-{"de":"Sheinux Community Day","en":"Shinx Community Day","start":1637488800000,"end":1637510400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communityday-nov21/"},
 {"de":"Ed Sheeran Kollaboration","en":"Ed Sheeran Collaboration","start":1637607600000,"end":1638306000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/ed-sheeran-collab/"},
 {"de":"GBL Season 9 - alle Ligen","en":"GBL Season 9 - all Leagues","start":1637614800000,"end":1638219600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season9/"},
 {"de":"Panflam Rampenlichtstunde (2x Fang-EP)","en":"Chimchar Spotlight Hour (2x Catch XP)","start":1637686800000,"end":1637690400000,"color":"#ffffe6","url":"https://pokemongolive.com/post/nov-2021-events/"},
