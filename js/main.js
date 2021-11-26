@@ -1314,8 +1314,8 @@ var specialfilter = [
 ];
 
 var raids = {
-	"tier4":["310M"],
-	"tier5":[638,639,640]
+	"tier4":["428M"],
+	"tier5":[488]
 };
 
 var quests = [1,4,7,37,38,60,67,79,81,95,108,113,129,133,138,140,142,147,152,155,158,170,185,187,193,198,200,206,209,226,252,255,258,280,327,343,345,347,371,374,410,443,449,459,527,595,618,659];
@@ -1324,6 +1324,7 @@ var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",28,29,30
 
 var changelogjson = {
     "items": [
+        {"ver":"1.10.27","date":"26.11.2021","change":["Added timed changes to Raid Bosses for special Raid Hours"]},
         {"ver":"1.10.26","date":"21.11.2021","change":["Quests: Remove Larvitar, Turtwig, Chimchar, Piplup, Shinx, Cranidos, Burmy (Plant Cloak), Burmy (Trash Cloak)"]},
         {"ver":"1.10.25","date":"21.11.2021","change":["Quests: Add Shinx"]},
         {"ver":"1.10.24","date":"18.11.2021","change":["Quests: Add Larvitar, Cranidos, Burmy (Plant Cloak)","Quests: Remove Burmy (Sandy Cloak)"]},
@@ -1667,10 +1668,28 @@ function init() {
 	// change Raids after certain time
 	
 	var timenow = new Date().getTime();
-	if (timenow > 1637053200000) {
+	if (timenow > 1637938800000 && timenow < 1637953200000) {
 		raids = {
 			"tier4":["428M"],
-			"tier5":[488]
+			"tier5":[144,145,146,488]
+		};
+	}
+	if (timenow > 1638025200000 && timenow < 1638039600000) {
+		raids = {
+			"tier4":["428M"],
+			"tier5":[485,488]
+		};
+	}
+	if (timenow > 1638111600000 && timenow < 1638126000000) {
+		raids = {
+			"tier4":["428M"],
+			"tier5":[377,378,379,488]
+		};
+	}
+	if (timenow > 1638198000000 && timenow < 1638212400000) {
+		raids = {
+			"tier4":["428M"],
+			"tier5":[638,639,640,488]
 		};
 	}
 	
