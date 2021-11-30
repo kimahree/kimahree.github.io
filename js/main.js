@@ -1668,28 +1668,10 @@ function init() {
 	// change Raids after certain time
 	
 	var timenow = new Date().getTime();
-	if (timenow > 1637938800000 && timenow < 1637953200000) {
+	if (timenow > 1638349200000) {
 		raids = {
-			"tier4":["428M"],
-			"tier5":[144,145,146,488]
-		};
-	}
-	if (timenow > 1638025200000 && timenow < 1638039600000) {
-		raids = {
-			"tier4":["428M"],
-			"tier5":[485,488]
-		};
-	}
-	if (timenow > 1638111600000 && timenow < 1638126000000) {
-		raids = {
-			"tier4":["428M"],
-			"tier5":[377,378,379,488]
-		};
-	}
-	if (timenow > 1638198000000 && timenow < 1638212400000) {
-		raids = {
-			"tier4":["428M"],
-			"tier5":[638,639,640,488]
+			"tier4":["208M"],
+			"tier5":[643,644]
 		};
 	}
 	
