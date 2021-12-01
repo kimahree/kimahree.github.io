@@ -407,7 +407,7 @@ var pokemon = [
 {"dex":205,"name":"Forstellka","en":"Forretress","evolved":true},
 {"dex":206,"name":"Dummisel","en":"Dunsparce","getshiny":true},
 {"dex":207,"name":"Skorgla","en":"Gligar","getshiny":true},
-{"dex":208,"name":"Stahlos","en":"Steelix","evolved":true},
+{"dex":208,"name":"Stahlos","en":"Steelix","evolved":true,"getshiny":true},
 {"dex":209,"name":"Snubbull","getshiny":true},
 {"dex":210,"name":"Granbull","evolved":true},
 {"dex":211,"name":"Baldorfish","en":"Quilfish","getshiny":true},
@@ -897,8 +897,8 @@ var pokemon = [
 {"dex":"641T","name":"Boreos (Tiergeist)","de":"Boreos (Tiergeistform)","en":"Tornadus (Therian Forme)","legendary":true},
 {"dex":642,"name":"Voltolos (Inkarnation)","de":"Voltolos (Inkarnationsform)","en":"Thundurus (Incarnate Forme)","legendary":true,"getshiny":true},
 {"dex":"642T","name":"Voltolos (Tiergeist)","de":"Voltolos (Tiergeistform)","en":"Thundurus (Therian Forme)","legendary":true},
-{"dex":643,"name":"Reshiram","legendary":true},
-{"dex":644,"name":"Zekrom","legendary":true},
+{"dex":643,"name":"Reshiram","legendary":true,"getshiny":true},
+{"dex":644,"name":"Zekrom","legendary":true,"getshiny":true},
 {"dex":645,"name":"Demeteros (Inkarnation)","de":"Demeteros (Inkarnationsform)","en":"Landorus (Incarnate Forme)","legendary":true,"getshiny":true},
 {"dex":"645T","name":"Demeteros (Tiergeist)","de":"Demeteros (Tiergeistform)","en":"Landorus (Therian Forme)","legendary":true},
 {"dex":646,"name":"Kyurem","legendary":true},
@@ -1324,6 +1324,7 @@ var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",28,29,30
 
 var changelogjson = {
     "items": [
+        {"ver":"1.10.28","date":"01.12.2021","change":["New Shinys: Steelix, Reshiram, Zekrom","Change Raid Bosses (Return of Reshiram and Zekrom)"]},
         {"ver":"1.10.27","date":"26.11.2021","change":["Added timed changes to Raid Bosses for special Raid Hours"]},
         {"ver":"1.10.26","date":"21.11.2021","change":["Quests: Remove Larvitar, Turtwig, Chimchar, Piplup, Shinx, Cranidos, Burmy (Plant Cloak), Burmy (Trash Cloak)"]},
         {"ver":"1.10.25","date":"21.11.2021","change":["Quests: Add Shinx"]},
