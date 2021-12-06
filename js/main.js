@@ -2210,7 +2210,7 @@ function generateRaid(raidtext) {
 	
 	text += "<br>" + gymjson.gyms[document.getElementById("gym").selectedIndex].map;
 	
-	if (t3index == 0 || document.getElementById("raid").selectedIndex <= t3index || start != "") {
+	if (t3index <= 0 || document.getElementById("raid").selectedIndex <= t3index || start != "") {
 		text += "<br><br><b>Start:</b> ";
 		if ((diff <= raidtimer && diff >= 0 && time != "") || (time == "" && start != "") || startwarn == 11) {
 			text += start;
@@ -2238,7 +2238,7 @@ function generateRaid(raidtext) {
 		text += "<br><br><b>Schlüpft:</b> " + time;
 	  }
 
-	  if (t3index == 0 || $("#raid").prop("selectedIndex") <= t3index || start != "") {
+	  if (t3index <= 0 || $("#raid").prop("selectedIndex") <= t3index || start != "") {
 		text += "<br><br><b>Startzeit:</b> ";
 		if ((diff <= raidtimer && diff >= 0 && time != "") || (time == "" && start != "") || startwarn == 11) {
 			text += start;
