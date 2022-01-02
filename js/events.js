@@ -1,6 +1,5 @@
 ﻿var events = [
 {"de":"Jahreszeit der Herkunft","en":"Season of Heritage","start":1638349200000,"end":1646125200000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/heritage/"},
-{"de":"Dezember Forschungsdurchbruch","en":"December Research Breakthrough","start":1638392400000,"end":1641070800000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/dec-2021-events/"},
 {"de":"Kyurem in Raids","en":"Kyurem in Raids","start":1639645200000,"end":1641546000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/dec-2021-events/"},
 {"de":"Mega-Rexblisar in Mega-Raids","en":"Mega Abomasnow in Mega Raids","start":1640250000000,"end":1641546000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/dec-2021-events/"},
 {"de":"GBL Season 10 - Meisterliga, Meisterliga-Classic","en":"GBL Season 10 - Master League, Master League Classic","start":1640638800000,"end":1641848400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season10/"},
