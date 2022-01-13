@@ -1314,8 +1314,8 @@ var specialfilter = [
 ];
 
 var raids = {
-	"tier4":["460M"],
-	"tier5":[646]
+	"tier4":["142M"],
+	"tier5":[485]
 };
 
 var quests = [1,4,7,37,60,90,95,111,113,129,131,133,138,140,142,143,147,152,155,158,185,187,193,198,204,206,209,226,241,252,255,258,265,280,287,327,345,347,371,374,399,412,"412S","412T",443,449,459,618,659];
@@ -1324,6 +1324,7 @@ var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",28,29,30
 
 var changelogjson = {
     "items": [
+        {"ver":"1.10.38","date":"13.01.2022","change":["Quests: Remove Alolan Geodude, Slugma, Mawile"]},
         {"ver":"1.10.37","date":"07.01.2022","change":["New Shiny: Slugma","Change Raid Bosses (Mountains of Power)","Quests: Add Alolan Geodude, Slugma, Mawile"]},
         {"ver":"1.10.36","date":"04.01.2022","change":["Quests: Remove Slowpoke, Hoothoot"]},
         {"ver":"1.10.35","date":"01.01.2022","change":["Quests: Add Shellder, Rhyhorn, Chansey, Lapras, Snorlax, Pineco, Miltank, Wurmple, Slakoth, Bidoof, Burmy (all Cloaks)","Quests: Remove Alolan Vulpix, Jigglypuff, Meowth, Psyduck, Seadra, Sneasel, Delibird, Swablu, Spheal, Lillipup, Minccino, Foongus"]},
@@ -1674,10 +1675,11 @@ function init() {
 	// change Raids after certain time
 	
 	var timenow = new Date().getTime();
-	if (timenow > 1641546000000) {
+	if (timenow > 1642237200000) {
+		changelogjson["items"].unshift({"ver":"1.10.39","date":"15.01.2022","change":["Change Raid Bosses (Debut of Shock Module Genesect)"]});
 		raids = {
 			"tier4":["142M"],
-			"tier5":[485]
+			"tier5":["649S"]
 		};
 	}
 	
