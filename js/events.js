@@ -22,6 +22,7 @@
 {"de":"Hoppspross Community Day","en":"Hoppip Community Day","start":1644660000000,"end":1644681600000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communityday-feb22-hoppip/"},
 {"de":"Mega-Ampharos in Mega-Raids","en":"Mega Ampharos in Mega Raids","start":1644915600000,"end":1646125200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/february-2022-content-update/"},
 {"de":"Smogon Rampenlichtstunde (2x Fang-EP)","en":"Smogon Spotlight Hour (2x Catch XP)","start":1644944400000,"end":1644948000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/february-2022-content-update/"},
+{"de":"2 kostenlose Raidpässe pro Tag","en":"2 free Raid Passes per day","start":1645002000000,"end":1646125200000,"url":"https://pokemongolive.com/post/february-2022-content-update/"},
 {"de":"Deoxys (Normalform) in Raids","en":"Deoxys (Normal Forme) in Raids","start":1645002000000,"end":1645261200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/february-2022-content-update/"},
 {"de":"Deoxys (Normalform) Raidstunde","en":"Deoxys (Normal Forme) Raid Hour","start":1645030800000,"end":1645034400000,"color":"#ffffe6","url":"https://pokemongolive.com/post/february-2022-content-update/"},
 {"de":"Vorbereitung auf Pokémon GO Tour: Johto","en":"GO Tour: Johto Leadup Event","start":1645174800000,"end":1645815600000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/february-2022-content-update/"},
