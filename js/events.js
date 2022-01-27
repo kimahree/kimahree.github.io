@@ -3,7 +3,7 @@
 {"de":"Januar Forschungsdurchbruch","en":"January Research Breakthrough","start":1641070800000,"end":1643749200000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/jan-2022-events/"},
 {"de":"Mega-Aerodactyl in Mega-Raids","en":"Mega Aerodactyl in Mega Raids","start":1641546000000,"end":1643706000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jan-2022-events/"},
 {"de":"Kraftwerk-Event","en":"Power Plant event","start":1642582800000,"end":1643706000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/season-of-heritage-power-plant-event/"},
-{"de":"Eine böse Vorahnung...","en":"A bad feeling...","start":1642978800000,"end":1643706000000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/season-of-heritage-power-plant-event/"},
+{"de":"Eine böse Vorahnung...","en":"A bad feeling...","start":1642978800000,"end":1643533200000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/season-of-heritage-power-plant-event/"},
 {"de":"Regice in Raids","en":"Regice in Raids","start":1643014800000,"end":1643706000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/jan-2022-events/"},
 {"de":"GBL Season 10 - Hyperliga, HL-Premier-Classic","en":"GBL Season 10 - Ultra League, UL Premier Classic","start":1643058000000,"end":1644267600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season10/"},
 {"de":"Regice Raidstunde","en":"Regice Raid Hour","start":1643216400000,"end":1643220000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/jan-2022-events/"},
