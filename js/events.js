@@ -1,15 +1,9 @@
 ﻿var events = [
 {"de":"Jahreszeit der Herkunft","en":"Season of Heritage","start":1638349200000,"end":1646125200000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/heritage/"},
-{"de":"1 zusätzlicher Spezialtausch pro Tag","en":"1 extra special trade per day","start":1643662800000,"end":1644354000000,"url":"https://pokemongolive.com/post/lunar-new-year-event-2022/"},
-{"de":"Regirock in Raids","en":"Regirock in Raids","start":1643706000000,"end":1644397200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/february-2022-content-update/"},
 {"de":"Mega-Hundemon in Mega-Raids","en":"Mega Houndoom in Mega Raids","start":1643706000000,"end":1644915600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/february-2022-content-update/"},
 {"de":"Februar Forschungsdurchbruch","en":"February Research Breakthrough","start":1643749200000,"end":1646168400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/february-2022-content-update/"},
 {"de":"GBL Season 10 - Meisterliga, ML-Premier-Classic, Love-Cup","en":"GBL Season 10 - Master League, ML Premier Classic, Love Cup","start":1644267600000,"end":1645477200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season10/"},
-{"de":"Parfi Rampenlichtstunde (2x Fang-Sternenstaub)","en":"Spotlight Hour (2x Catch Stardust)","start":1644339600000,"end":1644343200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/february-2022-content-update/"},
 {"de":"Registeel in Raids","en":"Registeel in Raids","start":1644397200000,"end":1645002000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/february-2022-content-update/"},
-{"de":"Registeel Raidstunde","en":"Registeel Raid Hour","start":1644426000000,"end":1644429600000,"color":"#ffffe6","url":"https://pokemongolive.com/post/february-2022-content-update/"},
-{"de":"Valentinstag","en":"Valentine's Day","start":1644483600000,"end":1644865200000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/february-2022-content-update/"},
-{"de":"Hoppspross Community Day","en":"Hoppip Community Day","start":1644660000000,"end":1644681600000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communityday-feb22-hoppip/"},
 {"de":"Mega-Ampharos in Mega-Raids","en":"Mega Ampharos in Mega Raids","start":1644915600000,"end":1646125200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/february-2022-content-update/"},
 {"de":"Smogon Rampenlichtstunde (2x Fang-EP)","en":"Smogon Spotlight Hour (2x Catch XP)","start":1644944400000,"end":1644948000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/february-2022-content-update/"},
 {"de":"2 kostenlose Raidpässe pro Tag","en":"2 free Raid Passes per day","start":1645002000000,"end":1646125200000,"url":"https://pokemongolive.com/post/february-2022-content-update/"},
@@ -26,6 +20,9 @@
 {"de":"Raikou, Entei, Suicune, Lugia und Ho-Oh in Raids","en":"Raikou, Entei, Suicune, Lugia and Ho-Oh in Raids","start":1645862400000,"end":1645907400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/february-2022-content-update/"},
 {"de":"Deoxys (Initiativeform) in Raids","en":"Deoxys (Speed Forme) in Raids","start":1645907400000,"end":1646125200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/february-2022-content-update/"},
 {"de":"GBL Season 11","en":"GBL Season 11","start":1646082000000,"end":1646082000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season10/"},
+{"de":"März Community Day","en":"March Community Day","start":1647165600000,"end":1647187200000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-mar-may/"},
+{"de":"April Community Day","en":"April Community Day","start":1650704400000,"end":1650726000000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-mar-may/"},
+{"de":"Mai Community Day","en":"May Community Day","start":1653123600000,"end":1653145200000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-mar-may/"},
 ];
 
 var colors = [
