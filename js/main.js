@@ -1351,7 +1351,7 @@ var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",28,29,30
 
 var changelogjson = {
     "items": [
-		{"ver":"1.10.50","date":"15.02.2022","change":["Change Raid Bosses (Return of Mega Ampharos)","Quests: Remove Pikachu, Luvdisc, Frillish, Alomomola"]},
+		{"ver":"1.10.50","date":"15.02.2022","change":["Quests: Remove Pikachu, Luvdisc, Frillish, Alomomola"]},
 		{"ver":"1.10.49","date":"12.02.2022","change":["New Shiny: Hoppip"]},
 		{"ver":"1.10.48","date":"10.02.2022","change":["Quests: Add Pikachu, Luvdisc, Frillish, Alomomola"]},
 		{"ver":"1.10.47","date":"09.02.2022","change":["Change Raid Bosses (Return of Registeel)"]},
