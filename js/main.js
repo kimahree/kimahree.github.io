@@ -1714,15 +1714,8 @@ function init() {
 	// change Raids after certain time
 	
 	var timenow = new Date().getTime();
-	if (timenow > 1644915600000) {
-		//changelogjson["items"].unshift({"ver":"1.10.42","date":"24.01.2022","change":["Change Raid Bosses (Return of Regice)"]});
-		raids = {
-			"tier4":["181M"],
-			"tier5":[379]
-		};
-	} 
-
 	if (timenow > 1645002000000) {
+		//changelogjson["items"].unshift({"ver":"1.10.42","date":"24.01.2022","change":["Change Raid Bosses (Return of Regice)"]});
 		raids = {
 			"tier4":["181M"],
 			"tier5":[386]
