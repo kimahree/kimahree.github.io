@@ -600,7 +600,7 @@ var pokemon = [
 {"dex":385,"name":"Jirachi","mythical":true},
 {"dex":386,"name":"Deoxys (Normal)","de":"Deoxys (Normalform)","en":"Deoxys (Normal Forme)","mythical":true,"getshiny":true},
 {"dex":"386A","name":"Deoxys (Angriff)","de":"Deoxys (Angriffsform)","en":"Deoxys (Attack Forme)","mythical":true,"getshiny":true},
-{"dex":"386D","name":"Deoxys","de":"Deoxys (Verteidigungsform)","en":"Deoxys (Defense Forme)","mythical":true},
+{"dex":"386D","name":"Deoxys (Verteidigung)","de":"Deoxys (Verteidigungsform)","en":"Deoxys (Defense Forme)","mythical":true,"getshiny":true},
 {"dex":"386S","name":"Deoxys (Initiative)","de":"Deoxys (Initiativeform)","en":"Deoxys (Speed Forme)","mythical":true},
 {"dex":387,"name":"Chelast","en":"Turtwig","getshiny":true},
 {"dex":388,"name":"Chelcarain","en":"Grotle","evolved":true},
@@ -1351,6 +1351,7 @@ var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",28,29,30
 
 var changelogjson = {
     "items": [
+		{"ver":"1.10.53","date":"22.02.2022","change":["New Shiny: Defense Forme Deoxys","Change Raid Bosses (Return of Defense Forme Deoxys)"]},
 		{"ver":"1.10.52","date":"19.02.2022","change":["New Shiny: Attack Forme Deoxys","Change Raid Bosses (Return of Attack Forme Deoxys)"]},
 		{"ver":"1.10.51","date":"16.02.2022","change":["Change Raid Bosses (Return of Deoxys)"]},
 		{"ver":"1.10.50","date":"15.02.2022","change":["Quests: Remove Pikachu, Luvdisc, Frillish, Alomomola"]},
