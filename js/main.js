@@ -601,7 +601,7 @@ var pokemon = [
 {"dex":386,"name":"Deoxys (Normal)","de":"Deoxys (Normalform)","en":"Deoxys (Normal Forme)","mythical":true,"getshiny":true},
 {"dex":"386A","name":"Deoxys (Angriff)","de":"Deoxys (Angriffsform)","en":"Deoxys (Attack Forme)","mythical":true,"getshiny":true},
 {"dex":"386D","name":"Deoxys (Verteidigung)","de":"Deoxys (Verteidigungsform)","en":"Deoxys (Defense Forme)","mythical":true,"getshiny":true},
-{"dex":"386S","name":"Deoxys (Initiative)","de":"Deoxys (Initiativeform)","en":"Deoxys (Speed Forme)","mythical":true},
+{"dex":"386S","name":"Deoxys (Initiative)","de":"Deoxys (Initiativeform)","en":"Deoxys (Speed Forme)","mythical":true,"getshiny":true},
 {"dex":387,"name":"Chelast","en":"Turtwig","getshiny":true},
 {"dex":388,"name":"Chelcarain","en":"Grotle","evolved":true},
 {"dex":389,"name":"Chelterrar","en":"Torterra","evolved":true},
@@ -1341,8 +1341,8 @@ var specialfilter = [
 ];
 
 var raids = {
-	"tier4":["229M"],
-	"tier5":[379]
+	"tier4":["181M"],
+	"tier5":["386D"]
 };
 
 var quests = [1,4,7,16,21,30,33,37,43,46,60,69,84,95,98,114,120,129,133,138,140,142,147,152,155,158,185,187,193,198,206,209,226,227,252,255,258,273,280,287,307,327,341,345,347,371,374,443,449,459,527,557,594,597,618,659,682,684];
@@ -1351,6 +1351,7 @@ var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",28,29,30
 
 var changelogjson = {
     "items": [
+		{"ver":"1.10.54","date":"25.02.2022","change":["New Shiny: Speed Forme Deoxys","Change Raid Bosses (Return of Speed Forme Deoxys)"]},
 		{"ver":"1.10.53","date":"22.02.2022","change":["New Shiny: Defense Forme Deoxys","Change Raid Bosses (Return of Defense Forme Deoxys)"]},
 		{"ver":"1.10.52","date":"19.02.2022","change":["New Shiny: Attack Forme Deoxys","Change Raid Bosses (Return of Attack Forme Deoxys)"]},
 		{"ver":"1.10.51","date":"16.02.2022","change":["Change Raid Bosses (Return of Deoxys)"]},
@@ -1717,7 +1718,7 @@ function init() {
 	// change Raids after certain time
 	
 	var timenow = new Date().getTime();
-	if (timenow > 1645002000000) {
+	/*if (timenow > 1645002000000) {
 		//changelogjson["items"].unshift({"ver":"1.10.42","date":"24.01.2022","change":["Change Raid Bosses (Return of Regice)"]});
 		raids = {
 			"tier4":["181M"],
@@ -1737,7 +1738,7 @@ function init() {
 			"tier4":["181M"],
 			"tier5":["386D"]
 		};
-	} 	
+	} 	*/
 
 	if (timenow > 1645779600000) {
 		raids = {
@@ -1745,6 +1746,12 @@ function init() {
 			"tier5":["386S"]
 		};
 	} 	
+
+	if (timenow > 1645862400000 && timenow < 1645907400000) {
+		raids = {
+			"tier5":[244,250,249,243,245]
+		};
+	}
 
 	// make Raids
 	var txt = "";
