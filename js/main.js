@@ -189,9 +189,9 @@ var pokemon = [
 {"dex":39,"name":"Pummeluff","en":"Jigglypuff","getshiny":true},
 {"dex":40,"name":"Knuddeluff","en":"Wigglytuff","evolved":true},
 {"dex":41,"name":"Zubat","getshiny":true},
-{"dex":42,"name":"Golbat","evolved":true},
+{"dex":42,"name":"Golbat","evolved":true,"getshiny":true},
 {"dex":43,"name":"Myrapla","en":"Oddish","getshiny":true},
-{"dex":44,"name":"Duflor","en":"Gloom","evolved":true},
+{"dex":44,"name":"Duflor","en":"Gloom","evolved":true,"getshiny":true},
 {"dex":45,"name":"Giflor","en":"Vileplume","evolved":true},
 {"dex":46,"name":"Paras","getshiny":true},
 {"dex":47,"name":"Parasek","en":"Parasect","evolved":true},
@@ -215,7 +215,7 @@ var pokemon = [
 {"dex":59,"name":"Arkani","en":"Arcanine","evolved":true,"getshiny":true},
 {"dex":"59H","name":"Hisui-Arkani","en":"Hisuian Arcanine","hisuian":true,"evolved":true},
 {"dex":60,"name":"Quapsel","en":"Poliwag","getshiny":true},
-{"dex":61,"name":"Quaputzi","en":"Poliwhirl","evolved":true},
+{"dex":61,"name":"Quaputzi","en":"Poliwhirl","evolved":true,"getshiny":true},
 {"dex":62,"name":"Quappo","en":"Poliwrath","evolved":true},
 {"dex":63,"name":"Abra","getshiny":true},
 {"dex":64,"name":"Kadabra","evolved":true},
@@ -286,7 +286,7 @@ var pokemon = [
 {"dex":114,"name":"Tangela","getshiny":true},
 {"dex":115,"name":"Kangama","en":"Kangaskhan","regional":true,"getshiny":true},
 {"dex":116,"name":"Seeper","en":"Horsea","getshiny":true},
-{"dex":117,"name":"Seedra","en":"Seadra","evolved":true},
+{"dex":117,"name":"Seedra","en":"Seadra","evolved":true,"getshiny":true},
 {"dex":118,"name":"Goldini","en":"Goldeen","getshiny":true},
 {"dex":119,"name":"Golking","en":"Seaking","evolved":true},
 {"dex":120,"name":"Sterndu","en":"Staryu","getshiny":true},
@@ -407,7 +407,7 @@ var pokemon = [
 {"dex":"201Em","name":"Icognito !","en":"Unown !"},
 {"dex":"201Qm","name":"Icognito ?","en":"Unown ?"},
 {"dex":202,"name":"Woingenau","en":"Wobbuffet","getshiny":true},
-{"dex":203,"name":"Girafarig"},
+{"dex":203,"name":"Girafarig","getshiny":true},
 {"dex":204,"name":"Tannza","en":"Pineco","getshiny":true},
 {"dex":205,"name":"Forstellka","en":"Forretress","evolved":true},
 {"dex":206,"name":"Dummisel","en":"Dunsparce","getshiny":true},
@@ -428,23 +428,23 @@ var pokemon = [
 {"dex":219,"name":"Magcargo","evolved":true},
 {"dex":220,"name":"Quiekel","en":"Swinub","getshiny":true},
 {"dex":221,"name":"Keifel","en":"Piloswine","evolved":true},
-{"dex":222,"name":"Corasonn","en":"Corsola","regional":true},
+{"dex":222,"name":"Corasonn","en":"Corsola","regional":true,"getshiny":true},
 {"dex":"222G","name":"Galar-Corasonn","en":"Galarian Corsola","regional":true,"galarian":true},
-{"dex":223,"name":"Remoraid"},
+{"dex":223,"name":"Remoraid","getshiny":true},
 {"dex":224,"name":"Octillery","evolved":true},
 {"dex":225,"name":"Botogel","en":"Delibird","getshiny":true},
-{"dex":226,"name":"Mantax","en":"Mantine"},
+{"dex":226,"name":"Mantax","en":"Mantine","getshiny":true},
 {"dex":227,"name":"Panzaeron","en":"Skarmory","getshiny":true},
 {"dex":228,"name":"Hunduster","en":"Houndour","getshiny":true},
 {"dex":229,"name":"Hundemon","en":"Houndoom","evolved":true,"getshiny":true},
 {"dex":230,"name":"Seedraking","en":"Kingdra","evolved":true},
-{"dex":231,"name":"Phanpy"},
+{"dex":231,"name":"Phanpy","getshiny":true},
 {"dex":232,"name":"Donphan","evolved":true},
 {"dex":233,"name":"Porygon2","evolved":true},
 {"dex":234,"name":"Damhirplex","en":"Stantler","getshiny":true},
 {"dex":235,"name":"Farbeagle","en":"Smeargle"},
-{"dex":236,"name":"Rabauz","en":"Tyrogue","baby":true},
-{"dex":237,"name":"Kapoera","en":"Hitmontop"},
+{"dex":236,"name":"Rabauz","en":"Tyrogue","baby":true,"getshiny":true},
+{"dex":237,"name":"Kapoera","en":"Hitmontop","getshiny":true},
 {"dex":238,"name":"Kussila","en":"Smoochum","baby":true,"getshiny":true},
 {"dex":239,"name":"Elekid","baby":true,"getshiny":true},
 {"dex":240,"name":"Magby","baby":true,"getshiny":true},
@@ -1351,6 +1351,7 @@ var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",28,29,30
 
 var changelogjson = {
     "items": [
+		{"ver":"1.10.55","date":"26.02.2022","change":["New Shinies: Golbat, Gloom, Poliwhirl, Seadra, Girafarig, Corsola, Remoraid, Mantine, Phanpy, Tyrogue, Hitmontop","Temporary Shinies: Unown G, J, O, R, T, U, Smeargle","Change Raid Bosses (Pokémon GO Tour: Johto)"]},
 		{"ver":"1.10.54","date":"25.02.2022","change":["New Shiny: Speed Forme Deoxys","Change Raid Bosses (Return of Speed Forme Deoxys)"]},
 		{"ver":"1.10.53","date":"22.02.2022","change":["New Shiny: Defense Forme Deoxys","Change Raid Bosses (Return of Defense Forme Deoxys)"]},
 		{"ver":"1.10.52","date":"19.02.2022","change":["New Shiny: Attack Forme Deoxys","Change Raid Bosses (Return of Attack Forme Deoxys)"]},
@@ -1751,6 +1752,10 @@ function init() {
 		raids = {
 			"tier5":[244,250,249,243,245]
 		};
+		hatchtimer = 5;
+		raidtimer = 25;
+		warn_de[5] = "Die Startzeit muss innerhalb von " + raidtimer + " Minuten nach der Schlüpfzeit sein.";
+		warn_de[10] = "Die Schlüpfzeit kann nicht mehr als " + hatchtimer + " Minuten in der Zukunft liegen.";
 	}
 
 	// make Raids
