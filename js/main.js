@@ -1342,7 +1342,7 @@ var specialfilter = [
 
 var raids = {
 	"tier4":["181M"],
-	"tier5":["386D"]
+	"tier5":["386S"]
 };
 
 var quests = [1,4,7,16,21,30,33,37,43,46,60,69,84,95,98,114,120,129,133,138,140,142,147,152,155,158,185,187,193,198,206,209,226,227,252,255,258,273,280,287,307,327,341,345,347,371,374,443,449,459,527,557,594,597,618,659,682,684];
@@ -1725,38 +1725,7 @@ function init() {
 			"tier4":["181M"],
 			"tier5":[386]
 		};
-	} 
-
-	if (timenow > 1645261200000) {
-		raids = {
-			"tier4":["181M"],
-			"tier5":["386A"]
-		};
-	} 	
-
-	if (timenow > 1645520400000) {
-		raids = {
-			"tier4":["181M"],
-			"tier5":["386D"]
-		};
-	} 	*/
-
-	if (timenow > 1645779600000) {
-		raids = {
-			"tier4":["181M"],
-			"tier5":["386S"]
-		};
-	} 	
-
-	if (timenow > 1645862400000 && timenow < 1645907400000) {
-		raids = {
-			"tier5":[244,250,249,243,245]
-		};
-		hatchtimer = 5;
-		raidtimer = 25;
-		warn_de[5] = "Die Startzeit muss innerhalb von " + raidtimer + " Minuten nach der Schlüpfzeit sein.";
-		warn_de[10] = "Die Schlüpfzeit kann nicht mehr als " + hatchtimer + " Minuten in der Zukunft liegen.";
-	}
+	} */
 
 	// make Raids
 	var txt = "";
