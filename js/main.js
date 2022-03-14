@@ -643,8 +643,8 @@ var pokemon = [
 {"dex":421,"name":"Kinoso (Bewölkt)","de":"Kinoso (Wolkenform)","en":"Cherrim (Overcast Form)","evolved":true},
 {"dex":"421S","name":"Kinoso (Sonne)","de":"Kinoso (Sonnenform)","en":"Cherrim (Sunshine Form)","evolved":true},
 {"dex":422,"name":"Schalellos","en":"Shellos"},
-{"dex":"422W","name":"Schalellos (West)","de":"Schalellos (Westliches Meer)","en":"Shellos (West Sea)"},
-{"dex":"422E","name":"Schalellos (Ost)","de":"Schalellos (Östliches Meer)","en":"Shellos (East Sea)"},
+{"dex":"422W","name":"Schalellos (West)","de":"Schalellos (Westliches Meer)","en":"Shellos (West Sea)","regional":true},
+{"dex":"422E","name":"Schalellos (Ost)","de":"Schalellos (Östliches Meer)","en":"Shellos (East Sea)","regional":true},
 {"dex":423,"name":"Gastrodon","evolved":true},
 {"dex":424,"name":"Ambidiffel","en":"Ambipom","evolved":true},
 {"dex":425,"name":"Driftlon","en":"Drifloon","getshiny":true},
@@ -909,7 +909,7 @@ var pokemon = [
 {"dex":639,"name":"Terrakium","en":"Terrakion","legendary":true,"getshiny":true},
 {"dex":640,"name":"Viridium","en":"Virizion","legendary":true,"getshiny":true},
 {"dex":641,"name":"Boreos (Inkarnation)","de":"Boreos (Inkarnationsform)","en":"Tornadus (Incarnate Forme)","legendary":true,"getshiny":true},
-{"dex":"641T","name":"Boreos (Tiergeist)","de":"Boreos (Tiergeistform)","en":"Tornadus (Therian Forme)","legendary":true},
+{"dex":"641T","name":"Boreos (Tiergeist)","de":"Boreos (Tiergeistform)","en":"Tornadus (Therian Forme)","legendary":true,"getshiny":true},
 {"dex":642,"name":"Voltolos (Inkarnation)","de":"Voltolos (Inkarnationsform)","en":"Thundurus (Incarnate Forme)","legendary":true,"getshiny":true},
 {"dex":"642T","name":"Voltolos (Tiergeist)","de":"Voltolos (Tiergeistform)","en":"Thundurus (Therian Forme)","legendary":true},
 {"dex":643,"name":"Reshiram","legendary":true,"getshiny":true},
@@ -1085,10 +1085,10 @@ var pokemon = [
 {"dex":738,"name":"Donarion","en":"Vikavolt","evolved":true},
 {"dex":739,"name":"Krabbox","en":"Crabrawler"},
 {"dex":740,"name":"Krawell","en":"Crabominable","evolved":true},
-{"dex":741,"name":"Choreogel (Flamenco)","de":"Choreogel (Flamenco-Stil)","en":"Oricorio (Baile Style)"},
-{"dex":"741M","name":"Choreogel (Cheerleading)","de":"Choreogel (Cheerleading-Stil)","en":"Oricorio (Pom-Pom Style)"},
-{"dex":"741P","name":"Choreogel (Hula)","de":"Choreogel (Hula-Stil)","en":"Oricorio (Pa'u Style)"},
-{"dex":"741S","name":"Choreogel (Buyo)","de":"Choreogel (Buyo-Stil)","en":"Oricorio (Sensu Style)"},
+{"dex":741,"name":"Choreogel (Flamenco)","de":"Choreogel (Flamenco-Stil)","en":"Oricorio (Baile Style)","regional":true},
+{"dex":"741M","name":"Choreogel (Cheerleading)","de":"Choreogel (Cheerleading-Stil)","en":"Oricorio (Pom-Pom Style)","regional":true},
+{"dex":"741P","name":"Choreogel (Hula)","de":"Choreogel (Hula-Stil)","en":"Oricorio (Pa'u Style)","regional":true},
+{"dex":"741S","name":"Choreogel (Buyo)","de":"Choreogel (Buyo-Stil)","en":"Oricorio (Sensu Style)","regional":true},
 {"dex":742,"name":"Wommel","en":"Cutiefly"},
 {"dex":743,"name":"Bandelby","en":"Ribombee","evolved":true},
 {"dex":744,"name":"Wuffels","en":"Rockruff","getshiny":true},
@@ -1114,7 +1114,7 @@ var pokemon = [
 {"dex":761,"name":"Frubberl","en":"Bounsweet"},
 {"dex":762,"name":"Frubaila","en":"Steenee","evolved":true},
 {"dex":763,"name":"Fruyal","en":"Tsareena","evolved":true},
-{"dex":764,"name":"Curelei","en":"Comfey"},
+{"dex":764,"name":"Curelei","en":"Comfey","regional":true},
 {"dex":765,"name":"Kommandutan","en":"Oranguru"},
 {"dex":766,"name":"Quartermak","en":"Passimian"},
 {"dex":767,"name":"Reißlaus","en":"Wimpod"},
@@ -1341,16 +1341,17 @@ var specialfilter = [
 ];
 
 var raids = {
-	"tier4":["181M"],
-	"tier5":["386S"]
+	"tier4":["3M"],
+	"tier5":[785]
 };
 
 var quests = [1,4,7,37,50,54,56,60,63,66,95,96,"103A",129,133,138,140,142,147,152,155,158,165,167,185,187,193,194,198,206,209,226,246,252,255,258,280,296,299,320,327,345,347,371,374,399,443,449,459,546,548,618,627,659,661];
-var quests_event = [];
-var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",28,29,30,31,32,33,34,35,36,37,"37A",38,39,40,41,42,43,44,46,47,48,50,"50A",51,52,"52A","52G",54,55,56,58,59,60,61,63,66,67,69,70,72,73,74,"74A",75,77,"77G",79,"79G",80,81,"83G",84,85,86,87,88,"88A",89,90,92,93,95,96,98,100,102,103,"103A",104,"105A",106,107,108,109,111,112,113,114,117,118,120,121,123,124,125,126,127,129,131,132,133,135,136,137,138,140,142,143,147,152,153,155,156,158,163,164,165,167,170,171,177,179,182,183,184,185,187,188,190,191,193,194,196,197,198,200,202,203,204,206,207,209,213,215,216,218,219,220,224,225,226,227,228,231,234,238,241,246,252,255,256,258,259,261,263,"263G",265,270,273,274,276,277,280,285,286,287,290,293,294,296,299,300,302,303,304,307,309,310,311,312,313,314,315,316,317,318,320,322,325,327,328,329,331,333,335,336,337,338,339,341,343,345,347,349,"351R",353,355,358,359,361,362,363,366,371,374,387,390,391,393,396,399,401,403,408,410,412,"412S","412T",415,418,420,"421S",422,425,426,427,431,434,436,442,443,449,451,453,459,495,498,501,504,506,509,519,522,524,527,529,531,535,536,540,546,548,554,"554G",557,559,562,"562G",572,574,580,582,587,588,590,592,594,595,597,602,607,613,615,616,618,621,622,627,629,633,650,653,656,659,661,667,676,677,682,684,686,688,690,692,694,702,731,734,819,831,870];
+var quests_event = ["88A",351,"351R","351S","351I",412,"412S","412T",741];
+var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",28,29,30,31,32,33,34,35,36,37,"37A",38,39,40,41,42,43,44,46,47,48,50,"50A",51,52,"52A","52G",54,55,56,58,59,60,61,63,66,67,69,70,72,73,74,"74A",75,77,"77G",79,"79G",80,81,"83G",84,85,86,87,88,"88A",89,90,92,93,95,96,98,100,102,103,"103A",104,"105A",106,107,108,109,111,112,113,114,117,118,120,121,123,124,125,126,127,129,131,132,133,135,136,137,138,140,142,143,147,152,153,155,156,158,163,164,165,167,170,171,177,179,182,183,184,185,187,188,190,191,193,194,196,197,198,200,202,203,204,206,207,209,213,215,216,218,219,220,224,225,226,227,228,231,234,238,241,246,252,255,256,258,259,261,263,"263G",265,270,273,274,276,277,280,285,286,287,290,293,294,296,299,300,302,303,304,307,309,310,311,312,313,314,315,316,317,318,320,322,325,327,328,329,331,333,335,336,337,338,339,341,343,345,347,349,351,"351I","351R","351S",353,355,358,359,361,362,363,366,371,374,387,390,391,393,396,399,401,403,408,410,412,"412S","412T",415,418,420,"421S",422,425,426,427,431,434,436,442,443,449,451,453,459,495,498,501,504,506,509,519,522,524,527,529,531,535,536,540,546,548,554,"554G",557,559,562,"562G",572,574,580,582,587,588,590,592,594,595,597,602,607,613,615,616,618,621,622,627,629,633,650,653,656,659,661,667,676,677,682,684,686,688,690,692,694,702,731,734,741,819,831,870];
 
 var changelogjson = {
     "items": [
+		{"ver":"1.10.59","date":"15.03.2022","change":["New Shiny: Tornadus (Therian Forme)","Change Raid Bosses (Festival of Colors)","Quests: Add Alolan Grimer, Castform (all Forms), Burmy (all Cloaks), Oricorio"]},
 		{"ver":"1.10.58","date":"09.03.2022","change":["Quests: Remove Pikipek, Yungoos"]},
 		{"ver":"1.10.57","date":"02.03.2022","change":["Quests: Add Diglett, Psyduck, Mankey, Abra, Machop, Drowzee, Alolan Exeggutor, Ledyba, Spinarak, Wooper, Larvitar, Makuhita, Nosepass, Wailmer, Bidoof, Cottonee, Petilil, Rufflet, Fletchling","Quests: Remove Pidgey, Spearow, Nidorina, Nidorino, Oddish, Paras, Bellsprout, Doduo, Krabby, Tangela, Staryu, Skarmory, Seedot, Slakoth, Meditite, Corphish, Woobat, Dwebble, Alomomola, Ferroseed, Spritzee, Swirlix"]},
 		{"ver":"1.10.56","date":"01.03.2022","change":["New Shinies: Yungoos, Rockruff","Change Raid Bosses (Welcome to Alola)","Quests: Add Pikipek, Yungoos"]},
@@ -1722,11 +1723,11 @@ function init() {
 	// change Raids after certain time
 	
 	var timenow = new Date().getTime();
-	if (timenow > 1646125200000) {
+	if (timenow > 1647334800000) {
 		//changelogjson["items"].unshift({"ver":"1.10.42","date":"24.01.2022","change":["Change Raid Bosses (Return of Regice)"]});
 		raids = {
-			"tier4":["3M"],
-			"tier5":[785]
+			"tier4":["428M"],
+			"tier5":["641T"]
 		};
 	} 
 
