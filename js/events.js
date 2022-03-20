@@ -2,7 +2,6 @@
 {"de":"Alola-Jahreszeit","en":"Season of Alola","start":1646125200000,"end":1654070400000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/alola/"},
 {"de":"GBL Zwischensaison","en":"GBL Interlude Season","start":1646168400000,"end":1654113600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-interlude-season/"},
 {"de":"März Forschungsdurchbruch","en":"March Research Breakthrough","start":1646168400000,"end":1648843200000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/march-2022-content-update/"},
-{"de":"Farbfestival","en":"Festival of Colors","start":1647334800000,"end":1647802800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/festivalofcolors-2022/"},
 {"de":"Boreos (Tiergeistform) in Raids","en":"Tornadus (Therian Forme) in Raids","start":1647334800000,"end":1647939600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/march-2022-content-update/"},
 {"de":"Mega-Schlapor in Mega-Raids","en":"Mega Lopunny in Mega Raids","start":1647334800000,"end":1647939600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/march-2022-content-update/"},
 {"de":"GBL - Meisterliga und Love-Cup","en":"GBL - Master League and Love Cup","start":1647374400000,"end":1647979200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-interlude-season/"},
