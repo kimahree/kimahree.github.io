@@ -5,8 +5,7 @@
 {"de":"Kapu-Fala in Raids","en":"Tapu Lele in Raids","start":1647939600000,"end":1649145600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/march-2022-content-update/"},
 {"de":"Mega-Glurak Y in Mega-Raids","en":"Mega Charizard Y in Mega Raids","start":1647939600000,"end":1649145600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/march-2022-content-update/"},
 {"de":"GBL - Hyperliga und Fang-Cup","en":"GBL - Ultra League and Catch Cup","start":1648584000000,"end":1649188800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-interlude-season/"},
-{"de":"Kapu-Fala Raidstunde","en":"Tapu Lele Raid Hour","start":1648656000000,"end":1648659600000,"color":"#ffffe6","url":"https://pokemongolive.com/post/march-2022-content-update/"},
-{"de":"April, April! 2022","en":"April Fools' 2-Oh?-22","start":1648800000000,"end":1648800000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/april-2022-content-update/"},
+{"de":"April, April! 2022","en":"April Fools' 2-Oh?-22","start":1648800000000,"end":1648850340000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/april-2022-content-update/"},
 {"de":"April Forschungsdurchbruch","en":"April Research Breakthrough","start":1648843200000,"end":1651435200000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/april-2022-content-update/"},
 {"de":"Rocket-Teamausflug","en":"All-Hands Rocket Retreat","start":1648972800000,"end":1649354400000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/april-2022-content-update/"},
 {"de":"Voltolos (Tiergeistform) in Raids","en":"Thundurus (Therian Forme) in Raids","start":1649145600000,"end":1649750400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/april-2022-content-update/"},
@@ -41,6 +40,11 @@
 {"de":"GBL - alle Ligen","en":"GBL - all Leagues","start":1653422400000,"end":1654113600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-interlude-season/"},
 {"de":"GO-Kampftag: Mega-Sternenstaub-Überraschung","en":"GO Battle Day: Mega Stardust Surprise","start":1653775200000,"end":1653861540000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-interlude-season/"},
 {"de":"GBL Saison 11?","en":"GBL Season 11?","start":1654113600000,"end":1654113600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-interlude-season/"},
+{"de":"Pokémon GO Fest 2022 - weltweites Event","en":"Pokémon GO Fest 2022 - global event","start":1654329600000,"end":1654452000000,"color":"#fdddfd","url":"https://pokemongolive.com/post/gofest2022-savethedate/"},
+{"de":"Pokémon GO Fest 2022 - Berlin","en":"Pokémon GO Fest 2022 - Berlin","start":1656662400000,"end":1656871200000,"color":"#fdddfd","url":"https://pokemongolive.com/post/gofest2022-savethedate/"},
+{"de":"Pokémon GO Fest 2022 - Seattle","en":"Pokémon GO Fest 2022 - Seattle","start":1658509200000,"end":1658718000000,"color":"#fdddfd","url":"https://pokemongolive.com/post/gofest2022-savethedate/"},
+{"de":"Pokémon GO Fest 2022 - Sapporo","en":"Pokémon GO Fest 2022 - Sapporo","start":1659661200000,"end":1659870000000,"color":"#fdddfd","url":"https://pokemongolive.com/post/gofest2022-savethedate/"},
+{"de":"Pokémon GO Fest 2022 - Abschluss-Event","en":"Pokémon GO Fest 2022 - Finale","start":1661587200000,"end":1661623200000,"color":"#fdddfd","url":"https://pokemongolive.com/post/gofest2022-savethedate/"},
 ];
 
 var colors = [
