@@ -5,7 +5,7 @@
 {"de":"Kapu-Fala in Raids","en":"Tapu Lele in Raids","start":1647939600000,"end":1649145600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/march-2022-content-update/"},
 {"de":"Mega-Glurak Y in Mega-Raids","en":"Mega Charizard Y in Mega Raids","start":1647939600000,"end":1649145600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/march-2022-content-update/"},
 {"de":"GBL - Hyperliga und Fang-Cup","en":"GBL - Ultra League and Catch Cup","start":1648584000000,"end":1649188800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-interlude-season/"},
-{"de":"April, April! 2022","en":"April Fools' 2-Oh?-22","start":1648800000000,"end":1648850340000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/april-2022-content-update/"},
+{"de":"April, April! 2022","en":"April Fools' 2-Oh?-22","start":1648800000000,"end":1648850340000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/april-fools-2022/"},
 {"de":"April Forschungsdurchbruch","en":"April Research Breakthrough","start":1648843200000,"end":1651435200000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/april-2022-content-update/"},
 {"de":"Rocket-Teamausflug","en":"All-Hands Rocket Retreat","start":1648972800000,"end":1649354400000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/april-2022-content-update/"},
 {"de":"Voltolos (Tiergeistform) in Raids","en":"Thundurus (Therian Forme) in Raids","start":1649145600000,"end":1649750400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/april-2022-content-update/"},
