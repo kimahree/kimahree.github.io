@@ -911,7 +911,7 @@ var pokemon = [
 {"dex":641,"name":"Boreos (Inkarnation)","de":"Boreos (Inkarnationsform)","en":"Tornadus (Incarnate Forme)","legendary":true,"getshiny":true},
 {"dex":"641T","name":"Boreos (Tiergeist)","de":"Boreos (Tiergeistform)","en":"Tornadus (Therian Forme)","legendary":true,"getshiny":true},
 {"dex":642,"name":"Voltolos (Inkarnation)","de":"Voltolos (Inkarnationsform)","en":"Thundurus (Incarnate Forme)","legendary":true,"getshiny":true},
-{"dex":"642T","name":"Voltolos (Tiergeist)","de":"Voltolos (Tiergeistform)","en":"Thundurus (Therian Forme)","legendary":true},
+{"dex":"642T","name":"Voltolos (Tiergeist)","de":"Voltolos (Tiergeistform)","en":"Thundurus (Therian Forme)","legendary":true,"getshiny":true},
 {"dex":643,"name":"Reshiram","legendary":true,"getshiny":true},
 {"dex":644,"name":"Zekrom","legendary":true,"getshiny":true},
 {"dex":645,"name":"Demeteros (Inkarnation)","de":"Demeteros (Inkarnationsform)","en":"Landorus (Incarnate Forme)","legendary":true,"getshiny":true},
@@ -1351,6 +1351,7 @@ var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",28,29,30
 
 var changelogjson = {
     "items": [
+		{"ver":"1.10.65","date":"05.04.2022","change":["New Shiny: Therian Forme Thundurus","Change Raid Bosses (Return of Therian Forme Thundurus)"]},
 		{"ver":"1.10.64","date":"03.04.2022","change":["Quests: Add Sneasel, Scraggy"]},
 		{"ver":"1.10.63","date":"01.04.2022","change":["Quests: Add Caterpie, Weedle, Rattata, Alolan Rattata, Paras, Marill, Skarmory, Shinx, Combee, Croagunk, Karrablast, Shelmet","Quests: Remove Diglett, Psyduck, Mankey, Abra, Machop, Drowzee, Alolan Exeggutor, Ledyba, Spinarak, Wooper, Larvitar, Makuhita, Nosepass, Bidoof, Petilil, Rufflet, Fletchling"]},
 		{"ver":"1.10.62","date":"29.03.2022","change":["Quests: Remove Caterpie, Paras, Parasect, Exeggcute, Sunkern, Wurmple, Seedot, Ferroseed, Fomantis"]},
