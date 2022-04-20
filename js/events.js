@@ -4,8 +4,6 @@
 {"de":"April Forschungsdurchbruch","en":"April Research Breakthrough","start":1648843200000,"end":1651435200000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/april-2022-content-update/"},
 {"de":"Kapu-Toro in Raids","en":"Tapu Bulu in Raids","start":1649750400000,"end":1650960000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/april-2022-content-update/"},
 {"de":"Mega-Tauboss in Mega-Raids","en":"Mega Pidgeot in Mega Raids","start":1649750400000,"end":1651219200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/april-2022-content-update/"},
-{"de":"GBL - Superliga und Mini-Cup","en":"GBL - Great League and Little Cup","start":1649793600000,"end":1650398400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-interlude-season/"},
-{"de":"Myrapla Rampenlichtstunde (2x Fang-Sternenstaub)","en":"Oddish Spotlight Hour (2x Catch Stardust)","start":1650384000000,"end":1650387600000,"color":"#ffffe6","url":"https://pokemongolive.com/post/april-2022-content-update/"},
 {"de":"GBL - Hyperliga und Retro-Cup","en":"GBL - Ultra League and Retro Cup","start":1650398400000,"end":1651003200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-interlude-season/"},
 {"de":"Umweltwoche","en":"Sustainability Week","start":1650441600000,"end":1650909600000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/sustainability-week-2022/"},
 {"de":"Kapu-Toro Raidstunde","en":"Tapu Bulu Raid Hour","start":1650470400000,"end":1650474000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/april-2022-content-update/"},
