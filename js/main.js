@@ -915,7 +915,7 @@ var pokemon = [
 {"dex":643,"name":"Reshiram","legendary":true,"getshiny":true},
 {"dex":644,"name":"Zekrom","legendary":true,"getshiny":true},
 {"dex":645,"name":"Demeteros (Inkarnation)","de":"Demeteros (Inkarnationsform)","en":"Landorus (Incarnate Forme)","legendary":true,"getshiny":true},
-{"dex":"645T","name":"Demeteros (Tiergeist)","de":"Demeteros (Tiergeistform)","en":"Landorus (Therian Forme)","legendary":true},
+{"dex":"645T","name":"Demeteros (Tiergeist)","de":"Demeteros (Tiergeistform)","en":"Landorus (Therian Forme)","legendary":true,"getshiny":true},
 {"dex":646,"name":"Kyurem","legendary":true,"getshiny":true},
 {"dex":"646B","name":"Schwarzes Kyurem","de":"Schwarzes Kyurem","en":"Black Kyurem","legendary":true},
 {"dex":"646W","name":"Weißes Kyurem","de":"Weißes Kyurem","en":"White Kyurem","legendary":true},
@@ -1354,6 +1354,7 @@ var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",28,29,30
 
 var changelogjson = {
     "items": [
+		{"ver":"1.10.72","date":"26.04.2022","change":["New Shiny: Therian Forme Landorus","Change Raid Bosses (Return of Therian Forme Landorus)"]},
 		{"ver":"1.10.71","date":"25.04.2022","change":["Quests: Remove Turtwig, Cherubi, Snivy, Trubbish, Chespin, Phantump"]},
 		{"ver":"1.10.70","date":"23.04.2022","change":["New Shiny: Stufful"]},
 		{"ver":"1.10.69","date":"20.04.2022","change":["New Shiny: Cherubi","Quests: Add Turtwig, Cherubi, Snivy, Trubbish, Chespin, Phantump","Updated code for planned raid boss changes"]},
