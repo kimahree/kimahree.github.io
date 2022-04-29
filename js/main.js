@@ -1343,7 +1343,10 @@ var specialfilter = [
 var raids = {};
 
 var raidjson = [
-{"start":1651204800000,"tier4":["115M"],"tier5":["645T"]}
+{"start":1651204800000,"tier4":["115M"],"tier5":["645T"]},
+{"start":1651564800000,"tier4":["380M","381M"]},
+{"start":1652169600000,"tier4":["9M"],"tier5":[788]},
+{"start":1653465600000,"tier4":["334M"],"tier5":[785,786,787,788]},
 ];
 
 var quests = [1,4,7,10,13,19,"19A",37,46,60,95,129,133,138,140,142,147,152,155,158,183,185,187,193,198,206,209,226,227,252,255,258,280,320,327,345,347,371,374,403,415,443,449,453,459,546,588,616,618,659];
@@ -1352,6 +1355,7 @@ var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",28,29,30
 
 var changelogjson = {
     "items": [
+		{"ver":"1.10.73","date":"29.04.2022","change":["Change Raid Bosses (Debut of Mega Kangaskhan)","Scheduled all known raid bosses in May"]},
 		{"ver":"1.10.72","date":"26.04.2022","change":["New Shiny: Therian Forme Landorus","Change Raid Bosses (Return of Therian Forme Landorus)"]},
 		{"ver":"1.10.71","date":"25.04.2022","change":["Quests: Remove Turtwig, Cherubi, Snivy, Trubbish, Chespin, Phantump"]},
 		{"ver":"1.10.70","date":"23.04.2022","change":["New Shiny: Stufful"]},
