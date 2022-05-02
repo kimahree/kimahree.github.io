@@ -1,12 +1,9 @@
 ﻿var events = [
 {"de":"Alola-Jahreszeit","en":"Season of Alola","start":1646125200000,"end":1654070400000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/alola/"},
 {"de":"GBL Zwischensaison","en":"GBL Interlude Season","start":1646168400000,"end":1654113600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-interlude-season/"},
-{"de":"April Forschungsdurchbruch","en":"April Research Breakthrough","start":1648843200000,"end":1651435200000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/april-2022-content-update/"},
 {"de":"Demeteros (Tiergeistform) in Raids","en":"Landorus (Therian Forme) in Raids","start":1650960000000,"end":1651564800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/april-2022-content-update/"},
 {"de":"GBL - Meisterliga und Kanto-Cup","en":"GBL - Master League and Kanto Cup","start":1651003200000,"end":1651608000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-interlude-season/"},
 {"de":"Mega-Kangama in Mega-Raids","en":"Mega Kangaskhan in Mega Raids","start":1651204800000,"end":1651564800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/mega-evolution-2022-update-global/"},
-{"de":"Ein Mega-Moment","en":"A Mega Moment","start":1651219200000,"end":1651428000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/mega-evolution-2022-update-global/"},
-{"de":"Mega-Kangama Raid-Tag","en":"Mega Kangaskhan Raid Day","start":1651395600000,"end":1651406400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/mega-evolution-2022-update-global/"},
 {"de":"Mai Forschungsdurchbruch","en":"May Research Breakthrough","start":1651435200000,"end":1654113600000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/may-2022-content-update/"},
 {"de":"Mega-Latias und Mega-Latios in Mega-Raids","en":"Mega Latias and Mega Latios in Mega Raids","start":1651564800000,"end":1652169600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/air-adventures-global/"},
 {"de":"Pokémon Luftabenteuer","en":"Pokémon Air Adventures","start":1651564800000,"end":1652032800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/air-adventures-global/"},
