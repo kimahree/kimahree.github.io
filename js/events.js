@@ -3,7 +3,6 @@
 {"de":"GBL Zwischensaison","en":"GBL Interlude Season","start":1646168400000,"end":1654113600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-interlude-season/"},
 {"de":"Mai Forschungsdurchbruch","en":"May Research Breakthrough","start":1651435200000,"end":1654113600000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/may-2022-content-update/"},
 {"de":"Mega-Latias und Mega-Latios in Mega-Raids","en":"Mega Latias and Mega Latios in Mega Raids","start":1651564800000,"end":1652169600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/air-adventures-global/"},
-{"de":"Pokémon Luftabenteuer","en":"Pokémon Air Adventures","start":1651564800000,"end":1652032800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/air-adventures-global/"},
 {"de":"GBL - Superliga und Flug-Cup","en":"GBL - Great League and Flying Cup","start":1651608000000,"end":1652212800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-interlude-season/"},
 {"de":"Kapu-Kime in Raids","en":"Tapu Fini in Raids","start":1652169600000,"end":1653465600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/may-2022-content-update/"},
 {"de":"Mega-Turtok in Mega-Raids","en":"Mega Blastoise in Mega Raids","start":1652169600000,"end":1653465600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/may-2022-content-update/"},
