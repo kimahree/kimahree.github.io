@@ -1354,6 +1354,7 @@ var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",28,29,30
 
 var changelogjson = {
     "items": [
+		{"ver":"1.10.76","date":"10.05.2022","change":["Change Raid Bosses (Debut of Tapu Fini)"]},
 		{"ver":"1.10.76","date":"08.05.2022","change":["Quests: Remove Doduo, Swablu, Emolga"]},
 		{"ver":"1.10.75","date":"03.05.2022","change":["Change Raid Bosses (Debut of Mega Latias/Latios)","Quests: Add Doduo, Swablu, Emolga"]},
 		{"ver":"1.10.74","date":"01.05.2022","change":["Quests: Add Pikachu, Jigglypuff, Machop, Exeggcute, Ledyba, Spinarak, Misdreavus, Remoraid, Zigzagoon, Carvanha, Shuppet, Duskull, Lillipup, Klink","Quests: Remove Caterpie, Weedle, Rattata, Alolan Rattata, Paras, Marill, Skarmory, Wailmer, Shinx, Combee, Croagunk, Cottonee, Karrablast, Shelmet"]},

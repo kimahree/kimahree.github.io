@@ -9,7 +9,7 @@
 {"de":"Camaub Rampenlichtstunde (2x Verschick-Bonbons)","en":"Numel Spotlight Hour (2x Transfer Candy)","start":1652198400000,"end":1652202000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/may-2022-content-update/"},
 {"de":"GBL - Hyperliga und Element-Cup","en":"GBL - Ultra League and Element Cup","start":1652212800000,"end":1652817600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-interlude-season/"},
 {"de":"Kapu-Kime Raidstunde","en":"Tapu Fini Raid Hour","start":1652284800000,"end":1652288400000,"color":"#ffffe6","url":"https://pokemongolive.com/post/may-2022-content-update/"},
-{"de":"Wasserfestival","en":"Water Festival","start":1652342400000,"end":1653069600000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/may-2022-content-update/"},
+{"de":"Wasserfestival","en":"Water Festival","start":1652342400000,"end":1653069600000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/water-festival-2022/"},
 {"de":"Pokémon GO Safari Zone: Sevilla","en":"Pokémon GO Safari Zone: Seville","start":1652432400000,"end":1652641200000,"color":"#fdddfd","url":"https://pokemongolive.com/post/safari-zone-seville-2022/"},
 {"de":"Karpador Rampenlichtstunde (2x Entwickel-EP)","en":"Magikarp Spotlight Hour (2x Evolve XP)","start":1652803200000,"end":1652806800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/may-2022-content-update/"},
 {"de":"GBL - Meisterliga und ML-Premier-Classic","en":"GBL - Master League and Master Premier Classic","start":1652817600000,"end":1653422400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-interlude-season/"},
