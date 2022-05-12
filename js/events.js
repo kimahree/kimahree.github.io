@@ -2,13 +2,9 @@
 {"de":"Alola-Jahreszeit","en":"Season of Alola","start":1646125200000,"end":1654070400000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/alola/"},
 {"de":"GBL Zwischensaison","en":"GBL Interlude Season","start":1646168400000,"end":1654113600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-interlude-season/"},
 {"de":"Mai Forschungsdurchbruch","en":"May Research Breakthrough","start":1651435200000,"end":1654113600000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/may-2022-content-update/"},
-{"de":"Mega-Latias und Mega-Latios in Mega-Raids","en":"Mega Latias and Mega Latios in Mega Raids","start":1651564800000,"end":1652169600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/air-adventures-global/"},
-{"de":"GBL - Superliga und Flug-Cup","en":"GBL - Great League and Flying Cup","start":1651608000000,"end":1652212800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-interlude-season/"},
 {"de":"Kapu-Kime in Raids","en":"Tapu Fini in Raids","start":1652169600000,"end":1653465600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/may-2022-content-update/"},
 {"de":"Mega-Turtok in Mega-Raids","en":"Mega Blastoise in Mega Raids","start":1652169600000,"end":1653465600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/may-2022-content-update/"},
-{"de":"Camaub Rampenlichtstunde (2x Verschick-Bonbons)","en":"Numel Spotlight Hour (2x Transfer Candy)","start":1652198400000,"end":1652202000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/may-2022-content-update/"},
 {"de":"GBL - Hyperliga und Element-Cup","en":"GBL - Ultra League and Element Cup","start":1652212800000,"end":1652817600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-interlude-season/"},
-{"de":"Kapu-Kime Raidstunde","en":"Tapu Fini Raid Hour","start":1652284800000,"end":1652288400000,"color":"#ffffe6","url":"https://pokemongolive.com/post/may-2022-content-update/"},
 {"de":"Wasserfestival","en":"Water Festival","start":1652342400000,"end":1653069600000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/water-festival-2022/"},
 {"de":"Pokémon GO Safari Zone: Sevilla","en":"Pokémon GO Safari Zone: Seville","start":1652432400000,"end":1652641200000,"color":"#fdddfd","url":"https://pokemongolive.com/post/safari-zone-seville-2022/"},
 {"de":"Karpador Rampenlichtstunde (2x Entwickel-EP)","en":"Magikarp Spotlight Hour (2x Evolve XP)","start":1652803200000,"end":1652806800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/may-2022-content-update/"},
@@ -28,7 +24,7 @@
 {"de":"Pokémon GO Fest 2022 - weltweites Event: Sonntag","en":"Pokémon GO Fest 2022 - global event: Sunday","start":1654416000000,"end":1654444800000,"color":"#fdddfd","url":"https://pokemongolive.com/post/gofest2022-tickets-shaymin-fulldetails/"},
 {"de":"Pokémon GO Fest 2022 - Berlin","en":"Pokémon GO Fest 2022 - Berlin","start":1656658800000,"end":1656864000000,"color":"#fdddfd","url":"https://pokemongolive.com/events/gofest-2022-berlin/"},
 {"de":"Pokémon GO Fest 2022 - Seattle","en":"Pokémon GO Fest 2022 - Seattle","start":1658509200000,"end":1658718000000,"color":"#fdddfd","url":"https://pokemongolive.com/post/gofest2022-savethedate/"},
-{"de":"Pokémon GO Fest 2022 - Sapporo","en":"Pokémon GO Fest 2022 - Sapporo","start":1659661200000,"end":1659870000000,"color":"#fdddfd","url":"https://pokemongolive.com/post/gofest2022-savethedate/"},
+{"de":"Pokémon GO Fest 2022 - Sapporo","en":"Pokémon GO Fest 2022 - Sapporo","start":1659654000000,"end":1659870000000,"color":"#fdddfd","url":"https://pokemongolive.com/post/gofest2022-sapporo-tickets/"},
 {"de":"Pokémon GO Fest 2022 - Abschluss-Event","en":"Pokémon GO Fest 2022 - Finale","start":1661587200000,"end":1661623200000,"color":"#fdddfd","url":"https://pokemongolive.com/post/gofest2022-savethedate/"},
 ];
 
