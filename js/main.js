@@ -550,7 +550,7 @@ var pokemon = [
 {"dex":338,"name":"Sonnfel","en":"Solrock","regional":true,"getshiny":true},
 {"dex":339,"name":"Schmerbe","en":"Barboach","getshiny":true},
 {"dex":340,"name":"Welsar","en":"Whiscash","evolved":true},
-{"dex":341,"name":"Krebscorps","en":"Corphish"},
+{"dex":341,"name":"Krebscorps","en":"Corphish","getshiny":true},
 {"dex":342,"name":"Krebutack","en":"Crawdaunt","evolved":true},
 {"dex":343,"name":"Puppance","en":"Baltoy","getshiny":true},
 {"dex":344,"name":"Lepumentas","en":"Claydol","evolved":true},
@@ -1353,6 +1353,7 @@ var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",28,29,30
 
 var changelogjson = {
     "items": [
+		{"ver":"1.10.78","date":"13.05.2022","change":["New Shiny: Corphish"]},
 		{"ver":"1.10.77","date":"12.05.2022","change":["New Shiny: Binacle","Quests: Add Lapras, Marill, Wailmer, Luvdisc, Binacle, Dewpider"]},
 		{"ver":"1.10.76","date":"10.05.2022","change":["Change Raid Bosses (Debut of Tapu Fini)"]},
 		{"ver":"1.10.76","date":"08.05.2022","change":["Quests: Remove Doduo, Swablu, Emolga"]},
