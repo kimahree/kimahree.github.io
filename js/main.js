@@ -1359,7 +1359,7 @@ var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",28,29,30
 
 var changelogjson = {
     "items": [
-		{"ver":"1.10.81","date":"02.06.2022","change":["Quests: Add Venonat, Diglett, Alolan Diglett, Geodude, Graveler, Grimer, Cubone, Hitmonlee, Hitmonchan, Rhyhorn, Chinchou, Swinub, Phanpy, Larvitar, Trapinch, Baltoy, Joltik"."Quests: Remove Pikachu, Jigglypuff, Machop, Exeggcute, Ledyba, Spinarak, Misdreavus, Remoraid, Zigzagoon, Carvanha, Shuppet, Duskull, Lillipup, Klink"]},
+		{"ver":"1.10.82","date":"02.06.2022","change":["Quests: Add Venonat, Diglett, Alolan Diglett, Geodude, Graveler, Grimer, Cubone, Hitmonlee, Hitmonchan, Rhyhorn, Chinchou, Swinub, Phanpy, Larvitar, Trapinch, Baltoy, Joltik","Quests: Remove Pikachu, Jigglypuff, Machop, Exeggcute, Ledyba, Spinarak, Misdreavus, Remoraid, Zigzagoon, Carvanha, Shuppet, Duskull, Lillipup, Klink"]},
 		{"ver":"1.10.81","date":"31.05.2022","change":["Change Raid Bosses","Quests: Remove Rowlet, Litten, Popplio, Pikipek, Yungoos"]},
 		{"ver":"1.10.80","date":"25.05.2022","change":["Change Raid Bosses","Quests: Add Rowlet, Litten, Popplio, Pikipek, Yungoos"]},
 		{"ver":"1.10.79","date":"20.05.2022","change":["Quests: Remove Lapras, Marill, Wailmer, Luvdisc, Binacle, Dewpider"]},
