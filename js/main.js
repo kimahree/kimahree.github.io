@@ -20,9 +20,10 @@ var t5over = 0;
 var starttimer = new Date(14400000 + hatchtimer * 60000);
 var endtimer = new Date(67500000 + hatchtimer * 60000);
 
+var remoteenabled = 1;
 var secret = 0;
 
-var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_remote","txt_instr","txt_button","txt_button2","txt_multi","txt_chgym","txt_cre_close","txt_cl_close","txt_reg_close","txt_boq_intro","txt_boq_generate","txt_evt_current","txt_evt_upcoming"];
+var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_remote","txt_instr","txt_button","txt_button2","txt_multi","txt_chgym","txt_cre_close","txt_cl_close","txt_reg_close","txt_boq_intro","txt_boq_generate","txt_evt_current","txt_evt_upcoming","txt_hide_gbl"];
 
 var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beeinträchtigt und fehlerhaft.",
 "Zur Hauptseite",
@@ -43,7 +44,8 @@ var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beein
 'Auf dieser Seite kannst du für <a href="https://www.bookofquests.de/">Book of Quests</a> einen Link erstellen, bei dem nur bestimmte Pokémon/Items auf der Karte angezeigt werden. Klicke dazu alle gewünschten Pokémon/Items an und drücke dann auf "Link erstellen!".<br>Um einen Negativfilter zu erstellen, klicke das Pokémon/Item zweimal an.',
 "Link erstellen!",
 "Aktuelle Events",
-"Bevorstehende Events"
+"Bevorstehende Events",
+"Keine GBL"
 ];
 
 var txt_en = ["Attention, you're currently on the beta page. Functionality might be compromised and bugged.",
@@ -65,7 +67,8 @@ var txt_en = ["Attention, you're currently on the beta page. Functionality might
 'On this site you can generate a link to <a href="https://www.bookofquests.de/">Book of Quests</a>, which will only show certain Pokémon/items on the map. Click all the Pokémon/items you want to see and then press "Generate Link!".<br>Click a Pokémon/item twice to generate a negative filter.',
 "Generate Link!",
 "Current events",
-"Upcoming events"
+"Upcoming events",
+"Hide GBL"
 ];
 
 var evt_txt_de = ["bis ",
@@ -1345,15 +1348,18 @@ var raids = {};
 var raidjson = [
 {"start":1654448400000,"tier4":["208M"],"tier5":[382]},
 {"start":1654588800000,"tier1":["201F"],"tier4":["142M"],"tier5":[383]},
-{"start":1655366400000,"tier4":["3M","6X","6Y","9M"],"tier5":[150]}
+{"start":1655366400000,"tier4":["3M","6X","6Y","9M"],"tier5":[150]},
+{"start":1656158400000,"tier2":[634],"tier4":["3M","6X","6Y","9M"],"tier5":[150]},
+{"start":1656176400000,"tier4":["3M","6X","6Y","9M"],"tier5":[150]}
 ];
 
 var quests = [1,4,7,37,48,50,"50A",60,74,75,88,95,104,106,107,111,129,133,138,140,142,147,152,155,158,170,185,187,193,198,206,209,220,226,231,246,252,255,258,280,327,328,343,345,347,371,374,443,449,459,595,618,659];
-var quests_event = [408,410,564,566,696,698];
+var quests_event = [];
 var legacy = [1,3,4,7,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",28,29,30,31,32,33,34,35,36,37,"37A",38,39,40,41,42,43,44,46,47,48,50,"50A",51,52,"52A","52G",54,55,56,58,59,60,61,63,66,67,69,70,72,73,74,"74A",75,77,"77G",79,"79G",80,81,"83G",84,85,86,87,88,"88A",89,90,92,93,95,96,98,100,102,103,"103A",104,"105A",106,107,108,109,111,112,113,114,117,118,120,121,123,124,125,126,127,129,131,132,133,135,136,137,138,140,142,143,147,152,153,155,156,158,163,164,165,167,170,171,177,179,182,183,184,185,187,188,190,191,193,194,196,197,198,200,202,203,204,206,207,209,213,215,216,218,219,220,223,224,225,226,227,228,231,234,238,241,246,252,255,256,258,259,261,263,"263G",265,270,273,274,276,277,280,285,286,287,290,293,294,296,299,300,302,303,304,307,309,310,311,312,313,314,315,316,317,318,320,322,325,327,328,329,331,333,335,336,337,338,339,341,343,345,347,349,351,"351I","351R","351S",353,355,358,359,361,362,363,366,370,371,374,387,390,391,393,396,399,401,403,408,410,412,"412S","412T",415,418,420,"421S",422,425,426,427,431,434,436,442,443,449,451,453,459,495,498,501,504,506,509,519,522,524,527,529,531,535,536,540,546,548,554,"554G",557,559,562,"562G",564,566,568,572,574,580,582,587,588,590,592,594,595,597,599,602,607,613,615,616,618,621,622,627,629,633,650,653,656,659,661,667,676,677,682,684,686,688,690,692,694,696,698,702,708,722,725,728,731,734,741,751,753,759,819,831,870];
 
 var changelogjson = {
     "items": [
+		{"ver":"1.11","date":"12.06.2022","change":["Preparation for special post-Deino CD raids","Events: Add option to hide all GBL events","Quests: Remove Cranidos, Shieldon, Tirtouga, Archen, Tyrunt, Amaura"]},
 		{"ver":"1.10.86","date":"07.06.2022","change":["New Shinies: Tirtouga, Archen","Change Raid Bosses (Adventure Week)", "Quests: Add Cranidos, Shieldon, Tirtouga, Archen, Tyrunt, Amaura"]},
 		{"ver":"1.10.85","date":"06.06.2022","change":["Change Raid Bosses (End of GO Fest 2022)"]},
 		{"ver":"1.10.84","date":"05.06.2022","change":["Change Raid Bosses (Debut of Nihilego)"]},
@@ -1856,13 +1862,13 @@ function init() {
 		t2 = raids.tier2.length; 
 	} catch {}
 	if (t2 > 0) {
-		txt += '<optgroup id="t2" label="2er"><option ';
+		txt += '<optgroup id="t2" label="Spezial-4er"><option ';
 		if (t2 == 1) {
 			txt += "hidden disabled ";
 		}
-		txt += 'value="2er" style="font-style:italic">2er Ei</option>';
-		raid_de.push("2er Ei");
-		raid_en.push("Tier 2 Egg");
+		txt += 'value="4er" style="font-style:italic">4er Ei</option>';
+		raid_de.push("4er Ei");
+		raid_en.push("Tier 4 Egg");
 		for (i = 0; i < t2; i++) {
 			var rp = getPkmnByDex(raids.tier2[i])[0];
 			var d = (rp.de) ? rp.de:rp.name;
@@ -2143,6 +2149,8 @@ function createEventlist(lang) {
 	if (upcoming == 0) {
 		document.getElementById("upcoming").innerHTML += eval("evt_txt_"+lang+"[7]") + " :(<br><br>"; 
 	}
+
+	hideGBL();
 }
 
 function generateRaid(raidtext) {
@@ -2299,7 +2307,12 @@ function generateRaid(raidtext) {
 		}
 	}
 	text += "<br><br>📍 <b>vor Ort</b><br>" + player;
-	text += "<br><br>🏠 <b>Fern</b> <i>(Limit 10!)</i><br>" + remote + "<br>";
+
+	if (remoteenabled == 1) {
+		text += "<br><br>🏠 <b>Fern</b> <i>(Limit 10!)</i><br>" + remote;
+	}
+
+	text += "<br>"
   }
   
   if (region == "Marzahn") {
@@ -2647,6 +2660,15 @@ function TierCheck() {
 			checkTime();
 		}
 	}
+	if (remoteenabled == 1 && ind == t2index+1) {
+		document.getElementById("remote").disabled = true;
+		document.getElementById("remote").placeholder = "Kein Fernraid möglich! / No remote raid possible!"; 
+		remoteenabled = 0;
+	} else if (remoteenabled == 0 && ind != t2index+1) {
+		document.getElementById("remote").disabled = false;
+		document.getElementById("remote").placeholder = ""; 
+		remoteenabled = 1;
+	}
 }
 
 function pasteTelegram() {
@@ -2916,6 +2938,14 @@ function generateLink() {
 	if (hidden) {
 		$('#newLink').toggle();
 		hidden = 0;
+	}
+}
+
+function hideGBL() {
+	if (document.getElementById("hide_gbl").checked) {
+		$("#events div[style='background:#f5e6ff']").attr("style", function(i, origValue){return origValue + "; display: none;"});
+	} else {
+		$("#events div[style='background:#f5e6ff; display: none;']").attr("style", function(i, origValue){return origValue.substr(0,origValue.length-16)});
 	}
 }
 
