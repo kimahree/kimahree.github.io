@@ -9,7 +9,7 @@
 {"de":"Mewtu Raidstunde","en":"Mewtwo Raid Hour","start":1656518400000,"end":1656522000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/june-2022-content-update/"},
 {"de":"GBL - Hyperliga und Kanto-Cup","en":"GBL - Ultra League and Kanto Cup","start":1656532800000,"end":1657137600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season11/"},
 {"de":"Pokémon GO Fest 2022 - Berlin","en":"Pokémon GO Fest 2022 - Berlin","start":1656658800000,"end":1656864000000,"color":"#fdddfd","url":"https://pokemongolive.com/events/gofest-2022-berlin/"},
-{"de":"Cresselia und Darkrai in Raids","en":"Cresselia and Darkrai in Raids","start":1656658800000,"end":1656864000000,"color":"#ffe6e6","url":"https://pokemongolive.com/de/post/gofest2022-berlin-tickets/"}, 
+{"de":"Cresselia und Darkrai in Raids","en":"Cresselia and Darkrai in Raids","start":1656646200000,"end":1656864000000,"color":"#ffe6e6","url":"https://pokemongolive.com/de/post/gofest2022-berlin-tickets/"}, 
 {"de":"Arktos in Raids","en":"Articuno in Raids","start":1656662400000,"end":1657188000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/july-2022-content-update/"}, 
 {"de":"Mega-Glurak X in Mega-Raids","en":"Mega Charizard X in Mega Raids","start":1656662400000,"end":1657188000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/july-2022-content-update/"}, 
 {"de":"Juli Forschungs-Durchbruch","en":"July Research Breakthrough","start":1656705600000,"end":1659384000000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/july-2022-content-update/"},
