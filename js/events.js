@@ -1,12 +1,6 @@
 ﻿var events = [
 {"de":"GO-Jahreszeit","en":"Season of GO","start":1654070400000,"end":1662019200000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/go/"},
-{"de":"Juni Forschungs-Durchbruch","en":"June Research Breakthrough","start":1654113600000,"end":1656705600000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/june-2022-content-update/"},
 {"de":"GBL Saison 11","en":"GBL Season 11","start":1654113600000,"end":1662062400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season11/"},
-{"de":"Pokémon-Sammelkartenspiel Crossover-Event","en":"Pokémon TCG Crossover Event","start":1655366400000,"end":1656612000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/Pokemon-TCG-Crossover-Event/"},
-{"de":"Mega-Bisaflor, Mega-Glurak X, Mega-Glurak Y und Mega-Turtok in Mega-Raids","en":"Mega Venusaur, Mega Charizard X, Mega Charizard Y and Mega Blastoise in Mega Raids","start":1655366400000,"end":1656662400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/june-2022-content-update/"},
-{"de":"GBL - Superliga und Retro-Cup","en":"GBL - Great League and Retro Cup","start":1655928000000,"end":1656532800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season11/"},
-{"de":"Mewtu mit Psychostoß in Raids","en":"Mewtwo with Psystrike in Raids","start":1655971200000,"end":1656662400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/june-2022-content-update/"}, 
-{"de":"Mewtu Raidstunde","en":"Mewtwo Raid Hour","start":1656518400000,"end":1656522000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/june-2022-content-update/"},
 {"de":"GBL - Hyperliga und Kanto-Cup","en":"GBL - Ultra League and Kanto Cup","start":1656532800000,"end":1657137600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season11/"},
 {"de":"Pokémon GO Fest 2022 - Berlin","en":"Pokémon GO Fest 2022 - Berlin","start":1656658800000,"end":1656864000000,"color":"#fdddfd","url":"https://pokemongolive.com/events/gofest-2022-berlin/"},
 {"de":"Cresselia und Darkrai in Raids","en":"Cresselia and Darkrai in Raids","start":1656646200000,"end":1656864000000,"color":"#ffe6e6","url":"https://pokemongolive.com/de/post/gofest2022-berlin-tickets/"}, 
