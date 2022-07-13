@@ -1346,8 +1346,6 @@ var specialfilter = [
 var raids = {};
 
 var raidjson = [
-{"start":1656658800000,"tier4":["6X"],"tier5":[144,488,491]},
-{"start":1656885600000,"tier4":["6X"],"tier5":[144]},
 {"start":1657188000000,"tier4":["6Y"],"tier5":[145]},
 {"start":1657792800000,"tier4":["18M"],"tier5":[146]},
 {"start":1658484000000,"tier4":["94M"],"tier5":[483]}
@@ -1359,6 +1357,8 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.11.5","date":"13.07.2022","change":["Change Raid Bosses (End of Anniversary Event)","Quests: Remove Pikachu, Turtwig, Chimchar, Piplup, Snivy, Tepig, Oshawott, Chespin, Fennekin, Froakie, Rowlet, Litten, Popplio"]},
+		{"ver":"1.11.4","date":"04.07.2022","change":["Change Raid Bosses (Anniversary Event)","Quests: Add Pikachu, Turtwig, Chimchar, Piplup, Snivy, Tepig, Oshawott, Chespin, Fennekin, Froakie, Rowlet, Litten, Popplio"]},
 		{"ver":"1.11.3","date":"01.07.2022","change":["New Shinys: Pansear, Foongus","Change Raid Bosses (GO Fest Berlin Special Raids)","Quests: Add Zubat, Meowth, Persian, Abra, Chansey, Hoothoot, Togetic, Natu, Aipom, Girafarig, Wingull, Glameow, Stunky, Cottonee","Quests: Remove Venonat, Diglett, Alolan Diglett, Geodude, Graveler, Grimer, Cubone, Hitmonlee, Hitmonchan, Rhyhorn, Chinchou, Swinub, Phanpy, Larvitar, Trapinch, Baltoy, Joltik"]},
 		{"ver":"1.11.2","date":"30.06.2022","change":["Preparation for July raids","Quests: Remove Ivysaur, Venusaur, Charmeleon, Charizard, Wartortle, Blastoise, Pikachu, Snorlax, Dragonite, Slaking, Wimpod"]},
 		{"ver":"1.11.1","date":"16.06.2022","change":["Quests: Add Ivysaur, Venusaur, Charmeleon, Charizard, Wartortle, Blastoise, Pikachu, Snorlax, Dragonite, Slaking, Wimpod"]},
