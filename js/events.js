@@ -12,7 +12,7 @@
 {"de":"Hisui-Entdeckungen","en":"Hisuian Discoveries","start":1658916000000,"end":1659434400000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/hisuian-discoveries/"},
 {"de":"Dialga Raidstunde","en":"Dialga Raid Hour","start":1658937600000,"end":1658941200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/july-2022-content-update/"},
 {"de":"GBL - Meisterliga und Hisui-Cup","en":"GBL - Master League and Hisui Cup","start":1658952000000,"end":1659556800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season11/"},
-{"de":"Hisui-Entdeckungen Raidtag","en":"Hisuian Discoveries Raid Day","start":1659258000000,"end":1659268800000,"color":"#e5fff9","url":"https://pokemongolive.com/post/gofest2022-seattle-ultraunlockchallenge/"},
+{"de":"Hisui-Washakwil Raidtag","en":"Hisuian Braviary Raid Day","start":1659258000000,"end":1659268800000,"color":"#e5fff9","url":"https://pokemongolive.com/post/gofest2022-seattle-ultraunlockchallenge/"},
 {"de":"GBL - Superliga und Element-Cup","en":"GBL - Great League and Element Cup","start":1659556800000,"end":1660161600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season11/"},
 {"de":"Pokémon GO Fest 2022 - Sapporo","en":"Pokémon GO Fest 2022 - Sapporo","start":1659654000000,"end":1659870000000,"color":"#fdddfd","url":"https://pokemongolive.com/post/gofest2022-sapporo-tickets/"},
 {"de":"GBL - Hyperliga und Sommer-Cup","en":"GBL - Ultra League and Summer Cup","start":1660161600000,"end":1660766400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season11/"},
