@@ -5,7 +5,7 @@
 {"de":"GBL - Hyperliga und Mini-Cup-Remix","en":"GBL - Ultra League and Little Cup Remix","start":1658347200000,"end":1658952000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season11/"},
 {"de":"Dialga in Raids","en":"Dialga in Raids","start":1658484000000,"end":1659254400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/july-2022-content-update/"},
 {"de":"Mega-Gengar in Mega-Raids","en":"Mega Gengar in Mega Raids","start":1658484000000,"end":1659254400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/july-2022-content-update/"},  
-{"de":"Hisui-Entdeckungen","en":"Hisuian Discoveries","start":1658916000000,"end":1659434400000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/hisuian-discoveries/"},
+{"de":"Hisui-Entdeckungen","en":"Hisuian Discoveries","start":1658908800000,"end":1659463200000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/hisuian-discoveries/"},
 {"de":"Dialga Raidstunde","en":"Dialga Raid Hour","start":1658937600000,"end":1658941200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/july-2022-content-update/"},
 {"de":"GBL - Meisterliga und Hisui-Cup","en":"GBL - Master League and Hisui Cup","start":1658952000000,"end":1659556800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season11/"},
 {"de":"Hisui-Washakwil Raidtag","en":"Hisuian Braviary Raid Day","start":1659258000000,"end":1659268800000,"color":"#e5fff9","url":"https://pokemongolive.com/post/gofest2022-seattle-ultraunlockchallenge/"},
