@@ -2,15 +2,10 @@
 {"de":"GO-Jahreszeit","en":"Season of GO","start":1654070400000,"end":1662019200000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/go/"},
 {"de":"GBL Saison 11","en":"GBL Season 11","start":1654113600000,"end":1662062400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season11/"},
 {"de":"Juli Forschungs-Durchbruch","en":"July Research Breakthrough","start":1656705600000,"end":1659384000000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/july-2022-content-update/"},
-{"de":"GBL - Hyperliga und Mini-Cup-Remix","en":"GBL - Ultra League and Little Cup Remix","start":1658347200000,"end":1658952000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season11/"},
-{"de":"Dialga in Raids","en":"Dialga in Raids","start":1658484000000,"end":1659254400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/july-2022-content-update/"},
-{"de":"Mega-Gengar in Mega-Raids","en":"Mega Gengar in Mega Raids","start":1658484000000,"end":1659254400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/july-2022-content-update/"},  
 {"de":"Hisui-Entdeckungen","en":"Hisuian Discoveries","start":1658908800000,"end":1659463200000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/hisuian-discoveries/"},
-{"de":"Dialga Raidstunde","en":"Dialga Raid Hour","start":1658937600000,"end":1658941200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/july-2022-content-update/"},
 {"de":"GBL - Meisterliga und Hisui-Cup","en":"GBL - Master League and Hisui Cup","start":1658952000000,"end":1659556800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season11/"},
 {"de":"Palkia in Raids","en":"Palkia in Raids","start":1659254400000,"end":1660118400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/august-2022-content-update/"},
-{"de":"Mega-Rexblisar in Mega-Raids","en":"Mega Abomasnow in Mega Raids","start":1659254400000,"end":1660118400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/august-2022-content-update/"},  
-{"de":"Hisui-Washakwil Raidtag","en":"Hisuian Braviary Raid Day","start":1659258000000,"end":1659268800000,"color":"#e5fff9","url":"https://pokemongolive.com/post/gofest2022-seattle-ultraunlockchallenge/"},
+{"de":"Mega-Rexblisar in Mega-Raids","en":"Mega Abomasnow in Mega Raids","start":1659254400000,"end":1660118400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/august-2022-content-update/"},
 {"de":"August Forschungs-Durchbruch","en":"August Research Breakthrough","start":1659384000000,"end":1662062400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/august-2022-content-update/"},
 {"de":"Hisui-Voltobal Rampenlichtstunde (2x Fang-Sternenstaub)","en":"Hisuian Voltorb Spotlight Hour (2x Catch Stardust)","start":1659456000000,"end":1659459600000,"color":"#ffffe6","url":"https://pokemongolive.com/post/august-2022-content-update/"},
 {"de":"Palkia Raidstunde","en":"Palkia Raid Hour","start":1659542400000,"end":1659546000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/august-2022-content-update/"},
@@ -37,7 +32,8 @@
 {"de":"Pokémon GO Fest 2022 - Abschluss-Event","en":"Pokémon GO Fest 2022 - Finale","start":1661587200000,"end":1661623200000,"color":"#fdddfd","url":"https://pokemongolive.com/post/gofest2022-savethedate/"},
 {"de":"Dusselgurr Rampenlichtstunde (2x Entwickel-EP)","en":"Spotlight Hour (2x Evolve XP)","start":1661875200000,"end":1661878800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/august-2022-content-update/"},
 {"de":"Zamazenta Raidstunde","en":"Zamazenta Raid Hour","start":1661961600000,"end":1661965200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/august-2022-content-update/"},
-{"de":"GBL - Season 12","en":"GBL - Season 12","start":1662062400000,"end":1669928400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season11/"}
+{"de":"GBL - Season 12","en":"GBL - Season 12","start":1662062400000,"end":1669928400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season11/"}, 
+{"de":"Pokémon GO Safari Zone - Taipeh","en":"Pokémon GO Safari Zone - Taipei","start":1666339200000,"end":1666540800000,"color":"#fdddfd","url":"https://pokemongolive.com/post/safari-zone-taipei-2022-annoucement/"},
 ];
 
 var colors = [

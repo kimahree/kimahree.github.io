@@ -898,7 +898,7 @@ var pokemon = [
 {"dex":626,"name":"Bisofank","en":"Bouffalant","regional":true},
 {"dex":627,"name":"Geronimatz","en":"Rufflet","getshiny":true},
 {"dex":628,"name":"Washakwil","en":"Braviary","evolved":true},
-{"dex":"628H","name":"Hisui-Washakwil","en":"Hisuian Braviary","evolved":true,"hisuian":true},
+{"dex":"628H","name":"Hisui-Washakwil","en":"Hisuian Braviary","evolved":true,"hisuian":true,"getshiny":true},
 {"dex":629,"name":"Skallyk","en":"Vullaby","getshiny":true},
 {"dex":630,"name":"Grypheldis","en":"Mandibuzz","evolved":true},
 {"dex":631,"name":"Furnifraß","en":"Heatmor","regional":true,"getshiny":true},
@@ -1346,8 +1346,6 @@ var specialfilter = [
 var raids = {};
 
 var raidjson = [
-{"start":1658484000000,"tier4":["94M"],"tier5":[483]},
-{"start":1659254400000,"tier4":["460M"],"tier5":[484],"tier3":["628H"]},
 {"start":1659268800000,"tier4":["460M"],"tier5":[484]},
 {"start":1660118400000,"tier4":["212M"],"tier5":["649C"]},
 {"start":1660809600000,"tier4":["80M"],"tier5":[888,889]},
@@ -1360,6 +1358,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.11.10","date":"31.07.2022","change":["New Shiny: Hisuian Braviary","Change Raid Bosses (Return of Palkia)"]},
 		{"ver":"1.11.9","date":"27.07.2022","change":["Preparation for August Raids","Quests: Add Clefairy, Paras, Psyduck, Magnemite, Sneasel, Remoraid, Shinx, Burmy (all Cloaks), Oshawott, Petilil, Rowlet"]},
 		{"ver":"1.11.8","date":"22.07.2022","change":["New Shinies: Combee, Panpour","Change Raid Bosses (Return of Dialga)"]},
 		{"ver":"1.11.7","date":"17.07.2022","change":["New Shiny: Starly"]},
