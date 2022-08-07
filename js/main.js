@@ -763,7 +763,7 @@ var pokemon = [
 {"dex":508,"name":"Bissbark","en":"Stoutland","evolved":true},
 {"dex":509,"name":"Felilou","en":"Purrloin"},
 {"dex":510,"name":"Kleoparda","en":"Liepard","evolved":true},
-{"dex":511,"name":"Vegimak","en":"Pansage","regional":true},
+{"dex":511,"name":"Vegimak","en":"Pansage","regional":true,"getshiny":true},
 {"dex":512,"name":"Vegichita","en":"Simisage","evolved":true,"regional":true},
 {"dex":513,"name":"Grillmak","en":"Pansear","regional":true,"getshiny":true},
 {"dex":514,"name":"Grillchita","en":"Simisear","evolved":true,"regional":true},
@@ -968,7 +968,7 @@ var pokemon = [
 {"dex":"681B","name":"Durengard (Klinge)","de":"Durengard (Klingenform)","en":"Aegislash (Blade Forme)","evolved":true},
 {"dex":682,"name":"Parfi","en":"Spritzee"},
 {"dex":683,"name":"Parfinesse","en":"Aromatisse","evolved":true},
-{"dex":684,"name":"Flauschling","en":"Swirlix"},
+{"dex":684,"name":"Flauschling","en":"Swirlix","getshiny":true},
 {"dex":685,"name":"Sabbaione","en":"Slurpuff","evolved":true},
 {"dex":686,"name":"Iscalar","en":"Inkay"},
 {"dex":687,"name":"Calamanero","en":"Malamar","evolved":true},
@@ -1358,6 +1358,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.11.13","date":"05.08.2022","change":["New Shinies: Pansage, Swirlix"]},
 		{"ver":"1.11.12","date":"03.08.2022","change":["Change Raid Bosses (End of Hisui event)","Quests: Remove Clefairy, Paras, Psyduck, Magnemite, Sneasel, Remoraid, Shinx, Burmy (all Cloaks), Oshawott, Petilil, Rowlet"]},
 		{"ver":"1.11.11","date":"01.08.2022","change":["Quests: Add Sandshrew, Oddish, Geodude, Marowak, Rhyhorn, Sunkern, Gligar, Teddiursa, Donphan, Spheal, Pidove, Roggenrola, Litleo","Quests: Remove Zubat, Meowth, Persian, Abra, Chansey, Hoothoot, Togetic, Natu, Aipom, Girafarig, Wingull, Wailmer, Glameow, Stunky, Cottonee"]},
 		{"ver":"1.11.10","date":"31.07.2022","change":["New Shiny: Hisuian Braviary","Change Raid Bosses (Return of Palkia)"]},
