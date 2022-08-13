@@ -1,21 +1,17 @@
 ﻿var events = [
 {"de":"GO-Jahreszeit","en":"Season of GO","start":1654070400000,"end":1662019200000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/go/"},
 {"de":"GBL Saison 11","en":"GBL Season 11","start":1654113600000,"end":1662062400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season11/"},
-{"de":"Palkia in Raids","en":"Palkia in Raids","start":1659254400000,"end":1660118400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/august-2022-content-update/"},
-{"de":"Mega-Rexblisar in Mega-Raids","en":"Mega Abomasnow in Mega Raids","start":1659254400000,"end":1660118400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/august-2022-content-update/"},
 {"de":"August Forschungs-Durchbruch","en":"August Research Breakthrough","start":1659384000000,"end":1662062400000,"color":"#e6f3ff","url":"https://pokemongolive.com/post/august-2022-content-update/"},
-{"de":"GBL - Superliga und Element-Cup","en":"GBL - Great League and Element Cup","start":1659556800000,"end":1660161600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season11/"},
 {"de":"Käferkrabbelei","en":"Bug Out!","start":1660118400000,"end":1660672800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/bug-out-returns-2022/"},
 {"de":"Genesect mit Gefriermodul in Raids","en":"Genesect with Chill Drive in Raids","start":1660118400000,"end":1660809600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/august-2022-content-update/"},
 {"de":"Mega-Scherox in Mega-Raids","en":"Mega Scizor in Mega Raids","start":1660118400000,"end":1660809600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/bug-out-returns-2022/"},
-{"de":"Genesect Raidstunde","en":"Genesect Raid Hour","start":1660147200000,"end":1660150800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/august-2022-content-update/"},
 {"de":"GBL - Hyperliga und Sommer-Cup","en":"GBL - Ultra League and Summer Cup","start":1660161600000,"end":1660766400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season11/"},
 {"de":"Galar-Zigzachs Community Day","en":"Galarian Zigzagoon Community Day","start":1660381200000,"end":1660392000000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communityday-august-2022-galarian-zigzagoon/"},
 {"de":"Bonus-Raids nach dem Community Day","en":"Bonus Raid Battles after Community Day","start":1660392000000,"end":1660410000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/communityday-august-2022-galarian-zigzagoon/"},
 {"de":"Wattzapf Rampenlichtstunde (2x Fang-Bonbons)","en":"Joltik Spotlight Hour (2x Catch Candy)","start":1660665600000,"end":1660669200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/august-2022-content-update/"},
 {"de":"Genesect Raidstunde","en":"Genesect Raid Hour","start":1660752000000,"end":1660755600000,"color":"#ffffe6","url":"https://pokemongolive.com/post/august-2022-content-update/"},
 {"de":"GBL - Superliga und Kampf-Cup","en":"GBL - Great League and Fighting Cup","start":1660766400000,"end":1661371200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season11/"},
-{"de":"Pokémon GO World Championships","en":"Pokémon GO World Championships","start":1660773600000,"end":1661277600000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/august-2022-content-update/"},
+{"de":"Pokémon GO World Championships","en":"Pokémon GO World Championships","start":1660809600000,"end":1661277600000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/world-championships-event-2022/"},
 {"de":"Zacian & Zamazenta in Raids","en":"Zacian & Zamazenta in Raids","start":1660809600000,"end":1661587200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/august-2022-content-update/"},
 {"de":"Mega-Lahmus in Mega-Raids","en":"Mega Slowbro in Mega Raids","start":1660809600000,"end":1661414400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/august-2022-content-update/"},  
 {"de":"Nidoran♂ Rampenlichtstunde (2x Verschick-Bonbons)","en":"Nidoran♂ Spotlight Hour (2x Transfer Candy)","start":1661270400000,"end":1661274000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/august-2022-content-update/"},
@@ -32,7 +28,7 @@
 {"de":"Zamazenta Raidstunde","en":"Zamazenta Raid Hour","start":1661961600000,"end":1661965200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/august-2022-content-update/"},
 {"de":"GBL - Season 12","en":"GBL - Season 12","start":1662062400000,"end":1669928400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season11/"}, 
 {"de":"Pokémon GO Safari Zone - Goyang","en":"Pokémon GO Safari Zone - Goyang","start":1663894800000,"end":1664096400000,"color":"#fdddfd","url":"https://pokemongolive.com/post/safarizone-goyang-korea-announce/"},
-{"de":"Pokémon GO Safari Zone - Taipeh","en":"Pokémon GO Safari Zone - Taipei","start":1666339200000,"end":1666540800000,"color":"#fdddfd","url":"https://pokemongolive.com/post/safari-zone-taipei-2022-annoucement/"},
+{"de":"Pokémon GO Safari Zone - Taipeh","en":"Pokémon GO Safari Zone - Taipei","start":1666317600000,"end":1666519200000,"color":"#fdddfd","url":"https://pokemongolive.com/post/safari-zone-taipei-2022-annoucement/"},
 ];
 
 var colors = [
