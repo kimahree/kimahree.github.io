@@ -1359,7 +1359,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",
 
 var changelogjson = {
     "items": [
-		{"ver":"1.11.17","date":"24.08.2022","change":["Change Raid Bosses (End of Pokémon World Championships 2022 Event)","Quests: Remove Pikachu, Galarian Zigzagoon, Galarian Stunfisk, Fletchling"]},
+		{"ver":"1.11.17","date":"24.08.2022","change":["Change Raid Bosses (End of Pokémon World Championships 2022 Event)","Quests: Remove Pikachu, Galarian Zigzagoon, Galarian Stunfisk, Fletchling","Add raid schedule for Pokémon GO Fest Finale"]},
 		{"ver":"1.11.16","date":"18.08.2022","change":["Change Raid Bosses (Pokémon World Championships 2022 Event)","Quests: Add Pikachu, Galarian Zigzagoon, Galarian Stunfisk, Fletchling"]},
 		{"ver":"1.11.15","date":"16.08.2022","change":["Quests: Remove Caterpie, Weedle, Paras, Venonat, Ledyba, Spinarak, Silcoon, Cascoon, Nincada, Volbeat, Illumise, Kricketot, Burmy (all Cloaks), Combee, Sewaddle, Venipede, Dwebble, Karrablast, Shelmet, Grubbin, Dewpider, Wimpod"]},
 		{"ver":"1.11.14","date":"10.08.2022","change":["New Shinies: Scizor, Venipede","Change Raid Bosses (Bug Out!)","Quests: Add Caterpie, Weedle, Paras, Venonat, Ledyba, Spinarak, Silcoon, Cascoon, Nincada, Volbeat, Illumise, Kricketot, Burmy (all Cloaks), Combee, Sewaddle, Venipede, Dwebble, Karrablast, Shelmet, Grubbin, Dewpider, Wimpod"]},
@@ -1766,12 +1766,12 @@ var newnest = oldnest.slice();
 
 function init() {
 	// Change Covid message to maintenance message
-    /*var timenow = new Date().getTime()
-	if (timenow > 1640991600000 && timenow < 1641078000000) {
+    var timenow = new Date().getTime()
+	if (timenow > 1661551200000 && timenow < 1661616000000) {
 		$('#covid').attr("class","alert alert-success alert-dismissible fade show");
-		$('#covid > strong').html("Happy New Year! 🎉");
+		$('#covid > strong').html("<i>Raid-Zeitplan für Pokémon GO Fest Finale:</i><br><br>10:00-12:00 - Schabelle<br>12:00-14:00 - Masskito<br>14:00-16:00 - Voltriant<br>16:00-18:00 - alle 4");
 	    $('#covid').removeAttr("hidden");
-	}*/
+	}
 
 
 	// change Raids after certain time
