@@ -769,7 +769,7 @@ var pokemon = [
 {"dex":514,"name":"Grillchita","en":"Simisear","evolved":true,"regional":true},
 {"dex":515,"name":"Sodamak","en":"Panpour","regional":true,"getshiny":true},
 {"dex":516,"name":"Sodachita","en":"Simipour","evolved":true,"regional":true},
-{"dex":517,"name":"Somniam","en":"Munna"},
+{"dex":517,"name":"Somniam","en":"Munna","getshiny":true},
 {"dex":518,"name":"Somnivora","en":"Musharna","evolved":true},
 {"dex":519,"name":"Dusselgurr","en":"Pidove","getshiny":true},
 {"dex":520,"name":"Navitaub","en":"Tranquill","evolved":true},
@@ -1346,8 +1346,6 @@ var specialfilter = [
 var raids = {};
 
 var raidjson = [
-{"start":1660118400000,"tier4":["212M"],"tier5":["649C"]},
-{"start":1660809600000,"tier4":["80M"],"tier5":[888,889]},
 {"start":1661414400000,"tier4":["181M"],"tier5":[888,889]},
 {"start":1661587200000,"tier5":[793,794,795,796]},
 {"start":1661623200000,"tier4":["181M"],"tier5":[888,889]}
@@ -1359,6 +1357,8 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.11.19","date":"27.08.2022","change":["New Shiny: Munna","Change Raid Bosses (Pokémon GO Fest 2022 Finale)"},
+		{"ver":"1.11.18","date":"25.08.2022","change":["Change Raid Bosses (Return of Mega Ampharos)"},
 		{"ver":"1.11.17","date":"24.08.2022","change":["Change Raid Bosses (End of Pokémon World Championships 2022 Event)","Quests: Remove Pikachu, Galarian Zigzagoon, Galarian Stunfisk, Fletchling","Add raid schedule for Pokémon GO Fest Finale"]},
 		{"ver":"1.11.16","date":"18.08.2022","change":["Change Raid Bosses (Pokémon World Championships 2022 Event)","Quests: Add Pikachu, Galarian Zigzagoon, Galarian Stunfisk, Fletchling"]},
 		{"ver":"1.11.15","date":"16.08.2022","change":["Quests: Remove Caterpie, Weedle, Paras, Venonat, Ledyba, Spinarak, Silcoon, Cascoon, Nincada, Volbeat, Illumise, Kricketot, Burmy (all Cloaks), Combee, Sewaddle, Venipede, Dwebble, Karrablast, Shelmet, Grubbin, Dewpider, Wimpod"]},
