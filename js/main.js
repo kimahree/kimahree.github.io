@@ -1357,8 +1357,8 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,19,"19A",23,25,26,27,"27A",
 
 var changelogjson = {
     "items": [
-		{"ver":"1.11.19","date":"27.08.2022","change":["New Shiny: Munna","Change Raid Bosses (Pokémon GO Fest 2022 Finale)"},
-		{"ver":"1.11.18","date":"25.08.2022","change":["Change Raid Bosses (Return of Mega Ampharos)"},
+		{"ver":"1.11.19","date":"27.08.2022","change":["New Shiny: Munna","Change Raid Bosses (Pokémon GO Fest 2022 Finale)"]},
+		{"ver":"1.11.18","date":"25.08.2022","change":["Change Raid Bosses (Return of Mega Ampharos)"]},
 		{"ver":"1.11.17","date":"24.08.2022","change":["Change Raid Bosses (End of Pokémon World Championships 2022 Event)","Quests: Remove Pikachu, Galarian Zigzagoon, Galarian Stunfisk, Fletchling","Add raid schedule for Pokémon GO Fest Finale"]},
 		{"ver":"1.11.16","date":"18.08.2022","change":["Change Raid Bosses (Pokémon World Championships 2022 Event)","Quests: Add Pikachu, Galarian Zigzagoon, Galarian Stunfisk, Fletchling"]},
 		{"ver":"1.11.15","date":"16.08.2022","change":["Quests: Remove Caterpie, Weedle, Paras, Venonat, Ledyba, Spinarak, Silcoon, Cascoon, Nincada, Volbeat, Illumise, Kricketot, Burmy (all Cloaks), Combee, Sewaddle, Venipede, Dwebble, Karrablast, Shelmet, Grubbin, Dewpider, Wimpod"]},
