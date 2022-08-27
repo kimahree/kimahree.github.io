@@ -2316,12 +2316,12 @@ function generateRaid(raidtext) {
 	text += "<br>" + gymjson.gyms[document.getElementById("gym").selectedIndex].map;
 	
 	if (t3index <= 0 || document.getElementById("raid").selectedIndex <= t3index || start != "") {
-		text += "<br><br><b>Start:</b> ";
-		if ((diff <= raidtimer && diff >= 0 && time != "") || (time == "" && start != "") || startwarn == 11) {
+		text += "<br><br><b>Start:</b> " + start;
+		/*if ((diff <= raidtimer && diff >= 0 && time != "") || (time == "" && start != "") || startwarn == 11) {
 			text += start;
 		} else {
 			text += "?";
-		}
+		}*/
 	}
 	text += "<br><br>📍 <b>vor Ort</b><br>" + player;
 
@@ -2442,7 +2442,7 @@ function checkTime() {
 	} else if (hat < (18000000 + hatchtimer*60000)) {
 		hatchwarn = 1; // vor (5:00 + hatchtimer)
 	} else if (hat > (78300000 + hatchtimer*60000)) {
-		hatchwarn = 2; // nach (21:45 + hatchtimer)
+		hatchwarn = 2; /* // nach (21:45 + hatchtimer)
 	} else if (hat2 < -(raidtimer*60000)) {
 		hatchwarn = 3; // Raid abgelaufen
 	} else if (hat2 > hatchtimer*60000) {
@@ -2450,7 +2450,7 @@ function checkTime() {
 	} else if (hat2 > 0 && (ra != t5index && ra != t4index && ra != t3index && ra != t2index && ra != t1index && ra != tcindex && ra != 0) && (ra != t5index+1 || t5multi) && (ra != tMindex || tM != 1) && (ra != t4index+1 || t4 != 1)) {
 		hatchwarn = 12; // Ei noch nicht geschlüpft
 	} else if (t5multi && hat2 > 0 && ra > t5index && ra < t4index) {
-		hatchwarn = 13; // 5er noch nicht geschlüpft (wenn mehr als 1 5er)
+		hatchwarn = 13; // 5er noch nicht geschlüpft (wenn mehr als 1 5er) */
 	} else {
 		hatchwarn = 0;
 	}
@@ -2474,12 +2474,12 @@ function checkTime() {
 	if (st != "0" && st != "1" && st != "2") {
 		startwarn = 11;	// keine Uhrzeit
 	} else if (now3 < 0) {
-		startwarn = 4;  // Startzeit in der Vergangenheit
+		startwarn = 4;  /* // Startzeit in der Vergangenheit 
 	} else if (hat >= (raidtimer*60000)) {
 		startwarn = 5;  // Startzeit nicht innerhalb raidtimer
 	} else if (hat > (raidtimer*60000)-300000) {
 		ste.value = "form-text text-muted";
-		startwarn = 6;  // Startzeit 5 Minuten vor Ende
+		startwarn = 6;  // Startzeit 5 Minuten vor Ende */
 	} else if (hat < 0) {
 		startwarn = 7;  // Startzeit vor Schlüpfzeit
 	} else {
@@ -2493,7 +2493,7 @@ function checkTime() {
 		document.getElementById("starth").innerHTML = warn_en[startwarn];
 	}
 	document.getElementById("starth").setAttributeNode(ste);
-  }
+  } 
 
   if (hatchwarn == 0 && startwarn == 0) {
 	$("#warn").hide();

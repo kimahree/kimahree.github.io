@@ -11,7 +11,7 @@
 {"de":"Voltriant in Raids","en":"Xurkitree in Raids","start":1661601600000,"end":1661608800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/gofest2022-finale-event/"},
 {"de":"Anego, Masskito, Schabelle & Voltriant in Raids","en":"Nihilego, Buzzwole, Pheromosa & Xurkitree in Raids","start":1661608800000,"end":1661623200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/gofest2022-finale-event/"},
 {"de":"Zacian & Zamazenta in Raids","en":"Zacian & Zamazenta in Raids","start":1661623200000,"end":1662019200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/august-2022-content-update/"},
-{"de":"Dusselgurr Rampenlichtstunde (2x Entwickel-EP)","en":"Spotlight Hour (2x Evolve XP)","start":1661875200000,"end":1661878800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/august-2022-content-update/"},
+{"de":"Dusselgurr Rampenlichtstunde (2x Entwickel-EP)","en":"Pidove Spotlight Hour (2x Evolve XP)","start":1661875200000,"end":1661878800000,"color":"#ffffe6","url":"https://pokemongolive.com/post/august-2022-content-update/"},
 {"de":"Zamazenta Raidstunde","en":"Zamazenta Raid Hour","start":1661961600000,"end":1661965200000,"color":"#ffffe6","url":"https://pokemongolive.com/post/august-2022-content-update/"},
 {"de":"GBL - Season 12","en":"GBL - Season 12","start":1662062400000,"end":1669928400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-season11/"},
 {"de":"Event","en":"Event","start":1662195600000,"end":1662206400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-s8/"},
