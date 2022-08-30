@@ -1346,9 +1346,12 @@ var specialfilter = [
 var raids = {};
 
 var raidjson = [
-{"start":1661414400000,"tier4":["181M"],"tier5":[888,889]},
-{"start":1661587200000,"tier5":[793,794,795,796]},
-{"start":1661623200000,"tier4":["181M"],"tier5":[888,889]}
+{"start":1661623200000,"tier4":["181M"],"tier5":[888,889]},
+{"start":1662019200000,"tier4":["181M"],"tier5":[386,"386A","386D","386S"]},
+{"start":1662451200000,"tier4":["65M"],"tier5":[386,"386A","386D","386S"]},
+{"start":1663056000000,"tier4":["65M"],"tier5":["646B","646W"]},
+{"start":1663315200000,"tier4":["306M"],"tier5":["646B","646W"]},
+{"start":1664265600000,"tier4":["428M"],"tier5":[717]}
 ];
 
 var quests = [1,4,7,27,37,43,60,74,95,105,111,129,133,138,140,142,147,152,155,158,185,187,191,193,198,206,207,209,216,226,232,252,255,258,280,327,345,347,363,371,374,443,449,459,519,524,618,659,667];
@@ -1766,12 +1769,12 @@ var newnest = oldnest.slice();
 
 function init() {
 	// Change Covid message to maintenance message
-    var timenow = new Date().getTime()
+    /*var timenow = new Date().getTime()
 	if (timenow > 1661551200000 && timenow < 1661616000000) {
 		$('#covid').attr("class","alert alert-success alert-dismissible fade show");
 		$('#covid > strong').html("<i>Raid-Zeitplan für Pokémon GO Fest Finale:</i><br><br>10:00-12:00 - Schabelle<br>12:00-14:00 - Masskito<br>14:00-16:00 - Voltriant<br>16:00-18:00 - alle 4");
 	    $('#covid').removeAttr("hidden");
-	}
+	}*/
 
 
 	// change Raids after certain time
