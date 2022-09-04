@@ -970,7 +970,7 @@ var pokemon = [
 {"dex":683,"name":"Parfinesse","en":"Aromatisse","evolved":true},
 {"dex":684,"name":"Flauschling","en":"Swirlix","getshiny":true},
 {"dex":685,"name":"Sabbaione","en":"Slurpuff","evolved":true},
-{"dex":686,"name":"Iscalar","en":"Inkay"},
+{"dex":686,"name":"Iscalar","en":"Inkay","getshiny":true},
 {"dex":687,"name":"Calamanero","en":"Malamar","evolved":true},
 {"dex":688,"name":"Bithora","en":"Binacle","getshiny":true},
 {"dex":689,"name":"Thanathora","en":"Barbaracle","evolved":true},
@@ -1359,6 +1359,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,19,"19A",23,25,26,"26A",27,
 
 var changelogjson = {
     "items": [
+		{"ver":"1.11.21","date":"03.09.2022","change":["New Shiny: Inkay"]},
 		{"ver":"1.11.20","date":"01.09.2022","change":["Quests: Add Pikachu, Alolan Raichu, Kadabra, Voltorb, Electabuzz, Chinchou, Mareep, Wobbuffet, Electrike, Plusle, Minun, Baltoy, Bronzor, Joltik, Dedenne","Quests: Remove Sandshrew, Oddish, Geodude, Marowak, Rhyhorn, Sunkern, Gligar, Teddiursa, Donphan, Spheal, Pidove, Roggenrola, Litleo"]},
 		{"ver":"1.11.19","date":"27.08.2022","change":["New Shiny: Munna","Change Raid Bosses (Pokémon GO Fest 2022 Finale)","Disabled some raid checks"]},
 		{"ver":"1.11.18","date":"25.08.2022","change":["Change Raid Bosses (Return of Mega Ampharos)"]},
