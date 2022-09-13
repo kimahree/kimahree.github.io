@@ -1151,8 +1151,8 @@ var pokemon = [
 {"dex":794,"name":"Masskito","en":"Buzzwole","ultrabeast":true},
 {"dex":795,"name":"Schabelle","en":"Pheromosa","ultrabeast":true},
 {"dex":796,"name":"Voltriant","en":"Xurkitree","ultrabeast":true},
-{"dex":797,"name":"Kaguron","en":"Celesteela","ultrabeast":true},
-{"dex":798,"name":"Katagami","en":"Kartana","ultrabeast":true},
+{"dex":797,"name":"Kaguron","en":"Celesteela","ultrabeast":true,"regional":true},
+{"dex":798,"name":"Katagami","en":"Kartana","ultrabeast":true,"regional":true},
 {"dex":799,"name":"Schlingking","en":"Guzzlord","ultrabeast":true},
 {"dex":800,"name":"Necrozma","legendary":true},
 {"dex":"800M","name":"Necrozma (Abendmähne)","en":"Dusk Mane Necrozma","legendary":true},
@@ -1347,8 +1347,8 @@ var raids = {};
 
 var raidjson = [
 {"start":1662451200000,"tier4":["65M"],"tier5":[386,"386A","386D","386S"]},
-{"start":1663056000000,"tier4":["65M"],"tier5":[797,798]},
-{"start":1663315200000,"tier4":["306M"],"tier5":[797,798]},
+{"start":1663056000000,"tier4":["65M"],"tier5":[798]},
+{"start":1663315200000,"tier4":["306M"],"tier5":[798]},
 {"start":1664265600000,"tier4":["428M"],"tier5":[717]}
 ];
 
