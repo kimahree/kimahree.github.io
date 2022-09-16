@@ -518,7 +518,7 @@ var pokemon = [
 {"dex":303,"name":"Flunkifer","en":"Mawile","getshiny":true},
 {"dex":304,"name":"Stollunior","en":"Aron","getshiny":true},
 {"dex":305,"name":"Stollrak","en":"Lairon","evolved":true},
-{"dex":306,"name":"Stolloss","en":"Aggron","evolved":true},
+{"dex":306,"name":"Stolloss","en":"Aggron","evolved":true,"getshiny":true},
 {"dex":307,"name":"Meditie","en":"Meditite","getshiny":true},
 {"dex":308,"name":"Meditalis","en":"Medicham","evolved":true},
 {"dex":309,"name":"Frizelbliz","en":"Electrike","getshiny":true},
@@ -1357,7 +1357,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,19,"19A",23,25,26,"26A",27,
 
 var changelogjson = {
     "items": [
-		{"ver":"1.11.25","date":"16.09.2022","change":["Change Raid Bosses (Test your Mettle)","Quests: Add Magnemite, Pineco, Nosepass, Drilbur, Ferroseed, Togedemaru"]},
+		{"ver":"1.11.25","date":"16.09.2022","change":["New Shiny: Aggron","Change Raid Bosses (Test your Mettle)","Quests: Add Magnemite, Pineco, Nosepass, Drilbur, Ferroseed, Togedemaru"]},
 		{"ver":"1.11.24","date":"13.09.2022","change":["Change Raid Bosses (Debut of Kartana)"]},
 		{"ver":"1.11.23","date":"12.09.2022","change":["Quests: Remove Hypno, Chimecho, Elgyem"]},
 		{"ver":"1.11.22","date":"06.09.2022","change":["New Shinies: Alakazam, Elgyem","Change Raid Bosses (Psychic Spectacular)","Quests: Add Hypno, Chimecho, Elgyem"]},
