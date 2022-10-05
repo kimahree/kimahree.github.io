@@ -1,12 +1,10 @@
 ﻿var events = [
 {"de":"Jahreszeit des Lichts","en":"Season of Light","start":1662019200000,"end":1669885200000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/light"},
 {"de":"GBL - Jahreszeit des Lichts","en":"GBL - Season of Light","start":1662062400000,"end":1669928400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-seasonoflight/"},
-{"de":"Fashion Week","en":"Fashion Week","start":1664265600000,"end":1664820000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/fashion-week-2022/"},
 {"de":"Mega-Schlapor in Mega-Raids","en":"Mega Lopunny in Mega Raids","start":1664265600000,"end":1665216000000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/light"},
 {"de":"GBL - Meisterliga","en":"GBL - Master League","start":1664481600000,"end":1665691200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-seasonoflight/"},
 {"de":"GBL - ML-Premier-Classic","en":"GBL - Master Premier Classic","start":1664481600000,"end":1665086400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-seasonoflight/"},
 {"de":"Oktober Forschungs-Durchbruch","en":"October Research Breakthrough","start":1664654400000,"end":1667336400000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/light"},
-{"de":"Felilou Rampenlichtstunde (2x Entwickel-EP)","en":"Purrloin Spotlight Hour (2x Evolve XP)","start":1664899200000,"end":1664902800000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/light"},
 {"de":"Stars der Entwicklung","en":"Evolving Stars","start":1664956800000,"end":1665511200000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/evolving-stars-2022/"},
 {"de":"Yveltal Raidstunde","en":"Yveltal Raid Hour","start":1664985600000,"end":1664989200000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/light"},
 {"de":"GBL - Entwicklungs-Cup","en":"GBL - Evolution Cup","start":1665086400000,"end":1665691200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-seasonoflight/"},
