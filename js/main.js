@@ -1346,9 +1346,7 @@ var specialfilter = [
 var raids = {};
 
 var raidjson = [
-{"start":1664265600000,"tier4":["428M"],"tier5":[717]},
-{"start":1665216000000,"tier4":["310M"],"tier5":[716]},
-{"start":1665226800000,"tier4":["130M","310M"],"tier5":[716]},
+{"start":1665216000000,"tier4":["130M","310M"],"tier5":[716]},
 {"start":1665252000000,"tier4":["310M"],"tier5":[716]},
 {"start":1665846000000,"tier2":[608],"tier4":["310M"],"tier5":[716]},
 {"start":1665864000000,"tier4":["310M"],"tier5":[716]},
@@ -1362,6 +1360,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.11.31","date":"08.10.2022","change":["Change Raid Bosses (Shiny Xerneas Debut)","Adjusted raids since Niantic messed up again"]},
 		{"ver":"1.11.30","date":"04.10.2022","change":["Quests: Remove Skitty, Glameow, Croagunk, Blitzle, Furfrou, Mareanie"]},
 		{"ver":"1.11.29","date":"02.10.2022","change":["New Shiny: Shedinja","Quests: Add Beedrill, Ekans, Zubat, Gloom, Gastly, Haunter, Ariados, Misdreavus, Teddiursa, Houndour, Poochyena, Shuppet, Drifloon, Woobat, Inkay, Phantump","Quests: Remove Pikachu, Alolan Raichu, Kadabra, Voltorb, Electabuzz, Chinchou, Mareep, Wobbuffet, Electrike, Plusle, Minun, Baltoy, Bronzor, Joltik, Dedenne"]},
 		{"ver":"1.11.28","date":"27.09.2022","change":["New Shinies: Furfrou, Yveltal","Change Raid Bosses (Fashion Week 2022)","Quests: Add Skitty, Glameow, Croagunk, Blitzle, Furfrou, Mareanie"]},

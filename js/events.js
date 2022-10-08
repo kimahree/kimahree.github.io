@@ -1,7 +1,6 @@
 ﻿var events = [
 {"de":"Jahreszeit des Lichts","en":"Season of Light","start":1662019200000,"end":1669885200000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/light"},
 {"de":"GBL - Jahreszeit des Lichts","en":"GBL - Season of Light","start":1662062400000,"end":1669928400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-seasonoflight/"},
-{"de":"Mega-Schlapor in Mega-Raids","en":"Mega Lopunny in Mega Raids","start":1664265600000,"end":1665216000000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/light"},
 {"de":"GBL - Meisterliga","en":"GBL - Master League","start":1664481600000,"end":1665691200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-seasonoflight/"},
 {"de":"GBL - ML-Premier-Classic","en":"GBL - Master Premier Classic","start":1664481600000,"end":1665086400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-seasonoflight/"},
 {"de":"Oktober Forschungs-Durchbruch","en":"October Research Breakthrough","start":1664654400000,"end":1667336400000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/light"},
@@ -9,7 +8,7 @@
 {"de":"GBL - Entwicklungs-Cup","en":"GBL - Evolution Cup","start":1665086400000,"end":1665691200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-seasonoflight/"},
 {"de":"Xerneas in Raids","en":"Xerneas in Raids","start":1665216000000,"end":1666252800000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/light"},
 {"de":"Mega-Voltenso in Mega-Raids","en":"Mega Manectric in Mega Raids","start":1665216000000,"end":1666252800000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/light"},
-{"de":"Mega-Garados Raidtag","en":"Mega Gyarados Raid Day","start":1665230400000,"end":1665241200000,"color":"#e5fff9","url":"https://pokemongolive.com/post/evolving-stars-2022/"},
+{"de":"Mega-Garados Raidtag","en":"Mega Gyarados Raid Day","end":1665241200000,"color":"#e5fff9","url":"https://pokemongolive.com/post/evolving-stars-2022/"},
 {"de":"Alpollo Rampenlichtstunde (2x Fang-Sternenstaub)","en":"Haunter Spotlight Hour (2x Catch Stardust)","start":1665504000000,"end":1665507600000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/light"},
 {"de":"Xerneas Raidstunde","en":"Xerneas Raid Hour","start":1665590400000,"end":1665594000000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/light"},
 {"de":"GBL - alle Ligen","en":"GBL - all Leagues","start":1665691200000,"end":1666296000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-seasonoflight/"},
