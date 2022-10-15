@@ -6,6 +6,7 @@
 {"de":"Mega-Voltenso in Mega-Raids","en":"Mega Manectric in Mega Raids","start":1665216000000,"end":1666252800000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/light"},
 {"de":"GBL - alle Ligen","en":"GBL - all Leagues","start":1665691200000,"end":1666296000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-seasonoflight/"},
 {"de":"Festival of Lights","en":"Festival of Lights","start":1665734400000,"end":1666029600000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/festival-of-lights-2022/"},
+{"de":"Entfesseltes Hoopa in Top-Raids","en":"Hoopa Unbound in Elite Raids","start":1665824400000,"end":1665934200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/elite-raids-new-feature/"},
 {"de":"Lichtel Community Day","en":"Litwick Community Day","start":1665835200000,"end":1665846000000,"color":"#e5fff9","url":"https://pokemongolive.com/post/community-day-october-2022-litwick/"},
 {"de":"Bonus Laternecto Raids","en":"Bonus Lampent Raids","start":1665846000000,"end":1665864000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/community-day-october-2022-litwick/"},
 {"de":"Traunfugil Rampenlichtstunde (2x Fang-EP)","en":"Misdreavus Spotlight Hour (2x Catch XP)","start":1666108800000,"end":1666112400000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/light"},

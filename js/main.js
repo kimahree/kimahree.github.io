@@ -875,7 +875,7 @@ var pokemon = [
 {"dex":604,"name":"Zapplarang","en":"Eelektross","evolved":true},
 {"dex":605,"name":"Pygraulon","en":"Elgyem","getshiny":true},
 {"dex":606,"name":"Megalon","en":"Beheeyem","evolved":true},
-{"dex":607,"name":"Lichtel","en":"Litwick"},
+{"dex":607,"name":"Lichtel","en":"Litwick","getshiny":true},
 {"dex":608,"name":"Laternecto","en":"Lampent","evolved":true},
 {"dex":609,"name":"Skelabra","en":"Chandelure","evolved":true},
 {"dex":610,"name":"Milza","en":"Axew","getshiny":true},
@@ -1348,7 +1348,8 @@ var raids = {};
 var raidjson = [
 {"start":1665252000000,"tier4":["310M"],"tier5":[716]},
 {"start":1665846000000,"tier2":[608],"tier4":["310M"],"tier5":[716]},
-{"start":1665864000000,"tier4":["310M"],"tier5":[716]},
+{"start":1665864000000,"tier2":["720U"],"tier4":["310M"],"tier5":[716]},
+{"start":1665934200000,"tier4":["310M"],"tier5":[716]},
 {"start":1666252800000,"tier4":["354M"],"tier5":[487]},
 {"start":1666857600000,"tier4":["354M"],"tier5":["487O"]},
 ];
@@ -1359,6 +1360,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.11.33","date":"15.10.2022","change":["New Shiny: Litwick","Update raid schedule wirh new Elite Raids"]},
 		{"ver":"1.11.32","date":"14.10.2022","change":["Quests: Add Galarian Ponyta, Electabuzz, Magmar, Chinchou, Blitzle, Dedenne, Morelull"]},
 		{"ver":"1.11.31","date":"08.10.2022","change":["New Shiny: Xerneas","Change Raid Bosses (Shiny Xerneas Debut)","Adjusted raids since Niantic messed up again"]},
 		{"ver":"1.11.30","date":"04.10.2022","change":["Quests: Remove Skitty, Glameow, Croagunk, Blitzle, Furfrou, Mareanie"]},
@@ -1894,13 +1896,13 @@ function init() {
 		t2 = raids.tier2.length; 
 	} catch {}
 	if (t2 > 0) {
-		txt += '<optgroup id="t2" label="Spezial-4er"><option ';
+		txt += '<optgroup id="t2" label="Spezial-Raids"><option ';
 		if (t2 == 1) {
 			txt += "hidden disabled ";
 		}
-		txt += 'value="4er" style="font-style:italic">4er Ei</option>';
-		raid_de.push("4er Ei");
-		raid_en.push("Tier 4 Egg");
+		txt += 'value="4er" style="font-style:italic">Spezial-Raid Ei</option>';
+		raid_de.push("Spezial-Raid Ei");
+		raid_en.push("Special Raid Egg");
 		for (i = 0; i < t2; i++) {
 			var rp = getPkmnByDex(raids.tier2[i])[0];
 			var d = (rp.de) ? rp.de:rp.name;
