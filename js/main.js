@@ -569,7 +569,7 @@ var pokemon = [
 {"dex":"351S","name":"Formeo (Sonne)","de":"Formeo (Sonnenform)","en":"Castform (Sunny Form)"},
 {"dex":352,"name":"Kecleon"},
 {"dex":353,"name":"Shuppet","getshiny":true},
-{"dex":354,"name":"Banette","evolved":true},
+{"dex":354,"name":"Banette","evolved":true,"getshiny":true},
 {"dex":355,"name":"Zwirrlicht","en":"Duskull","getshiny":true},
 {"dex":356,"name":"Zwirrklop","en":"Dusclops","evolved":true},
 {"dex":357,"name":"Tropius","regional":true},
@@ -681,7 +681,7 @@ var pokemon = [
 {"dex":453,"name":"Glibunkel","en":"Croagunk","getshiny":true},
 {"dex":454,"name":"Toxiquak","en":"Toxicroak","evolved":true},
 {"dex":455,"name":"Venuflibis","en":"Carnivine","regional":true},
-{"dex":456,"name":"Finneon"},
+{"dex":456,"name":"Finneon","getshiny":true},
 {"dex":457,"name":"Lumineon","evolved":true},
 {"dex":458,"name":"Mantirps","en":"Mantyke","baby":true},
 {"dex":459,"name":"Shnebedeck","en":"Snover","getshiny":true},
@@ -822,7 +822,7 @@ var pokemon = [
 {"dex":560,"name":"Irokex","en":"Scrafty","evolved":true},
 {"dex":561,"name":"Symvolara","en":"Sigilyph","regional":true},
 {"dex":562,"name":"Makabaja","en":"Yamask","getshiny":true},
-{"dex":"562G","name":"Galar-Makabaja","en":"Galarian Yamask","galarian":true},
+{"dex":"562G","name":"Galar-Makabaja","en":"Galarian Yamask","galarian":true,"getshiny":true},
 {"dex":563,"name":"Echnatoll","en":"Cofagrigus","evolved":true},
 {"dex":564,"name":"Galapaflos","en":"Tirtouga","getshiny":true},
 {"dex":565,"name":"Karippas","en":"Carracosta","evolved":true},
@@ -1007,7 +1007,7 @@ var pokemon = [
 {"dex":712,"name":"Arktip","en":"Bergmite"},
 {"dex":713,"name":"Arktilas","en":"Avalugg","evolved":true},
 {"dex":"713H","name":"Hisui-Arktilas","en":"Hisuian Avalugg","hisuian":true,"evolved":true},
-{"dex":714,"name":"eF-eM","en":"Noibat"},
+{"dex":714,"name":"eF-eM","en":"Noibat","getshiny":true},
 {"dex":715,"name":"UHaFnir","en":"Noivern","evolved":true},
 {"dex":716,"name":"Xerneas","legendary":true,"getshiny":true},
 {"dex":717,"name":"Yveltal","legendary":true,"getshiny":true},
@@ -1352,11 +1352,12 @@ var raidjson = [
 ];
 
 var quests = [1,4,7,15,23,37,41,44,60,92,93,95,129,133,138,140,142,147,152,155,158,168,185,187,193,198,200,206,209,216,226,228,252,255,258,261,280,327,345,347,353,371,374,425,443,449,459,527,618,659,686,708];
-var quests_event = [];
+var quests_event = [355,562,"562G",708];
 var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",27,"27A",28,29,30,31,32,33,34,35,36,37,"37A",38,39,40,41,42,43,44,46,47,48,50,"50A",51,52,"52A","52G",53,54,55,56,58,59,60,61,63,64,66,67,69,70,72,73,74,"74A",75,77,"77G",79,"79G",80,81,"83G",84,85,86,87,88,"88A",89,90,92,93,95,96,97,98,100,102,103,"103A",104,105,"105A",106,107,108,109,111,112,113,114,117,118,120,121,123,124,125,126,127,129,131,132,133,135,136,137,138,140,142,143,147,149,152,153,155,156,158,163,164,165,167,168,170,171,176,177,179,182,183,184,185,187,188,190,191,193,194,196,197,198,200,202,203,204,206,207,209,213,215,216,218,219,220,223,224,225,226,227,228,231,232,234,238,241,246,252,255,256,258,259,261,263,"263G",265,266,268,270,273,274,276,277,278,280,285,286,287,289,290,293,294,296,299,300,302,303,304,307,309,310,311,312,313,314,315,316,317,318,320,322,325,327,328,329,331,333,335,336,337,338,339,341,343,345,347,349,351,"351I","351R","351S",353,355,358,359,361,362,363,366,370,371,374,387,390,391,393,396,399,401,403,408,410,412,"412S","412T",415,418,420,"421S",422,425,426,427,431,434,436,442,443,449,451,453,459,495,498,501,504,506,509,519,522,524,527,529,531,535,536,540,543,546,548,554,"554G",557,559,562,"562G",564,566,568,572,574,580,582,587,588,590,592,594,595,597,599,602,605,607,613,615,616,618,"618G",621,622,627,629,633,650,653,656,659,661,667,676,677,682,684,686,688,690,692,694,696,698,702,708,722,725,728,731,734,736,741,747,751,753,755,759,767,777,819,831,870];
 
 var changelogjson = {
     "items": [
+		{"ver":"1.11.35","date":"20.10.2022","change":["New Shinies: Banette, Finneon, Galarian Yamask, Noibat","Change Raid Bosses (Halloween 2022)","Quests: Add Duskull, Yamask, Galarian Yamask, Phantump"]},
 		{"ver":"1.11.34","date":"17.10.2022","change":["Quests: Remove Galarian Ponyta, Electabuzz, Magmar, Chinchou, Blitzle, Dedenne, Morelull"]},
 		{"ver":"1.11.33","date":"15.10.2022","change":["New Shiny: Litwick","Update raid schedule wirh new Elite Raids"]},
 		{"ver":"1.11.32","date":"14.10.2022","change":["Quests: Add Galarian Ponyta, Electabuzz, Magmar, Chinchou, Blitzle, Dedenne, Morelull"]},
