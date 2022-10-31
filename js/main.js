@@ -1346,9 +1346,12 @@ var specialfilter = [
 var raids = {};
 
 var raidjson = [
-{"start":1665934200000,"tier4":["310M"],"tier5":[716]},
-{"start":1666252800000,"tier4":["354M"],"tier5":[487]},
 {"start":1666857600000,"tier4":["354M"],"tier5":["487O"]},
+{"start":1667898000000,"tier4":["130M"],"tier5":[799]},
+{"start":1668268800000,"tier2":[217],"tier4":["130M"],"tier5":[799]},
+{"start":1668286800000,"tier2":[720],"tier4":["130M"],"tier5":[799]},
+{"start":1668355200000,"tier4":["130M"],"tier5":[799]},
+{"start":1669194000000,"tier4":["229M"],"tier5":[793]},
 ];
 
 var quests = [1,4,7,15,23,37,41,44,60,92,93,95,129,133,138,140,142,147,152,155,158,168,185,187,193,198,200,206,209,216,226,228,252,255,258,261,280,327,345,347,353,371,374,425,443,449,459,527,618,659,686,708];
@@ -1357,7 +1360,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
-		{"ver":"1.11.36","date":"20.10.2022","change":["New Shiny: Pumpkaboo","Change Raid Bosses (Halloween 2022 - Part II)","Quests: Add Pikachu"]},
+		{"ver":"1.11.36","date":"27.10.2022","change":["New Shiny: Pumpkaboo","Change Raid Bosses (Halloween 2022 - Part II)","Quests: Add Pikachu"]},
 		{"ver":"1.11.35","date":"20.10.2022","change":["New Shinies: Banette, Finneon, Galarian Yamask, Noibat","Change Raid Bosses (Halloween 2022)","Quests: Add Duskull, Yamask, Galarian Yamask, Phantump"]},
 		{"ver":"1.11.34","date":"17.10.2022","change":["Quests: Remove Galarian Ponyta, Electabuzz, Magmar, Chinchou, Blitzle, Dedenne, Morelull"]},
 		{"ver":"1.11.33","date":"15.10.2022","change":["New Shiny: Litwick","Update raid schedule wirh new Elite Raids"]},
