@@ -1349,7 +1349,7 @@ var raidjson = [
 {"start":1666857600000,"tier4":["354M"],"tier5":["487O"]},
 {"start":1667898000000,"tier4":["130M"],"tier5":[799]},
 {"start":1668268800000,"tier2":[217],"tier4":["130M"],"tier5":[799]},
-{"start":1668286800000,"tier2":[720],"tier4":["130M"],"tier5":[799]},
+{"start":1668286800000,"tier2":["720U"],"tier4":["130M"],"tier5":[799]},
 {"start":1668355200000,"tier4":["130M"],"tier5":[799]},
 {"start":1669194000000,"tier4":["229M"],"tier5":[793]},
 ];
@@ -1360,6 +1360,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.11.40","date":"08.11.2022","change":["Change Raid bosses (Debut of Guzzlord)"]},
 		{"ver":"1.11.39","date":"02.11.2022","change":["Quests: Remove Cubone, Houndoom, Duskull, Roselia, Litwick"]},
 		{"ver":"1.11.38","date":"02.11.2022","change":["Quests: Add Kakuna, Alolan Vulpix, Growlithe, Kadabra, Weepinbell, Hisuian Voltorb, Goldeen, Ledyba, Octillery, Trapinch, Corphish, Combee, Darumaka, Dedenne","Quests: Remove Beedrill, Ekans, Zubat, Gloom, Gastly, Haunter, Ariados, Misdreavus, Teddiursa, Houndour, Poochyena, Shuppet, Drifloon, Woobat, Inkay, Phantump"]},
 		{"ver":"1.11.37","date":"01.11.2022","change":["Add November raids","Quests: Add Cubone, Houndoom, Roselia, Litwick","Quests: Remove Pikachu, Yamask, Galarian Yamask, Phantump"]},
