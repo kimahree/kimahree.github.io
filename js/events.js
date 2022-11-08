@@ -15,7 +15,7 @@
 {"de":"Teddiursa Community Day","en":"Teddiursa Community Day","start":1668258000000,"end":1668268800000,"color":"#e5fff9","url":"https://pokemongolive.com/post/community-day-november-2022-teddiursa/"},
 {"de":"Bonus Ursaring Raids","en":"Bonus Ursaring Raids","start":1668268800000,"end":1668286800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/community-day-november-2022-teddiursa/"},
 {"de":"??? in Top-Raids","en":"??? in Elite Raids","start":1668333600000,"end":1668355200000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/light"},
-{"de":"Team GO Rocket-Übernahme","en":"Team GO Rocket Takeover","start":1668380400000,"end":1668711600000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/greedy-gluttons/"},
+{"de":"Team GO Rocket-Übernahme","en":"Team GO Rocket Takeover","start":1668380400000,"end":1668711600000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/greedy-gluttons/"},
 {"de":"Porygon Rampenlichtstunde (2x Fang-Bonbons)","en":"Porygon Spotlight Hour (2x Catch Candy)","start":1668531600000,"end":1668535200000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/light"},
 {"de":"Schlingking Raidstunde","en":"Guzzlord Raid Hour","start":1668618000000,"end":1668621600000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/light"},
 {"de":"GBL - Meisterliga","en":"GBL - Master League","start":1668718800000,"end":1669928400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-seasonoflight/"},
