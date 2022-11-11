@@ -23,7 +23,9 @@ var endtimer = new Date(67500000 + hatchtimer * 60000);
 var remoteenabled = 1;
 var secret = 0;
 
-var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_remote","txt_instr","txt_button","txt_button2","txt_multi","txt_chgym","txt_cre_close","txt_cl_close","txt_reg_close","txt_boq_intro","txt_boq_generate","txt_evt_current","txt_evt_upcoming","txt_hide_gbl"];
+var shareData = {};
+
+var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_remote","txt_instr","txt_button","txt_button2","txt_multi","txt_chgym","txt_cre_close","txt_cl_close","txt_reg_close","txt_boq_intro","txt_boq_generate","txt_evt_current","txt_evt_upcoming","txt_hide_gbl","txt_clip_copy"];
 
 var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beeinträchtigt und fehlerhaft.",
 "Zur Hauptseite",
@@ -35,7 +37,7 @@ var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beein
 "Fern-Spieler:",
 'Drücke auf "Start!", überprüfe deine Angaben und drücke dann auf "In WhatsApp posten".<br>',
 "In WhatsApp posten",
-"In Telegram posten",
+"Teilen",
 'Um einen Multiraid zu posten, ändere jetzt die Angaben oben für den nächsten Raid und drücke dann auf "Multiraid!". Wiederhole dies, bis alle Raids eingetragen sind.<br>',
 "Wähle eine Arena aus.",
 "Schließen",
@@ -45,7 +47,8 @@ var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beein
 "Link erstellen!",
 "Aktuelle Events",
 "Bevorstehende Events",
-"Keine GBL"
+"Keine GBL",
+""
 ];
 
 var txt_en = ["Attention, you're currently on the beta page. Functionality might be compromised and bugged.",
@@ -58,7 +61,7 @@ var txt_en = ["Attention, you're currently on the beta page. Functionality might
 "Remote players:",
 'Press "Start!", check your data and then press "Post in WhatsApp".<br>',
 "Post in WhatsApp",
-"Post in Telegram",
+"Share",
 'To post a Multiraid, change the data above for the next raid and then press "Multiraid!". Repeat until all raids have been added.<br>',
 "Choose a gym.",
 "Close",
@@ -68,7 +71,8 @@ var txt_en = ["Attention, you're currently on the beta page. Functionality might
 "Generate Link!",
 "Current events",
 "Upcoming events",
-"Hide GBL"
+"Hide GBL",
+""
 ];
 
 var evt_txt_de = ["bis ",
@@ -893,6 +897,7 @@ var pokemon = [
 {"dex":621,"name":"Shardrago","en":"Druddigon","getshiny":true},
 {"dex":622,"name":"Golbit","en":"Golett"},
 {"dex":623,"name":"Golgantes","en":"Golurk","evolved":true},
+{"dex":624,"name":"Gladiantri","en":"Pawniard","getshiny":true},
 {"dex":625,"name":"Caesurio","en":"Bisharp","evolved":true},
 {"dex":626,"name":"Bisofank","en":"Bouffalant","regional":true},
 {"dex":627,"name":"Geronimatz","en":"Rufflet","getshiny":true},
@@ -1358,6 +1363,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.11.42","date":"14.11.2022","change":["New Shiny: Pawniard","Quests: Add Mysterious Component"]},
 		{"ver":"1.11.41","date":"09.11.2022","change":["New Shiny: Munchlax","Quests: Add Exeggcute, Cherubi, Swirlix"]},
 		{"ver":"1.11.40","date":"08.11.2022","change":["Change Raid bosses (Debut of Guzzlord)"]},
 		{"ver":"1.11.39","date":"02.11.2022","change":["Quests: Remove Cubone, Houndoom, Duskull, Roselia, Litwick"]},
@@ -2398,13 +2404,17 @@ function generateRaid(raidtext) {
   text2 = text2.replace(/<\/b>/g,"*");
   text2 = text2.replace(/<i>/g,"_");
   text2 = text2.replace(/<\/i>/g,"_");
+ 
+  shareData = {
+	text: text2,
+	};
   
   var n = encodeURIComponent(text2);
   $("#txt_button").attr("onclick", "window.open('https://api.whatsapp.com/send?text=" + n + "')");
   
   // n = n.replace(/\*/g,"**");
   // n = n.replace("%0A","&text=");
-  // $("#txt_button2").attr("onclick", "window.open('https://t.me/share/url?url=" + n + "')"); 
+ $("#txt_button2").attr("onclick", "share()"); 
 
   $("#but").show();
 
@@ -3053,6 +3063,17 @@ function DiffString(difference) {
 	}
 	diff += minutesDifference + 'm ';
 	return diff;
+}
+
+function share() {
+	try {
+		navigator.share(shareData);
+	} catch {
+		navigator.clipboard.writeText(shareData.text);
+		txt_de[21] = "Raid in Zwischenablage kopiert!";
+		txt_en[21] = "Raid copied to clipboard!";
+		document.getElementById("txt_clip_copy").innerHTML = eval("txt_" + getLang() + "[21];");
+	}
 }
 
 /* function counter() {
