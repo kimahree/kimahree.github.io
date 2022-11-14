@@ -1350,9 +1350,6 @@ var specialfilter = [
 var raids = {};
 
 var raidjson = [
-{"start":1667898000000,"tier4":["130M"],"tier5":[799]},
-{"start":1668268800000,"tier2":[217],"tier4":["130M"],"tier5":[799]},
-{"start":1668286800000,"tier2":["720U"],"tier4":["130M"],"tier5":[799]},
 {"start":1668355200000,"tier4":["130M"],"tier5":[799]},
 {"start":1669194000000,"tier4":["229M"],"tier5":[793]},
 ];
@@ -1363,7 +1360,8 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
-		{"ver":"1.11.42","date":"14.11.2022","change":["New Shiny: Pawniard","Quests: Add Mysterious Component"]},
+		{"ver":"1.12.1","date":"14.11.2022","change":["New Shiny: Pawniard","Quests: Add Mysterious Component"]},
+		{"ver":"1.12","date":"12.11.2022","change":["Add Share button to support other messengers"]},
 		{"ver":"1.11.41","date":"09.11.2022","change":["New Shiny: Munchlax","Quests: Add Exeggcute, Cherubi, Swirlix"]},
 		{"ver":"1.11.40","date":"08.11.2022","change":["Change Raid bosses (Debut of Guzzlord)"]},
 		{"ver":"1.11.39","date":"02.11.2022","change":["Quests: Remove Cubone, Houndoom, Duskull, Roselia, Litwick"]},
@@ -2399,7 +2397,7 @@ function generateRaid(raidtext) {
 
   document.getElementById("ex").innerHTML = text;
   
-  var text2 = text.replace(/<br>/g,"\n");
+  var text2 = text.replace(/<br>/g,"\r\n");
   text2 = text2.replace(/<b>/g,"*");
   text2 = text2.replace(/<\/b>/g,"*");
   text2 = text2.replace(/<i>/g,"_");
