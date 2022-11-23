@@ -6,7 +6,6 @@
 {"de":"Mega-Garados in Mega-Raids","en":"Mega Gyarados in Mega Raids","start":1667898000000,"end":1669194000000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/light"},
 {"de":"GBL - Meisterliga","en":"GBL - Master League","start":1668718800000,"end":1669928400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-seasonoflight/"},
 {"de":"GBL - Element-Cup-Remix","en":"GBL - Element Cup Remix","start":1668718800000,"end":1669323600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-seasonoflight/"},
-{"de":"Lilminip Rampenlichtstunde (2x Verschick-Bonbons)","en":"Petilil Spotlight Hour (2x Transfer Candy)","start":1669136400000,"end":1669140000000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/light"},
 {"de":"Anego in Raids","en":"Nihilego in Raids","start":1669194000000,"end":1669885200000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/light"},
 {"de":"Mega-Hundemon in Mega-Raids","en":"Mega Houndoom in Mega Raids","start":1669194000000,"end":1669885200000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/light"},
 {"de":"Astralfinsternis","en":"Astral Eclipse","start":1669194000000,"end":1669662000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/astraleclipse/"},
