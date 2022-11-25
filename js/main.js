@@ -1362,6 +1362,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.12.4","date":"25.11.2022","change":['Add new gym: "Mercedes"','Remove gym: "Hausmalerei"']},
 		{"ver":"1.12.3","date":"23.11.2022","change":["Adjust Raids for Ultra Beast Arrival","Quests: Add Staryu"]},
 		{"ver":"1.12.2","date":"18.11.2022","change":["New Shiny: Purrloin","Quests: Remove Exeggcute, Cherubi, Swirlix, Mysterious Component"]},
 		{"ver":"1.12.1","date":"14.11.2022","change":["New Shiny: Pawniard","Quests: Add Mysterious Component"]},
