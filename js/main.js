@@ -299,7 +299,7 @@ var pokemon = [
 {"dex":120,"name":"Sterndu","en":"Staryu","getshiny":true},
 {"dex":121,"name":"Starmie","evolved":true},
 {"dex":122,"name":"Pantimos","en":"Mr. Mime","regional":true,"getshiny":true},
-{"dex":"122G","name":"Galar-Pantimos","en":"Galarian Mr. Mime","galarian":true},
+{"dex":"122G","name":"Galar-Pantimos","en":"Galarian Mr. Mime","galarian":true,"getshiny":true},
 {"dex":123,"name":"Sichlor","en":"Scyther","getshiny":true},
 {"dex":124,"name":"Rossana","en":"Jynx","getshiny":true},
 {"dex":125,"name":"Elektek","en":"Electabuzz","getshiny":true},
@@ -1369,6 +1369,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.12.6","date":"01.12.2022","change":["New Shiny: Galarian Mr. Mime"]},
 		{"ver":"1.12.5","date":"28.11.2022","change":["Add Raid schedule for December","Quests: Remove Staryu"]},
 		{"ver":"1.12.4","date":"25.11.2022","change":['Add new gym: "Mercedes"','Remove gym: "Hausmalerei"']},
 		{"ver":"1.12.3","date":"23.11.2022","change":["Adjust Raids for Ultra Beast Arrival","Quests: Add Staryu"]},
