@@ -57,8 +57,11 @@
 {"de":"GO Kampftag: Vulpix","en":"GO Battle Day: Vulpix","start":1676156400000,"end":1676242740000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-mythicalwishes/"},
 {"de":"GBL - Meisterliga","en":"GBL - Master League","start":1676581200000,"end":1677186000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-mythicalwishes/"},
 {"de":"GBL - Meister-Premier","en":"GBL - Master Premier","start":1676581200000,"end":1677186000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-mythicalwishes/"},
+{"de":"Pokémon GO Tour: Hoenn - Las Vegas","en":"Pokémon GO Tour: Hoenn - Las Vegas","start":1676743200000,"end":1676858400000,"color":"#fdddfd","url":"https://gotour.pokemongolive.com/"},
 {"de":"GBL - Meisterliga: Mega-Edition","en":"GBL - Master League: Mega Edition","start":1677186000000,"end":1677704400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-mythicalwishes/"},
 {"de":"GBL - Hoenn-Cup (Superliga)","en":"GBL - Hoenn Cup (Great League)","start":1677186000000,"end":1677704400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-mythicalwishes/"},
+{"de":"Pokémon GO Tour: Hoenn - Weltweit (Tag 1)","en":"Pokémon GO Tour: Hoenn - Global (Day 1)","start":1677315600000,"end":1677344400000,"color":"#e5fff9","url":"https://gotour.pokemongolive.com/global-gameplay"},
+{"de":"Pokémon GO Tour: Hoenn - Weltweit (Tag 2)","en":"Pokémon GO Tour: Hoenn - Global (Day 2)","start":1677402000000,"end":1677430800000,"color":"#e5fff9","url":"https://gotour.pokemongolive.com/global-gameplay"},
 ];
 
 var colors = [
