@@ -14,7 +14,7 @@
 {"de":"GBL - Magische Wünsche","en":"GBL - Mythical Wishes","start":1669928400000,"end":1677704400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-mythicalwishes/"},
 {"de":"GBL - Superliga","en":"GBL - Great League","start":1669928400000,"end":1671138000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-mythicalwishes/"},
 {"de":"GBL - Superliga-Remix","en":"GBL - Great League Remix","start":1669928400000,"end":1670533200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-mythicalwishes/"},
-{"de":"Mega-Raid-Tag: Auf nach Hoenn","en":"Heading to Hoenn Mega Raid Day","start":1670061600000,"end":1670072400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/hoennmegaraidday/"},
+{"de":"Mega-Raid-Tag: Auf nach Hoenn","en":"Heading to Hoenn Mega Raid Day","start":1670072400000,"end":1670083200000,"color":"#e5fff9","url":"https://pokemongolive.com/post/hoennmegaraidday/"},
 {"de":"Mysteriöse Klinge","en":"Mythic Blade","start":1670317200000,"end":1670785200000,"color":"#e6ffe6","url":"https://pokemongolive.com/seasons/mythical-wishes"},
 {"de":"Felino Rampenlichtstunde (2x Fang-Sternenstaub)","en":"Wooper Spotlight Hour (2x Catch Stardust)","start":1670346000000,"end":1670349600000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/mythical-wishes"},
 {"de":"Viridium Raidstunde","en":"Virizion Raid Hour","start":1670432400000,"end":1670436000000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/mythical-wishes"},
