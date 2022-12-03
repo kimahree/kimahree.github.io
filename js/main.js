@@ -468,13 +468,13 @@ var pokemon = [
 {"dex":251,"name":"Celebi","mythical":true},
 {"dex":252,"name":"Geckarbor","en":"Treecko","getshiny":true},
 {"dex":253,"name":"Reptain","en":"Grovyle","evolved":true},
-{"dex":254,"name":"Gewaldro","en":"Sceptile","evolved":true},
+{"dex":254,"name":"Gewaldro","en":"Sceptile","evolved":true,"getshiny":true},
 {"dex":255,"name":"Flemmli","en":"Torchic","getshiny":true},
 {"dex":256,"name":"Jungglut","en":"Combusken","evolved":true},
-{"dex":257,"name":"Lohgock","en":"Blaziken","evolved":true},
+{"dex":257,"name":"Lohgock","en":"Blaziken","evolved":true,"getshiny":true},
 {"dex":258,"name":"Hydropi","en":"Mudkip","getshiny":true},
 {"dex":259,"name":"Moorabbel","en":"Marshtomp","evolved":true},
-{"dex":260,"name":"Sumpex","en":"Swampert","evolved":true},
+{"dex":260,"name":"Sumpex","en":"Swampert","evolved":true,"getshiny":true},
 {"dex":261,"name":"Fiffyen","en":"Poochyena","getshiny":true},
 {"dex":262,"name":"Magnayen","en":"Mightyena","evolved":true},
 {"dex":263,"name":"Zigzachs","en":"Zigzagoon","getshiny":true},
@@ -1352,7 +1352,7 @@ var raids = {};
 var raidjson = [
 {"start":1669575600000,"tier4":["229M"],"tier5":[793]},
 {"start":1669885200000,"tier4":["460M"],"tier5":[640]},
-{"start":1670054400000,"tier4":["252M","255M","258M","460M"],"tier5":[640]},
+{"start":1670054400000,"tier4":["254M","257M","260M","460M"],"tier5":[640]},
 {"start":1670072400000,"tier4":["460M"],"tier5":[640]},
 {"start":1670490000000,"tier4":["306M"],"tier5":[639]},
 {"start":1670659200000,"tier2":["720U"],"tier4":["306M"],"tier5":[639]},
@@ -1369,6 +1369,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.12.7","date":"03.12.2022","change":["New Shinies: Sceptile, Blaziken, Swampert"]},
 		{"ver":"1.12.6","date":"02.12.2022","change":["New Shinies: Galarian Mr. Mime, Castform (Sunny), Castform (Snowy)","Quests: Add Weedle, Alolan Rattata, Machoke, Shellder, Scyther, Sneasel, Swinub, Delibird, Poochyena, Wurmple, Meditite, Carvanha, Spheal, Cottonee, Vanillite, Cryogonal","Quests: Remove Kakuna, Alolan Vulpix, Growlithe, Kadabra, Weepinbell, Hisuian Voltorb, Goldeen, Ledyba, Octillery, Trapinch, Corphish, Combee, Darumaka, Joltik, Dedenne"]},
 		{"ver":"1.12.5","date":"28.11.2022","change":["Add Raid schedule for December","Quests: Remove Staryu"]},
 		{"ver":"1.12.4","date":"25.11.2022","change":['Add new gym: "Mercedes"','Remove gym: "Hausmalerei"']},
