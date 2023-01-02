@@ -3,7 +3,6 @@
 {"de":"GBL - Magische Wünsche","en":"GBL - Mythical Wishes","start":1669928400000,"end":1677704400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-mythicalwishes/"},
 {"de":"GBL - Meisterliga","en":"GBL - Master League","start":1672347600000,"end":1673557200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-mythicalwishes/"},
 {"de":"GBL - Holiday-Cup (Hyperliga)","en":"GBL - Holiday Cup (Ultra League)","start":1672347600000,"end":1673557200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-mythicalwishes/"},
-{"de":"Neujahrs-Event 2023","en":"New Year's 2023 event","start":1672513200000,"end":1672858800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/new-years-2023"},
 {"de":"Reshiram in Raids","en":"Reshiram in Raids","start":1672513200000,"end":1673341200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/new-years-2023"},
 {"de":"Mega-Stahlos in Mega-Raids","en":"Mega Steelix in Mega Raids","start":1672513200000,"end":1673341200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/new-years-2023"},
 {"de":"Alola-Sandan Rampenlichtstunde (2x Entwickel-EP)","en":"Alolan Sandshrew Spotlight Hour (2x Evolve XP)","start":1672765200000,"end":1672768800000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/mythical-wishes"},
