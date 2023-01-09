@@ -7,7 +7,7 @@
 {"de":"Mega-Stahlos in Mega-Raids","en":"Mega Steelix in Mega Raids","start":1672513200000,"end":1673341200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/new-years-2023"},
 {"de":"Funkelnde Fantasie","en":"Twinkling Fantasy","start":1673334000000,"end":1673902800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/twinkling-fantasy"},
 {"de":"Zekrom in Raids","en":"Zekrom in Raids","start":1673341200000,"end":1674032400000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/mythical-wishes"},
-{"de":"??? in Mega-Raids","en":"??? in Mega Raids","start":1673341200000,"end":1674032400000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/mythical-wishes"},
+{"de":"Mega-Brutalanda in Mega-Raids","en":"Mega Salamence in Mega Raids","start":1673341200000,"end":1674032400000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/mythical-wishes"},
 {"de":"Flauschling Rampenlichtstunde (2x Fang-Sternenstaub)","en":"Swirlix Spotlight Hour (2x Catch Stardust)","start":1673370000000,"end":1673373600000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/mythical-wishes"},
 {"de":"Zekrom Raidstunde","en":"Zekrom Raid Hour","start":1673456400000,"end":1673460000000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/mythical-wishes"},
 {"de":"GBL - alle Ligen","en":"GBL - all Leagues","start":1673557200000,"end":1674162000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-mythicalwishes/"},
