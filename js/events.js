@@ -5,8 +5,6 @@
 {"de":"GBL - Holiday-Cup (Hyperliga)","en":"GBL - Holiday Cup (Ultra League)","start":1672347600000,"end":1673557200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-mythicalwishes/"},
 {"de":"Reshiram in Raids","en":"Reshiram in Raids","start":1672513200000,"end":1673341200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/new-years-2023"},
 {"de":"Mega-Stahlos in Mega-Raids","en":"Mega Steelix in Mega Raids","start":1672513200000,"end":1673341200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/new-years-2023"},
-{"de":"Igamaro Community Day","en":"Chespin Community Day","start":1673096400000,"end":1673107200000,"color":"#e5fff9","url":"https://pokemongolive.com/post/community-january-2023-chespin"},
-{"de":"Igastarnish Bonus-Raids","en":"Quilladin Bonus Raids","start":1673107200000,"end":1673125200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/community-january-2023-chespin"},
 {"de":"Funkelnde Fantasie","en":"Twinkling Fantasy","start":1673334000000,"end":1673902800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/twinkling-fantasy"},
 {"de":"Zekrom in Raids","en":"Zekrom in Raids","start":1673341200000,"end":1674032400000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/mythical-wishes"},
 {"de":"??? in Mega-Raids","en":"??? in Mega Raids","start":1673341200000,"end":1674032400000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/mythical-wishes"},

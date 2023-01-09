@@ -191,8 +191,6 @@ var specialfilter = [
 var raids = {};
 
 var raidjson = [
-{"start":1672513200000,"tier4":["208M"],"tier5":[643]},
-{"start":1673107200000,"tier2":[651],"tier4":["208M"],"tier5":[643]},
 {"start":1673125200000,"tier4":["208M"],"tier5":[643]},
 {"start":1673341200000,"tier4":["373M"],"tier5":[644]},
 {"start":1674032400000,"tier4":["428M"],"tier5":[378]},
@@ -205,6 +203,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.12.14","date":"07.01.2023","change":["New Shiny: Chespin"]},
 		{"ver":"1.12.13","date":"01.01.2023","change":["Add support for Gen 9 Pokemon","Seperate Pokemon from main JSON","Change Raid bosses","Quests: Add Clefairy, Jigglypuff, Flaafy, Marill, Mawile, Plusle, Minun, Buneary, Purrloin, Emolga, Dedenne, Togedemaru","Quests: Remove Weedle, Alolan Rattata, Pikachu, Alolan Sandshrew, Machoke, Seel, Shellder, Scyther, Jynx, Sneasel, Swinub, Delibird, Poochyena, Wurmple, Meditite, Carvanha, Spheal, Glaceon, Cubchoo, Crabrawler"]},
 		{"ver":"1.12.12","date":"24.12.2022","change":["New Shiny: Hisuian Avalugg"]},
 		{"ver":"1.12.11","date":"23.12.2022","change":["Quests: Add Alolan Sandshrew, Cubchoo","Quests: Remove Alolan Vulpix, Stantler","Add January raid schedule"]},

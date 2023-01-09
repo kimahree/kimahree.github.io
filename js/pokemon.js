@@ -790,7 +790,7 @@
 {"dex":"649C","name":"Genesect (Eismodul)","de":"Genesect mit Gefriermodul","en":"Genesect with Chill Drive","mythical":true},
 {"dex":"649D","name":"Genesect (Aquamodul)","de":"Genesect mit Aquamodul","en":"Genesect with Douse Drive","mythical":true},
 {"dex":"649S","name":"Genesect (Blitzmodul)","de":"Genesect mit Blitzmodul","en":"Genesect with Shock Drive","mythical":true},
-{"dex":650,"name":"Igamaro","en":"Chespin"},
+{"dex":650,"name":"Igamaro","en":"Chespin","getshiny":true},
 {"dex":651,"name":"Igastarnish","en":"Quilladin","evolved":true},
 {"dex":652,"name":"Brigaron","en":"Chesnaught","evolved":true},
 {"dex":653,"name":"Fynx","en":"Fennekin"},
