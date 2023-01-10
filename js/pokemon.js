@@ -845,7 +845,7 @@
 {"dex":699,"name":"Amagarga","en":"Aurorus","evolved":true},
 {"dex":700,"name":"Feelinara","en":"Sylveon","evolved":true},
 {"dex":701,"name":"Resladero","en":"Hawlucha"},
-{"dex":702,"name":"Dedenne"},
+{"dex":702,"name":"Dedenne","getshiny":true},
 {"dex":703,"name":"Rocara","en":"Carbink"},
 {"dex":704,"name":"Viscora","en":"Goomy"},
 {"dex":705,"name":"Viscargot","en":"Sliggoo","evolved":true},
