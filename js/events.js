@@ -20,10 +20,19 @@
 {"de":"GBL - Meisterliga","en":"GBL - Master League","start":1676581200000,"end":1677186000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-mythicalwishes/"},
 {"de":"GBL - Meister-Premier","en":"GBL - Master Premier","start":1676581200000,"end":1677186000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-mythicalwishes/"},
 {"de":"Pokémon GO Tour: Hoenn - Las Vegas","en":"Pokémon GO Tour: Hoenn - Las Vegas","start":1676743200000,"end":1676858400000,"color":"#fdddfd","url":"https://gotour.pokemongolive.com/"},
+{"de":"Proto-Grollen","en":"Primal Rumblings","start":1677056400000,"end":1677272400000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/primal-rumblings-event"},
+{"de":"Rayquaza in Raids","en":"Rayquaza in Raids","start":1677056400000,"end":1677315600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/primal-rumblings-event"},
+{"de":"Mega-Latias & Mega-Latios in Mega-Raids","en":"Mega Latias & Mega Latios in Mega Raids","start":1677056400000,"end":1677315600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/primal-rumblings-event"},
 {"de":"GBL - Meisterliga: Mega-Edition","en":"GBL - Master League: Mega Edition","start":1677186000000,"end":1677704400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-mythicalwishes/"},
 {"de":"GBL - Hoenn-Cup (Superliga)","en":"GBL - Hoenn Cup (Great League)","start":1677186000000,"end":1677704400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-mythicalwishes/"},
 {"de":"Pokémon GO Tour: Hoenn - Weltweit (Tag 1)","en":"Pokémon GO Tour: Hoenn - Global (Day 1)","start":1677315600000,"end":1677344400000,"color":"#e5fff9","url":"https://gotour.pokemongolive.com/global-gameplay"},
+{"de":"Pokémon GO Tour: Hoenn - Spezial-Raids","en":"Pokémon GO Tour: Hoenn - Special Raids","start":1677315600000,"end":1677344400000,"color":"#ffe6e6","url":"https://gotour.pokemongolive.com/global-gameplay"},
+{"de":"Rayquaza in Raids","en":"Rayquaza in Raids","start":1677344400000,"end":1677402000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/primal-rumblings-event"},
+{"de":"Mega-Latias & Mega-Latios in Mega-Raids","en":"Mega Latias & Mega Latios in Mega Raids","start":1677344400000,"end":1677402000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/primal-rumblings-event"},
 {"de":"Pokémon GO Tour: Hoenn - Weltweit (Tag 2)","en":"Pokémon GO Tour: Hoenn - Global (Day 2)","start":1677402000000,"end":1677430800000,"color":"#e5fff9","url":"https://gotour.pokemongolive.com/global-gameplay"},
+{"de":"Pokémon GO Tour: Hoenn - Spezial-Raids","en":"Pokémon GO Tour: Hoenn - Special Raids","start":1677402000000,"end":1677430800000,"color":"#ffe6e6","url":"https://gotour.pokemongolive.com/global-gameplay"},
+{"de":"Rayquaza in Raids","en":"Rayquaza in Raids","start":1677430800000,"end":1677661200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/primal-rumblings-event"},
+{"de":"Mega-Latias & Mega-Latios in Mega-Raids","en":"Mega Latias & Mega Latios in Mega Raids","start":1677430800000,"end":1677661200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/primal-rumblings-event"},
 ];
 
 var colors = [
