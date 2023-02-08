@@ -5,7 +5,6 @@
 {"de":"Mega-Gengar in Mega-Raids","en":"Mega Gengar in Mega Raids","start":1675242000000,"end":1675846800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/crackling-voltage-team-go-rocket-takeover"},
 {"de":"GBL - Hyperliga","en":"GBL - Ultra League","start":1675371600000,"end":1676581200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-mythicalwishes/"},
 {"de":"GBL - Hyper-Premier","en":"GBL - Ultra Premier","start":1675371600000,"end":1675976400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-mythicalwishes/"},
-{"de":"Taubsi Rampenlichtstunde (2x Entwickel-EP)","en":"Pidgey Spotlight Hour (2x Evolve XP)","start":1675789200000,"end":1675792800000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/mythical-wishes"},
 {"de":"Valentinstags-Event","en":"Valentine's Day event","start":1675846800000,"end":1676401200000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/valentines-day-event-2023-luvdisc-research-day"},
 {"de":"Kapu-Fala in Raids","en":"Tapu Lele in Raids","start":1675846800000,"end":1676451600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/valentines-day-event-2023-luvdisc-research-day"},
 {"de":"Mega-Guardevoir in Mega-Raids","en":"Mega Gardevoir in Mega Raids","start":1675846800000,"end":1676451600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/valentines-day-event-2023-luvdisc-research-day"},
@@ -36,6 +35,15 @@
 {"de":"Rayquaza in Raids","en":"Rayquaza in Raids","start":1677430800000,"end":1677661200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/primal-rumblings-event"},
 {"de":"Mega-Latias & Mega-Latios in Mega-Raids","en":"Mega Latias & Mega Latios in Mega Raids","start":1677430800000,"end":1677661200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/primal-rumblings-event"},
 {"de":"Bummelz Rampenlichtstunde (2x Fang-Bonbons)","en":"Slakoth Spotlight Hour (2x Catch Candy)","start":1677603600000,"end":1677607200000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/mythical-wishes"},
+{"de":"Event","en":"Event","start":1678021200000,"end":1678032000000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-s10"},
+{"de":"Event","en":"Event","start":1678539600000,"end":1678550400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-s10"},
+{"de":"März Community Day","en":"March Community Day","start":1679144400000,"end":1679155200000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-s10"},
+{"de":"Event","en":"Event","start":1681041600000,"end":1681052400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-s10"},
+{"de":"April Community Day","en":"April Community Day","start":1681560000000,"end":1681570800000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-s10"},
+{"de":"Event","en":"Event","start":1682251200000,"end":1682262000000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-s10"},
+{"de":"Community Day Classic","en":"Community Day Classic","start":1682769600000,"end":1682780400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-s10"},
+{"de":"Mai Community Day","en":"May Community Day","start":1684670400000,"end":1684681200000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-s10"},
+{"de":"Event","en":"Event","start":1685174400000,"end":1685289600000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/cd-savethedate-s10"},
 ];
 
 var colors = [
