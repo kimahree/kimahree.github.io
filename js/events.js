@@ -1,12 +1,6 @@
 ﻿var events = [
 {"de":"9. Jahreszeit - Magische Wünsche","en":"Season 9 - Mythical Wishes","start":1669885200000,"end":1677661200000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/mythical-wishes"},
 {"de":"GBL - Magische Wünsche","en":"GBL - Mythical Wishes","start":1669928400000,"end":1677704400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-mythicalwishes/"},
-{"de":"Regirock in Raids","en":"Regirock in Raids","start":1676451600000,"end":1677056400000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/mythical-wishes"},
-{"de":"Mega-Tauboss in Mega-Raids","en":"Mega Pidgeot in Mega Raids","start":1676451600000,"end":1677056400000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/mythical-wishes"},
-{"de":"GBL - Meisterliga","en":"GBL - Master League","start":1676581200000,"end":1677186000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-mythicalwishes/"},
-{"de":"GBL - Meister-Premier","en":"GBL - Master Premier","start":1676581200000,"end":1677186000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/gobattleleague-mythicalwishes/"},
-{"de":"Pummeluff Rampenlichtstunde (2x Fang-EP)","en":"Jigglypuff Spotlight Hour (2x Catch XP)","start":1676998800000,"end":1677002400000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/mythical-wishes"},
-{"de":"Proto-Grollen","en":"Primal Rumblings","start":1677056400000,"end":1677272400000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/primal-rumblings-event"},
 {"de":"Rayquaza in Raids","en":"Rayquaza in Raids","start":1677056400000,"end":1677315600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/primal-rumblings-event"},
 {"de":"Mega-Latias & Mega-Latios in Mega-Raids","en":"Mega Latias & Mega Latios in Mega Raids","start":1677056400000,"end":1677315600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/primal-rumblings-event"},
 {"de":"Rayquaza Raidstunde","en":"Rayquaza Raid Hour","start":1677085200000,"end":1677088800000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/mythical-wishes"},
