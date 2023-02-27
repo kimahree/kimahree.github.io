@@ -1263,5 +1263,7 @@
 {"dex":1005,"name":"Donnersichel","en":"Roaring Moon","paradox":true},
 {"dex":1006,"name":"Eisenkrieger","en":"Iron Valiant","paradox":true},
 {"dex":1007,"name":"Koraidon","legendary":true},
-{"dex":1008,"name":"Miraidon","legendary":true}
+{"dex":1008,"name":"Miraidon","legendary":true},
+{"dex":1009,"name":"Windewoge","en":"Walking Wake","paradox":true},
+{"dex":1010,"name":"Eisenblatt","en":"Iron Leaves","paradox":true}
 ];
