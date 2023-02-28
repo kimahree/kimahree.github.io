@@ -191,7 +191,15 @@ var specialfilter = [
 var raids = {};
 
 var raidjson = [
-{"start":1677430800000,"tier4":["380M","381M"],"tier5":[384]}
+{"start":1677430800000,"tier4":["380M","381M"],"tier5":[384]},
+{"start":1677661200000,"tier4":["6Y"],"tier5":[641]},
+{"start":1678266000000,"tier4":["308M"],"tier5":[250]},
+{"start":1678518000000,"tier2":[894,895],"tier4":["308M"],"tier5":[250]},
+{"start":1678561200000,"tier4":["308M"],"tier5":[250]},
+{"start":1679155200000,"tier2":[654],"tier4":["308M"],"tier5":[250]},
+{"start":1679173200000,"tier4":["308M"],"tier5":[250]},
+{"start":1679389200000,"tier4":["3M"],"tier5":[642]},
+{"start":1679990400000,"tier4":["65M"],"tier5":[249]}
 ];
 
 var quests = [1,4,7,37,43,52,60,69,95,103,108,110,124,129,133,138,140,142,143,147,152,155,158,185,187,193,198,206,207,209,226,241,252,255,258,280,300,315,327,345,347,349,366,371,374,431,443,449,459,548,618,627,659];
@@ -1573,11 +1581,11 @@ function TierCheck() {
 			checkTime();
 		}
 	}
-	if (remoteenabled == 1 && ind == t2index+1) {
+	if (remoteenabled == 1 && ind >= t2index && ind <= (t2index+t2)) {
 		document.getElementById("remote").disabled = true;
 		document.getElementById("remote").placeholder = "Kein Fernraid möglich! / No remote raid possible!"; 
 		remoteenabled = 0;
-	} else if (remoteenabled == 0 && ind != t2index+1) {
+	} else if (remoteenabled == 0 && (ind < t2index || ind > (t2index+t2))) {
 		document.getElementById("remote").disabled = false;
 		document.getElementById("remote").placeholder = ""; 
 		remoteenabled = 1;
