@@ -191,12 +191,6 @@ var specialfilter = [
 var raids = {};
 
 var raidjson = [
-{"start":1677430800000,"tier4":["380M","381M"],"tier5":[384]},
-{"start":1677661200000,"tier4":["6Y"],"tier5":[641]},
-{"start":1678266000000,"tier4":["308M"],"tier5":[250]},
-{"start":1678518000000,"tier2":[895],"tier4":["308M"],"tier5":[250]},
-{"start":1678561200000,"tier4":["308M"],"tier5":[250]},
-{"start":1679155200000,"tier2":[79,"79G"],"tier4":["308M"],"tier5":[250]},
 {"start":1679173200000,"tier4":["308M"],"tier5":[250]},
 {"start":1679389200000,"tier4":["3M"],"tier5":[642]},
 {"start":1679990400000,"tier4":["65M"],"tier5":[249]}
@@ -208,6 +202,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.12.28","date":"20.03.2023","change":["New Shinies: Galarian Slowpoke, Medicham","Updated events"]},
 		{"ver":"1.12.27","date":"02.03.2023","change":["Add March raid schedule and events","Quests: Add Alolan Meowth, Psyduck, Poliwhirl, Grimer, Shellder, Seadra, Skarmory, Wailmer, Croagunk, Woobat, Ducklett, Alomomola","Quests: Remove Oddish, Meowth, Bellsprout, Exeggutor, Lickitung, Weezing, Jynx, Snorlax, Gligar, Miltank, Skitty, Roselia, Feebas, Clamperl, Glameow, Petilil, Rufflet"]},
 		{"ver":"1.12.26","date":"27.02.2023","change":["Quests: Remove Pikachu, Surskit, Shedinja, Sableye, Gulpin, Cacnea, Shuppet, Duskull"]},
 		{"ver":"1.12.25","date":"25.02.2023","change":["New Shinies: Surskit, Gulpin, Torkoal, Cacnea, Kecleon, Tropius, Relicanth","Change raid bosses (Pokémon GO Tour Hoenn)","Quests: Add Pikachu, Surskit, Shedinja, Sableye, Gulpin, Cacnea, Shuppet, Duskull"]},
