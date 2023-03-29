@@ -191,9 +191,14 @@ var specialfilter = [
 var raids = {};
 
 var raidjson = [
-{"start":1679173200000,"tier4":["308M"],"tier5":[250]},
-{"start":1679389200000,"tier4":["3M"],"tier5":[642]},
-{"start":1679990400000,"tier4":["65M"],"tier5":[249]}
+{"start":1679990400000,"tier4":["65M"],"tier5":[249]},
+{"start":1680595200000,"tier4":["428M"],"tier5":[249]},
+{"start":1681020000000,"tier2":[894],"tier4":["428M"],"tier5":[249]},
+{"start":1681056000000,"tier4":["428M"],"tier5":[249]},
+{"start":1681200000000,"tier4":["9M"],"tier5":[645]},
+{"start":1681570800000,"tier2":[176],"tier4":["9M"],"tier5":[645]},
+{"start":1681588800000,"tier4":["9M"],"tier5":[645]},
+{"start":1681718400000,"tier4":["80M"],"tier5":[787]}
 ];
 
 var quests = [1,4,7,37,"52A",54,60,61,88,90,95,117,129,133,138,140,142,147,152,155,158,185,187,193,198,206,209,226,227,252,255,258,280,320,327,345,347,371,374,443,449,453,459,527,580,594,618,659];
@@ -202,6 +207,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.12.29","date":"29.03.2023","change":["April events and raids update"]},
 		{"ver":"1.12.28","date":"20.03.2023","change":["New Shinies: Galarian Slowpoke, Medicham","Updated events"]},
 		{"ver":"1.12.27","date":"02.03.2023","change":["Add March raid schedule and events","Quests: Add Alolan Meowth, Psyduck, Poliwhirl, Grimer, Shellder, Seadra, Skarmory, Wailmer, Croagunk, Woobat, Ducklett, Alomomola","Quests: Remove Oddish, Meowth, Bellsprout, Exeggutor, Lickitung, Weezing, Jynx, Snorlax, Gligar, Miltank, Skitty, Roselia, Feebas, Clamperl, Glameow, Petilil, Rufflet"]},
 		{"ver":"1.12.26","date":"27.02.2023","change":["Quests: Remove Pikachu, Surskit, Shedinja, Sableye, Gulpin, Cacnea, Shuppet, Duskull"]},
