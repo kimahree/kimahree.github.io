@@ -191,8 +191,6 @@ var specialfilter = [
 var raids = {};
 
 var raidjson = [
-{"start":1681200000000,"tier4":["9M"],"tier5":[645]},
-{"start":1681570800000,"tier2":[176],"tier4":["9M"],"tier5":[645]},
 {"start":1681588800000,"tier4":["9M"],"tier5":[645]},
 {"start":1681718400000,"tier4":["80M"],"tier5":[787]}
 ];
