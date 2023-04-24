@@ -200,6 +200,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.12.35","date":"23.04.2023","change":["New Shiny: Stunfisk"]},
 		{"ver":"1.12.34","date":"20.04.2023","change":["New Shiny: Drilbur","Quests: Add Drilbur"]},
 		{"ver":"1.12.33","date":"17.04.2023","change":["New Shiny: Tapu Bulu"]},
 		{"ver":"1.12.32","date":"11.04.2023","change":["Quests: Remove Pikachu, Chansey, Togetic"]},

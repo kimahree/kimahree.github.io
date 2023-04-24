@@ -745,7 +745,7 @@
 {"dex":615,"name":"Frigometri","en":"Cryogonal"},
 {"dex":616,"name":"Schnuthelm","en":"Shelmet","getshiny":true},
 {"dex":617,"name":"Hydragil","en":"Accelgor","evolved":true},
-{"dex":618,"name":"Flunschlik","en":"Stunfisk"},
+{"dex":618,"name":"Flunschlik","en":"Stunfisk","getshiny":true},
 {"dex":"618G","name":"Galar-Flunschlik","en":"Galarian Stunfisk","galarian":true,"getshiny":true},
 {"dex":619,"name":"Lin-Fu","en":"Mienfoo"},
 {"dex":620,"name":"Wie-Shu","en":"Mienshao","evolved":true},
