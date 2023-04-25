@@ -12,7 +12,7 @@
 {"de":"Quiekel Community Day Classic","en":"Swinub Community Day Classic","start":1682769600000,"end":1682780400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/community-day-classic-swinub-april-2023"},
 {"de":"Genesect mit Blitzmodul in Raids","en":"Genesect (Shock Drive) in Raids","start":1683014400000,"end":1683619200000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/rising-heroes/"},
 {"de":"Mega-Scherox in Mega-Raids","en":"Mega Scizor in Mega Raids","start":1683014400000,"end":1683792000000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/rising-heroes/"},
-{"de":"Ein intuitiver Held","en":"An Instinctive Hero","start":1683014400000,"end":1683568800000,"color":"#e6ffe6","url":"https://pokemongolive.com/seasons/rising-heroes/"},
+{"de":"Ein intuitiver Held","en":"An Instinctive Hero","start":1683014400000,"end":1683568800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/an-instinctive-hero"},
 {"de":"Alola-Kleinstein Rampenlichtstunde (2x Fang-EP)","en":"Alolan Geodude Spotlight Hour (2x Catch XP)","start":1683043200000,"end":1683046800000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/rising-heroes/"},
 {"de":"Genesect Raidstunde","en":"Genesect Raid Hour","start":1683129600000,"end":1683133200000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/rising-heroes/"},
 {"de":"GBL - Hyperliga","en":"GBL - Ultra League","start":1683144000000,"end":1684353600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-rising-heroes"},
