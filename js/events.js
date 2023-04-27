@@ -5,9 +5,6 @@
 {"de":"Mega-Lahmus in Mega-Raids","en":"Mega Slowbro in Mega Raids","start":1681718400000,"end":1683014400000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/rising-heroes/"},
 {"de":"GBL - Superliga","en":"GBL - Great League","start":1681934400000,"end":1683144000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-rising-heroes"},
 {"de":"GBL - Wetter-Cup (Hyperliga)","en":"GBL - Weather Cup (Ultra League)","start":1681934400000,"end":1682539200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-rising-heroes"},
-{"de":"Umweltwoche","en":"Sustainability Week","start":1681977600000,"end":1682532000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/sustainability-week-2023"},
-{"de":"Tangela Rampenlichtstunde (2x Fang-Sternenstaub)","en":"Tangela Spotlight Hour (2x Catch Stardust)","start":1682438400000,"end":1682442000000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/rising-heroes/"},
-{"de":"Kapu-Toro Raidstunde","en":"Tapu Bulu Raid Hour","start":1682524800000,"end":1682528400000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/rising-heroes/"},
 {"de":"GBL - Meister-Premier-Cup","en":"GBL - Master Premier Cup","start":1682539200000,"end":1683144000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-rising-heroes"},
 {"de":"Quiekel Community Day Classic","en":"Swinub Community Day Classic","start":1682769600000,"end":1682780400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/community-day-classic-swinub-april-2023"},
 {"de":"Genesect mit Blitzmodul in Raids","en":"Genesect (Shock Drive) in Raids","start":1683014400000,"end":1683619200000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/rising-heroes/"},
@@ -40,6 +37,10 @@
 {"de":"Hunduster Rampenlichtstunde (2x Fang-Sternenstaub)","en":"Houndour Spotlight Hour (2x Catch Stardust)","start":1685462400000,"end":1685466000000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/rising-heroes/"},
 {"de":"Regigigas Raidstunde","en":"Regigigas Raid Hour","start":1685548800000,"end":1685552400000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/rising-heroes/"},
 {"de":"GBL - Jahreszeit 11","en":"GBL - Season 11","start":1685649600000,"end":1693598400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-rising-heroes"},
+{"de":"Pokémon GO Fest 2023 - Osaka","en":"Pokémon GO Fest 2023 - Osaka","start":1691107200000,"end":1691316000000,"color":"#fdddfd","url":"https://pokemongolive.com/events/gofest-2023/osaka"},
+{"de":"Pokémon GO Fest 2023 - London","en":"Pokémon GO Fest 2023 - London","start":1691136000000,"end":1691344800000,"color":"#fdddfd","url":"https://pokemongolive.com/events/gofest-2023/london"},
+{"de":"Pokémon GO Fest 2023 - New York","en":"Pokémon GO Fest 2023 - New York","start":1692363600000,"end":1692572400000,"color":"#fdddfd","url":"https://pokemongolive.com/events/gofest-2023/nyc"},
+{"de":"Pokémon GO Fest 2023 - Weltweites Event","en":"Pokémon GO Fest 2023 - Global Event","start":1693036800000,"end":1693152000000,"color":"#fdddfd","url":"https://pokemongolive.com/events/gofest-2023/global"},
 ];
 
 var colors = [
