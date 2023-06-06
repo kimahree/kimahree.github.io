@@ -839,7 +839,7 @@
 {"dex":689,"name":"Thanathora","en":"Barbaracle","evolved":true},
 {"dex":690,"name":"Algitt","en":"Skrelp"},
 {"dex":691,"name":"Tandrak","en":"Dragalge","evolved":true},
-{"dex":692,"name":"Scampisto","en":"Clauncher"},
+{"dex":692,"name":"Scampisto","en":"Clauncher","getshiny":true},
 {"dex":693,"name":"Wummer","en":"Clawitzer","evolved":true},
 {"dex":694,"name":"Eguana","en":"Helioptile","getshiny":true},
 {"dex":695,"name":"Elezard","en":"Heliolisk","evolved":true},
