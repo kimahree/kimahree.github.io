@@ -1,11 +1,6 @@
 ﻿var events = [
 {"de":"Jahreszeit 11: Verborgene Edelsteine","en":"Season 11: Hidden Gems","start":1685606400000,"end":1693555200000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/hidden-gems/"},
-{"de":"Vesprit in Raids","en":"Mesprit in Raids","start":1685606400000,"end":1686816000000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/hidden-gems/"},
-{"de":"Mega-Sumpex in Mega-Raids","en":"Mega Swampert in Mega Raids","start":1685606400000,"end":1686816000000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/hidden-gems/"},
 {"de":"GBL - Verborgene Edelsteine","en":"GBL - Hidden Gems","start":1685649600000,"end":1693598400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-hidden-gems"},
-{"de":"GBL - Superliga","en":"GBL - Great League","start":1685649600000,"end":1686859200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-hidden-gems"},
-{"de":"GBL - Sommer-Cup [Hyperliga]","en":"GBL - Summer Cup [Ultra League]","start":1686254400000,"end":1686859200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-hidden-gems"},
-{"de":"Vesprit Raidstunde","en":"Mesprit Raid Hour","start":1686758400000,"end":1686762000000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/hidden-gems/"},
 {"de":"Anego in Raids","en":"Nihilego in Raids","start":1686816000000,"end":1688025600000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/hidden-gems/"},
 {"de":"Mega-Gewaldro in Mega-Raids","en":"Mega Sceptile in Mega Raids","start":1686816000000,"end":1688025600000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/hidden-gems/"},
 {"de":"GBL - Hyperliga","en":"GBL - Ultra League","start":1686859200000,"end":1688068800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-hidden-gems"},
