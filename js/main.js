@@ -191,8 +191,6 @@ var specialfilter = [
 var raids = {};
 
 var raidjson = [
-{"start":1686816000000,"tier4":["254M"],"tier5":[793]},
-{"start":1686974400000,"tier2":["144SH"],"tier4":["254M"],"tier5":[793]},
 {"start":1687118400000,"tier4":["254M"],"tier5":[793]},
 {"start":1687579200000,"tier2":["144SH"],"tier4":["254M"],"tier5":[793]},
 {"start":1687723200000,"tier4":["254M"],"tier5":[793]},
@@ -226,6 +224,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.12.48","date":"20.06.2023","change":["New Shiny: Pancham"]},
 		{"ver":"1.12.47","date":"16.06.2023","change":["New Shinys: Fomantis, Nihilego","Quests: Add Fomantis"]},
 		{"ver":"1.12.46","date":"13.06.2023","change":["Quests: Remove Lapras, Frillish, Clauncher, Sandygast"]},
 		{"ver":"1.12.45","date":"06.06.2023","change":["New Shiny: Clauncher","Quests: Add Lapras, Frillish, Clauncher, Sandygast"]},

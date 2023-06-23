@@ -820,7 +820,7 @@
 {"dex":671,"name":"Florges","evolved":true},
 {"dex":672,"name":"Mähikel","en":"Skiddo"},
 {"dex":673,"name":"Chevrumm","en":"Gogoat","evolved":true},
-{"dex":674,"name":"Pam-Pam","en":"Pancham"},
+{"dex":674,"name":"Pam-Pam","en":"Pancham","getshiny":true},
 {"dex":675,"name":"Pandagro","en":"Pangoro","evolved":true},
 {"dex":676,"name":"Coiffwaff","en":"Furfrou","getshiny":true},
 {"dex":677,"name":"Psiau","en":"Espurr","getshiny":true},
