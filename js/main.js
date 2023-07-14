@@ -191,7 +191,6 @@ var specialfilter = [
 var raids = {};
 
 var raidjson = [
-{"start":1688932800000,"tier4":["9M"],"tier5":[144,145,146]},
 {"start":1689235200000,"tier4":["257M"],"tier5":[894]},
 {"start":1689393600000,"tier2":["144SH"],"tier4":["257M"],"tier5":[894]},
 {"start":1689537600000,"tier4":["257M"],"tier5":[894]},
@@ -217,6 +216,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.12.54","date":"14.07.2023","change":['[Gesundbrunnen] Add new gym: "Schiff im Wattenmeer"']},
 		{"ver":"1.12.53","date":"12.07.2023","change":["Quests: Remove Chikorita, Cyndaquil, Totodile, Treecko, Torchic, Mudkip, Turtwig, Chimchar, Piplup, Chespin, Fennekin, Froakie"]},
 		{"ver":"1.12.52","date":"06.07.2023","change":["Quests: Add Chikorita, Cyndaquil, Totodile, Treecko, Torchic, Mudkip, Turtwig, Chimchar, Piplup, Chespin, Fennekin, Froakie"]},
 		{"ver":"1.12.51","date":"02.07.2023","change":["Quests: Remove Alolan Meowth, Alolan Grimer, Magmar, Litwick, Turtonator"]},
