@@ -321,7 +321,7 @@
 {"dex":245,"name":"Suicune","legendary":true,"getshiny":true},
 {"dex":246,"name":"Larvitar","getshiny":true},
 {"dex":247,"name":"Pupitar","evolved":true},
-{"dex":248,"name":"Despotar","en":"Tyranitar","evolved":true},
+{"dex":248,"name":"Despotar","en":"Tyranitar","evolved":true,"getshiny":true},
 {"dex":249,"name":"Lugia","legendary":true,"getshiny":true},
 {"dex":250,"name":"Ho-Oh","legendary":true,"getshiny":true},
 {"dex":251,"name":"Celebi","mythical":true},

@@ -191,11 +191,6 @@ var specialfilter = [
 var raids = {};
 
 var raidjson = [
-{"start":1689235200000,"tier4":["257M"],"tier5":[894]},
-{"start":1689393600000,"tier2":["144SH"],"tier4":["257M"],"tier5":[894]},
-{"start":1689537600000,"tier4":["257M"],"tier5":[894]},
-{"start":1689998400000,"tier2":["144SH"],"tier4":["257M"],"tier5":[894]},
-{"start":1690142400000,"tier4":["257M"],"tier5":[894]},
 {"start":1690272000000,"tier4":["248M"],"tier5":[895]},
 {"start":1690603200000,"tier2":["144SH"],"tier4":["248M"],"tier5":[895]},
 {"start":1690729200000,"tier2":["144SH",61],"tier4":["248M"],"tier5":[895]},
@@ -216,6 +211,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.12.55","date":"25.06.2023","change":["New Shiny: Tyranitar"]},
 		{"ver":"1.12.54","date":"14.07.2023","change":['[Gesundbrunnen] Add new gym: "Schiff im Wattenmeer"']},
 		{"ver":"1.12.53","date":"12.07.2023","change":["Quests: Remove Chikorita, Cyndaquil, Totodile, Treecko, Torchic, Mudkip, Turtwig, Chimchar, Piplup, Chespin, Fennekin, Froakie"]},
 		{"ver":"1.12.52","date":"06.07.2023","change":["Quests: Add Chikorita, Cyndaquil, Totodile, Treecko, Torchic, Mudkip, Turtwig, Chimchar, Piplup, Chespin, Fennekin, Froakie"]},
