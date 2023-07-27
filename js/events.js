@@ -5,8 +5,6 @@
 {"de":"GBL - Fossil-Cup [Superliga]","en":"GBL - Fossil Cup [Great League]","start":1689883200000,"end":1691092800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-hidden-gems"},
 {"de":"Regidrago in Raids","en":"Regidrago in Raids","start":1690272000000,"end":1691136000000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/hidden-gems/"},
 {"de":"Mega-Despotar in Mega-Raids","en":"Mega Tyranitar in Mega Raids","start":1690272000000,"end":1691136000000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/hidden-gems/"},
-{"de":"Mangunior Rampenlichtstunde (2x Verschick-Bonbons)","en":"Yungoos Spotlight Hour (2x Transfer Candy)","start":1690300800000,"end":1690304400000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/hidden-gems/"},
-{"de":"Regidrago Raidstunde","en":"Regidrago Raid Hour","start":1690387200000,"end":1690390800000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/hidden-gems/"},
 {"de":"Abenteuerwoche","en":"Adventure Week","start":1690444800000,"end":1690999200000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/adventure-week-2023"},
 {"de":"GBL - Hyperliga","en":"GBL - Ultra League","start":1690488000000,"end":1691697600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-hidden-gems"},
 {"de":"Crypto-Arktos in Crypto-Raids","en":"Shadow Articuno in Shadow Raids","start":1690603200000,"end":1690747200000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/hidden-gems/"},
@@ -29,6 +27,11 @@
 {"de":"GBL - Fang-Cup: Verborgene Edelsteine","en":"GBL - Catch Cup: Hidden Gems","start":1692907200000,"end":1693598400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-hidden-gems"},
 {"de":"Pokémon GO Fest 2023 - Weltweites Event","en":"Pokémon GO Fest 2023 - Global Event","start":1693036800000,"end":1693152000000,"color":"#fdddfd","url":"https://pokemongolive.com/events/gofest-2023/global"},
 {"de":"GBL - Season 12","en":"GBL - Season 12","start":1693598400000,"end":1701464400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-hidden-gems"},
+{"de":"Pokémon GO City Safari - Seoul","en":"Pokémon GO City Safari - Seoul","start":1696640400000,"end":1696755600000,"color":"#fdddfd","url":"https://pokemongolive.com/events/citysafari-seoul"},
+{"de":"Pokémon GO City Safari - Barcelona","en":"Pokémon GO City Safari - Barcelona","start":1697184000000,"end":1697299200000,"color":"#fdddfd","url":"https://pokemongolive.com/events/citysafari-barcelona"},
+{"de":"Pokémon GO City Safari - Mexico City","en":"Pokémon GO City Safari - Mexico City","start":1699113600000,"end":1699236000000,"color":"#fdddfd","url":"https://pokemongolive.com/events/citysafari-mexicocity"},
+{"de":"November Community Day","en":"November Community Day","start":1699189200000,"end":1699200000000,"color":"#e5fff9","url":"https://pokemongolive.com/events/citysafari-mexicocity"},
+{"de":"Bonus-Raids nach dem Community Day","en":"Bonus Raids after Community Day","start":1699200000000,"end":1699218000000,"color":"#ffe6e6","url":"https://pokemongolive.com/events/citysafari-mexicocity"},
 ];
 
 var colors = [
