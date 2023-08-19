@@ -1,12 +1,8 @@
 ﻿var events = [
 {"de":"Jahreszeit 11: Verborgene Edelsteine","en":"Season 11: Hidden Gems","start":1685606400000,"end":1693555200000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/hidden-gems/"},
 {"de":"GBL - Verborgene Edelsteine","en":"GBL - Hidden Gems","start":1685649600000,"end":1693598400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-hidden-gems"},
-{"de":"Cresselia in Raids","en":"Cresselia in Raids","start":1691136000000,"end":1692172800000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/hidden-gems/"},
-{"de":"Mega-Garados in Mega-Raids","en":"Mega Gyarados in Mega Raids","start":1691136000000,"end":1692172800000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/hidden-gems/"},
-{"de":"GBL - Alle Ligen","en":"GBL - all Leagues","start":1691697600000,"end":1692302400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-hidden-gems"},
 {"de":"Xerneas und Yveltal in Raids","en":"Xerneas and Yveltal in Raids","start":1692172800000,"end":1692777600000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/hidden-gems/"},
 {"de":"Mega-Brutalanda in Mega-Raids","en":"Mega Salamence in Mega Raids","start":1692172800000,"end":1692777600000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/hidden-gems/"},
-{"de":"Xerneas Raidstunde","en":"Xerneas Raid Hour","start":1692201600000,"end":1692205200000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/hidden-gems/"},
 {"de":"GBL - Meisterliga","en":"GBL - Master League","start":1692302400000,"end":1693598400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-hidden-gems"},
 {"de":"GBL - Fantasie-Cup [Hyperliga]","en":"GBL - Fantasy Cup [Ultra League]","start":1692302400000,"end":1692907200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-hidden-gems"},
 {"de":"Pokémon GO Fest 2023 - New York","en":"Pokémon GO Fest 2023 - New York","start":1692363600000,"end":1692572400000,"color":"#fdddfd","url":"https://pokemongolive.com/events/gofest-2023/nyc"},
