@@ -219,6 +219,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.12.68","date":"30.08.2023","change":["Season 12 Update"]},
 		{"ver":"1.12.67","date":"26.08.2023","change":["New Shinys: Shellos (all Forms), Joltik, Goomy, Oranguru"]},
 		{"ver":"1.12.66","date":"22.08.2023","change":["Quests: Remove Grimer, Skrelp, Noibat, Mareanie"]},
 		{"ver":"1.12.65","date":"19.08.2023","change":["Quests: Add Grimer, Skrelp, Noibat, Mareanie"]},
