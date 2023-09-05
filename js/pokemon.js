@@ -1172,7 +1172,7 @@
 {"dex":912,"name":"Kwaks","en":"Quaxly"},
 {"dex":913,"name":"Fuentente","en":"Quaxwell","evolved":true},
 {"dex":914,"name":"Bailonda","en":"Quaquaval","evolved":true},
-{"dex":915,"name":"Ferkuli","en":"Lechonk"},
+{"dex":915,"name":"Ferkuli","en":"Lechonk","getshiny":true},
 {"dex":916,"name":"Fragrunz","en":"Oinkologne","evolved":true},
 {"dex":917,"name":"Tarundel","en":"Tarountula"},
 {"dex":918,"name":"Spinsidias","en":"Spidops","evolved":true},
