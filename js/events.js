@@ -8,7 +8,6 @@
 {"de":"Ein Paldea-Abenteuer","en":"A Paldean Adventure","start":1693900800000,"end":1694332800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/paldea-region-launch"},
 {"de":"PokéStop-Showcase: Ferkuli","en":"PokéStop Showcase: Lechonk","start":1693900800000,"end":1694282400000,"color":"#fff0fa","url":"https://pokemongolive.com/post/paldea-region-launch"},
 {"de":"Icognito A, D, E, L, P in Raids","en":"Unown A, D, E, L, P in Raids","start":1693900800000,"end":1694800800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/paldea-region-launch"},
-{"de":"Felino Rampenlichtstunde (2x Entwickel-EP)","en":"Wooper Spotlight Hour (2x Evolve XP)","start":1693929600000,"end":1693933200000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/adventures-abound/"},
 {"de":"Katagami Raidstunde","en":"Kartana Raid Hour","start":1694016000000,"end":1694019600000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/adventures-abound/"},
 {"de":"Kaguron in Raids","en":"Celesteela in Raids","start":1694160000000,"end":1694851200000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/adventures-abound/"},
 {"de":"GBL - Hyperliga","en":"GBL - Ultra League","start":1694203200000,"end":1694808000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-adventures-abound/"},
