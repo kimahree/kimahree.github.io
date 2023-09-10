@@ -1219,7 +1219,7 @@
 {"dex":959,"name":"Granforgita","en":"Tinkaton","evolved":true},
 {"dex":960,"name":"Schligda","en":"Wiglett"},
 {"dex":961,"name":"Schligdri","en":"Wugtrio","evolved":true},
-{"dex":962,"name":"Adebom","en":"Bombirdier"},
+{"dex":962,"name":"Adebom","en":"Bombirdier","getshiny":true},
 {"dex":963,"name":"Normifin","en":"Finizen"},
 {"dex":964,"name":"Delfinator (Alltagsform)","en":"Palafin (Zero Form)","evolved":true},
 {"dex":"964H","name":"Delfinator (Heldenform)","en":"Palafin (Hero Form)","evolved":true},
