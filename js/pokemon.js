@@ -702,7 +702,7 @@
 {"dex":574,"name":"Mollimorba","en":"Gothita"},
 {"dex":575,"name":"Hypnomorba","en":"Gothorita","evolved":true},
 {"dex":576,"name":"Morbitesse","en":"Gothitelle","evolved":true},
-{"dex":577,"name":"Monozyto","en":"Solosis"},
+{"dex":577,"name":"Monozyto","en":"Solosis","getshiny":true},
 {"dex":578,"name":"Mitodos","en":"Duosion","evolved":true},
 {"dex":579,"name":"Zytomega","en":"Reuniclus","evolved":true},
 {"dex":580,"name":"Piccolente","en":"Ducklett"},
@@ -1269,5 +1269,16 @@
 {"dex":1007,"name":"Koraidon","legendary":true},
 {"dex":1008,"name":"Miraidon","legendary":true},
 {"dex":1009,"name":"Windewoge","en":"Walking Wake","paradox":true},
-{"dex":1010,"name":"Eisenblatt","en":"Iron Leaves","paradox":true}
+{"dex":1010,"name":"Eisenblatt","en":"Iron Leaves","paradox":true},
+{"dex":1011,"name":"Sirapfel","en":"Dipplin","evolved":true},
+{"dex":1012,"name":"Mortcha","en":"Poltchageist"},
+{"dex":1013,"name":"Fatalitcha","en":"Sinstcha","evolved":true},
+{"dex":1014,"name":"Boninu","en":"Okidogi","legendary":true},
+{"dex":1015,"name":"Benesaru","en":"Munkidori","legendary":true},
+{"dex":1016,"name":"Beatori","en":"Fezandipiti","legendary":true},
+{"dex":1017,"name":"Ogerpon","legendary":true},
+{"dex":"1017C","name":"Ogerpon (Fundament)","de":"Ogerpon (Fundamentmaske)","en":"Ogerpon (Cornerstone Mask)","legendary":true},
+{"dex":"1017H","name":"Ogerpon (Ofen)","de":"Ogerpon (Ofenmaske)","en":"Ogerpon (Hearthflame Mask)","legendary":true},
+{"dex":"1017T","name":"Ogerpon (Türkisgrün)","de":"Ogerpon (Türkisgrüne Maske)","en":"Ogerpon (Teal Mask)","legendary":true},
+{"dex":"1017W","name":"Ogerpon (Brunnen)","de":"Ogerpon (Brunnenmaske)","en":"Ogerpon (Wellspring Mask)","legendary":true}
 ];
