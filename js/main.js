@@ -191,8 +191,7 @@ var specialfilter = [
 var raids = {};
 
 var raidjson = [
-{"start":1695585600000,"tier4":["282M"],"tier5":[243,244,245]},
-{"start":1696046400000,"tier2":["145SH"],"tier4":["282M"],"tier5":[243,244,245]},
+{"start":1696046400000,"tier2":["146SH"],"tier4":["282M"],"tier5":[243,244,245]},
 {"start":1696190400000,"tier4":["282M"],"tier5":[243,244,245]},
 {"start":1696579200000,"tier4":["94M"],"tier5":[799]},
 {"start":1696651200000,"tier2":["146SH"],"tier4":["94M"],"tier5":[799]},
@@ -213,7 +212,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
-		{"ver":"1.12.76","date":"24.09.2023","change":["New Shiny: Hisuian Growlithe","Quests: Add Hisuian Qwilfish, Hisuian Sneasel, Pawmi"]},
+		{"ver":"1.12.77","date":"27.09.2023","change":["New Shiny: Hisuian Growlithe","Quests: Add Hisuian Qwilfish, Hisuian Sneasel, Pawmi"]},
 		{"ver":"1.12.76","date":"24.09.2023","change":["Quests: Remove Kadabra, Wobbuffet, Metang"]},
 		{"ver":"1.12.75","date":"23.09.2023","change":["New Shiny: Grubbin"]},
 		{"ver":"1.12.74","date":"21.09.2023","change":["Added October events and raids"]},
