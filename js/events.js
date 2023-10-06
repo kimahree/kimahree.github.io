@@ -7,6 +7,7 @@
 {"de":"GBL - Sonnenschein-Cup [Superliga]","en":"GBL - Sunshine Cup [Great League]","start":1696017600000,"end":1696622400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-adventures-abound/"},
 {"de":"Meisterdetektiv Pikachu kehrt zurück","en":"Detective Pikachu Returns","start":1696492800000,"end":1696874400000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/detective-pikachu-returns-event"},
 {"de":"PokéStop-Showcase: Pikachu","en":"PokéStop Showcase: Pikachu","start":1696492800000,"end":1696874400000,"color":"#fff0fa","url":"https://pokemongolive.com/post/detective-pikachu-returns-event"},
+{"de":"Crypto-Zapdos in Crypto-Raids","en":"Shadow Zapdos in Shadow Raids","start":1696564800000,"end":1696622400000,"color":"#ffe6e6","url":"https://twitter.com/niantichelp/status/1707148216767246411"},
 {"de":"Schlingking in Raids","en":"Guzzlord in Raids","start":1696579200000,"end":1697788800000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/adventures-abound/"},
 {"de":"Mega-Gengar in Mega-Raids","en":"Mega Gengar in Mega Raids","start":1696579200000,"end":1697788800000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/adventures-abound/"},
 {"de":"GBL - alle Ligen","en":"GBL - All Leagues","start":1696622400000,"end":1696629600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-adventures-abound/"},
