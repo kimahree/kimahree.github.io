@@ -818,7 +818,7 @@
 {"dex":670,"name":"Floette","evolved":true},
 {"dex":"670E","name":"Floette (Ewigblütler)","en":"Floette (Eternal Flower)","legendary":true},
 {"dex":671,"name":"Florges","evolved":true},
-{"dex":672,"name":"Mähikel","en":"Skiddo"},
+{"dex":672,"name":"Mähikel","en":"Skiddo","getshiny":true},
 {"dex":673,"name":"Chevrumm","en":"Gogoat","evolved":true},
 {"dex":674,"name":"Pam-Pam","en":"Pancham","getshiny":true},
 {"dex":675,"name":"Pandagro","en":"Pangoro","evolved":true},
