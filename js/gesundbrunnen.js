@@ -45,6 +45,7 @@ var gymjson = {
 {"value":"Schiff im Wattenmeer","map":"https://goo.gl/maps/MHQwy7xYikHxWYLq5"},
 {"value":"Schönwalder Straßenbrücke","tg":"Schoenwalder Strassenbruecke","map":"https://goo.gl/maps/n5gAnPhfmWFpCgHWA"},
 {"value":"Shadow People","ex":true,"map":"https://goo.gl/maps/PzqU2mtenL42"},
+{"value":"Skulptur von Barna von Sartory","map":"https://goo.gl/maps/jfvN5U3qnhy9Bh1XA"},
 {"value":"Spinnennetz Spielplatz","ex":true,"token":"🕸️","map":"https://goo.gl/maps/vKtfoyDAsoS2"},
 {"value":"Springbrunnen am Rathaus","ex":true,"tg":"Springbrunnen Am Rathaus","map":"https://goo.gl/maps/j5WL5s81k2K2"},
 {"value":"St. Sebastian-Kirche","ex":true,"map":"https://goo.gl/maps/za2Fq6XPC5t"},

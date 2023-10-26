@@ -695,7 +695,7 @@
 {"dex":567,"name":"Aeropteryx","en":"Archeops","evolved":true},
 {"dex":568,"name":"Unratütox","en":"Trubbish","getshiny":true},
 {"dex":569,"name":"Deponitox","en":"Garbodor","evolved":true},
-{"dex":570,"name":"Zorua"},
+{"dex":570,"name":"Zorua","getshiny":true},
 {"dex":"570H","name":"Hisui-Zorua","en":"Hisuian Zorua","hisuian":true},
 {"dex":571,"name":"Zoroark","evolved":true},
 {"dex":"571H","name":"Hisui-Zoroark","en":"Hisuian Zoroark","hisuian":true,"evolved":true},
