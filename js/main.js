@@ -192,7 +192,7 @@ var raids = {};
 
 var raidjson = [
 {"start":1698613200000,"tier4":["354M"],"tier5":[491]},
-{"start":1698915600000,"tier4":["229M"],"tier5":["649D"]},
+{"start":1699002000000,"tier4":["229M"],"tier5":["649D"]},
 {"start":1699074000000,"tier2":["145SH"],"tier4":["229M"],"tier5":["649D"]},
 {"start":1699200000000,"tier2":["145SH",194,"194P"],"tier4":["229M"],"tier5":["649D"]},
 {"start":1699218000000,"tier4":["229M"],"tier5":["649D"]},
@@ -216,6 +216,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.12.85","date":"02.11.2023","change":["Change Raid schedule, because Niantic screwed up once again"]},
 		{"ver":"1.12.84","date":"01.11.2023","change":["Quests: Add Cubone, Sunkern, Drifloon, Litwick","Quests: Remove Mismagius, Galarian Yamask, Greavard"]},
 		{"ver":"1.12.83","date":"26.10.2023","change":["[Gesundbrunnen] Add new Gym: Skulptur von Barno von Sartory","Add November Events","New Shiny: Zorua","Quests: Add Mismagius, Galarian Yamask, Greavard"]},
 		{"ver":"1.12.82","date":"19.10.2023","change":["New Shiny: Phantump","Quests: Add Phantump"]},
