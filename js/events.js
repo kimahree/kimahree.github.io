@@ -9,7 +9,7 @@
 {"de":"Mega-Hundemon in Mega-Raids","en":"Mega Hundoom in Mega Raids","start":1699002000000,"end":1699707600000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/adventures-abound/"},
 {"de":"GBL - Superliga","en":"GBL - Great League","start":1699041600000,"end":1699650000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-adventures-abound/"},
 {"de":"GBL - Elektro-Cup [Superliga]","en":"GBL - Electric Cup [Great League]","start":1699041600000,"end":1700254800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-adventures-abound/"},
-{"de":"Crypto-Zapdos in Crypto-Raids","en":"Shadow Zapdos in Shadow Raids","start":1699074000000,"end":1699218000000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/adventures-abound/"},
+{"de":"Crypto-Arktos in Crypto-Raids","en":"Shadow Articuno in Shadow Raids","start":1699074000000,"end":1699218000000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/adventures-abound/"},
 {"de":"Pokémon GO City Safari - Mexico City","en":"Pokémon GO City Safari - Mexico City","start":1699113600000,"end":1699236000000,"color":"#fdddfd","url":"https://pokemongolive.com/events/citysafari-mexicocity"},
 {"de":"Felino und Paldea-Felino Community Day","en":"Wooper and Paldean Wooper Community Day","start":1699189200000,"end":1699200000000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communityday-november-2023-wooper"},
 {"de":"Felino und Paldea-Felino Bonus-Raids nach dem Community Day","en":"Woooper and Paldean Wooper Bonus Raids after Community Day","start":1699200000000,"end":1699218000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/communityday-november-2023-wooper"},
