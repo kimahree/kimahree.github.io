@@ -191,9 +191,6 @@ var specialfilter = [
 var raids = {};
 
 var raidjson = [
-{"start":1699002000000,"tier4":["229M"],"tier5":["649D"]},
-{"start":1699074000000,"tier2":["144SH"],"tier4":["229M"],"tier5":["649D"]},
-{"start":1699200000000,"tier2":["144SH",194,"194P"],"tier4":["229M"],"tier5":["649D"]},
 {"start":1699218000000,"tier4":["229M"],"tier5":["649D"]},
 {"start":1699520400000,"tier4":["229M"],"tier5":[640]},
 {"start":1699678800000,"tier2":["145SH"],"tier4":["229M"],"tier5":[640]},
@@ -215,6 +212,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.12.87","date":"05.11.2023","change":["New Shiny: Paldean Wooper"]},
 		{"ver":"1.12.86","date":"02.11.2023","change":["Change Raid schedule AGAIN, why bother informing your players","New Shiny: Genesect (Douse Drive)","Quests: Remove Cubone, Sunkern, Drifloon, Litwick"]},
 		{"ver":"1.12.85","date":"02.11.2023","change":["Change Raid schedule, because Niantic screwed up once again"]},
 		{"ver":"1.12.84","date":"01.11.2023","change":["Quests: Add Cubone, Sunkern, Drifloon, Litwick","Quests: Remove Mismagius, Galarian Yamask, Greavard"]},

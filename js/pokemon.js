@@ -235,7 +235,7 @@
 {"dex":192,"name":"Sonnflora","en":"Sunflora","evolved":true},
 {"dex":193,"name":"Yanma","getshiny":true},
 {"dex":194,"name":"Felino","en":"Wooper","getshiny":true},
-{"dex":"194P","name":"Paldea-Felino","en":"Paldean Wooper","paldean":true},
+{"dex":"194P","name":"Paldea-Felino","en":"Paldean Wooper","paldean":true,"getshiny":true},
 {"dex":195,"name":"Morlord","en":"Quagsire","evolved":true},
 {"dex":196,"name":"Psiana","en":"Espeon","evolved":true,"getshiny":true},
 {"dex":197,"name":"Nachtara","en":"Umbreon","evolved":true,"getshiny":true},
