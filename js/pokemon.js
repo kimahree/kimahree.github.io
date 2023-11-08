@@ -973,7 +973,7 @@
 {"dex":752,"name":"Aranestro","en":"Araquanid","evolved":true},
 {"dex":753,"name":"Imantis","en":"Fomantis","getshiny":true},
 {"dex":754,"name":"Mantidea","en":"Lurantis","evolved":true},
-{"dex":755,"name":"Bubungus","en":"Morelull"},
+{"dex":755,"name":"Bubungus","en":"Morelull","getshiny":true},
 {"dex":756,"name":"Lamellux","en":"Shiinotic","evolved":true},
 {"dex":757,"name":"Molunk","en":"Salandit"},
 {"dex":758,"name":"Amfira","en":"Salazzle","evolved":true},
