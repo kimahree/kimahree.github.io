@@ -212,7 +212,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
-		{"ver":"1.12.89","date":"08.11.2023","change":["Change Raid schedule ONCE MORE, since they finally decided to inform their players"
+		{"ver":"1.12.89","date":"08.11.2023","change":["Change Raid schedule ONCE MORE, since they finally decided to inform their players"]},
 		{"ver":"1.12.88","date":"07.11.2023","change":["New Shiny: Morelull","Quests: Add Darumaka, Morelull, Tadbulb"]},
 		{"ver":"1.12.87","date":"05.11.2023","change":["New Shiny: Paldean Wooper"]},
 		{"ver":"1.12.86","date":"02.11.2023","change":["Change Raid schedule AGAIN, why bother informing your players","New Shiny: Genesect (Douse Drive)","Quests: Remove Cubone, Sunkern, Drifloon, Litwick"]},
