@@ -701,7 +701,7 @@
 {"dex":"571H","name":"Hisui-Zoroark","en":"Hisuian Zoroark","hisuian":true,"evolved":true},
 {"dex":572,"name":"Picochilla","en":"Minccino","getshiny":true},
 {"dex":573,"name":"Chillabell","en":"Cinccino","evolved":true},
-{"dex":574,"name":"Mollimorba","en":"Gothita"},
+{"dex":574,"name":"Mollimorba","en":"Gothita","getshiny":true},
 {"dex":575,"name":"Hypnomorba","en":"Gothorita","evolved":true},
 {"dex":576,"name":"Morbitesse","en":"Gothitelle","evolved":true},
 {"dex":577,"name":"Monozyto","en":"Solosis","getshiny":true},
