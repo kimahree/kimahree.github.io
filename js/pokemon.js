@@ -538,7 +538,7 @@
 {"dex":445,"name":"Knakrack","en":"Garchomp","evolved":true},
 {"dex":446,"name":"Mampfaxo","en":"Munchlax","baby":true,"getshiny":true},
 {"dex":447,"name":"Riolu","baby":true,"getshiny":true},
-{"dex":448,"name":"Lucario"},
+{"dex":448,"name":"Lucario","getshiny":true},
 {"dex":449,"name":"Hippopotas","getshiny":true},
 {"dex":450,"name":"Hippoterus","en":"Hippowdon","evolved":true},
 {"dex":451,"name":"Pionskora","en":"Skorupi","getshiny":true},
