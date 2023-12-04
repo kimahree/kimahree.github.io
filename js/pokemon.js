@@ -620,7 +620,7 @@
 {"dex":501,"name":"Ottaro","en":"Oshawott","getshiny":true},
 {"dex":502,"name":"Zwottronin","en":"Dewott","evolved":true},
 {"dex":503,"name":"Admurai","en":"Samurott","evolved":true},
-{"dex":"503H","name":"Hisui-Admurai","en":"Hisuian Samurott","hisuian":true,"evolved":true},
+{"dex":"503H","name":"Hisui-Admurai","en":"Hisuian Samurott","hisuian":true,"evolved":true,"getshiny":true},
 {"dex":504,"name":"Nagelotz","en":"Patrat","getshiny":true},
 {"dex":505,"name":"Kukmarda","en":"Watchog","evolved":true},
 {"dex":506,"name":"Yorkleff","en":"Lillipup","getshiny":true},
