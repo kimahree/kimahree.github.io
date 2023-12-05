@@ -13,7 +13,7 @@
 {"de":"Pokémon Poké Post","en":"Pokémon Poké Post","start":1702112400000,"end":1702146600000,"color":"#e5fff9","url":"https://pokepost.com"},
 {"de":"Zekrom in Raids","en":"Zekrom in Raids","start":1702112400000,"end":1702717200000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/timeless-travels/"},
 {"de":"Mega-Altaria in Mega-Raids","en":"Mega Altaria in Mega Raids","start":1702112400000,"end":1702717200000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/timeless-travels/"},
-{"de":"Fangkunst: Eis","en":"Catch Mastery: Ice","start":1702112400000,"end":1702148400000,"color":"#e5fff9","url":"https://pokemongolive.com/seasons/timeless-travels/"},
+{"de":"Fangkunst: Eis","en":"Catch Mastery: Ice","start":1702112400000,"end":1702148400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/catch-mastery-ice-2023"},
 {"de":"Adamante Zeit","en":"Adamant Time","start":1702285200000,"end":1702666800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/adamant-time-kanto-event"},
 {"de":"Jurob Rampenlichtstunde (2x Verschick-Bonbons)","en":"Seel Spotlight Hour (2x Transfer Candy)","start":1702400400000,"end":1702404000000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/timeless-travels"},
 {"de":"Zekrom Raidstunde","en":"Zekrom Raid Hour","start":1702486800000,"end":1702490400000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/timeless-travels"},

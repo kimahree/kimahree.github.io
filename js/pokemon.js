@@ -287,7 +287,7 @@
 {"dex":213,"name":"Pottrott","en":"Shuckle","getshiny":true},
 {"dex":214,"name":"Skaraborn","en":"Heracross","regional":true,"getshiny":true},
 {"dex":215,"name":"Sniebel","en":"Sneasel","getshiny":true},
-{"dex":"215H","name":"Hisui-Sniebel","en":"Hisuian Sneasel","hisuian":true},
+{"dex":"215H","name":"Hisui-Sniebel","en":"Hisuian Sneasel","hisuian":true,"getshiny":true},
 {"dex":216,"name":"Teddiursa","getshiny":true},
 {"dex":217,"name":"Ursaring","evolved":true},
 {"dex":218,"name":"Schneckmag","en":"Slugma","getshiny":true},
