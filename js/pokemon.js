@@ -748,7 +748,7 @@
 {"dex":612,"name":"Maxax","en":"Haxorus","evolved":true},
 {"dex":613,"name":"Petznief","en":"Cubchoo","getshiny":true},
 {"dex":614,"name":"Siberio","en":"Beartic","evolved":true},
-{"dex":615,"name":"Frigometri","en":"Cryogonal"},
+{"dex":615,"name":"Frigometri","en":"Cryogonal","getshiny":true},
 {"dex":616,"name":"Schnuthelm","en":"Shelmet","getshiny":true},
 {"dex":617,"name":"Hydragil","en":"Accelgor","evolved":true},
 {"dex":618,"name":"Flunschlik","en":"Stunfisk","getshiny":true},
