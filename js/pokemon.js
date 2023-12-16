@@ -1283,5 +1283,15 @@
 {"dex":"1017C","name":"Ogerpon (Fundament)","de":"Ogerpon (Fundamentmaske)","en":"Ogerpon (Cornerstone Mask)","legendary":true},
 {"dex":"1017H","name":"Ogerpon (Ofen)","de":"Ogerpon (Ofenmaske)","en":"Ogerpon (Hearthflame Mask)","legendary":true},
 {"dex":"1017T","name":"Ogerpon (Türkisgrün)","de":"Ogerpon (Türkisgrüne Maske)","en":"Ogerpon (Teal Mask)","legendary":true},
-{"dex":"1017W","name":"Ogerpon (Brunnen)","de":"Ogerpon (Brunnenmaske)","en":"Ogerpon (Wellspring Mask)","legendary":true}
+{"dex":"1017W","name":"Ogerpon (Brunnen)","de":"Ogerpon (Brunnenmaske)","en":"Ogerpon (Wellspring Mask)","legendary":true},
+{"dex":1018,"name":"Briduradon","en":"Archaludon","evolved":true},
+{"dex":1019,"name":"Hydrapfel","en":"Hydrapple","evolved":true},
+{"dex":1020,"name":"Keilflamme","en":"Gouging Fire","paradox":true},
+{"dex":1021,"name":"Furienblitz","en":"Raging Bolt","paradox":true},
+{"dex":1022,"name":"Eisenfels","en":"Iron Boulder","paradox":true},
+{"dex":1023,"name":"Eisenhaupt","en":"Iron Crown","paradox":true},
+{"dex":1024,"name":"Terapagos","legendary":true},
+{"dex":"1024T","name":"Terapagos (Terakristall)","de":"Terapagos (Terakristall-Form)","en":"Terapagos (Terastal Form)","legendary":true},
+{"dex":"1024S","name":"Terapagos (Stellar)","de":"Terapagos (Stellarform)","en":"Terapagos (Stellar Form)","legendary":true},
+{"dex":1025,"name":"Infamomo","en":"Pecharunt","mythical":true}
 ];
