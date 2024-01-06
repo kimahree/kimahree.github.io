@@ -933,7 +933,7 @@
 {"dex":"475M","name":"Mega-Galagladi","en":"Mega Gallade","evolved":true,"mega":true},
 {"dex":"531M","name":"Mega-Ohrdoch","en":"Mega Audino","mega":true},
 {"dex":"719M","name":"Mega-Diancie","en":"Mega Diancie","mythical":true,"mega":true},
-{"dex":722,"name":"Bauz","en":"Rowlet"},
+{"dex":722,"name":"Bauz","en":"Rowlet","getshiny":true},
 {"dex":723,"name":"Arboretoss","en":"Dartrix","evolved":true},
 {"dex":724,"name":"Silvarro","en":"Decidueye","evolved":true},
 {"dex":"724H","name":"Hisui-Silvarro","en":"Hisuian Decidueye","hisuian":true,"evolved":true},
