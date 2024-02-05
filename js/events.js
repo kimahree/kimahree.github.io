@@ -1,13 +1,9 @@
 ﻿var events = [
 {"de":"Jahreszeit 13: Zeitlose Reisen","en":"Season 13: Timeless Travels","start":1701421200000,"end":1709283600000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/timeless-travels"},
 {"de":"GBL - Zeitlose Reisen","en":"GBL - Timeless Travels","start":1701464400000,"end":1709326800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-timeless-travels"},
-{"de":"GBL - Superliga","en":"GBL - Great League","start":1706302800000,"end":1706907600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-timeless-travels"},
 {"de":"GBL - Hisui-Cup [Superliga]","en":"GBL - Hisui Cup [Great League]","start":1706302800000,"end":1707512400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-timeless-travels"},
 {"de":"Mega-Latias und Mega-Latios in Mega-Raids","en":"Mega Latias and Mega Latios in Mega Raids","start":1706691600000,"end":1707656400000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/timeless-travels/"},
 {"de":"GBL - Hyperliga","en":"GBL - Ultra League","start":1706907600000,"end":1707512400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-timeless-travels"},
-{"de":"Crypto-Arktos in Crypto-Raids","en":"Shadow Articuno in Shadow Raids","start":1706936400000,"end":1707080400000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/timeless-travels"},
-{"de":"Chaneira Community Day","en":"Chansey Community Day","start":1707051600000,"end":1707062400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communityday-february-2024-chansey"},
-{"de":"Chaneira Bonus-Raids nach dem Community Day","en":"Chansey Bonus Raids after Community Day","start":1707062400000,"end":1707080400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/communityday-february-2024-chansey"},
 {"de":"Mondneujahr: Entfesselte Drachen","en":"Lunar New Year: Dragons Unleashed","start":1707123600000,"end":1707678000000,"color":"#e6ffe6","url":"https://pokemongolive.com/de/post/lunar-new-year-event-2024"},
 {"de":"Dratini Rampenlichtstunde (2x Fang-EP)","en":"Dratini Spotlight Hour (2x Catch XP)","start":1707238800000,"end":1707242400000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/timeless-travels"},
 {"de":"Mega-Latios Raidstunde","en":"Mega Latios Raid Hour","start":1707325200000,"end":1707328800000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/timeless-travels"},
@@ -56,7 +52,18 @@
 {"de":"Cresselia und Heatran Raidstunde","en":"Cresselia and Heatran Raid Hour","start":1709139600000,"end":1709143200000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/timeless-travels"},
 {"de":"Jahreszeit 14","en":"Season 14","start":1709283600000,"end":1717228800000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/timeless-travels"},
 {"de":"GBL - Season 14","en":"GBL - Season 14","start":1709326800000,"end":1717272000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-timeless-travels"},
+{"de":"Event","en":"Event","start":1709470800000,"end":1709481600000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-s14"},
 {"de":"Pokémon GO City Safari - Tainan","en":"Pokémon GO City Safari - Tainan","start":1709949600000,"end":1710064800000,"color":"#fdddfd","url":"https://pokemongolive.com/events/citysafari-tainan"},
+{"de":"März Community Day","en":"March Community Day","start":1710594000000,"end":1710604800000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-s14"},
+{"de":"Bonus-Raids nach dem Community Day","en":"Bonus Raids after Community Day","start":1710604800000,"end":1710622800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/cd-savethedate-s14"},
+{"de":"Community Day Classic","en":"Community Day Classic","start":1712491200000,"end":1712502000000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-s14"},
+{"de":"Event","en":"Event","start":1713009600000,"end":1713020400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-s14"},
+{"de":"April Community Day","en":"April Community Day","start":1713614400000,"end":1713625200000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-s14"},
+{"de":"Bonus-Raids nach dem Community Day","en":"Bonus Raids after Community Day","start":1713625200000,"end":1713643200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/cd-savethedate-s14"},
+{"de":"Event","en":"Event","start":1714305600000,"end":1714316400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-s14"},
+{"de":"Event","en":"Event","start":1715428800000,"end":1715439600000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-s14"},
+{"de":"Mai Community Day","en":"May Community Day","start":1716120000000,"end":1716130800000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-s14"},
+{"de":"Bonus-Raids nach dem Community Day","en":"Bonus Raids after Community Day","start":1716130800000,"end":1716148800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/cd-savethedate-s14"},
 ];
 
 var colors = [
