@@ -999,7 +999,7 @@
 {"dex":777,"name":"Togedemaru"},
 {"dex":778,"name":"Mimigma","en":"Mimikyu"},
 {"dex":779,"name":"Knirfish","en":"Bruxish"},
-{"dex":780,"name":"Sen-Long","en":"Drampa"},
+{"dex":780,"name":"Sen-Long","en":"Drampa","getshiny":true},
 {"dex":781,"name":"Moruda","en":"Dhelmise"},
 {"dex":782,"name":"Miniras","en":"Jangmo-o"},
 {"dex":783,"name":"Mediras","en":"Hakamo-o","evolved":true},
