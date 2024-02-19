@@ -191,9 +191,6 @@ var specialfilter = [
 var raids = {};
 
 var raidjson = [
-{"start":1707933600000,"tier4":["380M","381M"]},
-{"start":1707987600000,"tier4":["359M"],"tier5":[491]},
-{"start":1708146000000,"tier2":["144SH"],"tier4":["359M"],"tier5":[491]},
 {"start":1708290000000,"tier4":["359M"],"tier5":[491]},
 {"start":1708419600000,"tier4":["359M"],"tier5":[488]},
 {"start":1708506000000,"tier4":["359M"],"tier5":[481]},
@@ -215,6 +212,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.1","date":"17.02.2024","change":["New Shinies: Hisuian Voltorb, Hisuian Quilfish, Pachirisu, Chingling, Stunky, Chatot, Carnivine, Rotom, Dialga (Origin Forme), Palkia (Origin Forme), Basculin (White-Striped Forme)"]},
 		{"ver":"1.13","date":"15.02.2024","change":["Changed domain to berlin-raids.de","Quests: Remove Snubbull, Roselia, Luvdisc, Furfrou"]},
 		{"ver":"1.12.111","date":"13.02.2024","change":["New Shiny: Hisuian Decidueye, Oricorio","Quests: Add Snubbull, Roselia, Luvdisc, Furfrou","Quests: Remove Swablu, Druddigon, Deino, Tyrunt, Goomy, Turtonator, Drampa"]},
 		{"ver":"1.12.110","date":"05.02.2024","change":["New Shiny: Drampa","Quests: Add Swablu, Druddigon, Deino, Tyrunt, Goomy, Turtonator, Drampa"]},
