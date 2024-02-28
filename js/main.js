@@ -192,6 +192,25 @@ var raids = {};
 
 var raidjson = [
 {"start":1708938000000,"tier4":["445M"],"tier5":[481,485]},
+{"start":1709283600000,"tier4":["254M"],"tier5":[785]},
+{"start":1709355600000,"tier2":["243SH"],"tier4":["254M"],"tier5":[785]},
+{"start":1709499600000,"tier4":["254M"],"tier5":[785]},
+{"start":1709960400000,"tier2":["243SH"],"tier4":["254M"],"tier5":[785]},
+{"start":1710104400000,"tier4":["254M"],"tier5":[785]},
+{"start":1710406800000,"tier4":["248M"],"tier5":[378]},
+{"start":1710565200000,"tier2":["243SH"],"tier4":["248M"],"tier5":[378]},
+{"start":1710604800000,"tier2":["243SH",726],"tier4":["248M"],"tier5":[378]},
+{"start":1710622800000,"tier2":["243SH"],"tier4":["248M","382P"],"tier5":[378]},
+{"start":1710680400000,"tier4":["382P"]},
+{"start":1710691200000,"tier2":["243SH"],"tier4":["248M"],"tier5":[378]},
+{"start":1710709200000,"tier4":["248M"],"tier5":[378]},
+{"start":1711011600000,"tier4":["3M"],"tier5":[786]},
+{"start":1711170000000,"tier2":["243SH"],"tier4":["3M","383P"],"tier5":[786]},
+{"start":1711198800000,"tier4":["383P"]},
+{"start":1711209600000,"tier2":["243SH"],"tier4":["3M"],"tier5":[786]},
+{"start":1711314000000,"tier4":["3M"],"tier5":[786]},
+{"start":1711774800000,"tier2":["150SH"],"tier4":["3M"],"tier5":[786]},
+{"start":1711915200000,"tier4":["3M"],"tier5":[786]},
 
 ];
 
@@ -201,6 +220,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.2","date":"28.02.2024","change":["Add raid and event schedule for March"]},
 		{"ver":"1.13.1","date":"17.02.2024","change":["New Shinies: Hisuian Voltorb, Hisuian Quilfish, Pachirisu, Chingling, Stunky, Chatot, Carnivine, Rotom, Dialga (Origin Forme), Palkia (Origin Forme), Basculin (White-Striped Forme)"]},
 		{"ver":"1.13","date":"15.02.2024","change":["Changed domain to berlin-raids.de","Quests: Remove Snubbull, Roselia, Luvdisc, Furfrou"]},
 		{"ver":"1.12.111","date":"13.02.2024","change":["New Shiny: Hisuian Decidueye, Oricorio","Quests: Add Snubbull, Roselia, Luvdisc, Furfrou","Quests: Remove Swablu, Druddigon, Deino, Tyrunt, Goomy, Turtonator, Drampa"]},
