@@ -6,8 +6,6 @@
 {"de":"GBL - Superliga","en":"GBL - Great League","start":1709326800000,"end":1709931600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-world-of-wonders"},
 {"de":"GBL - Elektro-Cup [Superliga]","en":"GBL - Electric Cup [Great League]","start":1709326800000,"end":1709931600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-world-of-wonders"},
 {"de":"Pokémon Horizonte: Die Serie - Event","en":"Pokémon Horizons: The Series - Celebration Event","start":1709629200000,"end":1710183600000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/pokemon-horizons-anime-celebration"},
-{"de":"Pamo Rampenlichtstunde (2x Entwicklungs-EP)","en":"Pawmi Spotlight Hour (2x Evolution XP)","start":1709658000000,"end":1709661600000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/world-of-wonders"},
-{"de":"Kapu-Riki Raidstunde","en":"Tapu Koko Raid Hour","start":1709744400000,"end":1709748000000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/world-of-wonders"},
 {"de":"GBL - Hyperliga","en":"GBL - Ultra League","start":1709931600000,"end":1710532800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-world-of-wonders"},
 {"de":"GBL - Frühlings-Cup [Superliga]","en":"GBL - Spring Cup [Great League]","start":1709931600000,"end":1711137600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-world-of-wonders"},
 {"de":"Pokémon GO City Safari - Tainan","en":"Pokémon GO City Safari - Tainan","start":1709949600000,"end":1710064800000,"color":"#fdddfd","url":"https://pokemongolive.com/events/citysafari-tainan"},
@@ -16,7 +14,7 @@
 {"de":"Kapu-Riki Raidstunde","en":"Tapu Koko Raid Hour","start":1710349200000,"end":1710352800000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/world-of-wonders"},
 {"de":"Mega-Despotar in Mega-Raids","en":"Mega Tyranitar in Mega Raids","start":1710406800000,"end":1710680400000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/world-of-wonders"},
 {"de":"Regice in Raids","en":"Regice in Raids","start":1710406800000,"end":1710680400000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/world-of-wonders"},
-{"de":"Wetterwoche","en":"Weather Week","start":1710406800000,"end":1710788400000,"color":"#e6ffe6","url":"https://pokemongolive.com/seasons/world-of-wonders"},
+{"de":"Wetterwoche","en":"Weather Week","start":1710406800000,"end":1710788400000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/weather-week-2024"},
 {"de":"GBL - Meisterliga","en":"GBL - Master League","start":1710532800000,"end":1711137600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-world-of-wonders"},
 {"de":"Crypto-Raikou in Crypto-Raids","en":"Shadow Raikou in Shadow Raids","start":1710565200000,"end":1710680400000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/world-of-wonders"},
 {"de":"Flamiau Community Day","en":"Litten Community Day","start":1710594000000,"end":1710604800000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communityday-march-2024-litten"},
@@ -83,6 +81,7 @@
 {"de":"Raidstunde","en":"Raid Hour","start":1716998400000,"end":1717002000000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/world-of-wonders"},
 {"de":"Jahreszeit 15","en":"Season 15","start":1717228800000,"end":1725177600000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/world-of-wonders"},
 {"de":"GBL - Season 15","en":"GBL - Season 15","start":1717272000000,"end":1725220800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-world-of-wonders"},
+{"de":"Pokémon GO Fest 2024 - Global","en":"Pokémon GO Fest 2024 - Global","start":1720857600000,"end":1720972800000,"color":"#fdddfd","url":"https://gofest.pokemongolive.com"},
 ];
 
 var colors = [
