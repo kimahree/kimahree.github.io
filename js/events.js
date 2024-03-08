@@ -79,9 +79,12 @@
 {"de":"GBL - alle Ligen","en":"GBL - all Leagues","start":1716580800000,"end":1717272000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-world-of-wonders"},
 {"de":"Rampenlichtstunde (2x Bonus)","en":"Spotlight Hour (2x Bonus)","start":1716912000000,"end":1716915200000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/world-of-wonders"},
 {"de":"Raidstunde","en":"Raid Hour","start":1716998400000,"end":1717002000000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/world-of-wonders"},
+{"de":"Pokémon GO Fest 2024 - Sendai","en":"Pokémon GO Fest 2024 - Sendai","start":1717021800000,"end":1717313400000,"color":"#fdddfd","url":"https://gofest.pokemongolive.com/sendai"},
 {"de":"Jahreszeit 15","en":"Season 15","start":1717228800000,"end":1725177600000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/world-of-wonders"},
 {"de":"GBL - Season 15","en":"GBL - Season 15","start":1717272000000,"end":1725220800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-world-of-wonders"},
-{"de":"Pokémon GO Fest 2024 - Global","en":"Pokémon GO Fest 2024 - Global","start":1720857600000,"end":1720972800000,"color":"#fdddfd","url":"https://gofest.pokemongolive.com"},
+{"de":"Pokémon GO Fest 2024 - Madrid","en":"Pokémon GO Fest 2024 - Madrid","start":1718348400000,"end":1718557200000,"color":"#fdddfd","url":"https://gofest.pokemongolive.com/madrid"},
+{"de":"Pokémon GO Fest 2024 - New York City","en":"Pokémon GO Fest 2024 - New York City","start":1720184400000,"end":1720393200000,"color":"#fdddfd","url":"https://gofest.pokemongolive.com/new-york-city"},
+{"de":"Pokémon GO Fest 2024 - Global","en":"Pokémon GO Fest 2024 - Global","start":1720857600000,"end":1720972800000,"color":"#fdddfd","url":"https://gofest.pokemongolive.com/global"},
 ];
 
 var colors = [
