@@ -940,7 +940,7 @@
 {"dex":723,"name":"Arboretoss","en":"Dartrix","evolved":true},
 {"dex":724,"name":"Silvarro","en":"Decidueye","evolved":true},
 {"dex":"724H","name":"Hisui-Silvarro","en":"Hisuian Decidueye","hisuian":true,"evolved":true,"getshiny":true},
-{"dex":725,"name":"Flamiau","en":"Litten"},
+{"dex":725,"name":"Flamiau","en":"Litten","getshiny":true},
 {"dex":726,"name":"Miezunder","en":"Torracat","evolved":true},
 {"dex":727,"name":"Fuegro","en":"Incineroar","evolved":true},
 {"dex":728,"name":"Robball","en":"Popplio"},
