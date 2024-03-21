@@ -819,7 +819,7 @@
 {"dex":666,"name":"Vivillon","evolved":true},
 {"dex":667,"name":"Leufeo","en":"Litleo","getshiny":true},
 {"dex":668,"name":"Pyroleo","en":"Pyroar","evolved":true},
-{"dex":669,"name":"Flabébé"},
+{"dex":669,"name":"Flabébé","getshiny":true},
 {"dex":670,"name":"Floette","evolved":true},
 {"dex":"670E","name":"Floette (Ewigblütler)","en":"Floette (Eternal Flower)","legendary":true},
 {"dex":671,"name":"Florges","evolved":true},
