@@ -674,7 +674,7 @@
 {"dex":550,"name":"Barschuft (Rotlinig)","de":"Barschuft (Rotlinige Form)","en":"Basculin (Red-Striped Form)","regional":true},
 {"dex":"550B","name":"Barschuft (Blaulinig)","de":"Barschuft (Blaulinige Form)","en":"Basculin (Blue-Striped Form)","regional":true},
 {"dex":"550W","name":"Barschuft (Weißlinig)","de":"Barschuft (Weißlinige Form)","en":"Basculin (White-Striped Form)","hisuian":true,"getshiny":true},
-{"dex":551,"name":"Ganovil","en":"Sandile"},
+{"dex":551,"name":"Ganovil","en":"Sandile","getshiny":true},
 {"dex":552,"name":"Rokkaiman","en":"Krokorok","evolved":true},
 {"dex":553,"name":"Rabigator","en":"Krookodile","evolved":true},
 {"dex":554,"name":"Flampion","en":"Darumaka","getshiny":true},
