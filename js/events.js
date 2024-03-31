@@ -7,6 +7,7 @@
 {"de":"Mega-Bisaflor in Mega-Raids","en":"Mega Venusaur in Mega Raids","start":1711209600000,"end":1712217600000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/world-of-wonders"},
 {"de":"Kapu-Fala in Raids","en":"Tapu Lele in Raids","start":1711209600000,"end":1712217600000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/world-of-wonders"},
 {"de":"Welt voller Wunder: Übernahme","en":"World of Wonders: Taken Over","start":1711530000000,"end":1711908000000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/world-taken-over-by-TGR"},
+{"de":"Eine fabelhafte Gelegenheit","en":"An Excellent Opportunity","start":1711922400000,"end":1712008740000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/an-excellent-opportunity-2024"},
 {"de":"GBL - Superliga","en":"GBL - Great League","start":1711742400000,"end":1712347200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-world-of-wonders"},
 {"de":"GBL - Hyper-Premier","en":"GBL - Ultra Premier","start":1711742400000,"end":1712347200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-world-of-wonders"},
 {"de":"Crypto-Mewtu in Crypto-Raids","en":"Shadow Mewtwo in Shadow Raids","start":1711774800000,"end":1711915200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/world-taken-over-by-TGR"},
