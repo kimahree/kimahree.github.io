@@ -5,7 +5,6 @@
 {"de":"Katagami in Raids","en":"Kartana in Raids","start":1712217600000,"end":1712908800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/sizeable-surprises-2024"},
 {"de":"GBL - Hyperliga","en":"GBL - Ultra League","start":1712347200000,"end":1712952000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-world-of-wonders"},
 {"de":"GBL - Dschungel-Cup [Superliga]","en":"GBL - Jungle Cup [Great League]","start":1712347200000,"end":1713556800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-world-of-wonders"},
-{"de":"Katagami Raidstunde","en":"Kartana Raid Hour","start":1712764800000,"end":1712768400000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/world-of-wonders"},
 {"de":"Käferkrabbelei","en":"Bug Out","start":1712908800000,"end":1713376800000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/bug-out-2024"},
 {"de":"Kapu-Toro in Raids","en":"Tapu Bulu in Raids","start":1712908800000,"end":1713009600000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/sizeable-surprises-2024"},
 {"de":"GBL - Meisterliga","en":"GBL - Master League","start":1712952000000,"end":1713556800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-world-of-wonders"},
