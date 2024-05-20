@@ -982,7 +982,7 @@
 {"dex":758,"name":"Amfira","en":"Salazzle","evolved":true},
 {"dex":759,"name":"Velursi","en":"Stufful","getshiny":true},
 {"dex":760,"name":"Kosturso","en":"Bewear","evolved":true},
-{"dex":761,"name":"Frubberl","en":"Bounsweet"},
+{"dex":761,"name":"Frubberl","en":"Bounsweet","getshiny":true},
 {"dex":762,"name":"Frubaila","en":"Steenee","evolved":true},
 {"dex":763,"name":"Fruyal","en":"Tsareena","evolved":true},
 {"dex":764,"name":"Curelei","en":"Comfey","regional":true},

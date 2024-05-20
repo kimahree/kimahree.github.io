@@ -216,6 +216,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.15","date":"19.05.2024","change":["New Shiny: Bounsweet"]},
 		{"ver":"1.13.14","date":"29.04.2024","change":["Add raid and event schedule for May","Quests: Remove Combee, Foongus"]},
 		{"ver":"1.13.13","date":"22.04.2024","change":["Quests: Add Combee, Foongus"]},
 		{"ver":"1.13.12","date":"18.04.2024","change":["Quests: Removed Paras, Venonat, Karrablast, Shelmet, Dewpider"]},
