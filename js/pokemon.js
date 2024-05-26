@@ -968,7 +968,7 @@
 {"dex":"745D","name":"Wolwerock (Zwielicht)","de":"Wolwerock (Zwielichtform)","en":"Lycanroc (Dusk Form)","evolved":true},
 {"dex":746,"name":"Lusardin (Einzel)","de":"Lusardin (Einzelform)","en":"Wishiwashi (Solo Form)"},
 {"dex":"746S","name":"Lusardin (Schwarm)","de":"Lusardin (Schwarmform)","en":"Wishiwashi (School Form)"},
-{"dex":747,"name":"Garstella","en":"Mareanie"},
+{"dex":747,"name":"Garstella","en":"Mareanie","getshiny":true},
 {"dex":748,"name":"Aggrostella","en":"Toxapex","evolved":true},
 {"dex":749,"name":"Pampuli","en":"Mudbray"},
 {"dex":750,"name":"Pampross","en":"Mudsdale","evolved":true},

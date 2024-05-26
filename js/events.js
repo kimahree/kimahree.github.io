@@ -1,13 +1,6 @@
 ﻿var events = [
 {"de":"Jahreszeit 14: Welt voller Wunder","en":"Season 14: World of Wonders","start":1709283600000,"end":1717228800000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/world-of-wonders"},
 {"de":"GBL - Welt voller Wunder","en":"GBL - World of Wonders","start":1709326800000,"end":1717272000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-world-of-wonders"},
-{"de":"GBL - Superliga-Remix","en":"GBL - Great League Remix","start":1714766400000,"end":1715976000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-world-of-wonders"},
-{"de":"GBL - Meisterliga","en":"GBL - Master League","start":1715371200000,"end":1715976000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-world-of-wonders"},
-{"de":"Regirock in Raids","en":"Regirock in Raids","start":1715846400000,"end":1716451200000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/world-of-wonders"},
-{"de":"Mega-Garados in Mega-Raids","en":"Mega Gyarados in Mega Raids","start":1715846400000,"end":1716451200000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/world-of-wonders"},
-{"de":"GBL - Fang-Cup [Mini & Superliga]","en":"GBL - Catch Cup [Little & Great League]","start":1715976000000,"end":1716580800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-world-of-wonders"},
-{"de":"Pygraulon Rampenlichtstunde (2x Fang-Sternenstaub)","en":"Elgyem Spotlight Hour (2x Catch Stardust)","start":1716307200000,"end":1716310800000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/world-of-wonders"},
-{"de":"Regirock Raidstunde","en":"Regirock Raid Hour","start":1716393600000,"end":1716397200000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/world-of-wonders"},
 {"de":"Muramura in Raids","en":"Stakataka in Raids","start":1716451200000,"end":1717228800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/ultra-space-wonders-2024"},
 {"de":"Mega-Tauboss in Mega-Raids","en":"Mega Pidgeot in Mega Raids","start":1716451200000,"end":1717228800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/ultra-space-wonders-2024"},
 {"de":"Wunder der Ultradimension","en":"Ultra Space Wonders","start":1716451200000,"end":1716919200000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/ultra-space-wonders-2024"},

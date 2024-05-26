@@ -191,20 +191,6 @@ var specialfilter = [
 var raids = {};
 
 var raidjson = [
-{"start":1713729600000,"tier4":["214M"],"tier5":[787]},
-{"start":1714032000000,"tier4":["306M"],"tier5":[379]},
-{"start":1714190400000,"tier2":["244SH"],"tier4":["306M"],"tier5":[379]},
-{"start":1714334400000,"tier4":["306M"],"tier5":[379]},
-{"start":1714636800000,"tier4":["65M"],"tier5":[788]},
-{"start":1714795200000,"tier2":["245SH"],"tier4":["65M"],"tier5":[788]},
-{"start":1714939200000,"tier4":["65M"],"tier5":[788]},
-{"start":1715400000000,"tier2":["245SH"],"tier4":["65M"],"tier5":[788]},
-{"start":1715544000000,"tier4":["65M"],"tier5":[788]},
-{"start":1715846400000,"tier4":["130M"],"tier5":[377]},
-{"start":1716004800000,"tier2":["245SH"],"tier4":["130M"],"tier5":[377]},
-{"start":1716130800000,"tier2":["245SH",762],"tier4":["130M"],"tier5":[377]},
-{"start":1716148800000,"tier4":["130M"],"tier5":[377]},
-{"start":1716451200000,"tier4":["18M"],"tier5":[805]},
 {"start":1716609600000,"tier2":["245SH"],"tier4":["18M"],"tier5":[805]},
 {"start":1716753600000,"tier4":["18M"],"tier5":[805]},
 
@@ -216,6 +202,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.16","date":"23.05.2024","change":["New Shiny: Mareanie"]},
 		{"ver":"1.13.15","date":"19.05.2024","change":["New Shiny: Bounsweet"]},
 		{"ver":"1.13.14","date":"29.04.2024","change":["Add raid and event schedule for May","Quests: Remove Combee, Foongus"]},
 		{"ver":"1.13.13","date":"22.04.2024","change":["Quests: Add Combee, Foongus"]},
