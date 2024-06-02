@@ -723,7 +723,7 @@
 {"dex":"586S","name":"Kronjuwild (Sommer)","de":"Kronjuwild (Sommerform)","en":"Sawsbuck (Summer Form)","evolved":true},
 {"dex":"586A","name":"Kronjuwild (Herbst)","de":"Kronjuwild (Herbstform)","en":"Sawsbuck (Autumn Form)","evolved":true},
 {"dex":"586W","name":"Kronjuwild (Winter)","de":"Kronjuwild (Winterform)","en":"Sawsbuck (Winter Form)","evolved":true},
-{"dex":587,"name":"Emolga"},
+{"dex":587,"name":"Emolga","getshiny":true},
 {"dex":588,"name":"Laukaps","en":"Karrablast","getshiny":true},
 {"dex":589,"name":"Cavalanzas","en":"Escavalier","evolved":true},
 {"dex":590,"name":"Tarnpignon","en":"Foongus","getshiny":true},

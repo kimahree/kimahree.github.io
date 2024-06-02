@@ -1,10 +1,4 @@
 ﻿var events = [
-{"de":"Jahreszeit 14: Welt voller Wunder","en":"Season 14: World of Wonders","start":1709283600000,"end":1717228800000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/world-of-wonders"},
-{"de":"GBL - Welt voller Wunder","en":"GBL - World of Wonders","start":1709326800000,"end":1717272000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-world-of-wonders"},
-{"de":"Muramura in Raids","en":"Stakataka in Raids","start":1716451200000,"end":1717228800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/ultra-space-wonders-2024"},
-{"de":"Mega-Tauboss in Mega-Raids","en":"Mega Pidgeot in Mega Raids","start":1716451200000,"end":1717228800000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/ultra-space-wonders-2024"},
-{"de":"GBL - alle Ligen","en":"GBL - all Leagues","start":1716580800000,"end":1717272000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-world-of-wonders"},
-{"de":"Pokémon GO Fest 2024 - Sendai","en":"Pokémon GO Fest 2024 - Sendai","start":1717021800000,"end":1717313400000,"color":"#fdddfd","url":"https://gofest.pokemongolive.com/sendai"},
 {"de":"Crypto-Raikou in Crypto-Raids","en":"Shadow Raikou in Shadow Raids","start":1717214400000,"end":1717358400000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/shared-skies"},
 {"de":"Jahreszeit 15: Himmlisches Teamwork","en":"Season 15: Shared Skies","start":1717228800000,"end":1725350400000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/shared-skies"},
 {"de":"Stadium Sights","en":"Stadium Sights","start":1717228800000,"end":1717524000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/go-fest-2024-stadium-sights"},
