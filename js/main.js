@@ -191,7 +191,6 @@ var specialfilter = [
 var raids = {};
 
 var raidjson = [
-{"start":1717228800000,"tier2":["243SH"],"tier4":["130M"],"tier5":[145]},
 {"start":1717358400000,"tier4":["130M"],"tier5":[145]},
 {"start":1717819200000,"tier2":["243SH"],"tier4":["130M"],"tier5":[145]},
 {"start":1717945200000,"tier2":["243SH",705],"tier4":["130M"],"tier5":[145]},
@@ -214,6 +213,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.19","date":"07.06.2024","change":["New Shiny: Comala"]},
 		{"ver":"1.13.18","date":"01.06.2024","change":["New Shiny: Emolga","Quests: Add Pidgey, Psyduck, Abra, Geodude, Onix, Lapras, Hoothoot, Mareep, Marill, Surskit, Slakoth, Makuhita, Electrike, Plusle, Minun, Clamperl, Luvdisc, Bidoof, Buizel, Patrat, Tympole, Darumaka, Galarian Darumaka, Sandygast, Pawmi","Quests: Remove Nidoran♀, Nidoran♂, Diglett, Machop, Bellsprout, Lickitung, Snorlax, Sentret, Ledyba, Spinarak, Hisuian Qwilfish, Delibird, Skarmory, Zigzagoon, Sableye, Meditite, Snorunt, Cranidos, Shieldon, Burmy (all), Bronzor, Drilbur, Gothita, Solosis, Axew, Spritzee, Swirlix, Grubbin, Togedemaru"]},
 		{"ver":"1.13.17","date":"28.05.2024","change":["Add raid and event schedule for June"]},
 		{"ver":"1.13.16","date":"23.05.2024","change":["New Shiny: Mareanie"]},

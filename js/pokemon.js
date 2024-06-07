@@ -997,7 +997,7 @@
 {"dex":773,"name":"Amigento","en":"Silvally","legendary":true,"evolved":true},
 {"dex":774,"name":"Meteno (Meteor)","de":"Meteno (Meteorform)","en":"Minior (Meteor Form)"},
 {"dex":"774C","name":"Meteno (Kern)","en":"Minior (Core)"},
-{"dex":775,"name":"Koalelu","en":"Komala"},
+{"dex":775,"name":"Koalelu","en":"Komala","getshiny":true},
 {"dex":776,"name":"Tortunator","en":"Turtonator","getshiny":true},
 {"dex":777,"name":"Togedemaru"},
 {"dex":778,"name":"Mimigma","en":"Mimikyu"},
