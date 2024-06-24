@@ -774,7 +774,7 @@
 {"dex":633,"name":"Kapuno","en":"Deino","getshiny":true},
 {"dex":634,"name":"Duodino","en":"Zweilous","evolved":true},
 {"dex":635,"name":"Trikephalo","en":"Hydreigon","evolved":true},
-{"dex":636,"name":"Ignivor","en":"Larvesta"},
+{"dex":636,"name":"Ignivor","en":"Larvesta","getshiny":true},
 {"dex":637,"name":"Ramoth","en":"Volcarona","evolved":true},
 {"dex":638,"name":"Kobalium","en":"Cobalion","legendary":true,"getshiny":true},
 {"dex":639,"name":"Terrakium","en":"Terrakion","legendary":true,"getshiny":true},
