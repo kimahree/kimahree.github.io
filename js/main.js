@@ -222,6 +222,7 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.22","date":"09.07.2024","change":["New Shinies: Ducklett, Jangmo-O, Buzzwole"]},
 		{"ver":"1.13.22","date":"04.07.2024","change":["Disabled Quests Tab"]},
 		{"ver":"1.13.21","date":"21.06.2024","change":["New Shiny: Larvesta"]},
 		{"ver":"1.13.20","date":"15.06.2024","change":["New Shiny: Crabrawler"]},
