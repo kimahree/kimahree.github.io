@@ -191,15 +191,7 @@ var specialfilter = [
 var raids = {};
 
 var raidjson = [
-{"start":1719777600000,"tier4":["248M"],"tier5":[250]},
-{"start":1720238400000,"tier2":["244SH"],"tier4":["248M"],"tier5":[250]},
-{"start":1720382400000,"tier4":["248M"],"tier5":[250]},
-{"start":1720425600000,"tier4":["260M"],"tier5":[799]},
-{"start":1720512000000,"tier4":["260M"],"tier5":[793]},
-{"start":1720598400000,"tier4":["260M"],"tier5":[798]},
-{"start":1720684800000,"tier4":["260M"],"tier5":[805]},
-{"start":1720771200000,"tier4":["260M"],"tier5":[795]},
-{"start":1720843200000,"tier2":["244SH"],"tier4":["260M"],"tier5":[795]},
+{"start":1720843200000,"tier2":["244SH"],"tier4":["260M"],"tier5":[793,794,795,796,797,798,799,800,805,806]},
 {"start":1720857600000,"tier5":[793,794,795,796,797,798,799,800,805,806]},
 {"start":1720886400000,"tier2":["244SH"],"tier4":["260M"],"tier5":[795]},
 {"start":1720944000000,"tier5":["800M","800W"]},
@@ -222,7 +214,8 @@ var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",
 
 var changelogjson = {
     "items": [
-		{"ver":"1.13.22","date":"09.07.2024","change":["New Shinies: Ducklett, Jangmo-O, Buzzwole"]},
+		{"ver":"1.13.24","date":"13.07.2024","change":["New Shiny: Necrozma"]},
+		{"ver":"1.13.23","date":"09.07.2024","change":["New Shinies: Ducklett, Jangmo-O, Buzzwole"]},
 		{"ver":"1.13.22","date":"04.07.2024","change":["Disabled Quests Tab"]},
 		{"ver":"1.13.21","date":"21.06.2024","change":["New Shiny: Larvesta"]},
 		{"ver":"1.13.20","date":"15.06.2024","change":["New Shiny: Crabrawler"]},
