@@ -1,16 +1,9 @@
 ﻿var events = [
 {"de":"Jahreszeit 15: Himmlisches Teamwork","en":"Season 15: Shared Skies","start":1717228800000,"end":1725350400000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/shared-skies"},
 {"de":"GBL - Himmlisches Teamwork","en":"GBL - Shared Skies","start":1717272000000,"end":1725393600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-shared-skies"},
-{"de":"GBL - Meisterliga & Superliga-Remix (4x Sternenstaub)","en":"GBL - Master League & Great League Remix (4x Stardust)","start":1720814400000,"end":1721419200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-shared-skies"},
-{"de":"Mega-Sumpex in Mega-Raids","en":"Mega Swampert in Mega Raids","start":1720972800000,"end":1721721600000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/shared-skies"},
-{"de":"Arktos in Raids","en":"Articuno in Raids","start":1721030400000,"end":1721721600000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/shared-skies"},
-{"de":"Hyperbonus Teil 1: Zusammen sind wir stark","en":"Ultra Unlock Part 1: Better Together","start":1721203200000,"end":1721671200000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/ultra-unlock-better-together"},
-{"de":"Crypto-Entei in Crypto-Raids","en":"Shadow Entei in Shadow Raids","start":1721448000000,"end":1721592000000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/shared-skies"},
-{"de":"Zapplardin Community Day","en":"Tynamo Community Day","start":1721563200000,"end":1721574000000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communityday-july-2024-tynamo"},
-{"de":"Zapplalek Bonus-Raids nach dem Community Day","en":"Eelektrik Bonus Raids after Community Day","start":1721574000000,"end":1721592000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/communityday-july-2024-tynamo"},
+{"de":"GBL - alle Ligen (4x Sternenstaub)","en":"GBL - all Leagues (4x Stardust)","start":1721419200000,"end":1722024000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-shared-skies"},
 {"de":"Boreos (Inkarnationsform) in Raids","en":"Tornadus (Incarnate Forme) in Raids","start":1721721600000,"end":1722070800000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/shared-skies"},
 {"de":"Mega-Stolloss in Mega-Raids","en":"Mega Aggron in Mega Raids","start":1721721600000,"end":1722070800000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/shared-skies"},
-{"de":"Digda & Alola-Digda Rampenlichtstunde (2x Entwicklungs-EP)","en":"Diglett & Alolan Diglett Spotlight Hour (2x Evolution XP)","start":1721750400000,"end":1721754000000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/shared-skies"},
 {"de":"Boreos (Inkarnationsform) Raidstunde","en":"Tornadus (Incarnate Forme) Raid Hour","start":1721836800000,"end":1721840400000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/shared-skies"},
 {"de":"Hyperbonus Teil 2: Stärke des Stahls","en":"Ultra Unlock Part 2: Strenth of Steel","start":1721894400000,"end":1722362400000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/ultra-unlock-strength-of-steel"},
 {"de":"GBL - Superliga & Fantasie-Cup","en":"GBL - Great League & Fantasy Cup","start":1722024000000,"end":1722628800000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-shared-skies"},
@@ -36,10 +29,12 @@
 {"de":"GBL - alle Ligen (4x Sternenstaub)","en":"GBL - all Leagues (4x Stardust)","start":1724443200000,"end":1725393600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-shared-skies"},
 {"de":"Rampenlichtstunde (2x )","en":"Spotlight Hour (2x )","start":1724774400000,"end":1724778000000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/shared-skies"},
 {"de":"Raidstunde","en":"Raid Hour","start":1724860800000,"end":1724864400000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/shared-skies"},
-{"de":"August Community Day","en":"August Community Day","start":1725105600000,"end":1725116400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-s15"},
-{"de":"Bonus-Raids nach dem Community Day","en":"Bonus Raids after Community Day","start":1725116400000,"end":1725134400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/cd-savethedate-s15"},
+{"de":"Robball Community Day","en":"Popplio Community Day","start":1725105600000,"end":1725116400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communityday-august-2024-popplio"},
+{"de":"Marikeck Bonus-Raids nach dem Community Day","en":"Brionne Bonus Raids after Community Day","start":1725116400000,"end":1725134400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/communityday-august-2024-popplio"},
 {"de":"Jahreszeit 16","en":"Season 16","start":1725350400000,"end":1725350400000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/shared-skies"},
 {"de":"GBL - Jahreszeit 16","en":"GBL - Season 16","start":1725393600000,"end":1725393600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-shared-skies"},
+{"de":"Pokémon GO City Safari: Jakarta","en":"Pokémon GO City Safari: Jakarta","start":1726887600000,"end":1727002800000,"color":"#fdddfd","url":"https://pokemongolive.com/events/indonesia-journey-jakarta-city-safari"},
+{"de":"Pokémon GO Safari Zone: Incheon","en":"Pokémon GO Safari Zone: Incheon","start":1727400600000,"end":1727605800000,"color":"#fdddfd","url":"https://pokemongolive.com/events/safarizone-incheon"},
 ];
 
 var colors = [
