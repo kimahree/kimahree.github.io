@@ -25,7 +25,7 @@ var secret = 0;
 
 var shareData = {};
 
-var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_remote","txt_instr","txt_button","txt_button2","txt_multi","txt_chgym","txt_cre_close","txt_cl_close","txt_reg_close","txt_boq_intro","txt_boq_generate","txt_evt_current","txt_evt_upcoming","txt_hide_gbl","txt_clip_copy"];
+var txtid = ["txt_beta","txt_mainlink","txt_lang","txt_gym","txt_hatch","txt_start","txt_player","txt_remote","txt_instr","txt_button","txt_button2","txt_multi","txt_chgym","txt_cre_close","txt_cl_close","txt_reg_close","txt_evt_current","txt_evt_upcoming","txt_hide_gbl","txt_clip_copy"];
 
 var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beeinträchtigt und fehlerhaft.",
 "Zur Hauptseite",
@@ -43,8 +43,6 @@ var txt_de = ["Achtung, dies ist die Beta Seite. Funktionen sind eventuell beein
 "Schließen",
 "Schließen",
 "Schließen",
-'Auf dieser Seite kannst du für <a href="https://www.bookofquests.de/">Book of Quests</a> einen Link erstellen, bei dem nur bestimmte Pokémon/Items auf der Karte angezeigt werden. Klicke dazu alle gewünschten Pokémon/Items an und drücke dann auf "Link erstellen!".<br>Um einen Negativfilter zu erstellen, klicke das Pokémon/Item zweimal an.',
-"Link erstellen!",
 "Aktuelle Events",
 "Bevorstehende Events",
 "Keine GBL",
@@ -67,8 +65,6 @@ var txt_en = ["Attention, you're currently on the beta page. Functionality might
 "Close",
 "Close",
 "Close",
-'On this site you can generate a link to <a href="https://www.bookofquests.de/">Book of Quests</a>, which will only show certain Pokémon/items on the map. Click all the Pokémon/items you want to see and then press "Generate Link!".<br>Click a Pokémon/item twice to generate a negative filter.',
-"Generate Link!",
 "Current events",
 "Upcoming events",
 "Hide GBL",
@@ -144,49 +140,6 @@ var multi = 0;
 
 var raid_de = [];
 var raid_en = [];
-var tg_gymedit = [];
-var tg_gymnew = [];
-
-var items = [
-{"id":"PB","name":"Pokéball","en":"Poké Ball"},
-{"id":"SB","name":"Superball","en":"Great Ball"},
-{"id":"UB","name":"Hyperball","en":"Ultra Ball"},
-{"id":"RB","name":"Himmihbeere","en":"Razz Berry"},
-{"id":"IB","name":"Sananabeere","en":"Pinap Berry"},
-{"id":"NB","name":"Nanabbeere","en":"Nanab Berry"},
-{"id":"GR","name":"Goldene Himmihbeere","en":"Golden Razz Berry"},
-{"id":"SIB","name":"Silberne Sananabeere","en":"Silver Pinap Berry"},
-{"id":"RC","name":"Sonderbonbon","en":"Rare Candy"},
-{"id":"CT","name":"Lade-TM","en":"Charge TM"},
-{"id":"QT","name":"Sofort-TM","en":"Quick TM"},
-{"id":"DU","name":"Sternenstaub","en":"Stardust"},
-{"id":"DU:1000","name":"Sternenstaub (1000+)","en":"Stardust (1000+)"},
-{"id":"RE","name":"Beleber","en":"Revive"},
-{"id":"MR","name":"Top-Beleber","en":"Max Revive"},
-{"id":"PO","name":"Trank","en":"Potion"},
-{"id":"SP","name":"Supertrank","en":"Super Potion"},
-{"id":"HP","name":"Hypertrank","en":"Hyper Potion"},
-{"id":"MP","name":"Top-Trank","en":"Max Potion"},
-{"id":"EE","name":"Entwicklungsitems","en":"Evolution Items"},
-{"id":"SE","name":"Sonnenstein","en":"Sun Stone"},
-{"id":"KE","name":"King-Stein","en":"King's Rock"},
-{"id":"ME","name":"Metallmantel","en":"Metal Coat"},
-{"id":"DE","name":"Drachenhaut","en":"Dragon Scale"},
-{"id":"UE","name":"Upgrade","en":"Up-Grade"},
-{"id":"LG","name":"Gletscher-Lockmodul","en":"Glacial Lure Module"},
-{"id":"LMO","name":"Moos-Lockmodul","en":"Mossy Lure Module"},
-{"id":"LMA","name":"Magnet-Lockmodul","en":"Magnetic Lure Module"},
-{"id":"LR","name":"Regen-Lockmodul","en":"Rainy Lure Module"},
-{"id":"SIE","name":"Sinnoh-Stein","en":"Sinnoh Stone"},
-{"id":"EIE","name":"Einall-Stein","en":"Unova Stone"},
-{"id":"MEG","name":"Mega-Energie","en":"Mega Energy"},
-{"id":"BON","name":"Bonbon","en":"Candy"}
-];
-
-var specialfilter = [
-{"id":"P","name":"Alle Begegnungen","en":"All encounters"},
-{"id":"S","name":"Alle möglichen Shiny Begegnungen","en":"All potential Shiny encounters"}
-];
 
 var raids = {};
 
@@ -214,12 +167,9 @@ var raidjson = [
 {"start":1725220800000,"tier4":["373M"],"tier5":[716]}
 ];
 
-var quests = [1,4,7,16,19,37,39,"50A",54,58,"58H",60,63,73,79,"79G",84,95,"103A","105A",123,129,131,133,138,140,142,147,163,170,179,183,185,215,220,223,246,278,280,283,287,290,296,303,304,309,311,312,327,328,345,347,349,366,370,371,374,399,418,427,431,443,449,453,459,495,498,501,504,524,535,546,554,"554G",564,566,568,582,605,618,"618G",659,667,688,702,722,725,728,759,767,769,921];
-var quests_event = [];
-var legacy = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,"19A",23,25,26,"26A",27,"27A",28,29,30,31,32,33,34,35,36,37,"37A",38,39,40,41,42,43,44,46,47,48,50,"50A",51,52,"52A","52G",53,54,55,56,58,"58H",59,60,61,63,64,66,67,69,70,72,73,74,"74A",75,77,"77G",79,"79G",80,81,"83G",84,85,86,87,88,"88A",89,90,92,93,95,96,97,98,100,"100H",102,103,"103A",104,105,"105A",106,107,108,109,"110G",111,112,113,114,117,118,120,121,123,124,125,126,127,129,131,132,133,135,136,137,138,139,140,141,142,143,147,149,152,153,155,156,158,163,164,165,167,168,170,171,176,177,179,180,182,183,184,185,187,188,190,191,193,194,"194P",196,197,198,200,202,203,204,206,207,209,"211H",213,215,"215H",216,218,219,220,223,224,225,226,227,228,229,231,232,234,238,241,246,252,255,256,258,259,261,263,"263G",265,266,268,270,273,274,276,277,278,280,281,283,285,286,287,289,290,293,294,296,299,300,302,303,304,307,309,310,311,312,313,314,315,316,317,318,320,322,325,327,328,329,331,333,335,336,337,338,339,341,343,345,346,347,348,349,351,"351I","351R","351S",353,355,358,359,361,362,363,366,370,371,374,375,387,390,391,393,396,399,401,403,408,410,412,"412S","412T",415,418,420,"421S",422,425,426,427,429,431,434,436,442,443,449,451,453,459,471,495,498,501,504,506,509,511,513,515,519,522,524,527,529,531,535,536,540,543,546,548,554,"554G",557,559,562,"562G",564,566,568,572,574,580,582,587,588,590,592,594,595,597,599,602,605,607,610,613,615,616,618,"618G",621,622,624,627,629,633,650,653,656,659,661,667,676,677,682,684,686,688,690,692,694,696,698,702,703,704,708,710,712,714,722,725,728,731,734,736,739,741,742,744,747,751,753,755,759,766,767,769,776,777,779,780,782,819,831,870,906,909,912,915,919,921,928,938,971];
-
 var changelogjson = {
     "items": [
+		{"ver":"1.13.25","date":"24.07.2024","change":["Add raid and event schedule for August","Completely removed Book of Quests functionality"]},
 		{"ver":"1.13.24","date":"13.07.2024","change":["New Shiny: Necrozma"]},
 		{"ver":"1.13.23","date":"09.07.2024","change":["New Shinies: Ducklett, Jangmo-O, Buzzwole"]},
 		{"ver":"1.13.22","date":"04.07.2024","change":["Disabled Quests Tab"]},
@@ -777,13 +727,7 @@ var changelogjson = {
 	]
 };
 
-var forms = ["19A","20A","26A","27A","28A","37A","38A","50A","51A","52A","53A","74A","75A","76A","88A","89A","103A","105A","150R","351I","351R","351S","386A","386D","386S","412S","412T","413S","413T","421S","479F","479H","479I","479M","479W","487O","492S","550B","555Z","641T","642T","645T","646B","646W","648P"];
 var hidden = 1;
-var sel_q = [];
-
-var orignest = [1,4,7,25,35,37,43,54,58,60,63,66,72,77,81,84,86,90,92,95,100,102,104,111,116,123,124,125,126,127,129,138,140,152,155,158,170,185,190,193,200,202,203,206,209,211,213,215,216,220,226,227,231,234,252,255,258,261,273,278,283,285,296,299,300,302,307,309,311,312,318,320,322,325,333,341,343,345,347,353,355,370,387,390,393,399,401,427,434,449,453,495,498,501,504,506,509,522,590];
-var oldnest = orignest.slice();
-var newnest = oldnest.slice();
 
 
 function init() {
@@ -1022,10 +966,6 @@ function init() {
 		txt += '>' + gymjson.gyms[i].value;
 		txt += (gymjson.gyms[i].ex) ? ' (EX)':"";
 		txt += '</option>';
-		if (gymjson.gyms[i].tg) {
-			tg_gymedit.push(gymjson.gyms[i].tg);
-			tg_gymnew.push(gymjson.gyms[i].value);
-		}	
 	}
 	txt += '<option id="txt_chgym" value="" disabled selected hidden>Wähle eine Arena aus.</option>'
 	document.getElementById("gym").innerHTML = txt;
@@ -1051,68 +991,6 @@ function init() {
 	
 	document.getElementById("changelog-txt").innerHTML = txt;
 	
-	// make Nestlist
-	/*
-	buildNestlist("old");
-	buildNestlist("new");
-	
-	txt = "";
-	for (var i = 0; i < pokemon.length ; i++) {
-		if (!pokemon[i].evolved && !pokemon[i].legendary && !pokemon[i].mythical && !pokemon[i].baby && !pokemon[i].alolan && !pokemon[i].mega && !pokemon[i].ultrabeast && !pokemon[i].galarian && !pokemon[i].gigantamax) {
-			txt += "<option value=" + pokemon[i].dex + ">" + pokemon[i].name + "</option>";
-		}
-	}
-	document.getElementById("old").innerHTML = txt;
-	document.getElementById("new").innerHTML = txt;
-	*/
-	// init BoQ
-
-	txt = "";
-	for (i = 0; i < specialfilter.length; i++) {
-		txt += '<button type="button" class="m-1 btn btn-outline-secondary" id="buttonSpecial' + i + '" value="' + specialfilter[i].id + '">' + specialfilter[i].name + '</button>';
-	}
-	document.getElementById("specialpoke").innerHTML = txt;
-	
-	txt = "";
-	for (i = 0; i < quests.length ; i++) {
-		txt += '<button type="button" class="m-1 btn btn-outline-secondary" id="button' + i + '" value=' + quests[i] + '>' + getPkmnByDex(quests[i])[0].name; 
-		txt += ((getPkmnByDex(quests[i])[0].getshiny)?"✨":"") + '</button>';
-		var idx = legacy.indexOf(quests[i]);
-		if (idx >= 0) {
-			legacy.splice(idx,1);
-		}
-	}
-	for (i = 0; i < quests_event.length ; i++) {
-		var i2 = i + quests.length;
-		txt += '<button type="button" class="m-1 btn btn-outline-secondary" id="button' + i2 + '" value=' + quests_event[i] + '>' + getPkmnByDex(quests_event[i])[0].name; 
-		txt += ((getPkmnByDex(quests_event[i])[0].getshiny)?"✨":"") + '⏱</button>';
-		var idx = legacy.indexOf(quests[i]);
-		if (idx >= 0) {
-			legacy.splice(idx,1);
-		}
-	}
-	document.getElementById("pokelist").innerHTML = txt;
-	
-	tinysort("#pokelist > button");
-
-	txt = "";
-	for (i = 0; i < items.length; i++) {
-		var j = i + quests.length + quests_event.length;
-		txt += '<button type="button" class="m-1 btn btn-outline-secondary" id="button' + j + '" value="' + items[i].id + '">' + items[i].name + '</button>';
-	}
-	document.getElementById("itemlist").innerHTML = txt;
-
-	tinysort("#itemlist > button");
-
-	txt = "";
-	for (i = 0; i < legacy.length ; i++) {
-		var k = i + quests.length + items.length + quests_event.length;
-		txt += '<button type="button" class="m-1 btn btn-outline-secondary" id="button' + k + '" value=' + legacy[i] + '>' + getPkmnByDex(legacy[i])[0].name;
-		txt += ((getPkmnByDex(legacy[i])[0].getshiny)?"✨":"") + '</button>';
-	}
-	document.getElementById("legacylist").innerHTML = txt;
-
-	tinysort("#legacylist > button");
 	
 	$('.selectpicker').selectpicker('refresh');
 
@@ -1555,35 +1433,6 @@ function changeLang() {
 	document.getElementById("starth").innerHTML = warn_de[startwarn];
 	document.getElementById("raidwarn").innerHTML = warn_de[raidwarn];
 	// document.getElementById("tg_warn").innerHTML = warn_de[tg_warn];
-
-	$("#pokelist button, #legacylist button").text(function(i, origText){
-		var evt;
-		if (origText[origText.length-1] == "⏱") {
-			origText = origText.substr(0,origText.length-1);
-			evt = 1;
-		}
-		var s;
-		if (origText[origText.length-1] == "✨") {
-			origText = origText.substr(0,origText.length-1);
-			s = 1;
-		}
-		var newText = (getPkmnEng(origText)) ? getPkmnEng(origText).name:origText;
-		newText += s?"✨":"";
-		newText += evt?"⏱":"";
-		return newText;
-	});
-
-	$("#itemlist button").text(function(i, origText){
-		return getItemEng(origText).name;
-	});
-	
-	$("#specialpoke button").text(function(i, origText){
-		return getSpecialEng(origText).name;
-	});
-
-	tinysort("#pokelist button");
-	tinysort("#itemlist button");	
-	tinysort("#legacylist button");	
 	
 	if (tMindex > 0) { tinysort("#tM>option:not(:first-child)"); }
 	if (t5index >= 0) { tinysort("#t5>option:not(:first-child)"); }
@@ -1611,35 +1460,6 @@ function changeLang() {
 	document.getElementById("starth").innerHTML = warn_en[startwarn];
 	document.getElementById("raidwarn").innerHTML = warn_en[raidwarn];
 	// document.getElementById("tg_warn").innerHTML = warn_en[tg_warn];
-
-	$("#pokelist button, #legacylist button").text(function(i, origText){
-		var evt;
-		if (origText[origText.length-1] == "⏱") {
-			origText = origText.substr(0,origText.length-1);
-			evt = 1;
-		}
-		var s;
-		if (origText[origText.length-1] == "✨") {
-			origText = origText.substr(0,origText.length-1);
-			s = 1;
-		}
-		var newText = (getPkmn(origText).en) ? getPkmn(origText).en:origText;
-		newText += s?"✨":"";
-		newText += evt?"⏱":"";
-		return newText;
-	});
-
-	$("#itemlist button").text(function(i, origText){
-		return getItem(origText).en;
-	});
-	
-	$("#specialpoke button").text(function(i, origText){
-		return getSpecial(origText).en;
-	});
-
-	tinysort("#pokelist button");
-	tinysort("#itemlist button");	
-	tinysort("#legacylist button");	
 	
 	if (tMindex > 0) { tinysort("#tM>option:not(:first-child)"); }
 	if (t5index >= 0) { tinysort("#t5>option:not(:first-child)"); }
@@ -1872,30 +1692,6 @@ $(document).ready(function(){
     $('input.timepicker').timepicker({});
 });
 
-$(document).ready(function() {
-	$("#boq").on('click', '.btn-outline-secondary', function(){
-		$(this).removeClass("btn-outline-secondary").addClass("btn-primary");
-		sel_q.push($(this).attr("value"));
-		sel_q.sort();
-	});   
-});
-
-$(document).ready(function() {
-	$("#boq").on('click', '.btn-primary', function(){
-		$(this).removeClass("btn-primary").addClass("btn-danger");
-		sel_q.splice(sel_q.indexOf($(this).attr("value")),1);
-		sel_q.push("-" + $(this).attr("value"));
-		sel_q.sort();
-	});   
-});
-
-$(document).ready(function() {
-	$("#boq").on('click', '.btn-danger', function(){
-		$(this).removeClass("btn-danger").addClass("btn-outline-secondary");
-		sel_q.splice(sel_q.indexOf("-" + $(this).attr("value")),1);
-	});   
-});
-
 $('.timepicker').timepicker({
     timeFormat: 'HH:mm',
     interval: 5,
@@ -1907,108 +1703,12 @@ $('.timepicker').timepicker({
 	change: checkTime,
 });
 
-function buildNestlist(type) {
-  var nest = eval(type + "nest");
-  var txt = "";  
-  for (var i = 0; i < nest.length ; i++) {
-    var pk = getPkmnByDex(nest[i])[0].name;
-	txt += "<tr><td>" + pk + "</td></tr>"
-  }
-  document.getElementById(type + "nest").innerHTML = txt;
-}
-
-function updateNestlist(type) {
-  var pk = parseInt(document.getElementById(type).value);
-  var ne = type + "nest";
-  if (eval(ne).find(isIn,pk)) {
-    eval(ne).splice(eval(ne).findIndex(isIn,pk), 1);
-  } else {
-    eval(ne).push(pk);
-    eval(ne).sort(function(a, b){return a-b});
-  }
-  buildNestlist(type);
-}
-
-function generateTable() {
-  var txt = "";
-  var j = 1;
-  var old_le = oldnest.length;
-  var new_le = newnest.length;
-  for (var i = 0; i < old_le ; i++) {
-    var oldper = 0;
-	txt += "<tr><td>" + getPkmnByDex(oldnest[i])[0].name + "</td><td>";
-	do {
-	  var p = (j * old_le / new_le) - i;
-	  var per = (p*100).toFixed(2);
-	  if (per >= 100) { 
-	    per = 100;
-	  }
-	  if (oldper > 0) {
-		per -= oldper;		
-		per = per.toFixed(2);
-	  }
-	  if (per > 0) {
-	    txt += getPkmnByDex(newnest[j-1])[0].name + " (" + per + "%)";
-	  }
-
-	  if (p < 1) {
-		j++;
-		oldper = (oldper*10 + per*10) / 10;
-		if (per > 0) {
-		  txt += ", ";
-		}
-	  }
-	}
-	while (p < 1);
-	txt += "</td></tr>";
-  }
-  
-  document.getElementById("nestcalc").innerHTML = txt;
-
-  $('.nestclc').toggle();
-}
-
-function generateLink() {
-	if (sel_q.length > 0) {
-		/*
-		for (i=0; i < forms.length; i++) {
-			var fo = sel_q.indexOf(forms[i]);
-			if (fo >= 0) {
-				sel_q[fo] = parseInt(sel_q[fo].substr(0,sel_q[fo].length - 1));
-			}
-		}
-		*/
-		link = boqlink + sel_q.toString();
-		document.getElementById("newLink").innerHTML = '<a href="' + link + '" target="_blank">' + link + '</a>';
-	} else {
-		document.getElementById("newLink").innerHTML = "Bitte wähle mindestens 1 Pokémon oder Item aus.";
-	}
-  
-	if (hidden) {
-		$('#newLink').toggle();
-		hidden = 0;
-	}
-}
-
 function hideGBL() {
 	if (document.getElementById("hide_gbl").checked) {
 		$("#events div[style='background:#f5e6ff']").attr("style", function(i, origValue){return origValue + "; display: none;"});
 	} else {
 		$("#events div[style='background:#f5e6ff; display: none;']").attr("style", function(i, origValue){return origValue.substr(0,origValue.length-16)});
 	}
-}
-
-function copyNewToOld() {
-  oldnest = newnest.slice();
-  buildNestlist("old");
-}
-
-function resetList() {
-  oldnest = orignest.slice();
-  newnest = orignest.slice();
-  buildNestlist("old");
-  buildNestlist("new");
-  $('.nestclc').toggle();
 }
 
 function getPkmnByDex(dex) {
