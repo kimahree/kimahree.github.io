@@ -144,16 +144,12 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1721721600000,"tier4":["306M"],"tier5":[641]},
-{"start":1722052800000,"tier2":["244SH"],"tier4":["306M"],"tier5":[641]},
-{"start":1722070800000,"tier4":["448M"]},
-{"start":1722092400000,"tier2":["244SH"],"tier4":["306M"],"tier5":[641]},
 {"start":1722196800000,"tier4":["306M"],"tier5":[641]},
 {"start":1722657600000,"tier2":["384M","245SH"],"tier4":["306M"],"tier5":[641]},
 {"start":1722672000000,"tier2":["384M","245SH"],"tier4":["142M"],"tier5":[146]},
 {"start":1722704400000,"tier2":["245SH"],"tier4":["142M"],"tier5":[146]},
 {"start":1722801600000,"tier4":["142M"],"tier5":[146]},
-{"start":1723262400000,"tier2":["380SH","381SH"],"tier4":["142M"],"tier5":[146]},
+{"start":1723262400000,"tier2":["249SH"],"tier4":["142M"],"tier5":[146]},
 {"start":1723406400000,"tier4":["142M"],"tier5":[146]},
 {"start":1723449600000,"tier4":["115M"],"tier5":[642]},
 {"start":1723867200000,"tier2":["245SH"],"tier4":["115M"],"tier5":[642]},
@@ -169,6 +165,7 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.26","date":"25.07.2024","change":["New Shiny: Togedemaru"]},
 		{"ver":"1.13.25","date":"24.07.2024","change":["Add raid and event schedule for August","Completely removed Book of Quests functionality"]},
 		{"ver":"1.13.24","date":"13.07.2024","change":["New Shiny: Necrozma"]},
 		{"ver":"1.13.23","date":"09.07.2024","change":["New Shinies: Ducklett, Jangmo-O, Buzzwole"]},

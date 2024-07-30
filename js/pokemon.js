@@ -1006,7 +1006,7 @@
 {"dex":"774C","name":"Meteno (Kern)","en":"Minior (Core)"},
 {"dex":775,"name":"Koalelu","en":"Komala","getshiny":true},
 {"dex":776,"name":"Tortunator","en":"Turtonator","getshiny":true},
-{"dex":777,"name":"Togedemaru"},
+{"dex":777,"name":"Togedemaru","getshiny":true},
 {"dex":778,"name":"Mimigma","en":"Mimikyu"},
 {"dex":779,"name":"Knirfish","en":"Bruxish"},
 {"dex":780,"name":"Sen-Long","en":"Drampa","getshiny":true},
