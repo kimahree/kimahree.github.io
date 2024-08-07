@@ -32,8 +32,18 @@
 {"de":"Marikeck Bonus-Raids nach dem Community Day","en":"Brionne Bonus Raids after Community Day","start":1725116400000,"end":1725134400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/communityday-august-2024-popplio"},
 {"de":"Jahreszeit 16","en":"Season 16","start":1725350400000,"end":1725350400000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/shared-skies"},
 {"de":"GBL - Jahreszeit 16","en":"GBL - Season 16","start":1725393600000,"end":1725393600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-shared-skies"},
+{"de":"Raidtag","en":"Raid Day","start":1725786000000,"end":1725807600000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-s16"},
+{"de":"September Community Day","en":"September Community Day","start":1726315200000,"end":1726326000000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-s16"},
+{"de":"Bonus-Raids nach dem Community Day","en":"Bonus Raids after Community Day","start":1726326000000,"end":1726344000000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/cd-savethedate-s16"},
 {"de":"Pokémon GO City Safari: Jakarta","en":"Pokémon GO City Safari: Jakarta","start":1726887600000,"end":1727002800000,"color":"#fdddfd","url":"https://pokemongolive.com/events/indonesia-journey-jakarta-city-safari"},
+{"de":"Forschungstag","en":"Research Day","start":1726995600000,"end":1727017200000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-s16"},
 {"de":"Pokémon GO Safari Zone: Incheon","en":"Pokémon GO Safari Zone: Incheon","start":1727400600000,"end":1727605800000,"color":"#fdddfd","url":"https://pokemongolive.com/events/safarizone-incheon"},
+{"de":"Oktober Community Day","en":"October Community Day","start":1728129600000,"end":1728140400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-s16"},
+{"de":"Bonus-Raids nach dem Community Day","en":"Bonus Raids after Community Day","start":1728140400000,"end":1728158400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/cd-savethedate-s16"},
+{"de":"Raidtag","en":"Raid Day","start":1728723600000,"end":1728745200000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-s16"},
+{"de":"Forschungstag","en":"Research Day","start":1729328400000,"end":1729350000000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-s16"},
+{"de":"November Community Day","en":"November Community Day","start":1731243600000,"end":1731254400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/cd-savethedate-s16"},
+{"de":"Bonus-Raids nach dem Community Day","en":"Bonus Raids after Community Day","start":1731254400000,"end":1731272400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/cd-savethedate-s16"},
 ];
 
 var colors = [
