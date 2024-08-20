@@ -144,11 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1722801600000,"tier4":["142M"],"tier5":[146]},
-{"start":1723262400000,"tier2":["249SH"],"tier4":["142M"],"tier5":[146]},
-{"start":1723406400000,"tier4":["142M"],"tier5":[146]},
-{"start":1723449600000,"tier4":["115M"],"tier5":[642]},
-{"start":1723867200000,"tier2":["245SH"],"tier4":["115M"],"tier5":[642]},
 {"start":1724011200000,"tier4":["115M"],"tier5":[642]},
 {"start":1724227200000,"tier4":["373M"],"tier5":[716]},
 {"start":1724472000000,"tier2":["245SH"],"tier4":["373M"],"tier5":[716]},
@@ -161,6 +156,7 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.27","date":"16.08.2024","change":["New Shiny: Mienfoo"]},
 		{"ver":"1.13.26","date":"25.07.2024","change":["New Shiny: Togedemaru"]},
 		{"ver":"1.13.25","date":"24.07.2024","change":["Add raid and event schedule for August","Completely removed Book of Quests functionality"]},
 		{"ver":"1.13.24","date":"13.07.2024","change":["New Shiny: Necrozma"]},
