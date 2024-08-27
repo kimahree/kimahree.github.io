@@ -144,9 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1724011200000,"tier4":["115M"],"tier5":[642]},
-{"start":1724227200000,"tier4":["373M"],"tier5":[716]},
-{"start":1724472000000,"tier2":["245SH"],"tier4":["373M"],"tier5":[716]},
 {"start":1724616000000,"tier4":["373M"],"tier5":[716]},
 {"start":1725076800000,"tier2":["245SH"],"tier4":["373M"],"tier5":[716]},
 {"start":1725116400000,"tier2":[729,"245SH"],"tier4":["373M"],"tier5":[716]},
@@ -156,6 +153,7 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.28","date":"27.08.2024","change":["Add events from new season (part 1)"]},
 		{"ver":"1.13.27","date":"16.08.2024","change":["New Shiny: Mienfoo"]},
 		{"ver":"1.13.26","date":"25.07.2024","change":["New Shiny: Togedemaru"]},
 		{"ver":"1.13.25","date":"24.07.2024","change":["Add raid and event schedule for August","Completely removed Book of Quests functionality"]},
