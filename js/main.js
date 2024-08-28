@@ -148,12 +148,27 @@ var raidjson = [
 {"start":1725076800000,"tier2":["245SH"],"tier4":["373M"],"tier5":[716]},
 {"start":1725116400000,"tier2":[729,"245SH"],"tier4":["373M"],"tier5":[716]},
 {"start":1725134400000,"tier2":["245SH"],"tier4":["373M"],"tier5":[716]},
-{"start":1725220800000,"tier4":["373M"],"tier5":[716]}
+{"start":1725220800000,"tier4":["373M"],"tier5":[716]},
+{"start":1725350400000,"tier4":["359M"],"tier5":[382]},
+{"start":1725681600000,"tier2":["243SH"],"tier3":[870],"tier4":["359M"],"tier5":[382]},
+{"start":1725807600000,"tier2":["243SH"],"tier4":["359M"],"tier5":[382]},
+{"start":1725825600000,"tier4":["359M"],"tier5":[382]},
+{"start":1726286400000,"tier2":["243SH"],"tier4":["359M"],"tier5":[382]},
+{"start":1726300800000,"tier2":["243SH"],"tier4":["229M"],"tier5":[383]},
+{"start":1726326000000,"tier2":["243SH",77,"77G"],"tier4":["229M"],"tier5":[383]},
+{"start":1726344000000,"tier2":["243SH"],"tier4":["229M"],"tier5":[383]},
+{"start":1726430400000,"tier4":["229M"],"tier5":[383]},
+{"start":1726891200000,"tier2":["243SH"],"tier4":["229M"],"tier5":[383]},
+{"start":1727035200000,"tier4":["229M"],"tier5":[383]},
+{"start":1727337600000,"tier4":["282M"],"tier5":[888]},
+{"start":1727496000000,"tier2":["243SH"],"tier4":["282M"],"tier5":[888]},
+{"start":1727640000000,"tier4":["282M"],"tier5":[888]}
 ];
 
 var changelogjson = {
     "items": [
-		{"ver":"1.13.28","date":"27.08.2024","change":["Add events from new season (part 1)"]},
+		{"ver":"1.13.29","date":"28.08.2024","change":["Add raid and event schedule for September"]},
+		{"ver":"1.13.28","date":"27.08.2024","change":["Add events from new season"]},
 		{"ver":"1.13.27","date":"16.08.2024","change":["New Shiny: Mienfoo"]},
 		{"ver":"1.13.26","date":"25.07.2024","change":["New Shiny: Togedemaru"]},
 		{"ver":"1.13.25","date":"24.07.2024","change":["Add raid and event schedule for August","Completely removed Book of Quests functionality"]},
