@@ -144,11 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1724616000000,"tier4":["373M"],"tier5":[716]},
-{"start":1725076800000,"tier2":["245SH"],"tier4":["373M"],"tier5":[716]},
-{"start":1725116400000,"tier2":[729,"245SH"],"tier4":["373M"],"tier5":[716]},
-{"start":1725134400000,"tier2":["245SH"],"tier4":["373M"],"tier5":[716]},
-{"start":1725220800000,"tier4":["373M"],"tier5":[716]},
 {"start":1725350400000,"tier4":["359M"],"tier5":[382]},
 {"start":1725681600000,"tier2":["243SH"],"tier3":[870],"tier4":["359M"],"tier5":[382]},
 {"start":1725807600000,"tier2":["243SH"],"tier4":["359M"],"tier5":[382]},
@@ -167,6 +162,8 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.31","date":"03.09.2024","change":["New Shiny: Skwovet, Wooloo"]},
+		{"ver":"1.13.30","date":"31.08.2024","change":["New Shiny: Popplio"]},
 		{"ver":"1.13.29","date":"28.08.2024","change":["Add raid and event schedule for September"]},
 		{"ver":"1.13.28","date":"27.08.2024","change":["Add events from new season"]},
 		{"ver":"1.13.27","date":"16.08.2024","change":["New Shiny: Mienfoo"]},
