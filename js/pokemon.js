@@ -1102,7 +1102,7 @@
 {"dex":867,"name":"Oghnatoll","en":"Runerigus","evolved":true},
 {"dex":868,"name":"Hokumil","en":"Milcery"},
 {"dex":869,"name":"Pokusan","en":"Alcremie","evolved":true},
-{"dex":870,"name":"Legios","en":"Falinks"},
+{"dex":870,"name":"Legios","en":"Falinks","getshiny":true},
 {"dex":871,"name":"Britzigel","en":"Pincurchin"},
 {"dex":872,"name":"Snomnom","en":"Snom"},
 {"dex":873,"name":"Mottineva","en":"Frosmoth","evolved":true},

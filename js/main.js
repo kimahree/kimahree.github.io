@@ -144,9 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1725350400000,"tier4":["359M"],"tier5":[382]},
-{"start":1725681600000,"tier2":["243SH"],"tier3":[870],"tier4":["359M"],"tier5":[382]},
-{"start":1725807600000,"tier2":["243SH"],"tier4":["359M"],"tier5":[382]},
 {"start":1725825600000,"tier4":["359M"],"tier5":[382]},
 {"start":1726286400000,"tier2":["243SH"],"tier4":["359M"],"tier5":[382]},
 {"start":1726300800000,"tier2":["243SH"],"tier4":["229M"],"tier5":[383]},
@@ -162,7 +159,8 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
-		{"ver":"1.13.31","date":"03.09.2024","change":["New Shiny: Skwovet, Wooloo"]},
+		{"ver":"1.13.32","date":"08.09.2024","change":["New Shiny: Falinks"]},
+		{"ver":"1.13.31","date":"03.09.2024","change":["New Shinies: Skwovet, Wooloo"]},
 		{"ver":"1.13.30","date":"31.08.2024","change":["New Shiny: Popplio"]},
 		{"ver":"1.13.29","date":"28.08.2024","change":["Add raid and event schedule for September"]},
 		{"ver":"1.13.28","date":"27.08.2024","change":["Add events from new season"]},
