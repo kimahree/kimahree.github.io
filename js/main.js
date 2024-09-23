@@ -144,13 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1725825600000,"tier4":["359M"],"tier5":[382]},
-{"start":1726286400000,"tier2":["243SH"],"tier4":["359M"],"tier5":[382]},
-{"start":1726300800000,"tier2":["243SH"],"tier4":["229M"],"tier5":[383]},
-{"start":1726326000000,"tier2":["243SH",77,"77G"],"tier4":["229M"],"tier5":[383]},
-{"start":1726344000000,"tier2":["243SH"],"tier4":["229M"],"tier5":[383]},
-{"start":1726430400000,"tier4":["229M"],"tier5":[383]},
-{"start":1726891200000,"tier2":["243SH"],"tier4":["229M"],"tier5":[383]},
 {"start":1727035200000,"tier4":["229M"],"tier5":[383]},
 {"start":1727337600000,"tier4":["282M"],"tier5":[888]},
 {"start":1727496000000,"tier2":["243SH"],"tier4":["282M"],"tier5":[888]},
@@ -159,6 +152,7 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.33","date":"23.09.2024","change":["New Shiny: Passimian"]},
 		{"ver":"1.13.32","date":"08.09.2024","change":["New Shiny: Falinks"]},
 		{"ver":"1.13.31","date":"03.09.2024","change":["New Shinies: Skwovet, Wooloo"]},
 		{"ver":"1.13.30","date":"31.08.2024","change":["New Shiny: Popplio"]},

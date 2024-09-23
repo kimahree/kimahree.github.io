@@ -994,7 +994,7 @@
 {"dex":763,"name":"Fruyal","en":"Tsareena","evolved":true},
 {"dex":764,"name":"Curelei","en":"Comfey","regional":true},
 {"dex":765,"name":"Kommandutan","en":"Oranguru","getshiny":true},
-{"dex":766,"name":"Quartermak","en":"Passimian"},
+{"dex":766,"name":"Quartermak","en":"Passimian","getshiny":true},
 {"dex":767,"name":"Reißlaus","en":"Wimpod","getshiny":true},
 {"dex":768,"name":"Tectass","en":"Golisopod","evolved":true},
 {"dex":769,"name":"Sankabuh","en":"Sandygast"},
