@@ -144,16 +144,8 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1727035200000,"tier4":["229M"],"tier5":[383]},
-{"start":1727337600000,"tier4":["282M"],"tier5":[888]},
-{"start":1727496000000,"tier2":["243SH"],"tier4":["282M"],"tier5":[888]},
-{"start":1727640000000,"tier4":["282M"],"tier5":[888]},
-{"start":1728028800000,"tier4":["257M"],"tier5":[889]},
-{"start":1728100800000,"tier2":["244SH"],"tier4":["257M"],"tier5":[889]},
-{"start":1728140400000,"tier2":[541,"244SH"],"tier4":["257M"],"tier5":[889]},
-{"start":1728158400000,"tier2":["244SH"],"tier4":["257M"],"tier5":[889]},
 {"start":1728244800000,"tier4":["257M"],"tier5":[889]},
-{"start":1728705600000,"tier2":["244SH"],"tier4":["319M","257M"],"tier5":[889]},
+{"start":1728705600000,"tier2":["244SH"],"tier4":["303M","257M"],"tier5":[889]},
 {"start":1728745200000,"tier2":["244SH"],"tier4":["257M"],"tier5":[889]},
 {"start":1728849600000,"tier4":["257M"],"tier5":[889]},
 {"start":1728892800000,"tier4":["302M"],"tier5":["487O"]},
@@ -168,6 +160,9 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.36","date":"06.10.2024","change":["New Shiny: Sewaddle"]},
+		{"ver":"1.13.35","date":"04.10.2024","change":["New Shinies: Galarian Articuno, Galarian Zapdos, Galarian Moltres, Zamazenta"]},
+		{"ver":"1.13.34","date":"26.09.2024","change":["New Shiny: Zacian"]},
 		{"ver":"1.13.33","date":"23.09.2024","change":["New Shiny: Passimian"]},
 		{"ver":"1.13.32","date":"08.09.2024","change":["New Shiny: Falinks"]},
 		{"ver":"1.13.31","date":"03.09.2024","change":["New Shinies: Skwovet, Wooloo"]},
