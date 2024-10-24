@@ -145,20 +145,39 @@ var raids = {};
 
 var raidjson = [
 {"start":1728892800000,"tier4":["302M"],"tier5":["487O"]},
-{"start":1729310400000,"tier2":["244SH"],"tier4":["302M"],"tier5":["487O"]},
+{"start":1729310400000,"tier1":["3G","6G","9G"],"tier2":["244SH"],"tier4":["302M"],"tier5":["487O"]},
 {"start":1729454400000,"tier4":["302M"],"tier5":["487O"]},
 {"start":1729915200000,"tier2":["244SH"],"tier4":["302M"],"tier5":["487O"]},
 {"start":1730062800000,"tier4":["302M"],"tier5":["487O"]},
 {"start":1730106000000,"tier4":["354M"],"tier5":[491]},
-{"start":1730523600000,"tier2":["245SH"],"tier4":["354M"],"tier5":[491]},
-{"start":1730667600000,"tier4":["354M"],"tier5":[491]}
+{"start":1730365200000,"tier1":["94G"],"tier4":["354M"],"tier5":[491]},
+{"start":1730523600000,"tier1":["94G"],"tier2":["245SH"],"tier4":["354M"],"tier5":[491]},
+{"start":1730667600000,"tier4":["354M"],"tier5":[491]},
+{"start":1730710800000,"tier4":["310M"],"tier5":[249]},
+{"start":1731128400000,"tier2":["245SH"],"tier4":["310M"],"tier5":[249]},
+{"start":1731254400000,"tier2":["245SH",57],"tier4":["310M"],"tier5":[249]},
+{"start":1731272400000,"tier4":["310M"],"tier5":[249]},
+{"start":1731315600000,"tier4":["373M"],"tier5":[249]},
+{"start":1731733200000,"tier2":["245SH"],"tier4":["373M"],"tier5":[249]},
+{"start":1731877200000,"tier4":["373M"],"tier5":[249]},
+{"start":1731920400000,"tier4":["15M","181M"],"tier5":["483O","484O"]},
+{"start":1732028400000,"tier4":["15M","181M"],"tier5":[793,"483O","484O"]},
+{"start":1732042800000,"tier4":["15M","181M"],"tier5":["483O","484O"]},
+{"start":1732114800000,"tier4":["15M","181M"],"tier5":[785,"483O","484O"]},
+{"start":1732129200000,"tier4":["15M","181M"],"tier5":["483O","484O"]},
+{"start":1732338000000,"tier1":["849GA","849GL"],"tier2":["245SH"],"tier3":["849A","849L"],"tier4":["15M","181M"],"tier5":["483O","484O"]},
+{"start":1732482000000,"tier4":["15M","181M"],"tier5":["483O","484O"]},
+{"start":1732698000000,"tier4":["334M"],"tier5":[888,889,894,895]},
+{"start":1732942800000,"tier2":["245SH"],"tier4":["334M"],"tier5":[888,889,894,895]},
+{"start":1733086800000,"tier4":["334M"],"tier5":[888,889,894,895]},
 ];
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.37","date":"24.10.2024","change":["Add raid and event schedule for November","Basic Gigantamax support","Add missing Gigantamax Pokémon"]},
 		{"ver":"1.13.36","date":"06.10.2024","change":["New Shiny: Sewaddle"]},
 		{"ver":"1.13.35","date":"04.10.2024","change":["New Shinies: Galarian Articuno, Galarian Zapdos, Galarian Moltres, Zamazenta"]},
-		{"ver":"1.13.34","date":"26.09.2024","change":["New Shiny: Zacian"]},
+		{"ver":"1.13.34","date":"26.09.2024","change":["New Shiny: Zacian","Add raid and event schedule for October"]},
 		{"ver":"1.13.33","date":"23.09.2024","change":["New Shiny: Passimian"]},
 		{"ver":"1.13.32","date":"08.09.2024","change":["New Shiny: Falinks"]},
 		{"ver":"1.13.31","date":"03.09.2024","change":["New Shinies: Skwovet, Wooloo"]},
@@ -822,13 +841,13 @@ function init() {
 		t3 = raids.tier3.length; 
 	} catch {}
 	if (t3 > 0) {
-		txt += '<optgroup id="t3" label="3er"><option ';
+		txt += '<optgroup id="t3" label="4er"><option ';
 		if (t3 == 1) {
 			txt += "hidden disabled ";
 		}
-		txt += 'value="3er" style="font-style:italic">3er Ei</option>';
-		raid_de.push("3er Ei");
-		raid_en.push("Tier 3 Egg");
+		txt += 'value="4er" style="font-style:italic">4er Ei</option>';
+		raid_de.push("4er Ei");
+		raid_en.push("Tier 4 Egg");
 		for (i = 0; i < t3; i++) {
 			var rp = getPkmnByDex(raids.tier3[i])[0];
 			var d = (rp.de) ? rp.de:rp.name;
@@ -847,7 +866,7 @@ function init() {
 		if (t2 == 1) {
 			txt += "hidden disabled ";
 		}
-		txt += 'value="4er" style="font-style:italic">Spezial-Raid Ei</option>';
+		txt += 'value="2er" style="font-style:italic">Spezial-Raid Ei</option>';
 		raid_de.push("Spezial-Raid Ei");
 		raid_en.push("Special Raid Egg");
 		for (i = 0; i < t2; i++) {
@@ -864,13 +883,14 @@ function init() {
 		t1 = raids.tier1.length; 
 	} catch {}
 	if (t1 > 0) {
-		txt += '<optgroup id="t1" label="1er"><option ';
-		if (t1 == 1) {
+		txt += '<optgroup id="t1" label="Dynamax">';
+		txt += '<option ';
+		if (t1 >= 1) {
 			txt += "hidden disabled ";
 		}
-		txt += 'value="1er" style="font-style:italic">1er Ei</option>';
-		raid_de.push("1er Ei");
-		raid_en.push("Tier 1 Egg");
+		txt += 'value="1er" style="font-style:italic">Gigadynamax</option>';
+		raid_de.push("Gigadynamax");
+		raid_en.push("Gigantamax"); 
 		for (i = 0; i < t1; i++) {
 			var rp = getPkmnByDex(raids.tier1[i])[0];
 			var d = (rp.de) ? rp.de:rp.name;
