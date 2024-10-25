@@ -22,7 +22,7 @@
 {"de":"Gehweiher Rampenlichtstunde (2x Verschick-Bonbons)","en":"Surskit Spotlight Hour (2x Transfer Candy)","start":1730826000000,"end":1730829600000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/max-out"},
 {"de":"GBL - Superliga und Meister-Premier","en":"GBL - Great League and Master Premier","start":1730840400000,"end":1731445200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-max-out"},
 {"de":"Lugia Raidstunde","en":"Lugia Raid Hour","start":1730912400000,"end":1730916000000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/max-out"},
-{"de":"Harvest Festival","en":"Harvest Festival","start":1730970000000,"end":1731438000000,"color":"#e6ffe6","url":"https://pokemongolive.com/seasons/max-out"},
+{"de":"Ernte-Festival","en":"Harvest Festival","start":1730970000000,"end":1731438000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/harvest-festival-2024"},
 {"de":"Crypto-Suicune in Crypto-Raids","en":"Shadow Suicune in Shadow Raids","start":1731128400000,"end":1731272400000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/max-out"},
 {"de":"Menki Community Day","en":"Mankey Community Day","start":1731243600000,"end":1731254400000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communityday-november-2024-mankey"},
 {"de":"Rasaff Bonus-Raids nach dem Community Day","en":"Primeape Bonus Raids after Community Day","start":1731254400000,"end":1731272400000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/communityday-november-2024-mankey"},
