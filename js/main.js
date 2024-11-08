@@ -151,11 +151,12 @@ var raidjson = [
 {"start":1731315600000,"tier4":["373M"],"tier5":[249]},
 {"start":1731733200000,"tier2":["245SH"],"tier4":["373M"],"tier5":[249]},
 {"start":1731877200000,"tier4":["373M"],"tier5":[249]},
-{"start":1731920400000,"tier4":["15M","181M"],"tier5":["483O","484O"]},
-{"start":1732028400000,"tier4":["15M","181M"],"tier5":[793,"483O","484O"]},
-{"start":1732042800000,"tier4":["15M","181M"],"tier5":["483O","484O"]},
-{"start":1732114800000,"tier4":["15M","181M"],"tier5":[785,"483O","484O"]},
-{"start":1732129200000,"tier4":["15M","181M"],"tier5":["483O","484O"]},
+{"start":1731884400000,"tier4":["15M","181M"],"tier5":["483O","484O"]},
+{"start":1731970800000,"tier4":["15M","181M"],"tier5":[793]},
+{"start":1732057200000,"tier4":["15M","181M"],"tier5":[785]},
+{"start":1732143600000,"tier4":["15M","181M"],"tier5":["483O"]},
+{"start":1732230000000,"tier4":["15M","181M"],"tier5":["484O"]},
+{"start":1732316400000,"tier4":["15M","181M"],"tier5":["483O","484O"]},
 {"start":1732338000000,"tier1":["849GA","849GL"],"tier2":["245SH"],"tier3":["849A","849L"],"tier4":["15M","181M"],"tier5":["483O","484O"]},
 {"start":1732482000000,"tier4":["15M","181M"],"tier5":["483O","484O"]},
 {"start":1732698000000,"tier4":["334M"],"tier5":[888,889,894,895]},
@@ -165,6 +166,7 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.38","date":"07.11.2024","change":["New Shiny: Smoliv"]},
 		{"ver":"1.13.37","date":"24.10.2024","change":["Add raid and event schedule for November","Basic Gigantamax support","Add missing Gigantamax Pokémon"]},
 		{"ver":"1.13.36","date":"06.10.2024","change":["New Shiny: Sewaddle"]},
 		{"ver":"1.13.35","date":"04.10.2024","change":["New Shinies: Galarian Articuno, Galarian Zapdos, Galarian Moltres, Zamazenta"]},
