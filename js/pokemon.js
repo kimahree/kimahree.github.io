@@ -1080,7 +1080,7 @@
 {"dex":845,"name":"Urgl","en":"Cramorant"},
 {"dex":846,"name":"Pikuda","en":"Arrokuda"},
 {"dex":847,"name":"Barrakiefa","en":"Barraskewda","evolved":true},
-{"dex":848,"name":"Toxel"},
+{"dex":848,"name":"Toxel","getshiny":true},
 {"dex":849,"name":"Riffex","en":"Toxtricity","evolved":true},
 {"dex":"849A","name":"Riffex (Hoch-Form)","en":"Toxtricity (Amped Form)","evolved":true},
 {"dex":"849L","name":"Riffex (Tief-Form)","en":"Toxtricity (Low Key Form)","evolved":true},
