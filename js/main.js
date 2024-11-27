@@ -144,16 +144,26 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1732143600000,"tier4":["15M","181M"],"tier5":["483O","484O",785,793]},
-{"start":1732338000000,"tier1":["849GA","849GL"],"tier2":["245SH"],"tier3":["849A","849L"],"tier4":["15M","181M"],"tier5":["483O","484O","382P","383P",785,793]},
-{"start":1732482000000,"tier4":["15M","181M"],"tier5":["483O","484O",785,793]},
 {"start":1732698000000,"tier4":["334M"],"tier5":[888,889,894,895]},
 {"start":1732942800000,"tier2":["245SH"],"tier4":["334M"],"tier5":[888,889,894,895]},
 {"start":1733086800000,"tier4":["334M"],"tier5":[888,889,894,895]},
+{"start":1733216400000,"tier4":["354M"],"tier5":["649C"]},
+{"start":1733547600000,"tier2":["378SH"],"tier4":["354M"],"tier5":["649C"]},
+{"start":1733691600000,"tier4":["354M"],"tier5":["649C"]},
+{"start":1733994000000,"tier4":["381M"]},
+{"start":1734152400000,"tier2":["378SH"],"tier4":["381M"],"tier5":["800W","800M"]},
+{"start":1734296400000,"tier4":["381M"]},
+{"start":1734598800000,"tier4":["380M"]},
+{"start":1734757200000,"tier2":["378SH"],"tier4":["380M"]},
+{"start":1734901200000,"tier4":["380M"]},
+{"start":1735203600000,"tier4":["460M"],"tier5":[487]},
+{"start":1735362000000,"tier2":["378SH"],"tier4":["460M"],"tier5":[487]},
+{"start":1735506000000,"tier4":["460M"],"tier5":[487]},
 ];
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.40","date":"26.11.2024","change":["New Shinies: Galarian Corsola, Regidrago, Regieleki","Add raid and event schedule for December"]},
 		{"ver":"1.13.39","date":"18.11.2024","change":["New Shiny: Toxel"]},
 		{"ver":"1.13.38","date":"07.11.2024","change":["New Shiny: Smoliv"]},
 		{"ver":"1.13.37","date":"24.10.2024","change":["Add raid and event schedule for November","Basic Gigantamax support","Add missing Gigantamax Pokémon"]},
