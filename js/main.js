@@ -144,8 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1733216400000,"tier4":["354M"],"tier5":["649C"]},
-{"start":1733547600000,"tier2":["378SH"],"tier4":["354M"],"tier5":["649C"]},
 {"start":1733691600000,"tier4":["354M"],"tier5":["649C"]},
 {"start":1733994000000,"tier4":["381M"]},
 {"start":1734152400000,"tier2":["378SH"],"tier4":["381M"],"tier5":["800W","800M"]},
@@ -160,7 +158,7 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
-		{"ver":"1.13.40","date":"03.12.2024","change":["New Shiny: Basculin (Red-Striped & Blue-Striped)"]},
+		{"ver":"1.13.40","date":"03.12.2024","change":["New Shinies: Genesect (Chill Drive), Basculin (Red-Striped & Blue-Striped)"]},
 		{"ver":"1.13.40","date":"26.11.2024","change":["New Shinies: Galarian Corsola, Regidrago, Regieleki","Add raid and event schedule for December"]},
 		{"ver":"1.13.39","date":"18.11.2024","change":["New Shiny: Toxel"]},
 		{"ver":"1.13.38","date":"07.11.2024","change":["New Shiny: Smoliv"]},
