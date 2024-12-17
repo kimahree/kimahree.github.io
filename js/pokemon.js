@@ -997,7 +997,7 @@
 {"dex":766,"name":"Quartermak","en":"Passimian","getshiny":true},
 {"dex":767,"name":"Reißlaus","en":"Wimpod","getshiny":true},
 {"dex":768,"name":"Tectass","en":"Golisopod","evolved":true},
-{"dex":769,"name":"Sankabuh","en":"Sandygast"},
+{"dex":769,"name":"Sankabuh","en":"Sandygast","getshiny":true},
 {"dex":770,"name":"Colossand","en":"Palossand","evolved":true},
 {"dex":771,"name":"Gufa","en":"Pyukumuku"},
 {"dex":772,"name":"Typ:Null","en":"Type: Null","legendary":true},
