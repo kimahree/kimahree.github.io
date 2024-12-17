@@ -69,6 +69,10 @@
 {"de":"Pokémon GO Tour: Einall - Global","en":"Pokémon GO Tour: Unova - Global","start":1740819600000,"end":1740934800000,"color":"#fdddfd","url":"https://gotour.pokemongolive.com/global"},
 {"de":"Jahreszeit 18","en":"Season 18","start":1741078800000,"end":1741078800000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/dual-destiny"},
 {"de":"GBL - Season 18","en":"GBL - Season 18","start":1741122000000,"end":1741122000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-dual-destiny"},
+{"de":"Pokémon GO City Safari: Singapur","en":"Pokémon GO City Safari: Singapore","start":1743213600000,"end":1743325200000,"color":"#fdddfd","url":"https://pokemongolive.com/en/events/citysafari-singapore"},
+{"de":"Pokémon GO City Safari: Mumbai","en":"Pokémon GO City Safari: Mumbai","start":1743222600000,"end":1743334200000,"color":"#fdddfd","url":"https://pokemongolive.com/en/events/citysafari-mumbai"},
+{"de":"Pokémon GO City Safari: Mailand","en":"Pokémon GO City Safari: Milan","start":1743238800000,"end":1743350400000,"color":"#fdddfd","url":"https://pokemongolive.com/en/events/citysafari-milan"},
+{"de":"Pokémon GO City Safari: Santiago de Chile","en":"Pokémon GO City Safari: Santiago","start":1743253200000,"end":1743364800000,"color":"#fdddfd","url":"https://pokemongolive.com/en/events/citysafari-santiago"},
 ];
 
 var colors = [
