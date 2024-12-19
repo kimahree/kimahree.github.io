@@ -144,7 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1734296400000,"tier4":["381M"]},
 {"start":1734598800000,"tier4":["380M"]},
 {"start":1734757200000,"tier2":["378SH"],"tier4":["380M"]},
 {"start":1734901200000,"tier4":["380M"]},
