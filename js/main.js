@@ -150,10 +150,25 @@ var raidjson = [
 {"start":1735203600000,"tier4":["460M"],"tier5":[487]},
 {"start":1735362000000,"tier2":["378SH"],"tier4":["460M"],"tier5":[487]},
 {"start":1735506000000,"tier4":["460M"],"tier5":[487]},
+{"start":1735966800000,"tier2":["379SH"],"tier4":["460M"],"tier5":[487]},
+{"start":1735981200000,"tier2":["379SH"],"tier4":["428M"],"tier5":[484]},
+{"start":1736110800000,"tier4":["428M"],"tier5":[484]},
+{"start":1736571600000,"tier2":["379SH"],"tier4":["428M","475M"],"tier5":[484]},
+{"start":1736611200000,"tier2":["379SH"],"tier4":["428M"],"tier5":[484]},
+{"start":1736715600000,"tier4":["428M"],"tier5":[484]},
+{"start":1737018000000,"tier4":["475M"],"tier5":["386A","386D"]},
+{"start":1737176400000,"tier2":["379SH"],"tier4":["475M"],"tier5":["386A","386D"]},
+{"start":1737320400000,"tier4":["475M"],"tier5":["386A","386D"]},
+{"start":1737709200000,"tier4":["308M"],"tier5":[483]},
+{"start":1737781200000,"tier2":["379SH"],"tier4":["308M"],"tier5":[483]},
+{"start":1737925200000,"tier4":["308M"],"tier5":[483]},
+{"start":1738386000000,"tier2":["379SH"],"tier4":["308M"],"tier5":[483]},
+{"start":1738530000000,"tier4":["308M"],"tier5":[483]},
 ];
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.43","date":"20.12.2024","change":["Add raid and event schedule for January 2025"]},
 		{"ver":"1.13.42","date":"17.12.2024","change":["New Shiny: Sandygast"]},
 		{"ver":"1.13.41","date":"03.12.2024","change":["New Shinies: Genesect (Chill Drive), Basculin (Red-Striped & Blue-Striped)"]},
 		{"ver":"1.13.40","date":"26.11.2024","change":["New Shinies: Galarian Corsola, Regidrago, Regieleki","Add raid and event schedule for December"]},
