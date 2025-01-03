@@ -1254,7 +1254,7 @@
 {"dex":971,"name":"Gruff","en":"Greavard"},
 {"dex":972,"name":"Friedwuff","en":"Houndstone","evolved":true},
 {"dex":973,"name":"Flaminkno","en":"Flamigo"},
-{"dex":974,"name":"Flaniwal","en":"Cetoddle"},
+{"dex":974,"name":"Flaniwal","en":"Cetoddle","getshiny":true},
 {"dex":975,"name":"Kolowal","en":"Cetitan","evolved":true},
 {"dex":976,"name":"Agiluza","en":"Veluza"},
 {"dex":977,"name":"Heerashai","en":"Dondozo"},

@@ -144,11 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1734598800000,"tier4":["380M"]},
-{"start":1734757200000,"tier2":["378SH"],"tier4":["380M"]},
-{"start":1734901200000,"tier4":["380M"]},
-{"start":1735203600000,"tier4":["460M"],"tier5":[487]},
-{"start":1735362000000,"tier2":["378SH"],"tier4":["460M"],"tier5":[487]},
 {"start":1735506000000,"tier4":["460M"],"tier5":[487]},
 {"start":1735966800000,"tier2":["379SH"],"tier4":["460M"],"tier5":[487]},
 {"start":1735981200000,"tier2":["379SH"],"tier4":["428M"],"tier5":[484]},
@@ -168,6 +163,7 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.44","date":"22.12.2024","change":["New Shiny: Cetoddle"]},
 		{"ver":"1.13.43","date":"20.12.2024","change":["Add raid and event schedule for January 2025"]},
 		{"ver":"1.13.42","date":"17.12.2024","change":["New Shiny: Sandygast"]},
 		{"ver":"1.13.41","date":"03.12.2024","change":["New Shinies: Genesect (Chill Drive), Basculin (Red-Striped & Blue-Striped)"]},
