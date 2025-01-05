@@ -1185,7 +1185,7 @@
 {"dex":904,"name":"Myriador","en":"Overqwil","evolved":true},
 {"dex":905,"name":"Cupidos (Inkarnation)","de":"Cupidos (Inkarnationsform)","en":"Enamorus (Incarnate Forme)","legendary":true},
 {"dex":"905T","name":"Cupidos (Tiergeist)","de":"Cupidos (Tiergeistform)","en":"Enamorus (Therian Forme)","legendary":true},
-{"dex":906,"name":"Felori","en":"Sprigatito"},
+{"dex":906,"name":"Felori","en":"Sprigatito","getshiny":true},
 {"dex":907,"name":"Feliospa","en":"Floragato","evolved":true},
 {"dex":908,"name":"Maskagato","en":"Meowscarada","evolved":true},
 {"dex":909,"name":"Krokel","en":"Fuecoco"},
