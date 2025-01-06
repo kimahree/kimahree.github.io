@@ -1,15 +1,10 @@
 ﻿var events = [
 {"de":"Jahreszeit 17 - Duales Schicksal","en":"Season 17 - Dual Destiny","start":1733216400000,"end":1741078800000,"color":"#e6f3ff","url":"https://pokemongolive.com/seasons/dual-destiny"},
 {"de":"GBL - Duales Schicksal","en":"GBL - Dual Destiny","start":1733259600000,"end":1741122000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-dual-destiny"},
-{"de":"Giratina (Wandelform) in Raids","en":"Giratina (Altered Forme) in Raids","start":1735203600000,"end":1735981200000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/dual-destiny"},
-{"de":"Mega-Rexblisar in Mega-Raids","en":"Mega Abomasnow in Mega Raids","start":1735203600000,"end":1735981200000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/dual-destiny"},
 {"de":"GBL - Superliga und Holiday-Cup","en":"GBL - Great League and Holiday Cup","start":1735678800000,"end":1736283600000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-dual-destiny"},
 {"de":"Hefel-Fangen","en":"Fetch Fidough","start":1735945200000,"end":1736316000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/fidough-fetch-2025"},
-{"de":"Crypto-Registeel in Crypto-Raids","en":"Shadow Registeel in Shadow Raids","start":1735966800000,"end":1736110800000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/dual-destiny"},
 {"de":"Palkia in Raids","en":"Palkia in Raids","start":1735981200000,"end":1737018000000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/dual-destiny"},
 {"de":"Mega-Schlapor in Mega-Raids","en":"Mega Lopunny in Mega Raids","start":1735981200000,"end":1737018000000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/dual-destiny"},
-{"de":"Felori Community Day","en":"Sprigatito Community Day","start":1736082000000,"end":1736092800000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communityday-january-2025-sprigatito"},
-{"de":"Machollo Dyna-Montag","en":"Machop Max Mondays","start":1736182800000,"end":1736186400000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/dual-destiny"},
 {"de":"Voltobal und Hisui-Voltobal Rampenlichtstunde (2x Fang-Sternenstaub)","en":"Voltorb and Hisuian Voltorb Spotlight Hour (2x Catch Stardust)","start":1736269200000,"end":1736272800000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/dual-destiny"},
 {"de":"GBL - Hyperliga und Farb-Cup","en":"GBL - Ultra League and Color Cup","start":1736283600000,"end":1736888400000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-dual-destiny"},
 {"de":"Palkia Raidstunde","en":"Palkia Raid Hour","start":1736355600000,"end":1736359200000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/dual-destiny"},
@@ -20,7 +15,7 @@
 {"de":"Roselia Rampenlichtstunde (2x Fang-EP)","en":"Roselia Spotlight Hour (2x Catch XP)","start":1736874000000,"end":1736877600000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/dual-destiny"},
 {"de":"GBL - Meisterliga und Farb-Cup","en":"GBL - Master League and Color Cup","start":1736888400000,"end":1737493200000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-dual-destiny"},
 {"de":"GBL - 4x Sternenstaub für Siege","en":"GBL - 4x Stardust from win rewards","start":1736888400000,"end":1738098000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-dual-destiny"},
-{"de":"Fashion Week: Übernahme","en":"Fashion Week: Taken Over","start":1736895600000,"end":1737313200000,"color":"#d9d9d9","url":"https://pokemongolive.com/seasons/dual-destiny"},
+{"de":"Fashion Week: Übernahme","en":"Fashion Week: Taken Over","start":1736895600000,"end":1737313200000,"color":"#d9d9d9","url":"https://pokemongolive.com/post/fashion-week-taken-over-by-TGR"},
 {"de":"Palkia Raidstunde","en":"Palkia Raid Hour","start":1736960400000,"end":1736964000000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/dual-destiny"},
 {"de":"Deoxys (Angriffs- und Verteidigungsform) in Raids","en":"Deoxys (Attack and Defense Forme) in Raids","start":1737018000000,"end":1737709200000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/dual-destiny"},
 {"de":"Mega-Galagladi in Mega-Raids","en":"Mega Gallade in Mega Raids","start":1737018000000,"end":1737709200000,"color":"#ffe6e6","url":"https://pokemongolive.com/seasons/dual-destiny"},
@@ -72,6 +67,9 @@
 {"de":"Pokémon GO City Safari: Mumbai","en":"Pokémon GO City Safari: Mumbai","start":1743222600000,"end":1743334200000,"color":"#fdddfd","url":"https://pokemongolive.com/en/events/citysafari-mumbai"},
 {"de":"Pokémon GO City Safari: Mailand","en":"Pokémon GO City Safari: Milan","start":1743238800000,"end":1743350400000,"color":"#fdddfd","url":"https://pokemongolive.com/en/events/citysafari-milan"},
 {"de":"Pokémon GO City Safari: Santiago de Chile","en":"Pokémon GO City Safari: Santiago","start":1743253200000,"end":1743364800000,"color":"#fdddfd","url":"https://pokemongolive.com/en/events/citysafari-santiago"},
+{"de":"Pokémon GO Fest 2025: Osaka","en":"Pokémon GO Fest 2025: Osaka","start":1748476800000,"end":1748772000000,"color":"#fdddfd","url":"https://pokemongolive.com/post/save-the-date-go-fest-2025"},
+{"de":"Pokémon GO Fest 2025: Jersey City","en":"Pokémon GO Fest 2025: Jersey City","start":1749214800000,"end":1749423600000,"color":"#fdddfd","url":"https://pokemongolive.com/post/save-the-date-go-fest-2025"},
+{"de":"Pokémon GO Fest 2025: Paris","en":"Pokémon GO Fest 2025: Paris","start":1749798000000,"end":1750006800000,"color":"#fdddfd","url":"https://pokemongolive.com/post/save-the-date-go-fest-2025"},
 ];
 
 var colors = [
