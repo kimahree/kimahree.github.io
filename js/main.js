@@ -144,7 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1735981200000,"tier2":["379SH"],"tier4":["428M"],"tier5":[484]},
 {"start":1736110800000,"tier4":["428M"],"tier5":[484]},
 {"start":1736571600000,"tier2":["379SH"],"tier4":["428M","475M"],"tier5":[484]},
 {"start":1736611200000,"tier2":["379SH"],"tier4":["428M"],"tier5":[484]},
@@ -181,7 +180,7 @@ var changelogjson = {
 		{"ver":"1.13.28","date":"27.08.2024","change":["Add events from new season"]},
 		{"ver":"1.13.27","date":"16.08.2024","change":["New Shiny: Mienfoo"]},
 		{"ver":"1.13.26","date":"25.07.2024","change":["New Shiny: Togedemaru"]},
-		{"ver":"1.13.25","date":"24.07.2024","change":["Add raid and event schedule for August","Completely removed Book of Quests functionality"]},
+		{"ver":"1.13.25","date":"24.07.2024","change":["New Shiny: Tynamo","Add raid and event schedule for August","Completely removed Book of Quests functionality"]},
 		{"ver":"1.13.24","date":"13.07.2024","change":["New Shiny: Necrozma"]},
 		{"ver":"1.13.23","date":"09.07.2024","change":["New Shinies: Ducklett, Jangmo-O, Buzzwole"]},
 		{"ver":"1.13.22","date":"04.07.2024","change":["Disabled Quests Tab"]},

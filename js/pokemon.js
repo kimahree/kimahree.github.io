@@ -745,7 +745,7 @@
 {"dex":599,"name":"Klikk","en":"Klink","getshiny":true},
 {"dex":600,"name":"Kliklak","en":"Klang","evolved":true},
 {"dex":601,"name":"Klikdiklak","en":"Klinklang","evolved":true},
-{"dex":602,"name":"Zapplardin","en":"Tynamo"},
+{"dex":602,"name":"Zapplardin","en":"Tynamo","getshiny":true},
 {"dex":603,"name":"Zapplalek","en":"Eelektrik","evolved":true},
 {"dex":604,"name":"Zapplarang","en":"Eelektross","evolved":true},
 {"dex":605,"name":"Pygraulon","en":"Elgyem","getshiny":true},
