@@ -20,7 +20,7 @@
 {"de":"Arktos Dyna-Montag","en":"Articuno Max Mondays","start":1737392400000,"end":1737396000000,"color":"#ffffe6","url":"https://pokemongolive.com/post/legendary-flight-2025"},
 {"de":"Dynamax-Arktos in Dyna-Kämpfen","en":"Dynamax Articuno in Max Battles","start":1737392400000,"end":1737997200000,"color":"#ffe6e6","url":"https://pokemongolive.com/post/legendary-flight-2025"},
 {"de":"GO-Kampfwoche: Duales Schicksal","en":"GO Battle Week: Dual Destiny","start":1737414000000,"end":1737932340000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-dual-destiny"},
-{"de":"Steeled Resolve","en":"Steeled Resolve","start":1737450000000,"end":1737918000000,"color":"#e6ffe6","url":"https://pokemongolive.com/seasons/dual-destiny"},
+{"de":"Stählerner Entschluss","en":"Steeled Resolve","start":1737450000000,"end":1737918000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/steeled-resolve-2025"},
 {"de":"Paldea-Felino Rampenlichtstunde (2x Fang-Bonbons)","en":"Paldean Wooper Spotlight Hour (2x Catch Candy)","start":1737478800000,"end":1737482400000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/dual-destiny"},
 {"de":"GBL - alle Ligen","en":"GBL - all Leagues","start":1737493200000,"end":1738098000000,"color":"#f5e6ff","url":"https://pokemongolive.com/post/go-battle-league-dual-destiny"},
 {"de":"Deoxys Raidstunde","en":"Deoxys Raid Hour","start":1737565200000,"end":1737568800000,"color":"#ffffe6","url":"https://pokemongolive.com/seasons/dual-destiny"},
