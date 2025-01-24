@@ -144,19 +144,37 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1737018000000,"tier4":["475M"],"tier5":["386A","386D"]},
-{"start":1737176400000,"tier2":["379SH","250SH"],"tier4":["475M"],"tier5":["386A","386D"]},
-{"start":1737320400000,"tier4":["475M"],"tier5":["386A","386D"]},
 {"start":1737709200000,"tier4":["308M"],"tier5":[483]},
 {"start":1737781200000,"tier2":["379SH"],"tier4":["308M"],"tier5":[483]},
 {"start":1737925200000,"tier4":["308M"],"tier5":[483]},
 {"start":1738386000000,"tier2":["379SH"],"tier4":["308M"],"tier5":[483]},
 {"start":1738530000000,"tier4":["308M"],"tier5":[483]},
+{"start":1738832400000,"tier4":["248M"],"tier5":[905]},
+{"start":1738990800000,"tier2":["377SH"],"tier4":["248M"],"tier5":[905]},
+{"start":1739134800000,"tier4":["248M"],"tier5":[905]},
+{"start":1739595600000,"tier2":["377SH"],"tier4":["248M"],"tier5":[905]},
+{"start":1739635200000,"tier2":["377SH"],"tier4":["248M"],"tier5":[905]},
+{"start":1739739600000,"tier4":["248M"],"tier5":[905]},
+{"start":1739782800000,"tier4":["445M"],"tier5":[716,717]},
+{"start":1740200400000,"tier2":["377SH"],"tier4":["445M"],"tier5":[716,717]},
+{"start":1740344400000,"tier4":["445M"],"tier5":[716,717]},
+{"start":1740387600000,"tier4":["445M"],"tier5":[649,"649B","649C","649D","649S"]},
+{"start":1740474000000,"tier4":["445M"],"tier5":[638,639,640]},
+{"start":1740560400000,"tier4":["445M"],"tier5":["641T","642T","645T"]},
+{"start":1740646800000,"tier4":["445M"],"tier5":[643]},
+{"start":1740733200000,"tier4":["445M"],"tier5":[644]},
+{"start":1740805200000,"tier2":["377SH"],"tier4":["445M"],"tier5":[644]},
+{"start":1740819600000,"tier5":["646B","646W",643,644]},
+{"start":1740848400000,"tier2":["377SH"],"tier4":["445M"],"tier5":[644]},
+{"start":1740906000000,"tier5":["646B","646W",643,644]},
+{"start":1740934800000,"tier2":["377SH"],"tier4":["445M"],"tier5":[644]},
+{"start":1740949200000,"tier4":["445M"],"tier5":[644]},
 ];
 
 var changelogjson = {
     "items": [
-		{"ver":"1.13.44","date":"05.01.2025","change":["New Shiny: Sprigatito"]},
+		{"ver":"1.13.46","date":"24.01.2025","change":["Add raid and event schedule for February 2025"]},
+		{"ver":"1.13.45","date":"05.01.2025","change":["New Shiny: Sprigatito"]},
 		{"ver":"1.13.44","date":"22.12.2024","change":["New Shiny: Cetoddle"]},
 		{"ver":"1.13.43","date":"20.12.2024","change":["Add raid and event schedule for January 2025"]},
 		{"ver":"1.13.42","date":"17.12.2024","change":["New Shiny: Sandygast"]},
