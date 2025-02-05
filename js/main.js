@@ -144,10 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1737709200000,"tier4":["308M"],"tier5":[483]},
-{"start":1737781200000,"tier2":["379SH"],"tier4":["308M"],"tier5":[483]},
-{"start":1737925200000,"tier4":["308M"],"tier5":[483]},
-{"start":1738386000000,"tier2":["379SH"],"tier4":["308M"],"tier5":[483]},
 {"start":1738530000000,"tier4":["308M"],"tier5":[483]},
 {"start":1738832400000,"tier4":["248M"],"tier5":[905]},
 {"start":1738990800000,"tier2":["377SH"],"tier4":["248M"],"tier5":[905]},
@@ -173,6 +169,7 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.47","date":"05.02.2025","change":["New Shiny: Nymble"]},
 		{"ver":"1.13.46","date":"24.01.2025","change":["Add raid and event schedule for February 2025"]},
 		{"ver":"1.13.45","date":"05.01.2025","change":["New Shiny: Sprigatito"]},
 		{"ver":"1.13.44","date":"22.12.2024","change":["New Shiny: Cetoddle"]},
