@@ -35,7 +35,7 @@
 {"de":"Dyna-Kampfwochenende","en":"Max Battle Weekend","start":1741410000000,"end":1741554000000,"color":"#e6ffe6","url":"https://pokemongolive.com/post/savethedate-s18"},
 {"de":"Krokel Community Day","en":"Fuecoco Community Day","start":1741438800000,"end":1741449600000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communityday-march-2025-fuecoco"},
 {"de":"Fangkunst","en":"Catch Mastery","start":1742130000000,"end":1742140800000,"color":"#e5fff9","url":"https://pokemongolive.com/post/savethedate-s18"},
-{"de":"Community Day Classic","en":"Community Day Classic","start":1742648400000,"end":1742659200000,"color":"#e5fff9","url":"https://pokemongolive.com/post/savethedate-s18"},
+{"de":"Karnimani Community Day Classic","en":"Totodile Community Day Classic","start":1742648400000,"end":1742659200000,"color":"#e5fff9","url":"https://pokemongolive.com/post/communitydayclassic-march-2025-totodile"},
 {"de":"Raidtag","en":"Raid Day","start":1742734800000,"end":1742745600000,"color":"#e5fff9","url":"https://pokemongolive.com/post/savethedate-s18"},
 {"de":"Pokémon GO City Safari: Singapur","en":"Pokémon GO City Safari: Singapore","start":1743213600000,"end":1743325200000,"color":"#fdddfd","url":"https://pokemongolive.com/en/events/citysafari-singapore"},
 {"de":"Pokémon GO City Safari: Mumbai","en":"Pokémon GO City Safari: Mumbai","start":1743222600000,"end":1743334200000,"color":"#fdddfd","url":"https://pokemongolive.com/en/events/citysafari-mumbai"},
