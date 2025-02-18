@@ -821,7 +821,7 @@
 {"dex":661,"name":"Dartiri","en":"Fletchling","getshiny":true},
 {"dex":662,"name":"Dartignis","en":"Fletchinder","evolved":true},
 {"dex":663,"name":"Fiaro","en":"Talonflame","evolved":true},
-{"dex":664,"name":"Purmel","en":"Scatterbug"},
+{"dex":664,"name":"Purmel","en":"Scatterbug","getshiny":true},
 {"dex":665,"name":"Puponcho","en":"Spewpa","evolved":true},
 {"dex":666,"name":"Vivillon","evolved":true},
 {"dex":667,"name":"Leufeo","en":"Litleo","getshiny":true},
