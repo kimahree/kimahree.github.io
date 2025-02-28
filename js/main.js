@@ -144,18 +144,26 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1740387600000,"tier5":[649,"649B","649C","649D","649S"]},
-{"start":1740474000000,"tier5":[638,639,640]},
-{"start":1740560400000,"tier5":["641T","642T","645T"]},
-{"start":1740646800000,"tier5":[643]},
 {"start":1740733200000,"tier5":[644]},
 {"start":1740819600000,"tier5":["646B","646W",643,644]},
 {"start":1740934800000,"tier2":["377SH"],"tier4":["445M"],"tier5":[644]},
 {"start":1740949200000,"tier4":["445M"],"tier5":[644]},
+{"start":1741078800000,"tier4":["448M"],"tier5":[144,145,146]},
+{"start":1741410000000,"tier2":["378SH"],"tier4":["448M"],"tier5":[144,145,146]},
+{"start":1741554000000,"tier4":["448M"],"tier5":[144,145,146]},
+{"start":1741856400000,"tier4":["260M"],"tier5":[785]},
+{"start":1742014800000,"tier2":["378SH"],"tier4":["260M"],"tier5":[785]},
+{"start":1742158800000,"tier4":["260M"],"tier5":[785]},
+{"start":1742619600000,"tier2":["378SH"],"tier4":["260M"],"tier5":[785]},
+{"start":1742634000000,"tier2":["378SH"],"tier4":["127M","359M"],"tier5":[485]},
+{"start":1742763600000,"tier4":["127M"],"tier5":[485]},
+{"start":1743224400000,"tier2":["378SH"],"tier4":["127M"],"tier5":[485]},
+{"start":1743364800000,"tier4":["127M"],"tier5":[485]},
 ];
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.50","date":"28.02.2025","change":["Add raid and event schedule for March 2025"]},
 		{"ver":"1.13.49","date":"24.02.2025","change":["New Shinies: Maractus, Sigilyph, Bouffalant"]},
 		{"ver":"1.13.48","date":"18.02.2025","change":["New Shiny: Scatterbug"]},
 		{"ver":"1.13.47","date":"05.02.2025","change":["New Shiny: Nymble"]},
