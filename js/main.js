@@ -144,9 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1740949200000,"tier4":["445M"],"tier5":[716,717]},
-{"start":1741078800000,"tier4":["448M"],"tier5":[144,145,146]},
-{"start":1741410000000,"tier2":["378SH"],"tier4":["448M"],"tier5":[144,145,146]},
 {"start":1741554000000,"tier4":["448M"],"tier5":[144,145,146]},
 {"start":1741856400000,"tier4":["260M"],"tier5":[785]},
 {"start":1742014800000,"tier2":["378SH"],"tier4":["260M"],"tier5":[785]},
@@ -160,6 +157,8 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.53","date":"08.03.2025","change":["New Shiny: Fuecoco"]},
+		{"ver":"1.13.52","date":"05.03.2025","change":["New Shiny: Charcadet"]},
 		{"ver":"1.13.51","date":"01.03.2025","change":["New Shinies: Deerling (all Formes)"]},
 		{"ver":"1.13.50","date":"28.02.2025","change":["Add raid and event schedule for March 2025"]},
 		{"ver":"1.13.49","date":"24.02.2025","change":["New Shinies: Maractus, Sigilyph, Bouffalant"]},
