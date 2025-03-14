@@ -1008,7 +1008,7 @@
 {"dex":776,"name":"Tortunator","en":"Turtonator","getshiny":true},
 {"dex":777,"name":"Togedemaru","getshiny":true},
 {"dex":778,"name":"Mimigma","en":"Mimikyu"},
-{"dex":779,"name":"Knirfish","en":"Bruxish"},
+{"dex":779,"name":"Knirfish","en":"Bruxish","getshiny":true},
 {"dex":780,"name":"Sen-Long","en":"Drampa","getshiny":true},
 {"dex":781,"name":"Moruda","en":"Dhelmise"},
 {"dex":782,"name":"Miniras","en":"Jangmo-o","getshiny":true},
