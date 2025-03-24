@@ -144,18 +144,27 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1741856400000,"tier4":["260M"],"tier5":[785]},
-{"start":1742014800000,"tier2":["378SH"],"tier4":["260M"],"tier5":[785]},
-{"start":1742158800000,"tier4":["260M"],"tier5":[785]},
-{"start":1742619600000,"tier2":["378SH"],"tier4":["260M"],"tier5":[785]},
-{"start":1742634000000,"tier2":["378SH"],"tier4":["127M","359M"],"tier5":[485]},
 {"start":1742763600000,"tier4":["127M"],"tier5":[485]},
 {"start":1743224400000,"tier2":["378SH"],"tier4":["127M"],"tier5":[485]},
 {"start":1743364800000,"tier4":["127M"],"tier5":[485]},
+{"start":1743408000000,"tier4":["257M"],"tier5":[786]},
+{"start":1743825600000,"tier2":["379SH"],"tier4":["531M","257M"],"tier5":[786]},
+{"start":1743865200000,"tier2":["379SH"],"tier4":["257M"],"tier5":[786]},
+{"start":1743969600000,"tier4":["257M"],"tier5":[786]},
+{"start":1744185600000,"tier4":["254M"],"tier5":[805]},
+{"start":1744430400000,"tier2":["379SH"],"tier4":["254M"],"tier5":[805]},
+{"start":1744516800000,"tier2":["379SH"],"tier4":["254M"],"tier5":[805]},
+{"start":1744574400000,"tier4":["254M"],"tier5":[805]},
+{"start":1745035200000,"tier2":["379SH"],"tier4":["254M"],"tier5":[805]},
+{"start":1745179200000,"tier4":["254M"],"tier5":[805]},
+{"start":1745222400000,"tier4":["303M"],"tier5":[488]},
+{"start":1745640000000,"tier2":["379SH"],"tier4":["303M"],"tier5":[488]},
+{"start":1745780400000,"tier4":["303M"],"tier5":[488]},
 ];
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.55","date":"24.03.2025","change":["Add raid and event schedule for April 2025"]},
 		{"ver":"1.13.54","date":"14.03.2025","change":["New Shiny: Bruxish"]},
 		{"ver":"1.13.53","date":"08.03.2025","change":["New Shiny: Fuecoco"]},
 		{"ver":"1.13.52","date":"05.03.2025","change":["New Shiny: Charcadet"]},
