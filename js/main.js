@@ -144,16 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1742763600000,"tier4":["127M"],"tier5":[485]},
-{"start":1743224400000,"tier2":["378SH"],"tier4":["127M"],"tier5":[485]},
-{"start":1743364800000,"tier4":["127M"],"tier5":[485]},
-{"start":1743408000000,"tier4":["257M"],"tier5":[786]},
-{"start":1743825600000,"tier2":["379SH"],"tier4":["531M","257M"],"tier5":[786]},
-{"start":1743865200000,"tier2":["379SH"],"tier4":["257M"],"tier5":[786]},
-{"start":1743969600000,"tier4":["257M"],"tier5":[786]},
-{"start":1744185600000,"tier4":["254M"],"tier5":[805]},
-{"start":1744430400000,"tier2":["379SH"],"tier4":["254M"],"tier5":[805]},
-{"start":1744516800000,"tier2":["379SH"],"tier4":["254M"],"tier5":[805]},
 {"start":1744574400000,"tier4":["254M"],"tier5":[805]},
 {"start":1745035200000,"tier2":["379SH"],"tier4":["254M"],"tier5":[805]},
 {"start":1745179200000,"tier4":["254M"],"tier5":[805]},
@@ -164,6 +154,7 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.56","date":"09.04.2025","change":["New Shinies: Stakataka, Blacephalon"]},
 		{"ver":"1.13.55","date":"24.03.2025","change":["Add raid and event schedule for April 2025"]},
 		{"ver":"1.13.54","date":"14.03.2025","change":["New Shiny: Bruxish"]},
 		{"ver":"1.13.53","date":"08.03.2025","change":["New Shiny: Fuecoco"]},
