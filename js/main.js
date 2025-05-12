@@ -144,8 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1746388800000,"tier4":["229M"],"tier5":[788]},
-{"start":1746849600000,"tier2":["377SH"],"tier4":["229M"],"tier5":[788]},
 {"start":1746990000000,"tier4":["229M"],"tier5":[788]},
 {"start":1747036800000,"tier4":["130M"],"tier5":[481]},
 {"start":1747454400000,"tier2":["150SH","377SH"],"tier4":["130M"],"tier5":[481]},
@@ -160,6 +158,7 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.58","date":"12.05.2025","change":["New Shiny: Pawmi"]},
 		{"ver":"1.13.57","date":"25.04.2025","change":["Add raid and event schedule for May 2025"]},
 		{"ver":"1.13.56","date":"09.04.2025","change":["New Shinies: Stakataka, Blacephalon"]},
 		{"ver":"1.13.55","date":"24.03.2025","change":["Add raid and event schedule for April 2025"]},

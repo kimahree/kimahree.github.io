@@ -1200,7 +1200,7 @@
 {"dex":918,"name":"Spinsidias","en":"Spidops","evolved":true},
 {"dex":919,"name":"Micrick","en":"Nymble","getshiny":true},
 {"dex":920,"name":"Lextremo","en":"Lokix","evolved":true},
-{"dex":921,"name":"Pamo","en":"Pawmi"},
+{"dex":921,"name":"Pamo","en":"Pawmi","getshiny":true},
 {"dex":922,"name":"Pamamo","en":"Pawmo","evolved":true},
 {"dex":923,"name":"Pamomamo","en":"Pawmot","evolved":true},
 {"dex":924,"name":"Zwieps","en":"Tandemaus"},
