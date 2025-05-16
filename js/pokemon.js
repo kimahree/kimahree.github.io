@@ -594,6 +594,7 @@
 {"dex":"484O","name":"Palkia (Urform)","en":"Palkia (Origin Forme)","legendary":true,"getshiny":true},
 {"dex":485,"name":"Heatran","legendary":true,"getshiny":true},
 {"dex":486,"name":"Regigigas","legendary":true,"getshiny":true},
+{"dex":"486SH","name":"Crypto-Regigigas","en":"Shadow Regigigas","shadow":true,"legendary":true,"getshiny":true},
 {"dex":487,"name":"Giratina","de":"Giratina (Wandelform)","en":"Giratina (Altered Forme)","legendary":true,"getshiny":true},
 {"dex":"487O","name":"Giratina (Urform)","de":"Giratina (Urform)","en":"Giratina (Origin Forme)","legendary":true,"getshiny":true},
 {"dex":488,"name":"Cresselia","legendary":true,"getshiny":true},
