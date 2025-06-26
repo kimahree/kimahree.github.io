@@ -144,17 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1748203200000,"tier4":["334M"],"tier5":[787]},
-{"start":1748664000000,"tier4":["334M"],"tier5":[787,"377SH"]},
-{"start":1748808000000,"tier4":["334M"],"tier5":[787]},
-{"start":1749110400000,"tier4":["460M"],"tier5":[383]},
-{"start":1749268800000,"tier4":["460M"],"tier5":[383,"378SH"]},
-{"start":1749409200000,"tier4":["460M"],"tier5":[383]},
-{"start":1749873600000,"tier4":["460M"],"tier5":[383,"378SH"]},
-{"start":1749888000000,"tier4":["310M"],"tier5":[382,"378SH"]},
-{"start":1750014000000,"tier4":["310M"],"tier5":[382]},
-{"start":1750478400000,"tier4":["310M"],"tier5":[382,"378SH"]},
-{"start":1750618800000,"tier4":["310M"],"tier5":[382]},
 {"start":1750665600000,"tier4":["15M"],"tier5":[377.378,379]},
 {"start":1750752000000,"tier4":["15M"],"tier5":[894]},
 {"start":1750838400000,"tier4":["15M"],"tier5":[895]},
@@ -162,10 +151,26 @@ var raidjson = [
 {"start":1751011200000,"tier4":["15M"],"tier5":[377,378,379,486,894,895]},
 {"start":1751097600000,"tier5":["888C","889C"]},
 {"start":1751270400000,"tier4":["306M"],"tier5":[638]},
+{"start":1751688000000,"tier4":["306M"],"tier5":[638,"379SH"]},
+{"start":1751828400000,"tier4":["306M"],"tier5":[638]},
+{"start":1751961600000,"tier4":["6X"],"tier5":[791]},
+{"start":1752292800000,"tier4":["6X"],"tier5":[791,"379SH","549H"]},
+{"start":1752332400000,"tier4":["6X"],"tier5":[791,"379SH"]},
+{"start":1752433200000,"tier4":["6X"],"tier5":[791]},
+{"start":1752480000000,"tier4":["9M"],"tier5":[639]},
+{"start":1752897600000,"tier4":["9M"],"tier5":[639,"379SH"]},
+{"start":1753038000000,"tier4":["9M"],"tier5":[639]},
+{"start":1753171200000,"tier4":["3M"],"tier5":[792]},
+{"start":1753502400000,"tier4":["3M"],"tier5":[792,"379SH"]},
+{"start":1753642800000,"tier4":["3M"],"tier5":[792]},
+{"start":1753689600000,"tier4":["142M"],"tier5":[640]},
+{"start":1754107200000,"tier4":["142M"],"tier5":[640,"379SH"]},
+{"start":1754247600000,"tier4":["142M"],"tier5":[640]},
 ];
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.60","date":"26.06.2025","change":["New Shinies: Carbink, Frigibax","Add raid and event schedule for July 2025"]},
 		{"ver":"1.13.59","date":"27.05.2025","change":["Add raid and event schedule for June 2025"]},
 		{"ver":"1.13.58","date":"12.05.2025","change":["New Shiny: Pawmi"]},
 		{"ver":"1.13.57","date":"25.04.2025","change":["Add raid and event schedule for May 2025"]},
