@@ -1281,7 +1281,7 @@
 {"dex":997,"name":"Cryospino","en":"Arctibax","evolved":true},
 {"dex":998,"name":"Espinodon","en":"Baxcalibur","evolved":true},
 {"dex":999,"name":"Gierspenst (Truhenform)","en":"Gimmighoul (Chest Form)"},
-{"dex":"999R","name":"Gierspenst (Wanderform)","en":"Gimmighoul (Roaming Form)"},
+{"dex":"999R","name":"Gierspenst (Wanderform)","en":"Gimmighoul (Roaming Form)","getshiny":true},
 {"dex":1000,"name":"Monetigo","en":"Gholdengo","evolved":true},
 {"dex":1001,"name":"Chongjian","en":"Wo-Chien","legendary":true},
 {"dex":1002,"name":"Baojian","en":"Chien-Pao","legendary":true},

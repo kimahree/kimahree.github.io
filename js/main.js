@@ -144,12 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1750665600000,"tier4":["15M"],"tier5":[377.378,379]},
-{"start":1750752000000,"tier4":["15M"],"tier5":[894]},
-{"start":1750838400000,"tier4":["15M"],"tier5":[895]},
-{"start":1750924800000,"tier4":["15M"],"tier5":[486]},
-{"start":1751011200000,"tier4":["15M"],"tier5":[377,378,379,486,894,895]},
-{"start":1751097600000,"tier5":["888C","889C"]},
 {"start":1751270400000,"tier4":["306M"],"tier5":[638]},
 {"start":1751688000000,"tier4":["306M"],"tier5":[638,"379SH"]},
 {"start":1751828400000,"tier4":["306M"],"tier5":[638]},
@@ -170,6 +164,7 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.61","date":"01.07.2025","change":["New Shiny: Gimmighoul"]},
 		{"ver":"1.13.60","date":"26.06.2025","change":["New Shinies: Carbink, Frigibax","Add raid and event schedule for July 2025"]},
 		{"ver":"1.13.59","date":"27.05.2025","change":["Add raid and event schedule for June 2025"]},
 		{"ver":"1.13.58","date":"12.05.2025","change":["New Shiny: Pawmi"]},
