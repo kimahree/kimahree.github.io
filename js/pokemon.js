@@ -678,7 +678,7 @@
 {"dex":547,"name":"Elfun","en":"Whimsicott","evolved":true},
 {"dex":548,"name":"Lilminip","en":"Petilil","getshiny":true},
 {"dex":549,"name":"Dressella","en":"Lilligant","evolved":true},
-{"dex":"549H","name":"Hisui-Dressella","en":"Hisuian Lilligant","hisuian":true,"evolved":true},
+{"dex":"549H","name":"Hisui-Dressella","en":"Hisuian Lilligant","hisuian":true,"evolved":true,"getshiny":true},
 {"dex":550,"name":"Barschuft (Rotlinig)","de":"Barschuft (Rotlinige Form)","en":"Basculin (Red-Striped Form)","regional":true,"getshiny":true},
 {"dex":"550B","name":"Barschuft (Blaulinig)","de":"Barschuft (Blaulinige Form)","en":"Basculin (Blue-Striped Form)","regional":true,"getshiny":true},
 {"dex":"550W","name":"Barschuft (Weißlinig)","de":"Barschuft (Weißlinige Form)","en":"Basculin (White-Striped Form)","hisuian":true,"getshiny":true},

@@ -144,13 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1751270400000,"tier4":["306M"],"tier5":[638]},
-{"start":1751688000000,"tier4":["306M"],"tier5":[638,"379SH"]},
-{"start":1751828400000,"tier4":["306M"],"tier5":[638]},
-{"start":1751961600000,"tier4":["6X"],"tier5":[791]},
-{"start":1752292800000,"tier4":["6X"],"tier5":[791,"379SH","549H"]},
-{"start":1752332400000,"tier4":["6X"],"tier5":[791,"379SH"]},
-{"start":1752433200000,"tier4":["6X"],"tier5":[791]},
 {"start":1752480000000,"tier4":["9M"],"tier5":[639]},
 {"start":1752897600000,"tier4":["9M"],"tier5":[639,"379SH"]},
 {"start":1753038000000,"tier4":["9M"],"tier5":[639]},
@@ -164,6 +157,7 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.62","date":"12.07.2025","change":["New Shiny: Hisuian Lilligant"]},
 		{"ver":"1.13.61","date":"01.07.2025","change":["New Shiny: Gimmighoul"]},
 		{"ver":"1.13.60","date":"26.06.2025","change":["New Shinies: Carbink, Frigibax","Add raid and event schedule for July 2025"]},
 		{"ver":"1.13.59","date":"27.05.2025","change":["Add raid and event schedule for June 2025"]},
