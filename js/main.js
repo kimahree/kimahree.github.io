@@ -144,8 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1752480000000,"tier4":["9M"],"tier5":[639]},
-{"start":1752897600000,"tier4":["9M"],"tier5":[639,"379SH"]},
 {"start":1753038000000,"tier4":["9M"],"tier5":[639]},
 {"start":1753171200000,"tier4":["3M"],"tier5":[792]},
 {"start":1753502400000,"tier4":["3M"],"tier5":[792,"379SH"]},
@@ -157,6 +155,7 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.63","date":"20.07.2025","change":["New Shiny: Quaxly"]},
 		{"ver":"1.13.62","date":"12.07.2025","change":["New Shiny: Hisuian Lilligant"]},
 		{"ver":"1.13.61","date":"01.07.2025","change":["New Shiny: Gimmighoul"]},
 		{"ver":"1.13.60","date":"26.06.2025","change":["New Shinies: Carbink, Frigibax","Add raid and event schedule for July 2025"]},

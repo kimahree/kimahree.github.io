@@ -1192,7 +1192,7 @@
 {"dex":909,"name":"Krokel","en":"Fuecoco","getshiny":true},
 {"dex":910,"name":"Lokroko","en":"Crocalor","evolved":true},
 {"dex":911,"name":"Skelokrok","en":"Skeledirge","evolved":true},
-{"dex":912,"name":"Kwaks","en":"Quaxly"},
+{"dex":912,"name":"Kwaks","en":"Quaxly","getshiny":true},
 {"dex":913,"name":"Fuentente","en":"Quaxwell","evolved":true},
 {"dex":914,"name":"Bailonda","en":"Quaquaval","evolved":true},
 {"dex":915,"name":"Ferkuli","en":"Lechonk","getshiny":true},
