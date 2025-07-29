@@ -1244,7 +1244,7 @@
 {"dex":957,"name":"Forgita","en":"Tinkatink"},
 {"dex":958,"name":"Tafforgita","en":"Tinkatuff","evolved":true},
 {"dex":959,"name":"Granforgita","en":"Tinkaton","evolved":true},
-{"dex":960,"name":"Schligda","en":"Wiglett"},
+{"dex":960,"name":"Schligda","en":"Wiglett","getshiny":true},
 {"dex":961,"name":"Schligdri","en":"Wugtrio","evolved":true},
 {"dex":962,"name":"Adebom","en":"Bombirdier","getshiny":true},
 {"dex":963,"name":"Normifin","en":"Finizen"},

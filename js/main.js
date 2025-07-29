@@ -144,10 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1753038000000,"tier4":["9M"],"tier5":[639]},
-{"start":1753171200000,"tier4":["3M"],"tier5":[792]},
-{"start":1753502400000,"tier4":["3M"],"tier5":[792,"379SH"]},
-{"start":1753642800000,"tier4":["3M"],"tier5":[792]},
 {"start":1753689600000,"tier4":["142M"],"tier5":[640]},
 {"start":1754107200000,"tier4":["142M"],"tier5":[640,"377SH"]},
 {"start":1754247600000,"tier4":["142M"],"tier5":[640]},
@@ -172,6 +168,7 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.65","date":"29.07.2025","change":["New Shiny: Wiglett"]},
 		{"ver":"1.13.64","date":"22.07.2025","change":["New Shiny: Rookidee","Add raid and event schedule for August 2025"]},
 		{"ver":"1.13.63","date":"20.07.2025","change":["New Shiny: Quaxly"]},
 		{"ver":"1.13.62","date":"12.07.2025","change":["New Shiny: Hisuian Lilligant"]},
