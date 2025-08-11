@@ -144,13 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1753689600000,"tier4":["142M"],"tier5":[640]},
-{"start":1754107200000,"tier4":["142M"],"tier5":[640,"377SH"]},
-{"start":1754247600000,"tier4":["142M"],"tier5":[640]},
-{"start":1754294400000,"tier4":["181M"],"tier5":[249]},
-{"start":1754712000000,"tier4":["181M"],"tier5":[249,"377SH"]},
-{"start":1754827200000,"tier5":["483O","484O"]},
-{"start":1754838000000,"tier4":["181M"],"tier5":[249,"377SH"]},
 {"start":1754852400000,"tier4":["181M"],"tier5":[249]},
 {"start":1754899200000,"tier4":["80M"],"tier5":[250]},
 {"start":1755316800000,"tier4":["80M"],"tier5":[250,"488SH"]},
@@ -168,6 +161,8 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.67","date":"11.08.2025","change":["New Shiny: Salandit"]},
+		{"ver":"1.13.66","date":"06.08.2025","change":["New Shiny: Tandemaus"]},
 		{"ver":"1.13.65","date":"29.07.2025","change":["New Shiny: Wiglett"]},
 		{"ver":"1.13.64","date":"22.07.2025","change":["New Shiny: Rookidee","Add raid and event schedule for August 2025"]},
 		{"ver":"1.13.63","date":"20.07.2025","change":["New Shiny: Quaxly"]},
