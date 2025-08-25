@@ -1262,7 +1262,7 @@
 {"dex":974,"name":"Flaniwal","en":"Cetoddle","getshiny":true},
 {"dex":975,"name":"Kolowal","en":"Cetitan","evolved":true},
 {"dex":976,"name":"Agiluza","en":"Veluza"},
-{"dex":977,"name":"Heerashai","en":"Dondozo"},
+{"dex":977,"name":"Heerashai","en":"Dondozo","getshiny":true},
 {"dex":978,"name":"Nigiragi","en":"Tatsugiri"},
 {"dex":979,"name":"Epitaff","en":"Annihilape","evolved":true},
 {"dex":980,"name":"Suelord","en":"Clodsire","evolved":true},

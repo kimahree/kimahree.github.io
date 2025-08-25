@@ -157,6 +157,7 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.68","date":"25.08.2025","change":["New Shiny: Dodonzo"]},
 		{"ver":"1.13.67","date":"11.08.2025","change":["New Shiny: Salandit"]},
 		{"ver":"1.13.66","date":"06.08.2025","change":["New Shiny: Tandemaus"]},
 		{"ver":"1.13.65","date":"29.07.2025","change":["New Shiny: Wiglett"]},
