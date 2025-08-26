@@ -16,6 +16,7 @@
 {"de":"Jahreszeit 20 - Tales of Transformation","en":"Season 20 - Tales of Transformation","start":1756800000000,"end":1764666000000,"color":"#e6f3ff","url":"https://pokemongo.com/seasons/tales-of-transformation"},
 {"de":"GBL - Tales of Transformation","en":"GBL - Tales of Transformation","start":1756843200000,"end":1764709200000,"color":"#f5e6ff","url":"https://pokemongo.com/post/go-battle-league-tales-of-transformation"},
 {"de":"Mega-Tohaido Raidtag","en":"Mega Sharpedo Raid Day","start":1757246400000,"end":1757257200000,"color":"#e5fff9","url":"https://pokemongo.com/post/save-the-date-s20"},
+{"de":"Pokémon Concierge Event","en":"Pokémon Concierge Celebration Event","start":1757404800000,"end":1757872800000,"color":"#e6ffe6","url":"https://pokemongo.com/post/pokemon-concierge-2025"},
 {"de":"Flabébé Community Day","en":"Flabébé Community Day","start":1757851200000,"end":1757862000000,"color":"#e5fff9","url":"https://pokemongo.com/post/communityday-september-2025-flabebe"},
 {"de":"Crypto-Raidwochenende","en":"Shadow Raid Weekend","start":1758340800000,"end":1758481200000,"color":"#e6ffe6","url":"https://pokemongo.com/post/save-the-date-s20"},
 {"de":"Pokémon GO City Safari - Bangkok","en":"Pokémon GO City Safari - Bangkok","start":1758942000000,"end":1759057200000,"color":"#fdddfd","url":"https://pokemongo.com/events/citysafari/bangkok"},
