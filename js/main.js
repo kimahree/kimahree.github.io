@@ -144,13 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1756800000000,"tier4":["3M","6X","6Y","9M"],"tier5":[484,"486SH"]},
-{"start":1757246400000,"tier4":["319M"]},
-{"start":1757257200000,"tier4":["3M","6X","6Y","9M"],"tier5":[484,"486SH"]},
-{"start":1757271600000,"tier4":["3M","6X","6Y","9M"],"tier5":[484]},
-{"start":1757404800000,"tier4":["18M","130M"],"tier5":[484]},
-{"start":1757736000000,"tier4":["18M","130M"],"tier5":[484,"486SH"]},
-{"start":1757876400000,"tier4":["18M","130M"],"tier5":[484]},
 {"start":1758009600000,"tier4":["282M","380M","381M","475M"]},
 {"start":1758340800000,"tier4":["282M","380M","381M","475M"],"tier5":["383SH"]},
 {"start":1758481200000,"tier4":["282M","380M","381M","475M"]},
@@ -162,6 +155,7 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.70","date":"16.09.2025","change":["New Shiny: Indeedee"]},
 		{"ver":"1.13.69","date":"06.09.2025","change":["Surprise Shadow Regigigas"]},
 		{"ver":"1.13.68","date":"25.08.2025","change":["New Shiny: Dodonzo","Add raid and event schedule for September 2025"]},
 		{"ver":"1.13.67","date":"11.08.2025","change":["New Shiny: Salandit"]},
