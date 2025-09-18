@@ -26,7 +26,7 @@
 {"de":"Stollunior Rampenlichtstunde (2x Verschick-Bonbons)","en":"Aron Spotlight Hour (2x Transfer Candy)","start":1759248000000,"end":1759251600000,"color":"#ffffe6","url":"https://pokemongo.com/seasons/tales-of-transformation"},
 {"de":"GBL - Superliga & Fantasie-Cup [Super]","en":"GBL - Great League & Fantasy Cup [Great]","start":1759262400000,"end":1759867200000,"color":"#f5e6ff","url":"https://pokemongo.com/post/go-battle-league-tales-of-transformation"},
 {"de":"Dialga (Urform) Raidstunde","en":"Dialga (Origin Forme) Raid Hour","start":1759334400000,"end":1759338000000,"color":"#ffffe6","url":"https://pokemongo.com/seasons/tales-of-transformation"},
-{"de":"Raidtag","en":"Raid Day","start":1759579200000,"end":1759590000000,"color":"#e5fff9","url":"https://pokemongo.com/post/save-the-date-s20"},
+{"de":"Mega-Metagross Raidtag","en":"Mega Metagross Raid Day","start":1759579200000,"end":1759590000000,"color":"#e5fff9","url":"https://pokemongo.com/news/mega-metagross-raid-day-2025"},
 {"de":"Dyna-Montag","en":"Max Mondays","start":1759766400000,"end":1759770000000,"color":"#ffffe6","url":"https://pokemongo.com/seasons/tales-of-transformation"},
 {"de":"Rampenlichtstunde (2x Bonus)","en":"Spotlight Hour (2x Bonus)","start":1759852800000,"end":1759856400000,"color":"#ffffe6","url":"https://pokemongo.com/seasons/tales-of-transformation"},
 {"de":"GBL - Hyperliga & Dschungel-Cup [Super]","en":"GBL - Ultra League & Jungle Cup [Great]","start":1759867200000,"end":1760472000000,"color":"#f5e6ff","url":"https://pokemongo.com/post/go-battle-league-tales-of-transformation"},
