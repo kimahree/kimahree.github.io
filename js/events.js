@@ -2,12 +2,7 @@
 {"de":"EP-Feier","en":"XP Celebration","start":1756152000000,"end":1760479140000,"url":"https://pokemongo.com/post/pgo-leveling-update-announce-2025"},
 {"de":"Jahreszeit 20 - Geschichten der Transformation","en":"Season 20 - Tales of Transformation","start":1756800000000,"end":1764666000000,"color":"#e6f3ff","url":"https://pokemongo.com/seasons/tales-of-transformation"},
 {"de":"GBL - Geschichten der Transformation","en":"GBL - Tales of Transformation","start":1756843200000,"end":1764709200000,"color":"#f5e6ff","url":"https://pokemongo.com/post/go-battle-league-tales-of-transformation"},
-{"de":"Psycho-Spektakel: Übernahme","en":"Psychic Spectacular: Taken Over","start":1757973600000,"end":1758491940000,"color":"#d9d9d9","url":"https://pokemongo.com/post/psychic-spectacular-tgr-2025/"},
-{"de":"Mega-Gardevoir, Mega-Latias, Mega-Latios & Mega-Galagladi in Mega-Raids","en":"Mega Guardevoir, Mega Latias, Mega Latios & Mega Gallade in Mega Raids","start":1758009600000,"end":1758614400000,"color":"#ffe6e6","url":"https://pokemongo.com/seasons/tales-of-transformation"},
 {"de":"GBL - Meisterliga [Mega-Edition] & Willenskraft-Cup [Super]","en":"GBL - Master League [Mega Edition] & Willpower Cup [Great]","start":1758052800000,"end":1758657600000,"color":"#f5e6ff","url":"https://pokemongo.com/post/go-battle-league-tales-of-transformation"},
-{"de":"Mega-Latias & Mega-Latios Raidstunde","en":"Mega Latias & Mega Latios Raid Hour","start":1758124800000,"end":1758128400000,"color":"#ffffe6","url":"https://pokemongo.com/seasons/tales-of-transformation"},
-{"de":"Crypto-Groudon Raidwochenende","en":"Shadow Groudon Raid Weekend","start":1758340800000,"end":1758481200000,"color":"#e6ffe6","url":"https://pokemongo.com/post/shadow-groudon-raid-weekend-2025"},
-{"de":"Chaneira Dyna-Montag","en":"Chansey Max Mondays","start":1758556800000,"end":1758560400000,"color":"#ffffe6","url":"https://pokemongo.com/seasons/tales-of-transformation"},
 {"de":"Total Normal","en":"Completely Normal","start":1758614400000,"end":1758996000000,"color":"#e6ffe6","url":"https://pokemongo.com/post/completely-normal-2025"},
 {"de":"Dialga in Raids","en":"Dialga in Raids","start":1758614400000,"end":1759824000000,"color":"#ffe6e6","url":"https://pokemongo.com/seasons/tales-of-transformation"},
 {"de":"Mega-Kangama & Mega-Schlapor in Mega-Raids","en":"Mega Kangaskhan & Mega Lopunny in Mega Raids","start":1758614400000,"end":1759219200000,"color":"#ffe6e6","url":"https://pokemongo.com/seasons/tales-of-transformation"},
@@ -31,6 +26,7 @@
 {"de":"Rampenlichtstunde (2x Bonus)","en":"Spotlight Hour (2x Bonus)","start":1759852800000,"end":1759856400000,"color":"#ffffe6","url":"https://pokemongo.com/seasons/tales-of-transformation"},
 {"de":"GBL - Hyperliga & Dschungel-Cup [Super]","en":"GBL - Ultra League & Jungle Cup [Great]","start":1759867200000,"end":1760472000000,"color":"#f5e6ff","url":"https://pokemongo.com/post/go-battle-league-tales-of-transformation"},
 {"de":"Raidstunde","en":"Raid Hour","start":1759939200000,"end":1759942800000,"color":"#ffffe6","url":"https://pokemongo.com/seasons/tales-of-transformation"},
+{"de":"Ernte-Festival","en":"Harvest Festival","start":1760083200000,"end":1760637600000,"color":"#e6ffe6","url":"https://pokemongo.com/post/harvest-festival-2025"},
 {"de":"Monozyto Community Day","en":"Solosis Community Day","start":1760270400000,"end":1760281200000,"color":"#e5fff9","url":"https://pokemongo.com/news/communityday-october-2025-solosis"},
 {"de":"Dyna-Montag","en":"Max Mondays","start":1760371200000,"end":1760374800000,"color":"#ffffe6","url":"https://pokemongo.com/seasons/tales-of-transformation"},
 {"de":"Rampenlichtstunde (2x Bonus)","en":"Spotlight Hour (2x Bonus)","start":1760457600000,"end":1760461200000,"color":"#ffffe6","url":"https://pokemongo.com/seasons/tales-of-transformation"},
@@ -71,6 +67,9 @@
 {"de":"Dyna-Montag","en":"Max Mondays","start":1764608400000,"end":1764612000000,"color":"#ffffe6","url":"https://pokemongo.com/seasons/tales-of-transformation"},
 {"de":"Jahreszeit 21","en":"Season 21","start":1764666000000,"end":1764666000000,"color":"#e6f3ff","url":"https://pokemongo.com/seasons/tales-of-transformation"},
 {"de":"GBL - Season 21","en":"GBL - Season 21","start":1764709200000,"end":1764709200000,"color":"#f5e6ff","url":"https://pokemongo.com/post/go-battle-league-tales-of-transformation"},
+{"de":"Pokémon GO Tour 2026 - Tainan","en":"Pokémon GO Tour 2026 - Tainan","start":1771552800000,"end":1771754400000,"color":"#fdddfd","url":"https://pokemongo.com/news/save-the-date-go-tour-2026"},
+{"de":"Pokémon GO Tour 2026 - Los Angeles","en":"Pokémon GO Tour 2026 - Los Angeles","start":1771610400000,"end":1771812000000,"color":"#fdddfd","url":"https://pokemongo.com/news/save-the-date-go-tour-2026"},
+{"de":"Pokémon GO Tour 2026 - Global","en":"Pokémon GO Tour 2026 - Global","start":1772269200000,"end":1772384400000,"color":"#fdddfd","url":"https://pokemongo.com/news/save-the-date-go-tour-2026"},
 ];
 
 var colors = [
