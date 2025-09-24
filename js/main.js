@@ -144,17 +144,23 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1758009600000,"tier4":["282M","380M","381M","475M"]},
-{"start":1758340800000,"tier4":["282M","380M","381M","475M"],"tier5":["383SH"]},
-{"start":1758481200000,"tier4":["282M","380M","381M","475M"]},
 {"start":1758614400000,"tier4":["115M","428M"],"tier5":[483]},
 {"start":1759060800000,"tier4":["323M"]},
 {"start":1759071600000,"tier4":["115M","428M"],"tier5":[483]},
 {"start":1759219200000,"tier4":["208M","212M","448M"],"tier5":[483]},
+{"start":1759579200000,"tier4":["376M"]},
+{"start":1759590000000,"tier4":["208M","212M","448M"],"tier5":[483]},
+{"start":1759824000000,"tier4":["254M","257M","260M"],"tier5":[386,"386D"]},
+{"start":1760428800000,"tier4":["303M","373M"],"tier5":["386A","386S"]},
+{"start":1760788800000,"tier4":["149M"]},
+{"start":1760799600000,"tier4":["303M","373M"],"tier5":["386A","386S"]},
+{"start":1761033600000,"tier4":["229M","359M"],"tier5":[649,"649D","649S"]},
+{"start":1761642000000,"tier4":["94M","302M","354M"],"tier5":[487]}
 ];
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.71","date":"24.09.2025","change":["Add raid and event schedule for October 2025"]},
 		{"ver":"1.13.70","date":"16.09.2025","change":["New Shiny: Indeedee"]},
 		{"ver":"1.13.69","date":"06.09.2025","change":["Surprise Shadow Regigigas"]},
 		{"ver":"1.13.68","date":"25.08.2025","change":["New Shiny: Dodonzo","Add raid and event schedule for September 2025"]},
