@@ -1125,7 +1125,7 @@
 {"dex":881,"name":"Lecryodon","en":"Arctozolt"},
 {"dex":882,"name":"Pescragon","en":"Dracovish"},
 {"dex":883,"name":"Pescryodon","en":"Arctovish"},
-{"dex":884,"name":"Duraludon"},
+{"dex":884,"name":"Duraludon","getshiny":true},
 {"dex":885,"name":"Grolldra","en":"Dreepy"},
 {"dex":886,"name":"Phandra","en":"Drakloak","evolved":true},
 {"dex":887,"name":"Katapuldra","en":"Dragapult","evolved":true},
