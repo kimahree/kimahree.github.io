@@ -1094,7 +1094,7 @@
 {"dex":851,"name":"Infernopod","en":"Centiskorch","evolved":true},
 {"dex":852,"name":"Klopptopus","en":"Clobbopus"},
 {"dex":853,"name":"Kaocto","en":"Grapploct","evolved":true},
-{"dex":854,"name":"Fatalitee","en":"Sinistea"},
+{"dex":854,"name":"Fatalitee","en":"Sinistea","getshiny":true},
 {"dex":855,"name":"Mortipot","en":"Polteageist","evolved":true},
 {"dex":856,"name":"Brimova","en":"Hatenna"},
 {"dex":857,"name":"Brimano","en":"Hattrem","evolved":true},
@@ -1323,9 +1323,13 @@
 {"dex":"26Y","name":"Mega-Raichu Y","en":"Mega Raichu Y","evolved":true,"mega":true},
 {"dex":"71M","name":"Mega-Sarzenia","en":"Mega Victreebel","evolved":true,"mega":true},
 {"dex":"149M","name":"Mega-Dragoran","en":"Mega Dragonite","evolved":true,"mega":true},
+{"dex":"154M","name":"Mega-Meganie","en":"Mega Meganium","evolved":true,"mega":true},
+{"dex":"160M","name":"Mega-Impergator","en":"Mega Feraligatr","evolved":true,"mega":true},
+{"dex":"500M","name":"Mega-Flambirex","en":"Mega Emboar","evolved":true,"mega":true},
 {"dex":"652M","name":"Mega-Brigaron","en":"Mega Chesnaught","evolved":true,"mega":true},
 {"dex":"655M","name":"Mega-Fennexis","en":"Mega Delphox","evolved":true,"mega":true},
 {"dex":"658M","name":"Mega-Quajutsu","en":"Mega Greninja","evolved":true,"mega":true},
 {"dex":"687M","name":"Mega-Calamanero","en":"Mega Malamar","evolved":true,"mega":true},
-{"dex":"701M","name":"Mega-Resladero","en":"Mega Hawlucha","mega":true}
+{"dex":"701M","name":"Mega-Resladero","en":"Mega Hawlucha","mega":true},
+{"dex":"780M","name":"Mega-Sen-Long","en":"Mega Drampa","mega":true}
 ];
