@@ -144,14 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1762246800000,"tier4":["15M","127M","214M"],"tier5":[243,244,245,"381SH"]},
-{"start":1762750800000,"tier4":["15M","127M","214M"],"tier5":[243,244,245,"249SH","250SH","381SH"]},
-{"start":1762837200000,"tier4":["248M","334M"],"tier5":[785,786,"381SH"]},
-{"start":1762923600000,"tier4":["248M","334M"],"tier5":["800M","381SH"]},
-{"start":1763010000000,"tier4":["248M","334M"],"tier5":[787,788,"381SH"]},
-{"start":1763096400000,"tier4":["248M","334M"],"tier5":["800W","381SH"]},
-{"start":1763182800000,"tier4":["248M","334M"],"tier5":["488SH","381SH"]},
-{"start":1763269200000,"tier4":["248M","334M"],"tier5":["488SH","381SH"]},
 {"start":1763312400000,"tier4":["248M","334M"],"tier5":["381SH"]},
 {"start":1763456400000,"tier4":["181M","310M"],"tier5":[485,"381SH"]},
 {"start":1764061200000,"tier4":["142M","308M","445M"],"tier5":[638,639,640,"381SH"]}
@@ -159,6 +151,8 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.76","date":"18.11.2025","change":["New Shiny: Morpeko"]},
+		{"ver":"1.13.75","date":"15.11.2025","change":["New Shinies: Hatenna, Impidimp, Tinkatink"]},
 		{"ver":"1.13.74","date":"21.10.2025","change":["New Shiny: Sinistea","Add raid and event schedule for November 2025"]},
 		{"ver":"1.13.73","date":"02.10.2025","change":["Surprise Shadow Latias"]},
 		{"ver":"1.13.72","date":"30.09.2025","change":["New Shiny: Duraludon"]},
