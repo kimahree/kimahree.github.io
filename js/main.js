@@ -144,13 +144,17 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1763312400000,"tier4":["248M","334M"],"tier5":["381SH"]},
-{"start":1763456400000,"tier4":["181M","310M"],"tier5":[485,"381SH"]},
-{"start":1764061200000,"tier4":["142M","308M","445M"],"tier5":[638,639,640,"381SH"]}
+{"start":1764061200000,"tier4":["142M","308M","445M"],"tier5":[638,639,640,"381SH"]},
+{"start":1764666000000,"tier4":["142M","308M","445M"],"tier5":[638,639,640,"485SH"]},
+{"start":1764838800000,"tier4":["130M"],"tier5":[646,"485SH"]},
+{"start":1765616400000,"tier4":["460M"],"tier5":[643,"485SH"]},
+{"start":1766394000000,"tier4":["362M"],"tier5":[644,"485SH"]},
+{"start":1767171600000,"tier4":["478M"],"tier5":[806,"485SH"]}
 ];
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.77","date":"26.11.2025","change":["Add raid and event schedule for December 2025"]},
 		{"ver":"1.13.76","date":"18.11.2025","change":["New Shiny: Morpeko"]},
 		{"ver":"1.13.75","date":"15.11.2025","change":["New Shinies: Hatenna, Impidimp, Tinkatink"]},
 		{"ver":"1.13.74","date":"21.10.2025","change":["New Shiny: Sinistea","Add raid and event schedule for November 2025"]},

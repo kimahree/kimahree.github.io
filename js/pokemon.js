@@ -1347,6 +1347,7 @@
 {"dex":"701M","name":"Mega-Resladero","en":"Mega Hawlucha","mega":true},
 {"dex":"718M","name":"Mega-Zygarde","en":"Mega Zygarde","legendary":true,"mega":true},
 {"dex":"780M","name":"Mega-Sen-Long","en":"Mega Drampa","mega":true},
+{"dex":"807M","name":"Mega-Zeraora","en":"Mega Zeraora","mythical":true,"mega":true},
 {"dex":"870M","name":"Mega-Legios","en":"Mega Falinks","mega":true},
 {"dex":"998M","name":"Mega-Espinodon","en":"Mega Baxcalibur","evolved":true,"mega":true}
 ];
