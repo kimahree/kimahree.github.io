@@ -1334,7 +1334,6 @@
 {"dex":"445Z","name":"Mega-Knakrack Z","en":"Mega Garchomp Z","evolved":true,"mega":true},
 {"dex":"448Z","name":"Mega-Lucario Z","en":"Mega Lucario Z","evolved":true,"mega":true},
 {"dex":"478M","name":"Mega-Frosdedje","en":"Mega Froslass","evolved":true,"mega":true},
-{"dex":"478M","name":"Mega-Frosdedje","en":"Mega Froslass","evolved":true,"mega":true},
 {"dex":"485M","name":"Mega-Heatran","en":"Mega Heatran","legendary":true,"mega":true},
 {"dex":"491M","name":"Mega-Darkrai","en":"Mega Darkrai","mythical":true,"mega":true},
 {"dex":"500M","name":"Mega-Flambirex","en":"Mega Emboar","evolved":true,"mega":true},
