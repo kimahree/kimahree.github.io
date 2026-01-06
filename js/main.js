@@ -144,10 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1765616400000,"tier4":["460M"],"tier5":[643,"485SH"]},
-{"start":1766394000000,"tier4":["362M"],"tier5":[644,"485SH"]},
-{"start":1767171600000,"tier4":["478M"],"tier5":[806,"485SH"]},
-{"start":1767330000000,"tier4":["478M"],"tier5":[806,"488SH"]},
 {"start":1767603600000,"tier4":["255M"],"tier5":["649B","649C","488SH"]},
 {"start":1768035600000,"tier4":["255M"],"tier5":[643,644,"646B","646W","649B","649C","488SH"]},
 {"start":1768060800000,"tier4":["255M"],"tier5":["649B","649C","488SH"]},
@@ -159,6 +155,7 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.79","date":"06.01.2026","change":["New Shiny: Dhelmise"]},
 		{"ver":"1.13.78","date":"18.12.2025","change":["Add raid and event schedule for January 2026"]},
 		{"ver":"1.13.77","date":"26.11.2025","change":["Add raid and event schedule for December 2025"]},
 		{"ver":"1.13.76","date":"18.11.2025","change":["New Shiny: Morpeko"]},

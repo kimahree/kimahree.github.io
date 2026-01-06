@@ -1016,7 +1016,7 @@
 {"dex":778,"name":"Mimigma","en":"Mimikyu"},
 {"dex":779,"name":"Knirfish","en":"Bruxish","getshiny":true},
 {"dex":780,"name":"Sen-Long","en":"Drampa","getshiny":true},
-{"dex":781,"name":"Moruda","en":"Dhelmise"},
+{"dex":781,"name":"Moruda","en":"Dhelmise","getshiny":true},
 {"dex":782,"name":"Miniras","en":"Jangmo-o","getshiny":true},
 {"dex":783,"name":"Mediras","en":"Hakamo-o","evolved":true},
 {"dex":784,"name":"Grandiras","en":"Kommo-o","evolved":true},
