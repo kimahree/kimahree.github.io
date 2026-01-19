@@ -144,17 +144,16 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1767603600000,"tier4":["257M"],"tier5":["649B","649C","488SH"]},
-{"start":1768035600000,"tier4":["257M"],"tier5":[643,644,"646B","646W","649B","649C","488SH"]},
-{"start":1768060800000,"tier4":["257M"],"tier5":["649B","649C","488SH"]},
 {"start":1768554000000,"tier4":["254M"],"tier5":[642,"488SH"]},
-{"start":1769245200000,"tier4":["254M"],"tier5":["250SH",642,"488SH"]},
+{"start":1769245200000,"tier4":["254M"],"tier5":["243SH",642,"488SH"]},
 {"start":1769270400000,"tier4":["254M"],"tier5":[642,"488SH"]},
 {"start":1769331600000,"tier4":["181M"],"tier5":[641,"488SH"]}
 ];
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.81","date":"18.01.2026","change":["New Shiny: Grookey"]},
+		{"ver":"1.13.80","date":"13.01.2026","change":["New Shiny: Tadbulb"]},
 		{"ver":"1.13.79","date":"06.01.2026","change":["New Shiny: Dhelmise"]},
 		{"ver":"1.13.78","date":"18.12.2025","change":["Add raid and event schedule for January 2026"]},
 		{"ver":"1.13.77","date":"26.11.2025","change":["Add raid and event schedule for December 2025"]},
