@@ -1211,7 +1211,7 @@
 {"dex":923,"name":"Pamomamo","en":"Pawmot","evolved":true},
 {"dex":924,"name":"Zwieps","en":"Tandemaus","getshiny":true},
 {"dex":925,"name":"Famieps","en":"Maushold","evolved":true},
-{"dex":926,"name":"Hefel","en":"Fidough"},
+{"dex":926,"name":"Hefel","en":"Fidough","getshiny":true},
 {"dex":927,"name":"Backel","en":"Dachsbun","evolved":true},
 {"dex":928,"name":"Olini","en":"Smoliv","getshiny":true},
 {"dex":929,"name":"Olivinio","en":"Dolliv","evolved":true},
