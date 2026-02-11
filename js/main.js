@@ -144,12 +144,9 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1769331600000,"tier4":["181M"],"tier5":[641,"488SH"]},
-{"start":1769922000000,"tier4":["181M"],"tier5":[641,"486SH"]},
-{"start":1770195600000,"tier4":["18M"],"tier5":[645,"486SH"]},
-{"start":1770195600000,"tier4":["18M"],"tier5":[645,"486SH"]},
-{"start":1771045200000,"tier4":["18M"],"tier5":["905T",645,"486SH"]},
-{"start":1771084800000,"tier4":["18M"],"tier5":[645,"486SH"]},
+{"start":1770195600000,"tier4":["18M"],"tier5":[483,484,"486SH"]},
+{"start":1771045200000,"tier4":["18M"],"tier5":["905T",483,484,"486SH"]},
+{"start":1771084800000,"tier4":["18M"],"tier5":[483,484,"486SH"]},
 {"start":1771232400000,"tier4":["302M"],"tier5":[791,"486SH"]},
 {"start":1771664400000,"tier4":["359M"],"tier5":[792,"486SH"]},
 {"start":1771801200000,"tier4":["359M"],"tier5":[144,145,146,792,"486SH"]},
@@ -164,6 +161,7 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.84","date":"30.01.2026","change":["Surprise raid schedule change"]},
 		{"ver":"1.13.83","date":"23.01.2026","change":["Add raid and event schedule for February 2026"]},
 		{"ver":"1.13.82","date":"20.01.2026","change":["New Shiny: Fidough"]},
 		{"ver":"1.13.81","date":"18.01.2026","change":["New Shiny: Grookey"]},
