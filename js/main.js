@@ -144,11 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1771974000000,"tier5":["382P","383P","486SH"]},
-{"start":1772060400000,"tier5":[483,484,"483O","484O","486SH"]},
-{"start":1772146800000,"tier5":[643,"646B",644,"646W","486SH"]},
-{"start":1772254800000,"tier4":["3M","6X","6Y","9M","18M","71M","115M","149M","282M","380M","445M","448M","475M"],"tier5":[716,717]},
-{"start":1772341200000,"tier4":["149M","212M","214M","248M","254M","257M","260M","359M","373M","376M","381M","687M"],"tier5":[716,717]},
 {"start":1772427600000,"tier4":["359M"],"tier5":[792,"486SH"]},
 {"start":1772600400000,"tier4":["127M"],"tier5":[144,145,146]},
 {"start":1773205200000,"tier4":["208M"],"tier5":[888]},
@@ -158,6 +153,8 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.87","date":"03.03.2026","change":["New Shinies: All evolutions/shadow variants of already available shiny Pokémon can now also be encountered as a shiny!"]},
+		{"ver":"1.13.86","date":"28.02.2026","change":["New Shinies: Honedge, Hawlucha, Klefki"]},
 		{"ver":"1.13.85","date":"25.02.2026","change":["Add raid and event schedule for March 2026"]},
 		{"ver":"1.13.84","date":"30.01.2026","change":["Surprise raid schedule change"]},
 		{"ver":"1.13.83","date":"23.01.2026","change":["Add raid and event schedule for February 2026"]},
