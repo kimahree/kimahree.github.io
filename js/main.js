@@ -144,18 +144,17 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1773810000000,"tier4":["80M"],"tier5":[889,"380SH"]},
-{"start":1774414800000,"tier4":["229M"],"tier5":[894,"380SH"]},
-{"start":1775016000000,"tier4":["310M"],"tier5":[895,"381SH"]},
-{"start":1775016000000,"tier4":["310M"],"tier5":[895,"381SH"]},
 {"start":1775635200000,"tier4":["142M"],"tier5":[382,"381SH"]},
 {"start":1776240000000,"tier4":["65M"],"tier5":[383,"381SH"]},
 {"start":1776844800000,"tier4":["319M"],"tier5":[785,"381SH"]},
 {"start":1777449600000,"tier4":["354M"],"tier5":[786,"381SH"]}
+{"start":1777694400000,"tier4":["354M"],"tier5":["244SH",786,"381SH"]}
+{"start":1777734000000,"tier4":["354M"],"tier5":[786,"381SH"]}
 ];
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.90","date":"14.04.2026","change":["New Shinies: Toedscool, Toedscruel"]},
 		{"ver":"1.13.89","date":"20.03.2026","change":["Add raid and event schedule for April 2026"]},
 		{"ver":"1.13.88","date":"17.03.2026","change":["New Shinies: Sizzlipede, Centiskorch"]},
 		{"ver":"1.13.87","date":"03.03.2026","change":["New Shinies: All evolutions/shadow variants of already available shiny Pokémon can now also be encountered as a shiny!"]},
