@@ -144,12 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1775635200000,"tier4":["142M"],"tier5":[382,"381SH"]},
-{"start":1776240000000,"tier4":["65M"],"tier5":[383,"381SH"]},
-{"start":1776844800000,"tier4":["319M"],"tier5":[785,"381SH"]},
-{"start":1777449600000,"tier4":["354M"],"tier5":[786,"381SH"]},
-{"start":1777694400000,"tier4":["354M"],"tier5":["244SH",786,"381SH"]},
-{"start":1777734000000,"tier4":["354M"],"tier5":[786,"381SH"]},
 {"start":1778054400000,"tier4":["323M"],"tier5":[793,"488SH"]},
 {"start":1778659200000,"tier4":["362M"],"tier5":[795,"488SH"]},
 {"start":1779264000000,"tier4":["334M"],"tier5":[787,"488SH"]},
@@ -158,6 +152,8 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.93","date":"30.04.2026","change":["New Shinies: Varoom, Revavroom"]},
+		{"ver":"1.13.92","date":"28.04.2026","change":["New Shiny: Orthworm"]},
 		{"ver":"1.13.91","date":"20.04.2026","change":["Add raid and event schedule for April 2026"]},
 		{"ver":"1.13.90","date":"14.04.2026","change":["New Shinies: Toedscool, Toedscruel"]},
 		{"ver":"1.13.89","date":"20.03.2026","change":["Add raid and event schedule for April 2026"]},
