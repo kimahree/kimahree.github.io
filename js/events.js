@@ -2,9 +2,6 @@
 {"de":"Crypto-Dialga in Crypto-Raids","en":"Shadow Dialga in Shadow Raids","start":1780372800000,"end":1782878400000,"color":"#ffe6e6","url":"https://pokemongo.com/seasons/forever-forward"},
 {"de":"Jahreszeit 23 - Immer weiter","en":"Season 23 - Forever Forward","start":1780387200000,"end":1788854400000,"color":"#e6f3ff","url":"https://pokemongo.com/seasons/forever-forward"},
 {"de":"GBL - Immer weiter","en":"GBL - Forever Forward","start":1780430400000,"end":1788897600000,"color":"#f5e6ff","url":"https://pokemongo.com/news/go-battle-league-forever-forward"},
-{"de":"GBL - Meisterliga [Mega] & Sonnenschein-Cup","en":"GBL - Master League [Mega] & Sunshine Cup","start":1781640000000,"end":1782244800000,"color":"#f5e6ff","url":"https://pokemongo.com/news/go-battle-league-forever-forward"},
-{"de":"Necrozma in Raids","en":"Necrozma in Raids","start":1781668800000,"end":1782273600000,"color":"#ffe6e6","url":"https://pokemongo.com/seasons/forever-forward"},
-{"de":"Mega-Scherox in Mega-Raids","en":"Mega Scizor in Mega Raids","start":1781668800000,"end":1782273600000,"color":"#ffe6e6","url":"https://pokemongo.com/seasons/forever-forward"},
 {"de":"Flugtaxi","en":"Flying Taxi","start":1782201600000,"end":1782756000000,"color":"#e6ffe6","url":"https://pokemongo.com/news/flying-taxi-2026"},
 {"de":"GBL - alle Ligen","en":"GBL - all Leagues","start":1782244800000,"end":1782849600000,"color":"#f5e6ff","url":"https://pokemongo.com/news/go-battle-league-forever-forward"},
 {"de":"Katagami in Raids","en":"Kartana in Raids","start":1782273600000,"end":1782878400000,"color":"#ffe6e6","url":"https://pokemongo.com/seasons/forever-forward"},
@@ -94,6 +91,12 @@
 {"de":"Rampenlichtstunde [2x ]","en":"Spotlight Hour [2x ]","start":1788451200000,"end":1788454800000,"color":"#ffffe6","url":"https://pokemongo.com/seasons/forever-forward"},
 {"de":"Jahreszeit 24","en":"Season 24","start":1788854400000,"end":1788854400000,"color":"#e6f3ff","url":"https://pokemongo.com/seasons/forever-forward"},
 {"de":"GBL - Season 24","en":"GBL - Season 24","start":1788897600000,"end":1788897600000,"color":"#f5e6ff","url":"https://pokemongo.com/news/go-battle-league-forever-forward"},
+{"de":"Pokémon GO City Safari - Brisbane","en":"Pokémon GO City Safari - Brisbane","start":1790373600000,"end":1790488800000,"color":"#fdddfd","url":"https://pokemongo.com/featured-in-person-events/citysafari/brisbane"},
+{"de":"Pokémon GO City Safari - Marseille","en":"Pokémon GO City Safari - Marseille","start":1790409600000,"end":1790524800000,"color":"#fdddfd","url":"https://pokemongo.com/featured-in-person-events/citysafari/marseille"},
+{"de":"Pokémon GO City Safari - München","en":"Pokémon GO City Safari - Munich","start":1790409600000,"end":1790524800000,"color":"#fdddfd","url":"https://pokemongo.com/featured-in-person-events/citysafari/munich"},
+{"de":"Pokémon GO City Safari - Lissabon","en":"Pokémon GO City Safari - Lisbon","start":1790413200000,"end":1790528400000,"color":"#fdddfd","url":"https://pokemongo.com/featured-in-person-events/citysafari/lisbon"},
+{"de":"Pokémon GO City Safari - Rio de Janeiro","en":"Pokémon GO City Safari - Rio de Janeiro","start":1790427600000,"end":1790542800000,"color":"#fdddfd","url":"https://pokemongo.com/featured-in-person-events/citysafari/rio-de-janeiro"},
+{"de":"Pokémon GO City Safari - Boston","en":"Pokémon GO City Safari - Boston","start":1790431200000,"end":1790546400000,"color":"#fdddfd","url":"https://pokemongo.com/featured-in-person-events/citysafari/boston"}
 ];
 
 var colors = [
