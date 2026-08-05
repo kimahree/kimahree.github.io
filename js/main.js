@@ -144,8 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1784692800000,"tier4":["373M"],"tier5":[791,"484SH"]},
-{"start":1785297600000,"tier4":["306M"],"tier5":[646,"484SH"]},
 {"start":1785902400000,"tier4":["257M"],"tier5":[481,"487SH"]},
 {"start":1786507200000,"tier4":["445M"],"tier5":[383,"487SH"]},
 {"start":1787112000000,"tier4":["260M"],"tier5":[792,"487SH"]},
@@ -156,6 +154,7 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.98","date":"05.08.2026","change":["New Shiny: Snom"]},
 		{"ver":"1.13.97","date":"22.07.2026","change":["New Shiny: Solgaleo","Add raid and event schedule for August 2026"]},
 		{"ver":"1.13.96","date":"23.06.2026","change":["Add raid and event schedule for July 2026"]},
 		{"ver":"1.13.95","date":"19.06.2026","change":["Add raid schedule for GO Fest Global 2026"]},

@@ -1113,7 +1113,7 @@
 {"dex":869,"name":"Pokusan","en":"Alcremie","evolved":true},
 {"dex":870,"name":"Legios","en":"Falinks","getshiny":true},
 {"dex":871,"name":"Britzigel","en":"Pincurchin"},
-{"dex":872,"name":"Snomnom","en":"Snom"},
+{"dex":872,"name":"Snomnom","en":"Snom","getshiny":true},
 {"dex":873,"name":"Mottineva","en":"Frosmoth","evolved":true},
 {"dex":874,"name":"Humanolith","en":"Stonjourner","regional":true},
 {"dex":875,"name":"Kubuin (Tiefkühlkopf)","en":"Eiscue (Ice Face)"},
