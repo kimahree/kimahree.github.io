@@ -16,6 +16,7 @@ var gymjson = {
 {"value":"Brunnen in der Brunnenstraße","ex":true,"token":"u-bahnhof voltastraße","map":"https://goo.gl/maps/QEN9FksYAUR2"},
 {"value":"Bunker Humboldthain","ex":true,"map":"https://goo.gl/maps/Q5xj3TTdQfR2"},
 {"value":"Caritas Berlin","ex":true,"map":"https://goo.gl/maps/hETMiMPwxyo"},
+{"value":"Der frühe Vogel fängt den Wurm","map":"https://goo.gl/maps/fDt7urrPJvzHdK2j7"},
 {"value":"Drei-Säulen-Brunnen","ex":true,"map":"https://goo.gl/maps/BD6HAd3WwAC2"},
 {"value":"Eingangstor St. Elisabeth","ex":true,"token":"friedhof kirchhof cemetery graveyard","map":"https://goo.gl/maps/6WQqtbYTLFD2"},
 {"value":"Ente","ex":true,"token":"🦆","map":"https://goo.gl/maps/nXUzN45onnB2"},
