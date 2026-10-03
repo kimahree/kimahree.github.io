@@ -1082,7 +1082,7 @@
 {"dex":837,"name":"Klonkett","en":"Rolycoly"},
 {"dex":838,"name":"Wagong","en":"Carkol","evolved":true},
 {"dex":839,"name":"Montecarbo","en":"Coalossal","evolved":true},
-{"dex":840,"name":"Knapfel","en":"Applin"},
+{"dex":840,"name":"Knapfel","en":"Applin","getshiny":true},
 {"dex":841,"name":"Drapfel","en":"Flapple","evolved":true},
 {"dex":842,"name":"Schlapfel","en":"Appletun","evolved":true},
 {"dex":843,"name":"Salanga","en":"Silicobra"},

@@ -144,10 +144,6 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1789531200000,"tier4":["3M"],"tier5":[889,"642SH"]},
-{"start":1789790400000,"tier4":["398M","3M"],"tier5":[889,"642SH"]},
-{"start":1789830000000,"tier4":["3M"],"tier5":[889,"642SH"]},
-{"start":1790136000000,"tier4":["687M"],"tier5":[795,"642SH"]},
 {"start":1790740800000,"tier4":["71M"],"tier5":[716,"642SH"]},
 {"start":1791345600000,"tier4":["9M"],"tier5":[717,"645SH"]},
 {"start":1791950400000,"tier4":["149M"],"tier5":[483,"645SH"]},
@@ -159,6 +155,7 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.103","date":"29.09.2026","change":["New Shiny: Applin"]},
 		{"ver":"1.13.102","date":"19.09.2026","change":["Add raid and event schedule for October 2026"]},
 		{"ver":"1.13.101","date":"09.09.2026","change":["New Shiny: Flamigo"]},
 		{"ver":"1.13.100","date":"26.08.2026","change":["Add raid and event schedule for September 2026"]},
