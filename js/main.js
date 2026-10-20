@@ -144,17 +144,25 @@ var raid_en = [];
 var raids = {};
 
 var raidjson = [
-{"start":1790740800000,"tier4":["71M"],"tier5":[716,"642SH"]},
-{"start":1791345600000,"tier4":["9M"],"tier5":[717,"645SH"]},
 {"start":1791950400000,"tier4":["149M"],"tier5":[483,"645SH"]},
 {"start":1792555200000,"tier4":["6X","6Y"],"tier5":[484,"645SH"]},
 {"start":1793163600000,"tier4":["302M"],"tier5":["487O","645SH"]},
 {"start":1793422800000,"tier4":["609M","302M"],"tier5":["487O","645SH"]},
-{"start":1793462400000,"tier4":["302M"],"tier5":["487O","645SH"]}
+{"start":1793462400000,"tier4":["302M"],"tier5":["487O","645SH"]},
+{"start":1793768400000,"tier4":["302M"],"tier5":[487,"641SH"]},
+{"start":1794200400000,"tier5":["888C","889C"]},
+{"start":1794200400000,"tier5":["888C","889C"]},
+{"start":1794632400000,"tier5":[644,"646W"]},
+{"start":1794718800000,"tier5":[643,"646B"]},
+{"start":1794805200000,"tier4":["354M"],"tier5":[488,491,"641SH"]},
+{"start":1795582800000,"tier4":["376M"],"tier5":[386,"386A","386D","386S","641SH"]},
+{"start":1795842000000,"tier4":["36M","376M"],"tier5":[386,"386A","386D","386S","641SH"]},
+{"start":1795881600000,"tier4":["376M"],"tier5":[386,"386A","386D","386S","641SH"]}
 ];
 
 var changelogjson = {
     "items": [
+		{"ver":"1.13.104","date":"20.10.2026","change":["Add raid and event schedule for November 2026"]},
 		{"ver":"1.13.103","date":"29.09.2026","change":["New Shiny: Applin"]},
 		{"ver":"1.13.102","date":"19.09.2026","change":["Add raid and event schedule for October 2026"]},
 		{"ver":"1.13.101","date":"09.09.2026","change":["New Shiny: Flamigo"]},
