@@ -49,7 +49,7 @@
 {"de":"Dynamax-Pfade","en":"Dynamax Trails","start":1794819600000,"end":1795460400000,"color":"#e6ffe6","url":"https://pokemongo.com/seasons/twilight-trails"},
 {"de":"GBL - Hyperliga, Meisterliga[Mega] & GO-LAIC-Cup 2026","en":"GBL - Ultra League, Master League[Mega] & 2026 GO LAIC Cup","start":1794949200000,"end":1795554000000,"color":"#f5e6ff","url":"https://pokemongo.com/news/go-battle-league-twilight-trails"},
 {"de":"Cresselia & Darkrai Raidstunde","en":"Cresselia & Darkrai Raid Hour","start":1795021200000,"end":1795024800000,"color":"#ffffe6","url":"https://pokemongo.com/seasons/twilight-trails"},
-{"de":"Zurrokex Community Day","en":"Scraggy Community Day","start":1795266000000,"end":1795276800000,"color":"#e5fff9","url":"https://pokemongo.com/en/news/save-the-date-s24"},
+{"de":"Gladiantri Community Day","en":"Pawniard Community Day","start":1795266000000,"end":1795276800000,"color":"#e5fff9","url":"https://pokemongo.com/news/communityday-november-2026-pawniard"},
 {"de":"Psiau Dyna-Montag","en":"Espurr Max Mondays","start":1795410000000,"end":1795464000000,"color":"#ffffe6","url":"https://pokemongo.com/seasons/twilight-trails"},
 {"de":"Zwielichtwünsche","en":"Twilight Wishes","start":1795510800000,"end":1796065200000,"color":"#e6ffe6","url":"https://pokemongo.com/seasons/twilight-trails"},
 {"de":"GBL - Meisterliga & Mega-Fang-Cup","en":"GBL - Master League & Mega Catch Cup","start":1795554000000,"end":1796158800000,"color":"#f5e6ff","url":"https://pokemongo.com/news/go-battle-league-twilight-trails"},
