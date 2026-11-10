@@ -162,7 +162,9 @@ var raidjson = [
 
 var changelogjson = {
     "items": [
-		{"ver":"1.13.104","date":"20.10.2026","change":["Add raid and event schedule for November 2026"]},
+		{"ver":"1.13.106","date":"01.11.2026","change":["New Shiny: Greavard"]},
+		{"ver":"1.13.105","date":"20.10.2026","change":["Add raid and event schedule for November 2026"]},
+		{"ver":"1.13.104","date":"02.10.2026","change":["New Shiny: Shroodle"]},
 		{"ver":"1.13.103","date":"29.09.2026","change":["New Shiny: Applin"]},
 		{"ver":"1.13.102","date":"19.09.2026","change":["Add raid and event schedule for October 2026"]},
 		{"ver":"1.13.101","date":"09.09.2026","change":["New Shiny: Flamigo"]},
